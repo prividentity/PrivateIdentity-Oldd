@@ -2,7 +2,7 @@
 
 <br/><br/>
 
-[Android-face git repository](https://github.com/OpenInference/android-face)
+[Android-face git repository](https://github.com/openinfer/android-face)
 
 
 The android application is a sample application that exercise the complete BOPS API.

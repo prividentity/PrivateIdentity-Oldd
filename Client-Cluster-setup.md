@@ -56,7 +56,7 @@ Please follow steps to add certs into cluster for ssl termination.
 
 4. Run `kubectl get ing` and copy address you will need it to setup route53.
 
-To setup Route 53 follow https://github.com/OpenInference/PrivateIdentity/wiki/Route-Setup
+To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup
 
 ## Deploy the Cluster Autoscaler
 

@@ -2,13 +2,13 @@
 
 ## If you don't have root access of system you can follow docs to install AMI with preinstalled packages in it. Otherwise you can skip this part and clone projects
 
-https://github.com/OpenInference/PrivateIdentity/wiki/Setup-Machine
+https://github.com/openinfer/PrivateIdentity/wiki/Setup-Machine
 
 
 ### Clone Projects
 
-    git clone git@github.com:OpenInference/pb.git
-    git clone git@github.com:OpenInference/pb-web.git
+    git clone git@github.com:openinfer/pb.git
+    git clone git@github.com:openinfer/pb-web.git
      
 
 ## Install AWSCLI
@@ -163,9 +163,9 @@ The Horizontal Pod Autoscaler automatically scales the number of pods in a repli
     kubectl autoscale deployment pb-web-app --cpu-percent=60 --min=1 --max=10
  
 
-To setup connection between resources db and cluster Go to VPC peering https://github.com/OpenInference/PrivateIdentity/wiki/VPC-peering 
+To setup connection between resources db and cluster Go to VPC peering https://github.com/openinfer/PrivateIdentity/wiki/VPC-peering 
 
-To setup route on aws for accessing application from browser Go to Route setup https://github.com/OpenInference/PrivateIdentity/wiki/Route-Setup
+To setup route on aws for accessing application from browser Go to Route setup https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup
 
 
 ## How to set kube config on your system

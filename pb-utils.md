@@ -8,7 +8,7 @@ What differentiates Private Identity’s proprietary application is that it scal
 ## Small Scale
 
 ### Clone Projects
-    git clone git@github.com:OpenInference/pb-util.git
+    git clone git@github.com:openinfer/pb-util.git
 
 ## Python Utility
 

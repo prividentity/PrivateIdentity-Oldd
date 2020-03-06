@@ -17,21 +17,21 @@ Utilizing a browser-based camera (any computer, tablet or smartphone) to capture
 
 The Enroll process captures the face images continuously and compares it with the existing enrolled subjects. If no enrolled subjects are found the system extracts the features from the images and stores the features in the system.
 
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/begin.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/begin.png]]
 
 System automatically checks for the glasses if worn by the user. In that case system rejects the images and waits for the user to recapture images again.
 
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/no_glasses.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/no_glasses.png]]
 
 Once the user passes the face capture, the user will be asked to accept the User Agreement policy followed by the Information filling. The information provided by the user will be used to idetify the subject enrolled.
 
 Enroll User Agreement | Enroll Information
 ---|---
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/enroll_ua.png]]|[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/enroll_user.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/enroll_ua.png]]|[[https://github.com/openinfer/PrivateIdentity/blob/master/images/enroll_user.png]]
 
 Once the user successfully enrolls, a right check mark will be displayed to the user to notify the completion
 
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/enroll_complete.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/enroll_complete.png]]
 
 <br/>
 
@@ -40,13 +40,13 @@ Once the user successfully enrolls, a right check mark will be displayed to the 
 Once the user successfully enrolls in the system, they can verify their identity by predicting with their modality. The same process of scanning the face using the webcam is used for prediction. Once sufficient images are captured, the software extracts the features from the images and sends it to the model for identifying the person. Then, the results will be displayed in the frontend identyfing the user that the software has recognized.
 
 #### Capture Face
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/capture_face.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/capture_face.png]]
 
 #### Prediction Result
 
 Private Identity’s facial recognition app detects a subject, determines if its image resides in the database instantaneously and, finally, takes whatever further action is required, allowing access only for an approved user.
 
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/predict_result.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/predict_result.png]]
 
 ### Voice Enroll and Predict
 
@@ -62,7 +62,7 @@ The browser records the spoken voice and extracts the features. These features a
 
 #### A sample sentence displayed in the browser
 
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/voice_2.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/voice_2.png]]
 
 ### Fingerprint Enroll
 
@@ -74,4 +74,4 @@ During enrollment, or initial capture of a subject’s fingerprint, each print i
 
 When using a fingerprint to verify a subject's identity, the user will be asked to display their thumb for webcam image capture. A guided area will be displayed in the browser to cover the fingerprint region. Once the systems approves the quality of the image, features extracted from the fingerprint image will be sent to the system for enroll and predict.
 
-[[https://github.com/OpenInference/PrivateIdentity/blob/master/images/fingerprint.png]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint.png]]

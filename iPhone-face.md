@@ -1,6 +1,6 @@
 ## iPhone facial recognition
 
-[iPhone-face git repository](https://github.com/OpenInference/iphone-face)
+[iPhone-face git repository](https://github.com/openinfer/iphone-face)
 
 The iPhone application is a sample application that exercise the complete BOPS API.
 
