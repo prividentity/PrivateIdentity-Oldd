@@ -69,3 +69,117 @@ If the client exists and the request details are all correctly provided, the res
     "status": 0
 }
 ```
+
+### Generating Temporary Authorization Code 
+
+The next step after registering a client correctly, is to generate a temporary code for initiating OAuth process. This code will be assigned to a specific user identified by his subject_id, and limited by an expiration date.
+
+**Request**
+
+POST “/trueid/v1.1/generate_code”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|client_id       |            client_id returned from previous call.|
+|subject_id       |            subject_id retrieved from the user database.|
+|api_key       |            Client api_key in string.|
+
+
+```
+{
+    "client_id": 1,
+    "subject_id": "xxxx",
+    "api_key": "xxxxx"
+}
+```
+
+**Response**
+
+If the provided data in previous call is correct, the server will respond with an auth_code. This code should be used temporarily on the workflow of OAuth 2.0
+
+```
+{
+    "auth_code": "xxxx",
+    "status": 0
+}
+```
+
+### Exchanging User Code for a Token
+
+Once we assign an authentication code to specific user. The parameters combined are, auth_code, client_id, and client_secret. 
+
+
+**Request**
+
+POST “/trueid/v1.1/exchange_code_for_token”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|client_id       |            client_id returned from previous call.|
+|client_secret       |            client_secret returned from previous call.|
+|auth_code       |            auth_code returned from previous call.|
+|api_key       |            Client api_key in string.|
+
+
+```
+{
+    "client_id": 1,
+    "client_secret": "xxxxx",
+    "auth_code": "xxxxx",
+    "api_key": "xxxxx"
+}
+```
+
+**Response**
+
+If the provided parameters are correctly added, the server will respond as follows:
+
+```
+{
+    "access_token": "xxxx",
+    "status": 0
+}
+```
+
+
+### Getting User Details
+
+We have added a client, made sure it exists correctly, generated temporary code for current user in workflow, and passed that code to the server to get access token in current session, now it's time to get user details.
+
+
+**Request**
+
+POST “/trueid/v1.1/get_user_details”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|access_token       |            access_token returned from previous call.|
+|api_key       |            Client api_key in string.|
+
+
+```
+{
+    "access_token": "xxxxx",
+    "api_key": "xxxxx"
+}
+```
+
+**Response**
+
+If the provided parameters are correctly added, the server will respond with all user details, and his subject_id. 
+
+Example:
+
+```
+{
+    "guid": 1,
+    "PII": {
+        "name": "Nguyen",
+	"id": "1008023",
+        ...
+        "address": "23 Scott Street"
+    },
+    "status": 0,
+    "subject_id": 1
+}
+```
