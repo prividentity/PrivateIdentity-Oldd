@@ -38,4 +38,33 @@ The response coming from this endpoint should be useful inside an HTML form. The
 
 ### Integration with Microsoft Azure
 
+In addition to being compatible with Google's GSuite, our application is also capable of granting user access to Microsoft services. The workflow is similar to the previously described one, with respect to some parameter changes.
 
+
+** Request **
+
+The format of this API call is:  
+
+POST “/node/getSamlResponseAzure”
+
+|Parameter     |         Value| 
+|-----|----|
+|loginEmail           |         GSuite email that was used during enroll.|
+|domain      |         User's GSuite domain.|
+|api_key      |         Authorization api_key.|
+
+For example, if we are trying to login to Outlook using the email user@domain.org, the login email will be "user@domain.org", and the domain will be "domain.org."
+
+
+```
+{
+   "loginEmail": "user@example.org",
+   "domain": "example.org",
+   "api_key": "xxxx"
+}
+```
+
+
+**Response**
+
+The response coming from this endpoint should be useful inside an HTML form. The result is a base64 encoded XML response that can be sent to Microsoft for authorization.
