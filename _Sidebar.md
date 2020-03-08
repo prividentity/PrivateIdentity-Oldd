@@ -67,7 +67,7 @@
 
 * [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OAUTH)
 
-* [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML)
+* [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0)
 
 [**PB Utility**](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils)
 
