@@ -59,11 +59,6 @@
 * [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admit-URL-Parameters)
 
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
-* [Predict endpoint](https://github.com/openinfer/PrivateIdentity/wiki/saas-predict)
-
-* [Enroll endpoint](https://github.com/openinfer/PrivateIdentity/wiki/saas-enroll)
-
-* [Liveness Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/saas-liveness)
 
 * [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OAUTH)
 
