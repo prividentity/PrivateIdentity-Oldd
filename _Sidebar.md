@@ -65,7 +65,7 @@
 
 * [Liveness Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/saas-liveness)
 
-* [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OATH)
+* [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OAUTH)
 
 * [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML)
 
