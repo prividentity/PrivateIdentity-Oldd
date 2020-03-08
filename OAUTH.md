@@ -15,7 +15,12 @@ POST “/trueid/v1.1/add_client”
 |client_name           |         Name of the client in string.|
 |api_key           |         Authorized api_key in string.|
 
-
+```
+{
+    "api_key": "xxxx",
+    "client_name: "example_name"
+}
+```
 **Response**
 
 If the parameters are correct, the client will be added and a message containing the client_id and client_secret is returned.
@@ -45,8 +50,22 @@ POST “/trueid/v1.1/client_exists”
 |api_key       |            Client api_key in string.|
 
 
+```
+{
+    "client_id": 1,
+    "client_secret": "xxxx",
+    "api_key": "xxxxx"
+}
+```
 
+**Response**
 
+If the client exists and the request details are all correctly provided, the response will look like the following:
 
-
-
+ 
+```
+{
+    "is_exist": true,
+    "status": 0
+}
+```
