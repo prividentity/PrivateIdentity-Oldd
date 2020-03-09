@@ -60,11 +60,11 @@
 
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
-* [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/saas-predict)
+* [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Endpoint)
 
-* [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/saas-enroll)
+* [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Enroll-Endpoint)
 
-* [Liveness Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/saas-liveness)
+* [Liveness Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Liveness-Endpoint)
 
 * [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OAUTH)
 
