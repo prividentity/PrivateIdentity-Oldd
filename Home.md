@@ -32,15 +32,15 @@ The DNN maintains full accuracy during boundary cases such as poor lighting or l
 
 The [Client Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-applications) are responsible for:
 * Creation of the biometric feature vector. 	
-* Making an API call to [enroll](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#enroll-endpoint).	
-* Making an API call to [predict](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#predict-endpoint).  
-* Making an API call for [liveness](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#liveness-endpoint).
+* Making an API call to [enroll](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#API-Enroll-Overview).	
+* Making an API call to [predict](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview).  
+* Making an API call for [liveness](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#liveness-overview).
 
 
-The [SPB Server](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server) is responsible for:
-* Saving PII data during [enrollment](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#enroll-endpoint) process for subsequent [predict](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#predict-endpoint) API calls. 
-* Retrieving PII data to support the [predict](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#predict-endpoint) API call.  
-* Retrieving the probability that the [liveness](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#liveness-endpoint) data and result match.
+The [SPB Server](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#sbp-api-overview) is responsible for:
+* Saving PII data during [enrollment](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#API-Enroll-Overview) process for subsequent [predict](https://github.com/openinfer/PrivateIdentity/wiki/BOPS-server#predict-endpoint) API calls. 
+* Retrieving PII data to support the [predict](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview) API call.  
+* Retrieving the probability that the [liveness](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#liveness-overview) data and result match.
 
 ### Enrollment Morphing
 
