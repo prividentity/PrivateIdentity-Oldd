@@ -40,6 +40,8 @@
 
 * [Setup Machine](https://github.com/openinfer/PrivateIdentity/wiki/Setup-Machine)
 
+* [Configure Redis](https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-server)
+
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
 * [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
