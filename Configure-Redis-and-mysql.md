@@ -22,6 +22,6 @@ Note: You can change cloudformation template if you want to add more parameters 
 #### 3. Wait for some time to complete stack deploy
 
 ### To delete Mysql stack
-     aws cloudformation delete-stack --stack-name $MYSQL_STACK_NAME
+     ./delete_mysql_stack.sh
 ### To delete Redis Stack
-     aws cloudformation delete-stack --stack-name $REDIS_STACK_NAME
+     ./delete_redis_stack.sh
