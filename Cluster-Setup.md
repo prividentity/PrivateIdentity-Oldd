@@ -74,7 +74,7 @@ We have cluster-run.sh script that will Deploy EKS Cluster on AWS and you need t
 Follow this
 https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-and-mysql
 
-## To delete complete infra follow below command
+## In order to delete complete infra follow below command
      cd $HOME/pb/kubernetes/deployment
      ./delete_all.sh
 
