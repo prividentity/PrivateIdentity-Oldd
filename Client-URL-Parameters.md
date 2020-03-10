@@ -14,6 +14,7 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |faceLiveness| true / false|false|Check for Face liveness (Eye blink) during predict / enroll|
 |action|predict|No default|Prediction only Default:face can be combined with voice|
 |action|enroll|No default|Enroll only Default:face can be combined with voice|
+|apiKey| Value of apiKey|No default|Set apiKey for requests to execute|
 |fingerPrint|true / false|false|Prediction using Fingerprint (In Progress)|
 
 ### WebAuthN
