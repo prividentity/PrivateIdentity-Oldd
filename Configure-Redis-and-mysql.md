@@ -9,9 +9,9 @@ Amazon RDS for MySQL is compliant with many industry standards. For example, you
        cd $HOME/pb/kubernetes/deployment`
        vi variables.sh`
 
-2. Deploy Clouformation templates for mysql and redis
-     cd $HOME/pb/kubernetes/deployment
-     . ./setup-mysql-redis.sh
+#### 2. Deploy Clouformation templates for mysql and redis
+       cd $HOME/pb/kubernetes/deployment
+       . ./setup-mysql-redis.sh
 
 Note: You can change cloudformation template if you want to add more parameters in it. Go to location $HOME/pb/kubernetes/deployment/cloudformation_template
 
