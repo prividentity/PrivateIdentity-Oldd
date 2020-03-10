@@ -8,7 +8,7 @@ All API communicate RESTful using JSON.
 
 **Developer API_Key**
 
-Individual developers need to apply for an API_Key for their applications that shall use SBP. Once individual developers have their own API_Key, all of the API calls their applications make use this API_Key as one of the parameters. The examples show an API_KEY through the url property of key=.
+Individual developers need to apply for an API_Key for their applications that shall use SBP. Once individual developers have their own API_Key, all of the API calls their applications make use this API_Key as one of the parameters.
 
 ### API Enroll Overview
 
@@ -18,7 +18,7 @@ To enroll a user, we take as input the PII Data which is a set of tag/value pair
 
 The format of this API call is:  
 
-POST “/trueid/v1.1/enroll?key=<API_KEY>”
+POST “/trueid/v1.1/enroll?”
 
 |Parameter     |         Value| 
 |-----|----|
@@ -63,7 +63,7 @@ Once enrolled, a caller shall call the Predict API to perform an attempt to use 
 
 The format of this API call is: 
 
-POST “/trueid/v1.1/predict?key=<API_KEY>”
+POST “/trueid/v1.1/predict?”
 
 |Parameter      |            Value|
 |----------|--------------| 
@@ -114,7 +114,7 @@ To enroll a user, we take as input  the PII Data which is a set of tag/value pai
 Request
 The format of this API call is:  
 
-POST “/trueid/v1.1/enroll?key=<API_KEY>”
+POST “/trueid/v1.1/enroll?”
 
 |Parameter  |  Value|
 |---------|--------|
@@ -152,7 +152,7 @@ Once enrolled a caller shall call the Predict API to perform an attempt to use t
 Request
 The format of this API call is: 
 
-POST “/trueid/v1.1/predict?key=<API_KEY>”
+POST “/trueid/v1.1/predict?”
 
 |Parameter   | Value|
 |----------|--------|
