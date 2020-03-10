@@ -15,4 +15,4 @@ Amazon RDS for MySQL is compliant with many industry standards. For example, you
 
 Note: You can change cloudformation template if you want to add more parameters in it. Go to location $HOME/pb/kubernetes/deployment/cloudformation_template
 
-3. Wait for some time to complete stack deploy
+#### 3. Wait for some time to complete stack deploy
