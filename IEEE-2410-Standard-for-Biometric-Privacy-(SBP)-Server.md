@@ -29,7 +29,7 @@ POST “/trueid/v1.1/enroll?key=<API_KEY>”
 An Enroll API request example is as follows:
 ```
 {
-    "api_key": "XXXXXXXXXXXXXXXXXX"
+    "api_key": "XXXXXXXXXXXXXXXXXX",
     "PII": {
        "name": "Nguyen",
 	"id": "1008023",
