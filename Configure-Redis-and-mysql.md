@@ -7,3 +7,7 @@ Amazon ElastiCache is a web service that makes it easy to set up, manage, and sc
 2. Copy thi url in S3 template https://pb-cloudformation-template.s3.us-east-2.amazonaws.com/redis.template
 
 3. Set your values on stack and create stack
+
+Same do for another cluster
+
+https://pb-cloudformation-template.s3.us-east-2.amazonaws.com/mysql.template
