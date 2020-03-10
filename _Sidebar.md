@@ -58,7 +58,7 @@
 
 * [URL Parameters (for clients)](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters)
 
-* [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admit-URL-Parameters)
+* [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admin-URL-Parameters)
 
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
