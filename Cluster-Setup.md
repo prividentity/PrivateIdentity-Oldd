@@ -1,7 +1,8 @@
 [![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
 
-## If you don't have root access of system you can follow docs to install AMI with preinstalled packages in it. Otherwise you can skip this part and clone projects
+## If you have root privileged follow skip Setup machine part and follow from Clone projects. If you don't follow all
 
+## Setup Machine 
 https://github.com/openinfer/PrivateIdentity/wiki/Setup-Machine
 
 
