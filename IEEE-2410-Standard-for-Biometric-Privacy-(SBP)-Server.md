@@ -24,7 +24,7 @@ POST “/trueid/v1.1/enroll?key=<API_KEY>”
 |-----|----|
 |api_key       |         api_key string to use this service|
 |PII           |         Tag/Value pairs|
-|Features      |         Type, Name, Feature Array. Type is voice, face or fingerprint.|
+|features      |         Type, Name, Feature Array. Type is voice, face or fingerprint.|
 
 An Enroll API request example is as follows:
 ```
@@ -68,7 +68,7 @@ POST “/trueid/v1.1/predict?key=<API_KEY>”
 |Parameter      |            Value|
 |----------|--------------| 
 |api_key       |         api_key string to use this service|
-|Features       |            Type, Name, Feature Array. Type is voice, face or fingerprint.|
+|features       |            Type, Name, Feature Array. Type is voice, face or fingerprint.|
 
 
 A Predict API request example is as follows:
