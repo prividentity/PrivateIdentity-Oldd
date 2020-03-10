@@ -70,6 +70,10 @@ We have cluster-run.sh script that will Deploy EKS Cluster on AWS and you need t
 
 **Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build cluster.
 
+## Setup mysql and redis 
+Follow this
+https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-and-mysql
+
 ## Setup PBAPP on Cluster
 
 We need to deploy our backend services on Cluster In order to do so we need to run below commands that will auto deploy our code with latest changes from git to Cluster. It's following DevOps approach it's building docker image with latest code from git and pushing it into ECR Repository on AWS and deploying Kubernetes deployment and service for Application with the latest docker image that we pushed on ECR Repo.
