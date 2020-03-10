@@ -6,8 +6,8 @@ Amazon RDS for MySQL is compliant with many industry standards. For example, you
 
 ### Setup mysql and redis cluster
 1. Go to location and change variables for mysql and redis 
-      cd $HOME/pb/kubernetes/deployment
-      vi variables.sh
+      `cd $HOME/pb/kubernetes/deployment`
+       `vi variables.sh`
 
 2. Deploy Clouformation templates for mysql and redis
      cd $HOME/pb/kubernetes/deployment
