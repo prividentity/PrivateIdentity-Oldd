@@ -18,7 +18,7 @@ To enroll a user, we take as input the PII Data which is a set of tag/value pair
 
 The format of this API call is:  
 
-POST “/trueid/v1.1/enroll?”
+POST “/trueid/v1.1/enroll”
 
 |Parameter     |         Value| 
 |-----|----|
@@ -63,7 +63,7 @@ Once enrolled, a caller shall call the Predict API to perform an attempt to use 
 
 The format of this API call is: 
 
-POST “/trueid/v1.1/predict?”
+POST “/trueid/v1.1/predict”
 
 |Parameter      |            Value|
 |----------|--------------| 
@@ -114,7 +114,7 @@ To enroll a user, we take as input  the PII Data which is a set of tag/value pai
 Request
 The format of this API call is:  
 
-POST “/trueid/v1.1/enroll?”
+POST “/trueid/v1.1/enroll”
 
 |Parameter  |  Value|
 |---------|--------|
@@ -152,7 +152,7 @@ Once enrolled a caller shall call the Predict API to perform an attempt to use t
 Request
 The format of this API call is: 
 
-POST “/trueid/v1.1/predict?”
+POST “/trueid/v1.1/predict”
 
 |Parameter   | Value|
 |----------|--------|
@@ -198,7 +198,7 @@ To recognize liveness, a mechanism to affirm interaction with a live individual,
 
 The format of this API call is: 
 
-POST “/trueid/v1.1/liveness?key=<API_KEY>”
+POST “/trueid/v1.1/liveness”
 ```
 {
     "voice": [
@@ -231,7 +231,7 @@ This API helps add role parametres to the database. The role helps us assign dif
 
 The format of this API call is: 
 
-POST  “/trueid/v1.1/add_role/?key=<API_KEY>”
+POST  “/trueid/v1.1/add_role”
 
 |Parameter | Value             |
 |----------|-------------------|
@@ -267,7 +267,7 @@ This API helps delete a role parametres from the database. To delete the role fr
 
 The format of this API call is: 
 
-POST  “/trueid/v1.1/delete_role/?key=<API_KEY>”
+POST  “/trueid/v1.1/delete_role”
 
 |Parameter | Value           |
 |----------|-----------------|
@@ -301,7 +301,7 @@ This API helps to add an existing role to a particular subject. Request must pro
 
 The format of this API call is: 
 
-POST  “/trueid/v1.1/add_role_to_subject/?key=<API_KEY>”
+POST  “/trueid/v1.1/add_role_to_subject”
 
 |Parameter | Value              |
 |----------|--------------------|
@@ -335,7 +335,7 @@ This API helps to delete a role from a particular subject. Request must provide 
 
 The format of this API call is: 
 
-POST  “/trueid/v1.1/delete_role_from_subject/?key=<API_KEY>”
+POST  “/trueid/v1.1/delete_role_from_subject”
 
 |Parameter | Value              |
 |----------|--------------------|
