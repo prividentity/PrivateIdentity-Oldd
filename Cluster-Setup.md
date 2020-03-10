@@ -1,9 +1,11 @@
 [![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
 
-#### If you have root privileged skip Setup machine and follow from Clone projects. If you don't have follow complete
+#### If you do not have root privilege run the following: 
 
 ## Setup Machine 
 https://github.com/openinfer/PrivateIdentity/wiki/Setup-Machine
+
+Now, clone the following projects.
 
 
 ### Clone Projects
