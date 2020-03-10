@@ -5,9 +5,9 @@ Amazon ElastiCache is a web service that makes it easy to set up, manage, and sc
 Amazon RDS for MySQL is compliant with many industry standards. For example, you can use Amazon RDS for MySQL databases to build HIPAA-compliant applications and to store healthcare related information, including protected health information (PHI) under an executed Business Associate Agreement (BAA) with AWS
 
 ### Setup mysql and redis cluster
-1. Go to location and change variables for mysql and redis 
-      `cd $HOME/pb/kubernetes/deployment`
-       `vi variables.sh`
+#### 1. Go to location and change variables for mysql and redis 
+       cd $HOME/pb/kubernetes/deployment`
+       vi variables.sh`
 
 2. Deploy Clouformation templates for mysql and redis
      cd $HOME/pb/kubernetes/deployment
