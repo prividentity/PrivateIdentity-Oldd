@@ -1,13 +1,18 @@
 ## ElastiCache Redis
 Amazon ElastiCache is a web service that makes it easy to set up, manage, and scale a distributed in-memory data store or cache environment in the cloud. It provides a high-performance, scalable, and cost-effective caching solution. At the same time, it helps remove the complexity associated with deploying and managing a distributed cache environment.
 
-## Configure ElastiCache Redis
-1. Log in to the AWS Management Console and select CloudFormation in the Services menu. 
-  
-2. Copy thi url in S3 template https://pb-cloudformation-template.s3.us-east-2.amazonaws.com/redis.template
+## RDS MYSQL 
+Amazon RDS for MySQL is compliant with many industry standards. For example, you can use Amazon RDS for MySQL databases to build HIPAA-compliant applications and to store healthcare related information, including protected health information (PHI) under an executed Business Associate Agreement (BAA) with AWS
 
-3. Set your values on stack and create stack
+### Setup mysql and redis cluster
+1. Go to location and change variables for mysql and redis 
+    cd $HOME/pb/kubernetes/deployment
+    vi variables.sh
 
-Same do for another cluster
+2. Deploy Clouformation templates for mysql and redis
+     cd $HOME/pb/kubernetes/deployment
+     . ./setup-mysql-redis.sh
 
-https://pb-cloudformation-template.s3.us-east-2.amazonaws.com/mysql.template
+Note: You can change cloudformation template if you want to add more parameters in it. Go to location $HOME/pb/kubernetes/deployment/cloudformation_template
+
+3. Wait for some time to complete stack deploy
