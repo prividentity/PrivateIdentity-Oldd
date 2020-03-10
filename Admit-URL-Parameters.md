@@ -12,6 +12,7 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |voice|true / false|false|Enroll & Predict with voice|
 |liveness|true / false|false|Verify the user by validating live sentences|
 |faceLiveness| true / false|false|Check for Face liveness (Eye blink) during predict / enroll|
+|apiKey| Value of apiKey|No default|Set apiKey for requests to execute|
 |action|predict|No default|Prediction only Default:face can be combined with voice|
 |action|enroll|No default|Enroll only Default:face can be combined with voice|
 |fingerPrint|true / false|false|Prediction using Fingerprint (In Progress)|
