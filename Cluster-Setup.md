@@ -58,7 +58,7 @@ Examples
 
 We have cluster-run.sh script that will Deploy EKS Cluster on AWS and you need to change parameters in variables.sh as described above then you can run cluster-run.sh in order to setup EKS cluster on AWS.
 
-### If you don't have root access please run below script in your newly created machine using AMI. 
+### If you do not have root access please run below script in your newly created machine using AMI. 
 
     cd $HOME/pb/kubernetes/deployment
     . ./preinstalled-cluster-setup.sh 
