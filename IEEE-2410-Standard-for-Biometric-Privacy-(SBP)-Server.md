@@ -67,12 +67,14 @@ POST “/trueid/v1.1/predict?key=<API_KEY>”
 
 |Parameter      |            Value|
 |----------|--------------| 
+|api_key       |         api_key string to use this service|
 |Features       |            Type, Name, Feature Array. Type is voice, face or fingerprint.|
 
 
 A Predict API request example is as follows:
 ```
 {
+    "api_key": "XXXXXXXXXXXXXXXXXX",
     "features": [
 	{“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },
 	{“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},
