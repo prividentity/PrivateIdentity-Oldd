@@ -74,9 +74,11 @@ We have cluster-run.sh script that will Deploy EKS Cluster on AWS and you need t
 Follow this
 https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-and-mysql
 
-## Build the containers for sagemakers (Change the variables in config-variables.sh before this)
-cd $HOMEpb/kubernetes/deployment
-. ./sagemaker.sh
+## Build the containers for sagemakers
+Change the variables in config-variables.sh before this:
+
+    cd $HOMEpb/kubernetes/deployment
+    . ./sagemaker.sh
 
 ## Setup PBAPP on Cluster
 
