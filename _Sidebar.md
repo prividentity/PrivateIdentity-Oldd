@@ -42,6 +42,8 @@
 
 * [Configure Redis and mysql](https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-and-mysql)
 
+* [Cleanup Cluster and Stacks](https://github.com/openinfer/PrivateIdentity/wiki/Cleanup-Cluster-and-Stacks)
+
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
 * [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
