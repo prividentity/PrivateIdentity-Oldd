@@ -4,4 +4,5 @@
       cd $HOME/pb/kubernetes/deployment
       ./delete_all.sh
 
+Note: This command will delete complete EKS including mysql and redis stack
  
