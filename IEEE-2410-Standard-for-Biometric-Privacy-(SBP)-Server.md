@@ -119,6 +119,7 @@ POST “/trueid/v1.1/enroll”
 |Parameter  |  Value|
 |---------|--------|
 |PII        |   Tag/Value pairs|
+|api_key       |         api_key string to use this service|
 |Features   | Type, Name, Feature Array. Type is voice, face or fingerprint.|
 
 An Enroll API request example is as follows:
@@ -137,9 +138,8 @@ An Enroll API request example is as follows:
 
 	…
 	{}
-    ]
-
-
+    ],
+    "api_key": "xxxxx"
 }
 ```
 
@@ -206,7 +206,8 @@ POST “/trueid/v1.1/liveness”
         ["voice_2", "base64_audio_2", "text_expected_2"],
         ...
         ["voice_n",  "base64_audio_n", text_expected_n"]
-    ]
+    ],
+    "api_key": "xxxxxx"
 }
 ```
 **Response**
@@ -237,7 +238,7 @@ POST  “/trueid/v1.1/add_role”
 |----------|-------------------|
 |tag       | String, Role Name |
 |value     | String, Role value|
-
+|api_key     | api_key in string value|
 ```
 {
     "tag": "admin",
@@ -272,10 +273,12 @@ POST  “/trueid/v1.1/delete_role”
 |Parameter | Value           |
 |----------|-----------------|
 |role_id   | Number, Role ID |
+|api_key     | api_key in string value|
 
 ```
 {
-    "role_id": 1
+    "role_id": 1,
+    "api_key": "xxxxx"
 }
 ```
 **Response**
@@ -307,10 +310,12 @@ POST  “/trueid/v1.1/add_role_to_subject”
 |----------|--------------------|
 |role_id   | Number, Role ID    |
 |subject_id| Number, Subject ID |
+|api_key     | api_key in string value|
 ```
 {
     "role_id": 1,
-    "subject_id":4
+    "subject_id":4,
+    "api_key": "xxxxxx"
 }
 ```
 **Response**
@@ -341,10 +346,12 @@ POST  “/trueid/v1.1/delete_role_from_subject”
 |----------|--------------------|
 |role_id   | Number, Role ID    |
 |subject_id| Number, Subject ID |
+|api_key     | api_key in string value|
 ```
 {
     "role_id": 1,
-    "subject_id":4
+    "subject_id":4,
+    "api_key": "xxxxx"
 }
 ```
 **Response**
