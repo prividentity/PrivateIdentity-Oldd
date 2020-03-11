@@ -4,7 +4,7 @@
       cd $HOME/pb/kubernetes/deployment
       ./delete_all.sh
 
-   [images/stack1.png]
+[[images/stack1.png]]
 
 Note: This command will delete complete EKS including mysql and redis stack. Make sure you have correct parameters in variables.sh and mysql-redis-variables.sh Because this script uses parameters from mysql-redis-variables.sh and variables.sh scripts.
  
