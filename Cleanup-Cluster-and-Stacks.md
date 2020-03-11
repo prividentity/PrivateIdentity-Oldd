@@ -4,5 +4,16 @@
       cd $HOME/pb/kubernetes/deployment
       ./delete_all.sh
 
-Note: This command will delete complete EKS including mysql and redis stack
+Note: This command will delete complete EKS including mysql and redis stack. Make sure you have correct parameters in variables.sh and mysql-redis-variables.sh Because this script using value from mysql-redis-variables.sh and variables.sh scripts
  
+#### To delete Mysql stack
+     cd $HOME/pb/kubernetes/deployment
+     ./delete_mysql_stack.sh
+
+Note: This script will delete mysql stack from aws. It uses parameters from mysql-redis-variables.sh make sure it have correct values. 
+
+### To delete Redis Stack
+     cd $HOME/pb/kubernetes/deployment
+     ./delete_redis_stack.sh
+
+Note: This script will delete redis stack from aws. It uses parameters from mysql-redis-variables.sh make sure it have correct values.
