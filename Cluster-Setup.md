@@ -86,9 +86,9 @@ We need to deploy our backend services on Cluster In order to do so we need to r
  
 ###     Go to location
  	   cd $HOME/pb/kubernetes/code/pbapp/aws
-	   . ./cluster-run.sh master
+	   . ./cluster-run.sh 
 	   cd $HOME/pb/kubernetes/code/jobscheduler/aws
-	   . ./cluster-run.sh master
+	   . ./cluster-run.sh 
 
 Note: Here **master** is the name of branch and **v1.2** is version of your application. 
 
