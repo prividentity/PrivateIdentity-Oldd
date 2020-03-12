@@ -130,13 +130,6 @@ The Horizontal Pod Autoscaler automatically scales the number of pods in a repli
      cd $HOME/pb/kubernetes/deployment
      . ./setup_autoscale.sh
 
-### To setup pod Autoscaling follow below commands and also change min and max number as per your needs. 
-
-    kubectl autoscale deployment pb-app --cpu-percent=60 --min=1 --max=20
-    kubectl autoscale deployment pb-jobscheduler --cpu-percent=60 --min=1 --max=20
-    kubectl autoscale deployment pb-web-app --cpu-percent=60 --min=1 --max=10
- 
-
 To setup connection between resources db and cluster Go to VPC peering https://github.com/openinfer/PrivateIdentity/wiki/VPC-peering 
 
 To setup route on aws for accessing application from browser Go to Route setup https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup
