@@ -125,44 +125,9 @@ Please follow steps to add certs into cluster for ssl termination.
 ## Deploy the Cluster Autoscaler
 
 ### To deploy the Cluster Autoscaler
-
-1. Deploy the Cluster Autoscaler to your cluster with the following command.
-
-``` 
-kubectl apply -f https://raw.githubusercontent.com/kubernetes/autoscaler/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml 
-```
-
-2. Add the cluster-autoscaler.kubernetes.io/safe-to-evict annotation to the deployment with the following command.
-
-``` 
-kubectl -n kube-system annotate deployment.apps/cluster-autoscaler cluster-autoscaler.kubernetes.io/safe-to evict="false"
-```
-
-3. Edit the Cluster Autoscaler deployment with the following command.
-
-``` 
-kubectl -n kube-system edit deployment.apps/cluster-autoscaler 
-```
-
-4. Edit the cluster-autoscaler container command to replace <YOUR CLUSTER NAME> with your cluster's name, and add the following options.
-* --balance-similar-node-groups
-* --skip-nodes-with-system-pods=false
-
-```
-spec:
-      containers:
-      - command:
-        - ./cluster-autoscaler
-        - --v=4
-        - --stderrthreshold=info
-        - --cloud-provider=aws
-        - --skip-nodes-with-local-storage=false
-        - --expander=least-waste
-        - --node-group-auto-discovery=asg:tag=k8s.io/cluster-autoscaler/enabled,k8s.io/cluster-autoscaler/<YOUR CLUSTER NAME>
-        - --balance-similar-node-groups
-        - --skip-nodes-with-system-pods=false 
-```
-Save and close the file to apply the changes.
+    
+     cd $HOME/pb/kubernetes/deployment
+     . ./setup_autoscale.sh
 
 ### Setup Autoscaling for both Applications
 
