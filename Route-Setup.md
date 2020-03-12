@@ -8,10 +8,8 @@ Kubernetes services running in a cluster. Amazon Elastic Load Balancing Applicat
 
 ####   In order to create ingress service for frontend and backend follow below commands. 
         cd $HOME/pb/kubernetes/deployment
-        kubectl apply -f ingress-aws-master.yml
+        . ./setup_ingress.sh
         kubectl get ing
-        cd $HOME/pb-web/kubernetes/aws
-        kubectl apply -f ingress-master.yml
 
 Note: You need to change Route53 rules in aws for new nlb [network load balancer], **kubectl get ing** will give you alb address please note this it will be used to setup route53. Also make changes in both ingress files **[ingress-aws-master.yml, ingress-master.yml]** for domain that you want to use for frontend and backend.
 
