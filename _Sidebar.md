@@ -34,8 +34,6 @@
 
 * [Configure AWS](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#configure-aws)
 
-* [VPC Peering](https://github.com/openinfer/PrivateIdentity/wiki/VPC-peering)
-
 * [Route Setup](https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup)
 
 * [Setup Machine](https://github.com/openinfer/PrivateIdentity/wiki/Setup-Machine)
