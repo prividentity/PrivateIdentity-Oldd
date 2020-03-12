@@ -123,16 +123,12 @@ Please follow steps to add certs into cluster for ssl termination.
     e.g kubectl create secret tls privateidentity.org --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
 
 ## Deploy the Cluster Autoscaler
-
+## HPA
+The Horizontal Pod Autoscaler automatically scales the number of pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics)
 ### To deploy the Cluster Autoscaler
     
      cd $HOME/pb/kubernetes/deployment
      . ./setup_autoscale.sh
-
-### Setup Autoscaling for both Applications
-
-## HPA
-The Horizontal Pod Autoscaler automatically scales the number of pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics)
 
 ### To setup pod Autoscaling follow below commands and also change min and max number as per your needs. 
 
