@@ -11,7 +11,7 @@ Kubernetes services running in a cluster. Amazon Elastic Load Balancing Applicat
         . ./setup_ingress.sh
         kubectl get ing
 
-Note: You need to change Route53 rules in aws for new nlb [network load balancer], **kubectl get ing** will give you alb address please note this it will be used to setup route53. Also make changes in both ingress files **[ingress-aws-master.yml, ingress-master.yml]** for domain that you want to use for frontend and backend.
+Note: You need to change Route53 rules in aws for new nlb [network load balancer], **kubectl get ing** will give you alb address please note this it will be used to setup route53.
 
 ## AWS Route53 
 Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other.
