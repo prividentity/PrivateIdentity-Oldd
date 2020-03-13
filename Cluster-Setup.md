@@ -120,7 +120,7 @@ Please follow steps to add certs into cluster for ssl termination.
 
 ```kubectl create secret tls <Domain> --key <path of private key> --cert <path of crt file>``` 
 
-    e.g kubectl create secret tls privateidentity.org --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
+    e.g kubectl create secret tls privateidentity --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
 
 ## Deploy the Cluster Autoscaler
 ## HPA
