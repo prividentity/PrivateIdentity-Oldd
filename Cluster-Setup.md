@@ -90,8 +90,6 @@ We need to deploy our backend services on Cluster In order to do so we need to r
 	   cd $HOME/pb/kubernetes/code/jobscheduler/aws
 	   . ./cluster-run.sh 
 
-Note: Here **master** is the name of branch and **v1.2** is version of your application. 
-
 ## Setup PBWEB on Cluster
 
 In order to Deploy frontend service to Cluster with latest code from git run below commands. It is also following same DevOps approach to put app on cluster.  
@@ -107,8 +105,6 @@ Examples
 ###    Go to location
   	  cd $HOME/pb-web/kubernetes/aws
 	  . ./cluster-run.sh 
-
-Note: Here **master** is the name of branch and **v1.2** is version of your application.
 
 ## Steps to Add SSL certs for domain 
 
