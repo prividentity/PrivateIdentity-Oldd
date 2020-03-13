@@ -47,7 +47,7 @@ And we will use to connect with our application.
 
 Note: It would take some time to change nameservers. 
    
-10.   You need to create Record Sets for Web Tier and Server Tier Please set target as your newly created NLB for both
+10.   You need to create Record Sets for Web Tier and Server Tier Please set target as your newly created NLB for both. Use names of backend and frontend variables you had setup in variables.sh 
 
 11. Choose Create Record Set, Choose a name 
 
