@@ -183,3 +183,12 @@ Example:
     "subject_id": 1
 }
 ```
+### Browser Utilization 
+
+In order to proceed with the OAuth workflow, you will have to make a GET request containing various parameters. The parameters to add in the URL are mentioned in the following table:
+
+|Parameter      |            Possible values|
+|----------|--------------| 
+|scope       |            action.predict, action.enroll, and enroll.voice.|
+|state       |            String value left to the user to choose.|
+|response_type       |           .|
