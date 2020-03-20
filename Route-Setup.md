@@ -15,6 +15,11 @@ Note: You need to change Route53 rules in aws for new nlb [network load balancer
 
 ## AWS Route53 
 Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other.
+
+Note to taken care of:
+1. Certificates for route53/etc will be necessary for securing the connections in the webpage
+2. Setting up a route53 hosted zone which will be public to the outside world as this URL will be used for accessing the application
+
 And we will use to connect with our application.
 
 ## Steps to setup Route53 Domain to Cluster NLB
