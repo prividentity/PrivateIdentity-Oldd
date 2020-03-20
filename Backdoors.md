@@ -9,6 +9,8 @@
               kubectl exec -it <pod-name> bash
 
 #### Step 3: Execute the following commands to reset the server
+             cd $HOME/pb
+             git pull
              cd $HOME/pb/kubernetes/code/pbapp/aws
              . ./variables.sh
              cd $HOME/pb/TrueID/src/bash/reset.sh
