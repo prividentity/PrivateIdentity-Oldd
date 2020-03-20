@@ -40,7 +40,7 @@ The enroll script takes the directory structure from initiate_preprocess.py and 
 
 Upon script completion, the system contains all enrolled users.
 
-Optional -server_url parameter can be given to enroll the user in different systems.
+**Optional -server_url parameter can be given to enroll the user in different systems.**
 
 ### Predict Persons
 
