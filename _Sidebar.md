@@ -44,9 +44,9 @@
 
 * [Operations](https://github.com/openinfer/PrivateIdentity/wiki/Operations)
 
-* [To Do](https://github.com/openinfer/PrivateIdentity/wiki/To-Do)
-
 * [Backdoor](https://github.com/openinfer/PrivateIdentity/wiki/Backdoors)
+
+* [To Do](https://github.com/openinfer/PrivateIdentity/wiki/To-Do)
 
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
