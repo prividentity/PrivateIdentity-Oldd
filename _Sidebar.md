@@ -42,6 +42,8 @@
 
 * [Cleanup Cluster and Stacks](https://github.com/openinfer/PrivateIdentity/wiki/Cleanup-Cluster-and-Stacks)
 
+* [Operations](https://github.com/openinfer/PrivateIdentity/wiki/Operations)
+
 * [To Do](https://github.com/openinfer/PrivateIdentity/wiki/To-Do)
 
 * [Backdoor](https://github.com/openinfer/PrivateIdentity/wiki/Backdoors)
