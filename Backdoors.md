@@ -1,6 +1,6 @@
-Backdoors:
+### Backdoors
 
-1. Reset the Server:
+#### Reset the Server
 
 Get into the deployment folder
 . ./variables.sh
