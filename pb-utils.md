@@ -40,7 +40,9 @@ The enroll script takes the directory structure from initiate_preprocess.py and 
 
 Upon script completion, the system contains all enrolled users.
 
-**Optional -server_url parameter can be given to enroll the user in different systems.**
+**Optional `-server_url` parameter can be given to enroll the user in different systems.**
+
+**Optional `-api_key` parameter can be given to verify the api key endpoints in the system. Default value if 1962 is used if not provided**
 
 ### Predict Persons
 
@@ -49,6 +51,10 @@ The predict script takes the directory structure from initiate_preprocess.py and
  `python3 predict.py -input_path <input_path>`
 
 The script predict.py produces summary output and any error message.
+
+**Optional `-server_url` parameter can be given to enroll the user in different systems.**
+
+**Optional `-api_key` parameter can be given to verify the api key endpoints in the system. Default value if 1962 is used if not provided**
 
 
 ## Large Scale
@@ -71,7 +77,8 @@ POST: https://master.privateidentity.org/trueid/v1.1/preprocess
     "s3_dataset_dir": "sample_images",
     "num_processes": 40,
     "server_url": "https://dev.privateidentity.org:443/trueid/v1.1",
-    "slave_url": "http://slave-svc:5002/trueid/v1.1/slave_preprocess"
+    "slave_url": "http://slave-svc:5002/trueid/v1.1/slave_preprocess",
+    (Optional)"api_key": <key>
 }
 ```
 
@@ -81,6 +88,6 @@ POST: https://master.privateidentity.org/trueid/v1.1/preprocess
 
 `num_processes`: the dataset will be processed using `num_processes` parallel requests. For example, if the dataset consists of 1000 people, and num_processes=40, that means we'll have 40 parallel requests and each request processes 1000/40 = 25 people.
 
-
+`api_key`: is an optional parameter. If it is not present in JSON then a default value of 1962 will be used.
 
 
