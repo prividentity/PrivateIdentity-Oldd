@@ -187,8 +187,16 @@ Example:
 
 In order to proceed with the OAuth workflow, you will have to make a GET request containing various parameters. The parameters to add in the URL are mentioned in the following table:
 
-|Parameter      |            Possible values|
+|URL Parameter      |            Value|
 |----------|--------------| 
 |scope       |            action.predict, action.enroll, and enroll.voice.|
-|state       |            String value left to the user to choose.|
-|response_type       |           .|
+|state       |            An opaque value, used for security purposes. |
+|response_type       |           Possible values are code or token.|
+|redirect_uri       |       URL to redirect to after OAuth succeeds.|
+|client_id       |       The client ID obtained from previous steps.|
+|sessionId       |       The client ID obtained from previous steps.|
+
+
+**Example**
+
+POST “https://devel.privatebiometrics.com/oauth/?redirect_uri=https://clientDomainExample.com/folderExample&client_id=1&scope=action.enroll&state=abc123&sessionId=123abc&response_type=code”
