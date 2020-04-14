@@ -378,7 +378,7 @@ To check the distance between the given embeddings_1 array with the given embedd
 
 The format of this API call is:  
 
-POST “/trueid/v1.1/embedding_distance”
+POST “/trueid/v1.1/verify”
 
 |Parameter     |         Value| 
 |-----|----|
