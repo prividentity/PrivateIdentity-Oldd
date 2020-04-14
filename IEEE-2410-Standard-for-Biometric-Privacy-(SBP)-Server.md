@@ -373,6 +373,7 @@ The response of delete role from subject request returns a status of 0 upon succ
 ### API Embedding Distance Overview
 
 To check the distance between the given embeddings_1 array with the given embeddings_2 array or the embeddings of enrolled person with given subject_id
+
 **Request**
 
 The format of this API call is:  
