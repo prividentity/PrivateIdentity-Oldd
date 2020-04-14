@@ -74,6 +74,8 @@
 
 * [Liveness Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Liveness-Endpoint)
 
+* [Embedding Distance Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Embedding-Distance-Endpoint)
+
 * [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OAUTH)
 
 * [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0)
