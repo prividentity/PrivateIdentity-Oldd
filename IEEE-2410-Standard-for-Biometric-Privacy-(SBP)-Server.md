@@ -388,6 +388,7 @@ POST “/trueid/v1.1/embedding_distance”
 |subject_id    |         Number, Subject ID of the enrolled person to retrieve embeddings if embeddings_2 is not provided|
 
 An API request example is as follows:
+```
 {
    "api_key": "xxxxx",
    "type": "face",
@@ -405,6 +406,7 @@ An API request example is as follows:
 ```
 
 Another API request example is as follows:
+```
 {
    "api_key": "xxxxx",
    "type": "face",
@@ -420,12 +422,13 @@ Another API request example is as follows:
 **Response**
 
 The response returns -1 if there is error. If return 0, it's success and provide information as:
+```
 {
     "status": 0,
     "distance": {
-        "max": 0.3751889442703719,
-        "mean": 0.3751889442703719,
-        "min": 0.3751889442703719
+        "max": 1.3864889343185174,
+        "mean": 1.3714485861588377,
+        "min": 1.3531817732607498
     },
     "threshold": {
         "max": 0.55,
@@ -433,4 +436,5 @@ The response returns -1 if there is error. If return 0, it's success and provide
         "min": 0.3
     }
 }
+```
 
