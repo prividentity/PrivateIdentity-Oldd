@@ -368,3 +368,69 @@ The response of delete role from subject request returns a status of 0 upon succ
    “message” : “Not a valid subject/Role. (or) Role does not exist in database”
 }
 ```
+
+
+### API Embedding Distance Overview
+
+To check the distance between the given embeddings_1 array with the given embeddings_2 array or the embeddings of enrolled person with given subject_id
+**Request**
+
+The format of this API call is:  
+
+POST “/trueid/v1.1/embedding_distance”
+
+|Parameter     |         Value| 
+|-----|----|
+|api_key       |         api_key string to use this service|
+|type          |         a string (face, voice, fingerprint)|
+|embeddings_1  |         a list of embeddings of the first person |
+|embeddings_2  |         a list of embeddings of the second person |
+|subject_id    |         Number, Subject ID of the enrolled person to retrieve embeddings if embeddings_2 is not provided|
+
+An API request example is as follows:
+{
+   "api_key": "xxxxx",
+   "type": "face",
+  "embeddings_1": [
+  		[...],
+                [...],
+                 …
+  	],
+  "embeddings_2": [
+	  	[...],
+                [...],
+                 …
+	]
+}
+```
+
+Another API request example is as follows:
+{
+   "api_key": "xxxxx",
+   "type": "face",
+  "embeddings_1": [
+  		[...],
+                [...],
+                 …
+  	],
+  "subject_id": 1
+}
+```
+
+**Response**
+
+The response returns -1 if there is error. If return 0, it's success and provide information as:
+{
+    "status": 0,
+    "distance": {
+        "max": 0.3751889442703719,
+        "mean": 0.3751889442703719,
+        "min": 0.3751889442703719
+    },
+    "threshold": {
+        "max": 0.55,
+        "mean": 0.5,
+        "min": 0.3
+    }
+}
+
