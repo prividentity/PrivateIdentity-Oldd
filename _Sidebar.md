@@ -28,7 +28,7 @@
 
 * [Delete Role from Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#delete-role-from-subject)
 
-* [Embedding Distance endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-Standard-for-Biometric-Privacy-(SBP)-Server#api-embedding-distance-overview)
+* [Verify endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-Standard-for-Biometric-Privacy-(SBP)-Server#api-verify-overview)
 
 
 [**PrivateId Cluster Setup**](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup)
