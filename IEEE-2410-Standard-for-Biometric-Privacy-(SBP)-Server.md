@@ -384,7 +384,7 @@ POST “/trueid/v1.1/embedding_distance”
 |api_key       |         api_key string to use this service|
 |type          |         a string (face, voice, fingerprint)|
 |embeddings_1  |         a list of embeddings of the first person |
-|embeddings_2  |         a list of embeddings of the second person |
+|embeddings_2  |         a list of embeddings of the second person if subject_id is not provided|
 |subject_id    |         Number, Subject ID of the enrolled person to retrieve embeddings if embeddings_2 is not provided|
 
 An API request example is as follows:
@@ -392,12 +392,12 @@ An API request example is as follows:
 {
    "api_key": "xxxxx",
    "type": "face",
-  "embeddings_1": [
+   "embeddings_1": [
   		[...],
                 [...],
                  …
   	],
-  "embeddings_2": [
+   "embeddings_2": [
 	  	[...],
                 [...],
                  …
@@ -410,12 +410,12 @@ Another API request example is as follows:
 {
    "api_key": "xxxxx",
    "type": "face",
-  "embeddings_1": [
+   "embeddings_1": [
   		[...],
                 [...],
                  …
   	],
-  "subject_id": 1
+   "subject_id": 1
 }
 ```
 
