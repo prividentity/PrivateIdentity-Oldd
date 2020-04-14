@@ -28,6 +28,9 @@
 
 * [Delete Role from Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#delete-role-from-subject)
 
+* [Embedding Distance endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-Standard-for-Biometric-Privacy-(SBP)-Server#api-embedding-distance-overview)
+
+
 [**PrivateId Cluster Setup**](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup)
 
 * [AWS EKS Cluster](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#AWS-EKS-CLUSTER)
@@ -73,8 +76,6 @@
 * [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Enroll-Endpoint)
 
 * [Liveness Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Liveness-Endpoint)
-
-* [Embedding Distance Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Embedding-Distance-Endpoint)
 
 * [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OAUTH)
 
