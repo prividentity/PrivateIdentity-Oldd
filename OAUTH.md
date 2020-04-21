@@ -18,7 +18,7 @@ POST “/trueid/v1.1/add_client”
 ```
 {
     "api_key": "xxxx",
-    "client_name: "example_name"
+    "client_name": "example_name"
 }
 ```
 **Response**
