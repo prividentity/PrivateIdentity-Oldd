@@ -25,7 +25,32 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |oktaDomain|Okta domain without https://|null|Okta domain for SAML implementation|
 |localMode|true / false|false|Local mode to work offline.|
 |token|String value|null|Set token value|
-|debug|true / false|false|Set debug mode to help fix issues|
+|redirect|link to redirec to|null|Redirection link after processing.|
+|idp|okta / azure/ gsuite|null|Set SAML destination|
+|client_id|string value|null|Set client ID retrieved from our endpoints.|
+|responseType|string value|null|Set response type for oAuth|
+|redirect_uri|String value for a link|null|Set redirect URL for oAuth|
+|sessionid|Session ID|null|Set session ID for oAuth|
+|oauthState|oAuth State|null|Set state value for oAuth|
+|oauthScope|Scope value|null|Set scope value for oAuth|
+|subject_id|Subject ID in numbers|null|Set subject ID of user|
+|sessionid|Session ID|null|Set session ID for oAuth|
+|isEdge|True / false|false|Imitate Edge browser experience|
+|antiVideoSpoof|True / false|false|Video spoofing|
+|isEdge|True / false|false|Imitate Edge browser experience|
+|eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
+|eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
+|RelayState| Link for SAML Relay state|null||
+|samlRequest| Encoded XML|null|Encoded XML request|
+|eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
+|okta|True / false|false|Use Okta as an SP|
+|hslType|1 / 2|2|Normalization algorithm used.|
+|clientDebug|True / false|null|Debug glasses check and download images in browser.|
+|showPermissionDialog|True / false|false|Show permission dialog on oAuth|
+|role_id|Numeric value|null|User role ID to update|
+|tag|Numeric value|null|Tag to update for a user|
+|value|Numeric value|null|Value for user tag we want to update|
+
 
 
 ### WebAuthN
