@@ -42,7 +42,7 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |samlRequest| Encoded XML|null|Encoded XML request|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |okta|True / false|false|Use Okta as an SP|
-|hslType|1 / 2|2|Normalization algorithm used.|
+|hslType|1 / 2|2|Normalization algorithm used. 1 for HSL, 2 for CLAHE|
 |clientDebug|True / false|null|Debug glasses check and download images in browser.|
 |showPermissionDialog|True / false|false|Show permission dialog on oAuth|
 |role_id|Numeric value|null|User role ID to update|
