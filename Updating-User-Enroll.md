@@ -28,7 +28,7 @@ NOTE: the other modality should be set to false for this feature to work.
 
 **Response**
 
-After the user enroll with voice, the response from the server will be looking as follows:
+After the finishes updating his enroll, the response from the server will be looking as follows:
 
 ```
 {
