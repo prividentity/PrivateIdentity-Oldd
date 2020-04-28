@@ -25,7 +25,7 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |oktaDomain|Okta domain without https://|null|Okta domain for SAML implementation|
 |localMode|true / false|false|Local mode to work offline.|
 |token|String value|null|Set token value|
-|redirect|link to redirec to|null|Redirection link after processing.|
+|redirect|link to redirect to|null|Redirection link after processing.|
 |idp|okta / azure/ gsuite|null|Set SAML destination|
 |client_id|string value|null|Set client ID retrieved from our endpoints.|
 |responseType|string value|null|Set response type for oAuth|
