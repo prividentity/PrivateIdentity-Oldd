@@ -4,6 +4,16 @@ The following workflow must start with the user predicting with one modality to 
 
 **Example**
 
-A certain user is enrolled with face, and can successfully predict with that. This user wants to enroll with voice, too. The URL the user should have the following parameters:
+A certain user is enrolled with face, and can successfully predict with that. This user wants to enroll with voice, too. The subject_id parameter must be retrieved from the face predict. Next, the URL the user should have the following parameters to enroll with voice:
 
-GET “/apiKey=xxxx&voice=true&action=enroll&subject_id=x”
+GET “/apiKey=xxxx&voice=true&face=false&action=enroll&subject_id=x”
+
+NOTE: the other modality should be set to false for this feature to work.
+
+**Response**
+After the user enroll with voice, the response from the server will be looking as follows:
+
+```
+{"guid":1,"message":"OK","status":0}
+```
+
