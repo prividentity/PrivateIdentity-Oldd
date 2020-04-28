@@ -6,4 +6,4 @@ The following workflow must start with the user predicting with one modality to 
 
 A certain user is enrolled with face, and can successfully predict with that. This user wants to enroll with voice, too. The URL the user should have the following parameters:
 
-“apiKey=xxxx&voice=true&action=enroll&subject_id=x”
+> apiKey=xxxx&voice=true&action=enroll&subject_id=x
