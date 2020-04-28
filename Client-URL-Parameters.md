@@ -36,7 +36,6 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |subject_id|Subject ID in numbers|null|Set subject ID of user|
 |isEdge|True / false|false|Imitate Edge browser experience|
 |antiVideoSpoof|True / false|false|Video spoofing|
-|isEdge|True / false|false|Imitate Edge browser experience|
 |eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |RelayState| Link for SAML Relay state|null||
