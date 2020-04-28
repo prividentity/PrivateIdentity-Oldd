@@ -11,6 +11,7 @@ GET “/apiKey=xxxx&voice=true&face=false&action=enroll&subject_id=x”
 NOTE: the other modality should be set to false for this feature to work.
 
 **Response**
+
 After the user enroll with voice, the response from the server will be looking as follows:
 
 ```
