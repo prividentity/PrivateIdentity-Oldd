@@ -14,6 +14,10 @@ NOTE: the other modality should be set to false for this feature to work.
 After the user enroll with voice, the response from the server will be looking as follows:
 
 ```
-{"guid":1,"message":"OK","status":0}
+{
+    "guid":1,
+    "message":"OK",
+    "status":0
+}
 ```
 
