@@ -34,7 +34,6 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |oauthState|oAuth State|null|Set state value for oAuth|
 |oauthScope|Scope value|null|Set scope value for oAuth|
 |subject_id|Subject ID in numbers|null|Set subject ID of user|
-|sessionid|Session ID|null|Set session ID for oAuth|
 |isEdge|True / false|false|Imitate Edge browser experience|
 |antiVideoSpoof|True / false|false|Video spoofing|
 |isEdge|True / false|false|Imitate Edge browser experience|
