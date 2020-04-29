@@ -12,8 +12,8 @@
 * Your subject ID will show up as either `subject_id:#` or `guid:#`
 > ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/SubjectID_Console_During_Enrollment.png)
 
-**Method 2** (after enrollment):> 
-* In the URL use the parameter &action=predict
+**Method 2** (after enrollment):
+* In the URL use the parameter &action=predict and run the prediction.
 
 * Inspect Element, and the select the Console Tab
 > ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/chrome-right-click-inspect.png)
