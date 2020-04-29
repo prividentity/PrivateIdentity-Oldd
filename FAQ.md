@@ -12,7 +12,7 @@ A facial recognition is face recognition technology measures and matches the uni
 
 Facial recognition is a category of biometric software that maps an individual's facial features mathematically and stores the data as a faceprint. The software uses deep learning algorithms to compare a live capture or digital image to the stored faceprint in order to verify an individual's identity.
 
-**Q : What is a a CNN?**
+**Q : What is a CNN?**
 
 Yann LeCun and Yoshua Bengio introduced the concept of CNNs in 1995. A con-volutional neural network is a feed-forward network with the ability of extracting topological properties from the input image. It extracts features from the raw image and then a classifier classifies extracted features. CNNs are invariance to distortions and simple geometric transformations like translation, scaling, rotation and squeezing.
 
