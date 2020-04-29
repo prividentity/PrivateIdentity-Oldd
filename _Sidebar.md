@@ -69,7 +69,7 @@
 
 * [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admin-URL-Parameters)
 
-* [Updating User Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Updating-User-Enroll)
+* [Merging Face and Voice Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Updating-User-Enroll)
 
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
