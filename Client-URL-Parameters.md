@@ -2,7 +2,9 @@ This page lists the possible web URL parameters that can be used with the applic
 
 ### Demo Parameters
 
-To enable a certain parameter add the URL parameters to the default URL. One or more parameters can be added by using the '&' symbol. For ex., &voice=true&liveness=true, resulting in a URL that looks like, private.id/demo/?apiKey=xxxx&voice=true&liveness=true
+To enable a certain parameter add the URL parameters to the default URL. One or more parameters can be added by using the '&' symbol.  
+
+For ex., &voice=true&liveness=true, resulting in a URL that looks like, private.id/demo/?apiKey=xxxx&voice=true&liveness=true
 
 #### Business Functions
 
