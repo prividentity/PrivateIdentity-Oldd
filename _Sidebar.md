@@ -71,6 +71,8 @@
 
 * [Merging Face and Voice Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Updating-User-Enroll)
 
+* [Finding Your Subject ID](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID
+
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
 * [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Endpoint)
