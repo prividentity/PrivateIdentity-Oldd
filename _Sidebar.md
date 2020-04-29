@@ -69,7 +69,7 @@
 
 * [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admin-URL-Parameters)
 
-* [Updating-User-Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Updating-User-Enroll)
+* [Updating User Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Updating-User-Enroll)
 
 * [Finding Your Subject ID](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID)
 
