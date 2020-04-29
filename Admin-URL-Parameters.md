@@ -2,7 +2,9 @@ This page list the possible web URL parameters that can be used with the applica
 
 ### Demo Parameters
 
-To enable add the URL parameters to the default URL. One or more parameters can be added by using the '&' symbol. For ex., ?voice=true&debug=true
+To enable add the URL parameters to the default URL. One or more parameters can be added by using the '&' symbol. 
+
+For ex., ?voice=true&debug=true, resulting in a URL that looks like, private.id/demo/?voice=true&debug=true
 
 #### Business Functions
 
