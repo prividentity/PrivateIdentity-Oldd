@@ -6,14 +6,17 @@
 * Enroll your face and/or voice
 
 * Inspect Element, and then select the Console Tab
-> (insert image of right click menu, and console location)
+
+> ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/chrome-right-click-inspect.png)
+> ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/inspect_console.png)
 * Your subject ID will show up as either `subject_id:#` or `guid:#`
-> (insert image of console here, mark id location)
+> ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/SubjectID_Console_During_Enrollment.png)
 
 **Method 2** (after enrollment):> 
 * In the URL use the parameter &action=predict
 
 * Inspect Element, and the select the Console Tab
-> (insert image of right click menu, and console location)
+> ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/chrome-right-click-inspect.png)
+> ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/inspect_console.png)
 * Your subject ID will show up as either `subject_id:#` or `guid:#`
-> (insert image of console here, mark id location)
+> ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/SubjectID_Console_During_Enrollment.png)
