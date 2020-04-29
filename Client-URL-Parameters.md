@@ -1,8 +1,8 @@
-This page list the possible web URL parameters that can be used with the application to enable or disable various functionalities.
+This page lists the possible web URL parameters that can be used with the application to enable or disable various functionalities.
 
 ### Demo Parameters
 
-To enable add the URL parameters to the default URL. One or more parameters can be added by using the '&' symbol. For ex., ?voice=true&liveness=true
+To enable a certain parameter add the URL parameters to the default URL. One or more parameters can be added by using the '&' symbol. For ex., &voice=true&liveness=true, resulting in a URL that looks like, private.id/demo/?apiKey=xxxx&voice=true&liveness=true
 
 #### Business Functions
 
