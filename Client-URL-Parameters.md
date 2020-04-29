@@ -46,7 +46,7 @@ To enable add the URL parameters to the default URL. One or more parameters can 
 |clientDebug|True / false|null|Debug glasses check and download images in browser.|
 |showPermissionDialog|True / false|false|Show permission dialog on oAuth|
 |role_id|Numeric value|null|User role ID to update|
-|tag|Numeric value|null|Tag to update for a user|
+|tag|String value|null|Tag to update for a user|
 |value|Numeric value|null|Value for user tag we want to update|
 
 
