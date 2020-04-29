@@ -6,6 +6,7 @@
 * Inspect Element, and then select the Console Tab
 
 * Your subject ID will show up as either `subject_id:#` or `guid:#`
+![](file:///home/scott/Screenshot%20from%202020-04-29%2011-11-47.png)
 
 **Method 2** (after enrollment):
 
