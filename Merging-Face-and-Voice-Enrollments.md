@@ -1,4 +1,4 @@
-This page documents how to update enrolled user modalities. This document assumes a user is already enrolled by only one modality (like face or voice) and want to add another one on top of it.
+This page documents how to update enrolled user modalities. This document assumes a user is already enrolled by only one modality (like face or voice) and they want to add another one on top of it.
 
 The following workflow must start with the user predicting with one modality to get his subject_id. Afterwards, the user should manually go to the application interface, with the newly requested modality equaling to true.
 
@@ -28,7 +28,7 @@ NOTE: the other modality should be set to false for this feature to work.
 
 **Response**
 
-After the finishes updating his enroll, the response from the server will be looking as follows:
+After the merge is complete, the response from the console will be seen as the following, note that the ID will be the same as the original ID:
 
 ```
 {
