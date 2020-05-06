@@ -50,8 +50,8 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |role_id|Numeric value|null|User role ID to update|
 |tag|String value|null|Tag to update for a user|
 |value|Numeric value|null|Value for user tag we want to update|
-|attempts|Numeric value|3|Number of attempts to try prediction when action=predict
-
+|attempts|Numeric value|3|Number of attempts to try prediction when action=predict|
+|email|Email ID|null|Email id for PII data when action=enroll|
 
 
 ### WebAuthN
