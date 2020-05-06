@@ -28,7 +28,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |localMode|true / false|false|Local mode to work offline.|
 |token|String value|null|Set token value|
 |redirect|link to redirect to|null|Redirection link after processing.|
-|idp|okta / azure/ gsuite|null|Set SAML destination|
+|idp|okta / ping / azure/ gsuite|null|Set SAML destination|
 |client_id|string value|null|Set client ID retrieved from our endpoints.|
 |responseType|string value|null|Set response type for oAuth|
 |redirect_uri|String value for a link|null|Set redirect URL for oAuth|
@@ -41,7 +41,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |RelayState| Link for SAML Relay state|null||
-|samlRequest| Encoded XML|null|Encoded XML request|
+|SAMLRequest| Encoded XML|null|Encoded XML request|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |okta|True / false|false|Use Okta as an SP|
 |hslType|1 / 2|2|Normalization algorithm used. 1 for HSL, 2 for CLAHE|
@@ -50,6 +50,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |role_id|Numeric value|null|User role ID to update|
 |tag|String value|null|Tag to update for a user|
 |value|Numeric value|null|Value for user tag we want to update|
+|attempts|Numeric value|3|Number of attempts to try prediction when action=predict
 
 
 
