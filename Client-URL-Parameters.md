@@ -44,7 +44,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |role_id|Numeric value|null|User role ID to update|
 |SAMLRequest| Encoded XML|null|Encoded XML request|
 |sessionid|Session ID|null|Set session ID for oAuth|
-|showPermissionDialog|True / false|false|Show permission dialog on oAuth|
+|showPermissionDialog|true / false|false|Show permission dialog on oAuth|
 |subject_id|Subject ID in numbers|null|Set subject ID of user|
 |tag|String value|null|Tag to update for a user|
 |token|String value|null|Set token value|
