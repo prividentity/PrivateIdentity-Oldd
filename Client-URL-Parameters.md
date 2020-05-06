@@ -33,31 +33,24 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |livenessImages| 1 or more images|10|Number of images to gather on face liveness|
 |livenessMSInterval| Time in millisecond |190|Time interval between each image gather on face liveness|
 |localMode|true / false|false|Local mode to work offline.|
-|oktaDomain|Okta domain without https://|null|Okta domain for SAML implementation|
-
-|whereToProcess|browser / nodeServer|browser|Set the processing destination.|
-
-
-|token|String value|null|Set token value|
-|redirect|link to redirect to|null|Redirection link after processing.|
-
-|responseType|string value|null|Set response type for oAuth|
-|redirect_uri|String value for a link|null|Set redirect URL for oAuth|
-|sessionid|Session ID|null|Set session ID for oAuth|
+|oauthScope|Scope value|null|Set scope value for oAuth|
 |oauthState|oAuth State|null|Set state value for oAuth|
-
-|subject_id|Subject ID in numbers|null|Set subject ID of user|
-
-|RelayState| Link for SAML Relay state|null||
-|SAMLRequest| Encoded XML|null|Encoded XML request|
 |okta|True / false|false|Use Okta as an SP|
-
-|showPermissionDialog|True / false|false|Show permission dialog on oAuth|
+|oktaDomain|Okta domain without https://|null|Okta domain for SAML implementation|
+|redirect|link to redirect to|null|Redirection link after processing.|
+|redirect_uri|String value for a link|null|Set redirect URL for oAuth|
+|RelayState| Link for SAML Relay state|null||
+|responseType|string value|null|Set response type for oAuth|
 |role_id|Numeric value|null|User role ID to update|
+|SAMLRequest| Encoded XML|null|Encoded XML request|
+|sessionid|Session ID|null|Set session ID for oAuth|
+|showPermissionDialog|True / false|false|Show permission dialog on oAuth|
+|subject_id|Subject ID in numbers|null|Set subject ID of user|
 |tag|String value|null|Tag to update for a user|
+|token|String value|null|Set token value|
 |value|Numeric value|null|Value for user tag we want to update|
 |voice|true / false|false|Enroll & Predict with voice|
-
+|whereToProcess|browser / nodeServer|browser|Set the processing destination.|
 
 ### WebAuthN
 |URL|Status|
