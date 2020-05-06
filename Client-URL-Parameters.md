@@ -1,6 +1,6 @@
 This page lists the possible web URL parameters that can be used with the application to enable or disable various functionalities.
 
-### Demo Parameters
+### URL Parameters
 
 To enable a certain parameter add the URL parameters to the default URL. One or more parameters can be added by using the '&' symbol.  
 
