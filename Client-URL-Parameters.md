@@ -13,29 +13,29 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |URL Parameter | Possible values |Default Value|Function | 
 |-----|----|---|-----|
 |action|predict / enroll|No default|Prediction only Default:face can be combined with voice: Enroll with face by default, can be combined with voice|
-|antiVideoSpoof|True / false|false|Video spoofing|
+|antiVideoSpoof|true / false|false|Video spoofing|
 |apiKey| Value of apiKey|No default|Set apiKey for requests to execute|
 |attempts|Numeric value|3|Number of attempts to try prediction when action=predict|
-|clientDebug|True / false|null|Debug glasses check and download images in browser.|
+|clientDebug|true / false|null|Debug glasses check and download images in browser.|
 |client_id|string value|null|Set client ID retrieved from our endpoints.|
 |debug|true / false|false|Set debug mode to help fix issues|
 |email|Email ID|null|Email id for PII data when action=enroll|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
 |faceLiveness| true / false|false|Check for Face liveness (Eye blink) during predict / enroll|
-|face| true / false|True|Enroll & predict with face|
+|face| true / false|true|Enroll & predict with face|
 |fingerPrint|true / false|false|Prediction using Fingerprint (In Progress)|
 |glassCheck|true / false|false|Turn glasses check on predict/enroll to on/off|
 |hslType|1 / 2|2|Normalization algorithm used. 1 for HSL, 2 for CLAHE|
 |idp|okta / ping / azure/ gsuite|null|Set SAML destination|
-|isEdge|True / false|false|Imitate Edge browser experience|
+|isEdge|true / false|false|Imitate Edge browser experience|
 |liveness|true / false|false|Verify the user by validating live sentences|
 |livenessImages| 1 or more images|10|Number of images to gather on face liveness|
 |livenessMSInterval| Time in millisecond |190|Time interval between each image gather on face liveness|
 |localMode|true / false|false|Local mode to work offline.|
 |oauthScope|Scope value|null|Set scope value for oAuth|
 |oauthState|oAuth State|null|Set state value for oAuth|
-|okta|True / false|false|Use Okta as an SP|
+|okta|true / false|false|Use Okta as an SP|
 |oktaDomain|Okta domain without https://|null|Okta domain for SAML implementation|
 |redirect|link to redirect to|null|Redirection link after processing.|
 |redirect_uri|String value for a link|null|Set redirect URL for oAuth|
