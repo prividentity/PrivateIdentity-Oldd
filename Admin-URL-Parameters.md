@@ -33,13 +33,14 @@ For ex., ?voice=true&debug=true, resulting in a URL that looks like, private.id/
 |action|addRoletoSubject|No default|Add role and subject to the system combined with role_id and subject_id|
 |action|deleteRole|No default|Delete role values from the system combined with role_id|
 |action|deleteRolefromSubject|No default|Delete role and subject from the system combined with role_id and subject_id|
-|action|deleteSubject|No default|Delete the subject from the system combined with subject_id|
+|action|deleteSubject|No default|Delete the subject from the system combined with subject_id or uuid|
 |glassCheck|true / false|false|Disables the glass check|
 |hlsType|1 / 2|2|1: Histogram Equalization 2:CLAHE method|
 |raw|true / false|false|Use with debug=true, addresses the non-hsl'd images|
 |role_id|role Id in the system|No default|Role id to delete role or add/delete role to the subject|
-|subject_id|subject Id in the system|No default|Subject id in the URL parameter|
+|subject_id|subject Id in the system|No default|Calls the subject id in the URL parameter to the current action|
 |tag|tag string|No default|Tag string to add role to the system|
+|uuid|uu Id in the system|No default|Calls the uuid in the URL parameter to the current action|
 |value|value string|No default|Value string to add role to the system|
 |whereToProcess|nodeServer / browser |browser|Routing the computation to the node|
 
