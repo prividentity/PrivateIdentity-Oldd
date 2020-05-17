@@ -19,4 +19,16 @@ POST “/node/generateEmbeddingsAndPredict”
 |api_key       |         api_key string to use this service|
 |images[]       |         base64 array containing images, and image file name for each one|
 
-The request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+Prediction images should have the size of 224 for height and width.Also the request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+
+A Predict API request example is as follows:
+```
+{
+    "api_key": "XXXXXXXX",
+    "images[]": "base64 image",
+    "images[]": "base64 image",
+    "images[]": "base64 image", 
+    "images[]": "base64 image",
+    ...
+}
+```
