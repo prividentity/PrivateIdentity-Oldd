@@ -99,4 +99,7 @@
 
 **NodeJS Endpoints**
 
+* [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Predict-Endpoint)
+
+
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
