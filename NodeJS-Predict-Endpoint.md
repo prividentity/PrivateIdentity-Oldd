@@ -1,23 +1,22 @@
-In this document, prediction process will be documented for each modality. Namely, face, voice, liveness, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and send them back to Python endpoints. 
+### Overview 
 
 
-      let formData = new FormData();
-      formData.append('api_key', this.apiKey);
+In this document, prediction process will be documented for each modality. Namely, face, voice, liveness, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and sends them back to Python endpoints. 
 
-      formData.append('server_extract_embedding', false);
-      if (token != null) formData.append('token', token);
-      let count = '0';
-      predictImages.forEach((element, index) => {
-        count++;
-        formData.append('images[]', element, count);
-      });
-      $.ajax({
-        type: 'POST',
-        contentType: false,
-        processData: false,
-        url: '/node/generateEmbeddingsAndPredict',
-        data: formData,
-        error: (response) => {
-          console.log('Error:', response);
-        }
-      })
+### Predict Overview
+
+NodeJS endpoints can be called directly to execute predict, enroll, or any other provided service. In the following examples, we will be exploring prediction process initiated from any device, to the NodeJS server.
+
+
+**Face Prediction Request - Base64 images case**
+
+The format of this API call is: 
+
+POST “/node/generateEmbeddingsAndPredict”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|api_key       |         api_key string to use this service|
+|images[]       |         base64 array containing images, and image file name for each one|
+
+The request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
