@@ -101,5 +101,6 @@
 
 * [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Predict-Endpoint)
 
+* [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Enroll-Endpoint)
 
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
