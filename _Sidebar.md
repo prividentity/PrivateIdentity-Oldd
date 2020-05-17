@@ -97,5 +97,6 @@
  
 * [client-cluster-setup](https://github.com/openinfer/PrivateIdentity/wiki/Client-Cluster-setup)
 
+**NodeJS Endpoints**
 
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
