@@ -1,7 +1,7 @@
 ### Overview 
 
 
-In this document, prediction process will be documented for each modality. Namely, face, voice, liveness, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and sends them back to Python endpoints. 
+In this document, prediction process will be documented for each modality. Namely, face, voice, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and sends them back to Python endpoints. 
 
 ### Predict Overview
 
