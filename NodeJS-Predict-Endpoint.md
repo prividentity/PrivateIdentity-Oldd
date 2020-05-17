@@ -73,3 +73,5 @@ A Predict API request example is as follows:
     "files_photo[]": [[]]
 }
 ```
+
+
