@@ -1,14 +1,12 @@
 ### Overview 
 
-
-In this document, the enrollment process will be documented for each modality. Namely, face, voice, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and sends them back to Python endpoints. 
+This document specifies the enrollment process for face, voice, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and sends them back to Python endpoints. 
 
 ### Enroll Overview
 
 NodeJS endpoints can be called directly to execute predict, enroll, or any other provided service. In the following examples, we will be exploring the enrollment process initiated from any device, to the NodeJS server.
 
 **Enrollment Request**
-
 
 The format of this API call is: 
 
@@ -22,7 +20,7 @@ POST “/node/ptEnroll”
 |audio | Only needed to send a debug voice file |
 |modality  | "voice" or "face", 
 
-Images should have the size of 224 for height and width.Also the request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+Images should have the size of 224 for height and width. Also the request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
 An Enroll API request example is as follows:
 ```
