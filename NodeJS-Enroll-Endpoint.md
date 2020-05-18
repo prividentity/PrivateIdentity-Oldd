@@ -60,24 +60,31 @@ The response of an Enroll request, if successful, returns a new enrollment, or a
 }
 ```
 
-### Postman Example Project for Enroll
+### Postman Example Project for Predict
 
-The Postman application illustrates a use case for the API calls, such as enroll. The example includes a file download at the bottom of this passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the enrollment.
+The Postman application illustrates a use case for the API calls, such as predict. The example includes a file download at the bottom of the passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the prediction.
 
-This is a step by step instructional on how to use Postman to view the api calls and their responses:
+This is a step by step instructional on how to use postman to view the api calls and their responses:
 
-1. Download Postman, and ensure it is functioning by logging into the application and viewing the user interface
+1. Download Postman, and ensure it is functional by logging into the application and viewing the user interface
 
 [Download Postman Here](https://www.postman.com/downloads/)
 ![Postman User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman%20UI.png)
-2. Download the package located here "". Unzip the file for Postman to import it. 
+2. Download the package located here [Postman Package](https://github.com/openinfer/PrivateIdentity/blob/master/JSEndpoint/EnrollMaterialandCalls.zip). Unzip the file for Postman to import it. 
 
-3. Import the package into Postman using the import feature and select the .json that has the API calls stored on it. 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/DownloadLocation.png)
 
-4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modalities. 
+3. Import the package into Postman using the import feature and select the .json that has the API calls.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Import_Location.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Import_Location_2.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Import_Location_3.png)
+4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modalities.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/PostMan_Collection.png)
+5. Select the relevant API call and then go over to the "body" tab in the center of the screen.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_Send_Location.png)
+6. Select the files you want to address. Use the files with a .jpg suffix for face or a .wav suffix for voice.  
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/File_Selection_Location.png)
+7. After file selection, process the request by clicking the "send" button.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/API_Selection+Body.png)
+8. The request response displays on the bottom of the screen.
 
-5. Select the API call you want to address, and then go over to the "body" tab in the center of the screen.
-
-6. Select the files you want to address. The package will have a test set of images, and a test voice file you can try enrolling and predicting with. 
-
-7. Once the files are selected, you can now send the request by clicking the top right button, and the response is located at the bottom of the screen.
