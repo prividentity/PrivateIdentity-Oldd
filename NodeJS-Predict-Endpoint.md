@@ -73,5 +73,26 @@ A Predict API request example is as follows:
     "files_photo[]": [[]]
 }
 ```
+### Postman Example Project for Enroll
+
+You can use the Postman application to make these API calls, such as predict. There is a file download at the bottom of this passage that will include an example API call for the face and voice modalities. Along with that file will include images and a voice file that you can select to demo the enroll.
+
+This is a step by step instructional on how to use postman to view the api calls and their responses:
+
+1. Download Postman, and ensure it is functioning by logging into the application and viewing the user interface
+
+[Download Postman Here](https://www.postman.com/downloads/)
+
+2. Download the package located here "". You will have to unzip the file in order for Postman to access it. 
+
+3. Import the package into Postman using the import feature and selecting the .json that has the API calls stored on it. 
+
+4. On the left hand side of the screen you will now be able to view the varying API calls, these address the different modalities and whether you are predicting or enrolling. 
+
+5. Select the API call you want to address, and then go over to the "body" tab in the center of the screen.
+
+6. Select the files you want to address. The package that was downloaded will have a test set of images, and a test voice file you can try enrolling and predicting with. 
+
+7. Once the files were selected, you can now send the request by clicking the top right button, and then the response should show up in the center bottom of the screen.
 
 
