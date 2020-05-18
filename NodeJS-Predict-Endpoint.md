@@ -4,7 +4,7 @@ This document explains how to utilize the NodeJS endpoints, which can handle API
 
 ### Predict Overview
 
-The NodeJS endpoint provides a interface for Prediction, and enrollment, or any other provided service. The following example, illustrates the prediction process through the NodeJS server.
+The NodeJS endpoint provides an interface for prediction, and enrollment, or any other provided service. The following example illustrates the prediction process through the NodeJS server.
 
 
 **Face And/Or Prediction Request -**
