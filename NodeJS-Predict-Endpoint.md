@@ -4,7 +4,7 @@ This document explains how to utilize the NodeJS endpoints, which can handle API
 
 ### Predict Overview
 
-Prediction, and Enrollment, or any other provided services are called through the NodeJS endpoints. In the following examples, the prediction process is illustrated through the NodeJS server.
+Prediction, and enrollment, or any other provided services are called through the NodeJS endpoints. In the following examples, the prediction process is illustrated through the NodeJS server.
 
 
 **Face And/Or Prediction Request -**
@@ -15,10 +15,11 @@ POST “/node/ptPredict”
 
 |Parameter      |            Value|
 |----------|--------------| 
-|modality | the modality can be selected to determine whether "face" and/or "voice" is being called
-|api_key       |         an api string will be necessary while accessing the api requests|
-|images[]       |         A base64 array containing images can be filled to utilize the face modality|
-|audio | array containing voice files |
+|modality | The modality determines whether the face, voice, and, or fingerprint biometrics are called. |
+|api_key       |         The api string is necessary to process the api requests, contact Private Identity to obtain the designated key |
+|images[]       | The images parameter correlates to the face modality, images inputted here are sent to the server in a base64 array |
+|audio | The audio parameter correlates to the voice modality, a voice file is inputted here |
+|fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, images inputted here are sent to the server in a base64 array |
 
 Prediction images should be 224 pixels in height and width. The request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
@@ -26,13 +27,17 @@ A Predict API request example is as follows:
 ```
 {
     "api_key": "XXXXXXXX",
-    "modality": "voice, face"
+    "modality": "voice, face, fingerprint"
     "images[]": "base64 image",
     "images[]": "base64 image",
     "images[]": "base64 image", 
     "images[]": "base64 image",
     ...
     "audio": "audio file",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image", 
+    "fingerprint[]": "base64 image",
 
 }
 ```
