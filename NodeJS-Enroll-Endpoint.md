@@ -15,13 +15,13 @@ POST “/node/ptEnroll”
 
 |Parameter      |            Value|
 |----------|--------------| 
-|modality | The modality determines whether the face, voice, and, or fingerprint biometrics are called. |
+|modality | The voice, face, and fingerprint biometrics are called via the modality parameter |
 |api_key       |         The api string is necessary to process the api requests, contact Private Identity to obtain the designated key |
-|images[]       | The images parameter correlates to the face modality, images inputted here are sent to the server in a base64 array |
-|audio | The audio parameter correlates to the voice modality, a voice file is inputted here |
-|fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, images inputted here are sent to the server in a base64 array |
+|images[]       | The images parameter correlates to the face modality, input the facial images here |
+|audio | The audio parameter correlates to the voice modality, input the voice file here |
+|fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, input the fingerprint images here |
 
-Accepted images are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+Images that are accepted are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
 An enroll API request example is as follows:
 ```
