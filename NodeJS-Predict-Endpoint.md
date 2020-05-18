@@ -4,7 +4,7 @@ This document explains how to utilize the NodeJS endpoints, which can handle API
 
 ### Predict Overview
 
-NodeJS endpoints can be called directly to execute a prediction, enrollment, or any other provided service. In the following examples, we will be exploring the prediction process initiated from any device, through the NodeJS server.
+Prediction, and Enrollment, or any other provided services are called through the NodeJS endpoints. In the following examples, the prediction process is illustrated through the NodeJS server.
 
 
 **Face And/Or Prediction Request -**
