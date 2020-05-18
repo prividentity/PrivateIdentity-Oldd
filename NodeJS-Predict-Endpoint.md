@@ -1,25 +1,24 @@
 ### Overview 
 
-
-In this document, prediction process will be documented for each modality. Namely, face, voice, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and sends them back to Python endpoints. 
+This document explains how to utilize the NodeJS endpoints, which can handle API requests and send them back to the Python endpoints.
 
 ### Predict Overview
 
-NodeJS endpoints can be called directly to execute predict, enroll, or any other provided service. In the following examples, we will be exploring prediction process initiated from any device, to the NodeJS server.
+NodeJS endpoints can be called directly to execute a prediction, enrollment, or any other provided service. In the following examples, we will be exploring the prediction process initiated from any device, through the NodeJS server.
 
 
 **Face Prediction Request - Base64 images case**
 
 The format of this API call is: 
 
-POST “/node/generateEmbeddingsAndPredict”
+POST “/node/ptPredict”
 
 |Parameter      |            Value|
 |----------|--------------| 
 |api_key       |         api_key string to use this service|
 |images[]       |         base64 array containing images, and image file name for each one|
 
-Prediction images should have the size of 224 for height and width.Also the request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+Prediction images should be 224 pixels in height and width. The request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
 A Predict API request example is as follows:
 ```
@@ -55,7 +54,7 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 
 The format of this API call is: 
 
-POST “/node/predict”
+POST “/node/ptPredict”
 
 |Parameter      |            Value|
 |----------|--------------| 
