@@ -26,11 +26,14 @@ A Predict API request example is as follows:
 ```
 {
     "api_key": "XXXXXXXX",
+    "modality": "voice, face"
     "images[]": "base64 image",
     "images[]": "base64 image",
     "images[]": "base64 image", 
     "images[]": "base64 image",
     ...
+    "audio": "audio file",
+
 }
 ```
 
@@ -51,32 +54,9 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 }
 ```
 
-**Face Prediction Request - Embeddings generated case**
-
-
-The format of this API call is: 
-
-POST “/node/ptPredict”
-
-|Parameter      |            Value|
-|----------|--------------| 
-|api_key       |         api_key string to use this service|
-| server_extract_embedding       |         Should be false for the NodeJS endpoint to structure the embeddings|
-|files_photo[]       |         Embeddings JSON stringified array|
-|images[]       |         Only needed to send debug images, should be base64 array containing images, and image file name for each one|
-
-Prediction images should have the size of 224 for height and width.Also the request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
-
-A Predict API request example is as follows:
-```
-{
-    "api_key": "XXXXXXXX",
-    "files_photo[]": [[]]
-}
-```
 ### Postman Example Project for Predict
 
-You can use the Postman application to make these API calls, such as predict. There is a file download at the bottom of this passage that will include an example API call for the face and voice modalities. Along with that file will include images and a voice file that you can select to demo the enroll.
+You can use the Postman application to make these API calls, such as predict. There is a file download at the bottom of this passage that will include an example API call for the face and voice modalities. Along with that file will include images and a voice file that you can select to demonstrate the prediction.
 
 This is a step by step instructional on how to use postman to view the api calls and their responses:
 
