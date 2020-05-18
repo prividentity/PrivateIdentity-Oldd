@@ -18,8 +18,8 @@ POST “/node/ptPredict”
 |modality | The modality parameter determines the biometric: "face, voice, fingerprint" |
 |api_key       |         The api string is necessary to process the api requests. Contact Private Identity to obtain the designated key |
 |images[]       | The images parameter is an array of facial image files |
-|audio | The audio parameter correlates to the voice modality, input the voice file here |
-|fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, input the fingerprint images here |
+|audio | The audio parameter is a voice file |
+|fingerprint[]  | The fingerprint is an array of fingerprint image files |
 
 Accepted images are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
@@ -61,11 +61,11 @@ The response of a Predict request, if successful, returns PII data in the follow
 
 ### Postman Example Project for Predict
 
-The Postman application illustrates a use case for the API calls, such as predict. The example includes a file download at the bottom of this passage. Included with the sample input files are voice and face instances.  Use these files to demonstrate the prediction.
+The Postman application illustrates a use case for the API calls, such as predict. The example includes a file download at the bottom of the passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the prediction.
 
 This is a step by step instructional on how to use postman to view the api calls and their responses:
 
-1. Download Postman, and ensure it is functioning by logging into the application and viewing the user interface
+1. Download Postman, and ensure it is functional by logging into the application and viewing the user interface
 
 [Download Postman Here](https://www.postman.com/downloads/)
 ![Postman User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman%20UI.png)
@@ -73,7 +73,7 @@ This is a step by step instructional on how to use postman to view the api calls
 
 3. Import the package into Postman using the import feature and select the .json that has the API calls.
 
-4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modaliies.
+4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modalities.
 
 5. Select the relevant API call and then go over to the "body" tab in the center of the screen.
 
