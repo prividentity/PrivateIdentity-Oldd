@@ -16,7 +16,7 @@ POST “/node/ptEnroll”
 |Parameter      |            Value|
 |----------|--------------| 
 |modality | The modality parameter determines the biometric: "face, voice, fingerprint" |
-|api_key       |         The api string is necessary to process the api requests, contact Private Identity to obtain the designated key |
+|api_key       |         The api string is necessary to process the api requests. Contact Private Identity to obtain the designated key |
 |images[]       | The images parameter is an array of facial image files |
 |audio | The audio parameter is a voice file |
 |fingerprint[]  | The fingerprint parameter is an array of fingerprint image files |
