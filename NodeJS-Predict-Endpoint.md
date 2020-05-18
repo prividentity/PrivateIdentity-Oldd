@@ -73,7 +73,7 @@ A Predict API request example is as follows:
     "files_photo[]": [[]]
 }
 ```
-### Postman Example Project for Enroll
+### Postman Example Project for Predict
 
 You can use the Postman application to make these API calls, such as predict. There is a file download at the bottom of this passage that will include an example API call for the face and voice modalities. Along with that file will include images and a voice file that you can select to demo the enroll.
 
@@ -82,7 +82,7 @@ This is a step by step instructional on how to use postman to view the api calls
 1. Download Postman, and ensure it is functioning by logging into the application and viewing the user interface
 
 [Download Postman Here](https://www.postman.com/downloads/)
-
+![Postman User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman%20UI.png)
 2. Download the package located here "". You will have to unzip the file in order for Postman to access it. 
 
 3. Import the package into Postman using the import feature and selecting the .json that has the API calls stored on it. 
