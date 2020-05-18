@@ -61,7 +61,7 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 
 ### Postman Example Project for Predict
 
-The Postman application illustrates a use case for the API calls, such as predict. The example includes a =file download at the bottom of this passage in example API call for the face and voice modalities. Included with the sample input files are voice and face instances.  Use these files to demonstrate the prediction.
+The Postman application illustrates a use case for the API calls, such as predict. The example includes a file download at the bottom of this passage. Included with the sample input files are voice and face instances.  Use these files to demonstrate the prediction.
 
 This is a step by step instructional on how to use postman to view the api calls and their responses:
 
@@ -69,16 +69,16 @@ This is a step by step instructional on how to use postman to view the api calls
 
 [Download Postman Here](https://www.postman.com/downloads/)
 ![Postman User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman%20UI.png)
-2. Download the package located here "". You will have to unzip the file in order for Postman to access it. 
+2. Download the package located here "". Unzip the file for Postman to import it. 
 
-3. Import the package into Postman using the import feature and selecting the .json that has the API calls stored on it. 
+3. Import the package into Postman using the import feature and select the .json that has the API calls stored on it. 
 
-4. On the left hand side of the screen you will now be able to view the varying API calls, these address the different modalities and whether you are predicting or enrolling. 
+4. The API calls are located on the left hand side of the screen, these address the different modalities and whether you are predicting or enrolling. 
 
 5. Select the API call you want to address, and then go over to the "body" tab in the center of the screen.
 
-6. Select the files you want to address. The package that was downloaded will have a test set of images, and a test voice file you can try enrolling and predicting with. 
+6. Select the files you want to address. The package will have a test set of images, and a test voice file you can try enrolling and predicting with. 
 
-7. Once the files were selected, you can now send the request by clicking the top right button, and then the response should show up in the center bottom of the screen.
+7. Once the files are selected, you can now send the request by clicking the top right button, and the response is located at the bottom of the screen.
 
 
