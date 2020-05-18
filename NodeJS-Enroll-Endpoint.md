@@ -62,9 +62,9 @@ The response of an Enroll request, if successful, returns a new enrollment, or a
 
 ### Postman Example Project for Enroll
 
-The Postman application illustrates a use case for the API calls, such as enroll. The example includes a file download at the bottom of this passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the prediction.
+The Postman application illustrates a use case for the API calls, such as enroll. The example includes a file download at the bottom of this passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the enrollment.
 
-This is a step by step instructional on how to use postman to view the api calls and their responses:
+This is a step by step instructional on how to use Postman to view the api calls and their responses:
 
 1. Download Postman, and ensure it is functioning by logging into the application and viewing the user interface
 
