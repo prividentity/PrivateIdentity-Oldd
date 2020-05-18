@@ -4,7 +4,7 @@ This document explains how to utilize the NodeJS endpoints, which can handle API
 
 ### Enroll Overview
 
-Prediction, and enrollment, or any other provided services are called through the NodeJS endpoints. In the following examples, the enrollment process is illustrated through the NodeJS server.
+The NodeJS endpoint provides an interface for prediction, and enrollment, or any other provided service. The following example illustrates the enrollment process through the NodeJS server.
 
 
 **Enrollment Request -**
@@ -17,9 +17,9 @@ POST “/node/ptEnroll”
 |----------|--------------| 
 |modality | The modality parameter determines the biometric: "face, voice, fingerprint" |
 |api_key       |         The api string is necessary to process the api requests, contact Private Identity to obtain the designated key |
-|images[]       | The images parameter correlates to the face modality, input the facial images here |
-|audio | The audio parameter correlates to the voice modality, input the voice file here |
-|fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, input the fingerprint images here |
+|images[]       | The images parameter is an array of facial image files |
+|audio | The audio parameter is a voice file |
+|fingerprint[]  | The fingerprint parameter is an array of fingerprint image files |
 
 Images that are accepted are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
@@ -44,7 +44,7 @@ An enroll API request example is as follows:
 
 **Response**
 
-The response of a Enroll request, if meeting confidence thresholds, returns a new enrollment, or an error if the user is already enrolled:
+The response of an Enroll request, if successful, returns a new enrollment, or an error if the user is already enrolled:
 ```
 {
      {
@@ -60,9 +60,9 @@ The response of a Enroll request, if meeting confidence thresholds, returns a ne
 }
 ```
 
-### Postman Example Project for Predict
+### Postman Example Project for Enroll
 
-The Postman application illustrates a use case for the API calls, such as predict. The example includes a file download at the bottom of this passage. Included with the sample input files are voice and face instances.  Use these files to demonstrate the prediction.
+The Postman application illustrates a use case for the API calls, such as enroll. The example includes a file download at the bottom of this passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the prediction.
 
 This is a step by step instructional on how to use postman to view the api calls and their responses:
 
@@ -74,7 +74,7 @@ This is a step by step instructional on how to use postman to view the api calls
 
 3. Import the package into Postman using the import feature and select the .json that has the API calls stored on it. 
 
-4. The API calls are located on the left hand side of the screen, these address the different modalities and whether you are predicting or enrolling. 
+4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modalities. 
 
 5. Select the API call you want to address, and then go over to the "body" tab in the center of the screen.
 
