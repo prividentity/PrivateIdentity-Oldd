@@ -21,7 +21,7 @@ POST “/node/ptEnroll”
 |audio | The audio parameter correlates to the voice modality, a voice file is inputted here |
 |fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, images inputted here are sent to the server in a base64 array |
 
-Accept images are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+Accepted images are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
 An enroll API request example is as follows:
 ```
