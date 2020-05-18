@@ -16,8 +16,8 @@ POST “/node/ptPredict”
 |Parameter      |            Value|
 |----------|--------------| 
 |modality | The modality parameter determines the biometric: "face, voice, fingerprint" |
-|api_key       |         The api string is necessary to process the api requests, contact Private Identity to obtain the designated key |
-|images[]       | The images parameter correlates to the face modality, input the facial images here |
+|api_key       |         The api string is necessary to process the api requests. Contact Private Identity to obtain the designated key |
+|images[]       | The images parameter is an array of facial image files |
 |audio | The audio parameter correlates to the voice modality, input the voice file here |
 |fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, input the fingerprint images here |
 
@@ -44,7 +44,7 @@ A Predict API request example is as follows:
 
 **Response**
 
-The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
+The response of a Predict request, if successful, returns PII data in the following format:
 ```
 {
     "PII": {
@@ -71,14 +71,14 @@ This is a step by step instructional on how to use postman to view the api calls
 ![Postman User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman%20UI.png)
 2. Download the package located here "". Unzip the file for Postman to import it. 
 
-3. Import the package into Postman using the import feature and select the .json that has the API calls stored on it. 
+3. Import the package into Postman using the import feature and select the .json that has the API calls.
 
-4. The API calls are located on the left hand side of the screen, these address the different modalities and whether you are predicting or enrolling. 
+4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modaliies.
 
-5. Select the API call you want to address, and then go over to the "body" tab in the center of the screen.
+5. Select the relevant API call and then go over to the "body" tab in the center of the screen.
 
-6. Select the files you want to address. The package will have a test set of images, and a test voice file you can try enrolling and predicting with. 
+6. Select the files you want to address. Use the files with a .jpg suffix for face or a .wav suffix for voice.  
 
-7. Once the files are selected, you can now send the request by clicking the top right button, and the response is located at the bottom of the screen.
+7. After file selection, process the request by clicking the "send" button.
 
 
