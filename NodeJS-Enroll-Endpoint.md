@@ -1,8 +1,11 @@
-### Enroll Endpoint
+### Overview 
 
-To enroll a user, we take as input the PII Data which is a set of tag/value pairs (any tag, such as an ID number or GUID is acceptable; this does not need be PII) and the feature vectors used for training given as input under the “PII” and “features” fields respectively. Using a Global UUID a new identity is created in the persistent engine corresponding to the PII provided. 
 
-The api_key parameter must be available in request payload, in string value.
+In this document, the enrollment process will be documented for each modality. Namely, face, voice, and fingerprint modalities. This document utilizes NodeJS endpoints, which handles requests and sends them back to Python endpoints. 
+
+### Enroll Overview
+
+NodeJS endpoints can be called directly to execute predict, enroll, or any other provided service. In the following examples, we will be exploring the enrollment process initiated from any device, to the NodeJS server.
 
 **Request**
 
