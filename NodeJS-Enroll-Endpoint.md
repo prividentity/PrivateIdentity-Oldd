@@ -7,43 +7,34 @@ In this document, the enrollment process will be documented for each modality. N
 
 NodeJS endpoints can be called directly to execute predict, enroll, or any other provided service. In the following examples, we will be exploring the enrollment process initiated from any device, to the NodeJS server.
 
-**Request**
+**Enrollment Request**
 
-The format of this API call is:  
 
-POST “/node/enroll”
+The format of this API call is: 
 
-|Parameter     |         Value| 
-|-----|----|
-|PII           |         Tag/Value pairs|
-|Features      |         Type, Name, Feature Array. Type is voice, face or fingerprint.|
-|api_key      |         api_key value in string.|
+POST “/node/ptEnroll”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|api_key       |         api_key string to use this service|
+| server_extract_embedding       |         Should be false for the NodeJS endpoint to structure the embeddings|
+|images[]       |         Only needed to send debug images, should be base64 array containing images, and image file name for each one|
+|audio | Only needed to send a debug voice file |
+|modality  | "voice" or "face", 
+
+Images should have the size of 224 for height and width.Also the request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
 An Enroll API request example is as follows:
 ```
 {
-    "PII": {
-       "name": "Nguyen",
-	"id": "1008023",
-	...
-       "address": "23 Scott Street"
-    },
-    "features": [
-	{“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },
-	{“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},
-        {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},
-
-	…
-	{}
-    ]
-    "api_key": "xxxxx"
+    "api_key": "XXXXXXXX",
+    "files_photo[]": [[]]
 }
 ```
+Response
 
-**Response**
+{
 
-The response of an Enroll request returns O as Success given data validation and database storage success.
-The response returns -1 if the user already exists in the model.
-The response returns -2 if the embedding distance is too far caused by at least one bad enroll embedding (usually caused by a bad enroll image).
+### Postman Example Project for Enroll
 
-If the api_key is not present in the request payload, an error message will be returned and the user will not be enrolled.
+You can use the Postman application to make these API calls, such as enroll. There is a file download at the bottom of this passage that will include an example API call for the face and voice modalities. Along with that file will include images and a voice file that you can select to demo the enroll
