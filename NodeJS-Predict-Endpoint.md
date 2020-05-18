@@ -21,7 +21,7 @@ POST “/node/ptPredict”
 |audio | The audio parameter correlates to the voice modality, a voice file is inputted here |
 |fingerprint[]  | The fingerprint parameter correlates to the fingerprint modality, images inputted here are sent to the server in a base64 array |
 
-Prediction images should be 224 pixels in height and width. The request payload must be in the format of FormData. For more information: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+Accepted images are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
 
 A Predict API request example is as follows:
 ```
