@@ -4,7 +4,7 @@ This document explains how to utilize the NodeJS endpoints, which can handle API
 
 ### Predict Overview
 
-Prediction, and enrollment, or any other provided services are called through the NodeJS endpoints. In the following examples, the prediction process is illustrated through the NodeJS server.
+The NodeJS endpoint provides a interface for Prediction, and enrollment, or any other provided service. The following example, illustrates the prediction process through the NodeJS server.
 
 
 **Face And/Or Prediction Request -**
@@ -61,7 +61,7 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 
 ### Postman Example Project for Predict
 
-You can use the Postman application to make these API calls, such as predict. There is a file download at the bottom of this passage that will include an example API call for the face and voice modalities. Along with that file will include images and a voice file that you can select to demonstrate the prediction.
+The Postman application illustrates a use case for the API calls, such as predict. The example includes a =file download at the bottom of this passage in example API call for the face and voice modalities. Included with the sample input files are voice and face instances.  Use these files to demonstrate the prediction.
 
 This is a step by step instructional on how to use postman to view the api calls and their responses:
 
