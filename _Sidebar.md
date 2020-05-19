@@ -71,9 +71,9 @@
 
 * [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admin-URL-Parameters)
 
-[**Demo Parameter Usage**](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID)
+[**Demo Parameter Usage**](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage)
 
-* [How to find your Subject ID on /a/](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#How-to-find-your Subject-ID-on-/a/)
+* [How to find your Subject ID on /a/](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#How-to-find-your)
 
 * [Merging Face and Voice Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Merging-Face-and-Voice-Enrollments)
 
