@@ -80,7 +80,7 @@ This is a step by step instructional on how to use postman to view the api calls
 4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modalities.
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/PostMan_Collection.png)
 5. Select the relevant API call and then go over to the "body" tab in the center of the screen.
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_Send_Location.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_Body_Location.png)
 6. Select the files you want to address. Use the files with a .jpg suffix for face or a .wav suffix for voice.  
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/File_Selection_Location.png)
 7. After file selection, process the request by clicking the "send" button.
