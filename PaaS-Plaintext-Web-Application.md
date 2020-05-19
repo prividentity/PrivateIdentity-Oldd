@@ -1,8 +1,8 @@
-## setup PaaS plaintext web application ##
+## Setup PaaS plaintext web application ##
 
 ## Clone project ##
-
-   git clone git@github.com:openinfer/pb-web.git
+    
+    `git clone git@github.com:openinfer/pb-web.git`
 
 ### Setup Environment variables ###
 
