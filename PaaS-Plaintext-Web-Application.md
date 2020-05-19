@@ -12,8 +12,8 @@
 
 Note: Here **test** is your cluster name. Please replace Frontend, Backend URL as per your requirements in variables-test.sh 
 eg. 
-    ``export FRONTEND=test.private.id
-      export BACKEND=dev.private.id``
+     export FRONTEND=test.private.id
+     export BACKEND=dev.private.id
 
      FRONTEND:- Replace value of this variable with your domain name which you want to use to access node app.
      BACKEND:-  Replace value of this variables with your backend python serve.
