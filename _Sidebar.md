@@ -75,7 +75,7 @@
 
 * [How to find your Subject ID on /a/](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#How-to-find-your)
 
-* [Merging Face and Voice Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Merging-Face-and-Voice-Enrollments)
+* [Merging Face and Voice Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#Merging-Face-and-Voice-Enrollments)
 
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
