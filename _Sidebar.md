@@ -97,10 +97,12 @@
  
 * [client-cluster-setup](https://github.com/openinfer/PrivateIdentity/wiki/Client-Cluster-setup)
 
-[**NodeJS Endpoints**](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Predict-Endpoint)
+[**NodeJS Endpoints**](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint)
 
-* [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Predict-Endpoint)
+* [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Predict-Overview)
 
-* [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Enroll-Endpoint)
+* [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Enroll-Overview)
+
+*[Postman Demo](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Enroll-Overview)
 
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
