@@ -25,3 +25,7 @@ eg.
     . ./cluster-run.sh
 
 Note: This command will build docker image and put that docker image into kubernetes cluster and you will be able to use Frontend URL to access it.
+
+### Setup SSL certs ###
+
+https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#Steps-to-Add-SSL-certs-for-domain
