@@ -73,7 +73,7 @@
 
 [**Demo Parameter Usage**](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID)
 
-* [Finding Your Subject ID](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID)
+* [How to find your Subject ID on /a/](https://github.com/openinfer/PrivateIdentity/wiki/#How-to-find-your Subject-ID-on-/a/)
 
 * [Merging Face and Voice Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Merging-Face-and-Voice-Enrollments)
 
