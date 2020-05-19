@@ -1,6 +1,6 @@
 In this section, we will have an overview of how PrivateIdentity has configured as an Identity Provider for some of the leading secure identity management (IM) providers.
 
-Integration with external IM providers can be achieved in lot of ways. Security Assertion Markup Language (SAML) 2.0 is one of the widely used techniques used for authentication. A general overview of the flow is explained in the link [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0)
+Integration with external IM providers can be achieved in a lot of ways. Security Assertion Markup Language (SAML) 2.0 is one of the widely used techniques used for authentication. A general overview of the flow is explained in the link [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0)
 
 There are two parties involved in the process:
 
@@ -58,7 +58,14 @@ The following screenshots show a sample demonstration of authentication done wit
 
 1. Logging into the dropbox application as a service provider [Sample URL](https://www.dropbox.com/sso/7879772650).
 2. Ping Identity redirects the user to IP authentication.
+![Ping Predict](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_predict.png)
+
 3. The user gets authenticated by the requested modality e.g., face and if the user is authenticated successfully a success response will be sent to SP.
 4. If the user gets authenticated successfully, the user will be redirected to the successful login page.
+![Ping Success](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_success.png)
+
 5. If the user does not get authenticated, Ping identity redirects it to the enroll flow followed by active directory authentication.
-6.  Upon successful enroll the user details are updated in the active directory.The authentication followed by that would work on successful predict.
+![Ping Enroll flow](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_enroll.png)
+
+6.  Upon successful enroll the user details are updated in the active directory. The authentication followed by that would work on successful prediction.
+![Ping Success](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_success.png)
