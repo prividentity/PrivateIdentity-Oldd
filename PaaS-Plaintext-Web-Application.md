@@ -10,7 +10,7 @@
     cp variables.sh variables-test.sh  
     vi variables-test.sh
 
-Note: Here **test ** is your cluster name. Please replace Frontend, Backend URL as per your requirements in variables-test.sh 
+Note: Here **test** is your cluster name. Please replace Frontend, Backend URL as per your requirements in variables-test.sh 
 eg. export FRONTEND=test.private.id
     export BACKEND=dev.private.id
 
