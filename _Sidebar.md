@@ -71,7 +71,7 @@
 
 * [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admin-URL-Parameters)
 
-**Demo Parameter Usage**
+[**Demo Parameter Usage**](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID)
 
 * [Finding Your Subject ID](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID)
 
@@ -97,7 +97,7 @@
  
 * [client-cluster-setup](https://github.com/openinfer/PrivateIdentity/wiki/Client-Cluster-setup)
 
-**NodeJS Endpoints**
+[**NodeJS Endpoints**](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Predict-Endpoint)
 
 * [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Predict-Endpoint)
 
