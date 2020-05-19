@@ -1,6 +1,7 @@
 In this section, we will have an overview of how PrivateIdentity has configured as an Identity Provider for some of the leading secure identity management (IM) providers.
 
-Integration with external IM 
+Integration with external IM providers
+
 ## Okta
 <br/>
 Okta, Inc. is a publicly-traded identity and access management company based in San Francisco. It provides cloud software that helps companies manage and secure user authentication into modern applications, and for developers to build identity controls into applications, website web services, and devices.   
