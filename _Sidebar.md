@@ -103,6 +103,6 @@
 
 * [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Enroll-Overview)
 
-*[Postman Demo](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Enroll-Overview)
+* [Postman Demo](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Postman-Example-Project-for-Predict)
 
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
