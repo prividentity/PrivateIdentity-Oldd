@@ -22,7 +22,7 @@
 * Your subject ID will show up as either `subject_id:#` or `guid:#`
 > ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/SubjectID_Console_During_Enrollment.png)
 
-###
+### Merging Face and Voice Enroll
 
 This page documents how to update enrolled user modalities. This document assumes a user is already enrolled by only one modality (like face or voice) and they want to add another one on top of it. 
 
