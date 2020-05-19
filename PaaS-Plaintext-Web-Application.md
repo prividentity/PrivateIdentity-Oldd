@@ -28,6 +28,6 @@ Note: This command will build docker image and put that docker image into kubern
 
 ### Setup SSL certs ###
 
-To setup SSL on you domain please follow below doc.
+To setup SSL on your domain please follow below doc.
 
 https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#Steps-to-Add-SSL-certs-for-domain
