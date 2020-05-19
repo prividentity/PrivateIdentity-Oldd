@@ -34,6 +34,20 @@ The following screenshots show a sample demonstration of authentication done wit
 4. If the user gets authenticated successfully, the user will be redirected to the successful login page.
 
 ## Ping Identity
-
-PingFederate is an enterprise federation server that enables user authentication and single sign-on. It serves as a global authentication authority that allows employees, customers, and partners to securely access all the applications they need from any device.
 <br/>
+PingFederate is an enterprise federation server that enables user authentication and single sign-on. It serves as a global authentication authority that allows employees, customers, and partners to securely access all the applications they need from any device.
+
+Ping Identity currently verifies the user via Active Directory, so the SAML response <Subject.Name.Id> should contain the UUID from the IP.
+
+Ping Identity can differentiate between successful and unsuccessful attempts. Currently, the modality that has been configured with face, voice, and face & voice.
+
+Ping Identity provides the subject name in the SAML Request which expects to be sent back in the SAML response. If the user is not found on predict it will proceed with the enroll flow to register the user in the Active directory.
+
+The following screenshots show a sample demonstration of authentication done with face modality.
+
+1. Logging into the dropbox application as a service provider [Sample URL](https://www.dropbox.com/sso/7879772650).
+2. Ping Identity redirects the user to IP authentication.
+3. The user gets authenticated by the requested modality e.g., face and if the user is authenticated successfully a success response will be sent to SP.
+4. If the user gets authenticated successfully, the user will be redirected to the successful login page.
+5. If the user does not get authenticated, Ping identity redirects it to the enroll flow followed by active directory authentication.
+6.  Upon successful enroll the user details are updated in the active directory.The authentication followed by that would work on successful predict.
