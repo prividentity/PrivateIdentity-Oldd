@@ -30,10 +30,19 @@ The following screenshots show a sample demonstration of authentication done wit
 
 1. Logging into okta as a service provider [Sample URL](https://private.okta.com).
 
+![Okta Login](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_login.png)
+
 2. Okta uses a multi-factor authentication followed by a password prompt, redirecting the user to IP authentication.
+
+![Okta Multi Factor](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_multi_factor.png)
+
 3. The user gets authenticated by the requested modality e.g., face and if the user is authenticated successfully a success response will be sent to SP.
-![Login Okta](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_IP_predict.png)
+
+![IP Face Modality](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_IP_predict.png)
+
 4. If the user gets authenticated successfully, the user will be redirected to the successful login page.
+
+![Okta Success](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_success.png)
 
 ## Ping Identity
 <br/>
