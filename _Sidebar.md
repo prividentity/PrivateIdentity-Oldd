@@ -51,6 +51,8 @@
 
 * [To Do](https://github.com/openinfer/PrivateIdentity/wiki/To-Do)
 
+* [PaaS Client Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Plaintext-Web-Application)
+
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
 * [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
