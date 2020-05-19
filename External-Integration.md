@@ -24,6 +24,16 @@ Okta, Inc. is a publicly-traded identity and access management company based in 
 
 Okta provides authentication services across many identity management firms. In our case, we have used Okta as an SP while using private identity services as an IP. This is achieved by handshaking the SAML authentication during the verification process between Okta and Private Identity.
 
+Okta currently verifies the user through email ID, so the SAML response <Subject.Name.Id> should contain the email from the IP.
 
-## Ping
+The following screenshots show a sample demonstration of authentication done with face modality.
+
+1. Logging into okta as a service provider.
+2. Okta uses a multi-factor authentication followed by a password prompt, redirecting the user to IP authentication.
+3. The user gets authenticated by the requested modality e.g., face and if the user is authenticated successfully a success response will be sent to SP.
+4. If the user gets authenticated successfully, the user will be redirected to the successful login page.
+
+## Ping Identity
+
+PingFederate is an enterprise federation server that enables user authentication and single sign-on. It serves as a global authentication authority that allows employees, customers and partners to securely access all the applications they need from any device.
 <br/>
