@@ -16,7 +16,7 @@ eg.
      export BACKEND=dev.private.id
 
      FRONTEND:- Replace value of this variable with your domain name which you want to use to access node app.
-     BACKEND:-  Replace value of this variables with your backend python serve.
+     BACKEND:-  Replace value of this variables with your backend python server.
      CLUSTER_NAME:- Replace value of this variable with your kubernetes cluster name.
 
 ### Run Cluster command ###
