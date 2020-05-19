@@ -65,7 +65,7 @@
 
 * [Verified Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
 
-* [External Integration]()
+* [External Integration](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration)
 
 * [URL Parameters (for clients)](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters)
 
