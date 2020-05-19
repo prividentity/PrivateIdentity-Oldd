@@ -73,8 +73,6 @@
 
 **Demo Parameter Usage**
 
-* [Example Parameters](https://github.com/openinfer/PrivateIdentity/wiki/Example-Parameters)
-
 * [Finding Your Subject ID](https://github.com/openinfer/PrivateIdentity/wiki/Finding-Your-Subject-ID)
 
 * [Merging Face and Voice Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Merging-Face-and-Voice-Enrollments)
