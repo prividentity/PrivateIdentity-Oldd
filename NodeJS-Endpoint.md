@@ -129,10 +129,10 @@ This is a step by step instructional on how to use postman to view the api calls
 ![Postman User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_1.png)
 2. Download the package located here [Postman Package](https://github.com/openinfer/PrivateIdentity/blob/master/JSEndpoint/EnrollMaterialandCalls.zip). Unzip the file for Postman to import it. 
 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_2.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman2.png)
 
 3. Import the package into Postman using the import feature and select the .json that has the API calls.
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman3.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_2.png)
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_4.png)
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_5.png)
 4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modalities.
