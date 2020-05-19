@@ -59,6 +59,64 @@ The response of a Predict request, if successful, returns PII data in the follow
 }
 ```
 
+### Enroll Overview
+
+The NodeJS endpoint provides an interface for prediction, and enrollment, or any other provided service. The following example illustrates the enrollment process through the NodeJS server.
+
+
+**Enrollment Request -**
+
+The format of this API call is: 
+
+POST “/node/ptEnroll”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|modality | The modality parameter determines the biometric: "face, voice, fingerprint" |
+|api_key       |         The api string is necessary to process the api requests. Contact Private Identity to obtain the designated key |
+|images[]       | The images parameter is an array of facial image files |
+|audio | The audio parameter is a voice file |
+|fingerprint[]  | The fingerprint parameter is an array of fingerprint image files |
+
+Images that are accepted are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+
+An enroll API request example is as follows:
+```
+{
+    "api_key": "XXXXXXXX",
+    "modality": "voice, face, fingerprint"
+    "images[]": "base64 image",
+    "images[]": "base64 image",
+    "images[]": "base64 image", 
+    "images[]": "base64 image",
+    ...
+    "audio": "audio file",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image", 
+    "fingerprint[]": "base64 image",
+
+}
+```
+
+**Response**
+
+The response of an Enroll request, if successful, returns a new enrollment, or an error if the user is already enrolled:
+```
+{
+     {
+     "status: 0"
+     "UUID:" "XXXXXX"
+     "subject id:" "XXXXX"
+     }
+  or {
+     "status: -1"
+     "subject id:"User found in registry"
+     "subject id:" "XXXXX"
+        
+}
+```
+
 ### Postman Example Project for Predict
 
 The Postman application illustrates a use case for the API calls, such as predict. The example includes a file download at the bottom of the passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the prediction.
