@@ -37,7 +37,7 @@ Steps to setup Private Identity as IDP in Okta:
 
 ![Okta Setup 2](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_2.png)
 
-4. Fill in the parameters required. The Desired IDP name can be chosen for readability. Choose IdP Usage as Factory only. Fill in the IdP Issuer URI. Currently, the setup is configured with [Private ID](https://devel.private.id). IdP Single Sign-On URL will have the URL for the desired modality authentication. For e.g., if the user wants to get authenticated via face then the URL will be [Face Modality](https://private.id/a/?idp=okta&version=0.9&apiKey=1962&oktaDomain=private.okta.com&action=predict). Upload the public key signature provided by the IdP.
+4. Fill in the parameters required. The Desired IDP name can be chosen for readability. Choose IdP Usage as Factory only. Fill in the IdP Issuer URI. Currently, the setup is configured with [Private ID](https://devel.private.id). IdP Single Sign-On URL will have the URL for the desired modality authentication. E.g., if the user wants to get authenticated via face then the URL will be [Face Modality](https://private.id/a/?idp=okta&version=0.9&apiKey=1962&oktaDomain=private.okta.com&action=predict). Upload the public key signature provided by the IdP.
 
 ![Okta Setup 3](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_3.png)
 
@@ -49,7 +49,7 @@ Steps to setup Private Identity as IDP in Okta:
 
 ![Okta Setup 5](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_5.png)
 
-7. Choose IdP Factor for selecting the configured IdP.
+7. Choose the IdP Factor for selecting the configured IdP.
 
 ![Okta Setup 6](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_6.png)
 
@@ -69,7 +69,7 @@ Steps to setup Private Identity as IDP in Okta:
 
 ![Okta Setup 10](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_10.png)
 
-12. Click on Add Rule to configure a Multifactor rule so that the user will be prompted for a multi-factor authentication.
+12. Click on Add Rule to configure a Multifactor rule so that the user will be prompted for multi-factor authentication.
 
 ![Okta Setup 11](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_11.png)
 
