@@ -83,7 +83,7 @@
 
 * [Merging Face and Voice Enrollments](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#Merging-Face-and-Voice-Enrollments)
 
-* [Version 1.0 Demo](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#Version-1.0-Demo)
+* [User Interface Demo](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#User Interface Demonstration)
 
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
