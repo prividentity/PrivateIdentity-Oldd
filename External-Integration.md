@@ -215,6 +215,30 @@ Ping Identity can differentiate between successful and unsuccessful attempts. Cu
 
 Ping Identity provides the subject name in the SAML Request which expects to be sent back in the SAML response. If the user is not found on predict it will proceed with the enroll flow to register the user in the Active directory.
 
+Steps to setup Private Identity as IDP in Ping Identity:
+
+1. Log in to the Ping Federate server and choose Service Provider. Click Create New to create a new IdP connection.
+2. Choose the connection type as Browser SSO profiles SAML 2.0. Click next
+3. Leave the Default configuration of Browser SSO. Click Next
+4. Choose Metadata as None and click next.
+5. In the General Info screen, fill the desired name in entity ID e.g., privateid.face with the connection name. Click next
+6. Click on Configure Browser SSO.
+7. In the SAML Profiles section, check the SP Initiated SSO and click next.
+8. Click on Configure User-Session Creation for defining the mappings between the SAML XML and the user system.
+9. In the Identity Mapping section, Choose No Mapping and click next.
+10. Private Identity provides the GUID of the registered user. Configure the mappings in the Attribute Contract section on what values have to be mapped from the SAML. Click done.
+11. Click on Configure Protocol Settings to set up how the SAML Request and Response has to be sent and received.
+12. In the SSO Service URLs section, Choose Redirect as the Binding and give the desired modality URL as the Endpoint URL. E.g., [Face modality](https://private.id/a/?idp=okta&version=0.9&apiKey=1962&oktaDomain=private.okta.com&action=predict). Click next
+13. Check both POST and Redirect bindings
+14. Leave the default configuration in the Overrides section. Click next.
+15. In the Signature Policy section, Choose "Specify Additional Signature Requirements" and check sign Authn request. Click next.
+16. Choose Encryption Policy as None and Click done.
+17. Click on Configure credentials to upload the IdP's certificate to authenticate the requests.
+18. Choose the certificate to sign the SAML Requests by selecting the certificates from the dropdown. Check both the boxes to include the certificate in the request. Click next.
+19. Click on Manage Signature Verification Settings to choose the certificate required for verifying the SAML Response received from the IdP.
+20. Choose the UNANCHORED option in the Trust Model section and click next.
+21. Choose the certificate to verify the response from the dropdown. Click done.
+22. A general summary of all the configuration will be displayed for verification 
 The following screenshots show a sample demonstration of authentication done with face modality.
 
 1. Logging into the dropbox application as a service provider [Sample URL](https://www.dropbox.com/sso/7879772650).
