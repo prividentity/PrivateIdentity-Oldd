@@ -55,9 +55,9 @@
 
 [**External Integration**](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration)
 
-* [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
+* [Okta](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#okta)
 
-* [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
+* [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#ping-identity)
 
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
