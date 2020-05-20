@@ -26,6 +26,46 @@ Okta provides authentication services across many identity management firms. In 
 
 Okta currently verifies the user through email ID, so the SAML response <Subject.Name.Id> should contain the email from the IP.
 
+Steps to setup Private Identity as IDP in Okta:
+
+1. Log in to Okta as Admin
+2. Go to Security -> Identity Providers
+
+
+3. Click on "Add Identity Provider" and Choose "Add SAML 2.0 IdP"
+
+
+4. Fill in the parameters required. The Desired IDP name can be chosen for readability. Choose IdP Usage as Factory only. Fill in the IdP Issuer URI. Currently, the setup is configured with [Private ID](https://devel.private.id). IdP Single Sign-On URL will have the URL for the desired modality authentication. For e.g., if the user wants to get authenticated via face then the URL will be [Face Modality](https://private.id/a/?idp=okta&version=0.9&apiKey=1962&oktaDomain=private.okta.com&action=predict). Upload the public key signature provided by the IdP.
+
+
+5. Click on Advanced Settings. Change the Request Binding to HTTP Redirect. The destination has to be replaced with the same URL as that of IdP Single Sign-On URL. The signature algorithm has to be SHA-256. The remaining parameters can be modified according to the user's needs. Save the configuration
+
+
+6. Go to Security -> Multifactor -> Factor Types.
+
+
+7. Choose IdP Factor for selecting the configured IdP.
+
+
+8. Click edit and select the desired IdP and save the configuration.
+
+
+9. Go to Security -> Multifactor -> Factor Enrollment.
+
+
+10. Click on Add Multifactor Policy and fill in the required details. Give a policy name, description, assign the groups to everyone, and choose the effective factor as required. Save the policy.
+
+
+11. Go to Security -> Authentication -> Sign On.
+
+12. Click on Add Rule to configure a Multifactor rule so that the user will be prompted for a multi-factor authentication.
+
+
+13. Keep the default values or change as needed. Check the Prompt for Factor option to enable the rule. Save the configuration.
+
+
+Once the setup is complete and when the user attempts to log in next time into the SP, the factor prompt will be asked for the user for completing the authentication.
+
 The following screenshots show a sample demonstration of authentication done with face modality.
 
 1. Logging into okta as a service provider [Sample URL](https://private.okta.com).
