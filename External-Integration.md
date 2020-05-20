@@ -31,38 +31,51 @@ Steps to setup Private Identity as IDP in Okta:
 1. Log in to Okta as Admin
 2. Go to Security -> Identity Providers
 
+![Okta Setup 1](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_1.png)
 
 3. Click on "Add Identity Provider" and Choose "Add SAML 2.0 IdP"
 
+![Okta Setup 2](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_2.png)
 
 4. Fill in the parameters required. The Desired IDP name can be chosen for readability. Choose IdP Usage as Factory only. Fill in the IdP Issuer URI. Currently, the setup is configured with [Private ID](https://devel.private.id). IdP Single Sign-On URL will have the URL for the desired modality authentication. For e.g., if the user wants to get authenticated via face then the URL will be [Face Modality](https://private.id/a/?idp=okta&version=0.9&apiKey=1962&oktaDomain=private.okta.com&action=predict). Upload the public key signature provided by the IdP.
 
+![Okta Setup 3](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_3.png)
 
 5. Click on Advanced Settings. Change the Request Binding to HTTP Redirect. The destination has to be replaced with the same URL as that of IdP Single Sign-On URL. The signature algorithm has to be SHA-256. The remaining parameters can be modified according to the user's needs. Save the configuration
 
+![Okta Setup 4](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_4.png)
 
 6. Go to Security -> Multifactor -> Factor Types.
 
+![Okta Setup 5](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_5.png)
 
 7. Choose IdP Factor for selecting the configured IdP.
 
+![Okta Setup 6](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_6.png)
 
 8. Click edit and select the desired IdP and save the configuration.
 
+![Okta Setup 7](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_7.png)
 
 9. Go to Security -> Multifactor -> Factor Enrollment.
 
+![Okta Setup 8](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_8.png)
 
 10. Click on Add Multifactor Policy and fill in the required details. Give a policy name, description, assign the groups to everyone, and choose the effective factor as required. Save the policy.
 
+![Okta Setup 9](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_9.png)
 
 11. Go to Security -> Authentication -> Sign On.
 
+![Okta Setup 10](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_10.png)
+
 12. Click on Add Rule to configure a Multifactor rule so that the user will be prompted for a multi-factor authentication.
 
+![Okta Setup 11](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_11.png)
 
 13. Keep the default values or change as needed. Check the Prompt for Factor option to enable the rule. Save the configuration.
 
+![Okta Setup 12](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_12.png)
 
 Once the setup is complete and when the user attempts to log in next time into the SP, the factor prompt will be asked for the user for completing the authentication.
 
