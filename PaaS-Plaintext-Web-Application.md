@@ -1,4 +1,4 @@
-## prerequisite ##
+## Prerequisite to run Node server ##
 
 You should have running EKS cluster. 
 
