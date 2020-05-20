@@ -69,7 +69,7 @@ After the merge is complete, the response from the console will be seen as the f
 }
 ```
 
-## Version 1.0 Demo
+## User Interface Demonstration
 <br/>
 
 There are two versions of the demonstration app, the first one is version 0.9, and the parameters are selected manually. The second version, version 1.0, has an interface from which you can select parameters.
