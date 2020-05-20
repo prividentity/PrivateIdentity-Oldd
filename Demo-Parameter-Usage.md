@@ -74,6 +74,8 @@ You can access version 1.0 with this link: [Version 1.0 Demo](https://private.id
 
 Version 1.0 and Version 0.9 are functionally the same, and enrollments are accessed by either one. Meaning you can enroll on one, and predict on another
 
+![Version 1.0 User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Version%201.0%20UI.png)
+
 
 
 
