@@ -66,3 +66,14 @@ After the merge is complete, the response from the console will be seen as the f
 }
 ```
 
+### Version 1.0 Demo
+
+There are two versions of the demonstration app, the first one is version 0.9, and the parameters are selected manually. The second version, version 1.0, has an interface from which you can select parameters.
+
+You can access version 1.0 with this link: [Version 1.0 Demo](https://private.id/demo/index.htm?apiKey=1962)
+
+Version 1.0 and Version 0.9 are functionally the same, and enrollments are accessed by either one. Meaning you can enroll on one, and predict on another
+
+
+
+
