@@ -53,6 +53,12 @@
 
 * [PaaS Client Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Plaintext-Web-Application)
 
+[**External Integration**](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration)
+
+* [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
+
+* [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
+
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
 * [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
@@ -66,8 +72,6 @@
 * [Fingerprint Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Fingerprint-enroll)
 
 * [Verified Enroll](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
-
-* [External Integration](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration)
 
 * [URL Parameters (for clients)](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters)
 
