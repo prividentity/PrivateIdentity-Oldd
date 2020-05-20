@@ -1,6 +1,7 @@
 ## Prerequisite to run Node server ##
 
-You should have running EKS cluster. 
+   1. You should have running EKS cluster.
+   2. You should be have ECR to store docker images. 
 
 ## Setup PaaS plaintext web application ##
 
