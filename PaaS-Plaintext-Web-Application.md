@@ -4,7 +4,7 @@ You should have running EKS cluster.
 
 ## Setup PaaS plaintext web application ##
 
-## Clone project ##
+### Clone project ###
     
     `git clone git@github.com:openinfer/pb-web.git`
 
