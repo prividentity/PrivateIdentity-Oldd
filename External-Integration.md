@@ -98,7 +98,7 @@ Sample SAML Request:
 
 Sample SAML Response:
 
-<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+  <saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
                    xmlns:xs="http://www.w3.org/2001/XMLSchema"
                    Destination="https://private.okta.com/sso/saml2/0oa94pj0sb1x1SPAz4x6"
                    ID="hiOK90fGDyytFSeznaoZZPTbnOrGBL6n"
@@ -186,6 +186,7 @@ Sample SAML Response:
           </saml2:AttributeStatement>
       </saml2:Assertion>
   </saml2p:Response>
+
 The following screenshots show a sample demonstration of authentication done with face modality.
 
 1. Logging into okta as a service provider [Sample URL](https://private.okta.com).
