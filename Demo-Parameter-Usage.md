@@ -76,7 +76,10 @@ There are two versions of the demonstration app, the first one is version 0.9, a
 
 You can access version 1.0 with this link: [Version 1.0 Demo](https://private.id/demo/index.htm?apiKey=1962)
 
-Version 1.0 and Version 0.9 are functionally the same, and enrollments are accessed by either one. Meaning you can enroll on one, and predict on another
+Version 1.0 and Version 0.9 are functionally the same, so an enrollment made on one version, can be accessed on another.
+
+A picture with the panel layout explained is shown below, or you can view a demonstration video from this link
+[Demonstration](https://www.youtube.com/watch?v=6x0b5FckhIA)
 
 ![Version 1.0 User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Version%201.0%20UI.png)
 
