@@ -1,4 +1,6 @@
 ### How to find your Subject ID on /a/
+<br/>
+
 **There are two methods of determining your subject ID**
 
 > Note, the usage of console is required, so if you are on a handheld device you will have to link to a computer to view the console. Such as an iPhone linking to a macbook to portray the console. Console is accessible on Safari, Firefox, and Google Chrome, and Microsoft Edge.
@@ -22,7 +24,8 @@
 * Your subject ID will show up as either `subject_id:#` or `guid:#`
 > ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/SubjectID_Console_During_Enrollment.png)
 
-### Merging Face and Voice Enrollments
+## Merging Face and Voice Enrollments
+<br/>
 
 This page documents how to update enrolled user modalities. This document assumes a user is already enrolled by only one modality (like face or voice) and they want to add another one on top of it. 
 
@@ -66,7 +69,8 @@ After the merge is complete, the response from the console will be seen as the f
 }
 ```
 
-### Version 1.0 Demo
+## Version 1.0 Demo
+<br/>
 
 There are two versions of the demonstration app, the first one is version 0.9, and the parameters are selected manually. The second version, version 1.0, has an interface from which you can select parameters.
 
