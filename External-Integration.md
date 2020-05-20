@@ -79,6 +79,113 @@ Steps to setup Private Identity as IDP in Okta:
 
 Once the setup is complete and when the user attempts to log in next time into the SP, the factor prompt will be asked for the user for completing the authentication.
 
+Sample SAML Request:
+
+    <saml2p:AuthnRequest xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+                         AssertionConsumerServiceURL="https://private.okta.com/sso/saml2/0oa94pj0sb1x1SPAz4x6"
+                         Destination="https://devel.private.id/demo/?idp=okta&apiKey=1962&oktaDomain=private.okta.com"
+                         ForceAuthn="false"
+                         ID="id216400685678752324916391"
+                         IssueInstant="2020-05-20T10:17:46.623Z"
+                         Version="2.0"
+                         >
+        <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">https://www.okta.com/saml2/service-provider/spaalgnibujvpmqvrkav</saml2:Issuer>
+        <saml2:Subject xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+            <saml2:NameID>srie@private.id</saml2:NameID>
+        </saml2:Subject>
+        <saml2p:NameIDPolicy Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified" />
+    </saml2p:AuthnRequest>
+
+Sample SAML Response:
+
+<saml2p:Response xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol"
+                   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                   Destination="https://private.okta.com/sso/saml2/0oa94pj0sb1x1SPAz4x6"
+                   ID="hiOK90fGDyytFSeznaoZZPTbnOrGBL6n"
+                   InResponseTo="id216400685678752324916391"
+                   IssueInstant="2020-05-20T10:17:56Z"
+                   Version="2.0"
+                   >
+      <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                    Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity"
+                    >https://devel.private.id/</saml2:Issuer>
+      <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <ds:SignedInfo>
+              <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+              <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+              <ds:Reference URI="#hiOK90fGDyytFSeznaoZZPTbnOrGBL6n">
+                  <ds:Transforms>
+                      <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+                      <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+                  </ds:Transforms>
+                  <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+                  <ds:DigestValue>H88oDJ9ullvDAWklOaK/6VRgwtK/0cPhg6wY8CVSV0Y=</ds:DigestValue>
+              </ds:Reference>
+          </ds:SignedInfo>
+          <ds:SignatureValue>O9VEu38CuZdgo20iGRZrvll/Bmuo41nINULgLmWkGsWHqHnXbojwCENBtF4rhhxDZ+Mf6vmVymGy9XLBQM/i07Id0HIajKr90Do3sDDI1FKaCIZ8KpeNd2tM3q2jT1zKLCotEy/KNby5t2+QEdGA5/pe1UuLVAQ1YZcA//GkqRNUrjROtsVjXu57EA9wPqD8LJppW2zL8+zzaRhJxlIOtpHXE26PP4AZ4ol5fpn1VSdiU92+X9yJL5g6jZ2dnWHzUBK1mXMD8emj7k/GD+oJYHWHC4KSS9L2HzL3hHKixuPtYR82DyzqF/MVaign4aP/5vDvOH/o1udMwedX/fmA6w==</ds:SignatureValue>
+          <ds:KeyInfo>
+              <ds:X509Data>
+                  <ds:X509Certificate>MIIEGzCCAwOgAwIBAgIUa7n6jLeipmjyhazU9qzZoMZ8bkAwDQYJKoZIhvcNAQELBQAwgZwxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJNRDERMA8GA1UEBwwIV29vZGJpbmUxHjAcBgNVBAoMFVByaXZhdGUgSWRlbnRpdHksIExMQzERMA8GA1UECwwISWRlbnRpdHkxGTAXBgNVBAMMEFByaXZhdGUgSWRlbnRpdHkxHzAdBgkqhkiG9w0BCQEWEHNjb3R0QHByaXZhdGUuaWQwHhcNMTkxMjExMjEwOTIyWhcNNDcwNDI4MjEwOTIyWjCBnDELMAkGA1UEBhMCVVMxCzAJBgNVBAgMAk1EMREwDwYDVQQHDAhXb29kYmluZTEeMBwGA1UECgwVUHJpdmF0ZSBJZGVudGl0eSwgTExDMREwDwYDVQQLDAhJZGVudGl0eTEZMBcGA1UEAwwQUHJpdmF0ZSBJZGVudGl0eTEfMB0GCSqGSIb3DQEJARYQc2NvdHRAcHJpdmF0ZS5pZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBALJ1/2ij1PxRi7ZzaeWmUM1WZpsSHUSXGjUyvMWoffZaa4F+9HZvqIlIXP5Te/LMLMnwEQ2dHOMlBAKaMpLFgaQxK630/bx6rPWyBEtfpHGl0GcHkotAXyj46Bz/OHfaQjpGFirZIUM2idR7B7BatUYqLbOzC3JCKvgoD0rnqJX10+qLlKAFSmXn8V5nbpo5a/4mjzHtLYhjJ3cAgbkOSQLYUKcF7i7zQForXRJZCD4mtNs466ptl7uoBy90uolJraMRYxucUoNiLk8rCqRUxOU4bv/SocYjDM/Y/p2EArm1wCcBJH/vJEjCRNlx2ZJBC/UA3P0oQBUuD0OdL41ey58CAwEAAaNTMFEwHQYDVR0OBBYEFABwapu2N0QxKZcf5Cp6G6z24bccMB8GA1UdIwQYMBaAFABwapu2N0QxKZcf5Cp6G6z24bccMA8GA1UdEwEB/wQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAHD5YMTBCdVqdVZFCwjX716OUAtm3iJkPBXlYELJcbNWKr4dOisBeJtwNI0+NsSwIPKX885wW2NB/5POcWRDruQbyYDMI8FWp1ia+n05a/lpynJ1tw1UbcuFrbnMrgCsA0mxUfewW2pc8i/VF94rxl3VXOPMAhZTU4pWLUfof5oG+szzRqB80QPsSotfViavrULwQVvOo+OfAgQeaTeIUiuDwSzG5DDqrrWs3mi3j6DsNh76bZ/1TKTjB8U8z2H/vAbskzhWTpDQk+uRy+v4ZiTYOCDvBNEDZ9DQbuhziF2XiSwkctW61zuXC5I2+8kty0nmEWh/Kv/rQMT6MTVpMGA=</ds:X509Certificate>
+              </ds:X509Data>
+          </ds:KeyInfo>
+      </ds:Signature>
+      <saml2p:Status xmlns:saml2p="urn:oasis:names:tc:SAML:2.0:protocol">
+          <saml2p:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success" />
+      </saml2p:Status>
+      <saml2:Assertion xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                       xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                       ID="3RJXI6T14UGUOYiSw2BbraTWK38UqwcA"
+                       IssueInstant="2020-05-20T10:17:56Z"
+                       Version="2.0"
+                       >
+          <saml2:Issuer xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                        Format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity"
+                        >https://devel.private.id/</saml2:Issuer>
+          <saml2:Subject xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+              <saml2:NameID Format="urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified">srie@private.id</saml2:NameID>
+              <saml2:SubjectConfirmation Method="urn:oasis:names:tc:SAML:2.0:cm:bearer">
+                  <saml2:SubjectConfirmationData InResponseTo="id216400685678752324916391"
+                                                 NotOnOrAfter="2020-05-20T10:22:56Z"
+                                                 Recipient="https://private.okta.com/sso/saml2/0oa94pj0sb1x1SPAz4x6"
+                                                 />
+              </saml2:SubjectConfirmation>
+          </saml2:Subject>
+          <saml2:Conditions xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                            NotBefore="2020-05-20T10:15:56Z"
+                            NotOnOrAfter="2020-05-20T10:22:56Z"
+                            >
+              <saml2:AudienceRestriction>
+                  <saml2:Audience>https://www.okta.com/saml2/service-provider/spaalgnibujvpmqvrkav</saml2:Audience>
+              </saml2:AudienceRestriction>
+          </saml2:Conditions>
+          <saml2:AuthnStatement xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion"
+                                AuthnInstant="2020-05-20T10:17:56Z"
+                                SessionIndex="3RJXI6T14UGUOYiSw2BbraTWK38UqwcA"
+                                >
+              <saml2:AuthnContext>
+                  <saml2:AuthnContextClassRef>urn:oasis:names:tc:SAML:2.0:ac:classes:PasswordProtectedTransport</saml2:AuthnContextClassRef>
+              </saml2:AuthnContext>
+          </saml2:AuthnStatement>
+          <saml2:AttributeStatement xmlns:saml2="urn:oasis:names:tc:SAML:2.0:assertion">
+              <saml2:Attribute Name="Email"
+                               NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+                               >
+                  <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                        xsi:type="xs:string"
+                                        >srie@private.id</saml2:AttributeValue>
+              </saml2:Attribute>
+              <saml2:Attribute Name="GUID"
+                               NameFormat="urn:oasis:names:tc:SAML:2.0:attrname-format:unspecified"
+                               >
+                  <saml2:AttributeValue xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                        xsi:type="xs:string"
+                                        >9f371fa2ce0a9b593b6f</saml2:AttributeValue>
+              </saml2:Attribute>
+          </saml2:AttributeStatement>
+      </saml2:Assertion>
+  </saml2p:Response>
 The following screenshots show a sample demonstration of authentication done with face modality.
 
 1. Logging into okta as a service provider [Sample URL](https://private.okta.com).
