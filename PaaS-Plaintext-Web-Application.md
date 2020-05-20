@@ -1,3 +1,7 @@
+## prerequisite ##
+
+You should have running EKS cluster. 
+
 ## Setup PaaS plaintext web application ##
 
 ## Clone project ##
