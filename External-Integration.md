@@ -49,7 +49,7 @@ IdP Single Sign-On URL:
 
 IdP Signature Certificate:   
 Download the certificate using the below link.   
-Right click and save as [Certificate](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem)   
+Right click and save link as [Certificate](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem)   
 Upload the downloaded signature to the Okta configuration.
 
 ![Okta Setup 3](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_3.png)
