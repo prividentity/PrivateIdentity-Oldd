@@ -41,13 +41,13 @@ Steps to setup Private Identity as IDP in Okta:
 
 Please find the setup parameters:
 
-IdP Issuer URI:   
+**IdP Issuer URI:   **
 `private.id`
 
-IdP Single Sign-On URL:   
+**IdP Single Sign-On URL:   **
 `https://private.id/a/?idp=okta&version=0.9&apiKey=<insert_api_here>&action=unknown`
 
-IdP Signature Certificate:   
+**IdP Signature Certificate:   **
 Download the certificate using the below link.   
 Right click and save link as [Certificate](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem)   
 Upload the downloaded signature to the Okta configuration.
