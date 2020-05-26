@@ -43,7 +43,7 @@ Please find the setup parameters:
 
 IdP Issuer URI: private.id
 
-IdP Single Sign-On URL: https://private.id/a/?idp=okta&version=0.9&apiKey=<insert_api_here>&action=unknown
+IdP Single Sign-On URL: `https://private.id/a/?idp=okta&version=0.9&apiKey=<insert_api_here>&action=unknown`
 
 IdP Signature Certificate: Upload the signature from this link [Public Key](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem)
 
