@@ -33,7 +33,7 @@ For ex., ?voice=true&debug=true, resulting in a URL that looks like, private.id/
 |action|addRoletoSubject|No default|Add role and subject to the system combined with role_id and subject_id|
 |action|deleteRole|No default|Delete role values from the system combined with role_id|
 |action|deleteRolefromSubject|No default|Delete role and subject from the system combined with role_id and subject_id|
-|action|deleteSubject|No default|Delete the subject from the system combined with subject_id or uuid|
+|action|deleteSubject|No default|Delete the subject from the system combined with subject_id or uuid. If no combination is made, then the user will be removed via a prediction|
 |glassCheck|true / false|false|Disables the glass check|
 |hlsType|1 / 2|2|1: Histogram Equalization 2:CLAHE method|
 |raw|true / false|false|Use with debug=true, addresses the non-hsl'd images|
