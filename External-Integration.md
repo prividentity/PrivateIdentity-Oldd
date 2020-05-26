@@ -37,7 +37,13 @@ Steps to setup Private Identity as IDP in Okta:
 
 ![Okta Setup 2](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_2.png)
 
-4. Fill in the parameters required. The Desired IDP name can be chosen for readability. Choose IdP Usage as Factory only. Fill in the IdP Issuer URI. Currently, the setup is configured with [Private ID](https://devel.private.id). IdP Single Sign-On URL will have the URL for the desired modality authentication. E.g., if the user wants to get authenticated via face then the URL will be [Face Modality](https://private.id/a/?idp=okta&version=0.9&apiKey=1962&oktaDomain=private.okta.com&action=predict). Upload the public key signature provided by the IdP.
+4. Fill in the parameters required. The Desired IDP name can be chosen for readability. Choose IdP Usage as Factory only. Fill in the IdP Issuer URI. Currently, the setup is configured with [Private ID](https://devel.private.id). IdP Single Sign-On URL will have the URL for the desired modality authentication. 
+
+Please find the setup parameters:
+
+IdP Issuer URI: private.id
+IdP Single Sign-On URL: https://private.id/a/?idp=okta&version=0.9&apiKey=1962&action=unknown
+IdP Signature Certificate: Upload the signature from this link [Public Key](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem)
 
 ![Okta Setup 3](https://github.com/openinfer/PrivateIdentity/blob/master/images/okta_setup_3.png)
 
