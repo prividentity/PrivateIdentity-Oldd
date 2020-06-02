@@ -76,7 +76,7 @@ POST: https://master.privateidentity.org/trueid/v1.1/preprocess
     "bucket": "preprocess-privateidentity" ,
     "s3_dataset_dir": "sample_images",
     "num_processes": 40,
-    "server_url": "https://dev.privateidentity.org:443/trueid/v1.1",
+    "server_url": "https://dev.private.id:443/trueid/v1.1",
     "slave_url": "http://slave-svc:5002/trueid/v1.1/slave_preprocess",
     (Optional)"api_key": <key>
 }
