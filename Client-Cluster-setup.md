@@ -41,8 +41,8 @@ Examples
            kubectl apply -f service.yml 
            cd $HOME/pb-util/slave/pb
            ./cluster-run.sh
-           kubectl apply -f apply deployment,yml
-           kubectl apply -f apply service.yml
+           kubectl apply -f deployment.yml
+           kubectl apply -f service.yml
 
 ### To scale number of containers
       kubectl scale --replicas=200 deployment pb-slave
