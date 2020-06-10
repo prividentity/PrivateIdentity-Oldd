@@ -25,7 +25,7 @@ Examples
     cd $HOME/pb-util/cluster-setup
     . ./cluster-setup.sh 
 
-**Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build cluster.
+**Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build cluster
 
 ## Setup master and slave on Cluster
 
