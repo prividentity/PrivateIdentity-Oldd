@@ -67,14 +67,3 @@ Please follow steps to add certs into cluster for ssl termination.
 4. Run `kubectl get ing` and copy address you will need it to setup route53.
 
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup
-
-## Deploy the Cluster Autoscaler
-
-### To deploy the Cluster Autoscaler
-
-## HPA
-The Horizontal Pod Autoscaler automatically scales the number of pods in a replication controller, deployment, replica set or stateful set based on observed CPU utilization (or, with custom metrics support, on some other application-provided metrics)
-### To deploy the Cluster Autoscaler
-    
-     cd $HOME/pb-util/cluster-setup/
-     . ./setup_autoscale.sh
