@@ -20,12 +20,7 @@ Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRE
 Examples
      export CLUSTER_NAME=test
 
-### If you don't have root access please run below script in your newly created machine using AMI. 
-
-    cd $HOME/pb-util/cluster-setup
-    . ./preinstalled-cluster-setup.sh 
-
-### If you have root access you can skip above step and run this command.
+### In order to setup cluster run below command.
     
     cd $HOME/pb-util/cluster-setup
     . ./cluster-setup.sh 
