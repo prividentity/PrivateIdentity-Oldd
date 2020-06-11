@@ -43,6 +43,7 @@ This is the demo page app for Enroll and predict using Voice,Face.
 **Note:** You will get the API key from Private Identity.
 
 
+
 **Predict Requests**
 
 `Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
@@ -78,4 +79,24 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 }
 ```
 
-### Enroll Requests ###
+**Enroll Requests**
+
+`Method: window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
+
+
+|Parameter     |         Value| 
+|-----|----|
+|uuid           |         String value of UUID |
+|apiKey           |         API Key retrieved from URL parameter |
+|’face’      |         Modality type for face prediction.|
+|images1      |         Array of ImageData.|
+|’voice’      |         Modality type for voice prediction.|
+|voiceFile      |         Type File voice.|
+|’fingerprint’      |         Modality type for fingerprint prediction.|
+|images2      |         Array of ImageData.|
+
+The method window.enroll can be used for face, voice, or fingerprint prediction. This method can be used for any of them, or all together. 
+
+** Response **
+
+The response of an Enroll request returns O as Success given data validation and database storage success. The response returns -1 if the user already exists in the model. The response returns -2 if the embedding distance is too far caused by at least one bad enroll embedding (usually caused by a bad enroll image).
