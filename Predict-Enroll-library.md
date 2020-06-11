@@ -31,7 +31,10 @@
 5. sudo service nginx start
 
 
-After this you will able to access predict library from url http://localhost/predict-enroll-library/?apiKey=XXXX
+After this you will able to access predict and enroll from url http://localhost/predict-enroll-library/?apiKey=XXXX
+
+---------------------------------------------------------------------
+This is the demo page for Enroll and predict using Voice,Face.
 
 [[ images/Title.png ]]
 
