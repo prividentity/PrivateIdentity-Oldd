@@ -32,6 +32,6 @@
 
 After this you will able to access predict library from url http://localhost/predict-enroll-library/?apiKey=XXXX
 
-You will get the API key from Private Identity.
+**Note:**You will get the API key from Private Identity.
 
 [[ images/Title.png ]]
