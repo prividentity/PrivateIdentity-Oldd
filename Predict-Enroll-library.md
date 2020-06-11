@@ -44,6 +44,9 @@ This is the demo page app for Enroll and predict using Voice,Face.
 
 
 
+
+
+
 **Predict Requests**
 
 `Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
