@@ -14,4 +14,4 @@
 
 5. start apache2 service `sudo service apache2 start`
 
-After this you will able to see predict library from url `http://localhost/predict-enroll-library`
+After this you will able to access predict library from url `http://localhost/predict-enroll-library`
