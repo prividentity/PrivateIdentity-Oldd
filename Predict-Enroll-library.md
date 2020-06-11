@@ -4,7 +4,7 @@
 
 **Note**: If you already have web server you can skip below steps to install apache2 and simply unzip the downloaded code and move it to /var/www/html/ directory.
 
-1. Downlaod Zip file form URL `https://devel.private.id/predict-enroll-library.zip`
+1. Downlaod Zip file form URL ```https://devel.private.id/predict-enroll-library.zip```
 
 2. Install apache2  `sudo apt-get install apache2`
 
