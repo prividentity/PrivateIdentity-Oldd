@@ -1,6 +1,8 @@
-## To run this you need a web server like apache2 or nginx ##
+## Predict Enroll library ##
 
-Note: If you already have server you can skip below steps
+### To run this you need a web server like apache2 or nginx ###
+
+Note: If you already have web server you can skip below steps and simply move unzip code to /var/www/html
 
 1. Downlaod Zip file form URL `https://google.com`
 
