@@ -30,8 +30,11 @@
 
 5. sudo service nginx start
 
+
 After this you will able to access predict library from url http://localhost/predict-enroll-library/?apiKey=XXXX
+
+[[ images/Title.png ]]
 
 **Note:** You will get the API key from Private Identity.
 
-[[ images/Title.png ]]
+
