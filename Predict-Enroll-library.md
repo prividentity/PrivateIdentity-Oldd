@@ -18,7 +18,7 @@
 
 
 
-#### If you want to install nginx follow below steps #### 
+#### If you want to install an nginx follow below steps #### 
 
 1. Downlaod Zip file form URL an https://private.id/predict-enroll-library.zip
 
@@ -31,10 +31,11 @@
 5. sudo service nginx start
 
 
-After this you will able to access predict and enroll from url http://localhost/predict-enroll-library/?apiKey=XXXX
+After this you will able to access predict and enroll from the demo page app. 
+http://localhost/predict-enroll-library/?apiKey=XXXX
 
 ---------------------------------------------------------------------
-This is the demo page for Enroll and predict using Voice,Face.
+This is the demo page app for Enroll and predict using Voice,Face.
 
 [[ images/Title.png ]]
 
