@@ -22,7 +22,7 @@
 
 1. Downlaod Zip file form URL an https://private.id/predict-enroll-library.zip
 
-2. Install nginx 'sudo apt-get install nginx'
+2. Install nginx `sudo apt-get install nginx`
 
 3. unzip predict library `unzip predict-enroll-library.zip` 
 
