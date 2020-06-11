@@ -43,3 +43,39 @@ This is the demo page app for Enroll and predict using Voice,Face.
 **Note:** You will get the API key from Private Identity.
 
 
+**Predict Requests**
+
+`Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
+
+
+|Parameter     |         Value| 
+|-----|----|
+|apiKey           |         API Key retrieved from URL parameter |
+|’face’      |         Modality type for face prediction.|
+|images1      |         Array of ImageData.|
+|’voice’      |         Modality type for voice prediction.|
+|voiceFile      |         Type File voice.|
+|’fingerprint’      |         Modality type for fingerprint prediction.|
+|images2      |         Array of ImageData.|
+
+The method window.predict can be used for face, voice, or fingerprint prediction. This method can be used for any of them, or all together. 
+
+**Response**
+
+
+The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
+```
+{
+    "PII": {
+        "name": "Nguyen",
+	"id": "1008023",
+        ...
+        "address": "23 Scott Street"
+    },
+    "message": "OK",
+    "status": 0,
+    "subject_id": 4,
+}
+```
+
+### Enroll Requests ###
