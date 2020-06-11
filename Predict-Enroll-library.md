@@ -4,7 +4,7 @@
 
 **Note**: If you already have web server you can skip below steps to install apache2 and simply unzip the downloaded code and move it to /var/www/html/ directory.
 
-#### If you want to install apache2 follow below steps #### 
+#### If you want to install an apache2 follow below steps #### 
 
 1. Downlaod Zip file form URL https://private.id/predict-enroll-library.zip
 
@@ -20,7 +20,7 @@
 
 #### If you want to install nginx follow below steps #### 
 
-1. Downlaod Zip file form URL https://private.id/predict-enroll-library.zip
+1. Downlaod Zip file form URL an https://private.id/predict-enroll-library.zip
 
 2. Install nginx 'sudo apt-get install nginx'
 
