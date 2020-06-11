@@ -1,4 +1,4 @@
-## Predict Enroll library ##
+## Setup Predict Enroll library ##
 
 ### To run this you need a web server like apache2 or nginx ###
 
