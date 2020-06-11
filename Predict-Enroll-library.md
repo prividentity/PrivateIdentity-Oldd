@@ -6,12 +6,12 @@
 
 1. Downlaod Zip file form URL `https://google.com`
 
-2. sudo apt-get install apache2
+2. Install apache2  `sudo apt-get install apache2`
 
-3. unzip predict-enroll-library.zip 
+3. unzip predict library `unzip predict-enroll-library.zip` 
 
-4. mv predict-enroll-library /var/www/html/
+4. move code to html location `mv predict-enroll-library /var/www/html/`
 
-5. sudo service apache2 start
+5. start apache2 service `sudo service apache2 start`
 
 After this you will able to see predict library from url `http://localhost/predict-enroll-library`
