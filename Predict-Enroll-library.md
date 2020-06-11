@@ -2,7 +2,7 @@
 
 ### To run this you need a web server like apache2 or nginx ###
 
-**Note**: If you already have web server you can skip below steps and simply move unzip code to /var/www/html/ directory.
+**Note**: If you already have web server you can skip below steps to install apache2 and simply unzip the downloaded code and move it to /var/www/html/ directory.
 
 1. Downlaod Zip file form URL `https://google.com`
 
