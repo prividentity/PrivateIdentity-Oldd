@@ -35,6 +35,10 @@ After this you will able to access predict and enroll from the demo page app.
 
 http://localhost/predict-enroll-library/?apiKey=XXXX
 
+By default, the NodeJS endpoints are located at `https://private.id/node/`. If you want to change this setting, you can use URL parameter `nodeServer`. 
+
+Example: http://localhost/predict-enroll-library/?apiKey=XXXX&nodeServer=https://example.com/
+
 ---------------------------------------------------------------------
 This is the demo page app for Enroll and predict using Voice,Face.
 
