@@ -49,8 +49,21 @@ For ex., if your own server is `https://company.privateidentity.com` then the UR
 
 ---------------------------------------------------------------------
 This is the demo page app for Enroll and predict using Voice,Face.
+1. Sample Demo Page
 
 [[ images/Title.png ]]
+
+2. Load 10 face images and Voice file and Click Enroll
+
+![Load Image and Voice](https://github.com/openinfer/PrivateIdentity/blob/master/images/Load%20images%20and%20voice.png)
+
+3. Sample Enroll Response
+
+![Enroll Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/Enroll%20Result.png)
+
+4. Load 3 face images or voice file and click predict. Sample predict response is shown below.
+
+![Predict Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/Predict%20result.png)
 
 **Note:** You will get the API key from Private Identity.
 
