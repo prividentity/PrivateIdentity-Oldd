@@ -83,7 +83,7 @@ This is the demo page app for Enroll and predict using Voice,Face.
 |’fingerprint’      |         Modality type for fingerprint prediction.|
 |images2      |         Array of ImageData.|
 
-The method window.predict predicts for face, voice, or fingerprint modalities. It can use a single modality or all of them. 
+The method window.predict predicts for face, voice, or fingerprint modalities. It can use single or multiple modalities. 
 
 The image parameters are ImageData objects with pixel values from RGBA color scheme. Voice files utilizes the HTML file input element to be added in the method argument.
 
@@ -168,7 +168,7 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 |’fingerprint’      |         Modality type for fingerprint prediction.|
 |images2      |         Array of ImageData.|
 
-The method window.enroll enrolls for face, voice, or fingerprint modalities. It can use a single modality or all of them. 
+The method window.enroll enrolls for face, voice, or fingerprint modalities. It can use single or multiple modalities. 
 
 
 **Example**
