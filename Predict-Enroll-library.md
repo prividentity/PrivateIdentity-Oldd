@@ -77,15 +77,15 @@ This is the demo page app for Enroll and predict using Voice,Face.
 |-----|----|
 |apiKey           |         API Key retrieved from URL parameter |
 |’face’      |         Modality type for face prediction.|
-|images1      |         Array of ImageData.|
+|images1      |         Array of image files.|
 |’voice’      |         Modality type for voice prediction.|
 |voiceFile      |         Type File voice.|
 |’fingerprint’      |         Modality type for fingerprint prediction.|
-|images2      |         Array of ImageData.|
+|images2      |         Array of image files.|
 
 The method window.predict predicts for face, voice, or fingerprint modalities. It can use single or multiple modalities. 
 
-The image parameters are ImageData objects with pixel values from RGBA color scheme. Voice files utilizes the HTML file input element to be added in the method argument.
+The image parameters are image file objects with pixel values from RGBA color scheme. Voice files utilizes the HTML file input element to be added in the method argument.
 
 
 **Example**
@@ -95,16 +95,18 @@ The image parameters are ImageData objects with pixel values from RGBA color sch
    "apiKeyValue",
    "face",
    [
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
+       {File:
+          lastModified: 1592228890000,
+          name: image1.png,
+          type: "image/png",
+          size: 1073218
+       },
+       {File:
+          lastModified: 1592228891234,
+          name: image2.png,
+          type: "image/png",
+          size: 1073218
+       }
        ...,
        ...
    ],
@@ -117,16 +119,18 @@ The image parameters are ImageData objects with pixel values from RGBA color sch
    },
    'fingerprint',
    [
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
+       {File:
+          lastModified: 1592228890000,
+          name: image3.png,
+          type: "image/png",
+          size: 1073218
+       },
+       {File:
+          lastModified: 1592228891234,
+          name: image4.png,
+          type: "image/png",
+          size: 1073218
+       }
        ...,
        ...
    ]
@@ -164,11 +168,11 @@ The response of a predicted request, if threshold confidence are met, returns PI
 |uuid           |         String value of UUID |
 |apiKey           |         API Key retrieved from URL parameter |
 |’face’      |         Modality type for face prediction.|
-|images1      |         Array of ImageData.|
+|images1      |         Array of image files.|
 |’voice’      |         Modality type for voice prediction.|
 |voiceFile      |         Type File voice.|
 |’fingerprint’      |         Modality type for fingerprint prediction.|
-|images2      |         Array of ImageData.|
+|images2      |         Array of image files.|
 
 The method window.enroll enrolls for face, voice, or fingerprint modalities. It can use single or multiple modalities. 
 
@@ -181,16 +185,18 @@ The method window.enroll enrolls for face, voice, or fingerprint modalities. It 
    "apiKeyValue",
    "face",
    [
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
+       {File:
+          lastModified: 1592228890000,
+          name: image1.png,
+          type: "image/png",
+          size: 1073218
+       },
+       {File:
+          lastModified: 1592228891234,
+          name: image2.png,
+          type: "image/png",
+          size: 1073218
+       }
        ...,
        ...
    ],
@@ -203,16 +209,18 @@ The method window.enroll enrolls for face, voice, or fingerprint modalities. It 
    },
    'fingerprint',
    [
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
-       [{ImageData: 
-          data: [225, 0, 11, 1, ....],
-          height: 224,
-          width: 224
-       }],
+       {File:
+          lastModified: 1592228890000,
+          name: image3.png,
+          type: "image/png",
+          size: 1073218
+       },
+       {File:
+          lastModified: 1592228891234,
+          name: image4.png,
+          type: "image/png",
+          size: 1073218
+       }
        ...,
        ...
    ]
