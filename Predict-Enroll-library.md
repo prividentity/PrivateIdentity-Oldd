@@ -72,11 +72,13 @@ This is the demo page app for Enroll and predict using Voice,Face.
 
 The method window.predict can be used for face, voice, or fingerprint prediction. This method can be used for any of them, or all together. 
 
+Image parameters should be sent as ImageData objects with pixel values from RGBA color scheme. For voice files, they should be selected in browser from a file input element. 
+
 **Example**
 
 ```
 {
-   "XXXXX",
+   "apiKeyValue",
    "face",
    [
        [{ImageData: 
