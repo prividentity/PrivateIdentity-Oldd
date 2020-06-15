@@ -79,16 +79,38 @@ The method window.predict can be used for face, voice, or fingerprint prediction
    "XXXXX",
    "face",
    [
-       {ImageData: 
+       [{ImageData: 
           data: [225, 0, 11, 1, ....],
           height: 224,
           width: 224
-       },
-       {ImageData: 
+       }],
+       [{ImageData: 
           data: [225, 0, 11, 1, ....],
           height: 224,
           width: 224
-       },
+       }],
+       ...,
+       ...
+   ],
+   'voice',
+   {File:
+       lastModified: 1592228891234,
+       name: testWav.wav,
+       type: "audio/wav",
+       size: 1073218
+   },
+   'fingerprint',
+   [
+       [{ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       }],
+       [{ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       }],
        ...,
        ...
    ]
