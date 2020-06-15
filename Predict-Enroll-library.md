@@ -71,14 +71,11 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 ```
 {
     "PII": {
-        "name": "Nguyen",
-	"id": "1008023",
-        ...
-        "address": "23 Scott Street"
+        "uuid": random_hexstring
     },
     "message": "OK",
     "status": 0,
-    "subject_id": 4,
+    "subject_id": subject_id_from_system,
 }
 ```
 
