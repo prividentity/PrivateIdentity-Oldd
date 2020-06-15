@@ -1,4 +1,4 @@
-## Setup ##
+## Predict Enroll library  ##
 
 Predict Enroll Library is a javascript library that will help you to Enroll and Predict by selecting the images from your browser. This library will send images to a Private Identity server or your own hosted Private Identity server for enrollment and prediction.
 
