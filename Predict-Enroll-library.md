@@ -168,7 +168,8 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 |’fingerprint’      |         Modality type for fingerprint prediction.|
 |images2      |         Array of ImageData.|
 
-The method window.enroll can be used for face, voice, or fingerprint prediction. This method can be used for any of them, or all together. 
+The method window.enroll enrolls for face, voice, or fingerprint modalities. It can use a single modality or all of them. 
+
 
 **Example**
 
@@ -220,7 +221,6 @@ The method window.enroll can be used for face, voice, or fingerprint prediction.
 
 The response of an Enroll request returns O as a success given data validation and database storage success. The response returns -1 if the user already exists in the model. The response returns -2 if the embedding distance is too far caused by at least one bad enroll embedding (usually caused by a bad enroll image).
 
-The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
 ```
 {
     "message": "OK",
