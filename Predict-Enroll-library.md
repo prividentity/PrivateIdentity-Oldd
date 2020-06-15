@@ -4,7 +4,7 @@ Predict Enroll Library is a javascript library that will help you to Enroll and 
 
 ## Local Web Server Setup ##
 
-To run this you need a web server like apache2 or nginx
+To run Predict Enroll library you need a web server like apache2 or nginx
 
 **Note**: If you already have a web server you can skip below steps to install apache2 and simply unzip the downloaded code and move it to /var/www/html/ directory.
 
