@@ -45,7 +45,7 @@ To host your own private server, please have a look at this [link](https://githu
 
 For ex., if your own server is `https://company.privateidentity.com` then the URL will be
 
-`http://localhost/predict-enroll-library/?apiKey=XXXX&nodeServer=https://company.privateidentity.com/`
+ http://localhost/predict-enroll-library/?apiKey=XXXX&nodeServer=https://company.privateidentity.com/
 
 ---------------------------------------------------------------------
 This is the demo page app for Enroll and predict using Voice,Face.
