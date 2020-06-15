@@ -126,11 +126,11 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 ```
 {
     "PII": {
-        "uuid": random_hexstring
+        "uuid": "l1a25w8x2a9f4e3x8s1a"
     },
     "message": "OK",
     "status": 0,
-    "subject_id": subject_id_from_system,
+    "subject_id": "100045",
 }
 ```
 
