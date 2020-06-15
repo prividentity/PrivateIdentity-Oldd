@@ -134,6 +134,10 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 }
 ```
 
+
+---------------------------------------------------------------------
+
+
 **Enroll Requests**
 
 `Method: window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
