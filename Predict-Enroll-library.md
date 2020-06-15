@@ -35,7 +35,7 @@ To run Predict Enroll library you need a web server like apache2 or nginx
 
 After this, you will able to access predict and enroll from the demo page app. 
 
-Launch the below-mentioned URL in your browser:
+Launch the below-mentioned URL in your browser and replace XXXX with apiKey value provided by Private identity:
 
 http://localhost/predict-enroll-library/?apiKey=XXXX
 
