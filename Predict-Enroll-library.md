@@ -152,6 +152,61 @@ The response of a Predict request, if meeting confidence thresholds, returns PII
 
 The method window.enroll can be used for face, voice, or fingerprint prediction. This method can be used for any of them, or all together. 
 
+**Example**
+
+```
+{
+   "l1a25w8x2a9f4e3x8s1a",
+   "apiKeyValue",
+   "face",
+   [
+       [{ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       }],
+       [{ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       }],
+       ...,
+       ...
+   ],
+   'voice',
+   {File:
+       lastModified: 1592228891234,
+       name: testWav.wav,
+       type: "audio/wav",
+       size: 1073218
+   },
+   'fingerprint',
+   [
+       [{ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       }],
+       [{ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       }],
+       ...,
+       ...
+   ]
+}
+```
+
 **Response**
 
 The response of an Enroll request returns O as a success given data validation and database storage success. The response returns -1 if the user already exists in the model. The response returns -2 if the embedding distance is too far caused by at least one bad enroll embedding (usually caused by a bad enroll image).
+
+The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
+```
+{
+    "message": "OK",
+    "status": 0,
+    "subject_id": "100045"
+}
+```
