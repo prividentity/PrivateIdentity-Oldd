@@ -160,7 +160,7 @@ The method window.enroll can be used for face, voice, or fingerprint prediction.
 
 ```
 {
-   "l1a25w8x2a9f4e3x8s1a",
+   "uuidValue",
    "apiKeyValue",
    "face",
    [
