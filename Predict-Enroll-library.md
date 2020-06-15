@@ -136,7 +136,7 @@ The image parameters are ImageData objects with pixel values from RGBA color sch
 **Response**
 
 
-The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
+The response of a predicted request, if threshold confidence are met, returns PII data in the following format:
 ```
 {
     "PII": {
@@ -221,14 +221,9 @@ The method window.enroll enrolls for face, voice, or fingerprint modalities. It 
 
 **Response**
 
-The response of an Enroll request returns O as a success given data validation and database storage success. The response returns -1 if the user already exists in the model. The response returns -2 if the embedding distance is too far caused by at least one bad enroll embedding (usually caused by a bad enroll image).
+The response of an Enroll request returns `O` as a success given data validation and database storage success. The response returns `-1` if the user already exists in the model. The response returns `-2` if the embedding distance is too far caused by at least one bad enroll embedding (usually caused by a bad enroll image).
 
 ```
-{
-    "message": "OK",
-    "status": 0,
-    "subject_id": "100045"
-}
 {
     "PII": {
         "enroll_level": "1"
