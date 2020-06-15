@@ -1,43 +1,51 @@
 ## Setup Predict Enroll library ##
 
+Predict Enroll Library is a javascript library that will help you to Enroll and Predict by selecting the images from your browser. This library will send images to a Private Identity server or your own hosted Private Identity server for enrollment and prediction.
+
 ### To run this you need a web server like apache2 or nginx ###
 
-**Note**: If you already have web server you can skip below steps to install apache2 and simply unzip the downloaded code and move it to /var/www/html/ directory.
+**Note**: If you already have a web server you can skip below steps to install apache2 and simply unzip the downloaded code and move it to /var/www/html/ directory.
 
 #### If you want to install an apache2 follow below steps #### 
 
-1. Downlaod Zip file form URL https://private.id/predict-enroll-library.zip
+1. Download Zip file form URL https://private.id/predict-enroll-library.zip
 
 2. Install apache2  `sudo apt-get install apache2`
 
-3. unzip predict library `unzip predict-enroll-library.zip` 
+3. Unzip predict library `unzip predict-enroll-library.zip` 
 
-4. move code to html location `mv predict-enroll-library /var/www/html/`
+4. Move code to the following location `mv predict-enroll-library /var/www/html/`
 
-5. start apache2 service `sudo service apache2 start`
+5. Start apache2 service `sudo service apache2 start`
 
 
 
 #### If you want to install an nginx follow below steps #### 
 
-1. Downlaod Zip file form URL an https://private.id/predict-enroll-library.zip
+1. Download Zip file form URL an https://private.id/predict-enroll-library.zip
 
 2. Install nginx `sudo apt-get install nginx`
 
-3. unzip predict library `unzip predict-enroll-library.zip` 
+3. Unzip predict library `unzip predict-enroll-library.zip` 
 
-4. move code to html location `mv predict-enroll-library /var/www/html/` 
+4. Move code to the following location `mv predict-enroll-library /var/www/html/` 
 
 5. sudo service nginx start
 
 
-After this you will able to access predict and enroll from the demo page app. 
+After this, you will able to access predict and enroll from the demo page app. 
+
+Launch the below-mentioned URL in your browser:
 
 http://localhost/predict-enroll-library/?apiKey=XXXX
 
-By default, the NodeJS endpoints are located at `https://private.id/node/`. If you want to change this setting, you can use URL parameter `nodeServer`. 
+By default, the NodeJS endpoints are located at `https://private.id/node/`. If you want to change this setting, you can use the URL parameter `nodeServer` to your own private hosted server.
 
-Example: http://localhost/predict-enroll-library/?apiKey=XXXX&nodeServer=https://example.com/
+To host your own private server, please have a look at this [link](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup) which will give detailed step-by-step instructions on how to configure the endpoint.
+
+For ex., if your own server is https://company.privateidentity.com then the URL will be
+
+`http://localhost/predict-enroll-library/?apiKey=XXXX&nodeServer=https://example.com/`
 
 ---------------------------------------------------------------------
 This is the demo page app for Enroll and predict using Voice,Face.
