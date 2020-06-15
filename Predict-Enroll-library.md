@@ -72,6 +72,29 @@ This is the demo page app for Enroll and predict using Voice,Face.
 
 The method window.predict can be used for face, voice, or fingerprint prediction. This method can be used for any of them, or all together. 
 
+**Example**
+
+```
+{
+   "XXXXX",
+   "face",
+   [
+       {ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       },
+       {ImageData: 
+          data: [225, 0, 11, 1, ....],
+          height: 224,
+          width: 224
+       },
+       ...,
+       ...
+   ]
+}
+```
+
 **Response**
 
 
