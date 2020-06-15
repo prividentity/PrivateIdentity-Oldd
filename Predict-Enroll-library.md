@@ -85,7 +85,7 @@ This is the demo page app for Enroll and predict using Voice,Face.
 
 The method window.predict predicts for face, voice, or fingerprint modalities. It can use single or multiple modalities. 
 
-The image parameters are image file objects with pixel values from RGBA color scheme. Voice files utilizes the HTML file input element to be added in the method argument.
+The image1, and image2 parameters are file objects. Voice files utilizes the HTML file input element to be added in the method argument.
 
 
 **Example**
