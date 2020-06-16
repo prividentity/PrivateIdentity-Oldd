@@ -82,7 +82,7 @@ Change the variables in variables.sh before this:
 
 ## Setup PBAPP on Cluster
 
-We need to deploy our backend services on Cluster In order to do so we need to run below commands that will auto deploy our code with latest changes from git to Cluster. It's following DevOps approach it's building docker image with latest code from git and pushing it into ECR Repository on AWS and deploying Kubernetes deployment and service for Application with the latest docker image that we pushed on ECR Repo.
+We need to deploy our backend services on Cluster. In order to do so we need to run the commands below that will auto deploy our code with the latest changes from git to Cluster. It's following DevOps approach it's building docker image with latest code from git and pushing it into ECR Repository on AWS and deploying Kubernetes deployment and service for Application with the latest docker image that we pushed on ECR Repo.
  
 ###     Go to location
  	   cd $HOME/pb/kubernetes/code/pbapp/aws
