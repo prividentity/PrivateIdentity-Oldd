@@ -70,10 +70,6 @@ We have cluster-run.sh script that will Deploy EKS Cluster on AWS and you need t
 
 **Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build cluster.
 
-## Setup mysql and redis 
-Follow this
-https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-and-mysql
-
 ## Build the containers for sagemakers
 Change the variables in variables.sh before this, and add the proper endpoints:
 
