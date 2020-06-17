@@ -77,7 +77,7 @@ https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-and-mysql
 ## Build the containers for sagemakers
 Change the variables in variables.sh before this:
 
-    cd $HOMEpb/kubernetes/deployment
+    cd $HOME/pb/kubernetes/deployment
     . ./sagemaker.sh
 
 ## Setup PBAPP on Cluster
