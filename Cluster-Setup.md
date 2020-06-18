@@ -75,7 +75,7 @@ Change the variables in variables.sh before this, and add the proper endpoints:
 
     cd $HOME/pb/kubernetes/deployment
     . ./sagemaker.sh
-    cp variables.sh variables-(clustername).sh
+    cp variables.sh variables-<clustername>.sh
     
 
 ## Setup PBAPP on Cluster
