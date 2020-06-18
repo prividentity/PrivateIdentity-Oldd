@@ -447,13 +447,14 @@ The following screenshots show a sample demonstration of authentication done wit
 
 Currently, a sample workflow of ping demo can be experienced in the following way.
 
-1. First, the user will register themselves in the system using this [link](https://ping.private.id:9031/sp/startSSO.ping?SpSessionAuthnAdapterId=pingdemo&authType=enroll). The screen will ask for the Active Directory credentials to store the random hex string UUID returned from the system.
-2. Second, the user can log in to the application using different modalities described in the link below:
+First, the user will register themselves in the system using this [enroll link](https://ping.private.id:9031/sp/startSSO.ping?SpSessionAuthnAdapterId=pingdemo&authType=enroll). The screen will ask for the Active Directory credentials to store the random hex string UUID returned from the system.
+
+Second, the user can log in to the application using different modalities described in the link below:
 * [Login with Face](https://ping.private.id:9031/idp/startSSO.ping?PartnerSpId=Dropbox&authType=face)
 * [Login with Voice](https://ping.private.id:9031/idp/startSSO.ping?PartnerSpId=Dropbox&authType=voice)
 * [Login with Face and Voice](https://ping.private.id:9031/idp/startSSO.ping?PartnerSpId=Dropbox&authType=faceandvoice)
 
-Apart from the above functionalities, user can able to raise their enroll level by verifying with a document. Verified Enroll can be achieved with this [link](https://private.id/a/index.htm?apiKey=1962&passport=true)
+Apart from the above functionalities, user can able to raise their enroll level by verifying with a document. The described functionality can be achieved with this [verified enroll link](https://private.id/a/index.htm?apiKey=1962&passport=true)
 
 In case, the user has forgotten their credentials for your Active Directory, they can recover the password with the [Recover Password](https://ping.private.id:9031/ext/pwdreset/Identify?AdapterId=ActiveDirectory)
 
