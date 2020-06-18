@@ -88,6 +88,18 @@ We need to deploy our backend services on Cluster. In order to do so we need to 
 	   cd $HOME/pb/kubernetes/code/jobscheduler/aws
 	   . ./cluster-run.sh 
 
+## Steps to Add SSL certs for domain 
+
+Please follow steps to add certs into cluster for ssl termination.
+
+1. Download certs for domain that you added in variables.sh
+
+2. Run command with exact path of downloaded certs.
+
+```kubectl create secret tls <Domain> --key <path of private key> --cert <path of crt file>``` 
+
+    e.g kubectl create secret tls privateidentity --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
+
 ## Setup PBWEB on Cluster
 
 In order to Deploy frontend service to Cluster with latest code from git run below commands. It is also following same DevOps approach to put app on cluster.  
@@ -103,18 +115,6 @@ Examples
 ###    Go to location
   	  cd $HOME/pb-web/kubernetes/aws
 	  . ./cluster-run.sh 
-
-## Steps to Add SSL certs for domain 
-
-Please follow steps to add certs into cluster for ssl termination.
-
-1. Download certs for domain that you added in variables.sh
-
-2. Run command with exact path of downloaded certs.
-
-```kubectl create secret tls <Domain> --key <path of private key> --cert <path of crt file>``` 
-
-    e.g kubectl create secret tls privateidentity --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
 
 ## Deploy the Cluster Autoscaler
 ## HPA
