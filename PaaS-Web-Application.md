@@ -38,7 +38,7 @@ Note: This command will build docker image and put that docker image into kubern
 
 To setup SSL on your domain please follow below steps.
 
-# Steps to Add SSL certs for domain 
+### Steps to Add SSL certs for domain ### 
 
 Please follow steps to add certs into cluster for ssl termination.
 
