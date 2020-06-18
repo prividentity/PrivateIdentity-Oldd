@@ -51,12 +51,12 @@
 
 ### W3C/FIDO2 WebAuthn (polymorphic interface) ###
 
-* Authenticator enrolment
-* Authenticator authentication
+* Authenticator enrollment -> how enrolling on /demo/ shows your enroll data in /webauthn 
+* Authenticator authentication -> how prediction on /demo/ shows your enroll data in /webauthn
 
 ### Photo ID Verification ###
 
-* DIV/HTML
-* Javascript API
-* Server Side RESTful API
+* DIV/HTML -> https://private.id/demo/?apiKey=1962&passport=true&version=0.9.
+* Javascript API -> The JS Library?
+* Server Side RESTful API -> getPhoneNumberDetails, verifyEnrollConfirmation, googleOCR, getDistanceforEmbeddings, getVerifyDistance, getEnrollLevel, verifyEnroll, predict
 * [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
