@@ -3,7 +3,7 @@
 ### To setup DIV/HTML ###
 
 ```
-!doctype html>
+<!doctype html>
 <html lang="en" style="height: 100%;">
 
 <head>
