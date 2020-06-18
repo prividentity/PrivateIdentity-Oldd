@@ -39,6 +39,7 @@
 * Receives fully homomorphic encryption (FHE) payload from client device
 * Returns UUIDs
 * Runs all ciphertext and plaintext business methods
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Enroll-library)
 
 ### Encryption Engine ###
 
