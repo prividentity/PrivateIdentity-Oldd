@@ -119,4 +119,6 @@
 
 * [Predict-Enroll-library](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Enroll-library)
 
+[**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
+
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
