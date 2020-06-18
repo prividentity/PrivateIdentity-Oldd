@@ -83,7 +83,7 @@ Change the variables in variables.sh before this, and add the proper endpoints:
      cd $HOME/pb/kubernetes/deployment
      cp variables.sh vaiables-[ClusterName].sh
 
-** NOTE ** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
+**NOTE** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
      
 ## Setup PBAPP on Cluster
 
