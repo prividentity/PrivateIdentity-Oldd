@@ -36,6 +36,16 @@ Note: This command will build docker image and put that docker image into kubern
 
 ### Setup SSL certs ###
 
-To setup SSL on your domain please follow below doc.
+To setup SSL on your domain please follow below steps.
 
-https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#Steps-to-Add-SSL-certs-for-domain
+# Steps to Add SSL certs for domain 
+
+Please follow steps to add certs into cluster for ssl termination.
+
+1. Download certs for domain that you added in variables-test.sh
+
+2. Run command with exact path of downloaded certs.
+
+```kubectl create secret tls <Domain> --key <path of private key> --cert <path of crt file>``` 
+
+    e.g kubectl create secret tls privateid --key ~/download/privateid.key --cert ~/Download/privateid.crt
