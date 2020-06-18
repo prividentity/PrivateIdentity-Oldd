@@ -59,3 +59,4 @@
 * DIV/HTML
 * Javascript API
 * Server Side RESTful API
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
