@@ -45,7 +45,7 @@ Please find the setup parameters:
 `private.id`
 
 **IdP Single Sign-On URL:**   
-`https://private.id/a/?idp=okta&version=0.9&apiKey=<insert_api_here>&action=unknown`
+`https://private.id/a/?idp=okta&apiKey=<insert_api_here>&action=unknown`
 
 **IdP Signature Certificate:**   
 Download the certificate using the below link.   
@@ -274,7 +274,13 @@ Steps to setup Private Identity as IDP in Ping Identity:
 
 ![Ping Setup 11](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_setup_11.png)
 
-12. In the SSO Service URLs section, Choose Redirect as the Binding and give the desired modality URL as the Endpoint URL. E.g., [Face modality](https://private.id/a/?idp=okta&version=0.9&apiKey=1962&oktaDomain=private.okta.com&action=predict). Click next.
+12. In the SSO Service URLs section, Choose Redirect as the Binding and give the desired modality URL as the Endpoint URL. The following modalities are currently configured.
+
+* [Face modality](https://private.id/a/?idp=ping&apiKey=1962&action=predict&authType=face&SAMLPartnerID=privateid.face)
+* [Voice modality](https://private.id/a/?idp=ping&apiKey=1962&action=predict&voice=true&face=false&liveness=true&SAMLPartnerID=privateid.voice)
+* [Face & Voice modality](https://private.id/a/?idp=ping&apiKey=1962&action=predict&voice=true&face=true&faceLiveness=false&liveness=true&SAMLPartnerID=privateid.faceandvoice)
+
+Click next.
 
 ![Ping Setup 12](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_setup_12.png)
 
