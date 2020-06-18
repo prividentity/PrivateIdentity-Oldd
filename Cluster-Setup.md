@@ -107,12 +107,22 @@ Please follow steps to add certs into cluster for ssl termination.
 
     e.g kubectl create secret tls privateidentity --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
 
+3. Rename your keys to .pem format in order to create secrets for SAML.
+    
+    e.g mv privateidentity.org.key privateKey.pem
+        mv privateidentity.org.crt certificate.pem
+
+4. RUN command to create secrets for SAML.
+    
+    kubectl create secret tls privateid-domain --key privateKey.pem --cert certificate.pem
+ 
+
 ### Please Create a copy of variables.sh as variables-[ClusterName].sh ###
 
      cd $HOME/pb-web/kubernetes/aws/deployment
      cp variables.sh variables-[ClusterName].sh
 
-** NOTE ** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
+**NOTE** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
 
 
 ## Setup PBWEB on Cluster
