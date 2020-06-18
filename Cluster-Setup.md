@@ -78,6 +78,13 @@ Change the variables in variables.sh before this, and add the proper endpoints:
     cp variables.sh variables-<clustername>.sh
     
 
+### Please Create a copy of variables.sh as variables-[ClusterName].sh ###
+
+     cd $HOME/pb/kubernetes/deployment
+     cp variables.sh vaiables-[ClusterName].sh
+
+** NOTE ** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
+     
 ## Setup PBAPP on Cluster
 
 We need to deploy our backend services on Cluster. In order to do so we need to run the commands below that will auto deploy our code with the latest changes from git to Cluster. It's following DevOps approach it's building docker image with latest code from git and pushing it into ECR Repository on AWS and deploying Kubernetes deployment and service for Application with the latest docker image that we pushed on ECR Repo.
@@ -100,12 +107,29 @@ Please follow steps to add certs into cluster for ssl termination.
 
     e.g kubectl create secret tls privateidentity --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
 
+### Please Create a copy of variables.sh as variables-[ClusterName].sh ###
+
+     cd $HOME/pb-web/kubernetes/aws/deployment
+     cp variables.sh vaiables-[ClusterName].sh
+
+** NOTE ** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
+
+
 ## Setup PBWEB on Cluster
 
 In order to Deploy frontend service to Cluster with latest code from git run below commands. It is also following same DevOps approach to put app on cluster.  
 
+### Please Create a copy of variables.sh as variables-[ClusterName].sh ###
+
+     cd $HOME/pb-web/kubernetes/aws/deployment
+     cp variables.sh vaiables-[ClusterName].sh
+
+
 ### Change environment variables for pb-web app
-      vi $HOME/pb-web/kubernetes/aws/variables.sh
+      vi $HOME/pb-web/kubernetes/aws/deployment/variables-[ClusterName].sh
+
+** NOTE ** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
+
 
 Examples
     `export BRANCH="master"
