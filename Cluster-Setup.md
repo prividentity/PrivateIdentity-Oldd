@@ -81,7 +81,7 @@ Change the variables in variables.sh before this, and add the proper endpoints:
 ### Please Create a copy of variables.sh as variables-[ClusterName].sh ###
 
      cd $HOME/pb/kubernetes/deployment
-     cp variables.sh vaiables-[ClusterName].sh
+     cp variables.sh variables-[ClusterName].sh
 
 **NOTE** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
      
