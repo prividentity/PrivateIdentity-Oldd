@@ -4,6 +4,7 @@
 
 * Built in React (pluggable)
 * Embed as a DIV
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/DIV-HTML)
 
 ### PaaS (Web Tier) ###
 
