@@ -75,7 +75,7 @@ Change the variables in variables.sh before this, and add the proper endpoints:
 
     cd $HOME/pb/kubernetes/deployment
     . ./sagemaker.sh
-    cp variables.sh variables-<clustername>.sh
+    cp variables.sh variables-[Clustername].sh
     
 
 ### Please Create a copy of variables.sh as variables-[ClusterName].sh ###
@@ -110,7 +110,7 @@ Please follow steps to add certs into cluster for ssl termination.
 ### Please Create a copy of variables.sh as variables-[ClusterName].sh ###
 
      cd $HOME/pb-web/kubernetes/aws/deployment
-     cp variables.sh vaiables-[ClusterName].sh
+     cp variables.sh variables-[ClusterName].sh
 
 ** NOTE ** Please Replace [ClusterName] with you clustername. e.g variables-pbtest.sh
 
