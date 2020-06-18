@@ -11,6 +11,7 @@
 * Runs elastic, load balanced, fault tolerant K8s
 * Connects to a Server Side Component managed by Private Identity
 * Runs on any cloud (AWS, GCP, Azure)
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Web-Application)
 
 ### PaaS (Entire Tier) ###
 
@@ -18,6 +19,7 @@
 * Runs elastic, load balanced, fault tolerant K8s
 * Includes Server Side Component managed by RSA
 * Runs on any cloud (AWS, GCP, Azure)
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup) 
 
 ### SaaS (Open) ###
 
