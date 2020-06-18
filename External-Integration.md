@@ -442,3 +442,21 @@ The following screenshots show a sample demonstration of authentication done wit
 
 6.  Upon successful enroll the user details are updated in the active directory. The authentication followed by that would work on successful prediction.
 ![Ping Success](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_success.png)
+
+### Sample Ping Demo
+
+Currently, a sample workflow of ping demo can be experienced in the following way.
+
+1. First, the user will register themselves in the system using this [link](https://ping.private.id:9031/sp/startSSO.ping?SpSessionAuthnAdapterId=pingdemo&authType=enroll). The screen will ask for the Active Directory credentials to store the random hex string UUID returned from the system.
+2. Second, the user can log in to the application using different modalities described in the link below:
+* [Login with Face](https://ping.private.id:9031/idp/startSSO.ping?PartnerSpId=Dropbox&authType=face)
+* [Login with Voice](https://ping.private.id:9031/idp/startSSO.ping?PartnerSpId=Dropbox&authType=voice)
+* [Login with Face and Voice](https://ping.private.id:9031/idp/startSSO.ping?PartnerSpId=Dropbox&authType=faceandvoice)
+
+Apart from the above functionalities, user can able to raise their enroll level by verifying with a document. Verified Enroll can be achieved with this [link](https://private.id/a/index.htm?apiKey=1962&passport=true)
+
+In case, the user has forgotten their credentials for your Active Directory, they can recover the password with the [Recover Password](https://ping.private.id:9031/ext/pwdreset/Identify?AdapterId=ActiveDirectory)
+
+If the user wishes to delete their biometric from the system, they can use either [Forget User](https://private.id/a/?apiKey=1962&action=deleteSubject) link which will predict the user first then proceed with deletion or [Delete User](https://private.id/deleteUser/) link by providing the user's UUID.
+
+A sample demo of all the links can be accessed through [Ping Demo](https://ping.private.id/ping.html) page.
