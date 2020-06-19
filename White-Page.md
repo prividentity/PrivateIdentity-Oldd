@@ -1,10 +1,10 @@
 ### 1 [EXECUTIVE SUMMARY](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Executive-Summary) ###
-### 2 [INTRODUCTION] ###
-### 3 BACKGROUND ###
+### 2 [INTRODUCTION](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Introduction) ###
+### 3 [BACKGROUND](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Background) ###
      3.1 TEMPLATE-BASED BIOMETRIC MATCHING
      3.2 CLOUD-BASED BIOMETRIC MATCHING
-### 4 THE PRIVATE IDENTITY SOLUTION ###
-### 5 OPEN STANDARDS ### 
+### 4 (THE PRIVATE IDENTITY SOLUTION](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#The-Private-Identity-Solution) ###
+### 5 [OPEN STANDARDS](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Open-Standards) ### 
 ### 6 ETHICAL PRINCIPLES FOR USE OF RECOGNITION TECHNOLOGY ### 
 ### 7 BIOMETRIC PRIVACY AND DATA PRIVACY ### 
      7.1 BIOMETRIC PRIVACY
@@ -48,9 +48,16 @@
 </br>
 
 ## Background ##
+</br>
+
 ## The Private Identity Solution ##
+</br>
+
 ## Open Standards ##
+</br>
+
 ## Ethical Principles for use of Recognition Technology ##
+</br>
 ## Biometric Privacy and Data Privacy ##
 ## GDPR, CCPA and BIPA Compliance ##
 ## Biometric Acquisition ##
