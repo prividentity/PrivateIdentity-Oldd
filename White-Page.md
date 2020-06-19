@@ -41,41 +41,41 @@
 
 </br>
 
-## Executive Summary ##
+#### Executive Summary ####
 </br>
 
-## Introduction ##
+#### Introduction ####
 </br>
 
-## Background ##
+#### Background ####
 </br>
 
-## The Private Identity Solution ##
+#### The Private Identity Solution ####
 </br>
 
-## Open Standards ##
+#### Open Standards ####
 </br>
 
-## Ethical Principles for use of Recognition Technology ##
+#### Ethical Principles for use of Recognition Technology ####
 </br>
 
-## Biometric Privacy and Data Privacy ##
+#### Biometric Privacy and Data Privacy ####
 </br>
 
-## GDPR, CCPA and BIPA Compliance ##
+#### GDPR, CCPA and BIPA Compliance ####
 </br>
 
-## Biometric Acquisition ##
+#### Biometric Acquisition ####
 </br>
 
-## Biometric Matching Algorithms ##
+#### Biometric Matching Algorithms ####
 </br>
 
-## Enterprise Integrations ##
+#### Enterprise Integrations ####
 </br>
 
-## Known Processing Issues ##
+#### Known Processing Issues ####
 </br>
 
-## Formal Performance Testing of Algorithm ##
+#### Formal Performance Testing of Algorithm ####
 </br>
