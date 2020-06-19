@@ -43,7 +43,7 @@
 
 #### Executive Summary ####
 </br>
-Mike Pollard and Scott Streit co-founded Private Identity® in Washington, D.C. in 2017. Private Identity solved fully homomorphic encryption (FHE) in 2018 and USPTO granted patents in 2019 and 2020.  The company collaborated with Google’s TensorFlow® team in 2019 to bring FHE to the edge. 
+      Mike Pollard and Scott Streit co-founded Private Identity® in Washington, D.C. in 2017. Private Identity solved fully homomorphic encryption (FHE) in 2018 and USPTO granted patents in 2019 and 2020.  The company collaborated with Google’s TensorFlow® team in 2019 to bring FHE to the edge. 
 Private Identity’s FHE algorithm is a 1-way hash (embedding, or vector encryption) that irreversibly encrypts data while enabling match and search operations on the encrypted dataset. This mitigates the regulatory and legal privacy risk of biometric data by eliminating all requirements to store, transmit or use a plaintext biometric or template.  
 Indeed, the Private Identity solution preserves privacy so effectively that it allows businesses and organizations to use biometric identification without being subject to GDPR, CCPA or BIPA obligations. FHE-transformed data is not “Personal Data” under GDPR or CCPA and is not “Biometric Information” under the BIPA. 
 Today, Private Identity provides contactless face, face with mask, voice and fingerprint recognition algorithms with unmatched accuracy, speed and privacy using an elastic AI/ML/FHE solution. The company’s FHE algorithm reduces false positive identification rates to nearly zero and reduces payload size and network traffic to the cloud by 99.5%.   
