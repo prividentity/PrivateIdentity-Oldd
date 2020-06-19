@@ -5,7 +5,7 @@
       3.2 CLOUD-BASED BIOMETRIC MATCHING
 #### 4 [THE PRIVATE IDENTITY SOLUTION](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#The-Private-Identity-Solution) ####
 #### 5 [OPEN STANDARDS](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Open-Standards) #### 
-#### 6 [ETHICAL PRINCIPLES FOR USE OF RECOGNITION TECHNOLOGY] (https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Ethical-Principles-for-Use-of-Recognition-Technology) #### 
+#### 6 [ETHICAL PRINCIPLES FOR USE OF RECOGNITION TECHNOLOGY](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Ethical-Principles-for-Use-of-Recognition-Technology)  #### 
 #### 7 [BIOMETRIC PRIVACY AND DATA PRIVACY](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Biometric-Privacy-and-Data-Privacy) #### 
       7.1 BIOMETRIC PRIVACY
       7.1 DATA PRIVACY
