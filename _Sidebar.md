@@ -121,6 +121,6 @@
 
 [**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
 
-[**White Page**](https://github.com/openinfer/PrivateIdentity/wiki/White-Page-Table-of-Contents)
+[**White Page**](https://github.com/openinfer/PrivateIdentity/wiki/White-Page)
 
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
