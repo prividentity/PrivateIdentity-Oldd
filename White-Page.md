@@ -1,4 +1,4 @@
-### 1 [EXECUTIVE SUMMARY]([Executive Summary](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Executive-Summary)) ###
+### 1 [EXECUTIVE SUMMARY](https://github.com/openinfer/PrivateIdentity/wiki/White-Page#Executive-Summary) ###
 ### 2 INTRODUCTION ###
 ### 3 BACKGROUND ###
      3.1 TEMPLATE-BASED BIOMETRIC MATCHING
