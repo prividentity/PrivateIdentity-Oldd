@@ -15,6 +15,8 @@ Private Identity allows its customers to utilize biometric security solutions wi
 
 Fully homomorphic encryption (FHE) mitigates the regulatory and legal privacy risk of biometric data by enabling mathematical operations on an encrypted dataset. The FHE transformation at the edge completely mitigates privacy risk by eliminating all requirements to store, transmit or use a plaintext biometric or template.￼
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(11).png)
+
 Specifically, the biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm and then discarded (deleted) without the data ever leaving the local device. This anonymized data ceases to be personal data because no decrypt key exists and the loss of privacy by decryption is mathematically impossible. As a result, the FHE is not “Personal Data” under General Data Protection Regulation (EU) 2016/679 (“GDPR”) or the California Consumer Privacy Act (“CCPA”) and is not “Biometric Information” under the Biometric Information Privacy Act (“BIPA”).  As a result, the identification system is also exempt from data breach notification requirements.
 
 #### Exempt from GDPR Obligations
