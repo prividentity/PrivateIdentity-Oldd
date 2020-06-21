@@ -18,7 +18,7 @@
 
 * Docker Images
 * Runs elastic, load balanced, fault tolerant K8s
-* Includes Server Side Component managed by RSA
+* Includes Server Side Component
 * Runs on any cloud (AWS, GCP, Azure)
 * [Setup](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup) 
 
