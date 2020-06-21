@@ -1,6 +1,6 @@
 ### Enroll Endpoint
 
-To enroll a user, we take as input the PII Data which is a set of tag/value pairs (any tag, such as an ID number or GUID is acceptable; this does not need be PII) and the feature vectors used for training given as input under the “PII” and “features” fields respectively. Using a Global UUID a new identity is created in the persistent engine corresponding to the PII provided. 
+To enroll a user, we take the users Enrollment Data which is a set of tag/value pairs (any tag, such as an ID number or GUID is acceptable). Using a Global UUID a new identity is created in the persistent engine corresponding to the enrollment data provided.
 
 The api_key parameter must be available in request payload, in string value.
 
@@ -12,18 +12,15 @@ POST “/node/enroll”
 
 |Parameter     |         Value| 
 |-----|----|
-|PII           |         Tag/Value pairs|
+|subject_id, uuid           |         Tag/Value pairs|
 |Features      |         Type, Name, Feature Array. Type is voice, face or fingerprint.|
 |api_key      |         api_key value in string.|
 
 An Enroll API request example is as follows:
 ```
 {
-    "PII": {
-       "name": "Nguyen",
-	"id": "1008023",
-	...
-       "address": "23 Scott Street"
+    "enrollment data": {
+	"id": "1008023"
     },
     "features": [
 	{“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },
