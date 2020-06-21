@@ -51,8 +51,6 @@
 
 * [Backdoor](https://github.com/openinfer/PrivateIdentity/wiki/Backdoors)
 
-* [To Do](https://github.com/openinfer/PrivateIdentity/wiki/To-Do)
-
 * [PaaS Client Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Web-Application)
 
 [**External Integration**](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration)
