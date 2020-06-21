@@ -173,11 +173,8 @@ Example:
 ```
 {
     "guid": 1,
-    "PII": {
-        "name": "Nguyen",
-	"id": "1008023",
-        ...
-        "address": "23 Scott Street"
+    "enrollment data": {
+  	"id": "1008023",
     },
     "status": 0,
     "subject_id": 1
