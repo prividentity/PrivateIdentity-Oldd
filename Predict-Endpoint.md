@@ -30,14 +30,11 @@ A Predict API request example is as follows:
 
 **Response**
 
-The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
+The response of a Predict request, if meeting confidence thresholds, returns enrollment data in the following format:
 ```
 {
-    "PII": {
-        "name": "Nguyen",
+    "enrollment data": {
 	"id": "1008023",
-        ...
-        "address": "23 Scott Street"
     },
     "message": "OK",
     "status": 0,
