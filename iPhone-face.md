@@ -16,7 +16,7 @@ The iPhone application is a sample application that exercise the complete BOPS A
 1. The user must provide name, gender, age and address. 
 2. Then click the camera. The iPhone application uses a phone camera to take 10 images for enrollment. Each image is morphed 30 times. This creates at least 300 images for training. The images will be automatically uploaded to the BOPS Server. Click Ok to proceed or cancel to retake images.
 
-Our enrollment interface is configured to link Personally Identifiable Information (PII) to an unencrypted biometric input. All downstream processing is on encrypted biometrics. The enrollment interface is configured to trigger deletion of the unencrypted biometric information.
+Our enrollment interface is configured to link to an unencrypted biometric input. All downstream processing is on encrypted biometrics. The enrollment interface is configured to trigger deletion of the unencrypted biometric information.
 
 <br/><br/>
 
