@@ -9,6 +9,8 @@
 
 Private Identity provides a Web client and two elastic services to support biometric acquisition and high-throughput FHE transformation at the edge. This enables Private Identity to accept a variety of synchronous and asynchronous biometric inputs (i.e. phones, Webcams, legacy devices and applications, and plaintext images, video, audio and input from third-party biometric acquisition systems) without any requirement to store, transmit or use plaintext biometrics.  ￼
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(10).png)
+
 The _Private Identity MFA_ Web client provides users with a massively scalable, convenient, browser-based enrollment, identity, MFA and account recovery experience that operates on more than 90% of all browsers, platforms and devices. 
 
 The _Encryption Engine_ service provides high-throughput, high-demand identification tasks with unlimited asynchronous throughput for face, face with mask, fingerprint and voice enrollment and identification using elastic, load-balanced, fault-tolerant Kubernetes clusters. 
@@ -27,6 +29,8 @@ The Web client, Encryption Engine and Private Identity Search use an ensemble of
 
 The Private Identity MFA Web client provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric. ￼
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(9).png)
+
 The Web client does not require on-device training and has no requirement for expensive hardware, cameras, GPUs, batteries or RAM. Devices with multi-threaded kernels operate in millisecond response time. Devices equipped with GPUs and Edge TPUs operate 70-100x faster. Less capable devices operate by offloading processing to Node.js using the “whereToProcess=nodeServer” URL parameter.  
 
 The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
@@ -37,9 +41,10 @@ For voice biometric acquisition, helper DNNs isolate singular voices. Additional
 
 #### Face, Face+Mask and Fingerprint Geometry Detection DNNs
 
-(Insert Image)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(8).png)
 
-(Insert Image)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(7).png)
+
 
  The Face Geometry Detection DNN accurately locates face(s) in an image by transforming each image into geometric primitives and measuring the relative position, width, and other parameters of eyes, mouth(s), nose(s), and chin(s). Likewise, the Fingerprint Geometry Detection DNN accurately locates finger(s) in an image by transforming each image into geometric primitives and measuring each finger’s relative position, width, and other parameters.  Each DNN returns X and Y coordinates of each modality in an image, video frame or video stream. 
 
@@ -81,7 +86,8 @@ The Face, Face+Mask, and Fingerprint Embedding DNNs maintain full accuracy throu
 
 #### Voice Input Segmentation 
 
-(insert image)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(6).png)
+
 Voice Input Segmentation generalizes the enrollment, improves accuracy and performance during prediction, and allows the DNN to handle real-world conditions. Every enrollment requires >50 10ms voice samples to maintain accuracy and performance. The algorithm uses a sliding 10ms window across one second of input to reach or exceed 50 samples. 
 
 #### Voice Pulse Code Modulation (PCM) Transformation
@@ -116,6 +122,9 @@ The Web client supports offline operation (“Local Mode”) using Edge computin
 
 The Encryption Engine provides unlimited asynchronous throughput for high-demand enrollment and identification tasks using elastic, load-balanced, fault-tolerant Kubernetes clusters.￼
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(5).png)
+
+
 The Encryption Engine maintains full accuracy and performance through real-world boundary conditions and accepts Base-64 plaintext images, video or audio using directory scanning or RESTful API. The Engine identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation, creates a 1-way hash (FHE transformation) for subsequent processing, and then immediately discards the original biometrics. FHE transformation requires 10ms constant time using Cloud AI services and load-balanced, elastic, fault-tolerant Kubernetes clusters.
 
 ### Private Identity Search
@@ -136,11 +145,13 @@ Similar to the Encryption Engine (described above), Private Identity Search main
 
 The Private Identity architecture is biometric modality agnostic. Private Identity uses two DNNs per modality and a set of helper DNNs for each biometric acquisition. Each modality has one pre-trained TensorFlow embedding model and one TensorFlow classifying model that work hand-in-hand to match subjects.  The first DNN and its associated helper DNNs acquire the biometric using the Biometric Acquisition Workflow and then discard (delete) the plaintext biometric after embedding creation.  ￼
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(4).png)
+
 The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each FHE and subsequently returns identity in polynomial time. It is capable of classifying an unlimited number of FHEs and returning identity in constant time when configured using load-balanced, elastic, fault-tolerant Kubernetes clusters.  Testing on GCP using 100,000 FHEs/second (approx. 8B authentications/day, or similar to the daily volume of Azure Active Directory) through cloud AI responded in constant time.  The second DNN runs in any AI cloud container or on-premise. 
 
 ### Facial Recognition Algorithm
 
-(insert image)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(3).png)
 
 * Provides absolute accuracy (99.99%) with nearly zero false positives (0.0001%)
 
@@ -165,7 +176,7 @@ Delete_Subject RESTful API. Accepts FHE input from the web client or the Encrypt
 
 ### Face+Mask Recognition Algorithm
 
-(insert image)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(2).png)
 
 * Provides high accuracy (98%) with nearly zero false positives (0.0001%)
 
@@ -190,7 +201,7 @@ Delete_Subject RESTful API. Accepts FHE input from the web client or the Encrypt
 
 ### Fingerprint Recognition Algorithm
 
-(insert image)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(1).png)
 
 * Provides absolute accuracy (99.99%) with nearly zero false positives (0.0001%) 
 
@@ -214,6 +225,8 @@ Enroll RESTful API: Accepts FHE input from the Web client or the Encryption Engi
 Delete_Subject RESTful API. Accepts FHE input from the Web client or the Encryption Engine and deletes identity.
 
 ### Voice / Speaker Identification Algorithm
+
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20.png)
 
 * Text-, language- and accent-independent voice identification with 1 second of audio
 
