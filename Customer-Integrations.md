@@ -57,5 +57,5 @@
 ### Photo ID Verification ###
 
 * DIV/HTML -> https://private.id/demo/?apiKey=####&passport=true&version=0.9. (Request APIKey from Administrator)
-* The link requests a level 2 enrollment, by taking in a face prediction, then appending a document verification onto that predicted enrollment. 
+* The link requests a level 2 enrollment, then takes a face prediction, then appends a document verification onto that predicted enrollment. 
 * [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
