@@ -29,7 +29,7 @@ Researchers have spent decades attempting to build privacy preserving security s
 
 ### Technical details
 
-There is a comparison between the methods of [Biometric Matching], such as [Template-Based Biometric Matching] and [Cloud-Based Biometric Matching], and the [Private Identity Solution] to biometric matching and while each have a similar yet different approach, Private Identity's solution is the only one to comply with all of the standards and have substantial increase in accuracies.
+There is a comparison between the methods of [Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods), such as [Template-Based Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#Template-Based-Biometric-Matching) and [Cloud-Based Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#Cloud-Based-Biometric-Matching), and the [Private Identity Solution](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#The-Private-Identity-Solution) to biometric matching and while each have a similar yet different approach, Private Identity's solution is the only one to comply with all of the standards and have substantial increase in accuracies.
 
 For Private Identities software to operate, the client-side device: (1) acquires and pre-processes plaintext biometrics; (2) utilizes a pre-trained CNN to create 4kB, 1-way encrypted, Euclidean measurable biometric feature vectors that can be safely stored and operated locally or in the Cloud; and (3) then discards the plaintext biometric data since it is no longer needed.
 
