@@ -24,4 +24,4 @@ Our enrollment interface is configured to link to an unencrypted biometric input
  
 <img src="http://openinfer.com/images/openinfer_iPhone3.png" width="30%">
 
-The search function takes in 3 biometric images and check for Liveness, uses a pretrained machine learning model to make predictions for each image, then uses a voting method to determine which prediction is correct. If the number of images is greater than 1, the search function performs a vote, where a pluraltiy algorithm determines the correct subject. Once predicted, the PII information for the Subject is shown.
+The search function takes in 3 biometric images and check for Liveness, uses a pretrained machine learning model to make predictions for each image, then uses a voting method to determine which prediction is correct. If the number of images is greater than 1, the search function performs a vote, where a pluraltiy algorithm determines the correct subject. Once predicted, the enrollment data for the Subject is shown.
