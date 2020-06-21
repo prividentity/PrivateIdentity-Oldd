@@ -19,6 +19,8 @@ With regard to privacy, cloud-based DNNs require plaintext biometric information
 
 FHE techniques pioneered by Private Identity offer significant performance and privacy advances over previous solutions. The Private Identity recognition algorithm improves speed and accuracy, reduces false positive error rates to nearly zero, and fully preserves and offers the highest level of privacy by conducting encrypted match and search operations on an encrypted dataset using 1-way hash (embedding, or vector encryption). This eliminates the everpresent security vs. privacy tradeoff inherent in previous security solutions.  
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(12).png)
+
 To accomplish this, Private Identity uses one pre-trained TensorFlow embedding DNN per biometric modality and a set of helper DNNs for biometric acquisition.  These DNNs acquire the biometric using the Biometric Acquisition Workflow and then discard (delete) the plaintext biometric after embedding creation. 
 
 A second set of classifying DNNs match and search subjects in the encrypted space. These DNNs classify an unlimited number of FHEs and return identity in constant time when deployed on load-balanced, elastic, fault-tolerant Kubernetes clusters and Cloud AI services. Testing at 100,000 FHEs/second (simulating 8B authentications/day, or similar to the daily volume of Azure Active Directory) using the above configuration responds in constant time.  
