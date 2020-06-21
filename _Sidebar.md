@@ -65,7 +65,7 @@
 
 * [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#ping-identity)
 
-  * [Sample Ping Demo](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#sample-ping-demo)
+  * [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#sample-ping-demo)
 
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
@@ -91,7 +91,7 @@
 
 * [Merging Face and Voice Enrollments](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#Merging-Face-and-Voice-Enrollments)
 
-* [User Interface Demo](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#User-Interface-Demonstration)
+* [User Interface Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#User-Interface-Demonstration)
 
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
@@ -119,14 +119,12 @@
 
 * [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Enroll-Overview)
 
-* [Postman Demo](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Postman-Example-Project)
+* [Postman Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Postman-Example-Project)
 
 [**Javascript API**](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Enroll-library)
 
 * [Predict-Enroll-library](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Enroll-library)
 
 [**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
-
-[**White Page**](https://github.com/openinfer/PrivateIdentity/wiki/White-Page)
 
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
