@@ -56,7 +56,6 @@
 
 ### Photo ID Verification ###
 
-* DIV/HTML -> https://private.id/demo/?apiKey=1962&passport=true&version=0.9.
-* Javascript API -> The JS Library?
-* Server Side RESTful API -> getPhoneNumberDetails, verifyEnrollConfirmation, googleOCR, getDistanceforEmbeddings, getVerifyDistance, getEnrollLevel, verifyEnroll, predict
+* DIV/HTML -> https://private.id/demo/?apiKey=####&passport=true&version=0.9. (Request APIKey from Administrator)
+* The link requests a level 2 enrollment, by taking in a face prediction, then appending a document verification onto that predicted enrollment. 
 * [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
