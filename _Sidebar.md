@@ -65,7 +65,7 @@
 
 * [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#ping-identity)
 
-  * [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#sample-ping-demo)
+* [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#sample-ping-demo)
 
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
