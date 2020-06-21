@@ -12,6 +12,8 @@
 
 * [Biometric Privacy and Data Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Privacy-and-Data-Privacy)
 
+* [Biometric Acquisition](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition)
+
 [**IEEE 2410 Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server)
 
 * [SBP API Overview](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#sbp-api-overview)
