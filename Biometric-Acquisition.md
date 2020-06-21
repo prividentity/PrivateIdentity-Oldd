@@ -55,4 +55,79 @@ The face mask detection algorithm determines if a subject is wearing a mask.  M
 
 The eyeglass detection algorithm determines if a subject is wearing eyeglasses before allowing enrollment. Eyeglasses used during enrollment lower subsequent prediction performance. The Eyeglasses On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is eyeglasses off and 100 is eyeglasses on. The URL parameter for enrollment and prediction “eyeGlassCheck=true” provides real-time instructions to the user to remove eyeglasses.   
 
-####
+#### Eye Geometry Detect DNN
+
+The Eye Geometry Detection DNN accurately locates eye(s) in an image by transforming each frontal facial image into geometric primitives and measuring relative position. The DNN returns X,Y coordinates of each eye in an image, video frame or video stream.  
+
+#### Eyes Open/Closed Detection DNN (Spoofing Prevention)
+
+The Eyes Open/Closed DN provides real-time passive facial liveness.  This algorithm mitigates risk of a photo spoofing attack during unattended operation. The DNN receives an input image of an eye and outputs a validation score between 0 and 100, where 0 is eyes closed and 100 is eyes open. The user cannot proceed until the detection of a pair of eye-open/eye-closed events. A URL parameter “faceLiveness=true” allows the overriding of default functionality by enabling the eye-blink check. 
+
+#### Facial and Fingerprint Data Augmentation
+
+Data augmentation generalizes the enrollment, improves accuracy and performance during subsequent prediction and allows the DNN to handle real-world conditions. Every enrollment requires >50 biometric input images to maintain accuracy and performance. The algorithm augments all valid input images to reach or exceed 50. The set of images are then broadened to add boundary conditions to generalize the enrollment.  The broadening includes enhanced image rotations and flips, and color and lighting homogenizations.  Augmentations must increase the distance metric (Euclidean distances or cosine similarity) but not surpass class boundaries. The algorithm removes any images that exceed class boundaries. The remaining images challenge the distance metric boundaries without surpassing them.  
+
+If only one image is available for enrollment, the Encryption Engine will augment the frontal facial input image 60 times, remove the outliers and then enroll the user. The Web client captures 8 images, morphs each image 9 times, removes any outliers and then enrolls the user.  
+
+Enrollment requires >50 augmented biometric input images to maintain the health, accuracy and performance of the recognition algorithm. The Encryption Engine accepts biometric input image(s), morphs and homogenizes the lighting and contrast once, and discards the original images. 
+
+There is no intrinsic requirement to morph images for prediction.  However, we find that homogenized images perform better than non-homogenized images. Image homogenization occurs through convenience libraries in Python and JavaScript. For prediction, the Web client captures 3 images, morphs and homogenizes the lighting and contrast once, and discards the original images. 
+
+#### FACE, FACE+MASK, AND FINGERPRINT EMBEDDING DNNs
+
+The Face, Face+Mask, and Fingerprint Embedding DNNs FHE transform the biometric input image to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers. 
+
+The Face, Face+Mask, and Fingerprint Embedding DNNs maintain full accuracy through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  The embedding DNNs use the MobileNetV2 architecture and output a 1-way encrypted payload in <100ms. 
+
+#### Voice Input Segmentation 
+
+(insert image)
+Voice Input Segmentation generalizes the enrollment, improves accuracy and performance during prediction, and allows the DNN to handle real-world conditions. Every enrollment requires >50 10ms voice samples to maintain accuracy and performance. The algorithm uses a sliding 10ms window across one second of input to reach or exceed 50 samples. 
+
+#### Voice Pulse Code Modulation (PCM) Transformation
+
+Pulse Code Modulation lessens the input to two times the frequency range allowing for the smallest possible Fourier transform without computational loss. 
+
+#### Voice Fast Fourier Transformation (FFT)
+
+The Voice Fast Fourier Transform (FFT) moves the pulse code modulated audio signal from the time domain to a representation in the frequency domain.  The transform output is a 2-dimensional array of frequencies that is input to the Voice Embedding DNN.
+
+#### Voice Embedding DNN
+
+The Voice Embedding DNN accepts input of one 2-dimensional array of frequencies, FHE transforms the input to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding, or 1-way vector encryption), and then deletes the original biometric. 
+
+#### Offline Web Client Biometric Acquisition (Local Mode)
+
+* Private Identity MFA Web client acquires biometrics at the edge with or without a network 
+
+* Web client automatically switches to Local Mode after it detects loss of network 
+
+The Web client supports offline operation (“Local Mode”) using Edge computing. The device in Local Mode authenticates a user using face and fingerprint recognition in 10ms with intermittent or no Internet connection as long as the user authenticates at least once to the device while online. The device stores the user’s FHE (embeddings) locally using the Web Storage API during the first prediction. The client automatically detects the loss of network connectivity. The URL parameter “localMode=true” directs the Web client to use the offline embedding store to authenticate. 
+
+### Encryption Engine
+
+* Asynchronous pre-processing engine for massive plaintext biometric ingestion 
+
+* Elastic, fault-tolerant and load balanced Kubernetes clusters
+
+* Decoupled from back-end cluster for privacy 
+
+* Provides exception processing 
+
+The Encryption Engine provides unlimited asynchronous throughput for high-demand enrollment and identification tasks using elastic, load-balanced, fault-tolerant Kubernetes clusters.￼
+
+The Encryption Engine maintains full accuracy and performance through real-world boundary conditions and accepts Base-64 plaintext images, video or audio using directory scanning or RESTful API. The Engine identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation, creates a 1-way hash (FHE transformation) for subsequent processing, and then immediately discards the original biometrics. FHE transformation requires 10ms constant time using Cloud AI services and load-balanced, elastic, fault-tolerant Kubernetes clusters.
+
+### Private Identity Search
+
+* Asynchronous pre-processing engine for massive plaintext biometric ingestion 
+
+* Elastic, fault-tolerant and load balanced Kubernetes clusters
+
+* Decoupled from back-end cluster for privacy 
+
+* Provides exception processing 
+
+Private Identity Search™ provides high-demand identification tasks asynchronous face, face+mask, fingerprint and voice identification with unlimited throughput using elastic, load-balanced, fault-tolerant Kubernetes clusters. 
+
+Similar to the Encryption Engine (described above), Private Identity Search maintains full accuracy and performance through real-world boundary conditions and accepts Base-64 plaintext images, video or audio by directory scanning or RESTful API. Private Identity Search identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation, creates a 1-way hash (FHE transformation) for subsequent processing, and then immediately discards the original biometrics. Search returns identity in 200ms constant time using Cloud AI services and load-balanced, elastic, fault-tolerant Kubernetes clusters.
