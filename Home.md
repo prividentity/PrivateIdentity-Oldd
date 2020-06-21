@@ -6,7 +6,11 @@
 ### Introduction 
  Private Identity® was founded in Washington, D.C. by Mike Pollard and Scott Streit in 2017 to develop fully homomorphic encryption. Private Identity’s small team of top computer scientists and ML engineers converged on the AI/ML/FHE security solution in early 2018. The company applied for cryptography patents in 2018 and collaborated with Google’s TensorFlow® team in 2019 to bring FHE to the edge. USPTO granted patents in 2019 and 2020 to Private Identity for encrypted enrollment, encrypted match, encrypted search and incremental training for all biometric modalities. Additional patents are pending worldwide. 
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(16).png)
+
 Fully homomorphic encryption (FHE) benefits society by ensuring full privacy. The Private Identity recognition algorithm uses FHE to enable encrypted match and search operations on an encrypted dataset without any requirement to store, transmit or use plaintext biometrics or biometric templates. The biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm (embedding, or vector encryption) and then discarded without the data ever leaving the local device. 
+
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(15).png)
 
 FHE also provides significant performance and efficiency benefits in addition to full privacy. FHE increases the Private Identity recognition algorithm’s accuracy, speed and efficient compute. FHE also reduces the recognition algorithm’s false positive rate to nearly zero (0.0001%) and reduces data flows to the cloud by 99.5%. 
 The Private Identity solution implementation follows ML best practices. The face, face with mask, voice and fingerprint recognition models are small (3MB, 3MB and 900kB, respectively) and use MobileNetV2 architecture. The face model operates with 0.2% non-overlapping subspaces of the entire embedding space (0.2% overlap). Similarly, the fingerprint model has a 3% overlap and the voice model has an 8% overlap.  The face and fingerprint models accommodate 20-30% occlusion to the original biometric and while maintaining the same accuracy as non-occluded biometrics. 
@@ -32,6 +36,8 @@ In October 2019, Dr. Clayton Stewart at University College London tested the per
 ### Technical details
 
 There is a comparison between the methods of [Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods), such as [Template-Based Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#Template-Based-Biometric-Matching) and [Cloud-Based Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#Cloud-Based-Biometric-Matching), and the [Private Identity Solution](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#The-Private-Identity-Solution) to biometric matching and while each have a similar yet different approach, Private Identity's solution is the only one to comply [Biometric Privacy and Data Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Privacy-and-Data-Privacy) standards
+
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(14).png)
 
 For Private Identities software to operate, the client-side device: (1) acquires and pre-processes plaintext biometrics; (2) utilizes a pre-trained CNN to create 4kB, 1-way encrypted, Euclidean measurable biometric feature vectors that can be safely stored and operated locally or in the Cloud; and (3) then discards the plaintext biometric data since it is no longer needed.
 
