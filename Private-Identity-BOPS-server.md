@@ -14,7 +14,7 @@ curl https://server1.privatebiometrics.com:5443/trueid/hello
 
 **Overview**
 
-To enroll a user, we take as input  the PII Data which is a set of tag/value pairs and the images used for training given as input under the “PII” and “images” fields respectively. Using a Global UUID a new identity is created in the persistent engine  corresponding to the PII provided.
+To enroll a user, we take as input  the enrollment Data which is a set of tag/value pairs. Using a Global UUID a new identity is created in the persistent engine  corresponding to the enrollment data provided.
 
 
 **Request**
@@ -27,11 +27,8 @@ Request Payload Example:
 
 ```
 {
-    "PII": {
-       "name": "Nguyen",
+    "enrollment data": {
 	"id": "1008023",
-	...
-       "address": "23 Scott Street"
     },
     "images": [
 	["image_1", "base64_image_1"],
@@ -88,15 +85,12 @@ Request Payload Example:
 
 **Response**
 
-The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
+The response of a Predict request, if meeting confidence thresholds, returns enrollment data in the following format:
 
 ```
 {
-    "PII": {
-        "name": "Nguyen",
+    "enrollment data": {
 	"id": "1008023",
-        ...
-        "address": "23 Scott Street"
     },
     "message": "OK",
     "status": 0,
@@ -155,7 +149,7 @@ The response of a liveness request Returns accuracy data as a ratio from 0 to 1,
 
 **Overview**
 
-Once enrolled a caller can call the Delete subject API to perform an attempt to use the tranied system to delete the individual subject, its roles and PII data based upon images or subject id or PII data  provided in the call.
+Once enrolled a caller can call the Delete subject API to perform an attempt to use the tranied system to delete the individual subject, its roles and enrollment data based upon images or subject id or enrollment data  provided in the call.
 
 **Request**
 
@@ -168,11 +162,8 @@ Request Payload Example:
 ```
 {
     "subject_id": "1008023",
-    "PII": {
-       "name": "Nguyen",
+    "enrollment data": {
 	"id": "1008023",
-	...
-       "address": "23 Scott Street"
     },
     "images": [
 	["image_1", "base64_image_1"],
@@ -261,15 +252,15 @@ Request Payload Example:
 
 The response of a Create role request returns O as  Success.
 
-### Create PII endpoint
+### Create enrollment data endpoint
 
 **Overview**
 
-Once enrolled a caller can call the Create PII API to add PII.
+Once enrolled a caller can call the Create enrollment data API to add enrollment data.
 
 **Request**
 
-Request URL: https://server1.privatebiometrics.com:5443/trueid/createPii
+Request URL: https://server1.privatebiometrics.com:5443/trueid/createEnrollment-Data
 
 Request Method: POST
 
@@ -278,25 +269,23 @@ Request Payload Example:
 ```
 {
     "subject_id": "1008023",
-    "tag": "name",
-    "value": "Nguyen"
 }
 ```
 
 **Response**
 
-The response of a Create PII request returns O as  Success.
+The response of a Create enrollment data request returns O as  Success.
 
 
-### Change PII endpoint
+### Change enrollment data endpoint
 
 **Overview**
 
-Once enrolled a caller can call the Change PII API to modify PII.
+Once enrolled a caller can call the Change enrollment data API to modify enrollment data.
 
 **Request**
 
-Request URL: https://server1.privatebiometrics.com:5443/trueid/changePii
+Request URL: https://server1.privatebiometrics.com:5443/trueid/changeEnrollment-Data
 
 Request Method: POST
 
@@ -311,18 +300,18 @@ Request Method: POST
 
 **Response**
 
-The response of a Change PII request returns O as  Success.
+The response of a Change enrollment data request returns O as  Success.
 
 
-### Delete PII endpoint
+### Delete enrollment data endpoint
 
 **Overview**
 
-Once enrolled a caller can call the Delete PII API to remove PII.
+Once enrolled a caller can call the Delete enrollment data API to remove enrollment data.
 
 **Request**
 
-Request URL: https://server1.privatebiometrics.com:5443/trueid/deletePii
+Request URL: https://server1.privatebiometrics.com:5443/trueid/deleteEnrollment-Data
 
 Request Method: POST
 
@@ -336,4 +325,4 @@ Request Method: POST
 
 **Response**
 
-The response of a Delete PII request returns O as  Success.
+The response of a Delete enrollment data request returns O as  Success.
