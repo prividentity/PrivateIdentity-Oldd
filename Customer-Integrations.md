@@ -47,7 +47,7 @@
 * Cluster for biometric ingestion
 * Elastic, load balanced, fault tolerant K8s, autoscale to 1000s of nodes
 * Javascript API and RESTful API
-* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Client-Cluster-setup)
+* [Cluster Setup](https://github.com/openinfer/PrivateIdentity/wiki/Client-Cluster-setup)
 
 ### W3C/FIDO2 WebAuthn (polymorphic interface) ###
 
