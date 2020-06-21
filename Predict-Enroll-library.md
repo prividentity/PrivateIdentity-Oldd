@@ -140,10 +140,10 @@ The image1, and image2 parameters are file objects. Voice files utilizes the HTM
 **Response**
 
 
-The response of a predicted request, if threshold confidence are met, returns PII data in the following format:
+The response of a predicted request, if threshold confidence are met, returns enrollment data in the following format:
 ```
 {
-    "PII": {
+    "enrollment data": {
         "enroll_level": "1"
         "modality": "voice,face"
         "uuid": "l1a25w8x2a9f4e3x8s1a"
@@ -233,7 +233,7 @@ The response of an Enroll request returns `O` as a success given data validation
 
 ```
 {
-    "PII": {
+    "enrollment data": {
         "enroll_level": "1"
         "modality": "voice,face"
         "uuid": "l1a25w8x2a9f4e3x8s1a"
