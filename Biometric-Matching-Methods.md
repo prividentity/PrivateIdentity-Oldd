@@ -1,5 +1,7 @@
 ### TEMPLATE-BASED BIOMETRIC MATCHING
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(13).png)
+
 
 Today, biometric recognition systems operate using either template matching (the most common approach, 2003-present) or Cloud-based Deep Neural Networks (2017-present).  Biometric recognition systems based on template matching operate by (1) storing the features extracted from an original biometric as templates in the system's database and then (2) matching the template features with those extracted from the biometric information presented during subsequent authentication attempts. 
 
