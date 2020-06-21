@@ -23,6 +23,8 @@ If a username, token or password is lost or stolen, it can be canceled and repla
 
 Researchers have spent decades attempting to build privacy preserving security systems using homomorphic encryption. To date, Private Identity is the only firm to launch a real-time fully homomorphic security system.  In 1978, Rivest, Adleman and Dertouzos at MIT were the first to propose maintaining privacy by performing mathematical operations on encrypted data (FHE). Thirty years later, Dr. Craig Gentry described the first FHE scheme using lattice-based cryptography.  In 2015, the MIT Lincoln Laboratory with US Government funding demonstrated the first use of FHE in the laboratory to control data sharing. In 2017, the US Government launched the homomorphic encryption HECTOR R&D program and reported that law enforcement agencies and private sector companies may, “leverage these new forms of [encrypted] Personal Identifying Information (PII) without encroaching on civil liberties…” 
 
+In October 2019, Dr. Clayton Stewart at University College London tested the performance and privacy of the algorithm. The Stewart paper is here [Link](https://drive.google.com/file/d/15oLgujDI6MG1ICi8phCEubtppiR5fmh8/view)
+
 
 <br/>
 
