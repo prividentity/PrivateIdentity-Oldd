@@ -4,8 +4,7 @@
 
 
 ### Introduction 
-
-[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) Private Identity® was founded in Washington, D.C. by Mike Pollard and Scott Streit in 2017 to develop fully homomorphic encryption. Private Identity’s small team of top computer scientists and ML engineers converged on the AI/ML/FHE security solution in early 2018. The company applied for cryptography patents in 2018 and collaborated with Google’s TensorFlow® team in 2019 to bring FHE to the edge. USPTO granted patents in 2019 and 2020 to Private Identity for encrypted enrollment, encrypted match, encrypted search and incremental training for all biometric modalities. Additional patents are pending worldwide. 
+ Private Identity® was founded in Washington, D.C. by Mike Pollard and Scott Streit in 2017 to develop fully homomorphic encryption. Private Identity’s small team of top computer scientists and ML engineers converged on the AI/ML/FHE security solution in early 2018. The company applied for cryptography patents in 2018 and collaborated with Google’s TensorFlow® team in 2019 to bring FHE to the edge. USPTO granted patents in 2019 and 2020 to Private Identity for encrypted enrollment, encrypted match, encrypted search and incremental training for all biometric modalities. Additional patents are pending worldwide. 
 
 Fully homomorphic encryption (FHE) benefits society by ensuring full privacy. The Private Identity recognition algorithm uses FHE to enable encrypted match and search operations on an encrypted dataset without any requirement to store, transmit or use plaintext biometrics or biometric templates. The biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm (embedding, or vector encryption) and then discarded without the data ever leaving the local device. 
 
@@ -20,17 +19,25 @@ For PaaS integrations on GCP, the solution leverages TensorFlow.js, Cloud AI Pla
 
 ### Background
 
+If a username, token or password is lost or stolen, it can be canceled and replaced with a different one. Biometrics, however, cannot be canceled or replaced. For that reason, it is of utmost importance that biometric systems maintain privacy and confidentiality.  Most such systems do not maintain privacy.  
+
+Researchers have spent decades attempting to build privacy preserving security systems using homomorphic encryption. To date, Private Identity is the only firm to launch a real-time fully homomorphic security system.  In 1978, Rivest, Adleman and Dertouzos at MIT were the first to propose maintaining privacy by performing mathematical operations on encrypted data (FHE). Thirty years later, Dr. Craig Gentry described the first FHE scheme using lattice-based cryptography.  In 2015, the MIT Lincoln Laboratory with US Government funding demonstrated the first use of FHE in the laboratory to control data sharing. In 2017, the US Government launched the homomorphic encryption HECTOR R&D program and reported that law enforcement agencies and private sector companies may, “leverage these new forms of [encrypted] Personal Identifying Information (PII) without encroaching on civil liberties…” 
+
 
 <br/>
 
 
 ### Technical details
 
-To operate, the client-side device: (1) acquires and pre-processes plaintext biometrics; (2) utilizes a pre-trained CNN to create 4kB, 1-way encrypted, Euclidean measurable biometric feature vectors that can be safely stored and operated locally or in the Cloud; and (3) then discards the plaintext biometric data since it is no longer needed.
+There is a comparison between the methods of [Biometric Matching], such as [Template-Based Biometric Matching] and [Cloud-Based Biometric Matching], and the [Private Identity Solution] to biometric matching and while each have a similar yet different approach, Private Identity's solution is the only one to comply with all of the standards and have substantial increase in accuracies.
+
+For Private Identities software to operate, the client-side device: (1) acquires and pre-processes plaintext biometrics; (2) utilizes a pre-trained CNN to create 4kB, 1-way encrypted, Euclidean measurable biometric feature vectors that can be safely stored and operated locally or in the Cloud; and (3) then discards the plaintext biometric data since it is no longer needed.
 
 The client-side software has a small footprint, requires a 1MP camera (or better) for facial recognition and does not require training on the device. The solution supports most client devices including phones, tablets, iPod Touch, PCs, IoT devices, Apple Watch and TV (using voice) and can be embedded in firmware.
 
-The DNN maintains full accuracy during boundary cases such as poor lighting or less-than-ideal subject positioning.<br/>
+The DNN maintains full accuracy during boundary cases such as poor lighting or less-than-ideal subject positioning.
+
+<br/>
 
 ### Basic Architecture
 
