@@ -3,18 +3,24 @@
 <br/>
 
 
-### Introduction
+### Introduction 
 
-[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) are the gold standard of identity authentication and provide access for everything from simple devices to global networks. Private Identity’s neural network operates in encrypted space, instantly recognizes facial, fingerprint, and voice biometrics with unparalleled accuracy and updates its understanding of subject profiles as they change. 
+[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) Private Identity® was founded in Washington, D.C. by Mike Pollard and Scott Streit in 2017 to develop fully homomorphic encryption. Private Identity’s small team of top computer scientists and ML engineers converged on the AI/ML/FHE security solution in early 2018. The company applied for cryptography patents in 2018 and collaborated with Google’s TensorFlow® team in 2019 to bring FHE to the edge. USPTO granted patents in 2019 and 2020 to Private Identity for encrypted enrollment, encrypted match, encrypted search and incremental training for all biometric modalities. Additional patents are pending worldwide. 
 
-We have solved many of the key problems commonly inherent in biometrics and cryptography including homomorphic encryption, encrypted search, encrypted match, the open-set problem, the cocktail party problem, passive liveness and voice accuracy/speaker recognition. 
+Fully homomorphic encryption (FHE) benefits society by ensuring full privacy. The Private Identity recognition algorithm uses FHE to enable encrypted match and search operations on an encrypted dataset without any requirement to store, transmit or use plaintext biometrics or biometric templates. The biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm (embedding, or vector encryption) and then discarded without the data ever leaving the local device. 
 
-These breakthroughs allow our privacy-enabled AI software to compute identity in encrypted space in polynomial time using multiple DNNs with the same accuracy as plaintext while complying with privacy laws worldwide. Consequently, we surpass the strictures of public policy and surmount the technical obstacles inherent in biometric identification, enabling the human face, voice and/or fingerprint to serve as the primary key for identity recognition. 
+FHE also provides significant performance and efficiency benefits in addition to full privacy. FHE increases the Private Identity recognition algorithm’s accuracy, speed and efficient compute. FHE also reduces the recognition algorithm’s false positive rate to nearly zero (0.0001%) and reduces data flows to the cloud by 99.5%. 
+The Private Identity solution implementation follows ML best practices. The face, face with mask, voice and fingerprint recognition models are small (3MB, 3MB and 900kB, respectively) and use MobileNetV2 architecture. The face model operates with 0.2% non-overlapping subspaces of the entire embedding space (0.2% overlap). Similarly, the fingerprint model has a 3% overlap and the voice model has an 8% overlap.  The face and fingerprint models accommodate 20-30% occlusion to the original biometric and while maintaining the same accuracy as non-occluded biometrics. 
+
+The Private Identity solution is available as SaaS or PaaS on GCP, AWS and on-premises. Private Identity provides pre-configured SaaS enterprise integrations for Google Identity®, PING Identity®, Okta® Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn, Azure® Active Directory and AWS® IAM. 
+
+For PaaS integrations on GCP, the solution leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  Similarly, for PaaS integrations on AWS, the solution leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
+
+<br/>
+
+### Background
 
 
-The IEEE 2410 Standard for Biometric Privacy (SBP) provides three API calls to support biometric identification and authentication. Private Identity's SBP implementation allows systems to provide identity and authentication by utilizing the application-programming interface (API). 
-
-Private Identity's SBP implementation offers a “point-and-cut” mechanism to add and enhance appropriate security to production systems as well as to systems in development. The API includes Enroll, Predict and Liveness interfaces.
 <br/>
 
 
