@@ -226,7 +226,7 @@ Delete_Subject RESTful API. Accepts FHE input from the Web client or the Encrypt
 
 ### Voice / Speaker Identification Algorithm
 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper.png)
 
 * Text-, language- and accent-independent voice identification with 1 second of audio
 
