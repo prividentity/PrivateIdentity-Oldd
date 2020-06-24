@@ -2,29 +2,14 @@
 
 <br/>
 
+Private Identity’s FHE algorithm is a 1-way hash (embedding, or vector encryption) that irreversibly encrypts data while enabling match and search operations on the encrypted dataset. This mitigates the regulatory and legal privacy risk of biometric data by eliminating all requirements to store, transmit or use a plaintext biometric or template.  
 
-### Introduction 
- Private Identity® was founded in Washington, D.C. by Mike Pollard and Scott Streit in 2017 to develop fully homomorphic encryption. Private Identity’s small team of top computer scientists and ML engineers converged on the AI/ML/FHE security solution in early 2018. The company applied for cryptography patents in 2018 and collaborated with Google’s TensorFlow® team in 2019 to bring FHE to the edge. USPTO granted patents in 2019 and 2020 to Private Identity for encrypted enrollment, encrypted match, encrypted search and incremental training for all biometric modalities. Additional patents are pending worldwide. 
+Users interact with the Private Identity solution using a massively scalable, convenient, browser-based experience powered by Google Tensorflow® that operates on more than 90% of all browsers, platforms and devices. The Web client does not require on-device training, expensive hardware, GPUs or specialized cameras. 
 
-Fully homomorphic encryption (FHE) benefits society by ensuring full privacy. The Private Identity recognition algorithm uses FHE to enable encrypted match and search operations on an encrypted dataset without any requirement to store, transmit or use plaintext biometrics or biometric templates. The biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm (embedding, or vector encryption) and then discarded without the data ever leaving the local device. 
-
-FHE also provides significant performance and efficiency benefits in addition to full privacy. FHE increases the Private Identity recognition algorithm’s accuracy, speed and efficient compute. FHE also reduces the recognition algorithm’s false positive rate to nearly zero (0.0001%) and reduces data flows to the cloud by 99.5%. 
-The Private Identity solution implementation follows ML best practices. The face, face with mask, voice and fingerprint recognition models are small (3MB, 3MB and 900kB, respectively) and use MobileNetV2 architecture. The face model operates with 0.2% non-overlapping subspaces of the entire embedding space (0.2% overlap). Similarly, the fingerprint model has a 3% overlap and the voice model has an 8% overlap.  The face and fingerprint models accommodate 20-30% occlusion to the original biometric and while maintaining the same accuracy as non-occluded biometrics. 
-
-The Private Identity solution is available as SaaS or PaaS on GCP, AWS and on-premises. Private Identity provides pre-configured SaaS enterprise integrations for Google Identity®, PING Identity®, Okta® Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn, Azure® Active Directory and AWS® IAM. 
-
-For PaaS integrations on GCP, the solution leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  Similarly, for PaaS integrations on AWS, the solution leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
-
-<br/>
-
-### Background
-
-If a username, token or password is lost or stolen, it can be canceled and replaced with a different one. Biometrics, however, cannot be canceled or replaced. For that reason, it is of utmost importance that biometric systems maintain privacy and confidentiality.  Most such systems do not maintain privacy.  
-
-Researchers have spent decades attempting to build privacy preserving security systems using homomorphic encryption. To date, Private Identity is the only firm to launch a real-time fully homomorphic security system.  In 1978, Rivest, Adleman and Dertouzos at MIT were the first to propose maintaining privacy by performing mathematical operations on encrypted data (FHE). Thirty years later, Dr. Craig Gentry described the first FHE scheme using lattice-based cryptography.  In 2015, the MIT Lincoln Laboratory with US Government funding demonstrated the first use of FHE in the laboratory to control data sharing. In 2017, the US Government launched the homomorphic encryption HECTOR R&D program and reported that law enforcement agencies and private sector companies may, “leverage these new forms of [encrypted] Personal Identifying Information (PII) without encroaching on civil liberties…” 
-
-In October 2019, Dr. Clayton Stewart at University College London tested the performance and privacy of the algorithm. The Stewart paper is here [Link](https://drive.google.com/file/d/15oLgujDI6MG1ICi8phCEubtppiR5fmh8/view)
-
+The Private Identity recognition algorithm uses two Deep Neural Networks (DNNs) per biometric modality and a set of helper DNNs for biometric acquisition. The algorithm acquires biometrics and FHE transforms using the following solutions:
+Private Identity MFA™ provides a massively scalable Web browser client for user identification, authentication and Account Recovery; 
+Encryption Engine™ provides a cross-platform, elastic high-throughput AI/ML/FHE transformation service that runs anywhere;
+Private Identity Search™ provides a polynomial, sub-second massively scalable, elastic high-throughput AI/ML/FHE identification service that runs anywhere. 
 
 <br/>
 
