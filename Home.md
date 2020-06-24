@@ -13,21 +13,6 @@ Private Identity Search™ provides a polynomial, sub-second massively scalable,
 
 <br/>
 
-
-### Technical details
-
-There is a comparison between the methods of [Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods), such as [Template-Based Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#Template-Based-Biometric-Matching) and [Cloud-Based Biometric Matching](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#Cloud-Based-Biometric-Matching), and the [Private Identity Solution](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods#The-Private-Identity-Solution) to biometric matching and while each have a similar yet different approach, Private Identity's solution is the only one to comply [Biometric Privacy and Data Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Privacy-and-Data-Privacy) standards
-
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(14).png)
-
-For Private Identities software to operate, the client-side device: (1) acquires and pre-processes plaintext biometrics; (2) utilizes a pre-trained CNN to create 4kB, 1-way encrypted, Euclidean measurable biometric feature vectors that can be safely stored and operated locally or in the Cloud; and (3) then discards the plaintext biometric data since it is no longer needed.
-
-The client-side software has a small footprint, requires a 1MP camera (or better) for facial recognition and does not require training on the device. The solution supports most client devices including phones, tablets, iPod Touch, PCs, IoT devices, Apple Watch and TV (using voice) and can be embedded in firmware.
-
-The DNN maintains full accuracy during boundary cases such as poor lighting or less-than-ideal subject positioning.
-
-<br/>
-
 ### Basic Architecture
 
 [[images/cluster_image.png]]
