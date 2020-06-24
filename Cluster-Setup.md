@@ -4,6 +4,7 @@
 * Elastic, fault-tolerant and load balanced Kubernetes clusters
 * Decoupled from back-end cluster for privacy 
 * Provides exception processing 
+
 The Encryption Engine provides unlimited asynchronous throughput for high-demand enrollment and identification tasks using elastic, load-balanced, fault-tolerant Kubernetes clusters.
 The Encryption Engine maintains full accuracy and performance through real-world boundary conditions and accepts Base-64 plaintext images, video or audio using directory scanning or RESTful API. The Engine identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation, creates a 1-way hash (FHE transformation) for subsequent processing, and then immediately discards the original biometrics. FHE transformation requires 10ms constant time using Cloud AI services and load-balanced, elastic, fault-tolerant Kubernetes clusters. 
 
