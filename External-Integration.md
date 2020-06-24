@@ -1,4 +1,5 @@
 **ENTERPRISE INTEGRATIONS **
+
 Pre-configured SaaS enterprise integrations are available using Google Identity, PING Identity, Okta IdP Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn and AWS IAM.  PaaS integrations hosted on GCP and AWS are also available. 
 
 In this section, we will have an overview of how Private Identity has configured as an Identity Provider for some of the leading secure identity management (IM) providers.
