@@ -54,7 +54,7 @@
 
 * [PaaS Client Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Web-Application)
 
-[**Enterprise Integration**](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations)
+[**Enterprise Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations)
 
 * [Okta](https://https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 
