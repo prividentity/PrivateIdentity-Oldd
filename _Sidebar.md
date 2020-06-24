@@ -54,13 +54,13 @@
 
 * [PaaS Client Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Web-Application)
 
-[**External Integration**](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration)
+[**Enterprise Integration**](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations)
 
-* [Okta](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#okta)
+* [Okta](https://https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 
-* [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#ping-identity)
+* [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 
-* [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/External-Integration#sample-ping-demo)
+* [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#sample-ping-demo)
 
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
