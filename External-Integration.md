@@ -1,4 +1,7 @@
-In this section, we will have an overview of how PrivateIdentity has configured as an Identity Provider for some of the leading secure identity management (IM) providers.
+**ENTERPRISE INTEGRATIONS **
+Pre-configured SaaS enterprise integrations are available using Google Identity, PING Identity, Okta IdP Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn and AWS IAM.  PaaS integrations hosted on GCP and AWS are also available. 
+
+In this section, we will have an overview of how Private Identity has configured as an Identity Provider for some of the leading secure identity management (IM) providers.
 
 Integration with external IM providers can be achieved in a lot of ways. Security Assertion Markup Language (SAML) 2.0 is one of the widely used techniques used for authentication. A general overview of the flow is explained in the link [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0)
 
