@@ -12,8 +12,6 @@
 
 * [Biometric Privacy and Data Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Privacy-and-Data-Privacy)
 
-* [Biometric Matching Methods](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Methods)
-
 * [Biometric Acquisition](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition)
 
 
