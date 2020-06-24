@@ -1,4 +1,4 @@
-**ENTERPRISE INTEGRATIONS **
+**ENTERPRISE INTEGRATIONS**
 
 Pre-configured SaaS enterprise integrations are available using Google Identity, PING Identity, Okta IdP Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn and AWS IAM.  PaaS integrations hosted on GCP and AWS are also available. 
 
