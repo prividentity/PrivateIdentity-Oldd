@@ -5,7 +5,7 @@ The Private Identity architecture is biometric modality agnostic. Private Identi
 The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each FHE and subsequently returns identity in polynomial time. It is capable of classifying an unlimited number of FHEs and returning identity in constant time when configured using load-balanced, elastic, fault-tolerant Kubernetes clusters.  Testing on GCP using 100,000 FHEs/second (approx. 8B authentications/day, or similar to the daily volume of Azure Active Directory) through cloud AI responded in constant time.  The second DNN runs in any AI cloud container or on-premise. 
 
 ## FACIAL RECOGNITION ALGORITHM
-![Face recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Rec%20Algo%20v2.png)
+![Face recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-face%20v4.png)
 * Provides absolute accuracy (99.99%) with nearly zero false positives (0.0001%)
 * Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) using an ethnically balanced dataset 
