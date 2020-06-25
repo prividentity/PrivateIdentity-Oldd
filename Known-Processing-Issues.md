@@ -1,5 +1,5 @@
 ## Face Recognition 
-* Must be combined with voice and/or fingerprint recognition to distinguish between identical twins and 
+* Must be combined with voice and/or fingerprint recognition to distinguish between identical twins 
 * Recognizes children but is only been tested using adult images due to policy restrictions
 
 ## Voice Recognition 
