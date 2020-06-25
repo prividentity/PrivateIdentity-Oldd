@@ -57,3 +57,10 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |---|---|
 |http://private.id/webauthN/|In Progress|
 |https://private.id/webAuthNv2/|In Progress|
+
+## OFFLINE WEB CLIENT BIOMETRIC ACQUISITION (LOCAL MODE)
+
+* Private Identity MFA Web client acquires biometrics at the edge with or without a network 
+* Web client automatically switches to Local Mode after it detects loss of network 
+
+The Web client supports offline operation (“Local Mode”) using Edge computing. The device in Local Mode authenticates a user using face and fingerprint recognition in 10ms with intermittent or no Internet connection as long as the user authenticates at least once to the device while online. The device stores the user’s FHE (embeddings) locally using the Web Storage API during the first prediction. The client automatically detects the loss of network connectivity. The URL parameter “localMode=true” directs the Web client to use the offline embedding store to authenticate. 
