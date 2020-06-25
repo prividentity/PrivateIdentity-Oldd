@@ -32,7 +32,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |liveness|true / false|false|Verify the user by validating live sentences|
 |livenessImages| 1 or more images|10|Number of images to gather on face liveness|
 |livenessMSInterval| Time in millisecond |190|Time interval between each image gather on face liveness|
-|localMode|true / false|false|Local mode to work offline.|
+|localMode|true / false|false|Local mode to .|
 |oauthScope|Scope value|null|Set scope value for oAuth|
 |oauthState|oAuth State|null|Set state value for oAuth|
 |okta|true / false|false|Use Okta as an SP|
@@ -58,8 +58,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |http://private.id/webauthN/|In Progress|
 |https://private.id/webAuthNv2/|In Progress|
 
-## OFFLINE WEB CLIENT BIOMETRIC ACQUISITION (LOCAL MODE)
-
+## Offline Web Client Biometric Acquisition (Local Mode)
 * Private Identity MFA Web client acquires biometrics at the edge with or without a network 
 * Web client automatically switches to Local Mode after it detects loss of network 
 
