@@ -1,5 +1,3 @@
-# BIOMETRIC MATCHING ALGORITHMS
-
 The Private Identity architecture is biometric modality agnostic. Private Identity uses two DNNs per modality and a set of helper DNNs for each biometric acquisition. Each modality has one pre-trained TensorFlow embedding model and one TensorFlow classifying model that work hand-in-hand to match subjects.  The first DNN and its associated helper DNNs acquire the biometric using the Biometric Acquisition Workflow and then discard (delete) the plaintext biometric after embedding creation.  
 
 The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each FHE and subsequently returns identity in polynomial time. It is capable of classifying an unlimited number of FHEs and returning identity in constant time when configured using load-balanced, elastic, fault-tolerant Kubernetes clusters.  Testing on GCP using 100,000 FHEs/second (approx. 8B authentications/day, or similar to the daily volume of Azure Active Directory) through cloud AI responded in constant time.  The second DNN runs in any AI cloud container or on-premise. 
