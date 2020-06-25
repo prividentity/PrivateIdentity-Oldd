@@ -1,5 +1,3 @@
-### Backdoors
-
 #### Reset Server
 
 #### Step 1 : Access the pod name for the pb-app by running the following command
