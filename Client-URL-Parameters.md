@@ -32,7 +32,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |liveness|true / false|false|Verify the user by validating live sentences|
 |livenessImages| 1 or more images|10|Number of images to gather on face liveness|
 |livenessMSInterval| Time in millisecond |190|Time interval between each image gather on face liveness|
-|localMode|true / false|false|Local mode to .|
+|localMode|true / false|false|Local mode to [work offline](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters#offline-web-client-biometric-acquisition-local-mode)|
 |oauthScope|Scope value|null|Set scope value for oAuth|
 |oauthState|oAuth State|null|Set state value for oAuth|
 |okta|true / false|false|Use Okta as an SP|
