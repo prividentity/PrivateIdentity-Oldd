@@ -10,6 +10,8 @@
 
 * [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki#enrollment-morphing)
 
+* [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
+
 * [Biometric Privacy and Data Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Privacy-and-Data-Privacy)
 
 
