@@ -126,4 +126,6 @@
 
 [**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
 
+[**Known Processing Issues**](https://github.com/openinfer/PrivateIdentity/wiki/Known-Processing-Issues)
+
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
