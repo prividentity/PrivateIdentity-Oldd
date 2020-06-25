@@ -50,7 +50,7 @@
 
 * [Operations](https://github.com/openinfer/PrivateIdentity/wiki/Operations)
 
-* [Backdoor](https://github.com/openinfer/PrivateIdentity/wiki/Backdoors)
+* [Kubernetes Actions](https://github.com/openinfer/PrivateIdentity/wiki/Kubernetes-Actions)
 
 * [PaaS Client Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Web-Application)
 
