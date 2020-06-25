@@ -29,7 +29,7 @@ Accepts FHE input from the web client or the Encryption Engine. The API enrolls 
 Accepts FHE input from the web client or the Encryption Engine and deletes identity.
 
 ## FACE+MASK RECOGNITION ALGORITHM
-
+https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-face%20mask%20v4.png
 * Provides high accuracy (98%) with nearly zero false positives (0.0001%)
 * Recognizes faces with masks using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) using an ethnically balanced dataset 
@@ -51,7 +51,7 @@ Accepts FHE input from the web client or the Encryption Engine. The API enrolls 
 Delete_Subject RESTful API. Accepts FHE input from the web client or the Encryption Engine and deletes identity.
 
 ## FINGERPRINT RECOGNITION ALGORITHM  
-
+https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-finger%20v4.png
 * Provides absolute accuracy (99.99%) with nearly zero false positives (0.0001%) 
 * Recognizes fingerprints using any general-purpose camera (webcams, phones) ≥4MP
 * Matches in polynomial time irrespective of gallery size and without discrimination (race, age, gender)
@@ -74,7 +74,7 @@ Accepts FHE input from the Web client or the Encryption Engine. The API enrolls 
 Delete_Subject RESTful API. Accepts FHE input from the Web client or the Encryption Engine and deletes identity.
 
 ## VOICE / SPEAKER IDENTIFICATION ALGORITHM
-
+https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-voice%20v4.png
 * Text-, language- and accent-independent voice identification with 1 second of audio
 * Provides high accuracy (93%) with nearly zero false positives (0.0001%) 
 * Matches in polynomial time irrespective of gallery size and without discrimination
