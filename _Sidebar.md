@@ -62,7 +62,7 @@
 
 * [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#sample-ping-demo)
 
-[**Biometric Ingestion and Helper Models**](https://github.com/openinfer/PrivateIdentity/wiki/Ingestion)
+[**Biometric Ingestion and Helper Models**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs)
 
 [**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
