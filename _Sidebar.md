@@ -17,21 +17,21 @@
 
 [**IEEE 2410 Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
-* [SBP API Overview](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#sbp-api-overview)
+* [SBP API Overview](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#sbp-api-overview)
 
-* [Enroll endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#API-Enroll-Overview)
+* [Enroll endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#API-Enroll-Overview)
 
-* [Predict endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview)
+* [Predict endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#predict-overview)
 
-* [Liveness endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#liveness-overview)
+* [Liveness endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#liveness-overview)
 
-* [Add Role endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#add-role-overview)
+* [Add Role endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#add-role-overview)
 
-* [Delete Role endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#delete-role-overview)
+* [Delete Role endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#delete-role-overview)
 
-* [Add Role to Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#add-role-to-subject)
+* [Add Role to Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#add-role-to-subject)
 
-* [Delete Role from Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#delete-role-from-subject)
+* [Delete Role from Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#delete-role-from-subject)
 
 * [Verify endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-Standard-for-Biometric-Privacy-(SBP)-Server#api-verify-overview)
 
