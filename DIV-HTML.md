@@ -11,7 +11,7 @@
 </head>
 
 <body style="height: 100%;">
-  <iframe width="100%" height="100%" src="https://private.id/demo/?apiKey=1962"></iframe>
+  <iframe width="100%" height="100%" src="https://private.id/demo/?apiKey=####"></iframe>
 </body>
 
 </html>
