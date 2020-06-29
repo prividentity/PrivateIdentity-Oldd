@@ -1,4 +1,4 @@
-1. Eye Blink
+1. [Eye Blink Detect DNN](https://github.com/openinfer/PrivateIdentity/wiki/Active-and-Passive-Liveness-(PAD,-or-Anti-Spoofing)#eye-blink-detect-dnn)
 2. Photo
 3. Video 
 4. Voice
@@ -18,4 +18,11 @@ To enable Eye Blink Liveness of the user, either add the URL parameter **faceLiv
 Sample Demonstration of Eyeblink success:
 ![Eye Blink Demo](https://github.com/openinfer/PrivateIdentity/blob/master/images/eye_blink_demo.png)
 
-Eye Blink Demo
+# Video Spoofing 
+Video spoofing is a well-known scenario when a user with malicious intent tries to bypass the biometric security by playing a recorded video/printed image.
+
+To enable the anti-spoofing in the application, add the URL parameter `antiVideoSpoof=true` while launching the application. This enables the application to check whether the stream of images captured from the webcam is a recorded one or a live one. This is achieved by a machine learning model running in the browser that checks the image passed to it and gives back a probability of whether the image is a spoofed one or not. If the spoofing is detected, the application won't allow the user to perform the requested operation until it is a live one.
+
+Sample Demonstration of Video Spoofing:
+
+![Video Spoof Demo](https://github.com/openinfer/PrivateIdentity/blob/master/images/video_spoof_demo.png)
