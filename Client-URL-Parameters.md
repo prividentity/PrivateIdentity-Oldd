@@ -22,7 +22,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |email|Email ID|null|Email id for enrollment data when action=enroll|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
-|faceLiveness| true / false|false|Check for Face liveness (Eye blink) during predict / enroll|
+|faceLiveness| true / false|false|Check for Face liveness (Eye blink) during predict / enroll [[1](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters#reference)]|
 |face| true / false|true|Enroll & predict with face|
 |fingerPrint|true / false|false|Prediction using Fingerprint (In Progress)|
 |glassCheck|true / false|false|Turn glasses check on predict/enroll to on/off|
