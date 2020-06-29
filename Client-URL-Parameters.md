@@ -51,7 +51,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |value|Numeric value|null|Value for user tag we want to update|
 |voice|true / false|false|Enroll & Predict with voice|
 |whereToProcess|browser / nodeServer|browser|Set the processing destination.|
-|antiVideoSpoof|true / false|false|Check the webcam capture is a spoofed one or not. [[1](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters/_edit#reference)]|
+|antiVideoSpoof|true / false|false|Check the webcam capture is a spoofed one or not. [[1](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters#reference)]|
 
 ### WebAuthN
 |URL|Status|
