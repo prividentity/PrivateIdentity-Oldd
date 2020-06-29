@@ -1,4 +1,4 @@
-1. [Eye Blink Detect DNN](https://github.com/openinfer/PrivateIdentity/wiki/Active-and-Passive-Liveness-(PAD,-or-Anti-Spoofing)#eye-blink-detect-dnn)
+1. Eye Blink Detect DNN
 2. Photo
 3. Video 
 4. Voice
