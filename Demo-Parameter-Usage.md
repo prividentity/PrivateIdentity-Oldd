@@ -90,6 +90,10 @@ Spoofing is a well-known scenario when a user with malicious intent tries to byp
 
 To enable the anti-spoofing in the application, add the URL parameter `antiVideoSpoof=true` while launching the application. This enables the application to check whether the stream of images captured from the webcam is a recorded one or a live one. This is achieved by a machine learning model running in the browser that checks the image passed to it and gives back a probability of whether the image is a spoofed one or not. If the spoofing is detected, the application won't allow the user to perform the requested operation until it is a live one.
 
+Sample Demonstration of Video Spoofing:
+
+![Video Spoof Demo](https://github.com/openinfer/PrivateIdentity/blob/master/images/video_spoof_demo.png)
+
 Another way to check the spoofing is to check whether the liveness of the user can be verified. This can be detected by checking the user's eye blink from the sequence of captured images. To enable the liveness of the user, either add the URL parameter `faceLiveness=true` or double click on the face icon before performing a enroll/prediction.
 
 Sample Demonstration of Eyeblink success:
