@@ -66,4 +66,4 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 The Web client supports offline operation (“Local Mode”) using Edge computing. The device in Local Mode authenticates a user using face and fingerprint recognition in 10ms with intermittent or no Internet connection as long as the user authenticates at least once to the device while online. The device stores the user’s FHE (embeddings) locally using the Web Storage API during the first prediction. The client automatically detects the loss of network connectivity. The URL parameter “localMode=true” directs the Web client to use the offline embedding store to authenticate.
 
 #### Reference:
-##### 1. To know more about the video spoofing identification technique please refer the following documentation
+1. To know more about the video spoofing identification technique please refer the following documentation
