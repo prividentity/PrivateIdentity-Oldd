@@ -83,6 +83,6 @@ A picture with the panel layout explained is shown below, or you can view a demo
 
 ![Version 1.0 User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Version%201.0%20UI.png)
 
-
-
+## Anti Spoofing Technique
+<br/>
 
