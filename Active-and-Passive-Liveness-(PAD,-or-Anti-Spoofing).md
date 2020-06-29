@@ -12,6 +12,7 @@ The Eye Geometry Detection DNN accurately locates eye(s) in an image by transfor
 ## EYES OPEN/CLOSED DETECTION DNN (Photo Spoofing Prevention)
 The Eyes Open/Closed DN provides real-time passive facial liveness. This algorithm mitigates risk of a photo spoofing attack during unattended operation. The DNN receives an input image of an eye and outputs a validation score between 0 and 100, where 0 is eyes closed and 100 is eyes open. The user cannot proceed until the detection of a pair of eye-open/eye-closed events. A URL parameter “faceLiveness=true” allows the overriding of default functionality by enabling the eye-blink check. 
 
+## IMPLEMENTATION
 To enable Eye Blink Liveness of the user, either add the URL parameter **faceLiveness=true**.
 
 Sample Demonstration of Eyeblink success:
