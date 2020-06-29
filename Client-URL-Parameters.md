@@ -51,6 +51,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |value|Numeric value|null|Value for user tag we want to update|
 |voice|true / false|false|Enroll & Predict with voice|
 |whereToProcess|browser / nodeServer|browser|Set the processing destination.|
+|antiVideoSpoof|true / false|false|Check the webcam capture is a spoofed one or not. [[1](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters/_edit#reference)]|
 
 ### WebAuthN
 |URL|Status|
@@ -62,4 +63,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 * Private Identity MFA Web client acquires biometrics at the edge with or without a network 
 * Web client automatically switches to Local Mode after it detects loss of network 
 
-The Web client supports offline operation (“Local Mode”) using Edge computing. The device in Local Mode authenticates a user using face and fingerprint recognition in 10ms with intermittent or no Internet connection as long as the user authenticates at least once to the device while online. The device stores the user’s FHE (embeddings) locally using the Web Storage API during the first prediction. The client automatically detects the loss of network connectivity. The URL parameter “localMode=true” directs the Web client to use the offline embedding store to authenticate. 
+The Web client supports offline operation (“Local Mode”) using Edge computing. The device in Local Mode authenticates a user using face and fingerprint recognition in 10ms with intermittent or no Internet connection as long as the user authenticates at least once to the device while online. The device stores the user’s FHE (embeddings) locally using the Web Storage API during the first prediction. The client automatically detects the loss of network connectivity. The URL parameter “localMode=true” directs the Web client to use the offline embedding store to authenticate.
+
+#### Reference:
+##### 1. To know more about the video spoofing identification technique please refer the following documentation
