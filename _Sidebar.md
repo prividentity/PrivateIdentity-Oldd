@@ -92,6 +92,8 @@
 
 * [User Interface Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#User-Interface-Demonstration)
 
+* [Anti Spoofing Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#anti-spoofing-technique)
+
 [**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
 
 * [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Endpoint)
