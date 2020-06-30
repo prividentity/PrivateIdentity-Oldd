@@ -92,7 +92,7 @@ To enable the anti-spoofing in the application, add the URL parameter `antiVideo
 
 Sample Demonstration of Video Spoofing:
 
-![Video Spoof Demo](https://github.com/openinfer/PrivateIdentity/blob/master/images/video_spoof_demo.png)
+![Video Spoof Demo](https://github.com/openinfer/PrivateIdentity/blob/master/images/Spoof_Icon_Example.png)
 
 Another way to check the spoofing is to check whether the liveness of the user can be verified. This can be detected by checking the user's eye blink from the sequence of captured images. To enable the liveness of the user, either add the URL parameter `faceLiveness=true` or double click on the face icon before performing a enroll/prediction.
 
