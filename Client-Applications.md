@@ -51,6 +51,9 @@ Once the user successfully enrolls, a right check mark will be displayed to the 
 
 <br/>
 
+If you want face prediction to be more accurate, you can use the URL parameter `profileFaceEnroll`. This parameter will take profile face pictures during enroll. 
+
+
 ### Face Predict
 
 Once the user successfully enrolls in the system, they can verify their identity by predicting with their modality. The same process of scanning the face using the webcam is used for prediction. Once sufficient images are captured, the software extracts the features from the images and sends it to the model for identifying the person. Then, the results will be displayed in the frontend identyfing the user that the software has recognized.
