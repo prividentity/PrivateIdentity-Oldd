@@ -1,4 +1,4 @@
-[![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
+[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/Private%20Identity%20MFA%20logo%204.png)](https://www.private.id/)
 
 <br/>
 
