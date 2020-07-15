@@ -1,4 +1,3 @@
-<meta name="google-site-verification" content="QhnNfAOsGJXBC2xVW_jZiYN8vX6vKDT3NJBF7Kg71no" />
 [![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
 
 <br/>
