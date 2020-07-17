@@ -72,14 +72,13 @@ When using a fingerprint to verify a subject's identity, the user will be asked 
 
 #### What are the requirements for a fingerprint enrollment?
 
-
-
-
+Utilizing a browser-based camera (any computer, tablet or smartphone) to capture at least 10 images in the Private Identity app for enrollment. If any of the images are not suitable for training, a message is returned and the image is removed. The user must add more images until at least 10 images meeting the minimum quality standards have been provided. The user will also need to have been supplied a valid API key in order to have access to the software.
 
 [Demonstration for a Fingerprint Enrollment](youtube.com)
 
 #### What are the requirements for a fingerprint prediction?
 
+Once the user successfully enrolls in the system, they can verify their identity by predicting with their modality. The same process of scanning the finger using the webcam is used for prediction. Once sufficient images are captured, the software extracts the features from the images and sends it to the model for identifying the person. Then, the results will be displayed in the frontend identifying the user that the software has recognized. The user will also need to have been supplied a valid API key in order to have access to the software.
 
 [Demonstration for a Fingerprint Prediction](youtube.com)
 </br>
