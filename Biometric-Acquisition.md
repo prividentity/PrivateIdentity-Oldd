@@ -8,6 +8,8 @@ Private Identity provides a Web client and two elastic services to support biome
 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(8).png)
 
+[_Biometric Ingestion and Helper DNN's_](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs)
+
 #### How does it work?
 
 
@@ -33,6 +35,10 @@ Once the user successfully enrolls in the system, they can verify their identity
 ***
 
 ### Face and Mask Algorithm 
+
+#### How does it work?
+
+The algorithm for the face and mask recognition is virtually the same as the facial algorithm, however for mask there is an additional DNN check for whether a mask is detected. The mask check is enabled in the URL by the user using the parameter, "maskCheck=true" and by default it is false. If the parameter is enabled, the user can use a mask that covers their mouth and nose during the prediction, and during the enrollment. However a clear face enrollment is more accurate for mask predictions. 
 </br>
 
 ### Fingerprint Recognition
