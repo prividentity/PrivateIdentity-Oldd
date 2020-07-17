@@ -58,19 +58,34 @@ The user has to define the parameter to enable the mask Check, because by defaul
 
 </br>
 
+***
+
 ### Fingerprint Recognition
 
 #### How does it work?
 
-#### What are the requirements for face and mask enrollment?
+#### What are the requirements for a fingerprint enrollment?
 
-[Demonstration for Fingerprint Enrollment](youtube.com)
+[Demonstration for a Fingerprint Enrollment](youtube.com)
 
-#### What are the requirements for face and mask prediction?
+#### What are the requirements for a fingerprint prediction?
 
 
-[Demonstration for Fingerprint Prediction](youtube.com)
+[Demonstration for a Fingerprint Prediction](youtube.com)
 </br>
 
+***
+
 ### Voice Recognition
+
+#### How does it work?
+
+#### What are the requirements for a voice enrollment?
+
+[Demonstration for a Voice Enrollment](youtube.com)
+
+#### What are the requirements for a voice prediction?
+
+
+[Demonstration for a Voice Prediction](youtube.com)
 </br>
