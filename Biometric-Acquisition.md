@@ -36,6 +36,8 @@ Once the user successfully enrolls in the system, they can verify their identity
 
 ### Face and Mask Algorithm 
 
+![insert diagram](Face_Mask_Diagram)
+
 #### How does it work?
 
 The algorithm for the face and mask recognition is virtually the same as the facial algorithm, however for mask there is an additional DNN check for whether a mask is detected. The mask check is enabled in the URL by the user using the parameter, "maskCheck=true" and by default it is false. If the parameter is enabled, the user can use a mask that covers their mouth and nose during the prediction, and during the enrollment. However a clear face enrollment is more accurate for mask predictions. 
