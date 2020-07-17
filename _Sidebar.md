@@ -37,6 +37,8 @@
 
 [**Biometric Acquisition**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition)
 
+* [Facial Recognition Algorithm](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition#Facial-Recognition-Algorithm)
+
 [**PrivateId Cluster Setup**](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup)
 
 * [AWS EKS Cluster](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#AWS-EKS-CLUSTER)
