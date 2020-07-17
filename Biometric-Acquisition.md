@@ -1,0 +1,34 @@
+## Biometric Acquisition
+
+Private Identity provides a Web client and two elastic services to support biometric acquisition and high-throughput FHE transformation at the edge. This enables Private Identity to accept a variety of synchronous and asynchronous biometric inputs (i.e. phones, Webcams, legacy devices and applications, and plaintext images, video, audio and input from third-party biometric acquisition systems) without any requirement to store, transmit or use plaintext biometrics.
+
+### Facial Recognition Algorithm
+
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(8).png)
+
+#### How does it work?
+
+The software captures images from the user, and in these images an API is detecting the facial landmarks, such as the eyes, mouth, nose and converts this image probe into it's geometric primitives. Afterwards if a face is detected, it is cropped, and aligned to be passed through a eye blink detection and a glasses detection. Then if the image passes the conditions of; no glasses, a proper face is detected, and has a high enough quality, then it is augmented. This augmentation will flip, rotate, and modify the lighting of the photo, to create a dataset of images for the user. This dataset is then encrypted and converted into an FHE payload. This one way payload is sent to the cloud as an embedding, and the previously captured images and biometrics are discarded. 
+
+#### What are the requirements for a facial enrollment?
+
+Utilizing a browser-based camera (any computer, tablet or smartphone) to capture at least 10 images in the Private Identity app for enrollment. If any of the images are not suitable for training, a message is returned and the image is removed. The user must add more images until at least 10 images meeting the minimum quality standards have been provided.
+
+The Enroll process captures the face images continuously and compares it with the existing enrolled subjects. If no enrolled subjects are found the system extracts the features from the images and stores the features in the system.
+
+[Demonstration for Facial Enrollment](youtube.com)
+
+#### What are the requirements for facial prediction?
+
+Once the user successfully enrolls in the system, they can verify their identity by predicting with their modality. The same process of scanning the face using the webcam is used for prediction. Once sufficient images are captured, the software extracts the features from the images and sends it to the model for identifying the person. Then, the results will be displayed in the frontend identifying the user that the software has recognized.
+
+</br>
+
+### Face and Mask Algorithm 
+</br>
+
+### Fingerprint Recognition
+</br>
+
+### Voice Recognition
+</br>
