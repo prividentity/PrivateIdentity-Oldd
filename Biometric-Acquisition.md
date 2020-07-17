@@ -64,6 +64,10 @@ The user has to define the parameter to enable the mask Check, because by defaul
 
 _System under progress._
 
+![Fingerprint recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Fingerprint.png)
+
+[_Biometric Ingestion and Helper DNN's_](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#FACE-\&-FINGERPRINT-VALIDATION-DNNs)
+
 #### How does it work?
 
 During enrollment, or initial capture of a subject’s fingerprint, each print is analyzed for the unique features and lines found on every individual’s fingers. The software app measures the distances and angles between these features and then uses an algorithm to turn this information into a unique numeric code. Comparing fingerprints then becomes a process of comparing codes. If the codes match, the prints match, and the subject is granted access. The algorithm is the same process for facial recognition, the image is processed, augmented, encrypted, transmitted to the server, and then the biometrics are discarded.
