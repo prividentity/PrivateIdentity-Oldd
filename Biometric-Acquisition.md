@@ -62,9 +62,19 @@ The user has to define the parameter to enable the mask Check, because by defaul
 
 ### Fingerprint Recognition
 
+_System under progress._
+
 #### How does it work?
 
+During enrollment, or initial capture of a subject’s fingerprint, each print is analyzed for the unique features and lines found on every individual’s fingers. The software app measures the distances and angles between these features and then uses an algorithm to turn this information into a unique numeric code. Comparing fingerprints then becomes a process of comparing codes. If the codes match, the prints match, and the subject is granted access. The algorithm is the same process for facial recognition, the image is processed, augmented, encrypted, transmitted to the server, and then the biometrics are discarded.
+
+When using a fingerprint to verify a subject's identity, the user will be asked to display their thumb for webcam image capture. A guided area will be displayed in the browser to cover the fingerprint region. Once the systems approves the quality of the image, features extracted from the fingerprint image will be sent to the system for enroll and predict.
+
 #### What are the requirements for a fingerprint enrollment?
+
+
+
+
 
 [Demonstration for a Fingerprint Enrollment](youtube.com)
 
