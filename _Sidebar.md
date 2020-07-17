@@ -35,6 +35,7 @@
 
 * [Verify endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-Standard-for-Biometric-Privacy-(SBP)-ServerAPI-Verify-Overview)
 
+[**Biometric Acquisition**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition)
 
 [**PrivateId Cluster Setup**](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup)
 
