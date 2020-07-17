@@ -39,6 +39,21 @@ Once the user successfully enrolls in the system, they can verify their identity
 #### How does it work?
 
 The algorithm for the face and mask recognition is virtually the same as the facial algorithm, however for mask there is an additional DNN check for whether a mask is detected. The mask check is enabled in the URL by the user using the parameter, "maskCheck=true" and by default it is false. If the parameter is enabled, the user can use a mask that covers their mouth and nose during the prediction, and during the enrollment. However a clear face enrollment is more accurate for mask predictions. 
+
+#### What are the requirements for face and mask enrollment?
+
+The user has to define the parameter to enable the mask Check, because by default it is disabled. Utilizing a browser-based camera (any computer, tablet or smartphone) to capture at least 10 images in the Private Identity app for enrollment. If any of the images are not suitable for training, a message is returned and the image is removed. The user must add more images until at least 10 images meeting the minimum quality standards have been provided. The user will also need to have been supplied a valid API key in order to have access to the software.
+
+The Enroll process captures the face images continuously and compares it with the existing enrolled subjects. If no enrolled subjects are found the system extracts the features from the images and stores the features in the system.
+
+[Demonstration for Face and Mask Enrollment](youtube.com)
+
+#### What are the requirements for face and mask prediction?
+
+The user has to define the parameter to enable the mask Check, because by default it is disabled. Once the user successfully enrolls in the system, they can verify their identity by predicting with their modality. The same process of scanning the face using the webcam is used for prediction. Once sufficient images are captured, the software extracts the features from the images and sends it to the model for identifying the person. Then, the results will be displayed in the frontend identifying the user that the software has recognized. The user will also need to have been supplied a valid API key in order to have access to the software.
+
+[Demonstration for Face and Mask Prediction](youtube.com)
+
 </br>
 
 ### Fingerprint Recognition
