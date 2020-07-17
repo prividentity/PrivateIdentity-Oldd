@@ -97,12 +97,20 @@ Once the user successfully enrolls in the system, they can verify their identity
 
 #### How does it work?
 
+Upon enrollment, Private Identity’s biometric software records and registers the subject’s voice sample. The statistical algorithm analyzes the many distinctive characteristics of the voice and creates a voiceprint or biometric model which is then encrypted and stored in a secure database.
+
+When a subject attempts subsequent logins, the system automatically creates a voice model and compares it with the stored sample. If successful authentication occurs, the subject is allowed access. The human voice is as unique an identifier as the retina, iris or fingerprints. No matter how well aspects of pitch, cadence and intonation are attempted via impersonation, it is impossible to fool the referenced voiceprint in Private Identity’s database.
+
 #### What are the requirements for a voice enrollment?
+
+The user will utilize a browser-based microphone (any computer, tablet or smartphone) to capture at least 1 voice segment in the Private Identity app for enrollment. If any of the voice segments are not suitable for training, a message is returned and the audio is removed. The user must add more voice segments until at least 1 voice segment meets the minimum quality standards that have been provided. The user will also need to have been supplied a valid API key in order to have access to the software.
+
 
 [Demonstration for a Voice Enrollment](youtube.com)
 
 #### What are the requirements for a voice prediction?
 
+Once the user successfully enrolls in the system, they can verify their identity by predicting with their modality. The same process of recording the voice using the microphone is used for prediction. Once sufficient voice segments are captured, the software extracts the features from the voice segments and sends it to the model for identifying the person. Then, the results will be displayed in the frontend identifying the user that the software has recognized. The user will also need to have been supplied a valid API key in order to have access to the software.
 
 [Demonstration for a Voice Prediction](youtube.com)
 </br>
