@@ -2,11 +2,15 @@
 
 Private Identity provides a Web client and two elastic services to support biometric acquisition and high-throughput FHE transformation at the edge. This enables Private Identity to accept a variety of synchronous and asynchronous biometric inputs (i.e. phones, Webcams, legacy devices and applications, and plaintext images, video, audio and input from third-party biometric acquisition systems) without any requirement to store, transmit or use plaintext biometrics.
 
+***
+
 ### Facial Recognition Algorithm
 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/White%20Paper%20(8).png)
 
 #### How does it work?
+
+
 
 The software captures images from the user, and in these images an API is detecting the facial landmarks, such as the eyes, mouth, nose and converts this image probe into it's geometric primitives. Afterwards if a face is detected, it is cropped, and aligned to be passed through a eye blink detection and a glasses detection. Then if the image passes the conditions of; no glasses, a proper face is detected, and has a high enough quality, then it is augmented. This augmentation will flip, rotate, and modify the lighting of the photo, to create a dataset of images for the user. This dataset is then encrypted and converted into an FHE payload. This one way payload is sent to the cloud as an embedding, and the previously captured images and biometrics are discarded. 
 
@@ -25,6 +29,8 @@ Once the user successfully enrolls in the system, they can verify their identity
 [Demonstration for Facial Prediction](https://youtu.be/lfaCKwHxgUM)
 
 </br>
+
+***
 
 ### Face and Mask Algorithm 
 </br>
