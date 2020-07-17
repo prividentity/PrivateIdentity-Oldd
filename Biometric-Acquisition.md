@@ -87,6 +87,10 @@ Once the user successfully enrolls in the system, they can verify their identity
 
 ### Voice Recognition
 
+![Voice recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Voice.png)
+
+[_Biometric Ingestion and Helper DNN's_](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#VOICE-INPUT-SEGMENTATION)
+
 #### How does it work?
 
 #### What are the requirements for a voice enrollment?
