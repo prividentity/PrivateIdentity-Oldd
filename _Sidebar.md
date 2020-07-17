@@ -61,7 +61,7 @@
 
 [**Enterprise Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations)
 
-* [Okta](https://https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
+* [Okta](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 
 * [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 
