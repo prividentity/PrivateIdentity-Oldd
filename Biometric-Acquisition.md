@@ -1,5 +1,7 @@
 ## Biometric Acquisition
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Biometric_Acquisition.png)
+
 Private Identity provides a Web client and two elastic services to support biometric acquisition and high-throughput FHE transformation at the edge. This enables Private Identity to accept a variety of synchronous and asynchronous biometric inputs (i.e. phones, Webcams, legacy devices and applications, and plaintext images, video, audio and input from third-party biometric acquisition systems) without any requirement to store, transmit or use plaintext biometrics.
 
 ***
