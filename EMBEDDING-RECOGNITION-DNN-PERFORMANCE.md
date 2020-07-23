@@ -3,7 +3,7 @@
 <pre>
 Authors:  	Chung Nguyen PhD, Data Scientist 
                 Scott Streit, CTO
-Run Date:  	2 June 2020, 12:13AM
+Data Run Date:  2 June 2020, 12:13AM
 </pre>
 
 ***
