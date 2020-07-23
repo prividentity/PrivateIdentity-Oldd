@@ -1,11 +1,5 @@
 ### EMBEDDING RECOGNITION DNN PERFORMANCE ### 
 
-<pre>
-Authors:  	Chung Nguyen PhD 
-                Scott Streit, CTO
-Data Run Date:  2 June 2020, 12:13AM
-</pre>
-
 ***
 ### VALIDATION ACCURACY OF SOFTMAX TRAINING ###
 
@@ -38,4 +32,9 @@ This is used for a starting point on a multi-variable cutoff analysis.  We choos
 This results in an accuracy of 99.998%, 0 false positives and 6 (0.0006) false negatives. This is asymptotic to 100% accuracy.
 
 
+<pre>
+Authors:  	Chung Nguyen PhD 
+                Scott Streit, CTO
+Data Run Date:  2 June 2020, 12:13AM
+</pre>
 
