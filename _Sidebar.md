@@ -12,7 +12,7 @@
 
 * [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
 
-* [Embedding Recognition DNN Performance Metrics](https://github.com/openinfer/PrivateIdentity/wiki/EMBEDDING-RECOGNITION-DNN-PERFORMANCE-METRICS)
+* [Recognition DNN Performance Metrics](https://github.com/openinfer/PrivateIdentity/wiki/RECOGNITION-DNN-PERFORMANCE-METRICS)
 
 * [Biometric Privacy and Data Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Privacy-and-Data-Privacy)
 
