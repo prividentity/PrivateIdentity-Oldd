@@ -1,7 +1,7 @@
 ### EMBEDDING RECOGNITION DNN PERFORMANCE ### 
 
 <pre>
-Authors:  	Chung Nguyen PhD, Data Scientist 
+Authors:  	Chung Nguyen PhD 
                 Scott Streit, CTO
 Data Run Date:  2 June 2020, 12:13AM
 </pre>
