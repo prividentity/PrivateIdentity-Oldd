@@ -31,11 +31,13 @@ The [SPB Server](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-sta
 
 ### Enrollment Morphing
 
-The morphing process during enrollment is crucial as this is used to compare the images during prediction. The data that has been presented to the system during Enroll has to be processed robust enough to make it work under all conditions. The following content describes in detail the various techniques applied during the enroll phase.
+The morphing process during enrollment is crucial as this is used to compare the images during prediction. The data that has been presented to the system during Enroll has to be processed robust enough to make it work under all conditions. The following content describes in detail the various techniques applied during the enroll phase. The following workflow diagram gives a general overview of how the model categorizes and process the captured image.
 
 #### Data Augmentation
 
 Data augmentation refers to the process of manipulating the presented images to various conditions to significantly increase the diversity of data. This increase in diversity helps us make the enrollment process more reliable and less error-prone. A list of morphing techniques applied to the enroll images is described below.
+
+![Face Detection Workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/face_detection_workflow.png)
 
 #### Geometry
 
