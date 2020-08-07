@@ -1,5 +1,5 @@
 # Experiments
-## Webcam Use Modalities
+## Webcam Environments
 
 In order to better understand which environments can be used when gathering fingerprint images, an experiment was conducted with four different environments. The four environments consisted of; Utilizing only the light from the device's screen in a pitch black room, Utilizing a flash light from another device in a dim room to illuminate the finger, utilizing outside conditions with the sun out as a light source, and the control being in a well-lit room under normal circumstances. 
 
