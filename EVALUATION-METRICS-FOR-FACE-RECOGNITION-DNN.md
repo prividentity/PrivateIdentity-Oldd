@@ -32,9 +32,8 @@ This is used for a starting point on a multi-variable cutoff analysis.  We choos
 This results in an accuracy of 99.998%, 0 false positives and 6 (0.0006) false negatives. This is asymptotic to 100% accuracy.
 
 ### ETHNIC, GENDER AND RACE BREAKDOWN
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20bw%20chart.png)
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20Data%202.png)
-
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20graphics.png)
 <pre>
 Authors:  	Chung Nguyen PhD 
                 Scott Streit, CTO
