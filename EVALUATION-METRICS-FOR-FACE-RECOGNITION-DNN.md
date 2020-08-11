@@ -33,7 +33,7 @@ This results in an accuracy of 99.998%, 0 false positives and 6 (0.0006) false n
 
 ### ETHNIC, GENDER AND RACE BREAKDOWN
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20Data%202.png)
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20graphics.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Graph%20bw%20ethnic%20gender.png)
 <pre>
 Authors:  	Chung Nguyen PhD 
                 Scott Streit, CTO
