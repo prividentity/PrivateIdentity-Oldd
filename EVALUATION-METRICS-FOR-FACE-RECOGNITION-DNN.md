@@ -36,7 +36,9 @@ The six images that failed during evaluation were too blurry for recognition. Ea
 
 ### ETHNIC, GENDER AND RACE BREAKDOWN
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20chart%203.png)
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Graph%20bw%20ethnic%20gender.png)
+
+### HSL AUGMENTATION ### 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/HSL%20Images.png)
 <pre>
 Authors:  	Chung Nguyen PhD 
                 Scott Streit, CTO
