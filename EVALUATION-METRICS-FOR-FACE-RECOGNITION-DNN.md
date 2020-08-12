@@ -31,6 +31,9 @@ This is used for a starting point on a multi-variable cutoff analysis.  We choos
 **Line 746 (highlighted) provides 0.811 as the optimal threshold.**  
 This results in an accuracy of 99.998%, 0 false positives and 6 (0.0006) false negatives. This is asymptotic to 100% accuracy.
 
+The six images that failed during evaluation show that the model was unable to overcome blur + eyeglasses. Blur is added to the data to help generalize the model.  
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Failed6.png)
+
 ### ETHNIC, GENDER AND RACE BREAKDOWN
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20chart%203.png)
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Graph%20bw%20ethnic%20gender.png)
