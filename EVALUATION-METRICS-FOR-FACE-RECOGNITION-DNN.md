@@ -42,7 +42,7 @@ We started with the VGGFaces2 dataset and found that class boundaries did not ho
 
 We then added 2,000 classes from Asian-Celeb to increase Asian representation. This eliminated the remaining bias. 
 
-Visual examples of two HSL algorithms (HSL-1 and HSL-2) are displayed below. These algorithms helped created a colorblind model. 
+Visual examples of two HSL algorithms (HSL-1 and HSL-2) are displayed below.  
 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/HSL%20Images.png)
 <pre>
