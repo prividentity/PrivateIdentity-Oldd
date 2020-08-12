@@ -37,7 +37,13 @@ The six images that failed during evaluation were too blurry for recognition. Ea
 ### ETHNIC, GENDER AND RACE BREAKDOWN
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20chart%203.png)
 
-### HSL AUGMENTATION ### 
+### DATASET BALANCE AND AUGMENTATION ### 
+We started with the VGGFaces2 dataset and found that class boundaries were not holding for Asian and Black faces.  We then heavily augmented this combined dataset using hundreds of custom [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) algorithms. 
+
+Visual examples of the first and second HSL algorithms (HSL-1 and HSL2) are displayed below. These algorithms remove bias against contour and color and created a colorblind model. 
+
+and added 2,000 classes from Asian-Celeb to increase Asian representation.  
+
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/HSL%20Images.png)
 <pre>
 Authors:  	Chung Nguyen PhD 
