@@ -38,7 +38,7 @@ The six images that failed during evaluation were too blurry for recognition. Ea
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20chart%203.png)
 
 ### DATASET BALANCE AND AUGMENTATION ### 
-We started with the VGGFaces2 dataset and found that class boundaries did not hold (i.e. geometric distances were larger) for Asian and Black faces. In response, we augmented the dataset using several custom [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) algorithms. This eliminated bias for Black faces and reduced the bias for Asian faces. 
+We started with the VGGFaces2 dataset and found that class boundaries did not hold (i.e. geometric distances were larger) for Asian and Black faces. In response, we augmented the dataset using several custom [HSL](https://support.microsoft.com/en-us/help/29240/how-to-converting-colors-between-rgb-and-hls-hbs) algorithms. This eliminated bias for Black faces and reduced the bias for Asian faces. 
 
 We then added 2,000 classes from Asian-Celeb to increase Asian representation. This eliminated the remaining bias. 
 
