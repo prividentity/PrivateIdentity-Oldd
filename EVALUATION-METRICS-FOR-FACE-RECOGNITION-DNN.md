@@ -38,7 +38,9 @@ The six images that failed during evaluation were too blurry for recognition. Ea
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ethnic%20chart%203.png)
 
 ### DATASET BALANCE AND AUGMENTATION ### 
-We started with the VGGFaces2 dataset and found that class boundaries were not holding for Asian and Black faces.  We then heavily augmented this combined dataset using hundreds of custom [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) algorithms. 
+We started with the VGGFaces2 data et and found that class boundaries were not holding for Asian and Black faces.  Not holding means the geometric distances were larger between the same people if their ethnicity were Asian or Black.  Augmenting the data with many HSL augmentations gave us a more general model and the same geometric distances for Black faces and were closer for Asian faces.  To offer true fairness and non-consideration of race, we increased the dataset by 25 percent adding 2,000 Asian individuals.  
+
+The HSL augmentations expanded this combined dataset using hundreds of custom [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) algorithms. 
 
 Visual examples of the first and second HSL algorithms (HSL-1 and HSL2) are displayed below. These algorithms remove bias against contour and color and created a colorblind model. 
 
