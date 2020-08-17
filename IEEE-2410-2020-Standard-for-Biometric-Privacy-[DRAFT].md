@@ -1,19 +1,6 @@
 # P2410-2020/D1 Draft Standard for Biometric Privacy 
 
-Sponsor **Standards Development Board** of the **IEEE Communications Society**
-
-and the **Technical Committee on COM/SDB** of the **IEEE Technical Activities Board**
-
-**Approved **<Date Approved>
-
-**IEEE-SA Standards Board**
-Copyright © 2020 by The Institute of Electrical and Electronics Engineers, Inc.
-Three Park Avenue, New York, New York 10016-5997, USA.  All rights reserved.
-
-This document is an unapproved draft of a proposed IEEE Standard. As such, this document is subject to change. USE AT YOUR OWN RISK! IEEE copyright statements SHALL NOT BE REMOVED from draft or approved IEEE Standards, or modified in any way. Because this is an unapproved draft, this document shall not be utilized for any conformance/compliance purposes. Permission is hereby granted for officers from each IEEE Standards Working Group or Committee to reproduce the draft document developed by that Working Group for purposes of international standardization consideration.  IEEE Standards Department shall be informed of the submission for consideration prior to any reproduction for international standardization consideration (stds.ipr@ieee.org). Prior to adoption of this document, in whole or in part, by another standards development organization, permission shall first be obtained from the IEEE Standards Department (stds.ipr@ieee.org). When requesting permission, IEEE Standards Department shall require a copy of the standard development organization's document highlighting the use of IEEE content. Other entities seeking permission to reproduce this document, in whole or in part, shall also obtain permission from the IEEE Standards Department.
-IEEE Standards Department, 445 Hoes Lane, Piscataway, NJ 08854, USA. 
-
-## Abstract
+## ABSTRACT 
 The Standard for Biometric Privacy (SBP) provides private identity assertion. SBP enhances and extends the prior IEEE 2410-2019 Standard for Biometric Open Protocol by including formal governance for privacy and biometrics such that adherence guarantees the SBP system does not incur GDPR, CCPA, BIPA or HIPAA privacy obligations. Homomorphic encryption ensures the biometric payload is always one-way encrypted with no need for key management and guarantees privacy by ensuring plaintext biometrics are never received by the SBP server.  
 
 The SBP implementation includes software running on a client device and on the SPB server.  Pluggable components are used to replace legacy functionality to allow rapid integration into existing operating environments. The SBP implementation allows the systems to meet security needs by using the application programming interface, whether the underlying system is a relational database management system or a search engine. The SBP implementation functionality offers a “point-and-cut” mechanism to add the appropriate security to the production systems as well as to the systems in development. The architecture is language neutral, allowing Representational State Transfer (REST), JavaScript Object Notation (JSON), and Secure Sockets Layer (SSL) or Transport Layer Security to provide the communication interface.
@@ -23,6 +10,19 @@ This document describes the essential methodology to SBP.
 **Keywords**: biometrics, privacy, admin console, application, SBP admin, SBP cluster, SBP server, SBP IDS, client device IDS, Jena Rules, IDS cluster, IEEE 2410, liveness, original site admin, site admin, trusted adjudicated data, user, user device
 
 ## Important Notices and Disclaimers Concerning IEEE Standards Documents
+Sponsor **Standards Development Board** of the **IEEE Communications Society**
+
+and the **Technical Committee on COM/SDB** of the **IEEE Technical Activities Board**
+
+**Approved:** <_Date Approved_>
+
+**IEEE-SA Standards Board**
+Copyright © 2020 by The Institute of Electrical and Electronics Engineers, Inc.
+Three Park Avenue, New York, New York 10016-5997, USA.  All rights reserved.
+
+This document is an unapproved draft of a proposed IEEE Standard. As such, this document is subject to change. USE AT YOUR OWN RISK! IEEE copyright statements SHALL NOT BE REMOVED from draft or approved IEEE Standards, or modified in any way. Because this is an unapproved draft, this document shall not be utilized for any conformance/compliance purposes. Permission is hereby granted for officers from each IEEE Standards Working Group or Committee to reproduce the draft document developed by that Working Group for purposes of international standardization consideration.  IEEE Standards Department shall be informed of the submission for consideration prior to any reproduction for international standardization consideration (stds.ipr@ieee.org). Prior to adoption of this document, in whole or in part, by another standards development organization, permission shall first be obtained from the IEEE Standards Department (stds.ipr@ieee.org). When requesting permission, IEEE Standards Department shall require a copy of the standard development organization's document highlighting the use of IEEE content. Other entities seeking permission to reproduce this document, in whole or in part, shall also obtain permission from the IEEE Standards Department.
+IEEE Standards Department, 445 Hoes Lane, Piscataway, NJ 08854, USA. 
+
 IEEE documents are made available for use subject to important notices and legal disclaimers. These notices and disclaimers, or a reference to this page, appear in all standards and may be found under the heading “Important Notice” or “Important Notices and Disclaimers Concerning IEEE Standards Documents.”
 
 ## Notice and Disclaimer of Liability Concerning the Use of IEEE Standards Documents
