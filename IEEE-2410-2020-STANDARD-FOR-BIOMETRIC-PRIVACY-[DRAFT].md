@@ -517,19 +517,19 @@ We conclude that the FHE payloads and UUIDs are not subject to the requirements 
 |7| **Accountability principle** <br><br>Requires the data controllers implement appropriate measures to protect personal data and be able to show that processing activities demonstrate compliance with the above principles. | **Does not subject organization to GDPR obligations** <br><br>The GDPR does not regulate the processing of anonymized information, including for statistical or research purposes. Indeed, the GDPR specifically refers to anonymization in Recital 26 to exclude anonymized data from the scope of data protection legislation. Accordingly, since SBP systems transmit, store and use only anonymized data, the data controller is thus not subject to GDPR data subject rights or special handling requirements for personal data or biometric data and is exempt from data breach notification requirements. |
 
 [3]  Section 9.5 is excerpted with permission. Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  
-[4]  Art. 5 GDPR Principles relating to processing of personal data.
-[5]  GDPR Article 5(1)(c)
+[4]  Art. 5 GDPR Principles relating to processing of personal data.<br>
+[5]  GDPR Article 5(1)(c)<br>
 [6]  Recital 26 of the GDPR.   
-[7]  Opinion 05/2014 on anonymisation techniques, 10 April 2014.
-[8]  GDPR Article 9, Recital 51.
-[9]  GDPR Article 4(14).
-[10] GDPR Recital 26.
-[11] GDPR Recital 26.
-[12]  Recitals 65 and 66 and in Article 17 of the GDPR
-[13]  Recitals 65 and 66 and in Article 17 of the GDPR
-[14]  Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 supplementing Directive (EU) 2015/2366 of the European Parliament and of the Council with regard to regulatory technical standards for strong customer authentication and common and secure open standards of communication. [[Link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.069.01.0023.01.ENG&toc=OJ:L:2018:069:TOC)] 
-[15]  Recitals 65 and 66 and in Article 17 of the GDPR
-[16]  GDPR Recital 26. 
+[7]  Opinion 05/2014 on anonymisation techniques, 10 April 2014.<br>
+[8]  GDPR Article 9, Recital 51.<br>
+[9]  GDPR Article 4(14).<br>
+[10] GDPR Recital 26.<br>
+[11] GDPR Recital 26.<br>
+[12]  Recitals 65 and 66 and in Article 17 of the GDPR <br>
+[13]  Recitals 65 and 66 and in Article 17 of the GDPR <br>
+[14]  Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 supplementing Directive (EU) 2015/2366 of the European Parliament and of the Council with regard to regulatory technical standards for strong customer authentication and common and secure open standards of communication. [[Link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.069.01.0023.01.ENG&toc=OJ:L:2018:069:TOC)] <br>
+[15]  Recitals 65 and 66 and in Article 17 of the GDPR<br>
+[16]  GDPR Recital 26. <br>
 
 ### 9.6 CCPA
 The CCPA (California Civil Code §§ 1798.100 to 1798.199) is currently the most comprehensive privacy legislation in the United States. The CCPA is similar to the GDPR in that it grants California residents robust data privacy rights and control over their personal information, including a subset of the elements of the GDPR’s lawfulness, fairness and transparency principle, data minimization principle, and integrity and confidentiality (security) principle [17].
