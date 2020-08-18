@@ -569,18 +569,196 @@ As previously described, the FHE payloads and UUIDs contain only deidentified da
 |----|-----|-----|
 |1| **CCPA REQUIREMENTS** <br>Right to access data<br>Right to be forgotten<br>Right to opt-out of sale of information <br> Notices to data subjects | **Processes only deidentified data** <br><br> SBP systems transmit, store and use only deidentified data.  This reduces the risk of personal information or biometric information being used for any improper purpose and allows a customer’s business to utilize biometric identification without subjecting the business to the CCPA obligations. CCPA provides that businesses processing deidentified data are not obligated to provide or delete this information in response to a consumer request or to re-identify individual data to verify a consumer request.  Specifically, Subsection 999.323(f) of the final text of the California Consumer Privacy Act Regulations (the “CCPA Regulations”), provides that, “If a business maintains consumer information that is deidentified, a business is not obligated to provide or delete this information in response to a consumer request or to re-identify individual data to verify a consumer request.” The consumer rights provided under the CCPA fall away with respect to the deidentified, encrypted FHE payload produced by SBP systems. <br><br> **Provides strong end-user authentication.** <br><br>The CCPA’s security provision requires that organizations have a, “duty to implement and maintain reasonable security procedures and practices.” The CCPA’s security provisions include a proportionality element providing that it is the duty of the business to maintain reasonable security procedures and practices, “appropriate to the nature of the information.” SBP systems help organizations advance and respond to requests from subjects seeking to exercise their rights under CCPA by providing strong end-user authentication. <br><br>Strong end-user authentication is also key to quickly providing each data subject with the ability to control and access one’s data, to opt-out of sale of information, to display notices, and to request that data be erased (forgotten).  SBP systems allow organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret.|
 |2| **CCPA REQUIREMENTS** <br>Pseudonymization<br>Deidentification | **Processes only deidentified data** <br><br>SBP systems transmit, store and use only deidentified data. This promotes and accomplishes the regulatory goal of limiting the processing of personal information to only what is necessary.  According to CCPA regulations, deidentification means information that cannot reasonably identify, relate to, describe, be capable of being associated with, or be linked, directly or indirectly to a particular consumer (§1798.140). <br><br>Discards (deletes) all personal data <br><br>SBP systems discard all biometric information.  Only anonymized data is transmitted, stored or used to support the authentication process. This realizes the regulatory goal of limiting the processing of personal information to only what is necessary.|
-|3| **CCPA REQUIREMENTS** <br>Appropriate data security required | Provides strong end-user authentication.
-The CCPA’s security provision requires that businesses have, “[a] duty to implement and maintain reasonable security procedures and practices.” The CCPA’s security provisions include a proportionality element providing that it is the duty of the business to maintain reasonable security procedures and practices, “appropriate to the nature of the information.” SBP systems help organizations advance and respond to requests from subjects seeking to exercise their rights under CCPA by providing strong end-user authentication. <br><br>Strong end-user authentication is also key to quickly providing each data subject with the ability to control and access one’s data, to opt-out of sale of information, to display notices, and to request that data be erased (forgotten).  SBP systems allow organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret. |
+|3| **CCPA REQUIREMENTS** <br>Appropriate data security required | **Provides strong end-user authentication.** The CCPA’s security provision requires that businesses have, “[a] duty to implement and maintain reasonable security procedures and practices.” The CCPA’s security provisions include a proportionality element providing that it is the duty of the business to maintain reasonable security procedures and practices, “appropriate to the nature of the information.” SBP systems help organizations advance and respond to requests from subjects seeking to exercise their rights under CCPA by providing strong end-user authentication. <br><br>Strong end-user authentication is also key to quickly providing each data subject with the ability to control and access one’s data, to opt-out of sale of information, to display notices, and to request that data be erased (forgotten).  SBP systems allow organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret. |
 
 [17]  Section 9.6 is excerpted with permission. Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  
-[18]  CCPA 1798.140(o)(1).
-[19]  CCPA 1798.140(b).
-[20]  CCPA 1798.140(h).
-[21]  CCPA § 1798.145(a)(5). 
+[18]  CCPA 1798.140(o)(1). <br>
+[19]  CCPA 1798.140(b).<br>
+[20]  CCPA 1798.140(h).<br>
+[21]  CCPA § 1798.145(a)(5).<br> 
+
+### 9.7 BIPA
+The Illinois Biometric Information Privacy Act 740 ILCS 14 (“BIPA”) is the most stringent biometric privacy law in the U.S. The BIPA applies to both biometric identifiers and biometric information.  It requires covered businesses to inform consumers in writing that biometric identifiers or biometric information is collected and stored, of the purpose and length of time of biometric information storage and use, and to secure written consent from consumers. BIPA also prohibits covered businesses from profiting from biometric data, permits only a limited right to disclose the data, mandates protection obligations and retention guidelines, and creates a private right of action for any individuals harmed by violators of BIPA.[22]
+
+BIPA applies to both biometric identifiers and biometric information. Under BIPA, a “biometric identifier” includes specific types of information including fingerprint, voiceprint, retina/iris scan, scans or records of hand or face geometry [23]. Biometric information includes “any information, regardless of how it is captured, converted, stored, or shared, based on an individual’s biometric identifier used to identify an individual.” [24] Illinois courts have specifically found that face-scan measurements (i.e. a biometric template) derived from user-uploaded photos qualify as “biometric information” under BIPA [25].  
+
+BIPA grants residents of Illinois rights with respect to the collection of their biometric identifiers or biometric data.  Under BIPA, notices require private entities to inform consumers that: (1) biometric identifier or biometric information is being collected and stored; and (2) “[the] specific purpose and length of term for which a biometric identifier or biometric information is being collected, stored, and used.”  In addition, BIPA requires affirmative consent for virtually any data collection in all circumstances for both commercial and non-commercial purposes.  Please see the chart below to view in greater detail how SBP systems enable customers to advance these principles.
+
+#### 9.7.1 FHE Payloads Do Not Contain Biometric Identifiers or Biometric Information 
+Biometric identifiers and biometric information under the BIPA are subject to increased compliance obligations. The biometric identifier under the BIPA includes specific types of information including fingerprint, voiceprint, retina/iris scan, scans or records of hand or face geometry.[26] And, the biometric information under the BIPA includes, “any information, regardless of how it is captured, converted, stored, or shared, based on an individual’s biometric identifier used to identify an individual.” Illinois courts have further stated in Rivera v. Google, Inc. that face-scan measurements (i.e. a biometric template[27]) derived from user-uploaded photos qualify as “biometric information” under BIPA. [28]   
+
+As discussed above in Section 9.5.1 and 9.6.1, SBP systems advance the rights of Illinois residents with respect to the collection of their biometric identifiers or biometric information by only transmitting, storing or using anonymized data. To accomplish this, the system grants each end user a license to run application software on the user’s local device. Using this application, the user collects his/her own biometric data. This data is then transformed (encrypted) by a one-way cryptographic hash function on the local device and becomes FHE payloads. FHE payloads are globally unique positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral traits. 
+
+Accordingly, SBP systems only transmit, store or use deidentified data and no biometric identifiers or biometric information. Under the plain language of this section and the Illinois state court interpretation, we find the encrypted FHE payload should not be treated as biometric identifiers or biometric information. 
+
+#### 9.7.2 FHE Payloads Do Not Incur BIPA Obligations
+The BIPA obligations apply only to biometric information. As discussed immediately above in Section 5.1, SBP systems do not contain biometric information or biometric identifiers. 
+
+Accordingly, an organization using SBP systems are not collecting or storing biometric information and, with respect to this system, eliminates the requirement to comply with BIPA obligations including the consent requirements and the requirement for an organization to protect and store biometric data at least to the same degree it protects other confidential or sensitive information. 
+
+#### 9.7.3  BIPA Requirements to SBP Traceability Matrix
+||BIPA REQUIREMENTS | SBP System Compliance Control|
+|----|-----|-----|
+|1| **BIPA REQUIREMENTS** <br> Prohibits private entities from profiting from biometric data. <br>Prohibits disclosure or distribute of biometric data without consent <br>The disclosure being required to complete a transaction that the customer initiated<br><br> (Lawfulness, fairness and transparency principle) | **Processes no biometric identifier or biometric data** <br><br>SBP systems transmit, store and use only encrypted FHE payloads. This reduces the risk of a biometric identifier or biometric data from being used for any improper purpose and allows a private entity to utilize biometric identification or biometric data without subjecting the entity to the BIPA obligations. BIPA provides that a “biometric identifier” [30] is “based on” a “retina or iris scan, fingerprint, voiceprint, or scan of hand or face geometry.” [31] SBP systems, on the other hand, create encrypted FHE payloads that are deidentified or anonymized data (see discussion (see above discussions at Section 3.2 and 4.2). These resulting encrypted FHE payloads are not based on any biometric feature, measurement or other physical or biological characteristic. Accordingly, the BIPA requirements are not applicable to encrypted FHE payloads and the consumer rights provided under the BIPA fall away with respect to the encrypted FHE payload produced by SBP systems.<br><br> **Provides strong end-user authentication **<br><br> The BIPA establishes an obligation for private entities to protect and store biometric identifiers or biometric data at least to the same degree as it protects other confidential or sensitive information. The BIPA (740 ILCS 14/15(e)(2)) maintains that a private entity shall protect biometric identifiers or biometric data,  “In the same (or a more protective) way that the employer stores, transmits, and protects other confidential and sensitive information.”  As such, SBP systems provide strong end-user authentication to help organizations secure personal data. Additionally, it allows organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret. |
+|2| **BIPA REQUIREMENTS** <br>  Inform consumers in writing that biometric identifiers or biometric information is being collected or stored. <br>Inform the consumer in writing of the purpose and length of time the biometric information will be stored or used. <br>Secure written consent from the consumer.<br><br>(Purpose limitation principle) | **Processes no biometric identifier or biometric data** <br><br>SBP systems process (transmit, store and use) only encrypted FHE payloads. This reduces the risk of a biometric identifier or biometric data from being used for any improper purpose and allows a private entity to utilize biometric identification or biometric data without subjecting the entity to the BIPA obligations. BIPA provides that a “biometric identifier” [32] is “based on” a “retina or iris scan, fingerprint, voiceprint, or scan of hand or face geometry.” [33] SBP systems, on the other hand, create encrypted FHE payloads that are deidentified or anonymized data (see discussion above at Section 9.5 and 9.6). These resulting encrypted FHE payloads are not based on any biometric feature, measurement or other physical or biological characteristic. Accordingly, the BIPA requirements are not applicable to encrypted FHE payloads and the consumer rights provided under the BIPA fall away with respect to the encrypted FHE payload produced by SBP systems.|
+|3| **BIPA REQUIREMENTS** <br>Written policy that establishes a retention schedule<br>Guidelines for destroying biometric information<br>3-year limitation<br><br>(Storage limitation principle) | <br><br>SBP systems process (transmit, store and use) only encrypted FHE payloads. This reduces the risk of a biometric identifier or biometric data from being used for any improper purpose and allows a private entity to utilize biometric identification or biometric data without subjecting the entity to the BIPA obligations. BIPA provides that a “biometric identifier” [32] is “based on” a “retina or iris scan, fingerprint, voiceprint, or scan of hand or face geometry.” [34] SBP systems, on the other hand, create encrypted FHE payloads that are deidentified or anonymized data (see discussion above at Section 9.5 and 9.6). These resulting encrypted FHE payloads are not based on any biometric feature, measurement or other physical or biological characteristic. Accordingly, the BIPA requirements are not applicable to encrypted FHE payloads and the consumer rights provided under the BIPA fall away with respect to the encrypted FHE payload produced by SBP systems.|
+|4| **BIPA REQUIREMENTS** <br>Mandates protection (security) obligations and retention guidelines <br><br>(Integrity and confidentiality principle) | **Provides strong end-user authentication** <br><br>The BIPA establishes an obligation for private entities to protect and store biometric identifiers or biometric data at least to the same degree as it protects other confidential or sensitive information. The BIPA (740 ILCS 14/15(e)(2)) maintains that a private entity shall protect biometric identifiers or biometric data,  “In the same (or a more protective) way that the employer stores, transmits, and protects other confidential and sensitive information.”  As such, SBP systems provide strong end-user authentication to help organizations secure personal data. Additionally, it allows organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret.
+|5| **BIPA REQUIREMENTS** <br> <br>Private entities are to adhere to their guidelines.<br>Creates a private right of action for individuals harmed by violators of BIPA. <br><br>(Accountability principle) | **Processes no biometric identifier or biometric data** <br><br>SBP systems process (transmit, store and use) only encrypted FHE payloads. This reduces the risk of a biometric identifier or biometric data from being used for any improper purpose and allows a private entity to utilize biometric identification or biometric data without subjecting the entity to the BIPA obligations. BIPA provides that a “biometric identifier” [32] is “based on” a “retina or iris scan, fingerprint, voiceprint, or scan of hand or face geometry.” [33] SBP systems, on the other hand, create encrypted FHE payloads that are deidentified or anonymized data (see discussion above at Section 9.5 and 9.6). These resulting encrypted FHE payloads are not based on any biometric feature, measurement or other physical or biological characteristic. Accordingly, the BIPA requirements are not applicable to encrypted FHE payloads and the consumer rights provided under the BIPA fall away with respect to the encrypted FHE payload produced by SBP systems.<br><br> **Does not subject entity to BIPA obligations** <br><br>The BIPA only regulates the processing of biometric identifiers or biometric data. Under the BIPA, a “biometric identifier” includes specific types of information including fingerprint, voiceprint, retina/iris scan, scans or records of hand or face geometry. Additionally, Illinois courts have specifically stated that face-scan measurements (i.e. a biometric template) derived from user-uploaded photos qualify as “biometric information” under IL BIPA. [38] SBP systems transmit, store and use only encrypted FHE payloads (anonymized data).  These encrypted FHE payloads are no longer based on any biometric feature, measurement or other physical or biological characteristic. Accordingly, the BIPA requirements are not applicable to FHE transformed data. |
+
+[22] Section 9.7 is excerpted with permission. Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  
+[23]  740 ILCS 14/10.<br>
+[24]  740 ILCS 14/10.<br>
+[25]  _Rivera v. Google, Inc._, 238 F. Supp. 3d 1088 (N.D. Ill. 2017).<br>
+[26]  740 ILCS 14/10.<br>
+[27]  Traditional biometric recognition systems involve the use and storage of plaintext biometrics through which a template or image with the features extracted from an original biometric is stored and used during subsequent authentication attempts to match features. The storage or use of plaintext biometrics presents data privacy risks through risk of loss of the biometric information.  Even where the data is stored in a decentralized fashion or divided form, it must be decrypted to plaintext to support the match operation and thus has inherent privacy risks and are covered by several privacy laws.
+[28] _Rivera v. Google, Inc._, 238 F. Supp. 3d 1088 (N.D. Ill. 2017).<br>
+[29]  BIPA (740 ILCS 14/15(e)(2))
+[30]  BIPA, 740 ILCS 14/10. <br>
+[31]  BIPA, 740 ILCS 14/10. <br>
+[32]  BIPA, 740 ILCS 14/10. <br>
+[33]  BIPA, 740 ILCS 14/10. <br>
+[34]  BIPA, 740 ILCS 14/10. <br>
+[35]  BIPA, 740 ILCS 14/10. <br>
+[36]  BIPA, 740 ILCS 14/10. <br>
+[37]  BIPA, 740 ILCS 14/10. <br>
+[38] _Rivera v. Google, Inc._, 238 F. Supp. 3d 1088 (N.D. Ill. 2017).<br>
+
+### 9.8 HIPAA (Public Law 104-191)
+The Health Insurance Portability and Accountability Act of 1996 (HIPAA) required the Secretary of the U.S. Department of Health and Human Services (HHS) to develop regulations protecting the privacy and security of certain health information. [B28] To fulfill this requirement, HHS published what are commonly known as the HIPAA Privacy Rule and the HIPAA Security Rule. The Privacy Rule, or Standards for Privacy of Individually Identifiable Health Information, established a standard for the protection of certain health information in the United States. The Security Standards for the Protection of Electronic Protected Health Information (the Security Rule) established a national set of security standards for protecting certain health information that is held or transferred in electronic form in the United States. 
+
+The Security Rule operationalized the protections contained in the Privacy Rule by addressing the technical and non-technical safeguards that organizations called “covered entities” must put in place to secure individuals’ “electronic protected health information” (e-PHI). Within HHS, the Office for Civil Rights (OCR) enforces the Privacy and Security Rules with voluntary compliance activities and civil money penalties.
+
+#### 9.8.1 HIPAA Privacy Rule
+The HIPAA Privacy Rule protects most “individually identifiable health information” held or transmitted by a covered entity or its business associate, in any form or medium, whether electronic, on paper, or oral. The Privacy Rule calls this information protected health information (PHI). Protected health information is information, including demographic information, which relates to:
+* the individual’s past, present, or future physical or mental health or condition,
+* the provision of health care to the individual, or
+* the past, present, or future payment for the provision of health care to the individual, and that identifies the individual or for which there is a reasonable basis to believe can be used to identify the individual. Protected health information includes many common identifiers (e.g., name, address, birth date, Social Security Number) when they can be associated with the health information listed above. 
+
+#### 9.8.2 HIPAA Privacy Rule General Applicability
+In general, the protections of the Privacy Rule apply to information held by covered entities and their business associates.  HIPAA defines a “covered entity” as 1) a health care provider that conducts certain standard administrative and financial transactions in electronic form; 2) a health care clearinghouse; or 3) a health plan.  A “business associate” is defined as a person or entity (other than a member of the covered entity’s workforce) that performs certain functions or activities on behalf of, or provides certain services to, a covered entity that involves the use or disclosure of protected health information. A covered entity may use a business associate to de-identify PHI on its behalf only to the extent such activity is authorized by their business associate agreement.  However, persons or organizations are not considered business associates if their functions or services do not involve the use or disclosure of protected health information, and where any access to protected health information by such persons would be incidental, if at all. A covered entity can be the business associate of another covered entity. 
+
+In considering the applicability of the HIPAA Privacy Rule to the SBP, we consider the aspects of the SBP alone.
+
+#### 9.8.3 HIPAA Security Rule
+Today, providers are using clinical applications such as computerized physician order entry (CPOE) systems, electronic health records (EHR), and radiology, pharmacy, and laboratory systems. Health plans are providing access to claims and care management, as well as member self-service applications. While this means that the medical workforce can be more mobile and efficient, the rise in the adoption rate of these technologies increases the potential security risks.  The Security Rule protects a subset of information covered by the Privacy Rule, which is all individually identifiable health information a covered entity creates, receives, maintains or transmits in electronic form. The Security Rule calls this information “electronic protected health information” (e-PHI). The Security Rule does not apply to PHI transmitted orally or in writing. 
+
+#### 9.8.4 HIPAA Security Rule General Applicability
+The Security Rule applies to health plans, health care clearinghouses, and to any health care provider who transmits health information in electronic form in connection with a transaction for which the Secretary of HHS has adopted standards under HIPAA (the “covered entities”) and to their business associates.  The Security Rule requires covered entities to maintain reasonable and appropriate administrative, technical, and physical safeguards for protecting e-PHI.
+
+Specifically, covered entities must:
+* Ensure the confidentiality, integrity, and availability of all e-PHI they create, receive, maintain or transmit;
+* Identify and protect against reasonably anticipated threats to the security or integrity of the information;
+* Protect against reasonably anticipated, impermissible uses or disclosures; and
+* Ensure compliance by their workforce.
+
+In considering the applicability of the HIPAA Security Rule to the SBP, we consider the aspects of the SBP alone. 
+
+#### 9.8.5 FHE Payloads Do Not Contain Individually Identifiable Health Information
+The HIPAA defines and protects Protected Health Information, which is individually identifiable health information. SBP systems fully realize HIPAA’s goals by transforming personal information into FHE payloads and UUIDs that are “deidentified” data as we have previously established. 
+
+To further evaluate the applicability of the HIPAA rules to the FHE payloads and UUIDs, we consider whether these are individually identifiable health information by applying the following criteria:
+* Do the FHE payloads or UUIDs contain any identifiers or other data that could identify the individual or device to whom the data relates?
+* Do the FHE payloads or UUIDs contain any health information, health-related information, healthcare provider information, or healthcare event-related information?
+* Is there any data in the organization’s possession that could be combined with the FHE payloads or UUIDs to identify the individual or device to whom the data relates?
+* Are the FHE payloads or UUIDs reversible?
+* Can the FHE payloads or UUIDs be linked to an individual?
+The answer is “no” to each for reasons set out previously.  
+
+As discussed in detail in previous sections, SBP systems only transmit, store or use deidentified (anonymized) data. Additionally, SBP systems do not transmit, store or use any other personal data,  biometric data, health data, health-related data, machine or device identifications, metadata, or any other identifying information. In addition, the FHE payload or UUIDs do not contain any information useful for diagnostic purposes. 
+
+Therefore the SBP systems (inclusive of FHE payloads and UUIDs) are not subject to the requirements of the Privacy Rule or the Security Rule under HIPAA because they do not contain personal data, biometric data, or health information.  Furthermore, the FHE payloads and UUIDs are universally unique and cannot be tied back to an individual/end user once assigned and in the possession of an entity utilizing SBP systems.
+
+### 9.9 Compliance, Auditing & Record Keeping
+Data controllers and data processors must be able to prove that their organization is up to speed on how to comply with the various regulations covered in Section 9. To do this, data controllers should regularly audit their own privacy protection practices and keep stringent records of all data that is held, the processing of that data, details of the transfer of data to other countries, and details of activities relating to personal data using Identity and Access Management (IAM).  This is a procedural requirement that technology helps occur.  Protected audit trails, logs and the like should be made available to aid compliance.  
+
+## 10 ETHICAL PRINCIPLES 
+
+SBP recognizes privacy as a fundamental human right and requires adherence with the ethical principles enumerated below. SBP recognizes local privacy laws and requires every individual person to be able to control his/her privacy with easy-to-use tools and clear choices. SBP forbids sale of identity data and use of identity to target ads without consent. SBP forbids participation or support of surveillance and similar activities that risk loss of privacy.  [39]
+
+### 10.1 FAIRNESS 
+
+Fairness in biometric recognition is an important problem with significant potential for societal impact. Entities shall minimize misidentification and treat all individuals fairly  through software quality and engineering  
+
+#### 10.1.1 ASSESS DATA & TOOLS 
+
+Entities shall develop and use processes and tools to systematically assess the data used for training, testing and benchmarking recognition technology to ensure appropriate representativeness and quality. Entities shall create appropriate bias assessment tools to analyze the operation of recognition technology, and use the output of those tools to improve models over time.
+
+#### 10.1.2 ACTIONS TO MINIMIZE BIAS 
+
+Entities must assess the potential for bias that may arise in each specific scenario by testing recognition technology and determining how to minimize the potential for unfair bias in scenarios in which they are intended for use prior to deploying. 
+
+### 10.2 TRANSPARENCY 
+Entities must document and clearly communicate illustrative examples of appropriate as well as inappropriate or premature uses of its recognition technology in order to help balance security and civil rights concerns.  
+
+Entity’s systems available as an online service shall include an API or other technical capability to enable third parties that are legitimately engaged in independent testing to conduct reasonable evaluations of the SBP recognition technology for accuracy and unfair bias.
+
+### 10.3 ACCOUNTABILITY AND MEANINGFUL HUMAN REVIEW
+Full biometric privacy through homomorphic encryption makes the current in-band human review practice (also known as “humans-in-the-loop” or meaningful human review) of automated recognition results using plaintext images obsolete.  Indeed, the plaintext images required for human review are always encrypted and now unavailable for human or machine inspection.  
+
+When making decisions for what the law deems to be “consequential use cases” that affect consumers, entities must therefore make meaningful out-of-band human review of recognition results available to users by establishing communication and remediation channel(s) to ensure that individuals impacted by the recognition technology can surface their concerns and have them addressed. Examples of out-of-band human review include appeals process(es) or committee(s).
+
+Examples of “consequential use cases” include systems where decisions may create a risk of bodily or emotional harm to a user, a user’s employment prospects or ability to access financial services may be adversely affected, there may be implications on human or fundamental rights, a user’s personal freedom or privacy may be impinged, or the potential risk of harm or adverse consequences associated with errors are sufficiently high.
+
+### 10.4 NON-DISCRIMINATION
+Entities shall not use recognition algorithms to engage in unlawful discrimination based on actual or perceived race, ethnicity, religion, political views, national origin, disability, gender, gender identity, sexual orientation or any other characteristic protected by applicable anti-discrimination laws. 
+
+### 10.5 USER CONSENT 
+Entities shall provide conspicuous notice to, and secure consent from, individuals before capturing data for use with facial recognition technology.
+
+### 10.6 LAWFUL SURVEILLANCE
+Entities shall safeguard democratic freedoms in surveillance scenarios and not deploy recognition technologies  in scenarios that put these freedoms at risk. Entities shall not deploy recognition technology in surveillance scenarios where there are inadequate safeguards to protect individual freedoms and human rights. 
+
+Law enforcement entities shall seek an appropriate balance between the legitimate interests of government to protect public safety and the preservation of individual civil liberties and privacy rights. No entity, including law enforcement, shall use recognition technology to engage in ongoing surveillance of specified individuals in public spaces except in the following scenarios:  (a) where laws are enacted in jurisdictions that respect the rule of law and specifically regulate and define the parameters for the use of facial recognition technology in public spaces; (b) if a court order is issued in a jurisdiction that maintains a fair and independent judiciary that authorizes the use of facial recognition technology by law enforcement for ongoing surveillance of a specified individual in a public space; or (c) in an emergency involving imminent danger or risk of death or serious physical injury to a person. 
+
+## Annex A
+** Informative Glossary** 
+**admin console:** An online portal that facilitates the registration and enrollment with the Standard for Biometric Privacy (SBP).
+**application:** A unique software/system, which is created using the SBP application programming interface (API) key.
+**Distance Measure:**  A distance function or computation that offers class separation between 
+embeddings.  Typically a cosine distance or Euclidean distance function.
+**SBP admin:** A SBP administrator, who sets up an environment and creates an original site admin based on the enrollment information input during the registration.
+**SBP server:** An instance of the server, such as in the client/server paradigm, that supports SBP  architecture.
+**liveness:** An aspect of an algorithm that defines an animated object in computer vision.
+**user:** A unique user, whose identity is being asserted by SBP and who shall have one or many  devices.
+**user device:** A single device that has biometric-driven client software.
+
+## Annex B
+** Informative Bibliography **
+
+Bibliographical references are resources that provide additional or helpful material but do not need to be understood or used to implement this standard. Reference to these resources is made for informational use only. 
+
+[B1] Bonneau, J., C. Herley, P. C. van Oorschot, and F. Stajano, “The quest to replace passwords: A framework for comparative evaluation of Web authentication schemes,” Proceedings 2012 IEEE Symposium on Security and Privacy, S&P 2012, San Francisco, CA, pp. 553–567, May 2012. 
+[B2] Chan, S. W., and R. Mordani, Java™ Servlet Specification, Version 3.1. Redwood Shores, CA: Oracle America, Inc., 2013. 
+[B3] Handley, M., JAX-RS: Java™ API for RESTful Web Services, Version 1.0. Santa Clara: CA: Sun Microsystems, Inc., 2008.
+[B4] Ross, Arun, Othman, Asem, IEEE Transactions on Information Forensics and Security, Volume 6, Issue 1, March 2011,  Visual Cryptography for Privacy. 
+[B5] Derakhshani, Reza Patent No US 8,369.595 B1, Texture Features for Biometric Authentication, February, 2013 
+[B6] U.S. Department of Defense, DoD 5200.28-STD, “Department of Defense Trusted Computer System Evaluation Criteria,” December 1985.
+[B7] Convolutional Neural Network https://en.wikipedia.org/wiki/Convolutional_neural_network 
+[B8] Institute for Electrical and Electronics Engineers (IEEE),  IEEE 1619 Standard for Cryptographic Protection of Data on Block-Oriented Storage, 2007. 
+[B9] Open Web Application Security Project (OWASP), The Cryptographic Storage Cheat Sheet, 2016.
+[B10] National Institute of Standards and Technology (NIST), NIST Special Publication 800-122, April 2010. 
+[B11] The International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC), ISO/IEC 27001, “Information technology -Security techniques - Information security management systems - Requirements”, Second edition, November 2013.
+[B12] The Directive 95/46/EC of the European Parliament and of the Council, EU Directive 95/46/EC, October 1995.
+[B13]European Banking Authority (EBA) Discussion Paper on future Draft Regulatory Technical Standards on strong customer  authentication and secure communication under the revised Payment Services Directive (PSD2), (EBA/PSD2), December 2015.
+[B14] The U.S. Department Of Commerce, EU-U.S. Privacy Shield Framework Principles Issued By The U.S. Department Of Commerce, February 2013.
+[B15] Public Law 104-191, The Health Insurance Portability and Accountability Act of 1996 (HIPAA), 1996.
+[B16] Open Web Application Security Project (OWASP), “OWASP Top 10”, June 2013.
+[B17] National Institute of Standards and Technology (NIST), NIST Special Publication 800-53 Revision 4 Security and Privacy Controls for Federal Information Systems and Organizations, April 2013.
+[B18] Public Law 93-579. The Privacy Act of 1974, 5 U.S.C. § 552a, 1974.
+[B19] 740 ILCS 14/ Biometric Information Privacy Act (“BIPA”).  Available at: https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004&ChapterID=57 (Accessed 8 August 2020). 
+[B20] AB375, Title 1.81.5, The California Consumer Privacy Act of 2018, CCPA.  Available at: https://oag.ca.gov/privacy/ccpa (Accessed 8 August 2020). 
+[B21] EURO-MILS, “Secure European Virtualisation for Trustworthy Applications in Critical Domains, Used Formal Methods”, 2015.  Accessed 8 August 2020.  Available from https://zenodo.org/record/45164#.XzSVQOhKj-g
+[B22] European Parliament and Council of European Union (2016) Regulation (EU) 2016/679 (“GDPR”). Available at:  https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN (Accessed: 8 August 2020).
+[B23] Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  
+[B24] Microsoft. (2018). Six principles for developing and deploying facial recognition technology. Accessed 8 August 2020.  Available at https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2018/12/MSFT-Principleson-Facial-Recognition.pdf. 
+[B25] Office of the Director of National Intelligence (2008). “US ODNI Intelligence Community Directive 503.” Intelligence Community Information Technology Systems:  Security Risk Management, Certification And Accreditation. Accessed 8 August 2020.  Available from https://www.dni.gov/files/documents/ICD/ICD_503.pdf. 
+[B26] Punke, Michael. “Some Thoughts on Facial Recognition Legislation,” AWS Machine Learning Blog, February 7, 2019.  Accessed 8 August 2020.  Available at https://aws.amazon.com/blogs/machine-learning/some-thoughts-on-facial-recognition-legislation.
+[B27] US Department of Defense (Mitre, 1985). Department of Defense Trusted Computer System Evaluation Criteria (“TCSEC”). Accessed 8 August 2020.  Available at: https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf
+[B28] United States. 2004. The Health Insurance Portability and Accountability Act (“HIPAA”). [Washington, D.C.]: U.S. Dept. of Labor, Employee Benefits Security Administration. Available at: http://purl.fdlp.gov/GPO/gpo10291 (Accessed 8 August 2020). 
 
 
-
-
+Copyright © 2020 IEEE. All rights reserved.
+This is an unapproved IEEE Standards Draft, subject to change.
 
 
 
