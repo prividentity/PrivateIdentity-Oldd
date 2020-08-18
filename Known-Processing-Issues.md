@@ -3,5 +3,4 @@
 * Recognizes children but has only been tested using adult images due to policy restrictions
 
 ## Voice Recognition 
-* Unable to resolve identity when multiple subject’s voices are present in one audio sample 
-* Unable to mitigate loud background noises and poor audio quality
+* Does not return identity when multiple subject’s voices are present, loud background noises are present, and/or audio input quality is poor 
