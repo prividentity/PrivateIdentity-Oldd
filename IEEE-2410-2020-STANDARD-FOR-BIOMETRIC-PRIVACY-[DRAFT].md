@@ -37,7 +37,7 @@ IN NO EVENT SHALL IEEE BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
 **Translations**
 The IEEE consensus development process involves the review of documents in English only. In the event that an IEEE Standard is translated, only the English version published by IEEE should be considered the approved IEEE Standard.
 
-**Official statements **
+**Official statements**
 A statement, written or oral, that is not processed in accordance with the IEEE-SA Standards Board Operations Manual shall not be considered or inferred to be the official position of IEEE or any of its committees and shall not be considered to be, or be relied upon as, a formal position of IEEE. At lectures, symposia, seminars, or educational courses, an individual presenting information on IEEE Standards shall make it clear that his or her views should be considered the personal views of that individual rather than the formal position of IEEE. 
 
 **Comments on standards**
@@ -48,7 +48,7 @@ Comments on standards should be submitted to the following address:
 	445 Hoes Lane 
 	Piscataway, NJ 08854 USA
 
-**Laws and regulations **
+**Laws and regulations**
 Users of IEEE Standards documents should consult all applicable laws and regulations. Compliance with the provisions of any IEEE Standards document does not imply compliance to any applicable regulatory requirements.  Implementers of the standard are responsible for observing or referring to the applicable regulatory requirements. IEEE does not, by the publication of its standards, intend to urge action that is not in compliance with applicable laws, and these documents may not be construed as doing so.
 
 **Copyrights**
@@ -57,7 +57,7 @@ IEEE draft and approved standards are copyrighted by IEEE under U.S. and interna
 **Photocopies** 
 Subject to payment of the appropriate fee, IEEE shall grant users a limited, non-exclusive license to photocopy portions of any individual standard for company or organizational internal use or individual, non-commercial use only. To arrange for payment of licensing fees, please contact Copyright Clearance Center, Customer Service, 222 Rosewood Drive, Danvers, MA 01923 USA; +1 978 750 8400. Permission to photocopy portions of any individual standard for educational classroom use can also be obtained through the Copyright Clearance Center.
 
-**Updating of IEEE Standards documents **
+**Updating of IEEE Standards documents**
 Users of IEEE Standards documents should be aware that these documents may be superseded at any time by the issuance of new editions or may be amended from time to time through the issuance of amendments, corrigenda, or errata. An official IEEE document at any point in time consists of the current edition of the document together with any amendments, corrigenda, or errata then in effect. 
 
 Every IEEE Standard is subjected to review at least every ten years. When a document is more than ten years old and has not undergone a revision process, it is reasonable to conclude that its contents, although still of some value, do not wholly reflect the present state of the art. Users are cautioned to check to determine that they have the latest edition of any IEEE Standard.
@@ -192,37 +192,37 @@ For the purposes of this document, the following terms and definitions apply. Th
 RESTful: Refers to Representational State Transfer (REST), which is a software architecture style.
 Acronyms and abbreviations
 
-1:M          		One-to-Many <br>
-4F             		Four Fingers, a proprietary biometric technology<br>
-5-tuple	 		Five tuple data parameters  <br>
-Account  		User account with limited privileges <br>
-Admin			Administrator<br>
-AOP			Aspect Oriented Programming<br>
-API			Application Programming Interface<br>
-app			A client application<br>
-CPU			Central Processing Unit<br>
-CBV			Current Biometric Vector<br>
-CSRF			Cross-Site Request Forgery<br>
-ID			Identifier<br>
-IDS			Intrusion Detection System<br>
-IBV       		Initial Biometric Vector <br>
-IP			Internet Protocol<br>
-JSON			JavaScript object notation<br>
-LDAP			Lightweight Directory Access Protocol<br>
-MAC			Mandatory Access Control<br>
-MCA			Mobile Client Application<br>
-NSA			National Security Agency (U.S.)<br>
-PII			Personally Identifiable Information <br>
-QR code	 		Quick Response code<br>
-RDBMS	 		Relational Database Management System<br>
-REST			Representational State Transfer<br>
-SBP 			Standard for Biometric Privacy <br>
-SSL			Secure Socket Layer<br>
-TCSEC			Trusted Computer System Evaluation Criteria<br>
-TLS			Transport Layer Security<br>
-URL			Uniform Resource Locator <br>
-XNTP			eXtended Network Time Protocol<br>
-XOR        		“Exclusive OR” is a binary operation <br>
+1:M                     One-to-Many <br>
+4F                      Four Fingers, a proprietary biometric technology<br>
+5-tuple                 Five tuple data parameters  <br>
+Account                 User account with limited privileges <br>
+Admin                   Administrator<br>
+AOP                     Aspect Oriented Programming<br>
+API                     Application Programming Interface<br>
+app                     A client application<br>
+CPU                     Central Processing Unit<br>
+CBV                     Current Biometric Vector<br>
+CSRF                    Cross-Site Request Forgery<br>
+ID                      Identifier<br>
+IDS                     Intrusion Detection System<br>
+IBV                     Initial Biometric Vector <br>
+IP                      Internet Protocol<br>
+JSON                    JavaScript object notation<br>
+LDAP                    Lightweight Directory Access Protocol<br>
+MAC                     Mandatory Access Control<br>
+MCA                     Mobile Client Application<br>
+NSA                     National Security Agency (U.S.)<br>
+PII                     Personally Identifiable Information <br>
+QR code                 Quick Response code<br>
+RDBMS                   Relational Database Management System<br>
+REST                    Representational State Transfer<br>
+SBP                     Standard for Biometric Privacy <br>
+SSL                     Secure Socket Layer<br>
+TCSEC                   Trusted Computer System Evaluation Criteria<br>
+TLS                     Transport Layer Security<br>
+URL                     Uniform Resource Locator <br>
+XNTP                    eXtended Network Time Protocol<br>
+XOR                     “Exclusive OR” is a binary operation <br>
 
 ## 4.  Conformance
 The SBP comprises the rules governing secure communication between a variety of client devices and the trusted server. This standard is based on the tested computer-based implementation of the Trusted Computer System Evaluation Criteria (TCSEC).
