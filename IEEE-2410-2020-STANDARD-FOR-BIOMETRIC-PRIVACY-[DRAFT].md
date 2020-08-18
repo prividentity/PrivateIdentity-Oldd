@@ -505,7 +505,7 @@ The GDPR does not regulate the processing of anonymized information [10]. In Rec
 
 We conclude that the FHE payloads and UUIDs are not subject to the requirements of GDPR because they constitute anonymized data and do not contain personal data or biometric data.
 
-#### GDPR Principles to SBP Traceability Matrix
+#### 9.5.4 GDPR Principles to SBP Traceability Matrix
 ||GDRP PRINCIPLES | SBP System Compliance Control|
 |----|-----|-----|
 |1| **Lawfulness, fairness and transparency principle** <br><br>Personal data is processed lawfully, fairly and in a transparent manner in relation to the data subject.| **Processes only anonymized data.** <br><br>SBP systems process only encrypted FHE payloads. This reduces the risk of the personal or biometric data being used for any improper, concealed or illegal purpose. <br><br>**Provides strong end-user authentication.** <br><br>The GDPR requires the organization to take reasonable steps to confirm that the person requesting access to their personal data is actually the rightful data subject. SBP systems help organizations advance and respond to requests from data subjects to exercise their rights under data protection law by providing strong end-user authentication to enable each data subject to control one’s data, to no longer consent to processing, to correct significant errors within the data and to request that data be erased (forgotten).  Strong end user authentication also allows organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret.|
@@ -516,12 +516,6 @@ We conclude that the FHE payloads and UUIDs are not subject to the requirements 
 |6| **Integrity and confidentiality principle (security)** <br><br> Personal data is processed in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing … using appropriate technical or organizational measures. | **Provides strong end-user authentication** Strong end-user authentication is a key part of the security framework anticipated by the GDPR. In addition, Strong Customer Authentication (SCA) is required by PSD2 for “customer-initiated” online payments within Europe. Finally, ensuring network and information security constitutes a legitimate interest of an organization and is a valid legal basis for processing data. <br><br> SBP systems provide strong end-user authentication to help organizations secure personal data. This allows organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret.
 |7| **Accountability principle** <br><br>Requires the data controllers implement appropriate measures to protect personal data and be able to show that processing activities demonstrate compliance with the above principles. | **Does not subject organization to GDPR obligations** <br><br>The GDPR does not regulate the processing of anonymized information, including for statistical or research purposes. Indeed, the GDPR specifically refers to anonymization in Recital 26 to exclude anonymized data from the scope of data protection legislation. Accordingly, since SBP systems transmit, store and use only anonymized data, the data controller is thus not subject to GDPR data subject rights or special handling requirements for personal data or biometric data and is exempt from data breach notification requirements. |
 
-
-
-
-
- 
-
 [3]  Section 9.5 is excerpted with permission. Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  
 [4]  Art. 5 GDPR Principles relating to processing of personal data.
 [5]  GDPR Article 5(1)(c)
@@ -531,3 +525,62 @@ We conclude that the FHE payloads and UUIDs are not subject to the requirements 
 [9]  GDPR Article 4(14).
 [10] GDPR Recital 26.
 [11] GDPR Recital 26.
+[12]  Recitals 65 and 66 and in Article 17 of the GDPR
+[13]  Recitals 65 and 66 and in Article 17 of the GDPR
+[14]  Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 supplementing Directive (EU) 2015/2366 of the European Parliament and of the Council with regard to regulatory technical standards for strong customer authentication and common and secure open standards of communication. [[Link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.069.01.0023.01.ENG&toc=OJ:L:2018:069:TOC)]
+[15]  Recitals 65 and 66 and in Article 17 of the GDPR
+[16]  GDPR Recital 26. 
+
+### 9.6 CCPA
+The CCPA (California Civil Code §§ 1798.100 to 1798.199) is currently the most comprehensive privacy legislation in the United States. The CCPA is similar to the GDPR in that it grants California residents robust data privacy rights and control over their personal information, including a subset of the elements of the GDPR’s lawfulness, fairness and transparency principle, data minimization principle, and integrity and confidentiality (security) principle [17].
+
+The CCPA grants California residents rights with respect to the collection of their personal information, including the right to be forgotten (deletion of information), the right to opt-out of the sale of their personal information, and the right to know what information a business collects about them.  SBP systems advance the individual rights of California residents with respect to: (a) the collection of their personal information by transmitting, storing and using only deidentified data, and (b) providing strong end-user authentication that allows businesses to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret.
+The CCPA’s broad definition of personal information includes any plaintext data or pseudonymized data that remains capable of being associated with a particular consumer or household [18]. The CCPA does not restrict a business’s ability to collect, use, retain, sell, or disclose consumer information that is “deidentified” (anonymized). SBP systems help advance the CCPA’s data minimization goals by transmitting, storing and using (processing) only deidentified data and deleting all personal information immediately after it is transformed into FHE payloads. 
+
+The CCPA maintains that a business has, “[a] duty to implement and maintain reasonable security procedures and practices.” This security provision includes a proportionality element providing that it is the duty of the business to maintain reasonable security procedures and practices, “appropriate to the nature of the information.” SBP systems aid a business in advancing this goal and responding to requests from subjects seeking to exercise their rights under the CCPA by providing strong end-user authentication that allows organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret.  Please see the chart below to view in greater detail how SBP systems enable customers to advance each of these principles.
+
+#### 9.6.1 FHE Payloads Contain Deidentified Information
+
+The CCPA defines and regulates “personal information” as “information that identifies, relates to, describes, is capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household.” SBP systems fully realize the CCPA’s legislative goals by transforming personal information into FHE payloads and UUIDs that are treated as “deidentified” data under the CCPA. 
+
+As discussed in detail above, SBP systems only transmit, store or use deidentified (anonymized) data. Additionally, SBP systems do not transmit, store or use any other personal data or biometric data, machine or device identifications, metadata, or any other identifying information. 
+
+#### 9.6.2 FHE Payloads Do Not Contain Biometric Information
+The CCPA defines biometric information as follows. 
+
+> “…an individual’s physiological, biological or behavioral characteristics, including an individual’s DNA, that can be used, singly or in combination with each other or with other identifying data, to establish individual identity. Biometric information includes, but is not limited to, imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, and voice recordings, from which an identifier template, such as a faceprint, a minutiae template, or a voiceprint, can be extracted, and keystroke patterns or rhythms, gait patterns or rhythms, and sleep, health, or exercise data that contain identifying information.” [19]
+
+The encrypted FHE payloads and UUIDs created by SBP systems do not qualify as biometric data under the CCPA. These FHE payloads and UUIDs contain no biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait. 
+
+Accordingly, the encrypted FHE payloads and UUIDs should not be treated as biometric information under the CCPA. 
+
+#### 9.6.3 FHE Payloads Are Not Subject to CCPA Obligations
+The CCPA states that businesses processing deidentified data are not obligated to provide or delete information in response to a consumer request or to re-identify individual data to verify a consumer request. Specifically, the final text of the California Consumer Privacy Act Regulations at § 999.323(f) provides that, “If a business maintains consumer information that is deidentified, a business is not obligated to provide or delete this information in response to a consumer request or to re-identify individual data to verify a consumer request.”
+In addition, the CCPA Regulations at § 1798.140 further excludes deidentified information from the scope of the legislation.  
+
+> ““Deidentification” means information that cannot reasonably identify, relate to, describe, be capable of being associated with, or be linked, directly or indirectly to a particular consumer, provided that a business that uses deidentified information [has implemented technical and process safeguards that prohibit reidentification of the consumer, has implemented processes to prevent inadvertent release of deidentified information, and makes no attempt to reidentify the information.” [20]
+
+Finally, in the same section, CCPA § 1798.145(a)(5) further provides that nothing in the CCPA restricts a business’s ability to “collect, use, retain, sell, or disclose consumer information that is deidentified or in the aggregate.” [21] 
+
+As previously described, the FHE payloads and UUIDs contain only deidentified data. Therefore, the consumer rights provided under the CCPA thus fall away with respect to this deidentified information and businesses that utilize this system do not incur CCPA obligations. 
+
+#### 9.6.4  CCPA Requirements to SBP Traceability Matrix
+||CCPA REQUIREMENTS | SBP System Compliance Control|
+|----|-----|-----|
+|1| **CCPA REQUIREMENTS** <br>Right to access data<br>Right to be forgotten<br>Right to opt-out of sale of information <br> Notices to data subjects | **Processes only deidentified data** <br><br> SBP systems transmit, store and use only deidentified data.  This reduces the risk of personal information or biometric information being used for any improper purpose and allows a customer’s business to utilize biometric identification without subjecting the business to the CCPA obligations. CCPA provides that businesses processing deidentified data are not obligated to provide or delete this information in response to a consumer request or to re-identify individual data to verify a consumer request.  Specifically, Subsection 999.323(f) of the final text of the California Consumer Privacy Act Regulations (the “CCPA Regulations”), provides that, “If a business maintains consumer information that is deidentified, a business is not obligated to provide or delete this information in response to a consumer request or to re-identify individual data to verify a consumer request.” The consumer rights provided under the CCPA fall away with respect to the deidentified, encrypted FHE payload produced by SBP systems. <br><br> **Provides strong end-user authentication.** <br><br>The CCPA’s security provision requires that organizations have a, “duty to implement and maintain reasonable security procedures and practices.” The CCPA’s security provisions include a proportionality element providing that it is the duty of the business to maintain reasonable security procedures and practices, “appropriate to the nature of the information.” SBP systems help organizations advance and respond to requests from subjects seeking to exercise their rights under CCPA by providing strong end-user authentication. <br><br>Strong end-user authentication is also key to quickly providing each data subject with the ability to control and access one’s data, to opt-out of sale of information, to display notices, and to request that data be erased (forgotten).  SBP systems allow organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret.|
+|2| **CCPA REQUIREMENTS** <br>Pseudonymization<br>Deidentification | **Processes only deidentified data** <br><br>SBP systems transmit, store and use only deidentified data. This promotes and accomplishes the regulatory goal of limiting the processing of personal information to only what is necessary.  According to CCPA regulations, deidentification means information that cannot reasonably identify, relate to, describe, be capable of being associated with, or be linked, directly or indirectly to a particular consumer (§1798.140). <br><br>Discards (deletes) all personal data <br><br>SBP systems discard all biometric information.  Only anonymized data is transmitted, stored or used to support the authentication process. This realizes the regulatory goal of limiting the processing of personal information to only what is necessary.|
+|3| **CCPA REQUIREMENTS** <br>Appropriate data security required | Provides strong end-user authentication.
+The CCPA’s security provision requires that businesses have, “[a] duty to implement and maintain reasonable security procedures and practices.” The CCPA’s security provisions include a proportionality element providing that it is the duty of the business to maintain reasonable security procedures and practices, “appropriate to the nature of the information.” SBP systems help organizations advance and respond to requests from subjects seeking to exercise their rights under CCPA by providing strong end-user authentication. <br><br>Strong end-user authentication is also key to quickly providing each data subject with the ability to control and access one’s data, to opt-out of sale of information, to display notices, and to request that data be erased (forgotten).  SBP systems allow organizations to accurately identify each data subject without requiring the subject to remember a username, password, token or shared secret. |
+
+[17]  Section 9.6 is excerpted with permission. Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  
+[18]  CCPA 1798.140(o)(1).
+[19]  CCPA 1798.140(b).
+[20]  CCPA 1798.140(h).
+[21]  CCPA § 1798.145(a)(5). 
+
+
+
+
+
+
+
