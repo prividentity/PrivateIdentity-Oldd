@@ -86,7 +86,6 @@ Steve Bailey<br>
 
 The following members of the individual balloting committee voted on this standard. Balloters may have voted for approval, disapproval, or abstention.<br>
 Susan Burgess<br>
-John Callahan<br>
 Keith Chow<br>
 Thomas Coughlin<br>
 Grazia D’Eelia<br>
