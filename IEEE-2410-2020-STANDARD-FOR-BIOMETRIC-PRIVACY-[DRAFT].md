@@ -329,25 +329,29 @@ Parameter: Value
 Features: Type, Name, Feature Array.  Type is voice, face or fingerprint.
 
 A Predict API request example is as follows:
-{<br>
-    "features": [<br>
-        {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },<br>
-        {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},<br>
-        {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},<br>
-	   …<br>
-	   {}<br>
-        ]<br>
-}<br>
+```
+{
+    "features": [
+        {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },
+        {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},
+        {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},
+	   …
+	   {}
+        ]
+}
+```
 
 #### 8.2.3 Response
 The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
-{<br>
-    "uuid": "1008023"<br>
-    "message": "OK",<br>
-    "status": 0,<br>
-    "subject_id": 4,<br>
-    ]<br>
-}<br>
+```
+{
+    "uuid": "1008023"
+    "message": "OK",
+    "status": 0,
+    "subject_id": 4,
+    ]
+}
+```
 
 ### 8.3 Liveness
 #### 8.3.1 Overview
@@ -357,24 +361,28 @@ To recognize liveness, a mechanism to affirm interaction with a live individual,
 
 The format of this API call is: 
 
-POST “/node/liveness”<br>
-{<br>
-    “files”: “base64_audio_1”,<br>
-    “text”: “text_expected_1”,<br>
-    “name”: “voice_0.wav”,<br>
-    “localeCode”: “en-US”<br>
-}<br>
+```
+POST “/node/liveness”
+{
+    “files”: “base64_audio_1”,
+    “text”: “text_expected_1”,
+    “name”: “voice_0.wav”,
+    “localeCode”: “en-US”
+}
+```
 
 #### 8.3.3 Response
 The response of a liveness request Returns accuracy data as a ratio from 0 to 1, with a value of .9 denoting 90% accuracy.
 
-{<br>
-    "recognized_text":"text_expected_1",<br>
-    "expected_text":"text_returned_1",<br>
-    "accuracy":0.6000000000000001,<br>
-    "message":"OK",<br>
-    "status":0<br>
-}<br>
+```
+{
+    "recognized_text":"text_expected_1",
+    "expected_text":"text_returned_1",
+    "accuracy":0.6000000000000001,
+    "message":"OK",
+    "status":0
+}
+```
 
 ### 8.4 Delete Subject
 #### 8.4.1 Overview
@@ -387,26 +395,35 @@ Browser URL:  “?action=deleteSubject&subject_id=<subjectId>”<br>
 
 Python POST “/mfa/v1.1/delete_subject”<br>
 
-{<br>
-    “subject_id”: 1<br>
-}<br>
+```
+{
+    “subject_id”: 1
+}
+```
 
 #### 8.4.3 Response 
 The status will have an error code.
 
-{<br>
-   “status”: 0<br>
-}<br>
-{<br>
-   “status”: 0<br>
-   “role_id” : <role_id><br>
-   “message” : “Role Successfully added.”<br>
-}<br>
+```
+{
+   “status”: 0
+}
+```
 
-{<br>
-   “status”: -2<br>
-   “message” : “Role exists in database”<br>
-}<br>
+```
+{
+   “status”: 0
+   “role_id” : <role_id>
+   “message” : “Role Successfully added.”
+}
+```
+
+```
+{
+   “status”: -2
+   “message” : “Role exists in database”
+}
+```
 
 ## 9 PRIVATE CONSIDERATIONS
 ### 9.1 Background
