@@ -7,9 +7,9 @@ Private Identity’s FHE algorithm is a 1-way hash (embedding, or vector encrypt
 Users interact with the Private Identity solution using a massively scalable, convenient, browser-based experience powered by Google Tensorflow® that operates on more than 90% of all browsers, platforms and devices. The Web client does not require on-device training, expensive hardware, GPUs or specialized cameras. 
 
 The Private Identity recognition algorithm uses two Deep Neural Networks (DNNs) per biometric modality and a set of helper DNNs for biometric acquisition. The algorithm acquires biometrics and FHE transforms using the following solutions:
-Private Identity MFA™ provides a massively scalable Web browser client for user identification, authentication and Account Recovery; 
-Encryption Engine™ provides a cross-platform, elastic high-throughput AI/ML/FHE transformation service that runs anywhere;
-Private Identity Search™ provides a polynomial, sub-second massively scalable, elastic high-throughput AI/ML/FHE identification service that runs anywhere. 
+* Cloud Biometric MFA provides a massively scalable Web browser client for user identification, authentication and Account Recovery; 
+* Encryption Engine provides a cross-platform, elastic high-throughput AI/ML/FHE transformation service that runs anywhere;
+* Cloud Biometric Search provides a polynomial, sub-second massively scalable, elastic high-throughput AI/ML/FHE identification service that runs anywhere. 
 
 <br/>
 
