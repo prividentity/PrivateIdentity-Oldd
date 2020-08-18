@@ -527,7 +527,7 @@ We conclude that the FHE payloads and UUIDs are not subject to the requirements 
 [11] GDPR Recital 26.
 [12]  Recitals 65 and 66 and in Article 17 of the GDPR
 [13]  Recitals 65 and 66 and in Article 17 of the GDPR
-[14]  Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 supplementing Directive (EU) 2015/2366 of the European Parliament and of the Council with regard to regulatory technical standards for strong customer authentication and common and secure open standards of communication. [[Link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.069.01.0023.01.ENG&toc=OJ:L:2018:069:TOC)]
+[14]  Commission Delegated Regulation (EU) 2018/389 of 27 November 2017 supplementing Directive (EU) 2015/2366 of the European Parliament and of the Council with regard to regulatory technical standards for strong customer authentication and common and secure open standards of communication. [[Link](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2018.069.01.0023.01.ENG&toc=OJ:L:2018:069:TOC)] 
 [15]  Recitals 65 and 66 and in Article 17 of the GDPR
 [16]  GDPR Recital 26. 
 
