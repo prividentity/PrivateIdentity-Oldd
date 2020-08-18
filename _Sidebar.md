@@ -14,9 +14,6 @@
 
 * [Evaluation Metrics for Recognition DNNs](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
 
-* [Biometric Privacy and Data Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Privacy-and-Data-Privacy)
-
-
 [**IEEE 2410 Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
 * [IEEE 2410 Standard for Biometric Privacy <br>(Approved Draft)](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)
