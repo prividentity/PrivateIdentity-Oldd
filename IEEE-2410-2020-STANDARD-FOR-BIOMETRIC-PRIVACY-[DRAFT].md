@@ -360,9 +360,9 @@ To recognize liveness, a mechanism to affirm interaction with a live individual,
 #### 8.3.2 Request
 
 The format of this API call is: 
+POST “/node/liveness” <br>
 
 ```
-POST “/node/liveness”
 {
     “files”: “base64_audio_1”,
     “text”: “text_expected_1”,
@@ -506,7 +506,8 @@ These principles must lie at the heart of each organization’s approach to proc
 
 SBP systems enable customers to advance the principles of the GDPR by transforming biometrics into anonymized FHE payloads. This eliminates the requirement for organizations to gather personal data to support robust security and advances the integrity and confidentiality principle and the data minimization principle of the GDPR [5]. Please see the chart below to view in greater detail how SBP systems enable customers to advance each of these principles. 
 
-#### 9.5.2 We next consider biometric data.  Biometric data is required to be treated as a special category of personal data under the GDPR and is subject to increased compliance obligations. The GDPR defines biometric data as:
+#### 9.5.2 FHE Payloads Do Not Contain Biometric Data
+We next consider biometric data.  Biometric data is required to be treated as a special category of personal data under the GDPR and is subject to increased compliance obligations. The GDPR defines biometric data as:
 
 > “personal data resulting from specific technical processing relating to the physical, physiological or behavioral characteristics of a natural person, which allow or confirm the unique identification of that natural person, such as facial images or dactyloscopic (fingerprint) data” [9].  
 
@@ -728,54 +729,50 @@ Entities shall safeguard democratic freedoms in surveillance scenarios and not d
 Law enforcement entities shall seek an appropriate balance between the legitimate interests of government to protect public safety and the preservation of individual civil liberties and privacy rights. No entity, including law enforcement, shall use recognition technology to engage in ongoing surveillance of specified individuals in public spaces except in the following scenarios:  (a) where laws are enacted in jurisdictions that respect the rule of law and specifically regulate and define the parameters for the use of facial recognition technology in public spaces; (b) if a court order is issued in a jurisdiction that maintains a fair and independent judiciary that authorizes the use of facial recognition technology by law enforcement for ongoing surveillance of a specified individual in a public space; or (c) in an emergency involving imminent danger or risk of death or serious physical injury to a person. 
 
 ## Annex A
-** Informative Glossary** 
-**admin console:** An online portal that facilitates the registration and enrollment with the Standard for Biometric Privacy (SBP).
-**application:** A unique software/system, which is created using the SBP application programming interface (API) key.
-**Distance Measure:**  A distance function or computation that offers class separation between 
-embeddings.  Typically a cosine distance or Euclidean distance function.
-**SBP admin:** A SBP administrator, who sets up an environment and creates an original site admin based on the enrollment information input during the registration.
-**SBP server:** An instance of the server, such as in the client/server paradigm, that supports SBP  architecture.
-**liveness:** An aspect of an algorithm that defines an animated object in computer vision.
-**user:** A unique user, whose identity is being asserted by SBP and who shall have one or many  devices.
-**user device:** A single device that has biometric-driven client software.
+**Informative Glossary** 
+**admin console:** An online portal that facilitates the registration and enrollment with the Standard for Biometric Privacy (SBP).<br>
+**application:** A unique software/system, which is created using the SBP application programming interface (API) key.<br>
+**Distance Measure:**  A distance function or computation that offers class separation between embeddings. Typically a cosine distance or Euclidean distance function.<br>
+**SBP admin:** A SBP administrator, who sets up an environment and creates an original site admin based on the enrollment information input during the registration. <br>
+**SBP server:** An instance of the server, such as in the client/server paradigm, that supports SBP  architecture.<br>
+**liveness:** An aspect of an algorithm that defines an animated object in computer vision.<br>
+**user:** A unique user, whose identity is being asserted by SBP and who shall have one or many  devices.<br>
+**user device:** A single device that has biometric-driven client software.<br>
 
 ## Annex B
-** Informative Bibliography **
+**Informative Bibliography**
 
 Bibliographical references are resources that provide additional or helpful material but do not need to be understood or used to implement this standard. Reference to these resources is made for informational use only. 
 
-[B1] Bonneau, J., C. Herley, P. C. van Oorschot, and F. Stajano, “The quest to replace passwords: A framework for comparative evaluation of Web authentication schemes,” Proceedings 2012 IEEE Symposium on Security and Privacy, S&P 2012, San Francisco, CA, pp. 553–567, May 2012. 
-[B2] Chan, S. W., and R. Mordani, Java™ Servlet Specification, Version 3.1. Redwood Shores, CA: Oracle America, Inc., 2013. 
-[B3] Handley, M., JAX-RS: Java™ API for RESTful Web Services, Version 1.0. Santa Clara: CA: Sun Microsystems, Inc., 2008.
-[B4] Ross, Arun, Othman, Asem, IEEE Transactions on Information Forensics and Security, Volume 6, Issue 1, March 2011,  Visual Cryptography for Privacy. 
-[B5] Derakhshani, Reza Patent No US 8,369.595 B1, Texture Features for Biometric Authentication, February, 2013 
-[B6] U.S. Department of Defense, DoD 5200.28-STD, “Department of Defense Trusted Computer System Evaluation Criteria,” December 1985.
-[B7] Convolutional Neural Network https://en.wikipedia.org/wiki/Convolutional_neural_network 
-[B8] Institute for Electrical and Electronics Engineers (IEEE),  IEEE 1619 Standard for Cryptographic Protection of Data on Block-Oriented Storage, 2007. 
-[B9] Open Web Application Security Project (OWASP), The Cryptographic Storage Cheat Sheet, 2016.
-[B10] National Institute of Standards and Technology (NIST), NIST Special Publication 800-122, April 2010. 
-[B11] The International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC), ISO/IEC 27001, “Information technology -Security techniques - Information security management systems - Requirements”, Second edition, November 2013.
-[B12] The Directive 95/46/EC of the European Parliament and of the Council, EU Directive 95/46/EC, October 1995.
-[B13]European Banking Authority (EBA) Discussion Paper on future Draft Regulatory Technical Standards on strong customer  authentication and secure communication under the revised Payment Services Directive (PSD2), (EBA/PSD2), December 2015.
-[B14] The U.S. Department Of Commerce, EU-U.S. Privacy Shield Framework Principles Issued By The U.S. Department Of Commerce, February 2013.
-[B15] Public Law 104-191, The Health Insurance Portability and Accountability Act of 1996 (HIPAA), 1996.
-[B16] Open Web Application Security Project (OWASP), “OWASP Top 10”, June 2013.
-[B17] National Institute of Standards and Technology (NIST), NIST Special Publication 800-53 Revision 4 Security and Privacy Controls for Federal Information Systems and Organizations, April 2013.
-[B18] Public Law 93-579. The Privacy Act of 1974, 5 U.S.C. § 552a, 1974.
+[B1] Bonneau, J., C. Herley, P. C. van Oorschot, and F. Stajano, “The quest to replace passwords: A framework for comparative evaluation of Web authentication schemes,” Proceedings 2012 IEEE Symposium on Security and Privacy, S&P 2012, San Francisco, CA, pp. 553–567, May 2012. <br>
+[B2] Chan, S. W., and R. Mordani, Java™ Servlet Specification, Version 3.1. Redwood Shores, CA: Oracle America, Inc., 2013. <br>
+[B3] Handley, M., JAX-RS: Java™ API for RESTful Web Services, Version 1.0. Santa Clara: CA: Sun Microsystems, Inc., 2008.<br>
+[B4] Ross, Arun, Othman, Asem, IEEE Transactions on Information Forensics and Security, Volume 6, Issue 1, March 2011,  Visual Cryptography for Privacy. <br>
+[B5] Derakhshani, Reza Patent No US 8,369.595 B1, Texture Features for Biometric Authentication, February, 2013 <br>
+[B6] U.S. Department of Defense, DoD 5200.28-STD, “Department of Defense Trusted Computer System Evaluation Criteria,” December 1985.<br>
+[B7] Convolutional Neural Network https://en.wikipedia.org/wiki/Convolutional_neural_network <br>
+[B8] Institute for Electrical and Electronics Engineers (IEEE),  IEEE 1619 Standard for Cryptographic Protection of Data on Block-Oriented Storage, 2007. <br>
+[B9] Open Web Application Security Project (OWASP), The Cryptographic Storage Cheat Sheet, 2016.<br>
+[B10] National Institute of Standards and Technology (NIST), NIST Special Publication 800-122, April 2010. <br>
+[B11] The International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC), ISO/IEC 27001, “Information technology -Security techniques - Information security management systems - Requirements”, Second edition, November 2013. <br>
+[B12] The Directive 95/46/EC of the European Parliament and of the Council, EU Directive 95/46/EC, October 1995.<br>
+[B13]European Banking Authority (EBA) Discussion Paper on future Draft Regulatory Technical Standards on strong customer  authentication and secure communication under the revised Payment Services Directive (PSD2), (EBA/PSD2), December 2015.<br>
+[B14] The U.S. Department Of Commerce, EU-U.S. Privacy Shield Framework Principles Issued By The U.S. Department Of Commerce, February 2013. <br>
+[B15] Public Law 104-191, The Health Insurance Portability and Accountability Act of 1996 (HIPAA), 1996.<br>
+[B16] Open Web Application Security Project (OWASP), “OWASP Top 10”, June 2013. <br>
+[B17] National Institute of Standards and Technology (NIST), NIST Special Publication 800-53 Revision 4 Security and Privacy Controls for Federal Information Systems and Organizations, April 2013. <br>
+[B18] Public Law 93-579. The Privacy Act of 1974, 5 U.S.C. § 552a, 1974. <br>
 [B19] 740 ILCS 14/ Biometric Information Privacy Act (“BIPA”).  Available at: https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004&ChapterID=57 (Accessed 8 August 2020). 
-[B20] AB375, Title 1.81.5, The California Consumer Privacy Act of 2018, CCPA.  Available at: https://oag.ca.gov/privacy/ccpa (Accessed 8 August 2020). 
-[B21] EURO-MILS, “Secure European Virtualisation for Trustworthy Applications in Critical Domains, Used Formal Methods”, 2015.  Accessed 8 August 2020.  Available from https://zenodo.org/record/45164#.XzSVQOhKj-g
-[B22] European Parliament and Council of European Union (2016) Regulation (EU) 2016/679 (“GDPR”). Available at:  https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN (Accessed: 8 August 2020).
-[B23] Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  
-[B24] Microsoft. (2018). Six principles for developing and deploying facial recognition technology. Accessed 8 August 2020.  Available at https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2018/12/MSFT-Principleson-Facial-Recognition.pdf. 
-[B25] Office of the Director of National Intelligence (2008). “US ODNI Intelligence Community Directive 503.” Intelligence Community Information Technology Systems:  Security Risk Management, Certification And Accreditation. Accessed 8 August 2020.  Available from https://www.dni.gov/files/documents/ICD/ICD_503.pdf. 
-[B26] Punke, Michael. “Some Thoughts on Facial Recognition Legislation,” AWS Machine Learning Blog, February 7, 2019.  Accessed 8 August 2020.  Available at https://aws.amazon.com/blogs/machine-learning/some-thoughts-on-facial-recognition-legislation.
-[B27] US Department of Defense (Mitre, 1985). Department of Defense Trusted Computer System Evaluation Criteria (“TCSEC”). Accessed 8 August 2020.  Available at: https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf
-[B28] United States. 2004. The Health Insurance Portability and Accountability Act (“HIPAA”). [Washington, D.C.]: U.S. Dept. of Labor, Employee Benefits Security Administration. Available at: http://purl.fdlp.gov/GPO/gpo10291 (Accessed 8 August 2020). 
+[B20] AB375, Title 1.81.5, The California Consumer Privacy Act of 2018, CCPA.  Available at: https://oag.ca.gov/privacy/ccpa (Accessed 8 August 2020).  <br>
+[B21] EURO-MILS, “Secure European Virtualisation for Trustworthy Applications in Critical Domains, Used Formal Methods”, 2015.  Accessed 8 August 2020.  Available from https://zenodo.org/record/45164#.XzSVQOhKj-g <br>
+[B22] European Parliament and Council of European Union (2016) Regulation (EU) 2016/679 (“GDPR”). Available at:  https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN (Accessed: 8 August 2020). <br>
+[B23] Lentchner, Cassie and S. Farmer.  “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE):  GDPR, CCPA and BIPA.”  Pillsbury Winthrop Shaw Pittman LLP.  August 1, 2020.  <br>
+[B24] Microsoft. (2018). Six principles for developing and deploying facial recognition technology. Accessed 8 August 2020.  Available at https://blogs.microsoft.com/wp-content/uploads/prod/sites/5/2018/12/MSFT-Principleson-Facial-Recognition.pdf. <br>
+[B25] Office of the Director of National Intelligence (2008). “US ODNI Intelligence Community Directive 503.” Intelligence Community Information Technology Systems:  Security Risk Management, Certification And Accreditation. Accessed 8 August 2020.  Available from https://www.dni.gov/files/documents/ICD/ICD_503.pdf.  <br>
+[B26] Punke, Michael. “Some Thoughts on Facial Recognition Legislation,” AWS Machine Learning Blog, February 7, 2019.  Accessed 8 August 2020.  Available at https://aws.amazon.com/blogs/machine-learning/some-thoughts-on-facial-recognition-legislation. <br>
+[B27] US Department of Defense (Mitre, 1985). Department of Defense Trusted Computer System Evaluation Criteria (“TCSEC”). Accessed 8 August 2020.  Available at: https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf <br>
+[B28] United States. 2004. The Health Insurance Portability and Accountability Act (“HIPAA”). [Washington, D.C.]: U.S. Dept. of Labor, Employee Benefits Security Administration. Available at: http://purl.fdlp.gov/GPO/gpo10291 (Accessed 8 August 2020). <br>
 
 
-Copyright © 2020 IEEE. All rights reserved.
-This is an unapproved IEEE Standards Draft, subject to change.
-
-
-
+Copyright © 2020 IEEE. All rights reserved.<br>
+This is an unapproved IEEE Standards Draft, subject to change.<br>
