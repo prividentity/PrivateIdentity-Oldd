@@ -303,16 +303,17 @@ Parameter:  Value<br>
 Features: Type, Name, Feature Array. Type is voice, face or fingerprint.<br>
 
 An Enroll API request example is as follows:<br>
-{<br>
-    "features": [<br>
-          {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },<br>
-          {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},<br>
-          {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},<br>
-	   …<br>
-	   {}<br>
-     ]<br>
-}<br>
-
+```
+{
+    "features": [
+          {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },
+          {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},
+          {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},
+	   …
+	   {}
+     ]
+}
+```
 #### 8.1.3 Response
 The response of an Enroll request returns O as Success given data validation and database storage success.
 
