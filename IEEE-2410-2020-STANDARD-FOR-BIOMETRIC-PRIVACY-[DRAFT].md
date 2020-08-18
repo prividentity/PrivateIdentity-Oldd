@@ -11,7 +11,6 @@ This document describes the essential methodology to SBP.
 
 ## Important Notices and Disclaimers Concerning IEEE Standards Documents
 Sponsor **Standards Development Board** of the **IEEE Communications Society**
-
 and the **Technical Committee on COM/SDB** of the **IEEE Technical Activities Board**
 
 **Approved:** <_Date Approved_>
@@ -73,81 +72,81 @@ Attention is called to the possibility that implementation of this standard may 
 
 Essential Patent Claims may exist for which a Letter of Assurance has not been received. The IEEE is not responsible for identifying Essential Patent Claims for which a license may be required, for conducting inquiries into the legal validity or scope of Patents Claims, or determining whether any licensing terms or conditions provided in connection with submission of a Letter of Assurance, if any, or in any licensing agreements are reasonable or non-discriminatory. Users of this standard are expressly advised that determination of the validity of any patent rights, and the risk of infringement of such rights, is entirely their own responsibility. Further information may be obtained from the IEEE Standards Association.
 
-**Participants**
-At the time this draft standard was completed, the Biometrics Open Protocol Working Group had the following membership:
-Scott Streit, Chair
-Clayton Stewart, Vice Chair
-Mark Thompson
-Stephen Suffian
-Brian Streit 
-Daniel Farinella
-Suleyman Muhammad
-Nathan Dent
-Steve Bailey
+**Participants** <br>
+At the time this draft standard was completed, the Biometrics Open Protocol Working Group had the following membership:<br>
+Scott Streit, Chair<br>
+Clayton Stewart, Vice Chair<br>
+Mark Thompson<br>
+Stephen Suffian<br>
+Brian Streit <br>
+Daniel Farinella<br>
+Suleyman Muhammad<br>
+Nathan Dent<br>
+Steve Bailey<br>
 
-The following members of the individual balloting committee voted on this standard. Balloters may have voted for approval, disapproval, or abstention.
-Susan Burgess
-John Callahan
-Keith Chow
-Thomas Coughlin
-Grazia D’Eelia
-Sourav Dutta
-Dan Friedman
-Randall Groves
-Marco Hernandez
-Werner Hoelzl
-Noriyuki Ikeuchi
-Akio Iso
-Piotr Karocki
-Bruce Kraemer
-Paul Lambert
-Shalliam Lumpkins
-Nick S. A. Nikjoo
-Paul Nikolich
-Benjamin Rolfe
-Osman Sakr
-Thomas Starai
-Scott Streit
-Walter Struppler
-Stephen Suffian
-Mitsutoshi Sugawara
-Michael Swearingen
-David Tepen
-John Vergis
-Hung-Yu Wei
-Forrest Wright
-Oren Yuen
-Daidi Zhong
+The following members of the individual balloting committee voted on this standard. Balloters may have voted for approval, disapproval, or abstention.<br>
+Susan Burgess<br>
+John Callahan<br>
+Keith Chow<br>
+Thomas Coughlin<br>
+Grazia D’Eelia<br>
+Sourav Dutta<br>
+Dan Friedman<br>
+Randall Groves<br>
+Marco Hernandez<br>
+Werner Hoelzl<br>
+Noriyuki Ikeuchi<br>
+Akio Iso<br>
+Piotr Karocki<br>
+Bruce Kraemer<br>
+Paul Lambert<br>
+Shalliam Lumpkins<br>
+Nick S. A. Nikjoo<br>
+Paul Nikolich<br>
+Benjamin Rolfe<br>
+Osman Sakr<br>
+Thomas Starai<br>
+Scott Streit<br>
+Walter Struppler<br>
+Stephen Suffian<br>
+Mitsutoshi Sugawara<br>
+Michael Swearingen<br>
+David Tepen<br>
+John Vergis<br>
+Hung-Yu Wei<br>
+Forrest Wright<br>
+Oren Yuen<br>
+Daidi Zhong<br>
 
-When the IEEE-SA Standards Board approved this standard on <Date Approved>, it had the following membership:
-John D. Kulick, Chair
-Jon Walter Rosdahl, Vice Chair
-Richard H. Hulett, Past Chair
-Konstantinos Karachalios, Secretary
-Masayuki Ariyoshi
-Ted Burse
-Stephen Dukes
-Jean-Philippe Faure
-J. Travis Griffith
-Gary Hoffman
-Dan Friedman
-Michael Janezic 
-Joseph L. Koepfinger*
-David J. Law
-Hung Ling
-Andrew Myles
-T. W. Olsen
-Glenn Parsons
-Ronald C. Petersen
-Annette D. Reilly
-Stephen J. Shellhammer
-Adrian P. Stephens
-Yatin Trivedi
-Philip Winston
-Don Wright
-Yu Yuan
-Daidi Zhong
-*Member Emeritus
+When the IEEE-SA Standards Board approved this standard on <Date Approved>, it had the following membership:<br>
+John D. Kulick, Chair<br>
+Jon Walter Rosdahl, Vice Chair<br>
+Richard H. Hulett, Past Chair<br>
+Konstantinos Karachalios, Secretary<br>
+Masayuki Ariyoshi<br>
+Ted Burse<br>
+Stephen Dukes<br>
+Jean-Philippe Faure<br>
+J. Travis Griffith<br>
+Gary Hoffman<br>
+Dan Friedman<br>
+Michael Janezic <br>
+Joseph L. Koepfinger*<br>
+David J. Law<br>
+Hung Ling<br>
+Andrew Myles<br>
+T. W. Olsen<br>
+Glenn Parsons<br>
+Ronald C. Petersen<br>
+Annette D. Reilly<br>
+Stephen J. Shellhammer<br>
+Adrian P. Stephens<br>
+Yatin Trivedi<br>
+Philip Winston<br>
+Don Wright<br>
+Yu Yuan<br>
+Daidi Zhong<br>
+*Member Emeritus<br>
 
 ## Introduction
 One-way fully homomorphic encryption, the inclusion of identification as well as authentication and a greatly simplified Application Programming Interface (API) distinguish the architecture design of IEEE P2410-2020 from legacy Standard P2410-2017. The reinforced architecture of the Standard for Biometric Privacy (SBP) is well suited for implementation into enterprise systems for secure authentication via biometric modalities. 
@@ -193,37 +192,37 @@ For the purposes of this document, the following terms and definitions apply. Th
 RESTful: Refers to Representational State Transfer (REST), which is a software architecture style.
 Acronyms and abbreviations
 
-1:M          		One-to-Many 
-4F             		Four Fingers, a proprietary biometric technology
-5-tuple	 		Five tuple data parameters  
-Account  		User account with limited privileges 
-Admin			Administrator
-AOP			Aspect Oriented Programming
-API			Application Programming Interface
-app			A client application
-CPU			Central Processing Unit
-CBV			Current Biometric Vector
-CSRF			Cross-Site Request Forgery
-ID			Identifier
-IDS			Intrusion Detection System
-IBV       			Initial Biometric Vector 
-IP			Internet Protocol                    
-JSON			JavaScript object notation
-LDAP			Lightweight Directory Access Protocol
-MAC			Mandatory Access Control
-MCA			Mobile Client Application
-NSA			National Security Agency (U.S.)
-PII			Personally Identifiable Information 
-QR code	 		Quick Response code
-RDBMS	 		Relational Database Management System
-REST			Representational State Transfer
-SBP 			Standard for Biometric Privacy 
-SSL			Secure Socket Layer
-TCSEC			Trusted Computer System Evaluation Criteria
-TLS			Transport Layer Security
-URL			Uniform Resource Locator 
-XNTP			eXtended Network Time Protocol
-XOR        		“Exclusive OR” is a binary operation 
+1:M          		One-to-Many <br>
+4F             		Four Fingers, a proprietary biometric technology<br>
+5-tuple	 		Five tuple data parameters  <br>
+Account  		User account with limited privileges <br>
+Admin			Administrator<br>
+AOP			Aspect Oriented Programming<br>
+API			Application Programming Interface<br>
+app			A client application<br>
+CPU			Central Processing Unit<br>
+CBV			Current Biometric Vector<br>
+CSRF			Cross-Site Request Forgery<br>
+ID			Identifier<br>
+IDS			Intrusion Detection System<br>
+IBV       		Initial Biometric Vector <br>
+IP			Internet Protocol<br>
+JSON			JavaScript object notation<br>
+LDAP			Lightweight Directory Access Protocol<br>
+MAC			Mandatory Access Control<br>
+MCA			Mobile Client Application<br>
+NSA			National Security Agency (U.S.)<br>
+PII			Personally Identifiable Information <br>
+QR code	 		Quick Response code<br>
+RDBMS	 		Relational Database Management System<br>
+REST			Representational State Transfer<br>
+SBP 			Standard for Biometric Privacy <br>
+SSL			Secure Socket Layer<br>
+TCSEC			Trusted Computer System Evaluation Criteria<br>
+TLS			Transport Layer Security<br>
+URL			Uniform Resource Locator <br>
+XNTP			eXtended Network Time Protocol<br>
+XOR        		“Exclusive OR” is a binary operation <br>
 
 ## 4.  Conformance
 The SBP comprises the rules governing secure communication between a variety of client devices and the trusted server. This standard is based on the tested computer-based implementation of the Trusted Computer System Evaluation Criteria (TCSEC).
@@ -296,23 +295,23 @@ Individual developers need to apply for an API_Key for their applications that s
 #### 8.1.1 Overview
 To enroll a user, we take as input  the PII Data which is a set of tag/value pairs and the feature vectors used for training given as input under the “PII” and “features” fields respectively. Using a Global UUID a new identity is created in the persistent engine  corresponding to the PII provided.
 #### 8.1.2 Request
-The format of this API call is:  
+The format of this API call is:  <br>
 
-POST “/mfa/v1.1/enroll?key=<API_KEY>”
+POST “/mfa/v1.1/enroll?key=<API_KEY>”<br>
 
-Parameter:  Value
-Features: Type, Name, Feature Array. Type is voice, face or fingerprint.
+Parameter:  Value<br>
+Features: Type, Name, Feature Array. Type is voice, face or fingerprint.<br>
 
-An Enroll API request example is as follows:
-{
-    "features": [
-          {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },
-          {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},
-          {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},
-	   …
-	   {}
-     ]
-}
+An Enroll API request example is as follows:<br>
+{<br>
+    "features": [<br>
+          {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },<br>
+          {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},<br>
+          {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},<br>
+	   …<br>
+	   {}<br>
+     ]<br>
+}<br>
 
 #### 8.1.3 Response
 The response of an Enroll request returns O as Success given data validation and database storage success.
@@ -329,25 +328,25 @@ Parameter: Value
 Features: Type, Name, Feature Array.  Type is voice, face or fingerprint.
 
 A Predict API request example is as follows:
-{
-    "features": [
-        {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },
-        {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},
-        {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},
-	   …
-	   {}
-        ]
-}
+{<br>
+    "features": [<br>
+        {“type”: “voice”, name: “voice1.wav”,  “embedding_vector”: [...] },<br>
+        {“type”: “face”, name: “face1.png”, “embedding_vector”: [...]},<br>
+        {“type”: “fingerprint”, name: “fingerprint1.png”, “embedding_vector”: [...]},<br>
+	   …<br>
+	   {}<br>
+        ]<br>
+}<br>
 
 #### 8.2.3 Response
 The response of a Predict request, if meeting confidence thresholds, returns PII data in the following format:
-{
-    "uuid": "1008023"
-    "message": "OK",
-    "status": 0,
-    "subject_id": 4,
-    ]
-}
+{<br>
+    "uuid": "1008023"<br>
+    "message": "OK",<br>
+    "status": 0,<br>
+    "subject_id": 4,<br>
+    ]<br>
+}<br>
 
 ### 8.3 Liveness
 #### 8.3.1 Overview
@@ -357,24 +356,24 @@ To recognize liveness, a mechanism to affirm interaction with a live individual,
 
 The format of this API call is: 
 
-POST “/node/liveness”
-{
-    “files”: “base64_audio_1”,
-    “text”: “text_expected_1”,
-    “name”: “voice_0.wav”,
-    “localeCode”: “en-US”
-}
+POST “/node/liveness”<br>
+{<br>
+    “files”: “base64_audio_1”,<br>
+    “text”: “text_expected_1”,<br>
+    “name”: “voice_0.wav”,<br>
+    “localeCode”: “en-US”<br>
+}<br>
 
 #### 8.3.3 Response
 The response of a liveness request Returns accuracy data as a ratio from 0 to 1, with a value of .9 denoting 90% accuracy.
 
-{
-    "recognized_text":"text_expected_1",
-    "expected_text":"text_returned_1",
-    "accuracy":0.6000000000000001,
-    "message":"OK",
-    "status":0
-}
+{<br>
+    "recognized_text":"text_expected_1",<br>
+    "expected_text":"text_returned_1",<br>
+    "accuracy":0.6000000000000001,<br>
+    "message":"OK",<br>
+    "status":0<br>
+}<br>
 
 ### 8.4 Delete Subject
 #### 8.4.1 Overview
@@ -383,30 +382,30 @@ Delete the person from database
 #### 8.4.2 Request
 The format of this API call is: 
 
-Browser URL:  “?action=deleteSubject&subject_id=<subjectId>”
+Browser URL:  “?action=deleteSubject&subject_id=<subjectId>”<br>
 
-Python POST “/mfa/v1.1/delete_subject”
+Python POST “/mfa/v1.1/delete_subject”<br>
 
-{
-    “subject_id”: 1
-}
+{<br>
+    “subject_id”: 1<br>
+}<br>
 
 #### 8.4.3 Response 
 The status will have an error code.
 
-{
-   “status”: 0
-}
-{
-   “status”: 0
-   “role_id” : <role_id>
-   “message” : “Role Successfully added.”
-}
+{<br>
+   “status”: 0<br>
+}<br>
+{<br>
+   “status”: 0<br>
+   “role_id” : <role_id><br>
+   “message” : “Role Successfully added.”<br>
+}<br>
 
-{
-   “status”: -2
-   “message” : “Role exists in database”
-}
+{<br>
+   “status”: -2<br>
+   “message” : “Role exists in database”<br>
+}<br>
 
 ## 9 PRIVATE CONSIDERATIONS
 ### 9.1 Background
