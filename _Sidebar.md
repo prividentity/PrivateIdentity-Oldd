@@ -19,6 +19,8 @@
 
 [**IEEE 2410 Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
+* [**IEEE 2410 Standard for Biometric Privacy (DRAFT)**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)
+
 * [SBP API Overview](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#SBP-API-Overview)
 
 * [Enroll endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#API-Enroll-Overview)
