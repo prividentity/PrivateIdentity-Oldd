@@ -7,6 +7,8 @@ The SBP implementation includes software running on a client device and on the S
 
 This document describes the essential methodology to SBP.
 
+Link to IEEE 2410-2020 Project Details on Web ([link](https://standards-stg.ieee.org/project/2410.html))
+
 **Keywords**: biometrics, privacy, admin console, application, SBP admin, SBP cluster, SBP server, SBP IDS, client device IDS, Jena Rules, IDS cluster, IEEE 2410, liveness, original site admin, site admin, trusted adjudicated data, user, user device
 
 ## Important Notices and Disclaimers Concerning IEEE Standards Documents
