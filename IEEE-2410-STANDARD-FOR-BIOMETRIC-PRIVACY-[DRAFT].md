@@ -6,7 +6,7 @@ The Standard for Biometric Privacy (SBP) provides private identity assertion. SB
 The SBP implementation includes software running on a client device and on the SPB server.  Pluggable components are used to replace legacy functionality to allow rapid integration into existing operating environments. The SBP implementation allows the systems to meet security needs by using the application programming interface, whether the underlying system is a relational database management system or a search engine. The SBP implementation functionality offers a “point-and-cut” mechanism to add the appropriate security to the production systems as well as to the systems in development. The architecture is language neutral, allowing Representational State Transfer (REST), JavaScript Object Notation (JSON), and Secure Sockets Layer (SSL) or Transport Layer Security to provide the communication interface.
 
 This document describes the essential methodology to SBP.  
-The IEEE 2410 Project Website is accessed here: ([https://standards-stg.ieee.org/project/2410.html](https://standards-stg.ieee.org/project/2410.html))
+The IEEE 2410 Project Website is accessed ([here](https://standards-stg.ieee.org/project/2410.html)).
 
 **Keywords**: biometrics, privacy, admin console, application, SBP admin, SBP cluster, SBP server, SBP IDS, client device IDS, Jena Rules, IDS cluster, IEEE 2410, liveness, original site admin, site admin, trusted adjudicated data, user, user device
 
