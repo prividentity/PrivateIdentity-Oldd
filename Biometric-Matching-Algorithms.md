@@ -51,7 +51,7 @@ Delete_Subject RESTful API. Accepts FHE input from the web client or the Encrypt
 ## FINGERPRINT RECOGNITION ALGORITHM  
 ![Fingerprint recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint_github_1.png)
 * Provides absolute accuracy (99.99%) with nearly zero false positives (0.0001%) 
-* Recognizes fingerprints using any capacitive or optical scan general-purpose camera (webcams, phones) ≥4MP
+* Recognizes fingerprints using any capacitive scan or optical scan w/ general-purpose camera (webcams, phones) ≥4MP
 * Matches in polynomial time irrespective of gallery size and without discrimination (race, age, gender)
 * Trained using the NIST Special Database 4 and CASIA-FingerprintV5 
 
