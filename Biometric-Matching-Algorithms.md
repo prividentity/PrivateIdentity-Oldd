@@ -3,12 +3,12 @@ The Private Identity architecture is biometric modality agnostic. Private Identi
 The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each FHE and subsequently returns identity in polynomial time. It is capable of classifying an unlimited number of FHEs and returning identity in constant time when configured using load-balanced, elastic, fault-tolerant Kubernetes clusters.  Testing on GCP using 100,000 FHEs/second (approx. 8B authentications/day, or similar to the daily volume of Azure Active Directory) through cloud AI responded in constant time.  The second DNN runs in any AI cloud container or on-premise. 
 
 ## FACIAL RECOGNITION ALGORITHM
-![Face recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-face%20v4.png)
+![Face recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face_github_1.png)
 * Provides absolute accuracy (99.99%) with nearly zero false positives (0.0001%)
 * Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) using an ethnically balanced dataset 
 * Operates in polynomial time irrespective of gallery size and without discrimination (race, age, gender)
-* Trained using the VGG Face2 dataset ethnically balanced with the Asian-Celeb dataset 
+* Trained using the VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset 
 
 ### Minimum Imaging Requirements
 Face ≥224×224 pixels. Camera ≥256kB. 
@@ -27,7 +27,7 @@ Accepts FHE input from the web client or the Encryption Engine. The API enrolls 
 Accepts FHE input from the web client or the Encryption Engine and deletes identity.
 
 ## FACE+MASK RECOGNITION ALGORITHM
-![Face plus mask recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-face%20mask%20v4.png)
+![Face plus mask recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/faceplusmask_github.1.png)
 * Provides high accuracy (98%) with nearly zero false positives (0.0001%)
 * Recognizes faces with masks using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) using an ethnically balanced dataset 
@@ -49,9 +49,9 @@ Accepts FHE input from the web client or the Encryption Engine. The API enrolls 
 Delete_Subject RESTful API. Accepts FHE input from the web client or the Encryption Engine and deletes identity.
 
 ## FINGERPRINT RECOGNITION ALGORITHM  
-![Fingerprint recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-finger%20v4.png)
+![Fingerprint recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint_github_1.png)
 * Provides absolute accuracy (99.99%) with nearly zero false positives (0.0001%) 
-* Recognizes fingerprints using any general-purpose camera (webcams, phones) ≥4MP
+* Recognizes fingerprints using any capacitive or optical scan general-purpose camera (webcams, phones) ≥4MP
 * Matches in polynomial time irrespective of gallery size and without discrimination (race, age, gender)
 * Trained using the NIST Special Database 4 and CASIA-FingerprintV5 
 
@@ -72,9 +72,9 @@ Accepts FHE input from the Web client or the Encryption Engine. The API enrolls 
 Delete_Subject RESTful API. Accepts FHE input from the Web client or the Encryption Engine and deletes identity.
 
 ## VOICE / SPEAKER IDENTIFICATION ALGORITHM
-![Voice recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Icon-voice%20v4.png)
+![Voice recognition graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice_github_1.png)
 * Text-, language- and accent-independent voice identification with 1 second of audio
-* Provides high accuracy (93%) with nearly zero false positives (0.0001%) 
+* Provides high accuracy (95.2%) with nearly zero false positives (0.0001%) 
 * Matches in polynomial time irrespective of gallery size and without discrimination
 
 ### Minimum Audio Requirements
