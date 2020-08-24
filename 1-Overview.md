@@ -1,6 +1,5 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right.png)](https://www.private.id/)
 
-# CLOUD BIOMETRIC MFA
 ## OVERVIEW
 * <b>Provides fast and accurate Cloud Biometric MFA</b> to businesses, governments and nonprofits.
 
@@ -10,7 +9,7 @@
 
 * <b>Guarantees privacy </b>with built-in Fully Homomorphic Encryption (FHE). This first-to-market cryptography solution fully complies with GDPR, CCPA and BIPA and is currently the only solution certified compliant with IEEE 2410-2020 Standard for Biometric Privacy.
 
-* <b>Recognizes everybody equally <b>across all ethnicities, skin tones, genders and ages without discrimination. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
+* <b>Recognizes everybody equally </b>across all ethnicities, skin tones, genders and ages without discrimination. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
 
 * <b>Free for 30 days!</b> Talk to us on Github, AWS Marketplace Portal and Google Meet. We are looking forward to working with you.
 
