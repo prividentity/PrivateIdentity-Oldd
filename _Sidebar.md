@@ -16,7 +16,7 @@
 
 * [Privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy)
 
-[**Technical Home**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)
+[**Technical Overview**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)
 
 * [Overview](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#overview)
 
