@@ -187,11 +187,34 @@ Docker images of all software that runs in elastic, load balanced, fault toleran
 
 ***
 
+## PRIVACY
 
+### FHE allows organizations to utilize Cloud Biometric MFA without incurring GDPR, CCPA or BIPA obligations. 
+Fully homomorphic encryption (FHE) mitigates the regulatory and legal privacy risk of biometric data by enabling mathematical operations on an encrypted dataset. This eliminates all requirements to process plaintext biometrics or templates.
 
+Specifically, biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm and then discarded (deleted) without the data ever leaving the local device. To accomplish this, the system transforms biometric data inputs into FHE payloads that are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait. 
 
+This anonymized FHE payload ceases to be biometric data or personal data because the system eliminates any known or foreseeable possibility of linking any of the data to the individual to whom the data originally related. As a result, the FHE is not “Personal Data” under General Data Protection Regulation (EU) 2016/679 (“GDPR”) or the California Consumer Privacy Act (“CCPA”) and is not “Biometric Information” under the Biometric Information Privacy Act (“BIPA”).  
 
+The data subject’s rights provided under each of these statutes thus fall away, and businesses may utilizes this biometric solution without subjecting their organizations to GDPR, CCPA or BIPA data subject rights or special handling requirements for personal data, biometric data, biometric identifiers, or associated data breach notification requirements. Finally, a breach of the Cloud Biometric MFA system would not result in the loss of any biometric data or personal data.
 
+_(Note: The analysis of data privacy laws in this Website does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations.)_
+
+### GDPR Compliant and GDPR Exempt
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/GDPR%201.png)
+Fully Homomorphic Encryption complies with GDPR. System exempt from GDPR obligations and data breach notification requirements.
+
+### CCPA Compliant and CCPA Exempt
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/CCPA%201.png)
+Fully Homomorphic Encryption complies with CCPA. System exempt from CCPA obligations and data breach notification requirements.
+
+### BIPA Compliant and BIPA EXEMPT
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/BIPA%201.png)
+Fully Homomorphic Encryption complies with CCPA. System exempt from CCPA obligations and data breach notification requirements.
+
+### Certified Compliant IEEE 2410-2019
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/IEEE%202410%201.png)
+Open standard requires Fully Homomorphic Encryption to protect biometric at rest, in transit and in use.
 
 
 
