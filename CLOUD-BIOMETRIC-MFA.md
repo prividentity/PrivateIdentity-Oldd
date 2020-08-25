@@ -39,18 +39,18 @@
 There is no client software to install and no hardware to buy. Instantly deploy a single Javascript component to achieve biometric MFA and a consistent UX across all modern browsers, devices, platforms and clouds. [Link this to embedded Div]
 
 ### Built-in Privacy
-![Security](https://github.com/openinfer/PrivateIdentity/blob/master/images/illustration-data-security-system-isometric-3d-illustration_100333-68.jpg)<br>
+![Security](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)<br>
 Built-in patented fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA and IEEE 2410 Standard for Biometric Privacy.
 
 ### Flexible Deployment
-![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/18907.jpg)<br>
+![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 Go to market faster with built-in integrations for popular IAM solutions, SAML 2.0 and OAuth/OIDC. Use SaaS or PaaS running in the cloud or on the edge. REST APIs and Javascript APIs are available for embedded apps.
 
 ### No Discrimination
-![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/image%20no%20descrimination.JPG)<br>
+![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
 Private Identity’s deep learning technology maintains absolute accuracy across all ethnicities, skin tones, genders, age, and faces and fingerprints. Recognition is accurate with up to 30% occlusions including facial hair, abrasions, masks, blurry images and image rotations. 
 
 ### Facial Recognition 
-![Face Recognition ](https://github.com/openinfer/PrivateIdentity/blob/master/images/facial-recognition-img2.jpg)<br>
+![Face Recognition ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
 Authenticate, verify, identify and search an unlimited gallery in real time. Absolute accuracy (IR=99.99%) with almost no false positives (FPIR=0.0001% ). Runs on any modern browser, device, platform or cloud with any standard camera >256kB. Returns identity in 300ms.
 
