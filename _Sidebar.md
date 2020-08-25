@@ -1,5 +1,21 @@
 ### Wiki
 
+[**Cloud Biometric MFA**](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA)
+
+* [Overview](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#overview)
+
+* [Resources](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#resources)
+
+* [Key Features](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#key-features)
+
+* [Solutions](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#solutions)
+
+* [Open Standards](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#open-standards-encryption--privacy)
+
+* [Flexible Deployment](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#flexible-deployment-1)
+
+* [Privacy](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#privacy)
+
 [**Home**](https://github.com/openinfer/PrivateIdentity/wiki)
 
 * [Overview](https://github.com/openinfer/PrivateIdentity/wiki#overview)
