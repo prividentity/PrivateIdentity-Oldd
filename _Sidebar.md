@@ -1,30 +1,30 @@
 ### Wiki
 
-[**Cloud Biometric MFA**](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA)
-
-* [Overview](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#overview)
-
-* [Resources](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#resources)
-
-* [Key Features](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#key-features)
-
-* [Solutions](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#solutions)
-
-* [Open Standards](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#open-standards-encryption--privacy)
-
-* [Flexible Deployment](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#flexible-deployment-1)
-
-* [Privacy](https://github.com/openinfer/PrivateIdentity/wiki/CLOUD-BIOMETRIC-MFA#privacy)
-
-[**Home**](https://github.com/openinfer/PrivateIdentity/wiki)
+[**Cloud Biometric MFA**](https://github.com/openinfer/PrivateIdentity/wiki)
 
 * [Overview](https://github.com/openinfer/PrivateIdentity/wiki#overview)
 
-* [Technical details](https://github.com/openinfer/PrivateIdentity/wiki#technical-details)
+* [Resources](https://github.com/openinfer/PrivateIdentity/wiki#resources)
 
-* [Architecture](https://github.com/openinfer/PrivateIdentity/wiki#basic-architecture)
+* [Key Features](https://github.com/openinfer/PrivateIdentity/wiki#key-features)
 
-* [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki#enrollment-morphing)
+* [Solutions](https://github.com/openinfer/PrivateIdentity/wiki#solutions)
+
+* [Open Standards](https://github.com/openinfer/PrivateIdentity/wiki#open-standards-encryption--privacy)
+
+* [Flexible Deployment](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1)
+
+* [Privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy)
+
+[**Technical Home**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)
+
+* [Overview](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#overview)
+
+* [Technical details](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#technical-details)
+
+* [Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#basic-architecture)
+
+* [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#enrollment-morphing)
 
 * [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
 
