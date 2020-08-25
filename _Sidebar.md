@@ -20,8 +20,6 @@
 
 * [Overview](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#overview)
 
-* [Technical details](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#technical-details)
-
 * [Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#basic-architecture)
 
 * [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#enrollment-morphing)
