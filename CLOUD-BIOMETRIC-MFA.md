@@ -1,6 +1,6 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right.png)](https://www.private.id/)
 
-[![Cloud Biometric MFA Promo Video](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img2.png)](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction")
+[![Cloud Biometric MFA Promo Video](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction")
 
 ## OVERVIEW
 * <b>Provides fast and accurate Cloud Biometric MFA</b> to businesses, governments and nonprofits.
