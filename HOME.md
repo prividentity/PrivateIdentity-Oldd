@@ -5,7 +5,7 @@
 
 * <b>Deploys instantly </b>across every modern browser, device, platform and cloud.  There is no client software to install and no hardware to buy.
 
-* <b>Preserves privacy using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). This cryptography solution fully complies with GDPR, CCPA and BIPA and is currently the only solution certified compliant with [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
+* <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). This cryptography solution fully complies with GDPR, CCPA and BIPA and is currently the only solution certified compliant with [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
 
 * <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
 
@@ -27,11 +27,24 @@
 * <b>[https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
 ## KEY FEATURES
-### Single Component App
-A single-component Javascript client powered by TensorFlow.js a supports biometric acquisition and high-throughput FHE transformation at the Edge. The client provides a consistent UX across all modern browsers, devices, platforms and clouds.  It runs on [90% of all modern hardware](https://caniuse.com/#feat=wasm).  The client is easy to deploy as it does not require any additional software, plugins or extensions to be installed.  It uses general-purpose hardware (phones and Webcams) and/or input from specialized biometric acquisition systems and does not require new hardware to be purchased. [Link this to embedded Div] 
+### Single Component Javascript App
+* Powered by TensorFlow.js
+* Runs on [90% of all modern devices](https://caniuse.com/#feat=wasm) (same list as TensorFlow) 
+* Synchronously acquires biometric images, videos and audio 
+* Preserves privacy using FHE transformations at the Edge 
+* Provides exception processing 
+
+Provides users with a convenient, browser-based omni-channel UX that operates all modern browsers, platforms and more than [90% of all modern devices](https://caniuse.com/#feat=wasm) (every device that runs TensorFlow). 
+
+The Cloud Biometric MFA Javascript client is powered by TensorFlow.js and supports biometric acquisition and high-throughput FHE transformation at the Edge. It provides a consistent UX across all modern browsers, devices, platforms and clouds. It runs on 90% of all modern hardware. The client is easy to deploy as it does not require any additional software, plugins or extensions to be installed. It uses general-purpose hardware (phones and Webcams) and/or input from specialized biometric acquisition systems and does not require new hardware to be purchased. [Link this to embedded Div]
+
+
+
+
+. The client provides a consistent UX across all modern browsers, devices, platforms and clouds.  It runs on [90% of all modern devices](https://caniuse.com/#feat=wasm).  The client is easy to deploy as it does not require any additional software, plugins or extensions to be installed.  It uses general-purpose hardware (phones and Webcams) and/or input from specialized biometric acquisition systems and does not require new hardware to be purchased. [Link this to embedded Div] 
 
 ### Built-in Privacy
-Built-in patented fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA and IEEE 2410 Standard for Biometric Privacy.
+Built-in patented fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA and IEEE 2410 Standard for Biometric Privacy. 
 
 ### Flexible Deployment
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
