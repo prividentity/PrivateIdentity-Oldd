@@ -3,21 +3,15 @@
 [![Cloud Biometric MFA Promo Video](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction")
 
 ## OVERVIEW
-* <b>Provides fast and accurate Cloud Biometric MFA</b> to businesses, governments and nonprofits.
-
 * <b>Integrates easily</b> into your IAM solution or applications using the included Javascript component (embedded DIV), JavaScript APIs, REST APIs, SAML 2.0 or OAuth/OIDC.
 
-* <b>Deploys instantly </b>across every modern browser, device, platform and cloud with no client software to install and no hardware to buy.
+* <b>Deploys instantly </b>across every modern browser, device, platform and cloud.  There is no client software to install and no hardware to buy.
 
-* <b>Guarantees privacy </b>with built-in [Fully Homomorphic Encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). This first-to-market cryptography solution fully complies with GDPR, CCPA and BIPA and is currently the only solution certified compliant with [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
+* <b>Preserves privacy using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). This cryptography solution fully complies with GDPR, CCPA and BIPA and is currently the only solution certified compliant with [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
 
-* <b>Recognizes everybody equally </b>across all ethnicities, skin tones, genders and ages without discrimination. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
-
-* <b>Free for 30 days!</b> Talk to us on Github, AWS Marketplace Portal and Google Meet. We are looking forward to working with you.
+* <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
 
 ## RESOURCES
-
-* <b>[Quick Overview](https://youtu.be/G33UR87I81E)</b> [YouTube] 
 
 * <b>Getting Started with Private Identity</b> [YouTube]
 
@@ -35,8 +29,7 @@
 
 ## KEY FEATURES
 ### Single Component App
-![Single Component App](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)<br>
-There is no client software to install and no hardware to buy. Instantly deploy a single Javascript component to achieve biometric MFA and a consistent UX across all modern browsers, devices, platforms and clouds. [Link this to embedded Div]
+Uses a single Javascript component to provide a consistent UX across all modern browsers, devices, platforms and clouds. The component is powered by TensorFlow.js and runs on the same [90% of all modern hardware](https://caniuse.com/#feat=wasm) with no client software to install and no hardware to buy. [Link this to embedded Div]
 
 ### Built-in Privacy
 ![Security](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)<br>
