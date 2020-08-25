@@ -1,7 +1,5 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right.png)](https://www.private.id/)
 
-[![Cloud Biometric MFA Promo Video](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction")
-
 ## OVERVIEW
 * <b>Integrates easily</b> into your IAM solution or applications using the included Javascript component (embedded DIV), JavaScript APIs, REST APIs, SAML 2.0 or OAuth/OIDC.
 
@@ -13,6 +11,7 @@
 
 ## RESOURCES
 
+* <b>[Short Introduction](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction")</b> [YouTube] 
 * <b>Getting Started with Private Identity</b> [YouTube]
 
 * <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki#basic-architecture) </b>[Developer Wiki]
