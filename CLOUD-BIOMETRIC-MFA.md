@@ -138,36 +138,36 @@ Compartmentalized approach to the design of security-critical, safety-critical, 
 
 ### SAML 2.0
 
-#### Ping Identity
-
-#### Okta 
-
-#### G Suite
-
-#### AWS IAM
-
 ### Single Component JavaScript Application (Embedded DIV)
-![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/deploy%20js%201.png)
+![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20Deploy%202.png)
 Users quickly and intuitively enroll and authenticate using any modern device, browser or platform. The included JavaScript component deploys effortlessly with no software to install and no hardware to buy. End users enroll in four seconds without username, password, token, PIN or any private information. Users authenticate in 300ms.
 
+***
+
 ### JavaScript APIs (Predict Enroll API)
-![Image of Javascript API ](https://github.com/openinfer/PrivateIdentity/blob/master/images/deploy%20js%20api%201.png)
+![Image of Javascript API ](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%202.png)
 Easily integrates into Web and mobile apps with the included JavaScript APIs.
 
 > Method: window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
 
 > Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
 
+***
+
 ### REST APIs (Setup) (IEEE 2410 Standard for Biometric Privacy Compliant)
-![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API.png)
+![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API2.png)
 Eight RESTful APIs receive FHE payloads, return UUIDs and run all ciphertext business methods. These Web services provide resilience and scalability, enable customers to go to market faster and easily integrate and deploy with legacy and third-party services.
 
+***
+
 ### ENCRYPTION ENGINE (Setup)
-![Picture of shield with lock on front](https://github.com/openinfer/PrivateIdentity/blob/master/images/Encryption%20Engine%201.png)
+![Picture of shield with lock on front](https://github.com/openinfer/PrivateIdentity/blob/master/images/Encryption%20Engine%202.png)
 Provide asynchronous processing for high-demand, high-throughput enrollment and identification tasks using elastic, fault tolerant, load balanced Kubernetes clusters. It is decoupled from the back end clusters to preserve privacy and supports the JavaScript API and REST API.
 
+*** 
+
 ### SaaS Deployments
-![Picture of cloud](https://github.com/openinfer/PrivateIdentity/blob/master/images/SaaS%20Deploy%201.png)
+![Picture of cloud](https://github.com/openinfer/PrivateIdentity/blob/master/images/SaaS%20Deploy%202.png)
 
 #### SaaS (Open)
 API Key access to the elastic, load balanced and fault tolerant Private Identity Web services managed and run on AWS by Private Identity.
@@ -175,7 +175,17 @@ API Key access to the elastic, load balanced and fault tolerant Private Identity
 #### SaaS (Dedicated for a single Customer)
 API Key access to an elastic, load balanced and fault tolerant Kubernetes cluster running Private Identity Web services dedicated entirely to a single customer. Managed and run on AWS by Private Identity.
 
+***
 
+### PaaS Deployments 
+
+#### PaaS Web Tier (Setup)
+Docker image of the Web tier that runs in elastic, load balanced, fault tolerant Kubernetes clusters on-premise or any public or private cloud. Connects to Private Identity Web services managed and run on AWS by Private Identity.
+
+#### PaaS Entire Tier (Setup)
+Docker images of all software that runs in elastic, load balanced, fault tolerant Kubernetes clusters on-prem or any public or private cloud. Includes all backend services and has no requirement to connect to Private Identity.
+
+***
 
 
 
