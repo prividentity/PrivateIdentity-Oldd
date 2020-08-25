@@ -51,6 +51,46 @@ Go to market faster with built-in integrations for popular IAM solutions, SAML 2
 Private Identity’s deep learning technology maintains absolute accuracy across all ethnicities, skin tones, genders, age, and faces and fingerprints. Recognition is accurate with up to 30% occlusions including facial hair, abrasions, masks, blurry images and image rotations. 
 
 ### Facial Recognition 
-![Face Recognition ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
+![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
 Authenticate, verify, identify and search an unlimited gallery in real time. Absolute accuracy (IR=99.99%) with almost no false positives (FPIR=0.0001% ). Runs on any modern browser, device, platform or cloud with any standard camera >256kB. Returns identity in 300ms.
+
+### Face + Mask Recognition  
+![woman wearing face mask](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%201.png)
+Authenticate, verify, identify and search an unlimited gallery in real time. Highly accurate (IR=98.59%) with almost no false positives (FPIR=0.0001% ). Runs on any modern browser, device or platform with any standard camera >256kB. Returns identity in 300ms.
+
+### Voice (Speaker) Identification 
+![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
+Authenticate, verify, identify and search an unlimited gallery of human voices in real time. Voice identity is text, language and accent agnostic and highly accurate (IR=92.5%) with nearly zero false positives (FPIR=0.0001%). Requires at least one second of any spoken voice at 8.1kHz (telephone audio quality). Runs on any modern browser, device, platform or cloud. Returns identity in 300ms. 
+
+### Fingerprint Identification
+![man's finger](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)
+Authenticate, verify, identify and search an unlimited number of user’s fingerprints in real time. Absolute accuracy (IR=99.99%) with nearly zero false positives (FPIR=0.0001%). Runs on any modern browser, device, platform or cloud with any standard camera >2MB. Returns identity in 300ms. 
+
+### Additional Features
+
+#### Image and Video Anti-Spoofing (Liveness)
+Determines if the image source is a photo or video attack. 
+
+#### Blink Detection
+Determines if a user's is blinking his or her eyes.
+
+#### Mask Detection
+Detects if a user is wearing a face mask.
+
+#### Eyeglass Detection
+Detects if a user is wearing eyeglasses.
+
+
+
+#### Voice Liveness
+Requires the user to read a random sentence. User must say the correct words. Supports eight languages.
+
+#### Offline Authentication
+Web clients automatically switch to Local Mode for face and fingerprint recognition after loss of network connectivity.
+
+#### 
+
+
+
+
 
