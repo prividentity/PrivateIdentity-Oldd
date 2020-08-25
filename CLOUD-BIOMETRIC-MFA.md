@@ -80,15 +80,112 @@ Detects if a user is wearing a face mask.
 #### Eyeglass Detection
 Detects if a user is wearing eyeglasses.
 
-
-
 #### Voice Liveness
 Requires the user to read a random sentence. User must say the correct words. Supports eight languages.
 
 #### Offline Authentication
 Web clients automatically switch to Local Mode for face and fingerprint recognition after loss of network connectivity.
 
-#### 
+## SOLUTIONS
+
+### IAM Integrations
+![IAM Logos](https://github.com/openinfer/PrivateIdentity/blob/master/images/IAM%20Integr%201.png)
+Integrates with your existing Enterprise directory using SAML 2.0 or OAuth/OIDC. 
+
+### Identity Verification
+![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
+Compare photo on ID cards and passports to the user's face and verify ID. No personal data leaves the local device. 
+
+### Account Recovery
+![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
+Quickly and accurately identify locked-out accountholders to restore access.
+
+## OPEN STANDARDS, ENCRYPTION & PRIVACY 
+![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
+### IEEE 2410 Standard for Biometric Privacy 
+Standard requires fully homomorphic encryption (FHE) for private identity assertion and authentication and guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations. [[link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)]  
+
+### W3C WebAuthn
+Web API that enables the creation and use of strong, attested, scoped, public key-based credentials by Web applications for the purpose of strongly authenticating users.
+
+### US ODNI ICD 503
+Applies to all US government organizations, their commercial contractors, and Allied governments information systems that process, store, or communicate intelligence information.
+
+### US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)
+DoD 5200.28-STD. Mandatory for use by all DoD Components in carrying out technical security evaluation activities applicable to the processing and storage of classified and other sensitive DoD information “Orange Book.” 
+
+### FIPS 197 Advanced Encryption Standard (AES)
+NIST Special Publication 800-21,Guideline for Implementing Cryptography in the US Federal Government. 
+
+### TLS / IPSEC / SS
+Standard protocols to provide privacy and data integrity between two or more communicating computer applications. 
+
+## OPEN STANDARDS, SECURITY ARCHITECTURE 
+
+### ISO 27001:2013 Information Security Management Standard
+International Standard includes all legal, physical and technical controls involved in the information risk management processes.
+
+### ISO 9001:2015 Quality Management Standard
+International Standard ensures software meets the needs of customers, other stakeholders and satisfies statutory and regulatory requirements.
+
+### OAuth 2.0 / OpenID Connect / SAML 2.0
+Standards that cover authorization, federation, identity management and single sign-on (SSO). 
+
+### DoD Multiple Independent Levels of Security/Safety (MILS) Architecture
+Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. 
+
+## FLEXIBLE DEPLOYMENT
+
+### SAML 2.0
+
+#### Ping Identity
+
+#### Okta 
+
+#### G Suite
+
+#### AWS IAM
+
+### Single Component JavaScript Application (Embedded DIV)
+![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/deploy%20js%201.png)
+Users quickly and intuitively enroll and authenticate using any modern device, browser or platform. The included JavaScript component deploys effortlessly with no software to install and no hardware to buy. End users enroll in four seconds without username, password, token, PIN or any private information. Users authenticate in 300ms.
+
+### JavaScript APIs (Predict Enroll API)
+![Image of Javascript API ](https://github.com/openinfer/PrivateIdentity/blob/master/images/deploy%20js%20api%201.png)
+Easily integrates into Web and mobile apps with the included JavaScript APIs.
+
+> Method: window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
+
+> Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
+
+### REST APIs (Setup) (IEEE 2410 Standard for Biometric Privacy Compliant)
+![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API.png)
+Eight RESTful APIs receive FHE payloads, return UUIDs and run all ciphertext business methods. These Web services provide resilience and scalability, enable customers to go to market faster and easily integrate and deploy with legacy and third-party services.
+
+### ENCRYPTION ENGINE (Setup)
+![Picture of shield with lock on front](https://github.com/openinfer/PrivateIdentity/blob/master/images/Encryption%20Engine%201.png)
+Provide asynchronous processing for high-demand, high-throughput enrollment and identification tasks using elastic, fault tolerant, load balanced Kubernetes clusters. It is decoupled from the back end clusters to preserve privacy and supports the JavaScript API and REST API.
+
+### SaaS Deployments
+![Picture of cloud](https://github.com/openinfer/PrivateIdentity/blob/master/images/SaaS%20Deploy%201.png)
+
+#### SaaS (Open)
+API Key access to the elastic, load balanced and fault tolerant Private Identity Web services managed and run on AWS by Private Identity.
+
+#### SaaS (Dedicated for a single Customer)
+API Key access to an elastic, load balanced and fault tolerant Kubernetes cluster running Private Identity Web services dedicated entirely to a single customer. Managed and run on AWS by Private Identity.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
