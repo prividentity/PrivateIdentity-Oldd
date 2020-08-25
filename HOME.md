@@ -29,10 +29,9 @@
 
 ## KEY FEATURES
 ### Single Component App
-Uses a single Javascript component to provide a consistent UX across all modern browsers, devices, platforms and clouds. The component is powered by TensorFlow.js and runs on the same [90% of all modern hardware](https://caniuse.com/#feat=wasm) with no client software to install and no hardware to buy. [Link this to embedded Div]
+A single-component Javascript client powered by TensorFlow.js a supports biometric acquisition and high-throughput FHE transformation at the Edge. The client provides a consistent UX across all modern browsers, devices, platforms and clouds.  It runs on [90% of all modern hardware](https://caniuse.com/#feat=wasm).  The client is easy to deploy as it does not require any additional software, plugins or extensions to be installed.  It uses general-purpose hardware (phones and Webcams) and/or input from specialized biometric acquisition systems and does not require new hardware to be purchased. [Link this to embedded Div] 
 
 ### Built-in Privacy
-![Security](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)<br>
 Built-in patented fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA and IEEE 2410 Standard for Biometric Privacy.
 
 ### Flexible Deployment
