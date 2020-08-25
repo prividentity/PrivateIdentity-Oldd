@@ -35,7 +35,7 @@
 
 ## KEY FEATURES
 ### Single Component App
-![Single Component App](https://github.com/openinfer/PrivateIdentity/blob/master/images/tensorflow.png)
+![Single Component App](https://github.com/openinfer/PrivateIdentity/blob/master/images/tensorflow.png)<br>
 There is no client software to install and no hardware to buy. Instantly deploy a single Javascript component to achieve biometric MFA and a consistent UX across all modern browsers, devices, platforms and clouds. [Link this to embedded Div]
 
 ### Built-in Privacy
