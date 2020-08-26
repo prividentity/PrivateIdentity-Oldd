@@ -291,3 +291,21 @@ The method window.validate accepts image files as input. The input can be one or
    "imageStatus":"Face is acceptable"}
 }
 ```
+
+**Possible Results**
+
+|Field     |         Possible Values| 
+|-----|----|
+|faceStatus      |         Face detected or Face not detected.|
+|spoofStatus      |         Spoof detected or Spoof not detected.|
+|distanceStatus      |         Face is close to the camera, Face is far away from the camera or Face is at good distance.|
+|blurryStatus      |         Blurry.|
+|glassesStatus      |         Glasses detected.|
+|maskStatus      |         Face mask detected.|
+|imageStatus      |         Face is acceptable.|
+
+
+
+
+
+
