@@ -1,34 +1,30 @@
-## JavaScript API  ##
+# JavaScript API Documentation 
+The JavaScript API is a javascript library that will help you to Enroll and Predict by selecting the images from your browser. This library will send images to a Private Identity server or your own hosted Private Identity server for enrollment and prediction.
 
-JavaScript API is a javascript library that will help you to Enroll and Predict by selecting the images from your browser. This library will send images to a Private Identity server or your own hosted Private Identity server for enrollment and prediction.
+Launch the below-mentioned URL in your browser and replace XXXX with apiKey value provided by Private identity.
 
-Launch the below-mentioned URL in your browser and replace XXXX with apiKey value provided by Private identity:
-
-http://private.id/predict-enroll-library/?apiKey=XXXX
-
+http://private.id/predict-enroll-library/?apiKey=XXXXXXXXXXXXXXXXX
 
 ---------------------------------------------------------------------
-This is the demo page app for Enroll and predict using Voice,Face.
+This is the demo page app for Enroll and Predict using Face, Voice or Fingerprint.
 1. Sample Demo Page
 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/first.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/JavascriptAPI%201.png)
 
 2. Load 10 face images and Voice file and Click Enroll
 
-![Load Image and Voice](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll2.png)
+![Load Image and Voice](https://github.com/openinfer/PrivateIdentity/blob/master/images/JavascriptAPI%202.png)
 
 3. Sample Enroll Response
 
-![Enroll Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll2.png)
+![Enroll Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/JavascriptAPI%203.png)
 
 4. Load 3 face images or voice file and click predict. Sample predict response is shown below.
 
-![Predict Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/predict.png)
-
-**Note:** You will get the API key from Private Identity.
+![Predict Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/JavascriptAPI%204.png)
 
 
-**Predict Request**
+## Predict Request
 
 `Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
 
@@ -115,10 +111,7 @@ The response of a predicted request, if threshold confidence are met, returns en
 ```
 
 
----------------------------------------------------------------------
-
-
-**Enroll Requests**
+## Enroll Requests
 
 `Method: window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
 
@@ -205,9 +198,7 @@ The response of an Enroll request returns `O` as a success given data validation
 ```
 
 
----------------------------------------------------------------------
-
-**Face Validation**
+## Face Validation
 
 `Method: window.validate(imageFiles);`
 
