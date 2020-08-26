@@ -303,7 +303,6 @@ The method window.validate accepts image files as input. The input can be one or
 |blurryStatus      |         Blurry or Not blurry.|
 |glassesStatus      |         Glasses detected or Glasses not detected.|
 |maskStatus      |         Face mask detected or Face mask not detected.|
-|imageStatus      |         Face is acceptable or Face is unacceptable.|
 
 
 
