@@ -1,19 +1,11 @@
-## Predict Enroll library  ##
+## JavaScript API  ##
 
-Predict Enroll Library is a javascript library that will help you to Enroll and Predict by selecting the images from your browser. This library will send images to a Private Identity server or your own hosted Private Identity server for enrollment and prediction.
-
+JavaScript API is a javascript library that will help you to Enroll and Predict by selecting the images from your browser. This library will send images to a Private Identity server or your own hosted Private Identity server for enrollment and prediction.
 
 Launch the below-mentioned URL in your browser and replace XXXX with apiKey value provided by Private identity:
 
 http://private.id/predict-enroll-library/?apiKey=XXXX
 
-By default, the NodeJS endpoints are located at `https://private.id/node/`. If you want to change this setting, you can use the URL parameter `nodeServer` to your own private hosted server.
-
-To host your own private server, please have a look at this [link](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup) which will give detailed step-by-step instructions on how to configure the endpoint.
-
-For ex., if your own server is `https://company.privateidentity.com` then the URL will be
-
- http://private.id/predict-enroll-library/?apiKey=XXXX&nodeServer=https://company.privateidentity.com/
 
 ---------------------------------------------------------------------
 This is the demo page app for Enroll and predict using Voice,Face.
