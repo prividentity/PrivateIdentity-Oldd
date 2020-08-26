@@ -262,3 +262,32 @@ The method window.validate accepts image files as input. The input can be one or
 2. Face is very close or far away in the image.
 3. Face is blurry or not.
 4. Input is spoof or not.
+5. Face has glasses or not. 
+6. Face has masks or not. 
+
+
+**Example**
+
+```
+{
+   {File:
+      lastModified: 1592228890000,
+      name: image1.png,
+      type: "image/png",
+      size: 1073218
+    }
+}
+```
+
+
+**Response**
+
+
+```
+{"0":
+   {"faceStatus":"Face detected",
+   "spoofStatus":"Spoof not detected",
+   "distanceStatus":"Face is at good distance",
+   "imageStatus":"Face is acceptable"}
+}
+```
