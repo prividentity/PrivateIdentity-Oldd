@@ -11,7 +11,7 @@ http://private.id/predict-enroll-library/?apiKey=XXXX
 This is the demo page app for Enroll and predict using Voice,Face.
 1. Sample Demo Page
 
-[[ images/first.png ]]
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/first.png)
 
 2. Load 10 face images and Voice file and Click Enroll
 
