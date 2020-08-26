@@ -243,3 +243,23 @@ The response of an Enroll request returns `O` as a success given data validation
     "status": 0,
 }
 ```
+
+
+---------------------------------------------------------------------
+
+**Face Validation**
+
+`Method: window.validate(imageFiles);`
+
+|Parameter     |         Value| 
+|-----|----|
+|imageFiles      |         Array of image files.|
+
+
+The method window.validate accepts image files as input. The input can be one or a group of images. In the browser console you can see the result of validation. The method check to see if:
+
+1- Face is detected in input or not. 
+2- Face is very close or far away in the image.
+3- Face is blurry or not. 
+4- Input is spoof or not. 
+
