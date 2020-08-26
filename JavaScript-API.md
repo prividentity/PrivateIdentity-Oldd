@@ -15,11 +15,11 @@ This is the demo page app for Enroll and predict using Voice,Face.
 
 2. Load 10 face images and Voice file and Click Enroll
 
-![Load Image and Voice](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll.png)
+![Load Image and Voice](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll2.png)
 
 3. Sample Enroll Response
 
-![Enroll Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll.png)
+![Enroll Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll2.png)
 
 4. Load 3 face images or voice file and click predict. Sample predict response is shown below.
 
