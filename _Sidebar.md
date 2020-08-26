@@ -140,9 +140,9 @@
 
 * [Postman Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Postman-Example-Project)
 
-[**Javascript API**](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Enroll-library)
+[**Javascript API**](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 
-* [Predict-Enroll-library](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Enroll-library)
+* [Javascript API](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 
 [**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
 
