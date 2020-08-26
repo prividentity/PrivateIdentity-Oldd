@@ -198,7 +198,7 @@ The response of an Enroll request returns `O` as a success given data validation
 ```
 
 
-## Face Validation
+## Validation
 
 `Method: window.validate(imageFiles);`
 
