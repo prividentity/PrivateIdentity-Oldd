@@ -4,7 +4,6 @@
 
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
-
 ## OVERVIEW
 * <b>Integrates easily</b> into your IAM solution or applications using the included Javascript component (embedded DIV), JavaScript APIs, REST APIs, SAML 2.0 or OAuth/OIDC.
 
@@ -36,20 +35,17 @@
 ## KEY FEATURES
 ### Single Component Javascript App
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
-* Powered by TensorFlow.js
-* Runs on [90% of all modern devices](https://caniuse.com/#feat=wasm) (this are the same devices as TensorFlow) 
-* Synchronously acquires biometric images, videos and audio 
-* Preserves privacy using FHE transformations at the Edge 
-* Provides exception processing 
+* Preserves privacy by synchronously acquiring and FHE transforming biometric data at the edge 
+* Easy to deploy with no requirement to install additional software, plugins or extensions 
+* Built with Javascript, TensorFlow.js and an ensemble of helper DNNs 
+* Runs on 90% of all modern devices 
+* Runs on Node.js
 
-Provides users with a convenient, browser-based omni-channel UX that operates all modern browsers, platforms and more than [90% of all modern devices](https://caniuse.com/#feat=wasm) (every device that runs TensorFlow). 
+The Javascript client provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric. 
 
-The Cloud Biometric MFA Javascript client is powered by TensorFlow.js and supports biometric acquisition and high-throughput FHE transformation at the Edge. It provides a consistent UX across all modern browsers, devices, platforms and clouds. It runs on 90% of all modern hardware. The client is easy to deploy as it does not require any additional software, plugins or extensions to be installed. It uses general-purpose hardware (phones and Webcams) and/or input from specialized biometric acquisition systems and does not require new hardware to be purchased. [Link this to embedded Div]
+The Web client does not require on-device training and has no requirement for expensive hardware, cameras, GPUs, batteries or RAM. Devices with multi-threaded kernels operate in millisecond response time. Devices equipped with GPUs and Edge TPUs operate 70-100x faster. Less capable devices operate by offloading processing to Node.js using the “whereToProcess=nodeServer” URL parameter.  
 
-
-
-
-. The client provides a consistent UX across all modern browsers, devices, platforms and clouds.  It runs on [90% of all modern devices](https://caniuse.com/#feat=wasm).  The client is easy to deploy as it does not require any additional software, plugins or extensions to be installed.  It uses general-purpose hardware (phones and Webcams) and/or input from specialized biometric acquisition systems and does not require new hardware to be purchased. [Link this to embedded Div] 
+The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
 
 ### Built-in Privacy
 Built-in patented fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA and IEEE 2410 Standard for Biometric Privacy. 
