@@ -60,11 +60,13 @@ The data subject’s rights provided under each of these statutes thus fall away
 
 ### Flexible Deployment
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
-Go to market faster with built-in integrations for popular IAM solutions, SAML 2.0 and OAuth/OIDC. Use SaaS or PaaS running in the cloud or on the edge. REST APIs and Javascript APIs are available for embedded apps.
+The Cloud Biometric MFA solution is available as SaaS or PaaS on GCP, AWS and on-premises. Private Identity provides pre-configured SaaS enterprise integrations using SAML 2.0 or OAuth/OIDC for Google Identity®, PING Identity®, Okta® Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn, Azure® Active Directory and AWS® IAM. 
+
+For PaaS integrations on GCP, the solution leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  Similarly, for PaaS integrations on AWS, the solution leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
 
 ### No Discrimination
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
-Private Identity’s deep learning technology maintains absolute accuracy across all ethnicities, skin tones, genders, age, and faces and fingerprints. Recognition is accurate with up to 30% occlusions including facial hair, abrasions, masks, blurry images and image rotations. 
+The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes). The classes in the dataset are distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian. We then add a variety of homogenized lighting algorithms to remove light absorption, skin contour and skin color as distractors.  The resulting DNN recognizes everybody equally with an  [https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN](accuracy of 99.92%).  
 
 ### Facial Recognition 
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
