@@ -74,15 +74,18 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 
 ### Facial Recognition 
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
-> 1.1 Verify
-> TMR=99.99% FMR=0.0001%  FTP=0.0001%  Speed=200ms
-> 1:many(1:n) Identify
-> IR=99.99%      FPIR=0.0001%  FTE=0.0001%  Speed=200ms
-> MASSIVELY SCALABLE
-> Using Elastic, Fault-Tolerant, Load Blanced Kubermetes Clusters
+> *1.1 Verify*
+> TMR=99.99%          FMR=0.0001%          FTP=0.0001%           Speed=300ms
+> *1:many(1:n) Identify*
+> IR=99.99%           FPIR=0.0001%         FTE=0.0001%           Speed=300ms
+> *MASSIVELY SCALABLE*
+> Uses Elastic, Fault-Tolerant, Load Balanced Kubernetes Clusters
+* Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
+* Enrolls an unlimited number of users (“unlimited gallery size”) 
+* Operates in polynomial time irrespective of gallery size 
+* Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset 
+* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
 
-
-Authenticate, verify, identify and search an unlimited gallery in real time. Absolute accuracy (IR=99.99%) with almost no false positives (FPIR=0.0001% ). Runs on any modern browser, device, platform or cloud with any standard camera >256kB. Returns identity in 300ms.
 
 ### Face + Mask Recognition  
 ![woman wearing face mask](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%201.png)
