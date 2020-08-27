@@ -48,7 +48,15 @@ The Web client does not require on-device training and has no requirement for ex
 The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
 
 ### Built-in Privacy
-Built-in patented fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA and IEEE 2410 Standard for Biometric Privacy. 
+* Fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA 
+* Certified compliant with IEEE 2410 Standard for Biometric Privacy 
+
+Fully homomorphic encryption (FHE) mitigates the regulatory and legal privacy risk of biometric data by enabling mathematical operations on an encrypted dataset. This eliminates all requirements to process plaintext biometrics or templates.
+
+Specifically, biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm and then discarded (deleted) without the data ever leaving the local device. To accomplish this, the system transforms biometric data inputs into FHE payloads that are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait. 
+This anonymized FHE payload ceases to be biometric data or personal data because the system eliminates any known or foreseeable possibility of linking any of the data to the individual to whom the data originally related. As a result, the FHE is not “Personal Data” under General Data Protection Regulation (EU) 2016/679 (“GDPR”) or the California Consumer Privacy Act (“CCPA”) and is not “Biometric Information” under the Biometric Information Privacy Act (“BIPA”).  
+
+The data subject’s rights provided under each of these statutes thus fall away, and businesses may utilizes this biometric solution without subjecting their organizations to GDPR, CCPA or BIPA data subject rights or special handling requirements for personal data, biometric data, biometric identifiers, or associated data breach notification requirements. Finally, a breach of the Cloud Biometric MFA system would not result in the loss of any biometric data or personal data.  _(Of course, the analysis of data privacy laws in this Website does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations.)_
 
 ### Flexible Deployment
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
