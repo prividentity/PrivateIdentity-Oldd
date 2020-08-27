@@ -66,7 +66,11 @@ For PaaS integrations on GCP, the solution leverages TensorFlow.js, Cloud AI Pla
 
 ### No Discrimination
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
-The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes). The classes in the dataset are distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian. We then add a variety of homogenized lighting algorithms to remove light absorption, skin contour and skin color as distractors.  The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
+To overcome bias (discrimination), we use an ethnically balanced dataset combined with a variety of homogenized lighting (HSL) algorithms to ensure fairness across ethnic, gender and age groups. The HSL filters are particularly important in that they remove light absorption, skin contour and skin color as distractors.  
+ 
+The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes) from both Oxford VGGFace2 and Asian-Celeb. The classes in the dataset are ethnically distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian. 
+
+The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
 
 ### Facial Recognition 
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
