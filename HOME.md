@@ -76,9 +76,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
-| **1:1 Verify ** | | |
+| **1:1 Verification** | | |
 | | TMR=99.99% | FMR=0.0001% | FTP=0.0001% | Speed=300ms |
-|**1:Many Identify** | | |
+| **1:Many Identification** | | |
 | IR=99.99% | FPIR=0.0001% | FTE=0.0001% | Speed=300ms |
 
 * Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
