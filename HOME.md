@@ -10,9 +10,9 @@
 
 * <b>Deploys instantly </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy.
 
-* <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
+* <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). Processes only anonymized data</b> and not biometric data. 
 
-* <b>Processes only anonymized data</b> and not biometric data. Exempt from GDPR, CCPA and BIPA obligations. Certified compliant with [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
+* <b>Exempt from GDPR, CCPA and BIPA obligations</b>, as documented in [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
 
 * <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
 
@@ -35,8 +35,9 @@
 
 ## KEY FEATURES
 ### Single Component Javascript App
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
 * Powered by TensorFlow.js
-* Runs on [90% of all modern devices](https://caniuse.com/#feat=wasm) (same list as TensorFlow) 
+* Runs on [90% of all modern devices](https://caniuse.com/#feat=wasm) (this are the same devices as TensorFlow) 
 * Synchronously acquires biometric images, videos and audio 
 * Preserves privacy using FHE transformations at the Edge 
 * Provides exception processing 
