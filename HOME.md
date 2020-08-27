@@ -74,11 +74,11 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 
 ### Facial Recognition 
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
-*1.1 Verify*
-TMR=99.99%          FMR=0.0001%          FTP=0.0001%           Speed=300ms
-*1:many(1:n) Identify*
-IR=99.99%           FPIR=0.0001%         FTE=0.0001%           Speed=300ms
-*MASSIVELY SCALABLE*
+<b>1:1 Verify</b></br>
+TMR=99.99%          FMR=0.0001%          FTP=0.0001%           Speed=300ms<br>
+<b>1:many(1:n) Identify</b>
+IR=99.99%           FPIR=0.0001%         FTE=0.0001%           Speed=300ms<br>
+<b>MASSIVELY SCALABLE</b>
 Uses Elastic, Fault-Tolerant, Load Balanced Kubernetes Clusters
 
 * Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
