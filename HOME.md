@@ -77,21 +77,33 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | **1:1 Verification** | | |
-| TMR=99.99% | FMR=0.0001% | FTP=0.0001% | Speed=300ms |
+| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | **1:Many Identification** | | |
-| IR=99.99% | FPIR=0.0001% | FTE=0.0001% | Speed=300ms |
+| IR=99.99% | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
 
 * Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
 * Operates in polynomial time irrespective of gallery size 
 * Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset 
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
-* MASSIVELY SCALABLE - Uses Elastic, Fault-Tolerant, Load Balanced Kubernetes Clusters
-
+* Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
 ### Face + Mask Recognition  
 ![woman wearing face mask](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%201.png)
-Authenticate, verify, identify and search an unlimited gallery in real time. Highly accurate (IR=98.59%) with almost no false positives (FPIR=0.0001% ). Runs on any modern browser, device or platform with any standard camera >256kB. Returns identity in 300ms.
+| Accuracy | Type I Error | Type II Error | Speed |
+|---|---|---|---|
+| **1:1 Verification** | | |
+| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
+| **1:Many Identification** | | |
+| IR=98.20% | FPIR=0.0001% | FNIR=1.80% | Speed=300ms |
+
+* Recognizes faces **and faces with masks** using any general-purpose camera (webcams, phones) ≥256kB
+* Enrolls an unlimited number of users (“unlimited gallery size”) 
+* Operates in polynomial time irrespective of gallery size 
+* Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset 
+* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
+* Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
+
 
 ### Voice (Speaker) Identification 
 ![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
