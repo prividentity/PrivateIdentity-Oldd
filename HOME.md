@@ -104,10 +104,19 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
-
 ### Voice (Speaker) Identification 
 ![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
-Authenticate, verify, identify and search an unlimited gallery of human voices in real time. Voice identity is text, language and accent agnostic and highly accurate (IR=92.5%) with nearly zero false positives (FPIR=0.0001%). Requires at least one second of any spoken voice at 8.1kHz (telephone audio quality). Runs on any modern browser, device, platform or cloud. Returns identity in 300ms. 
+| Accuracy | Type I Error | Type II Error | Speed |
+|---|---|---|---|
+| **1:1 Verification** | | |
+| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
+| **1:Many Identification** | | |
+| IR=95.20% | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
+* Text-, language- and accent-independent voice identification with 1 second of audio
+* Enrolls an unlimited number of users (“unlimited gallery size”) 
+* Operates in polynomial time irrespective of gallery size 
+* Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
+* Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
 ### Fingerprint Identification
 ![man's finger](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)
