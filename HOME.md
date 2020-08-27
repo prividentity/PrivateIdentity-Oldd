@@ -70,6 +70,14 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 ### Facial Recognition 
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
+> 1.1 Verify
+> TMR=99.99% FMR=0.0001%  FTP=0.0001%  Speed=200ms
+> 1:many(1:n) Identify
+> IR=99.99%      FPIR=0.0001%  FTE=0.0001%  Speed=200ms
+> MASSIVELY SCALABLE
+> Using Elastic, Fault-Tolerant, Load Blanced Kubermetes Clusters
+
+
 Authenticate, verify, identify and search an unlimited gallery in real time. Absolute accuracy (IR=99.99%) with almost no false positives (FPIR=0.0001% ). Runs on any modern browser, device, platform or cloud with any standard camera >256kB. Returns identity in 300ms.
 
 ### Face + Mask Recognition  
