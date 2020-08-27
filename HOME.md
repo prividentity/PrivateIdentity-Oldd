@@ -8,9 +8,11 @@
 ## OVERVIEW
 * <b>Integrates easily</b> into your IAM solution or applications using the included Javascript component (embedded DIV), JavaScript APIs, REST APIs, SAML 2.0 or OAuth/OIDC.
 
-* <b>Deploys instantly </b>across every modern browser, device, platform and cloud.  There is no client software to install and no hardware to buy.
+* <b>Deploys instantly </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy.
 
-* <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). This cryptography solution fully complies with GDPR, CCPA and BIPA and is currently the only solution certified compliant with [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
+* <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
+
+* <b>Processes only anonymized data</b> and not biometric data. Exempt from GDPR, CCPA and BIPA obligations. Certified compliant with [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
 
 * <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
 
