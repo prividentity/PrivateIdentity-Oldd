@@ -134,22 +134,23 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
-### Additional Features
+### Geometry & Validation DNNs
 
-#### Image and Video Anti-Spoofing (Liveness)
-Determines if the image source is a photo or video attack. 
+#### Face, Face w/Mask and Fingerprint Geometry Detection DNNs
+The Face Geometry Detection DNN accurately locates face(s) in an image by transforming each image into geometric primitives and measuring the relative position, width, and other parameters of eyes, mouth(s), nose(s), and chin(s). 
 
-#### Blink Detection
-Determines if a user's is blinking his or her eyes.
+Likewise, the Fingerprint Geometry Detection DNN accurately locates finger(s) in an image by transforming each image into geometric primitives and measuring each finger’s relative position, width, and other parameters.  
+
+Each DNN returns X and Y coordinates of each modality in an image, video frame or video stream. 
+
+#### Eyes Open/Close Detection DNN (Spoofing Prevention)
+The Eyes Open/Closed DNN provides real-time passive facial liveness. This DNN mitigates risk of a photo spoofing attack during unattended operation. The DNN receives an input image of an eye and outputs a validation score between 0 and 100, where 0 is eyes closed and 100 is eyes open. The user cannot proceed until the detection of a pair of eye-open/eye-closed events. A URL parameter “faceLiveness=true” allows the overriding of default functionality by enabling the eye-blink check. 
 
 #### Mask Detection
 Detects if a user is wearing a face mask.
 
 #### Eyeglass Detection
 Detects if a user is wearing eyeglasses.
-
-#### Voice Liveness
-Requires the user to read a random sentence. User must say the correct words. Supports eight languages.
 
 #### Offline Authentication
 Web clients automatically switch to Local Mode for face and fingerprint recognition after loss of network connectivity.
