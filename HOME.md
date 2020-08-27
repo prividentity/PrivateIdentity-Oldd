@@ -104,6 +104,22 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
+### Fingerprint Identification
+![man's finger](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)
+| Accuracy | Type I Error | Type II Error | Speed |
+|---|---|---|---|
+| **1:1 Verification** | | |
+| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
+| **1:Many Identification** | | |
+| IR=96.30% | FPIR=0.0001% | FNIR=3.70% | Speed=300ms |
+* Recognizes fingerprints using optical scan (camera) or capacitive sensor 
+* Uses any general-purpose camera (Webcams, phones) ≥720P (1MP)
+* Enrolls an unlimited number of users (“unlimited gallery size”) 
+* Operates in polynomial time irrespective of gallery size 
+* Trained using the NIST Special Database 4 and CASIA-FingerprintV5 
+* Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
+* Minimum Imaging Requirements: Fingerprint ≥ 224×224 pixels. Camera ≥256kB. Fingerprint images smaller than 224×224 pixels may reduce performance. 
+
 ### Voice (Speaker) Identification 
 ![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
 | Accuracy | Type I Error | Type II Error | Speed |
@@ -117,10 +133,6 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Operates in polynomial time irrespective of gallery size 
 * Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
-
-### Fingerprint Identification
-![man's finger](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)
-Authenticate, verify, identify and search an unlimited number of user’s fingerprints in real time. Absolute accuracy (IR=99.99%) with nearly zero false positives (FPIR=0.0001%). Runs on any modern browser, device, platform or cloud with any standard camera >2MB. Returns identity in 300ms. 
 
 ### Additional Features
 
