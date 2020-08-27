@@ -16,15 +16,15 @@ This is the demo page app for Enroll and Predict using Face, Voice or Fingerprin
 
 2. Load 10 face images and Voice file and Click Enroll
 
-![Load Image and Voice](https://github.com/openinfer/PrivateIdentity/blob/master/images/JavascriptAPI%202.png)
+![Load Image and Voice](https://github.com/openinfer/PrivateIdentity/blob/master/images/click-enroll.png)
 
 3. Sample Enroll Response
 
-![Enroll Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/JavascriptAPI%203.png)
+![Enroll Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/enroll-with-response)
 
 4. Load 3 face images or voice file and click predict. Sample predict response is shown below.
 
-![Predict Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/JavascriptAPI%204.png)
+![Predict Result](https://github.com/openinfer/PrivateIdentity/blob/master/images/js-predict.png)
 
 
 ## Predict Request
