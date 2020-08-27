@@ -77,7 +77,7 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | **1:1 Verification** | | |
-| | TMR=99.99% | FMR=0.0001% | FTP=0.0001% | Speed=300ms |
+| TMR=99.99% | FMR=0.0001% | FTP=0.0001% | Speed=300ms |
 | **1:Many Identification** | | |
 | IR=99.99% | FPIR=0.0001% | FTE=0.0001% | Speed=300ms |
 
