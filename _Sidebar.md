@@ -16,13 +16,13 @@
 
 * [Privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy)
 
-[**Technical Overview**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)
+[**Technical Overview for AWS**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS))
 
-* [Overview](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#overview)
+* [Overview](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS)#overview)
 
-* [Architecture (AWS)](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS))
+* [Architecture (AWS)](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS)#Architecture)
 
-* [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#enrollment-morphing)
+* [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS)#enrollment-morphing)
 
 * [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
 
