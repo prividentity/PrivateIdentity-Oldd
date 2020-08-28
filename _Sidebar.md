@@ -16,11 +16,8 @@
 
 * [Privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy)
 
-[**Technical Overview for AWS**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS))
-
-[**Technical Overview for GCP**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(GCP))
-
-[**Technical Overview for On-Prem**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(On-Prem))
+**Technical Overview**
+[AWS](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS)) [GCP](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(GCP)) [On-Prem](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(On-Prem))
 
 [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
 
