@@ -148,7 +148,7 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * <b>Detects face mask</b> if the user is wearing a face mask. 
 * <b>Detects eyeglasses</b> before allowing enrollment
 * <b>Returns a validation score</b> between 0 to 100, where 100 is a perfect image.  
-* MobileNetV2 architecture, 1MB
+* MobileNetV2 architecture, 1.5MB
 
 #### Validation DNN for Voice
 * <b>Validates audio input</b> for a quality human voice to discriminate between a voice and external noise
@@ -158,24 +158,29 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * <b>FHE transforms the biometric input image </b>to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers 
 * <b>Maintains full accuracy</b> through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  
 * Produces (output) FHE payload in < 100ms
-* MobileNetV2 architecture, 1.3MB
+* MobileNetV2 architecture, 1.3MB for Face and 900kB for Fingerprint 
 
 #### Embedding DNN for Voice
 * FHE transforms one 2-dimensional array of frequencies (input) to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding) 
 * Produces FHE payload in < 100ms
-* MobileNetV2 architecture, 1.3MB
+* MobileNetV2 architecture, 3.5MB
 
 ### Offline Authentication
-* Acquires biometrics at the edge with or without a network 
-* Automatically switches to Local Mode after it detects loss of network 
-
-The Web client supports offline operation (“Local Mode”) using Edge computing. The device in Local Mode will authenticate a user using face or fingerprint recognition in 10ms with intermittent or no Internet connection as long as the user authenticates at least once to the device while online. The device stores the user’s FHE (embeddings) locally using the Web Storage API during the first prediction. The client automatically detects the loss of network connectivity. The URL parameter “localMode=true” directs the Web client to use the offline embedding store to authenticate. 
+* <b>Acquires biometrics at the edge</b> with or without a network (TensorFlow at the Edge)
+* <b>Automatically switches to Local Mode</b> after it detects loss of network 
+* <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online 
+* <b>Automatically detects</b> the loss of network connectivity. 
 
 ## SOLUTIONS
 
 ### IAM Integrations
 ![IAM Logos](https://github.com/openinfer/PrivateIdentity/blob/master/images/IAM%20Integr%201.png)
-Integrates with your existing Enterprise directory using SAML 2.0 or OAuth/OIDC. 
+* Integrates with your existing Enterprise directory using SAML 2.0 or OAuth/OIDC
+* [Google G Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-gsuite)
+* [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
+* [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
+* [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
+
 
 ### Identity Verification
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
