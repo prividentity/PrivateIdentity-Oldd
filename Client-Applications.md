@@ -1,7 +1,3 @@
-[![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
-
-<br/>
-
 # Introduction
 
 * Uses TensorFlow.js and an ensemble of helper DNNs to acquire and FHE transform each biometric 
