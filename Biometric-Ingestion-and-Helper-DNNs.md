@@ -57,5 +57,5 @@ Pulse Code Modulation lessens the input to two times the frequency range allowin
 ### VOICE FAST FOURIER TRANSFORMATION (FFT) 
 The Voice Fast Fourier Transform (FFT) moves the pulse code modulated audio signal from the time domain to a representation in the frequency domain.  The transform output is a 2-dimensional array of frequencies that is input to the Voice Embedding DNN.
 
-## VOICE EMBEDDING DNN
+### VOICE EMBEDDING DNN
 The Voice Embedding DNN accepts input of one 2-dimensional array of frequencies, FHE transforms the input to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding, or 1-way vector encryption), and then deletes the original biometric. 
