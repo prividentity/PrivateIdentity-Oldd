@@ -183,13 +183,13 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 
 ### Digital Identity Verification
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
-* <b>Meets identity-proofing requirements </b>for remote presentation of identifying materials or information by an end user
-* Allows user to verify [Enrollment Level 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf)</b> using an official Photo ID card or passport. 
+* <b>Meets AML/KYC identity-proofing requirements </b>for remote presentation of identifying materials or information by an end user for KYC
+* Allows organizations to verify user to [Enrollment Level 2](https://arch.idmanagement.gov/usecases/12_proofidentityloa2/)</b> using an official Photo ID card or passport. 
 * <b>Compares ID cards or passport photo</b> to enrolled user's face 
 * <b>Compares name and contact information on ID card </b>or passport to mobile phone billing records
 * <b>Verifies phone owner with SMS </b>message to phone 
 * <b>Preserves privacy</b> by having no personal data leave the local device 
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll) to documentation 
+* [Link to documentation on Github](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
 
 ### Account Recovery
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
@@ -198,37 +198,53 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 
 ## OPEN STANDARDS, ENCRYPTION & PRIVACY 
 ![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
+* Private Identity actively supports the development of open standards for biometric privacy, cryptography and security
+* <b>Third-party accredited certification</b> (3PAO) is provided by [GMS Registrar](https://gmsaudit.com/). 
+
+Private Identity is certified compliant with IEEE 2410 Standard for Biometric Privacy, ISO 27001:2013 International Standard for Information Security Management, ISO 9001:2015 International Standard for Quality Management Systems, US DoD Standard Trusted Computer System Evaluation Criteria (TCSEC), US ODNI ICD 503 Intelligence Community Technology Systems Security Risk Management, Certification and Accreditation and US DoD Multiple Independent Levels of Security/Safety (MILS) Architecture, and compliant with W3C Web Authentication API (WebAuthn), FIPS 197, TLS, IPSEC and SSL.  
+
 ### IEEE 2410 Standard for Biometric Privacy 
-Standard requires fully homomorphic encryption (FHE) for private identity assertion and authentication and guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations. [[link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)]  
+* <b>Requires FHE for private identity assertion </b>and authentication 
+* <b>Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations</b>
+* Link to approved [draft standard](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)]  
 
 ### W3C WebAuthn
-Web API that enables the creation and use of strong, attested, scoped, public key-based credentials by Web applications for the purpose of strongly authenticating users.
+* <b>Enables creation and use of strong</b>, attested, scoped, public key-based credentials by Web applications 
+* [Link to Standard](https://www.w3.org/TR/webauthn/)
 
 ### US ODNI ICD 503
-Applies to all US government organizations, their commercial contractors, and Allied governments information systems that process, store, or communicate intelligence information.
+* <b>Applies to all US government organizations</b>, their commercial contractors, and Allied governments information systems that process, store, or communicate intelligence information.
+* [Link to Directive](https://www.dni.gov/files/documents/ICD/ICD_503.pdf)
 
 ### US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)
-DoD 5200.28-STD. Mandatory for use by all DoD Components in carrying out technical security evaluation activities applicable to the processing and storage of classified and other sensitive DoD information “Orange Book.” 
+* <b>Original standard for processing and storage of classified </b>and other sensitive DoD information 
+* [Link to DoD 5200.28-STD](https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf)
 
 ### FIPS 197 Advanced Encryption Standard (AES)
-NIST Special Publication 800-21,Guideline for Implementing Cryptography in the US Federal Government. 
+* <b>Guideline for Implementing Cryptography </b>in the US Federal Government. 
+* [Link to NIST Special Publication 800-21](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf)
 
 ### TLS / IPSEC / SS
-Standard protocols to provide privacy and data integrity between two or more communicating computer applications. 
+* <b>Standard protocols providing privacy and data integrity </b>between two or more communicating computer applications
+* [Link to IETF](https://tools.ietf.org/html/rfc8446)
 
 ## OPEN STANDARDS, SECURITY ARCHITECTURE 
 
 ### ISO 27001:2013 Information Security Management Standard
-International Standard includes all legal, physical and technical controls involved in the information risk management processes.
+* <b>International Standard for information risk management process </b>includes all legal, physical and technical controls 
+* [Link to ISO/IEC 27001](https://www.iso.org/isoiec-27001-information-security.html)
 
 ### ISO 9001:2015 Quality Management Standard
-International Standard ensures software meets the needs of customers, other stakeholders and satisfies statutory and regulatory requirements.
+* <b>International Standard ensures software satisfies statutory and regulatory requirements </b>and meets the needs of customers and other stakeholders
+* [Link to ISO 9000](https://www.iso.org/iso-9001-quality-management.html)
 
 ### OAuth 2.0 / OpenID Connect / SAML 2.0
-Standards that cover authorization, federation, identity management and single sign-on (SSO). 
+* <b>Standards that cover authorization, federation, identity management and single sign-on (SSO)</b>
+* [Link to IETF](https://tools.ietf.org/html/rfc8252)
 
 ### DoD Multiple Independent Levels of Security/Safety (MILS) Architecture
-Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. 
+* <b>Compartmentalized approach to the design of security-critical</b>, safety-critical, high-assurance computing systems
+* [Link to MILS Community](https://mils.community/)
 
 ## FLEXIBLE DEPLOYMENT
 
