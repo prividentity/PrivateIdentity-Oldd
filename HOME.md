@@ -289,32 +289,32 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 
 > **Method: window.enroll**(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
 
-Accepts FHE input and enrolls subject in 800ms constant time.
-
 > **Method: window.predict**(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
 
-Accepts FHE input and returns identity in 300ms constant time.
-
 ***
 
-### REST APIs 
-![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API2.png)
-* Four APIs that communicate RESTful using JSON
-* Receives FHE payloads (input) from JavaScript app, JavaScript APIs or Encryption Engine 
-* Enrolls in four seconds, authenticates in 300ms
-
-> POST “/trueid/v1.1/enroll”
-> POST “/trueid/v1.1/predict”
-> POST “/trueid/v1.1/liveness”
-> POST “/trueid/v1.1/verify”
-
-***
 
 ### ENCRYPTION ENGINE (Setup)
 ![Picture of shield with lock on front](https://github.com/openinfer/PrivateIdentity/blob/master/images/Encryption%20Engine%202.png)
 Provide asynchronous processing for high-demand, high-throughput enrollment and identification tasks using elastic, fault tolerant, load balanced Kubernetes clusters. It is decoupled from the back end clusters to preserve privacy and supports the JavaScript API and REST API.
 
 *** 
+
+### REST APIs 
+![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API2.png)
+* Four APIs that communicate RESTful using JSON 
+* Receives FHE payloads as input (use the JavaScript app, JavaScript APIs or Encryption Engine to create payloads)
+* Enrolls in four seconds, authenticates in 300ms
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#SBP-API-Overview) for additional information
+> POST “/trueid/v1.1/enroll”
+
+> POST “/trueid/v1.1/predict”
+
+> POST “/trueid/v1.1/liveness”
+
+> POST “/trueid/v1.1/verify”
+
+***
 
 ### SaaS Deployments
 ![Picture of cloud](https://github.com/openinfer/PrivateIdentity/blob/master/images/SaaS%20Deploy%202.png)
