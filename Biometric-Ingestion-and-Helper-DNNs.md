@@ -3,6 +3,7 @@
 ![Facial Recognition Workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Face.png)
 
 ![Fingerprint recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Fingerprint.png)
+## FACE, FACE w/MASK and FINGERPRINT RECOGNITION
 
 ## Face and Face w/Mask Geometry Detection DNN
 The Face Geometry Detection DNN accurately locates face(s) in an image by transforming each image into geometric primitives and measuring the relative position, width, and other parameters of eyes, mouth(s), nose(s), and chin(s). Likewise, the Fingerprint Geometry Detection DNN accurately locates finger(s) in an image by transforming each image into geometric primitives and measuring each finger’s relative position, width, and other parameters.  
@@ -39,6 +40,7 @@ The Face, Face+Mask, and Fingerprint Embedding DNNs FHE transform the biometric 
 
 The Face, Face+Mask, and Fingerprint Embedding DNNs maintain full accuracy through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  The embedding DNNs use the MobileNetV2 architecture and output a 1-way encrypted payload in <100ms. 
 
+## VOICE (SPEAKER) IDENTIFICATION
 ![Voice recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Voice.png)
 ## VOICE INPUT SEGMENTATION 
 Voice Input Segmentation generalizes the enrollment, improves accuracy and performance during prediction, and allows the DNN to handle real-world conditions. Every enrollment requires >50 10ms voice samples to maintain accuracy and performance. The algorithm uses a sliding 10ms window across one second of input to reach or exceed 50 samples. 
