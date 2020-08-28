@@ -18,11 +18,9 @@
 
 [**Technical Overview for AWS**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS))
 
-* [Overview](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS)#overview)
+[**Technical Overview for GCP**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(GCP))
 
-* [Architecture (AWS)](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS)#basic-architecture)
-
-* [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS)#enrollment-morphing)
+[**Technical Overview for On-Prem**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(On-Prem))
 
 * [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
 
