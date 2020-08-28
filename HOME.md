@@ -134,26 +134,42 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
-### Geometry & Validation DNNs
+### Geometry, Validation and Embedding DNNs
 
-#### Face, Face w/Mask and Fingerprint Geometry Detection DNNs
-The Face Geometry Detection DNN accurately locates face(s) in an image by transforming each image into geometric primitives and measuring the relative position, width, and other parameters of eyes, mouth(s), nose(s), and chin(s). 
+#### Geometry Detection DNNs for Face, Face w/Mask, Fingerprint, Eye and Voice 
+* <b>Transforms images into geometric primitives</b> to measure the relative position, width, and other parameters of eyes, mouth(s), nose(s), chin(s), and finger(s)
+* <b>Returns X and Y coordinates</b> of each modality in an image, video frame or video stream.
+* YOLO architecture, 100kB
 
-Likewise, the Fingerprint Geometry Detection DNN accurately locates finger(s) in an image by transforming each image into geometric primitives and measuring each finger’s relative position, width, and other parameters.  
+#### Validation DNNs for Face, Face w/Mask and Fingerprint 
+* <b>Accurately aligns & crops</b> each frontalized face input image
+* <b>Detects photo or video attack (anti-spoofing)</b> during unattended operation
+* <b>Detects blinking</b> (eyes open/closed) for real-time passive facial liveness (anti-spoofing)
+* <b>Detects face mask</b> if the user is wearing a face mask. 
+* <b>Detects eyeglasses</b> before allowing enrollment
+* <b>Returns a validation score</b> between 0 to 100, where 100 is a perfect image.  
+* MobileNetV2 architecture, 1MB
 
-Each DNN returns X and Y coordinates of each modality in an image, video frame or video stream. 
+#### Validation DNN for Voice
+* <b>Validates audio input</b> for a quality human voice to discriminate between a voice and external noise
+* YOLO architecture, 100kB
 
-#### Eyes Open/Close Detection DNN (Spoofing Prevention)
-The Eyes Open/Closed DNN provides real-time passive facial liveness. This DNN mitigates risk of a photo spoofing attack during unattended operation. The DNN receives an input image of an eye and outputs a validation score between 0 and 100, where 0 is eyes closed and 100 is eyes open. The user cannot proceed until the detection of a pair of eye-open/eye-closed events. A URL parameter “faceLiveness=true” allows the overriding of default functionality by enabling the eye-blink check. 
+#### Embedding DNNs for Face, Face w/Mask and Fingerprint 
+* <b>FHE transforms the biometric input image </b>to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers 
+* <b>Maintains full accuracy</b> through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  
+* Produces (output) FHE payload in < 100ms
+* MobileNetV2 architecture, 1.3MB
 
-#### Mask Detection
-Detects if a user is wearing a face mask.
+#### Embedding DNN for Voice
+* FHE transforms one 2-dimensional array of frequencies (input) to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding) 
+* Produces FHE payload in < 100ms
+* MobileNetV2 architecture, 1.3MB
 
-#### Eyeglass Detection
-Detects if a user is wearing eyeglasses.
+### Offline Authentication
+* Acquires biometrics at the edge with or without a network 
+* Automatically switches to Local Mode after it detects loss of network 
 
-#### Offline Authentication
-Web clients automatically switch to Local Mode for face and fingerprint recognition after loss of network connectivity.
+The Web client supports offline operation (“Local Mode”) using Edge computing. The device in Local Mode will authenticate a user using face or fingerprint recognition in 10ms with intermittent or no Internet connection as long as the user authenticates at least once to the device while online. The device stores the user’s FHE (embeddings) locally using the Web Storage API during the first prediction. The client automatically detects the loss of network connectivity. The URL parameter “localMode=true” directs the Web client to use the offline embedding store to authenticate. 
 
 ## SOLUTIONS
 
