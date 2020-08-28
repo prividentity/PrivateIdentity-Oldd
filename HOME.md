@@ -335,6 +335,7 @@ The Encryption Engine identifies multiple faces and fingerprints per frame, iden
 ***
 
 ### PaaS Deployments 
+![PaaS icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/PaaS%20DEploy%202.png)
 _Please request Cloud Templates if you require this service_
 
 #### Google Cloud Platform (GCP)
