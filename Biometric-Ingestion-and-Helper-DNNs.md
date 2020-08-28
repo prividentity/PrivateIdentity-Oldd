@@ -18,7 +18,10 @@ The Face Validation DNN tightly aligns, crops and accurately validates each fron
 The face mask detection algorithm determines if a subject is wearing a mask.  Masks used during enrollment lower subsequent prediction performance. The Face+Mask On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is mask off and 100 is mask on. The URL parameter for enrollment and prediction “maskCheck=true” provides real-time instructions to the user to remove the mask or can be set to automatically select the Face+Mask Embedding DNN.     
 
 ### EYEGLASSES ON/OFF DETECTION DNN
-The eyeglass detection algorithm determines if a subject is wearing eyeglasses before allowing enrollment. Eyeglasses used during enrollment lower subsequent prediction performance. The Eyeglasses On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is eyeglasses off and 100 is eyeglasses on. The URL parameter for enrollment and prediction “eyeGlassCheck=true” provides real-time instructions to the user to remove eyeglasses.   
+The eyeglass detection algorithm determines if a subject is wearing eyeglasses before allowing enrollment. Eyeglasses used during enrollment lower subsequent prediction performance. The Eyeglasses On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is eyeglasses off and 100 is eyeglasses on. The URL parameter for enrollment and prediction “eyeGlassCheck=true” provides real-time instructions to the user to remove eyeglasses.  
+
+### 4 CLASSES (GOOD, BLURRY, EYEGLASSES, FACE+MASK) DETECTION DNN
+The 4 classes detection algorithm determines if a subject is in good quality, blurry, wearing eyeglasses or wearing facemask. The 4 Classes Detection DNN accepts one frontalized face input image returns 4 values summing to 100. The largest value among these 4 values will be the predicted class.   
 
 ### EYE GEOMETRY DETECT DNN
 The Eye Geometry Detection DNN accurately locates eye(s) in an image by transforming each frontal facial image into geometric primitives and measuring relative position. The DNN returns X,Y coordinates of each eye in an image, video frame or video stream.  
