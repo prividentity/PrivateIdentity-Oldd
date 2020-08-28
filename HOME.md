@@ -46,16 +46,19 @@ The Web client does not require on-device training and has no requirement for ex
 
 The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
 
+[Link](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications) for additional information.
+
 ### Built-in Privacy
 * Fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA 
-* Certified compliant with IEEE 2410 Standard for Biometric Privacy 
+* Certified compliant with [IEEE 2410](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) Standard for Biometric Privacy 
 
 Fully homomorphic encryption (FHE) mitigates the regulatory and legal privacy risk of biometric data by enabling mathematical operations on an encrypted dataset. This eliminates all requirements to process plaintext biometrics or templates.
 
 Specifically, biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm and then discarded (deleted) without the data ever leaving the local device. To accomplish this, the system transforms biometric data inputs into FHE payloads that are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait. 
+
 This anonymized FHE payload ceases to be biometric data or personal data because the system eliminates any known or foreseeable possibility of linking any of the data to the individual to whom the data originally related. As a result, the FHE is not “Personal Data” under General Data Protection Regulation (EU) 2016/679 (“GDPR”) or the California Consumer Privacy Act (“CCPA”) and is not “Biometric Information” under the Biometric Information Privacy Act (“BIPA”).  
 
-The data subject’s rights provided under each of these statutes thus fall away, and businesses may utilizes this biometric solution without subjecting their organizations to GDPR, CCPA or BIPA data subject rights or special handling requirements for personal data, biometric data, biometric identifiers, or associated data breach notification requirements. Finally, a breach of the Cloud Biometric MFA system would not result in the loss of any biometric data or personal data.  _(Of course, the analysis of data privacy laws in this Website does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations.)_
+The data subject’s rights provided under each of these statutes thus fall away, and businesses may utilizes this biometric solution without subjecting their organizations to GDPR, CCPA or BIPA data subject rights or special handling requirements for personal data, biometric data, biometric identifiers, or associated data breach notification requirements. Finally, a breach of the Cloud Biometric MFA system would not result in the loss of any biometric data or personal data.  _(The analysis of data privacy laws in this Website does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations.)_
 
 ### Flexible Deployment
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
@@ -139,6 +142,7 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * <b>Transforms images into geometric primitives</b> to measure the relative position, width, and other parameters of eyes, mouth(s), nose(s), chin(s), and finger(s)
 * <b>Returns X and Y coordinates</b> of each modality in an image, video frame or video stream.
 * YOLO architecture, 100kB
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-and-face-wmask-geometry-detection-dnn) for additional information
 
 #### Validation DNNs for Face, Face w/Mask and Fingerprint 
 * <b>Accurately aligns & crops</b> each frontalized face input image
@@ -148,21 +152,25 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * <b>Detects eyeglasses</b> before allowing enrollment
 * <b>Returns a validation score</b> between 0 to 100, where 100 is a perfect image.  
 * MobileNetV2 architecture, 1.5MB
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face--fingerprint-validation-dnns) for additional information
 
 #### Validation DNN for Voice
 * <b>Validates audio input</b> for a quality human voice to discriminate between a voice and external noise
 * YOLO architecture, 100kB
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-speaker-identification) for additional information
 
 #### Embedding DNNs for Face, Face w/Mask and Fingerprint 
 * <b>FHE transforms the biometric input image </b>to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers 
 * <b>Maintains full accuracy</b> through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  
 * Produces (output) FHE payload in < 100ms
 * MobileNetV2 architecture, 1.3MB for Face and 900kB for Fingerprint 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) for additional information
 
 #### Embedding DNN for Voice
 * FHE transforms one 2-dimensional array of frequencies (input) to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding) 
 * Produces FHE payload in < 100ms
 * MobileNetV2 architecture, 3.5MB
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) for additional information
 
 ### Offline Authentication
 * <b>Acquires biometrics at the edge</b> with or without a network (TensorFlow at the Edge)
@@ -249,12 +257,15 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 ## FLEXIBLE DEPLOYMENT
 
 ### SAML 2.0
-
+* Supports SAML 2.0 and OAuth/OIDC protocols
+* [Google G Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-gsuite)
+* [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
+* [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
+* [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
+ 
 ### Single Component JavaScript Application (Embedded DIV)
 ![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20Deploy%202.png)
 Users quickly and intuitively enroll and authenticate using any modern device, browser or platform. The included JavaScript component deploys effortlessly with no software to install and no hardware to buy. End users enroll in four seconds without username, password, token, PIN or any private information. Users authenticate in 300ms.
-
-***
 
 ### JavaScript APIs (Predict Enroll API)
 ![Image of Javascript API ](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%202.png)
