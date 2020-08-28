@@ -288,9 +288,11 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) for setup.
 
 > **Method: window.enroll**(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
+
 Accepts FHE input and enrolls subject in 800ms constant time.
 
 > **Method: window.predict**(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
+
 Accepts FHE input and returns identity in 300ms constant time.
 
 ***
