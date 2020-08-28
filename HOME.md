@@ -262,24 +262,49 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 * [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 * [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 * [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
- 
-### Single Component JavaScript Application (Embedded DIV)
-![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20Deploy%202.png)
-Users quickly and intuitively enroll and authenticate using any modern device, browser or platform. The included JavaScript component deploys effortlessly with no software to install and no hardware to buy. End users enroll in four seconds without username, password, token, PIN or any private information. Users authenticate in 300ms.
-
-### JavaScript APIs (Predict Enroll API)
-![Image of Javascript API ](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%202.png)
-Easily integrates into Web and mobile apps with the included JavaScript APIs.
-
-> Method: window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
-
-> Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
 
 ***
 
-### REST APIs (Setup) (IEEE 2410 Standard for Biometric Privacy Compliant)
+### Single Component JavaScript Application (Embedded DIV)
+![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20Deploy%202.png)
+* Deploys effortlessly with no software to install and no hardware to buy
+* Users enroll in four seconds, authenticate in 300ms
+* Built in React.js (pluggable)
+* Embed as a DIV
+* Preserves privacy by acquiring and FHE transforming biometric data at the edge 
+* Runs on 90% of all modern devices 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications) for additional information.
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/DIV-HTML)
+
+### JavaScript APIs (Predict Enroll API)
+![Image of Javascript API ](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%202.png)
+* Lightweight Javascript library with 2 API calls (enroll and predict) 
+* Accepts image and audio inputs and returns UUID
+* Includes a Web sandbox to exercise the API 
+* Deploys effortlessly with no software to install and no hardware to buy
+* Users enroll in four seconds, authenticate in 300ms
+* Preserves privacy by acquiring and FHE transforming biometric data at the edge 
+* Runs on 90% of all modern devices 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) for setup.
+
+> # Accepts FHE input and enrolls subject in 800ms constant time.
+> **Method: window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);**
+
+> # Accepts FHE input and returns identity in 300ms constant time.
+> **Method: window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);**
+
+***
+
+### REST APIs 
 ![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API2.png)
-Eight RESTful APIs receive FHE payloads, return UUIDs and run all ciphertext business methods. These Web services provide resilience and scalability, enable customers to go to market faster and easily integrate and deploy with legacy and third-party services.
+* Four APIs that communicate RESTful using JSON
+* Receives FHE payloads (input) from JavaScript app, JavaScript APIs or Encryption Engine 
+* Enrolls in four seconds, authenticates in 300ms
+
+> POST “/trueid/v1.1/enroll”
+> POST “/trueid/v1.1/predict”
+> POST “/trueid/v1.1/liveness”
+> POST “/trueid/v1.1/verify”
 
 ***
 
