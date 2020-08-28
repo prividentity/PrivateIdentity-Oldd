@@ -412,21 +412,6 @@ The status will have an error code.
 }
 ```
 
-```
-{
-   “status”: 0
-   “role_id” : <role_id>
-   “message” : “Role Successfully added.”
-}
-```
-
-```
-{
-   “status”: -2
-   “message” : “Role exists in database”
-}
-```
-
 ## 9 PRIVATE CONSIDERATIONS
 ### 9.1 Background
 The SBP privacy considerations section introduced into this version of IEEE P2410 specifications addresses the needs of auditors and compliance officers who would like to align and assess risk management frameworks for adoption of the IEEE 2410-2020 standard.
