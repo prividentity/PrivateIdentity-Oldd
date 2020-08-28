@@ -1,4 +1,4 @@
-# FACE, FACE+MASK & FINGERPRINT GEOMETRY DETECTION DNNs
+# GEOMETRY DETECTION, VALIDATION AND EMBEDDING DNNs
 
 ![Facial Recognition Workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Face.png)
 
