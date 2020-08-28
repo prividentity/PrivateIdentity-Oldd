@@ -256,7 +256,7 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 
 ## FLEXIBLE DEPLOYMENT
 
-### SAML 2.0
+### SAML 2.0 and OAuth/OIDC protocols
 * Supports SAML 2.0 and OAuth/OIDC protocols
 * Integrates with your existing Enterprise directory 
 * [Google G Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-gsuite)
