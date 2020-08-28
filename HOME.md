@@ -336,7 +336,7 @@ The Encryption Engine identifies multiple faces and fingerprints per frame, iden
 
 ### PaaS Deployments 
 ![PaaS icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/PaaS%20DEploy%202.png)
-_Please request Cloud Templates if you require this service_
+* Please contact us to request the Cloud Templates. 
 
 #### Google Cloud Platform (GCP)
 <b>For PaaS integrations on GCP,</b> Private Identity leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  
