@@ -31,6 +31,8 @@
 
 * [Enroll endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#API-Enroll-Overview)
 
+* [Enroll morphing](https://github.com/openinfer/PrivateIdentity/wiki/Enrollment-Morphing)
+
 * [Predict endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Predict-Overview)
 
 * [Liveness endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Liveness-Overview)
