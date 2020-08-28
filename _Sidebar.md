@@ -20,7 +20,7 @@
 
 * [Overview](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#overview)
 
-* [Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#basic-architecture)
+* [Architecture (AWS)](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS))
 
 * [Enrollment Morphing](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#enrollment-morphing)
 
