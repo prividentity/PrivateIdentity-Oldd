@@ -39,7 +39,6 @@
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
 * Built with Javascript, TensorFlow.js and an ensemble of helper DNNs 
 * Runs on 90% of all modern devices 
-* Runs on Node.js
 
 The Javascript client provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric. 
 
@@ -182,9 +181,13 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
 
 
-### Identity Verification
+### Digital Identity Verification
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
-Compare photo on ID cards and passports to the user's face and verify ID. No personal data leaves the local device. 
+* <b>Allows user to verify Enrollment Level 2</b>
+* <b>Compares ID cards or passport photo</b> to enrolled user's face 
+* <b>Compares name and contact information on ID card </b>or passport to mobile phone billing records
+* <b>Verifies phone owner with SMS </b>message to phone 
+* <b>[Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)</b> by having no personal data leave the local device 
 
 ### Account Recovery
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
