@@ -332,6 +332,8 @@ The Encryption Engine identifies multiple faces and fingerprints per frame, iden
 * <b>Click here for AWS Marketplace</b> Listing (_Not yet public -- send us your AWS account for access_) 
 * <b>Provides API Key access to private </b>elastic, load balanced and fault tolerant Web services managed and run on AWS by Private Identity
 
+***
+
 ### PaaS Deployments 
 _Please request Cloud Templates if you require this service_
 
