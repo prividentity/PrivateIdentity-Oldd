@@ -2,7 +2,7 @@
 [![Press here to play video](https://github.com/openinfer/PrivateIdentity/blob/master/images/Javascript%20API%20Video%201.png)](https://www.youtube.com/watch?v=_GZhzmnPYxU "JavaScript API Demonstration")
 
 # JavaScript API Documentation 
-The JavaScript API is a javascript library will send encrypted payloads to a Private Identity server (SaaS or PaaS) for enrollment and prediction. A Web page is also hosted at the URL to provide a sandbox to exercise Enroll and Predict by selecting the images from your browser. 
+The JavaScript API is a lightweight javascript library that will send encrypted payloads to a Private Identity server (SaaS or PaaS) for enrollment and prediction. A Web page is also hosted at the same URL that provides a sandbox to exercise Enroll and Predict by selecting the images from your browser. 
 
 Launch the below-mentioned URL in your browser and replace XXXX with apiKey value provided by Private identity.
 
