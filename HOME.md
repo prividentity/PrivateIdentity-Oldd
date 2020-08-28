@@ -339,12 +339,9 @@ _Please request Cloud Templates if you require this service_
 
 #### Google Cloud Platform (GCP)
 <b>For PaaS integrations on GCP,</b> Private Identity leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  
-***
 
 #### Amazon Web Services (AWS) 
 <b>For PaaS integrations on AWS</b>, Private Identity leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
-
-***
 
 #### PaaS Web Tier (Setup)
 Docker image of the Web tier that runs in elastic, load balanced, fault tolerant Kubernetes clusters on-premise or any public or private cloud. Connects to Private Identity Web services managed and run on AWS by Private Identity.
