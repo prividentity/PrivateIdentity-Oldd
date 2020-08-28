@@ -183,15 +183,18 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 
 ### Digital Identity Verification
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
-* <b>Allows user to verify Enrollment Level 2</b>
+* <b>Meets identity-proofing requirements </b>for remote presentation of identifying materials or information by an end user
+* Allows user to verify [Enrollment Level 2](https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-63a.pdf)</b> using an official Photo ID card or passport. 
 * <b>Compares ID cards or passport photo</b> to enrolled user's face 
 * <b>Compares name and contact information on ID card </b>or passport to mobile phone billing records
 * <b>Verifies phone owner with SMS </b>message to phone 
-* <b>[Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)</b> by having no personal data leave the local device 
+* <b>Preserves privacy</b> by having no personal data leave the local device 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll) to documentation 
 
 ### Account Recovery
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
-Quickly and accurately identify locked-out accountholders to restore access.
+* <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access.
+* <b>Quickly and accurately identifies locked-out account holders</b> and restores access
 
 ## OPEN STANDARDS, ENCRYPTION & PRIVACY 
 ![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
