@@ -22,9 +22,9 @@
 
 [**Technical Overview for On-Prem**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(On-Prem))
 
-* [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
+[Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
 
-* [Evaluation Metrics for Recognition DNNs](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
+[Evaluation Metrics for Recognition DNNs](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
 
 [**IEEE 2410 Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
