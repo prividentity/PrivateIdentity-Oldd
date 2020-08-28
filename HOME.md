@@ -20,7 +20,7 @@
 * <b>[Short Introduction](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction")</b> [YouTube] 
 * <b>Getting Started with Private Identity</b> [YouTube]
 
-* <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki#basic-architecture) </b>[Developer Wiki]
+* <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#basic-architecture) </b>[Developer Wiki]
 
 * <b>[Demo Video](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
 
