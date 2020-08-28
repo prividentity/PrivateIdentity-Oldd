@@ -258,6 +258,7 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 
 ### SAML 2.0
 * Supports SAML 2.0 and OAuth/OIDC protocols
+* Integrates with your existing Enterprise directory 
 * [Google G Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-gsuite)
 * [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 * [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
@@ -293,10 +294,14 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 
 ***
 
-
 ### ENCRYPTION ENGINE (Setup)
 ![Picture of shield with lock on front](https://github.com/openinfer/PrivateIdentity/blob/master/images/Encryption%20Engine%202.png)
-Provide asynchronous processing for high-demand, high-throughput enrollment and identification tasks using elastic, fault tolerant, load balanced Kubernetes clusters. It is decoupled from the back end clusters to preserve privacy and supports the JavaScript API and REST API.
+* Asynchronous pre-processing engine for massive plaintext biometric ingestion 
+* Accepts Base-64 plaintext images, video or audio using directory scanning or RESTful API.
+* Elastic, fault-tolerant and load balanced Kubernetes clusters
+* Decoupled from back-end cluster for privacy 
+
+The Encryption Engine identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation as needed, creates a 1-way hash (FHE transformation) for subsequent processing, and then immediately discards the original biometrics. FHE transformation requires 10ms _constant time_ using cloud or on-premise AI services. [Link for setup](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils). 
 
 *** 
 
@@ -316,18 +321,25 @@ Provide asynchronous processing for high-demand, high-throughput enrollment and 
 
 ***
 
-### SaaS Deployments
+### SaaS 
 ![Picture of cloud](https://github.com/openinfer/PrivateIdentity/blob/master/images/SaaS%20Deploy%202.png)
 
 #### SaaS (Open)
-API Key access to the elastic, load balanced and fault tolerant Private Identity Web services managed and run on AWS by Private Identity.
+* <b>Click here for AWS Marketplace</b> Listing  (_Not yet public -- send us your AWS account for access_) 
+* <b>Provides API Key access to shared </b>elastic, load balanced and fault tolerant Web services managed and run on AWS by Private Identity.
 
 #### SaaS (Dedicated for a single Customer)
-API Key access to an elastic, load balanced and fault tolerant Kubernetes cluster running Private Identity Web services dedicated entirely to a single customer. Managed and run on AWS by Private Identity.
-
-***
+* <b>Click here for AWS Marketplace</b> Listing (_Not yet public -- send us your AWS account for access_) 
+* <b>Provides API Key access to private </b>elastic, load balanced and fault tolerant Web services managed and run on AWS by Private Identity.
 
 ### PaaS Deployments 
+* _Please request Cloud Templates if you require this service. _
+
+#### Google Cloud Platform (GCP)
+<b>For PaaS integrations on GCP,</b> Private Identity leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  
+
+#### Amazon Web Services (AWS) 
+<b>For PaaS integrations on AWS</b>, Private Identity leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
 
 #### PaaS Web Tier (Setup)
 Docker image of the Web tier that runs in elastic, load balanced, fault tolerant Kubernetes clusters on-premise or any public or private cloud. Connects to Private Identity Web services managed and run on AWS by Private Identity.
