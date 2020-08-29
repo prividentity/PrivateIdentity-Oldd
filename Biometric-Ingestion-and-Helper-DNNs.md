@@ -20,7 +20,7 @@ The face mask detection algorithm determines if a subject is wearing a mask.  Ma
 ### EYEGLASSES ON/OFF DETECTION DNN
 The eyeglass detection algorithm determines if a subject is wearing eyeglasses before allowing enrollment. Eyeglasses used during enrollment lower subsequent prediction performance. The Eyeglasses On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is eyeglasses off and 100 is eyeglasses on. The URL parameter for enrollment and prediction “eyeGlassCheck=true” provides real-time instructions to the user to remove eyeglasses.  
 
-### 4 CLASSES (GOOD, BLURRY, EYEGLASSES, FACE+MASK) DETECTION DNN
+### 4 CLASSES (GOOD, BLURRY, EYEGLASSES, FACE+MASK) VALIDATION DNN
 The 4 classes detection algorithm determines if a subject is in good quality, blurry, wearing eyeglasses or wearing facemask.  Blurry images, wearing eyeglasses or facemask during enrollment lower subsequent prediction performance. The 4 Classes Detection DNN accepts one frontalized face input image returns 4 values summing to 100. The largest value among these 4 values will be the predicted class.   
 
 ### EYE GEOMETRY DETECT DNN
