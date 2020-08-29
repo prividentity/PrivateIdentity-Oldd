@@ -10,9 +10,9 @@ Cloud Biometric MFA then performs encrypted match and encrypted search using a s
 [[images/cluster_image.png]]
 
 ## Client Applications
-* <b>Cloud Biometric MFA</b> - a single-component Javascript application 
-* <b>Cloud Biometric API</b> - accepts plaintext images, video or audio (Javascript APIs and Encryption Engine) 
-* <b>Cloud Biometric Encryption Engine</b> - elastic, high-throughput Kubernetes FHE transformation service that deploys anywhere
+* <b>Cloud Biometric MFA</b> - a [single-component Javascript application](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#web-applications)
+* <b>Cloud Biometric API</b> - accepts plaintext images, video or audio ([Javascript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) and [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils)) 
+* <b>Cloud Biometric Encryption Engine</b> - elastic, high-throughput Kubernetes [FHE transformation service](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils) that deploys anywhere
 * <b>Cloud Biometric Search</b> - elastic, high-throughput Kubernetes identification service that runs anywhere 
 * Mobile pre-trained embedding DNNs powered by TensorFlow FHE transform biometric data 
 * Less capable devices operate by offloading processing to Node.js  
