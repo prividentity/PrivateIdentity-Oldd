@@ -9,11 +9,18 @@ Cloud Biometric MFA then performs encrypted match and encrypted search using a s
 # Basic Architecture
 [[images/cluster_image.png]]
 
-The [Client Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-applications) are responsible for:
-* Creation of the biometric feature vector. 	
-* Making an API call to [enroll](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#API-Enroll-Overview).	
-* Making an API call to [predict](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview).  
-* Making an API call for [liveness](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#liveness-overview).
+## Client Applications
+* <b>Cloud Biometric MFA</b> - a single-component Javascript application 
+* <b>Cloud Biometric API</b> - accepts plaintext images, video or audio (Javascript APIs and Encryption Engine) 
+* <b>Cloud Biometric Encryption Engine</b> - elastic, high-throughput Kubernetes FHE transformation service that deploys anywhere
+* <b>Cloud Biometric Search</b> - elastic, high-throughput Kubernetes identification service that runs anywhere 
+* Mobile pre-trained embedding DNNs powered by TensorFlow FHE transform biometric data 
+* Less capable devices operate by offloading processing to Node.js  
+* Creates FHE payloads using biometric workflow ([Geometry DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-and-face-wmask-geometry-detection-dnn) --> [Validation DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#4-classes-good-blurry-eyeglasses-facemask-validation-dnn) --> [Embedding DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns)) 
+* Makes API call to [enroll](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#API-Enroll-Overview).	
+* Makes API call to [predict](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview).  
+* Makes API call for [liveness](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#liveness-overview).
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications) to documentation
 
 The [SPB Server](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server) is responsible for:
 * Saving Enrollment Data during [enrollment](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#API-Enroll-Overview) process for subsequent [predict](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview) API calls. 
