@@ -1,5 +1,5 @@
 # SYSTEM OVERVIEW 
-The Cloud Biometric MFA system determines if the biometric sample from an untrusted user is valid and matches a previously enrolled subject. The system may present the end user with no UI (i.e. a camera or microphone with no UI) or a minimal GUI. 
+The Cloud Biometric MFA system determines if the biometric sample from an untrusted user is valid and matches a previously enrolled subject. The system may present the end user with no UI (i.e. a camera or microphone) or a minimal GUI. 
 
 The system preserves privacy by transmitting, storing and using only system data and not processing any user data (“personal data”), biometric data or biometric templates. As such, it is fully compliant with GDPR, CCPA and BIPA and does not incur legal obligations under these laws (link for additional information on privacy).  
 The system authenticates an unlimited number of users online by transmitting FHE payloads to a server, private or public cloud. Identity returns in 300ms. In “off-line mode,” where a network is not present, the system authenticates a maximum of 50 users (dependent on device resources).
