@@ -5,7 +5,7 @@
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
 ## OVERVIEW
-* <b>Integrates easily</b> into your IAM solution or applications using the included Javascript component (embedded DIV), JavaScript APIs, REST APIs, SAML 2.0 or OAuth/OIDC.
+* <b>Integrates easily</b> into your [IAM solution](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) or applications using the included Javascript component (embedded DIV), JavaScript APIs, REST APIs, SAML 2.0 or OAuth/OIDC.
 
 * <b>Deploys instantly </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy.
 
