@@ -313,7 +313,7 @@ The Encryption Engine identifies multiple faces and fingerprints per frame, iden
 * Accepts Base-64 plaintext images, video or audio by directory scanning or RESTful API
 * Elastic, fault-tolerant, load balanced Kubernetes identification service that runs anywhere
 * Maintains full accuracy and performance through real-world boundary conditions 
-* Decoupled from back-end cluster for privacy 
+* Decoupled from back-end cluster for privacy (See [link](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils))
 
 Cloud Biometric Search provides high-demand identification tasks asynchronous face, face+mask, fingerprint and voice identification with unlimited throughput using elastic, load-balanced, fault-tolerant Kubernetes clusters. 
 
