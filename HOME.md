@@ -308,6 +308,7 @@ The Encryption Engine identifies multiple faces and fingerprints per frame, iden
 *** 
 
 ### Cloud Biometric Search
+![Cloud Biometric Search icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/Biometric%20Search%201.png)
 * <b>Asynchronous pre-processing engine</b> for massive biometric match 
 * Accepts Base-64 plaintext images, video or audio by directory scanning or RESTful API
 * Elastic, fault-tolerant, load balanced Kubernetes identification service that runs anywhere
