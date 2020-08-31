@@ -1,8 +1,8 @@
-[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right.png)](https://www.private.id/)
+[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)](https://www.private.id/)
 
 ## VIDEO INTRODUCTION
 
-[![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
+[![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/Fingerprint%20Video%20Image.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
 ## OVERVIEW
 * <b>Integrates easily</b> into your [IAM solution](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols), Web and mobile apps, and biometric pipeline using the included Javascript component ([embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)), [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api), [REST APIs](https://github.com/openinfer/PrivateIdentity/wiki#rest-apis), [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) and Biometric Search
