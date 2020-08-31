@@ -264,7 +264,7 @@ Here are sample code examples for each of the three described methods.
 
 **JavaScript**
 
-``` 
+```javascript
 predictButton.addEventListener('click', async function(e) {
     document.getElementById('status-textarea').innerText = '';
     const modalitiesList = getModalities();
