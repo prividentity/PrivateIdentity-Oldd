@@ -292,3 +292,4 @@ validate.addEventListener('click', async function handleFiles() {
     result != null ? document.getElementById('status-textarea').innerText = result : '';
   }, false);
 ```
+## Sample code discussed in video 
