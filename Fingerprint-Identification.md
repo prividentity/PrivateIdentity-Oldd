@@ -1,4 +1,4 @@
-# Fingerprint Identification Demo Video 
+# Demo Video 
 [![Press here to play video](https://github.com/openinfer/PrivateIdentity/blob/master/images/Javascript%20API%20Video%201.png)](https://youtu.be/C-rnRqbDS5E "JavaScript API Demonstration")
 
 # Fingerprint Identification Documentation 
