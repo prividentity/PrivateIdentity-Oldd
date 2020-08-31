@@ -10,7 +10,7 @@
 | TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | **1:Many Identification** | | |
 | IR=96.30% | FPIR=0.0001% | FNIR=3.70% | Speed=300ms |
-* TOUCHLESS Identification using optical scan (camera) or capacitive sensor 
+* **CONTACTLESS IDENTIFICATION** using optical scan (camera) or capacitive sensor 
 * Supports any Webcams or phone with camera ≥720P (1MP)
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
 * Operates in polynomial time irrespective of gallery size 
