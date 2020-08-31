@@ -293,3 +293,216 @@ validate.addEventListener('click', async function handleFiles() {
   }, false);
 ```
 ## Sample code discussed in video 
+
+
+```html
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Predict/Enroll library</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>div#canvas-container canvas {
+        width: 200px;
+        padding: 1%;
+        height: 245px;
+        border: 1px dotted black;
+        margin: 0.5%;
+    }</style>
+</head>
+
+<body>
+<div style="padding: 7%">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Face Images:</span>
+        </div>
+        <div class="custom-file">
+            <input multiple type="file" class="custom-file-input" id="imageFiles">
+            <label class="custom-file-label" for="imageFiles">Choose file</label>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Voice Files:</span>
+        </div>
+        <div class="custom-file">
+            <input multiple type="file" class="custom-file-input" id="voiceFile">
+            <label class="custom-file-label" for="imageFiles">Choose file</label>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Fingerprint images:</span>
+        </div>
+        <div class="custom-file">
+            <input multiple type="file" class="custom-file-input" id="fingeprintImages">
+            <label class="custom-file-label" for="imageFiles">Choose file</label>
+        </div>
+    </div>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text">Face Validation Images:</span>
+        </div>
+        <div class="custom-file">
+            <input multiple type="file" class="custom-file-input" id="pb-fileToUpload">
+            <label class="custom-file-label" for="imageFiles">Choose file</label>
+        </div>
+    </div>
+
+    <br><br>
+    <br>
+
+    <button type="button" id="enroll" class="btn btn-outline-success">Enroll</button>
+    <button id="predict" type="button" class="btn btn-outline-primary">Predict</button>
+    <button type="button" id="validate" class="btn btn-outline-warning">Validate</button>
+
+    <br>
+    <br>
+    <br>
+    <textarea id="status-textarea" style="margin-top: 0px;margin-bottom: 0px;height: 397px;width: 100%;padding: 2%;">
+
+    </textarea>
+    <div id="canvas-container"></div>
+</div>
+
+</body>
+<script src="module.js"></script>
+<script type="module">
+  const queryString = window.location.search;
+  const urlParams = new URLSearchParams(queryString);
+  const apiKey = urlParams.get('apiKey');
+
+  let faceImagesFiles = [];
+  let fingerprintImagesFiles = [];
+  let voiceFile = null;
+
+  const voiceFileInput = document.getElementById('voiceFile');
+  const imagesInput = document.getElementById('imageFiles');
+  const validateFiles = document.getElementById('pb-fileToUpload');
+  const fingerprintInput = document.getElementById('fingeprintImages');
+
+  const predictButton = document.getElementById('predict');
+  const enrollButton = document.getElementById('enroll');
+
+  function getModalities() {
+    let faceImages = document.querySelectorAll('canvas.face_canvas');
+    let fingerprintImages = document.querySelectorAll('canvas.fingerprint_canvas');
+    let params = [];
+    if (voiceFile !== null) {
+      params = [...params, 'voice', voiceFile];
+    }
+    if (faceImages.length > 0) {
+      params = [...params, 'face', faceImagesFiles];
+    }
+    if (fingerprintImages.length > 0) {
+      params = [...params, 'fp', fingerprintImagesFiles];
+    }
+    console.log(params);
+    return params;
+  }
+
+  predictButton.addEventListener('click', async function(e) {
+    document.getElementById('status-textarea').innerText = '';
+    const modalitiesList = getModalities();
+    const result = await window.predict(apiKey, ...modalitiesList);
+    console.log('result');
+    console.log(result);
+    result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';
+  });
+
+  enrollButton.addEventListener('click', async function(e) {
+    document.getElementById('status-textarea').innerText = '';
+    const modalitiesList = getModalities();
+    const result = await window.enroll(undefined, apiKey, ...modalitiesList);
+    console.log('result');
+    console.log(result);
+    result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';
+  });
+
+  fingerprintInput.addEventListener('change', async function(e) {
+    fingerprintImagesFiles = e.target.files;
+    removeCurrentCanvases();
+    showImagesAsCanvases(e, 'fingerprint');
+  });
+
+  imagesInput.addEventListener('change', async function(e) {
+    faceImagesFiles = e.target.files;
+    removeCurrentCanvases();
+    showImagesAsCanvases(e, 'face');
+  });
+  validateFiles.addEventListener('change', async function(e) {
+    removeCurrentCanvases();
+    showImagesAsCanvases(e, 'face');
+  });
+
+  voiceFileInput.addEventListener('change', async function(e) {
+    voiceFile = e.target.files[0];
+  });
+
+  function removeCurrentCanvases() {
+    document.getElementById('canvas-container').innerHTML = '';
+  }
+
+  function showImagesAsCanvases(e, alias) {
+    const images = e.target.files;
+    console.log('images');
+    console.log(images);
+    for (let i = 0; i < images.length; i++) {
+      let url = URL.createObjectURL(images[i]);
+      let image = new Image();
+      image.onload = () => {
+        console.log('Image loaded!');
+        let currentCanvas = document.createElement('canvas');
+        currentCanvas.width = image.naturalWidth;
+        currentCanvas.height = image.naturalHeight;
+        let context = currentCanvas.getContext('2d');
+        context.drawImage(image, 0, 0, image.naturalWidth, image.naturalHeight);
+        document.getElementById('canvas-container').append(currentCanvas);
+        currentCanvas.setAttribute('id', `canvas_${alias}_` + i);
+        currentCanvas.setAttribute('class', `canvas ${alias}_canvas`);
+      };
+      image.setAttribute('id', `image_${alias}_` + i);
+      image.setAttribute('class', `image ${alias}_image`);
+      image.src = url;
+    }
+    ;
+  }
+
+  const validate = document.getElementById('validate');
+  validate.addEventListener('click', async function handleFiles() {
+    document.getElementById('status-textarea').innerText = '';
+    let files = document.getElementById('pb-fileToUpload').files;
+    console.log('files');
+    console.log(files);
+    console.log('files.length');
+    console.log(files.length);
+    files = files.length == 0 ? faceImagesFiles : files;
+    console.log('files');
+    console.log(files);
+    let result = await window.validate(files);
+    console.log(result);
+    result != null ? document.getElementById('status-textarea').innerText = result : '';
+  }, false);
+
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</html>
+```
