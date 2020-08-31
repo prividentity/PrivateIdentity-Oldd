@@ -8,13 +8,13 @@
 
 * [Key Features](https://github.com/openinfer/PrivateIdentity/wiki#key-features)
 
-* [Touchless **Facial Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition)
+* [**Face Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition)
 
-* [Touchless **Face w/Mask Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition)
+* [**Face w/Mask Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition)
 
-* [Touchless **Fingerprint Identification**](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification)
+* [**Fingerprint Identification**](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification)
 
-* [Touchless **Voice (Speaker) Identification**](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification)
+* [**Voice (Speaker) Identification**](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification)
 
 * [Solutions](https://github.com/openinfer/PrivateIdentity/wiki#solutions)
 
