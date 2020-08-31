@@ -1,4 +1,4 @@
-[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/Cloud%20Biometric%20MFA%20Logo%20COLOR.png)](https://www.private.id/)
+[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right.png)](https://www.private.id/)
 
 ## VIDEO INTRODUCTION
 
