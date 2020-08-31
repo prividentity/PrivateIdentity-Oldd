@@ -14,7 +14,7 @@
 
 * [**Fingerprint Identification**](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification)
 
-* [**Voice (Speaker) Identification**](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification)
+* [**Voice Identification**](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification)
 
 * [Solutions](https://github.com/openinfer/PrivateIdentity/wiki#solutions)
 
