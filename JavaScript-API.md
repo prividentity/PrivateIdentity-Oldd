@@ -264,14 +264,14 @@ Here are sample code examples for each of the three described methods.
 
 **JavaScript**
 
-`predictButton.addEventListener('click', async function(e) {`
-    `document.getElementById('status-textarea').innerText = '';`
-    `const modalitiesList = getModalities();`
-    `const result = await window.predict(apiKey, ...modalitiesList);`
-    `console.log('result');`
-    `console.log(result);`
-    `result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';`
-  `});`
+> `predictButton.addEventListener('click', async function(e) {`
+>     `document.getElementById('status-textarea').innerText = '';`
+>     `const modalitiesList = getModalities();`
+>     `const result = await window.predict(apiKey, ...modalitiesList);`
+>     `console.log('result');`
+>     `console.log(result);`
+>     `result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';`
+>   `});`
 
   `enrollButton.addEventListener('click', async function(e) {`
     `document.getElementById('status-textarea').innerText = '';`
