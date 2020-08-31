@@ -4,8 +4,6 @@
 
 * [Overview](https://github.com/openinfer/PrivateIdentity/wiki#overview)
 
-* [Resources](https://github.com/openinfer/PrivateIdentity/wiki#resources)
-
 * [Key Features](https://github.com/openinfer/PrivateIdentity/wiki#key-features)
 
 * [**Face Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition)
