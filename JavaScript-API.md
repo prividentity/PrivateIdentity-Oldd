@@ -262,7 +262,7 @@ The method window.validate accepts image files as input. The input can be one or
 
 Here are sample code examples for each of the three described methods. 
 
-** JavaScript **
+**JavaScript**
 
 `const result = await window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
 
