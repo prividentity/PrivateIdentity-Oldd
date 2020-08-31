@@ -18,6 +18,7 @@
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.  
 * MobileNetV2 Architecture, 900kB
+* Accepts images using any finger 
 
 # Sample Code
 
