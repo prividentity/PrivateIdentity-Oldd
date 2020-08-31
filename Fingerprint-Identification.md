@@ -24,7 +24,7 @@
 * Single Component JavaScript App
 * [JavaScript API](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 * Encryption Engine
-* SBP Server (RESTful API)
+* [SBP Server (RESTful API)](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
 
 
