@@ -14,11 +14,11 @@
 
 * [**Voice Identification**](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification)
 
-* [Identity Proofing](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
+* [**Identity Proofing**](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
 
-* [Open Standards](https://github.com/openinfer/PrivateIdentity/wiki#open-standards-encryption--privacy)
+* [**Open Standards**](https://github.com/openinfer/PrivateIdentity/wiki#open-standards-encryption--privacy)
 
-* [IAM Integrations](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1)
+* [**IAM Integrations**](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1)
 
 * [Single Component JavaScript Application](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)
 
