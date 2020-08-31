@@ -264,6 +264,22 @@ The method window.validate accepts image files as input. The input can be one or
 
 Sure. Working on it
 
+Here are sample code examples for each of the three described methods. 
+
+** JavaScript **
+
+`const result = await window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
+
+apiKey is of type string. images1, voiceFile, and images2 are of type File or FileList.
 
 
+`const result = await window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
 
+uuid is of type string. images1, voiceFile, and images2 are of type File or FileList.
+
+
+`const result = await window.validate(imageFiles);`
+
+imageFiles is of type FileList. 
+
+For all the previous code snippets, the `result` is a JSON string containing the final result. 
