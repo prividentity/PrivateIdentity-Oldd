@@ -53,7 +53,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |whereToProcess|browser / nodeServer|browser|Set the processing destination.|
 |antiVideoSpoof|true / false|false|Check the webcam capture is a spoofed one or not. [[1](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters#reference)]|
 |profileFaceEnroll|true / false|false|Face enroll with profile images.|
-
+|faceMask|true / false|true|Use face mask embedding model.|
 ### WebAuthN
 |URL|Status|
 |---|---|
