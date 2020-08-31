@@ -258,6 +258,7 @@ The method window.validate accepts image files as input. The input can be one or
 |glassesStatus      |         Glasses detected or Glasses not detected.|
 |maskStatus      |         Face mask detected or Face mask not detected.|
 
+## Sample Code
 
 
 
