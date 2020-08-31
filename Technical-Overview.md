@@ -42,6 +42,13 @@ The system creates a [prediction](https://github.com/openinfer/PrivateIdentity/w
 
 # Architecture Overview
 ![Architecture on AWS](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Architecture%201.png)
+> AWS Architecture
+
+![Architecture on GCP](https://github.com/openinfer/PrivateIdentity/blob/master/images/GCP%20Architecture%201.png)
+> GCP Architecture 
+
+![Architecture on AWS](https://github.com/openinfer/PrivateIdentity/blob/master/images/Architecture%20On-Prem%201.png)
+> On-Premise Architecture
 
 The [Client Applications](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) are responsible for:
 * [Creation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) of the biometric feature vector
