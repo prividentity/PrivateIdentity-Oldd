@@ -22,7 +22,7 @@
 
 * [Privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy)
 
-[**Technical Overview**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview-(AWS))  
+[**Technical Overview**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
 [Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
 
