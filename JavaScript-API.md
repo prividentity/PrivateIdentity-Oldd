@@ -264,18 +264,29 @@ Here are sample code examples for each of the three described methods.
 
 **JavaScript**
 
-`const result = await window.predict(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
+`predictButton.addEventListener('click', async function(e) {`
+    `document.getElementById('status-textarea').innerText = '';`
+    `const modalitiesList = getModalities();`
+    `const result = await window.predict(apiKey, ...modalitiesList);`
+    `console.log('result');`
+    `console.log(result);`
+    `result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';`
+  `});`
 
-apiKey is of type string. images1, voiceFile, and images2 are of type File or FileList.
+  `enrollButton.addEventListener('click', async function(e) {`
+    `document.getElementById('status-textarea').innerText = '';`
+    `const modalitiesList = getModalities();`
+    `const result = await window.enroll(undefined, apiKey, ...modalitiesList);`
+    `console.log('result');`
+    `console.log(result);`
+    `result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';`
+  `});`
 
-
-`const result = await window.enroll(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);`
-
-uuid is of type string. images1, voiceFile, and images2 are of type File or FileList.
-
-
-`const result = await window.validate(imageFiles);`
-
-imageFiles is of type FileList. 
-
-For all the previous code snippets, the `result` is a JSON string containing the final result. 
+`validate.addEventListener('click', async function handleFiles() {`
+    `document.getElementById('status-textarea').innerText = '';`
+    `let files = document.getElementById('pb-fileToUpload').files;`
+    `files = files.length == 0 ? faceImagesFiles : files;`
+    `let result = await window.validate(files);`
+    `console.log(result);`
+    `result != null ? document.getElementById('status-textarea').innerText = result : '';`
+  `}, false);`
