@@ -122,7 +122,7 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Operates in polynomial time irrespective of gallery size 
 * Trained using the NIST Special Database 4 and CASIA-FingerprintV5 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
-* Minimum Imaging Requirements: Fingerprint ≥ 224×224 pixels. Camera ≥256kB. Fingerprint images smaller than 224×224 pixels may reduce performance. 
+* Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.  
 
 ### Voice (Speaker) Identification 
 ![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
