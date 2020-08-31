@@ -262,6 +262,8 @@ The method window.validate accepts image files as input. The input can be one or
 
 ... Anas, please insert the code here.  Thanks! 
 
+Sure. Working on it
+
 
 
 
