@@ -21,41 +21,10 @@
 * Accepts images using any finger 
 
 # How to call 
-## Single Component JavaScript App
-```javascript
-predictButton.addEventListener('click', async function(e) {
-    document.getElementById('status-textarea').innerText = '';
-    const modalitiesList = getModalities();
-    const result = await window.predict(apiKey, ...modalitiesList);
-    console.log('result');
-    console.log(result);
-    result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';
-  });
-
-  enrollButton.addEventListener('click', async function(e) {
-    document.getElementById('status-textarea').innerText = '';
-    const modalitiesList = getModalities();
-    const result = await window.enroll(undefined, apiKey, ...modalitiesList);
-    console.log('result');
-    console.log(result);
-    result != null ? document.getElementById('status-textarea').innerText = JSON.stringify(result) : '';
-  });
-
-validate.addEventListener('click', async function handleFiles() {
-    document.getElementById('status-textarea').innerText = '';
-    let files = document.getElementById('pb-fileToUpload').files;
-    files = files.length == 0 ? faceImagesFiles : files;
-    let result = await window.validate(files);
-    console.log(result);
-    result != null ? document.getElementById('status-textarea').innerText = result : '';
-  }, false);
-```
-
-## JavaScript API
-
-## Encryption Engine
-
-## SBP Server (RESTful API)
+* Single Component JavaScript App
+* [JavaScript API](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
+* Encryption Engine
+* SBP Server (RESTful API)
 
 
 
