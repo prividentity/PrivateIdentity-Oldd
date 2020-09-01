@@ -57,7 +57,7 @@ The Web Tier does not require on-device training and has no requirement for expe
 
 ### Server Tier ###
 
-The server Tier takes the FHE (Fully Homomorphic Encryption) from the Web Tier and store it inside the Database for persistance storage.
+The Server Tier takes the FHE (Fully Homomorphic Encryption) from Web Tier and stores it inside the Database for persistance storage.
 Server perform comparison between FHE and already stored FHE in the Database. IT gives comparison results back to Web Tier.   
 
 The [Client Applications](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) are responsible for:
