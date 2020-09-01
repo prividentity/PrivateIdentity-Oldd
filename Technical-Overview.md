@@ -13,14 +13,8 @@ The Cloud Biometric MFA system’s prediction capability uses a payload of 3 FHE
  
 
 ## Block Diagram 
-![Block diagram of the Cloud Biometric MFA system](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Architecture%202.png)
-> AWS Block Diagram
-
-![Block diagram of the Cloud Biometric MFA system](https://github.com/openinfer/PrivateIdentity/blob/master/images/Logic%20Diagram%201.png)
-> GCP Block Diagram
-
-![Block diagram of the Cloud Biometric MFA system](https://github.com/openinfer/PrivateIdentity/blob/master/images/Logic%20on-prem%201.png)
-> On-Premise Diagram
+![Block diagram of the Cloud Biometric MFA system](https://github.com/openinfer/PrivateIdentity/blob/master/images/General%20Block%20Diagram%201.png)
+> Cloud Biometric MFA Logical Block Diagram
 
 Cloud Biometric MFA uses fully homomorphic encryption (FHE) methods to ensure privacy, security and confidentiality of the prediction and enrollment packages.  FHE provides secure storage and secure computation by allowing the cloud to calculate the similarity (geometric distance) between two sets of FHE payloads in their encrypted form.
 To accomplish this, the system acquires biometrics using a set of helper DNNs and one pre-trained mobile embedding DNN per biometric modality. These DNNs acquire the biometric using a biometric acquisition workflow and then discard (delete) the plaintext biometric after embedding creation.
