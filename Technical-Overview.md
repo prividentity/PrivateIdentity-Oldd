@@ -37,7 +37,10 @@ Cloud Biometric MFA then performs encrypted match and encrypted search using a s
 
 # Web Tier
 The web tier provides responsive HTML capable of running in most general purpose browsers.  The web tier provides the following functionality on a per bio metric modality basis.
-#A local DNN based service for finding the geometry of an instance of a biometric.  For fingerprint, face and face+mask, this returns a bounding rectangle for the biometric or a -1 if the biometric DNN cannot find an instance of the biometric.
+
+
+
+* [**Geometry DNN.**] A local DNN based service for finding the geometry of an instance of a biometric.  For fingerprint, face and face+mask, this returns a bounding rectangle for the biometric or a -1 if the biometric DNN cannot find an instance of the biometric.
 #A local DNN based validating service for determining the validity of an instance of a biometric. For finngerprint, face and face+mask this includes the determining if the biometric is an image spoof, a video spoof, too blurry, glasses on,  mask on, too far or too close.  A JSON string returns the result of the validation check or 0 if none of the anomaly cases are met.  For voice the validity is if the voice has no background noise and is of suitable length.
 #A local DNN based embedding model.  This model takes in a biometric instance and returns an embedding vector allowing the deletion of the original biometric.  There is a sperate embdding DNN for fingerprint, voice, face and face+mask.
 
