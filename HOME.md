@@ -109,8 +109,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
 ### Fingerprint Identification
-[![Click for Fingerprint Recognition Demo Video]([![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/J10akfFzxHI "Quick Introduction to Fingerprint Identification in Cloud Biometric MFA"))](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
-![man's finger](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)
+[![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
+
+[![Link to Fingerprint Identification Video](https://youtu.be/J10akfFzxHI "Quick Introduction to Fingerprint Identification in Cloud Biometric MFA"))](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | 1:1 Verification | | |
