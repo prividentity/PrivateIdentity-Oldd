@@ -76,12 +76,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
 
-### Biometric Matching Algorithms
-The Private Identity architecture is biometric modality agnostic. Private Identity uses two DNNs per modality and a set of helper DNNs for each biometric acquisition. Each modality has one pre-trained TensorFlow embedding model and one TensorFlow classifying model that work hand-in-hand to match subjects. The first DNN and its associated helper DNNs acquire the biometric using the Biometric Acquisition Workflow and then discard (delete) the plaintext biometric after embedding creation.
-
-The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each FHE and subsequently returns identity in polynomial time. It is capable of classifying an unlimited number of FHEs and returning identity in constant time when configured using load-balanced, elastic, fault-tolerant Kubernetes clusters. Testing on GCP using 100,000 FHEs/second (approx. 8B authentications/day, or similar to the daily volume of Azure Active Directory) through cloud AI responded in constant time. The second DNN runs in any AI cloud container or on-premise.
-
-#### Facial Recognition 
+### Facial Recognition 
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -97,7 +92,7 @@ The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each 
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
-#### Face + Mask Recognition  
+### Face + Mask Recognition  
 ![woman wearing face mask](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%201.png)
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -113,7 +108,7 @@ The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each 
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
-#### Fingerprint Identification
+### Fingerprint Identification
 ![man's finger](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -129,7 +124,7 @@ The second DNN, a custom Fully Connected Neural Network (FCNN), classifies each 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.  
 
-#### Voice (Speaker) Identification 
+### Voice (Speaker) Identification 
 ![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
