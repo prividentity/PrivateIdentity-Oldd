@@ -85,12 +85,13 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | 1:Many Identification | | |
 | **IR=99.99%** | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
 
-* Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
+* **Touchless** Face Recognition using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
 * Operates in polynomial time irrespective of gallery size 
 * Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset 
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
+* MobileNetV2 Architecture, 1.3MB
 
 ### Face + Mask Recognition  
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
@@ -102,12 +103,13 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | 1:Many Identification | | |
 | **IR=98.20%** | FPIR=0.0001% | FNIR=1.80% | Speed=300ms |
 
-* Recognizes faces **and faces with masks** using any general-purpose camera (webcams, phones) ≥256kB
+* **Touchless** Face w/ Mask Recognition using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
 * Operates in polynomial time irrespective of gallery size 
 * Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset 
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance. 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
+* MobileNetV2 architecture, 1.3MB
 
 ### Fingerprint Identification
 [![Click for Video Demo of Fingerprint Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Fingerprint%20recogni%20PLAY%203.png)](https://youtu.be/J10akfFzxHI "Fingerprint Identification for Cloud Biometric MFA")
@@ -118,13 +120,15 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | 1:Many Identification | | |
 | **IR=96.30%** | FPIR=0.0001% | FNIR=3.70% | Speed=300ms |
-* Recognizes fingerprints using optical scan (camera) or capacitive sensor 
-* Uses any general-purpose camera (Webcams, phones) ≥720P (1MP)
+* **Touchless** Fingerprint Identification using optical scan (camera) or capacitive sensor 
+* Supports any general-purpose camera (Webcams, phones) ≥720P (1MP)
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
 * Operates in polynomial time irrespective of gallery size 
 * Trained using the NIST Special Database 4 and CASIA-FingerprintV5 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.  
+* MobileNetV2 Architecture, 900kB
+* Accepts images from any finger
 
 ### Voice (Speaker) Identification 
 ![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
@@ -134,11 +138,12 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | 1:Many Identification | | |
 | **IR=95.20%** | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
-* Text-, language- and accent-independent voice identification with 1 second of audio
+* **Touchless** Text-, language- and accent-independent voice identification with 1 second of audio
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
 * Operates in polynomial time irrespective of gallery size 
 * Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
+* MobileNetv2 architecture, 3.5MB
 
 ### Geometry, Validation and Embedding DNNs
 
