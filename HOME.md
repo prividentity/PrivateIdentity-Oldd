@@ -93,7 +93,8 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 
 ### Face + Mask Recognition  
-![woman wearing face mask](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%201.png)
+[![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
+
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | 1:1 Verification | | |
