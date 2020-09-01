@@ -50,6 +50,11 @@ The system creates a [prediction](https://github.com/openinfer/PrivateIdentity/w
 ![Architecture on AWS](https://github.com/openinfer/PrivateIdentity/blob/master/images/Architecture%20On-Prem%201.png)
 > On-Premise Architecture
 
+### Web Tier ###
+The Web Tier provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric. 
+
+The Web Tier does not require on-device training and has no requirement for expensive hardware, cameras, GPUs, batteries or RAM. Devices with multi-threaded kernels operate in millisecond response time. Devices equipped with GPUs and Edge TPUs operate 70-100x faster. Less capable devices operate by offloading processing to Node.js using the “whereToProcess=nodeServer” URL parameter. 
+
 The [Client Applications](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) are responsible for:
 * [Creation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) of the biometric feature vector
 * Making an API call to [enroll](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#API-Enroll-Overview)
