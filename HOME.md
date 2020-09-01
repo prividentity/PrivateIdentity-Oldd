@@ -80,9 +80,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 ![woman's face](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20Recogni%201.png)<br>
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
-| **1:1 Verification** | | |
+| 1:1 Verification | | |
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
-| **1:Many Identification** | | |
+| 1:Many Identification | | |
 | **IR=99.99%** | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
 
 * Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
@@ -96,9 +96,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 ![woman wearing face mask](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%201.png)
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
-| **1:1 Verification** | | |
+| 1:1 Verification | | |
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
-| **1:Many Identification** | | |
+| 1:Many Identification | | |
 | **IR=98.20%** | FPIR=0.0001% | FNIR=1.80% | Speed=300ms |
 
 * Recognizes faces **and faces with masks** using any general-purpose camera (webcams, phones) ≥256kB
@@ -112,9 +112,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 ![man's finger](https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint%20recogni%201.png)
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
-| **1:1 Verification** | | |
+| 1:1 Verification | | |
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
-| **1:Many Identification** | | |
+| 1:Many Identification | | |
 | **IR=96.30%** | FPIR=0.0001% | FNIR=3.70% | Speed=300ms |
 * Recognizes fingerprints using optical scan (camera) or capacitive sensor 
 * Uses any general-purpose camera (Webcams, phones) ≥720P (1MP)
@@ -128,9 +128,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 ![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
-| **1:1 Verification** | | |
+| 1:1 Verification | | |
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
-| **1:Many Identification** | | |
+| 1:Many Identification | | |
 | **IR=95.20%** | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
 * Text-, language- and accent-independent voice identification with 1 second of audio
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
