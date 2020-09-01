@@ -52,26 +52,3 @@ Cloud Biometric MFA [enrollment](https://github.com/openinfer/PrivateIdentity/wi
 ## Prediction 
 The system creates a [prediction](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Predict-Overview) package (set of three FHE payloads) from live biometric sample(s) captured from the end user.  The prediction package is then validated by the FHE payload validation function and an encrypted match is identified by the Cloud AI service. An empty result is returned if no encrypted match is identified. If an encrypted result (UUID) is returned by the Identify function, this result is used by the 1:1 Verify function to calculate the similarity between prediction package and the user’s original enrollment package.  An encrypted result (UUID) is returned if a trusted user is identified.
 
-# Architecture Overview
-![Architecture on AWS](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Architecture%201.png)
-> AWS Architecture
-
-![Architecture on GCP](https://github.com/openinfer/PrivateIdentity/blob/master/images/GCP%20Architecture%201.png)
-> GCP Architecture 
-
-![Architecture on AWS](https://github.com/openinfer/PrivateIdentity/blob/master/images/Architecture%20On-Prem%201.png)
-> On-Premise Architecture
-
-
-
-
-The [Client Applications](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) are responsible for:
-* [Creation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) of the biometric feature vector
-* Making an API call to [enroll](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#API-Enroll-Overview)
-* Making an API call to [predict](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Predict-Overview)
-* Making an API call for [liveness](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Liveness-Overview)
-
-The [SPB Server](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#sbp-api-overview) is responsible for:
-* Saving Enrollment Data during [enrollment](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#API-Enroll-Overview) process for subsequent [predict](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview) API calls. 
-* Retrieving Enrollment Data to support the [predict](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#predict-overview) API call.  
-* Retrieving the probability that the [liveness](https://github.com/openinfer/PrivateIdentity/wiki/ieee-2410-standard-for-biometric-privacy-(SBP)-server#liveness-overview) data and result match.
