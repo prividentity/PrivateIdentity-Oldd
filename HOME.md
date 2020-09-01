@@ -5,17 +5,15 @@
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
 ## OVERVIEW
-* <b>Integrates easily</b> into your [IAM solution](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols), Web and mobile apps, and biometric pipeline using the included Javascript component ([embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)), [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api), [REST APIs](https://github.com/openinfer/PrivateIdentity/wiki#rest-apis), [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) and Biometric Search
+* <b>Integrates easily</b> into your [IAM solution](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols), Web and mobile apps, and [biometric pipeline](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) using the included Javascript component ([embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)), [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api), [REST APIs](https://github.com/openinfer/PrivateIdentity/wiki#rest-apis), [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) and [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search)
 
 * <b>Deploys instantly </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy.
 
 * <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
 
-* <b>Processes only anonymized data</b> and no biometric data, biometric identifiers or biometric templates. 
+* <b>Exempt from GDPR, CCPA and BIPA obligations</b> as documented in [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
 
-* <b>Exempt from GDPR, CCPA and BIPA obligations</b>, as documented in [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
-
-* <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. The mobile DNNs also accommodate boundary conditions with up to 30% occlusions including facial hair, abrasions, masks, and blurry or rotated images.
+* <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. Also accommodates boundary conditions with up to 30% occlusions including face masks, facial hair, abrasions and blurry or rotated images.
 
 ## RESOURCES
 
