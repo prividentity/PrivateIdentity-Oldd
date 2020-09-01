@@ -150,7 +150,7 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 
 #### Validation DNNs for Face, Face w/Mask and Fingerprint 
 * <b>Accurately aligns & crops</b> each frontalized face input image
-* <b>Detects photo or video attack (anti-spoofing)</b> during unattended operation
+* <b>Detects photo or video attack (anti-spoofing)</b> during unattended operation [**(Demo)**](https://youtu.be/NajcsUsrnbI)
 * <b>Detects blinking</b> (eyes open/closed) for real-time passive facial liveness (anti-spoofing)
 * <b>Detects face mask</b> if the user is wearing a face mask. 
 * <b>Detects eyeglasses</b> before allowing enrollment
