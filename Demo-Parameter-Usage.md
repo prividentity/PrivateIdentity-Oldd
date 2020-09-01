@@ -90,7 +90,7 @@ Spoofing is a well-known scenario when a user with malicious intent tries to byp
 
 To enable the anti-spoofing in the application, add the URL parameter `antiVideoSpoof=true` while launching the application. This enables the application to check whether the stream of images captured from the webcam is a recorded one or a live one. This is achieved by a machine learning model running in the browser that checks the image passed to it and gives back a probability of whether the image is a spoofed one or not. If the spoofing is detected, the application won't allow the user to perform the requested operation until it is a live one. There are two models to detect when someone is spoofing, the first one detects if the spoof origin is a video on a device or an image on a device. The second one detects if the spoof origin is a print image. So for example if someone tried using a spoof printed image of a face, it will pass through the device image or device video model, but will be caught on the print image model and be detected as spoof.
 
-Sample Demonstration of Video Spoofing:
+[Sample Demonstration of Video Spoofing](https://youtu.be/NajcsUsrnbI):
 
 ![Video Spoof Demo](https://github.com/openinfer/PrivateIdentity/blob/master/images/Spoof_Icon_Example.png)
 
