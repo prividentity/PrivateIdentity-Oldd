@@ -16,7 +16,7 @@
 
 * [**Identity Proofing**](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
 
-* [**Open Standards**](https://github.com/openinfer/PrivateIdentity/wiki#open-standards-encryption--privacy)
+* [Open Standards](https://github.com/openinfer/PrivateIdentity/wiki#open-standards-encryption--privacy)
 
 * [**IAM Integrations**](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1)
 
@@ -32,11 +32,9 @@
 
 [**Technical Overview**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
-[Biometric Matching Algorithms](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Matching-Algorithms)
+[**Evaluation Metrics** for Recognition DNNs](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
 
-[Evaluation Metrics for Recognition DNNs](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
-
-[**IEEE 2410 Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
+[**Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
 * [IEEE 2410 Standard for Biometric Privacy <br>(Approved Draft)](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)
 
