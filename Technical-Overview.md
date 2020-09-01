@@ -55,6 +55,11 @@ The Web Tier provides users with massively horizontally scalable, browser-based 
 
 The Web Tier does not require on-device training and has no requirement for expensive hardware, cameras, GPUs, batteries or RAM. Devices with multi-threaded kernels operate in millisecond response time. Devices equipped with GPUs and Edge TPUs operate 70-100x faster. Less capable devices operate by offloading processing to Node.js using the “whereToProcess=nodeServer” URL parameter. 
 
+### Server Tier ###
+
+The server Tier takes the FHE (Fully Homomorphic Encryption) from the Web Tier and store it inside the Database for persistance storage.
+Server perform comparison between FHE and already stored FHE in the Database. IT gives comparison results back to Web Tier.   
+
 The [Client Applications](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) are responsible for:
 * [Creation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) of the biometric feature vector
 * Making an API call to [enroll](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#API-Enroll-Overview)
