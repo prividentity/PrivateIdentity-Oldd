@@ -81,9 +81,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | **1:1 Verification** | | |
-| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
+| **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | **1:Many Identification** | | |
-| IR=99.99% | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
+| **IR=99.99%** | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
 
 * Recognizes faces using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
@@ -97,9 +97,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | **1:1 Verification** | | |
-| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
+| **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | **1:Many Identification** | | |
-| IR=98.20% | FPIR=0.0001% | FNIR=1.80% | Speed=300ms |
+| **IR=98.20%** | FPIR=0.0001% | FNIR=1.80% | Speed=300ms |
 
 * Recognizes faces **and faces with masks** using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
@@ -113,9 +113,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | **1:1 Verification** | | |
-| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
+| **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | **1:Many Identification** | | |
-| IR=96.30% | FPIR=0.0001% | FNIR=3.70% | Speed=300ms |
+| **IR=96.30%** | FPIR=0.0001% | FNIR=3.70% | Speed=300ms |
 * Recognizes fingerprints using optical scan (camera) or capacitive sensor 
 * Uses any general-purpose camera (Webcams, phones) ≥720P (1MP)
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
@@ -129,9 +129,9 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | **1:1 Verification** | | |
-| TMR=99.99% | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
+| **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | **1:Many Identification** | | |
-| IR=95.20% | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
+| **IR=95.20%** | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
 * Text-, language- and accent-independent voice identification with 1 second of audio
 * Enrolls an unlimited number of users (“unlimited gallery size”) 
 * Operates in polynomial time irrespective of gallery size 
