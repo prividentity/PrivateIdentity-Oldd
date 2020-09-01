@@ -92,7 +92,7 @@
 
 [**Biometric Ingestion and Helper Models**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs)
 
-[**Client Applications**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
+[**Single Component JavaScript App**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications)
 
 * [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
 
