@@ -165,6 +165,43 @@ The response of add role request returns <role_id> of the <tag> and <value> adde
    “message” : “Role exists in database”
 }
 ```
+### Delete Subject Overview
+This API deletes a subject from the database. To delete the subject from the database, the user must know the <subject_id>. The request must be a post with the values passed in the request body as JSON.
+
+
+**Request**
+
+The format of this API call is: 
+
+POST  “/trueid/v1.1/delete_subject”
+
+|Parameter | Value           |
+|----------|-----------------|
+|subject_id   | Number, Subject ID |
+|api_key     | api_key in string value|
+
+```
+{
+    "subject_id": 1,
+    "api_key": "xxxxx"
+}
+```
+**Response**
+
+The response of delete subject request returns a status of 0 upon successful deletion. <subject_id> must be passed in the request body. If the delete subject fails, API will return a status of -2 with the reason in the message.
+```
+{
+   “status”: 0
+   “message” : “Subject Successfully deleted.”
+}
+
+{
+   “status”: -2
+   “message” : “SubjectID does not exists in database”
+}
+```
+
+
 ### Delete Role Overview
 
 This API helps delete a role parametres from the database. To delete the role from the database, the user must know the <role_id> acquired during the addition of role to the database. The request must be a post with the values passed in the request body as JSON.
