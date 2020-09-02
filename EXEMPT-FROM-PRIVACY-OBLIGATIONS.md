@@ -1,6 +1,6 @@
 # The Private Identity System is Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations 
 
-## OVERVIEW 
+## Overview
 * [<b>Fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (FHE) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
 * Cloud Biometric MFA is certified compliant with [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D). This Standard requires FHE for private identity assertion and authentication. 
 * Compliance with <b>IEEE 2410, "...guarantees the SBP system </b>does not incur GDPR, CCPA, BIPA or HIPAA privacy obligations." </b>
