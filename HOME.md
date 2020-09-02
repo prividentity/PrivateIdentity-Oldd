@@ -11,7 +11,7 @@
 
 * <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
 
-* <b>[Exempt from GDPR, CCPA, BIPA and HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) privacy law obligations</b>. 
+* <b>Exempt from GDPR, CCPA, BIPA and HIPAA</b> privacy law obligations. [Read more...](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) 
 
 * <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. Also accommodates boundary conditions with up to 30% occlusions including face masks, facial hair, abrasions and blurry or rotated images.
 
