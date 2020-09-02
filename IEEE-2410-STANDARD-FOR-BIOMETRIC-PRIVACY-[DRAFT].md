@@ -493,6 +493,19 @@ These principles must lie at the heart of each organization’s approach to proc
 
 SBP systems enable customers to advance the principles of the GDPR by transforming biometrics into anonymized FHE payloads. This eliminates the requirement for organizations to gather personal data to support robust security and advances the integrity and confidentiality principle and the data minimization principle of the GDPR [5]. Please see the chart below to view in greater detail how SBP systems enable customers to advance each of these principles. 
 
+#### 9.5.1 FHE Payloads Contain Anonymized Data
+The GDPR provides a high bar for achieving data anonymization.  This process is described in the GDPR Recital 26:
+> “To determine whether a natural person is identifiable, account should be taken of all the means reasonably likely to be used, such as singling out, either by the controller or by another person to identify the natural person directly or indirectly. 
+> To ascertain whether means are reasonably likely to be used to identify the natural person, account should be taken of all objective factors, such as the costs of and the amount of time required for identification, taking into consideration the available technology at the time of the processing and technological developments”.
+> To be classified as anonymized data, the deidentification of the personal data must be “irreversible” and must be retained in a form in which identification of a data subject “is no longer possible.” [6,7] 
+
+Turning to the FHE payloads and UUIDs, we consider whether these are anonymized data by applying the following criteria:
+1. Do the FHE payloads or UUIDs contain any identifiers or other data that could identify the individual or device to whom the data relates?
+1. Is there any data in the organization’s possession that could be combined with the FHE payloads or UUIDs to identify the individual or device to whom the data relates?
+1. Are the FHE payloads or UUIDs reversible?
+1. Can the FHE payloads or UUIDs be linked to an individual?
+The answer is “no” to each for reasons set out above. Thus, the FHE payloads and UUIDs are not personal data under the GDPR. Accordingly, the GDPR’s principles do not apply to the FHE payloads or UUIDs.
+
 #### 9.5.2 FHE Payloads Do Not Contain Biometric Data
 We next consider biometric data.  Biometric data is required to be treated as a special category of personal data under the GDPR and is subject to increased compliance obligations. The GDPR defines biometric data as:
 
