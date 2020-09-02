@@ -130,7 +130,7 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 * Accepts images from any finger
 
 ### Voice (Speaker) Identification 
-![man speaking into phone](https://github.com/openinfer/PrivateIdentity/blob/master/images/voice%20recogni%201.png)
+[![Click for Video Demo of Voice Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Voice%20PLAY%201.png)](https://youtu.be/eCfB8ixRapw "Voice Recognition for Cloud Biometric MFA")
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
 | 1:1 Verification | | |
