@@ -1,4 +1,4 @@
-# FHE EXEMPTS SBP SYSTEMS FROM GDPR, CCPA, BIPA and HIPAA PRIVACY OBLIGATIONS
+# SBP SYSTEMS EXEMPT FROM GDPR, CCPA, BIPA and HIPAA PRIVACY OBLIGATIONS
 
 ## OVERVIEW 
 * <b>Fully homomorphic encryption.</b> FHE enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
