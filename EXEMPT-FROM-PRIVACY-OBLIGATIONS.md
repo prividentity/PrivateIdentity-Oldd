@@ -3,15 +3,14 @@
 ## OVERVIEW 
 * [<b>Fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (FHE) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
 * Cloud Biometric MFA is certified compliant with [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D). The SBP requires FHE for private identity assertion and authentication. 
-* <b>Adherence to IEEE 2410, "...guarantees the SBP system </b>does not incur GDPR, CCPA, BIPA or HIPAA privacy obligations." 
-* <b>FHE payloads are anonymized data.</b> The FHE payload is a globally unique positional array that does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait. 
+* Compliance with <b>IEEE 2410, "...guarantees the SBP system </b>does not incur GDPR, CCPA, BIPA or HIPAA privacy obligations." </b>
+* <b>FHE payloads are anonymized data.</b> The FHE payload is a globally unique positional array that does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait (embeddings, or vector encryptions). 
 * <b>UUIDs are anonymized data.</b> The Cloud Biometric MFA system generates a universally unique identifier (“UUID”) to label each end user instead of using a username, email address or other personal data. This UUID cannot be tied back to an individual/end user by Private Identity. Therefore, this UUID is also anonymized data. 
 * <b>FHE payloads and UUIDs are not “personal data” or “biometric data” </b>under the GDPR, “personal information” or “biometric information” under the CCPA, “biometric identifiers” or “biometric information” under the BIPA, and are not “protected health information” under the HIPAA. 
-* As such, <b>GDPR, CCPA, and BIPA laws do not apply to the Cloud Biometric MFA system. 
-* Moreover, because the Cloud Biometric MFA system processes only anonymized data, this eliminates the data subject’s rights that would otherwise arise when personal data is being processed.  
-* Finally, the loss of any FHE payloads and UUIDs would not constitute a breach of biometric data or personal data because they do not constitute personal data.
-* Using Private Identity allows organizations to minimize the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data protection laws worldwide. For example, the Cloud Biometric MFA system fulfills the GDPR, CCPA and BIPA’s regulatory and policy goals by.  
-* This brief is based on [IEEE 2410 Standard for Biometric Privacy]( https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D), Pillsbury’s “Data Privacy and Compliance in the Age of Fully Homomorphic Encryption (FHE): GDPR, CCPA and BIPA.” (8/2020) and on regulatory guidance currently available on the key principles under the relevant laws discussed. _This analysis of data privacy laws does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations._
+* <b>This eliminates the data subject’s rights </b>that would otherwise arise when personal data is being processed. Cloud Biometric MFA system processes only anonymized data and not personal data.   
+* <No notification requirements.</b> Finally, the loss of any FHE payloads and UUIDs would not constitute a breach of biometric data or personal data because they do not constitute personal data.
+* <b>Cloud Biometric MFA system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data protection laws worldwide.   
+* IMPORTANT NOTE: _This analysis of data privacy laws does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations._
 
 ## RESOURCES
 **IEEE 2410-2020 Standard for Biometric Privacy**<br>
@@ -30,7 +29,7 @@ Streit, S. (2020).  "Systems and methods for privacy-enabled biometric processin
 S. Streit, B. Streit, and S. Suffian, “Privacy-Enabled Biometric Search,” Aug. 2017. [Link](https://arxiv.org/abs/1708.04726)
 
 **DHS:  Risks and Opportunities of Contactless Biometrics.**<br>
-_IARPA launched the HECTOR R&D program in 2017 and reported that law enforcement agencies and private sector companies may, “leverage these new forms of Personal Identifying Information (PII) without encroaching on civil liberties…”_<br>
+_IARPA launched the Homomorphic Encryption Computing Techniques with Overhead Reduction (HECTOR) R&D program in 2017 and reported that law enforcement agencies and private sector companies may, “leverage these new forms of Personal Identifying Information (PII) without encroaching on civil liberties…”_<br>
 “Risks and Opportunities of Contactless Biometrics.” US Office of the Director of National Intelligence. (9/2017) Public-Private Analytic Exchange Program. Retrieved 3/20/2020 from https://www.hsdl.org/?abstract&did=809318. Page 3.
 
 **Wikipedia:  Private Biometrics**<br>
