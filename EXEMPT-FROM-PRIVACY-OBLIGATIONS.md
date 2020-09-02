@@ -28,3 +28,10 @@ Streit, S. (2020).  "Systems and methods for privacy-enabled biometric processin
 
 **Paper: Privacy-Enabled Biometric Search**<br>
 S. Streit, B. Streit, and S. Suffian, “Privacy-Enabled Biometric Search,” Aug. 2017. [Link](https://arxiv.org/abs/1708.04726)
+
+**DHS:  Risks and Opportunities of Contactless Biometrics.**<br>
+_IARPA launched the HECTOR R&D program in 2017 and reported that law enforcement agencies and private sector companies may, “leverage these new forms of Personal Identifying Information (PII) without encroaching on civil liberties…”_<br>
+“Risks and Opportunities of Contactless Biometrics.” US Office of the Director of National Intelligence. (9/2017) Public-Private Analytic Exchange Program. Retrieved 3/20/2020 from https://www.hsdl.org/?abstract&did=809318. Page 3.
+
+**Wikipedia:  Private Biometrics**<br>
+Wikipedia contributors. (2020, February 17). Private biometrics. In Wikipedia, The Free Encyclopedia. Retrieved September 2020, from https://en.wikipedia.org/w/index.php?title=Private_biometrics&oldid=941261347
