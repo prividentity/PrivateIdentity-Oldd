@@ -7,13 +7,13 @@
 ## OVERVIEW
 * <b>Integrates easily</b> into your [IAM solution](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols), Web and mobile apps, and [biometric pipeline](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) using the included Javascript component ([embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)), [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api), [REST APIs](https://github.com/openinfer/PrivateIdentity/wiki#rest-apis), [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) and [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search)
 
-* <b>Deploys instantly </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy.
+* <b>Deploys instantly </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy. [Read more...](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)
 
 * <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
 
 * <b>Exempt from GDPR, CCPA, BIPA and HIPAA</b> privacy law obligations. [Read more...](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) 
 
-* <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. Also accommodates boundary conditions with up to 30% occlusions including face masks, facial hair, abrasions and blurry or rotated images.
+* <b>Non-biased algorithms </b>[recognize everybody](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) equally across all ethnicities, skin tones, genders and ages. Also accommodates boundary conditions with up to 30% occlusions including face masks, facial hair, abrasions and blurry or rotated images.
 
 ## RESOURCES
 
@@ -38,6 +38,7 @@
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
 * Built with Javascript, TensorFlow.js and an ensemble of helper DNNs 
 * Runs on 90% of all modern devices 
+* [More Information](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)
 
 The Javascript client provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric. 
 
@@ -48,16 +49,16 @@ The Web client acquires the biometric using an ensemble of pre-trained TensorFlo
 [Link](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications) for additional information.
 
 ### Built-in Privacy
-* Fully homomorphic encryption (FHE) complies with privacy laws worldwide including GDPR, CCPA and BIPA 
+* Uses [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE) to [only process anonymized data](https://github.com/openinfer/PrivateIdentity/wiki/Exempt-from-Privacy-Obligations#cloud-biometric-mfa-processes-only-anonymized-data).  
 * Certified compliant with [IEEE 2410](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) Standard for Biometric Privacy 
-
+* [Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Law Obligations](https://github.com/openinfer/PrivateIdentity/wiki/Exempt-from-Privacy-Obligations)
 Fully homomorphic encryption (FHE) mitigates the regulatory and legal privacy risk of biometric data by enabling mathematical operations on an encrypted dataset. This eliminates all requirements to process plaintext biometrics or templates.
 
 Specifically, biometric data is irreversibly anonymized using a 1-way cryptographic hash algorithm and then discarded (deleted) without the data ever leaving the local device. To accomplish this, the system transforms biometric data inputs into FHE payloads that are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait. 
 
-This anonymized FHE payload ceases to be biometric data or personal data because the system eliminates any known or foreseeable possibility of linking any of the data to the individual to whom the data originally related. As a result, the FHE is not “Personal Data” under General Data Protection Regulation (EU) 2016/679 (“GDPR”) or the California Consumer Privacy Act (“CCPA”) and is not “Biometric Information” under the Biometric Information Privacy Act (“BIPA”).  
+This anonymized FHE payload ceases to be biometric data or personal data because the system eliminates any known or foreseeable possibility of linking any of the data to the individual to whom the data originally related. As a result, the [FHE is not “Personal Data” under General Data Protection Regulation (EU) 2016/679 (“GDPR”)](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data), [is not "Personal Information" under the California Consumer Privacy Act (“CCPA”)](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information), [is not “Biometric Information” under the Biometric Information Privacy Act (“BIPA”)](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) and [is not "Individually Identifiable Health Information" under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA")](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information).
 
-The data subject’s rights provided under each of these statutes thus fall away, and businesses may utilizes this biometric solution without subjecting their organizations to GDPR, CCPA or BIPA data subject rights or special handling requirements for personal data, biometric data, biometric identifiers, or associated data breach notification requirements. Finally, a breach of the Cloud Biometric MFA system would not result in the loss of any biometric data or personal data.  _(The analysis of data privacy laws in this Website does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations.)_
+The data subject’s rights provided under each of these statutes thus fall away (see reference for [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#953-fhe-payloads-are-not-subject-to-gdpr-obligations), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#963-fhe-payloads-are-not-subject-to-ccpa-obligations), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#972-fhe-payloads-do-not-incur-bipa-obligations), and [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information)), and businesses may utilizes this biometric solution without subjecting their organizations to GDPR, CCPA or BIPA data subject rights or special handling requirements for personal data, biometric data, biometric identifiers, or associated data breach notification requirements. Finally, a breach of the Cloud Biometric MFA system would not result in the loss of any biometric data or personal data.  _(The analysis of data privacy laws in this Website does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations.)_
 
 ### Flexible Deployment
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
