@@ -4,13 +4,16 @@
 * [<b>Fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (FHE) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
 * Cloud Biometric MFA is certified compliant with [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D). This Standard requires FHE for private identity assertion and authentication. 
 * Compliance with <b>IEEE 2410, "...guarantees the SBP system </b>does not incur GDPR, CCPA, BIPA or HIPAA privacy obligations." </b>
+### Cloud Biometric MFA Processes Only Anonymized Data
 * <b>FHE payloads are anonymized data.</b> The FHE payload is a globally unique positional array that does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait (embeddings, or vector encryptions). 
 * <b>UUIDs are anonymized data.</b> The Cloud Biometric MFA system generates a universally unique identifier (“UUID”) to label each end user instead of using a username, email address or other personal data. This UUID cannot be tied back to an individual/end user by Private Identity. Therefore, this UUID is also anonymized data. 
 * <b>FHE payloads and UUIDs are not “personal data” or “biometric data” </b>under the GDPR, “personal information” or “biometric information” under the CCPA, “biometric identifiers” or “biometric information” under the BIPA, and are not “protected health information” under the HIPAA. 
-* <b>This eliminates the data subject’s rights </b>that would otherwise arise when personal data is being processed. Cloud Biometric MFA system processes only anonymized data and not personal data.   
-* <No notification requirements.</b> Finally, the loss of any FHE payloads and UUIDs would not constitute a breach of biometric data or personal data because they do not constitute personal data.
-* <b>Cloud Biometric MFA system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data protection laws worldwide.   
-* IMPORTANT NOTE: _This analysis of data privacy laws does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations._
+
+### Cloud Biometric MFA is exempt from privacy law obligations
+* <b>Cloud Biometric MFA system processes only anonymized data</b> and not personal data. This eliminates the data subject’s rights that would otherwise arise when personal data is being processed.    
+* <b>The loss of any FHE payloads and UUIDs from Cloud Biometric MFA would not constitute a breach</b> of biometric data or personal data because they do not constitute personal data.
+* <b>Cloud Biometric MFA system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals</b> by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data protection laws worldwide.   
+* <b>IMPORTANT:</b> _This analysis of data privacy laws does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations._
 
 ## RESOURCES
 **IEEE 2410-2020 Standard for Biometric Privacy**<br>
