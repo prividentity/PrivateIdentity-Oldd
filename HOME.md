@@ -11,22 +11,21 @@
 
 * <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
 
-* <b>Exempt from GDPR, CCPA and BIPA obligations</b> as documented in [IEEE 2410 Standard for Biometric Privacy](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D).
+* <b>[Exempt from GDPR, CCPA, BIPA and HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) privacy law obligations</b>. 
 
 * <b>Non-biased algorithms </b>recognize everybody equally across all ethnicities, skin tones, genders and ages. Also accommodates boundary conditions with up to 30% occlusions including face masks, facial hair, abrasions and blurry or rotated images.
 
 ## RESOURCES
 
 * <b>[Short Introduction](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction")</b> [YouTube] 
+
 * <b>Getting Started with Private Identity</b> [YouTube]
 
-* <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview#basic-architecture) </b>[Developer Wiki]
+* <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview) </b>[Developer Wiki]
 
 * <b>[Demo Video](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
 
 * <b>[Discussion with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
-
-* <b>White Paper </b> [Google Doc]  (Needs editing!)
 
 * <b>[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) </b>[Wikipedia]
 
