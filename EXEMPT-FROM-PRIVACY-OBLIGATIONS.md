@@ -1,4 +1,4 @@
-# PRIVATE IDENTITY SYSTEM IS EXEMPT FROM GDPR, CCPA, BIPA and HIPAA PRIVACY OBLIGATIONS
+# The Private Identity System is Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations 
 
 ## OVERVIEW 
 * <b>Fully homomorphic encryption</b> (FHE) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
