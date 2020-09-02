@@ -154,14 +154,14 @@ The resulting DNN recognizes everybody equally with an  [accuracy of 99.92%.](ht
 
 #### Validation DNNs for Face, Face w/Mask and Fingerprint 
 * <b>Accurately aligns & crops</b> each frontalized face input image
-* <b>Detects photo or video attack (anti-spoofing)</b> during unattended operation [**(Demo)**](https://youtu.be/NajcsUsrnbI)
+* <b>Detects photo or video attack (anti-spoofing)</b> during unattended operation 
 * <b>Detects blinking</b> (eyes open/closed) for real-time passive facial liveness (anti-spoofing)
 * <b>Detects face mask</b> if the user is wearing a face mask. 
 * <b>Detects eyeglasses</b> before allowing enrollment
 * <b>Returns a validation score</b> between 0 to 100, where 100 is a perfect image.  
 * MobileNetV2 architecture, 1.5MB
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face--fingerprint-validation-dnns) for additional information
-
+* [**(Image and video anti-Spoofing demo)**](https://youtu.be/NajcsUsrnbI)
 #### Validation DNN for Voice
 * <b>Validates audio input</b> for a quality human voice to discriminate between a voice and external noise
 * YOLO architecture, 100kB
@@ -286,7 +286,8 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 * [Setup](https://github.com/openinfer/PrivateIdentity/wiki/DIV-HTML)
 
 ### JavaScript APIs (Predict Enroll API)
-![Image of Javascript API ](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%202.png)
+[![Click for Video Demo of JavaScript APIs](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%20PLAY%201.png)](https://youtu.be/wjaFHuELTJA "JavaScript APIs for Cloud Biometric MFA")
+
 * Lightweight Javascript library with 2 API calls (enroll and predict) 
 * Accepts image and audio inputs and returns UUID
 * Includes a Web sandbox to exercise the API 
