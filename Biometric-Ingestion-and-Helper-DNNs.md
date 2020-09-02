@@ -48,6 +48,10 @@ The Face, Face+Mask, and Fingerprint Embedding DNNs maintain full accuracy throu
 
 ### VOICE (SPEAKER) IDENTIFICATION
 ![Voice recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Voice.png)
+
+### VOICE VALIDATION DNN
+The Voice Validation DNN accepts a sound wave as input and returns a validation score between 0 to 100, where 100 is a perfect audio where the voice is isolated enough to create a valid embedding. 
+
 ### VOICE INPUT SEGMENTATION 
 Voice Input Segmentation generalizes the enrollment, improves accuracy and performance during prediction, and allows the DNN to handle real-world conditions. Every enrollment requires >50 10ms voice samples to maintain accuracy and performance. The algorithm uses a sliding 10ms window across one second of input to reach or exceed 50 samples. 
 
