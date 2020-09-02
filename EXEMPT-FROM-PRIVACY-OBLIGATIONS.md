@@ -15,7 +15,7 @@
 * <b>Cloud Biometric MFA system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals</b> by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data protection laws worldwide.   
 * <b>IMPORTANT:</b> _This analysis of data privacy laws does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations._
 
-## RESOURCES
+## Resources
 **IEEE 2410-2020 Standard for Biometric Privacy**<br>
 IEEE-SA Standards Board (2020). "IEEE 2410 Standard for Biometric Privacy." The Institute of Electrical and Electronics Engineers (New York, NY). [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)
 
