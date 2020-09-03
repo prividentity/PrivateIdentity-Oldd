@@ -154,6 +154,8 @@
 
 [**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
 
+* [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Maryland-Test-Facility)
+
 [**Known Processing Issues**](https://github.com/openinfer/PrivateIdentity/wiki/Known-Processing-Issues)
 
 [**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
