@@ -1,18 +1,18 @@
-**The Maryland Test Facility Public Code Repository**
+## The Maryland Test Facility Public Code Repository
 
-Public code that supports software integration efforts at the Maryland Test Facility Website. More details can be found at [The MdTF](https://github.com/TheMdTF/mdtf-public)
+Public code that supports this software integration at the [MdTF Website](https://github.com/TheMdTF/mdtf-public)
 
-**Rally2-matching-system**
+## Rally2-matching-system
 
-Maryland Test Facility has a rally2-matching-system that performs the comparison of biometric types and evaluates the performance of the matching system.
+MdTF has a rally2-matching-system that performs the comparison of biometric types and evaluates the performance of the matching system.
 
-**API:**
+## API
 
 The API definition for matching systems can be found in the [Rally2-Matching-System](https://github.com/TheMdTF/mdtf-public/tree/master/rally2-matching-system/api)
 
-For integrating the code to the Maryland Test Facility there are three API Calls that have been exposed:
+Three API Calls have been exposed:
 
-**1. `GET /v1/info`**
+### 1. `GET /v1/info`
 
 This API call produces a JSON output that explains the information of the algorithm like version, system requirements, and contact details.
 
@@ -29,7 +29,7 @@ _Sample Output:_
 }`
 
 
-**2. `POST /v1/create-template`**
+### 2. `POST /v1/create-template`
 
 This API call is responsible for consuming the image data and produces a template for comparing it with other templates. A Template should be in the form of a base64 encoded string.
 
@@ -44,7 +44,7 @@ _Sample Output:_
 }`
 
 
-**3. `POST /v1/compare-list`**
+### 3. `POST /v1/compare-list`
 
 This API call performs the comparison of the main template with all the requested templates and produces a `Score` and `Normalized Score` for every 1:1 comparison.
 
