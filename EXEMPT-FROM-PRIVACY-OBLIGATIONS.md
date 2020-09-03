@@ -1,19 +1,34 @@
-# The Private Identity System is Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations 
+# The Cloud Biometric MFA System is Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations 
 
 ## Overview
 * [<b>Fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (FHE) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
-* Cloud Biometric MFA is certified compliant with [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D). This Standard requires FHE for private identity assertion and authentication. 
-* Compliance with <b>IEEE 2410, "...guarantees the SBP system </b>does not incur GDPR, CCPA, BIPA or HIPAA privacy obligations." </b>
-### Cloud Biometric MFA Processes Only Anonymized Data
+* [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) requires FHE for private identity assertion and authentication. 
+* IEEE 2410 compliance, "...<b>guarantees the SBP system does not incur </b>GDPR, CCPA, BIPA or HIPAA privacy obligations." </b>
+## Cloud Biometric MFA processes only "anonymized data."
 * <b>FHE payloads are anonymized data.</b> The FHE payload is a globally unique positional array that does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait (embeddings, or vector encryptions). 
 * <b>UUIDs are anonymized data.</b> The Cloud Biometric MFA system generates a universally unique identifier (“UUID”) to label each end user instead of using a username, email address or other personal data. This UUID cannot be tied back to an individual/end user by Private Identity. Therefore, this UUID is also anonymized data. 
 * <b>FHE payloads and UUIDs are not “personal data” or “biometric data” </b>under the GDPR, “personal information” or “biometric information” under the CCPA, “biometric identifiers” or “biometric information” under the BIPA, and are not “protected health information” under the HIPAA. 
 
 ### Cloud Biometric MFA is exempt from privacy law obligations
-* <b>Cloud Biometric MFA system processes only anonymized data</b> and not personal data. This eliminates the data subject’s rights that would otherwise arise when personal data is being processed.    
-* <b>The loss of any FHE payloads and UUIDs from Cloud Biometric MFA would not constitute a breach</b> of biometric data or personal data because they do not constitute personal data.
-* <b>Cloud Biometric MFA system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals</b> by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data protection laws worldwide.   
+* <b>The system processes only anonymized data</b> and not personal data. This eliminates the data subject’s rights that would otherwise arise when personal data is being processed.    
+* <b>The loss of any FHE payloads and UUIDs would not constitute a breach</b> of biometric data or personal data. FHE payloads do not constitute personal data.
+* <b>The system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals</b> by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data privacy laws worldwide.   
+
+## GDPR
+Cloud Biometric MFA systems enable customers to, "advance the principles of the GDPR by transforming biometrics into anonymized FHE payloads. This eliminates the requirement for organizations to gather personal data to support robust security and advances the integrity and confidentiality principle and the data minimization principle of the GDPR." 
+See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#95-gdpr) for full discussion.
+### FHE Payloads Contain "Anonymized Data"
+* "FHE payloads and UUIDs are not personal data under the GDPR. Accordingly, the GDPR’s principles do not apply to the FHE payloads or UUIDs."  
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) for full discussion. 
+### FHE Payloads Do Not Contain "Biometric Data"
+* "The FHE payload with UUID does not qualify as biometric data. In particular, the FHE payload does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait."
+* "The UUID is a randomly generated, universally unique identifier that cannot be tied back to an individual/end user once assigned and in the possession of an entity utilizing SBP systems."
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#952-fhe-payloads-do-not-contain-biometric-data) for full discussion. 
+
+
+
 * <b>IMPORTANT:</b> _This analysis of data privacy laws does not constitute legal advice and all businesses should seek counsel concerning their data privacy legal and compliance obligations._
+
 
 ## Resources
 **IEEE 2410-2020 Standard for Biometric Privacy**<br>
