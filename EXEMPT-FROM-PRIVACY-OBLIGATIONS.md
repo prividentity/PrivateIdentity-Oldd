@@ -24,6 +24,54 @@ See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-
 * "The FHE payload with UUID does not qualify as biometric data. In particular, the FHE payload does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait."
 * "The UUID is a randomly generated, universally unique identifier that cannot be tied back to an individual/end user once assigned and in the possession of an entity utilizing SBP systems."
 * See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#952-fhe-payloads-do-not-contain-biometric-data) for full discussion. 
+### System is not subject to GDPR obligations
+* "The GDPR does not regulate the processing of anonymized information [GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679). 
+* In Recital 26, the GDPR specifically refers to anonymization to exclude anonymized data from the scope of the data protection legislation, stating:
+
+> “The principles of data protection should therefore not apply to anonymous information, namely information which does not relate to an identified or identifiable natural person or to personal data rendered anonymous in such a manner that the data subject is not or no longer identifiable. This Regulation does not therefore concern the processing of such anonymous information, including for statistical or research purposes” [GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679).
+
+* "We conclude that the FHE payloads and UUIDs are not subject to the requirements of GDPR because they constitute anonymized data and do not contain personal data or biometric data."
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) for full discussion. 
+
+## CCPA Analysis
+* The system helps, "advance the CCPA’s data minimization goals by transmitting, storing and using (processing) only deidentified data and deleting all personal information immediately after it is transformed into FHE payloads."
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#96-ccpa) for full discussion. 
+
+### FHE Payloads Contain "Deidentified Information"
+* "The CCPA defines and regulates “personal information” as “information that identifies, relates to, describes, is capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household.” 
+* The system fully realizes the CCPA’s legislative goals by, "transforming personal information into FHE payloads and UUIDs that are treated as “deidentified” data under the CCPA."
+* The system only transmits, stores or uses deidentified (anonymized) data. 
+* The system does not, "transmit, store or use any other personal data or biometric data, machine or device identifications, metadata, or any other identifying information."
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) for full discussion. 
+
+### FHE Payloads Do Not Contain "Biometric Information"
+* The CCPA defines biometric information as follows.
+> “…an individual’s physiological, biological or behavioral characteristics, including an individual’s DNA, that can be used, singly or in combination with each other or with other identifying data, to establish individual identity. Biometric information includes, but is not limited to, imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, and voice recordings, from which an identifier template, such as a faceprint, a minutiae template, or a voiceprint, can be extracted, and keystroke patterns or rhythms, gait patterns or rhythms, and sleep, health, or exercise data that contain identifying information.” [CCPA 1798.140(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.).
+* "The encrypted FHE payloads and UUIDs created by SBP systems do not qualify as biometric data under the CCPA. These FHE payloads and UUIDs contain no biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait."
+* "Accordingly, the encrypted FHE payloads and UUIDs should not be treated as biometric information under the CCPA."
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#962-fhe-payloads-do-not-contain-biometric-information) for full discussion. 
+
+### FHE Payloads Are Not Subject to CCPA Obligations
+* "<b>Businesses processing deidentified data are not obligated</b> to provide or delete information in response to a consumer request or to re-identify individual data to verify a consumer request." 
+> “If a business maintains consumer information that is deidentified, a business is not obligated to provide or delete this information in response to a consumer request or to re-identify individual data to verify a consumer request.”  [see California Consumer Privacy Act Regulations at § 999.323(f)](https://www.oag.ca.gov/sites/all/files/agweb/pdfs/privacy/ccpa-proposed-regs.pdf)
+* The CCPA Regulations at § [1798.140(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.)further excludes deidentified information from the scope of the legislation. 
+* “ “Deidentification” means information that cannot reasonably identify, relate to, describe, be capable of being associated with, or be linked, directly or indirectly to a particular consumer, provided that a business that uses deidentified information [has implemented technical and process safeguards that prohibit reidentification of the consumer, has implemented processes to prevent inadvertent release of deidentified information, and makes no attempt to reidentify the information.” [20]
+* Finally, in the same section, [CCPA § 1798.145(a)(5)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.145.) further provides that nothing in the CCPA restricts a business’s ability to “collect, use, retain, sell, or disclose consumer information that is deidentified or in the aggregate.”
+* "FHE payloads and UUIDs contain only deidentified data." 
+* "Therefore, the consumer rights provided under the CCPA thus fall away with respect to this deidentified information and businesses that utilize this system do not incur CCPA obligations."
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#962-fhe-payloads-do-not-contain-biometric-information) for full discussion. 
+
+## BIPA Analysis 
+* BIPA applies to both biometric identifiers and biometric information. 
+* Under BIPA, a “biometric identifier” includes specific types of information including fingerprint, voiceprint, retina/iris scan, scans or records of hand or face geometry." [See 740 ILCS 14/10](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004&ChapterID=57) 
+* "Biometric information" includes “any information, regardless of how it is captured, converted, stored, or shared, based on an individual’s biometric identifier used to identify an individual.” [See 740 ILCS 14/10](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004&ChapterID=57) 
+* Illinois courts have found that biometric templates derived from user-uploaded photos qualify as “biometric information” under BIPA.  [See Rivera v. Google, Inc., 238 F. Supp. 3d 1088 (N.D. Ill. 2017)](https://www.lexisnexis.com/community/case-opinion/b/case/posts/rivera-v-google-inc)
+
+### FHE Payloads Do Not Contain "Biometric Identifiers" or "Biometric Information"
+* The system, "advance the rights of Illinois residents with respect to the collection of their biometric identifiers or biometric information by only transmitting, storing or using anonymized data."
+* the system grants each end user a license to run application software on the user’s local device. Using this application, the user collects his/her own biometric data.
+data is then transformed (encrypted) by a one-way cryptographic hash function on the local device and becomes FHE payloads. FHE payloads are globally unique positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral traits.
+
 
 
 
