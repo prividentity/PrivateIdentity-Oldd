@@ -1,24 +1,30 @@
-# Introduction
+# Demo Video
 
-* Uses TensorFlow.js and an ensemble of helper DNNs to acquire and FHE transform each biometric 
-* Edge computing provides for massively horizontal scalability 
+# Summary
+> Insert block diagram here showing where it fits in the system
+
+* Preserves privacy by synchronously acquiring and FHE transforming biometric data at the edge
+* Easy to deploy with no requirement to install additional software, plugins or extensions
+* Built with Javascript, TensorFlow.js and an ensemble of helper DNNs
 * Works on commodity devices without sacrificing performance 
+* Runs on 90% of all modern devices
 
-The Private Identity MFA Web client provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric. 
+This Javascript client provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
 
-The Web client does not require on-device training and has no requirement for expensive hardware, cameras, GPUs, batteries or RAM. Devices with multi-threaded kernels operate in millisecond response time. Devices equipped with GPUs and Edge TPUs operate 70-100x faster. Less capable devices operate by offloading processing to Node.js using the “whereToProcess=nodeServer” URL parameter.  
+The client does not require on-device training and has no requirement for expensive hardware, cameras, GPUs, batteries or RAM. Devices with multi-threaded kernels operate in millisecond response time. Devices equipped with GPUs and Edge TPUs operate 70-100x faster. Less capable devices operate by offloading processing to Node.js using the “whereToProcess=nodeServer” URL parameter.
 
-The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
+The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models. These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming. These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
 
-Each biometric modality requires its own helper DNNs.  For face and fingerprint we use the Face and Fingerprint Geometry model to identify specific face landmarks and boundaries; Face and Fingerprint Validation model to ensure appropriate lighting and clarity and support crop and align; Eyes Open/Closed for passive liveness in face recognition; Eyeglasses On/Off to prevent false negatives in face recognition; and Data Augmentation to increase the entropy of the enrollment set. 
+## Architecture Discussion
+## Helper DNNs
+The Web client operates using helper DNNs.  For face and fingerprint recognition, the client uses the [Face and Fingerprint Geometry DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-and-face-wmask-geometry-detection-dnn) to identify specific face landmarks and boundaries; [Face and Fingerprint Validation DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face--fingerprint-validation-dnns) to ensure appropriate lighting and clarity and support crop and align; [Eyes Open/Closed](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#eyes-openclosed-detection-dnn-spoofing-prevention) for passive liveness in face recognition; [Eyeglasses On/Off](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#eyeglasses-onoff-detection-dnn) to prevent false negatives in face recognition; and [Data Augmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#facial-and-fingerprint-data-augmentation) to increase the entropy of the enrollment set. 
 
-For voice biometric acquisition, helper DNNs isolate singular voices. Additional processing includes Voice Input Segmentation to acquire voice samples using a sliding 10ms window across one second of input; Voice Pulse Code Modulation Transformation to down sample each segment to 2x the frequency range; and Voice Fast Fourier Transform to convert the signal from the time domain to the frequency domain.
+For voice biometric acquisition, helper DNNs isolate singular voices. Additional processing includes [Voice Validation DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) to validate the isolated voice biometric sample, [Voice Input Segmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-input-segmentation) to acquire voice samples using a sliding 10ms window across one second of input; [Voice Pulse Code Modulation Transformation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) to down sample each segment to 2x the frequency range; and [Voice Fast Fourier Transform](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-fast-fourier-transformation-fft) to convert the signal from the time domain to the frequency domain.
 
+## FHE Transform at the Edge
+The Web client then uses a [face, face with mask, fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) or [voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) embedding DNN to FHE transform each plaintext biometric sample. The embedding DNN operates **on the local device**.  Once the biometric sample is FHE transformed, it is then immediately deleted. Embeddings (a/k/a "FHE payloads") are more accurate than plaintext biometric data. Embeddings also reduce network traffic to the cloud by 99.5%. Thus, there is no need to retain plaintext data. Deleting the plaintext (without transmitting, storing or using plaintext data) guarantees user privacy.
 
-# Web Applications
-
-<br/>
-
+## Web Applications
 Biometric authentication is only as effective as the original source identifiers that are captured, stored and referenced.  This is the enrollment process, a form of registration that also “trains” the browser and the server to which it’s linked to guarantee accurate recognition of subjects.  Whatever type of biometric authentication is engaged, face, voice or fingerprint, it’s imperative to enroll quality source material to ensure verification.
 
 _Enrollment is just another term for training._
