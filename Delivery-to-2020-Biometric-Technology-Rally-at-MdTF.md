@@ -64,3 +64,47 @@ _Sample Output:_
         "Score": 1.2406864489270033
     }
 ]`
+
+### Sample Output from MdTF
+```$ ./test-routine.sh face 172.17.0.2
+
+Rally Matching System Test Routine Started...
+Mode:  face
+Host:  172.17.0.2
+Port:  8080 
+
+Creating Template for S223-01-t10_01.png
+Creating Template for S223-03-t10_01.png
+Creating Template for S309-04-t10_01.png
+Creating Template for S309-05-t10_01.png
+Creating Template for S324-01-t10_01.png
+Creating Template for S324-02-t10_01.png
+Created 6 templates from 6 images
+Average extraction time 425.1666666666 ms per extraction
+
+Compare list generated 6 scores
+Compare list generated 6 scores
+Compare list generated 6 scores
+Compare list generated 6 scores
+Compare list generated 6 scores
+Compare list generated 6 scores
+Performed 36 comparisons
+Average comparison time 3.6388888888 ms per comparison
+
+Score Matrix:
+0.000 0.480 0.997 0.900 0.958 0.876 
+0.480 0.000 0.931 0.839 0.931 0.859 
+0.997 0.931 0.000 0.475 1.086 1.088 
+0.900 0.839 0.475 0.000 1.040 1.010 
+0.958 0.931 1.086 1.040 0.000 0.352 
+0.876 0.859 1.088 1.010 0.352 0.000 
+
+Normalized Score Matrix:
+1.000 0.530 0.013 0.110 0.052 0.134 
+0.530 1.000 0.079 0.171 0.079 0.151 
+0.013 0.079 1.000 0.535 0.000 0.000 
+0.110 0.171 0.535 1.000 0.000 0.000 
+0.052 0.079 0.000 0.000 1.000 0.658 
+0.134 0.151 0.000 0.000 0.658 1.000 
+
+... Rally Matching System Test Routine Complete```
