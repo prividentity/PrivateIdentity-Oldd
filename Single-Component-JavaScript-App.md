@@ -1,7 +1,7 @@
 # Demo Video
 
 # Summary
-> Insert block diagram here showing where it fits in the system
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%202.png)
 
 * Preserves privacy by synchronously acquiring and FHE transforming biometric data at the edge
 * Easy to deploy with no requirement to install additional software, plugins or extensions
