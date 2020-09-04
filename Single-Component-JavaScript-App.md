@@ -1,4 +1,5 @@
 # Demo Video
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%20PLAY%201.png)
 > Discuss how the client app makes user enrollment and prediction (authentication) fast and easy (with no software to deploy and no hardware to buy)
 
 > show how to embed the DIV and get up and running in 30 seconds.
