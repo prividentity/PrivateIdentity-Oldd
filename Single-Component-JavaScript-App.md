@@ -5,6 +5,10 @@
 
 > Next, show how to make the client app perform to exact specifications using URL parameters
 
+> Show how to enroll a second or third biometric modality for an existing user
+
+
+
 # Overview - Single Component JavaScript app
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%202.png)
 
@@ -93,58 +97,30 @@ Discuss the workflow that is followed for enrollment.
 1.  Server attempts to match enrollment to existing user. If existing user is matched, server returns UUID without enrolling subject
 1. If no match is found, the system extracts the features from the images and stores the features in the system.
 
-If no enrolled subjects are found the system extracts the features from the images and stores the features in the system.
+### Enrollment Consent Forms
 
-Enroll User Agreement | Enroll Information
----|---
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/enroll_ua.png]]|[[https://github.com/openinfer/PrivateIdentity/blob/master/images/enroll_user.png]]
+> show first form
 
-Once the user successfully enrolls, a right check mark will be displayed to the user to notify the completion
+> show second form
 
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/enroll_complete.png]]
-
-<br/>
-
-If you want face prediction to be more accurate, you can use the URL parameter `profileFaceEnroll`. This parameter will take profile face pictures during enroll. 
-
-
-### Face Predict
-
-Once the user successfully enrolls in the system, they can verify their identity by predicting with their modality. The same process of scanning the face using the webcam is used for prediction. Once sufficient images are captured, the software extracts the features from the images and sends it to the model for identifying the person. Then, the results will be displayed in the frontend identyfing the user that the software has recognized.
-
-#### Capture Face
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/capture_face.png]]
-
-#### Prediction Result
-
-Private Identity’s facial recognition app detects a subject, determines if its image resides in the database instantaneously and, finally, takes whatever further action is required, allowing access only for an approved user.
-
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/predict_result.png]]
+> discuss how to customize the message as needed.
 
 ### Voice Enroll and Predict
-
-Utilizing biometric voice technology, a phrase spoken by a subject is captured and then compared with a previously stored voiceprint. Identifying an individual by voice is a complex task because the human voice is influenced by multiple characteristics, physical, behavioral and emotional.  A voiceprint is algorithmically derived based on an analysis of these factors.
-
-Upon enrollment, Private Identity’s biometric software records and registers the subject’s voice sample. The statistical algorithm analyzes the many distinctive characteristics of the voice and creates a voiceprint or biometric model which is then encrypted and stored in a secure database.
-
-When a subject attempts subsequent logins, the system automatically creates a voice model and compares it with the stored sample. If successful authentication occurs, the subject is allowed access.  The human voice is as unique an identifier as the retina, iris or fingerprints.  No matter how well aspects of pitch, cadence and intonation are attempted via impersonation, it is impossible to fool the referenced voiceprint in Private Identity’s database.
-
-When the biometric voice option is enabled, the user will be requested to speak live sentences that are displayed in the browser.
-
-The browser records the spoken voice and extracts the features. These features are used in the same way as face to aide the enroll / predict process.
-
-#### A sample sentence displayed in the browser
-
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/voice_2.png]]
+1. The user is asked to read a specific sentence.
+1. The user's voice is captured
+1. Speech to text determines if user's voice said the required words
+1. The voice is FHE transformed and the server attempts to predict or enroll
+1. A UUID is returned or a -1 is returned to indicate no match. 
 
 ### Fingerprint Enroll
+1. Fingerprint obtained using  at least 1MP camera (720P) on phone or Webcam ("optical scan") or capacitive scan
+1. Geometry DNN 
+1. Validation DNN - crop & align
+1. Embedding DNN - FHE transform 
+1. Delete Biometric
+1. Transmit FHE payload to server
+1. Server returns UUID or -1 (no match)
 
-_System under progress._
-
-Fingerprint scanning is the most ubiquitous biometric technology, utilized for everything from access to cellphones and personal computers to entry at high-security installations.  It used to be the “bad guys” who were fingerprinted. Today, this unique human characteristic provides corporations, government and individuals with an immediate, fool-proof tool for identity authentication.
-
-During enrollment, or initial capture of a subject’s fingerprint, each print is analyzed for the unique features and lines found on every individual’s fingers. The software app measures the distances and angles between these features and then uses an algorithm to turn this information into a unique numeric code. Comparing fingerprints then becomes a process of comparing codes. If the codes match, the prints match, and the subject is granted access.
-
-When using a fingerprint to verify a subject's identity, the user will be asked to display their thumb for webcam image capture. A guided area will be displayed in the browser to cover the fingerprint region. Once the systems approves the quality of the image, features extracted from the fingerprint image will be sent to the system for enroll and predict.
-
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/fingerprint.png]]
+## Code Samples
+> Give the user a head start on implementation - help make this as easy as possible.
+  
