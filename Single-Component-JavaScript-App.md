@@ -1,4 +1,9 @@
 # Demo Video
+> Discuss how the client app makes user enrollment and prediction (authentication) fast and easy (with no software to deploy and no hardware to buy)
+
+> show how to get up and running in 30 seconds.
+
+> Next, show how to make the client app perform to exact specifications using URL parameters
 
 # Overview - Single Component JavaScript app
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%202.png)
