@@ -1,4 +1,4 @@
-# Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations 
+# `Cloud Biometric MFA is Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations`
 
 ## Contents
 1. Overview
