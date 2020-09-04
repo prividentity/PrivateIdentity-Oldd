@@ -32,14 +32,20 @@ The biometric acquisition workflow is implemented as follows.
 
 ## Hardware, Browser and Platform Requirements
 > list minimum device requirements 
+
 > list minimum browser requirements
+
 > List minimum Android, iOS requirements
+
 > List minimum camera and microphone requirements
+
 > List minimum processor requirements 
 
 ## URL Parameters 
-URL parameters are used to control all functions of the Web client. 
-The Web client conforms to the [W3C Usage Patterns For Client-Side URL parameters](https://www.w3.org/2001/tag/doc/hash-in-url-20080211.html).  Common URL parameters are listed below.
+URL parameters are used to control all functions of the Web client. The Web client conforms to the [W3C Usage Patterns For Client-Side URL parameters](https://www.w3.org/2001/tag/doc/hash-in-url-20080211.html).  Common URL parameters are listed below.
+
+An URL parameter example is as follows:  
+> https://private.id/demo/?apiKey=1962&debug=true
 
 | **Common URL Parameters*** | Possible values | Default Value | Function | 
 |-----|----|---|-----|
