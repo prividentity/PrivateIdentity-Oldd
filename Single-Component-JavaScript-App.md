@@ -67,29 +67,28 @@ An URL parameter example is as follows:
 > Discuss using the API key as  URL parameter and also how to conceal the API key in the encrypted payload.
 
 ### Enrollment
-> Discuss URL parameters to use for enroll. Discuss the benefits and drawbacks of turning the eyeglass check on or off, turning antiSpoofing on or off, eye blink on or off
+> Discuss URL parameters to use for enroll. 
+
+> Discuss the benefits and drawbacks of turning the eyeglass check on or off
+
+> turning antiSpoofing on or off, 
+
+> Turning eye blink on or off
+
 > Discuss URL parameters to enroll multiple biometrics at the same time.
+
 > Discuss URL parameters to add a biometric enrollment to an existing subject ID
-> Discuss the workflow that is followed for enrollment.
-1. Capture User Biometrics  
-1. Validate Biometrics
+
+Discuss the workflow that is followed for enrollment.
+1. Capture user's biometrics using built-in sensors, Webcams, USB microphones, etc. Captures 10 for enrollment and 3 for prediction.
+1. Validate Biometrics. If any of the images are not suitable for training, a message is returned and the image is removed. The user must add more images until at least 10 images meeting the minimum quality standards have been provided.
 1. FHE Transform Biometrics
 1. Delete Biometrics
 1. Server validates FHE enrollment package
-1. Server attempts to match enrollment to existing user. If existing user is matched, server returns UUID
-1. If no match is found, Server enrolls user and returns UUID
+1.  Server attempts to match enrollment to existing user. If existing user is matched, server returns UUID without enrolling subject
+1. If no match is found, the system extracts the features from the images and stores the features in the system.
 
-Utilizing a browser-based camera (any computer, tablet or smartphone) to capture at least 10 images in the Private Identity app for enrollment.  If any of the images are not suitable for training, a message is returned and the image is removed. The user must add more images until at least 10 images meeting the minimum quality standards have been provided.
-
-The Enroll process captures the face images continuously and compares it with the existing enrolled subjects. If no enrolled subjects are found the system extracts the features from the images and stores the features in the system.
-
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/begin.png]]
-
-System automatically checks for the glasses if worn by the user. In that case system rejects the images and waits for the user to recapture images again.
-
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/no_glasses.png]]
-
-Once the user passes the face capture, the user will be asked to accept the User Agreement policy followed by the Information filling. The information provided by the user will be used to idetify the subject enrolled.
+If no enrolled subjects are found the system extracts the features from the images and stores the features in the system.
 
 Enroll User Agreement | Enroll Information
 ---|---
