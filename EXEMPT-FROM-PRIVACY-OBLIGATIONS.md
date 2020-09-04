@@ -1,4 +1,4 @@
-## `System is Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations`
+## `Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations`
 
 ## Contents
 1. Overview
