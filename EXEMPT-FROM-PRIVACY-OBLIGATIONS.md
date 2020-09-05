@@ -2,7 +2,7 @@
 
 ## Contents
 1. [<b>`Overview`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#overview)
-   1. [Cloud Biometric MFA system processes only "anonymized data.](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#cloud-biometric-mfa-system-processes-only-anonymized-data)
+   1. [Cloud Biometric MFA system processes only "anonymized data."](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#cloud-biometric-mfa-system-processes-only-anonymized-data)
    1. [Cloud Biometric MFA system is exempt from privacy law obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#cloud-biometric-mfa-system-is-exempt-from-privacy-law-obligations)
 1. [<b>`GDPR Analysis`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis) 
    1. [FHE Payloads Contain "Anonymized Data"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-contain-anonymized-data)
