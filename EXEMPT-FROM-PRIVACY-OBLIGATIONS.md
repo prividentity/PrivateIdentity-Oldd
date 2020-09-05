@@ -95,6 +95,7 @@
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#962-fhe-payloads-do-not-contain-biometric-information) for full text. 
 
 ## `BIPA Analysis`
+![BIPA Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/BIPA%201.png)
 * BIPA applies to both biometric identifiers and biometric information. 
 * A <b>“biometric identifier”</b> includes specific types of information including fingerprint, voiceprint, retina/iris scan, scans or records of hand or face geometry." [See 740 ILCS 14/10](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004&ChapterID=57) 
 * <b>"Biometric information"</b> includes “any information, regardless of how it is captured, converted, stored, or shared, based on an individual’s biometric identifier used to identify an individual.” [See 740 ILCS 14/10](https://www.ilga.gov/legislation/ilcs/ilcs3.asp?ActID=3004&ChapterID=57) 
