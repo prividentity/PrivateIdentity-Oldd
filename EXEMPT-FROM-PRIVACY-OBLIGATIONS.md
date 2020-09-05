@@ -30,11 +30,11 @@
 * <b>FHE payloads are anonymized data.</b> The FHE payload is a globally unique positional array that does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait (embeddings, or vector encryptions). 
 
 * Below is an example of a Base-64 encoded FHE payload.
-> `WzAuMDUwMDcyMjk3NDUzODgwMzEsMC4wNjUwNTE0MjE1MjMwOTQxOCwwLjAxMTI1MjIyOTEwMTk1NTg5LDAuMDU5ODE1MzkxODk4MTU1MjEsLTAuMTUxMjE1NDA0MjcyMDc5NDcsLTAuMTQ5NTE4MTAyNDA3NDU1NDQsMC4wNTA2NzE3NDUwOTE2NzY3MSwtMC4wNDU3NDU4ODY4NjIyNzc5ODUsMC4xMTM2MDg2MzU5NjIwMDk0MywwLjAyOTE5MjgwNzE1Mjg2NzMxNywwLjAzOTM5MDUzNzg4NzgxMTY2LC0wLjEwMTk0ODQxNzcyMzE3ODg2LDAuMDU3MTY1MzE3MjM3Mzc3MTcsMC4wODczNTUzMjMxMzU4NTI4MSwtMC4wMDAyMTMwNzk3OTQ3NzU2OTQ2LDAuMDgyODEyODgyOTU5ODQyNjgsMC4wNDI0OTUwNDU4MTA5Mzc4OCwtMC4xMjIyNjg5NzQ3ODEwMzYzOCwtMC4xMzc3NDUwOTcyNzk1NDg2NSwwLjE2MTk5OTMyOTkyNDU4MzQ0LDAuMDcxMzQ3MzkzMDk1NDkzMzIsLTAuMD==`
+   > `WzAuMDUwMDcyMjk3NDUzODgwMzEsMC4wNjUwNTE0MjE1MjMwOTQxOCwwLjAxMTI1MjIyOTEwMTk1NTg5LDAuMDU5ODE1MzkxODk4MTU1MjEsLTAuMTUxMjE1NDA0MjcyMDc5NDcsLTAuMTQ5NTE4MTAyNDA3NDU1NDQsMC4wNTA2NzE3NDUwOTE2NzY3MSwtMC4wNDU3NDU4ODY4NjIyNzc5ODUsMC4xMTM2MDg2MzU5NjIwMDk0MywwLjAyOTE5MjgwNzE1Mjg2NzMxNywwLjAzOTM5MDUzNzg4NzgxMTY2LC0wLjEwMTk0ODQxNzcyMzE3ODg2LDAuMDU3MTY1MzE3MjM3Mzc3MTcsMC4wODczNTUzMjMxMzU4NTI4MSwtMC4wMDAyMTMwNzk3OTQ3NzU2OTQ2LDAuMDgyODEyODgyOTU5ODQyNjgsMC4wNDI0OTUwNDU4MTA5Mzc4OCwtMC4xMjIyNjg5NzQ3ODEwMzYzOCwtMC4xMzc3NDUwOTcyNzk1NDg2NSwwLjE2MTk5OTMyOTkyNDU4MzQ0LDAuMDcxMzQ3MzkzMDk1NDkzMzIsLTAuMD==`
 
 * <b>UUIDs are anonymized data.</b> The Cloud Biometric MFA system generates a universally unique identifier (“UUID”) to label each end user instead of using a username, email address or other personal data. 
 * Below is an example of an UUID
-> `f669af15b6af1f23665e`
+   > `f669af15b6af1f23665e`
 * UUIDs cannot be tied back to an individual/end user by Private Identity. Therefore, the UUID is also anonymized data. 
 * <b>FHE payloads and UUIDs are not “personal data” or “biometric data” </b>under the GDPR, “personal information” or “biometric information” under the CCPA, “biometric identifiers” or “biometric information” under the BIPA, and are not “protected health information” under the HIPAA. 
 
