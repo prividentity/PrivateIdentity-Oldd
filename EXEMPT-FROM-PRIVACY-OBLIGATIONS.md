@@ -44,6 +44,7 @@
 * <b>The system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals</b> by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data privacy laws worldwide.   
 
 ## `GDPR Analysis`
+![GDPR Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/GDPR%202.png)
 * The system, "<b>advance[s] the principles of the GDPR by transforming biometrics into anonymized FHE payloads.</b> This eliminates the requirement for organizations to gather personal data to support robust security and advances the integrity and confidentiality principle and the data minimization principle of the GDPR." 
 [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#95-gdpr) for full text.
 
@@ -67,6 +68,7 @@
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) for full text. 
 
 ## `CCPA Analysis`
+![CCPA Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/CCPA%201.png)
 * “The system <b>advances the CCPA’s data minimization goals </b>by transmitting, storing and using (processing) only deidentified data and deleting all personal information immediately after it is transformed into FHE payloads."
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#96-ccpa) for full text. 
 
@@ -114,6 +116,7 @@
 * As discussed in the section above, the system does not contain biometric information or biometric identifiers.
 * Accordingly, an organization using Cloud Biometric MFA is, “not collecting or storing biometric information and, with respect to this system, eliminates the requirement to comply with BIPA obligations including the consent requirements and the requirement for an organization to protect and store biometric data at least to the same degree it protects other confidential or sensitive information.”
 ## `HIPAA Analysis`
+![HIPAA icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/HIPAA%201.png)
 * “The Privacy Rule, or Standards for Privacy of Individually Identifiable Health Information, established a standard for the protection of certain health information in the United States.” 
 * “The Security Standards for the Protection of Electronic Protected Health Information (the Security Rule) established a national set of security standards for protecting certain health information that is held or transferred in electronic form in the United States.”
 * “The Security Rule operationalized the protections contained in the Privacy Rule by addressing the technical and non-technical safeguards that organizations called “covered entities” must put in place to secure individuals’ “electronic protected health information” (e-PHI).” 
