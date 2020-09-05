@@ -17,7 +17,6 @@
     1. [FHE Payloads Do Not Incur BIPA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-bipa-obligations)
 1. [<b>`HIPAA Analysis`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis)
    1. [FHE Payloads Do Not Contain Individually Identifiable Health Information](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-individually-identifiable-health-information)
-   1. [https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
    1. [FHE Payloads Do Not Incur HIPAA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
 1. [<b>`Resources`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#resources)
 
@@ -124,10 +123,10 @@
 #### FHE Payloads Do Not Contain Individually Identifiable Health Information
 * “The HIPAA defines and protects Protected Health Information, which is individually identifiable health information. 
 * The system fully realizes HIPAA’s goals by, “transforming personal information into FHE payloads and UUIDs that are “deidentified” data…” <br>
-   > FHE payloads and UUIDs contain no health information, health-related information, healthcare provider information, or healthcare event-related information<br>
-   > There is no data in the system that could be combined with the FHE payloads or UUIDs to identify the individual or device to whom the data relates<br>
-   > FHE payloads and UUIDs are not reversible<br>
-   > FHE payloads and UUIDs cannot be linked to an individual <br>
+   * FHE payloads and UUIDs contain no health information, health-related information, healthcare provider information, or healthcare event-related information<br>
+   * There is no data in the system that could be combined with the FHE payloads or UUIDs to identify the individual or device to whom the data relates<br>
+   * FHE payloads and UUIDs are not reversible<br>
+   *  FHE payloads and UUIDs cannot be linked to an individual <br>
 * The system only “transmit[s], store[s] or use[s] deidentified (anonymized) data.”
 * The system does not transmit, store or use, “any other personal data, biometric data, health data, health-related data, machine or device identifications, metadata, or any other identifying information.”
 * Finally, FHE payload and UUIDs do not contain any information useful for diagnostic purposes.
