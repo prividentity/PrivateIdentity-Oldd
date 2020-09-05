@@ -26,7 +26,7 @@
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE for private identity assertion and authentication</b>. 
 * IEEE 2410 compliance, "...<b>guarantees the SBP system does not incur </b>GDPR, CCPA, BIPA or HIPAA privacy obligations." </b>
 
-## `Cloud Biometric MFA system processes only "anonymized data."`
+#### `Cloud Biometric MFA system processes only "anonymized data."`
 * <b>FHE payloads are anonymized data.</b> The FHE payload is a globally unique positional array that does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait (embeddings, or vector encryptions). 
 
 * Below is an example of a Base-64 encoded FHE payload.
@@ -38,7 +38,7 @@
 * UUIDs cannot be tied back to an individual/end user by Private Identity. Therefore, the UUID is also anonymized data. 
 * <b>FHE payloads and UUIDs are not “personal data” or “biometric data” </b>under the GDPR, “personal information” or “biometric information” under the CCPA, “biometric identifiers” or “biometric information” under the BIPA, and are not “protected health information” under the HIPAA. 
 
-## Cloud Biometric MFA system is exempt from privacy law obligations
+#### Cloud Biometric MFA system is exempt from privacy law obligations
 * <b>The system processes only anonymized data</b> and not personal data. This eliminates the data subject’s rights that would otherwise arise when personal data is being processed.    
 * <b>The loss of any FHE payloads and UUIDs would not constitute a breach</b> of biometric data or personal data. FHE payloads do not constitute personal data.
 * <b>The system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals</b> by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data privacy laws worldwide.   
@@ -117,7 +117,7 @@
 * “The Security Standards for the Protection of Electronic Protected Health Information (the Security Rule) established a national set of security standards for protecting certain health information that is held or transferred in electronic form in the United States.”
 * “The Security Rule operationalized the protections contained in the Privacy Rule by addressing the technical and non-technical safeguards that organizations called “covered entities” must put in place to secure individuals’ “electronic protected health information” (e-PHI).” 
 
-##### FHE Payloads Do Not Contain Individually Identifiable Health Information
+#### FHE Payloads Do Not Contain Individually Identifiable Health Information
 * “The HIPAA defines and protects Protected Health Information, which is individually identifiable health information. 
 * The system fully realizes HIPAA’s goals by, “transforming personal information into FHE payloads and UUIDs that are “deidentified” data…” 
 > FHE payloads and UUIDs contain no health information, health-related information, healthcare provider information, or healthcare event-related information
