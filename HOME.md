@@ -27,18 +27,18 @@
 
 * <b>[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) </b>[Wikipedia]
 
-* <b>[Video Introduction to the Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
+* <b>[Video Introduction to the Developer's Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
 
-* <b>Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
+* <b>Developer's Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
 ## KEY FEATURES
 ### Single Component Javascript App
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
-* Preserves privacy by synchronously acquiring and FHE transforming biometric data at the edge 
+* Preserves [privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) by [synchronously acquiring and FHE transforming](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App#architecture-discussion) biometric data at the edge 
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
 * Built with Javascript, TensorFlow.js and an ensemble of helper DNNs 
-* Runs on 90% of all modern devices 
-* [More Information](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)
+* Runs on 90% of all modern devices, browsers and platforms 
+* <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)</b> For More Information
 
 The Javascript client provides users with massively horizontally scalable, browser-based biometric enrollment, identity, MFA and account recovery in a convenient Web experience that operates on more than 90% of all browsers, platforms and devices. The Web client uses on-device pre-trained TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric. 
 
