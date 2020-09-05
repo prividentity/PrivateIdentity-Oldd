@@ -58,12 +58,12 @@ As a result, the [FHE is not “Personal Data”](https://github.com/openinfer/P
 ### Flexible Deployment
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 
-| Mobile Apps | Web Apps | Enterprise Directory | Pipelines | 
+| Mobile Apps | Web Apps | Enterprise Directory | Enterprise Biometric Pipelines | 
 | --- | --- | --- | --- | 
-| Embedded DIV | Embedded DIV | SAML 2.0 | Encryption Engine |
-| JavaScript APIs |   | G Suite | Biometric Search | 
-|  |  | PING Identity | | 
-|  |   | Okta Factor Auth | | 
+| [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) |
+| [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) |   | [G Suite](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search) | 
+|  |  | [PING Identity](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | | 
+|  |   | [Okta Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | | 
 
 
 Cloud Biometric MFA is available as [SaaS](https://github.com/openinfer/PrivateIdentity/wiki#saas) or [PaaS](https://github.com/openinfer/PrivateIdentity/wiki#paas-deployments) on <b>AWS, GCP and on-premises</b>. Use pre-configured SaaS enterprise integrations for Google Identity®, PING Identity®, Okta® Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn, Azure® Active Directory and AWS® IAM. 
@@ -408,13 +408,4 @@ Fully Homomorphic Encryption complies with CCPA. System exempt from CCPA obligat
 ### Certified Compliant IEEE 2410-2019
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/IEEE%202410%201.png)
 Open standard requires Fully Homomorphic Encryption to protect biometric at rest, in transit and in use.
-
-
-
-
-
-
-
-
-
 
