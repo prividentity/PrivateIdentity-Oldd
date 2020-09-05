@@ -44,7 +44,7 @@
 * <b>The system fulfills the GDPR, CCPA, BIPA and HIPAA's regulatory and policy goals</b> by minimizing the need to process unnecessary categories of personal data.  This helps advance each of the data protection principles underlying data privacy laws worldwide.   
 
 ## `GDPR Analysis`
-![GDPR Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/GDPR%202.png)
+![GDPR Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/GDPR%201.png)
 * The system, "<b>advance[s] the principles of the GDPR by transforming biometrics into anonymized FHE payloads.</b> This eliminates the requirement for organizations to gather personal data to support robust security and advances the integrity and confidentiality principle and the data minimization principle of the GDPR." 
 [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#95-gdpr) for full text.
 
