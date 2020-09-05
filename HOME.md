@@ -62,8 +62,8 @@ As a result, the [FHE is not “Personal Data”](https://github.com/openinfer/P
 | --- | --- | --- | --- | 
 | Embedded DIV | Embedded DIV | SAML 2.0 | Encryption Engine |
 | JavaScript APIs |   | G Suite | Biometric Search | 
-|   | PING Identity | | 
-|  | Okta Factor Auth | | 
+|  |  | PING Identity | | 
+|  |   | Okta Factor Auth | | 
 
 
 Cloud Biometric MFA is available as [SaaS](https://github.com/openinfer/PrivateIdentity/wiki#saas) or [PaaS](https://github.com/openinfer/PrivateIdentity/wiki#paas-deployments) on <b>AWS, GCP and on-premises</b>. Use pre-configured SaaS enterprise integrations for Google Identity®, PING Identity®, Okta® Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn, Azure® Active Directory and AWS® IAM. 
