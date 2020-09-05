@@ -8,7 +8,7 @@
    1. [FHE Payloads Contain "Anonymized Data"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-contain-anonymized-data)
    1. [FHE Payloads Do Not Contain "Biometric Data"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-data)
    1. [System is not subject to GDPR obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#system-is-not-subject-to-gdpr-obligations)
-1. [<b>`CCPA Analysis`</b>] (https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis)
+1. [<b>`CCPA Analysis`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis)
    1. [FHE Payloads Contain "Deidentified Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-contain-deidentified-information)
    1. [FHE Payloads Do Not Contain "Biometric Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-information)
    1. [FHE Payloads Are Not Subject to CCPA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-are-not-subject-to-ccpa-obligations)
