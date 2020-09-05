@@ -47,7 +47,7 @@ The Web client does not require on-device training and has no requirement for ex
 The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
 
 ### Built-in Privacy: Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations
-
+![Privacy graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)
 * Built-in [<b>fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (<b>FHE</b>) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE</b> for private identity assertion and authentication. 
 * IEEE 2410 certified compliance, "...<b>guarantees the SBP system does not incur [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis) or [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis) privacy obligations." </b>
@@ -61,16 +61,15 @@ As a result, the [FHE is not “Personal Data”](https://github.com/openinfer/P
 | Mobile Apps | Web Apps | Enterprise Directory | Enterprise Biometric Pipelines | 
 | --- | --- | --- | --- | 
 | [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) |
-| [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) |   | [G Suite](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search) | 
-|  |  | [PING Identity](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | | 
-|  |   | [Okta Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | | 
+| [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) |   | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search) | 
+|  |  | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | | 
+|  |   | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | | 
 
+The Cloud Biometric MFA solution is available as [SaaS](https://github.com/openinfer/PrivateIdentity/wiki#saas) or [PaaS](https://github.com/openinfer/PrivateIdentity/wiki#paas-deployments) on <b>AWS, GCP and on-premises</b>. 
 
-Cloud Biometric MFA is available as [SaaS](https://github.com/openinfer/PrivateIdentity/wiki#saas) or [PaaS](https://github.com/openinfer/PrivateIdentity/wiki#paas-deployments) on <b>AWS, GCP and on-premises</b>. Use pre-configured SaaS enterprise integrations for Google Identity®, PING Identity®, Okta® Factor Authentication, SAML 2.0, OAuth/OIDC, WebAuthn, Azure® Active Directory and AWS® IAM. 
+The <b>GCP solution</b> leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  
 
-The GCP solution leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.  
-
-Similarly, the AWS solution leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
+Similarly, the <b>AWS solution</b> leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
 
 ### No Discrimination
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
@@ -408,4 +407,13 @@ Fully Homomorphic Encryption complies with CCPA. System exempt from CCPA obligat
 ### Certified Compliant IEEE 2410-2019
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/IEEE%202410%201.png)
 Open standard requires Fully Homomorphic Encryption to protect biometric at rest, in transit and in use.
+
+
+
+
+
+
+
+
+
 
