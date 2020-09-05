@@ -1,25 +1,24 @@
 # Exempt from GDPR, CCPA, BIPA and HIPAA Privacy Obligations 
 
 ## Contents
-1. [`<b>Overview</b>`](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#1overview)
+1. [<b>`Overview`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#1overview)
    1. [Cloud Biometric MFA system processes only "anonymized data.](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#cloud-biometric-mfa-system-processes-only-anonymized-data)
    1. [Cloud Biometric MFA system is exempt from privacy law obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#cloud-biometric-mfa-system-is-exempt-from-privacy-law-obligations)
-1. [`<b>GDPR Analysis</b>`](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis) 
+1. [<b>`GDPR Analysis`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis) 
    1. [FHE Payloads Contain "Anonymized Data"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-contain-anonymized-data)
    1. [FHE Payloads Do Not Contain "Biometric Data"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-data)
    1. [System is not subject to GDPR obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#system-is-not-subject-to-gdpr-obligations)
-1. [`<b>CCPA Analysis</b>`] (https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis)
+1. [<b>`CCPA Analysis`</b>] (https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis)
    1. [FHE Payloads Contain "Deidentified Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-contain-deidentified-information)
    1. [FHE Payloads Do Not Contain "Biometric Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-information)
    1. [FHE Payloads Are Not Subject to CCPA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-are-not-subject-to-ccpa-obligations)
-1. [`<b>BIPA Analysis</b>`](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis)
+1. [<b>`BIPA Analysis`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis)
    1.  [FHE Payloads Do Not Contain "Biometric Identifiers" or "Biometric Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information)
     1. [FHE Payloads Do Not Incur BIPA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-bipa-obligations)
-1. [`<b>HIPAA Analysis</b>`](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis)
+1. [<b>`HIPAA Analysis`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis)
    1. [FHE Payloads Do Not Contain Individually Identifiable Health Information](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-individually-identifiable-health-information)
    1. [https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
-   1. [ FHE Payloads Do Not Incur HIPAA Obligations]
-(https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
+   1. [FHE Payloads Do Not Incur HIPAA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
 1. [<b>`Resources`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#resources)
 
 ## 1.`Overview`
