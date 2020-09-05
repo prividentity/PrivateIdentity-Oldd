@@ -7,11 +7,11 @@
 ## OVERVIEW
 * <b>Integrates easily</b> into your [IAM solution](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols), Web and mobile apps, and [biometric pipeline](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) using the included Javascript component ([embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)), [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api), [REST APIs](https://github.com/openinfer/PrivateIdentity/wiki#rest-apis), [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) and [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search)
 
-* <b>Deploys instantly </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy. [Read more...](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)
+* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App) </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy. 
 
-* <b>Preserves privacy</b> using [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
+* <b>Preserves privacy</b> using built-in [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
 
-* <b>Exempt from GDPR, CCPA, BIPA and HIPAA</b> privacy law obligations. [Read more...](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) 
+* <b>Exempt from [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis) and [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis)</b> privacy law obligations. 
 
 * <b>Non-biased algorithms </b>[recognize everybody](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) equally across all ethnicities, skin tones, genders and ages. Also accommodates boundary conditions with up to 30% occlusions including face masks, facial hair, abrasions and blurry or rotated images.
 
