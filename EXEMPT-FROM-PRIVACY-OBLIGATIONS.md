@@ -20,12 +20,12 @@
    1. [FHE Payloads Do Not Incur HIPAA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
 1. [<b>`Resources`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#resources)
 
-## 1.`Overview`
+## `Overview`
 * [<b>Fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (FHE) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE for private identity assertion and authentication</b>. 
 * IEEE 2410 compliance, "...<b>guarantees the SBP system does not incur </b>GDPR, CCPA, BIPA or HIPAA privacy obligations." </b>
 
-#### `Cloud Biometric MFA system processes only "anonymized data."`
+#### Cloud Biometric MFA system processes only "anonymized data."
 * <b>FHE payloads are anonymized data.</b> The FHE payload is a globally unique positional array that does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait (embeddings, or vector encryptions). 
 
 * Below is an example of a Base-64 encoded FHE payload.
