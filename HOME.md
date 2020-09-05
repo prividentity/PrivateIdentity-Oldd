@@ -23,13 +23,13 @@
 
 * <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview) </b>[Developer Wiki]
 
-* <b>[Demo Video](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
-
 * <b>[Discussion with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
 
 * <b>[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) </b>[Wikipedia]
 
-* <b>[https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
+* <b>[Video Introduction to the Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
+
+* <b>Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
 ## KEY FEATURES
 ### Single Component Javascript App
