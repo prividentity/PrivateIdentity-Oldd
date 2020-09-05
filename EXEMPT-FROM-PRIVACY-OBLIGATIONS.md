@@ -13,13 +13,14 @@
    1. [FHE Payloads Do Not Contain "Biometric Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-information)
    1. [FHE Payloads Are Not Subject to CCPA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-are-not-subject-to-ccpa-obligations)
 1. [`<b>BIPA Analysis</b>`](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis)
-  1.  [FHE Payloads Do Not Contain "Biometric Identifiers" or "Biometric Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information)
-   1. [FHE Payloads Do Not Incur BIPA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-bipa-obligations)
+   1.  [FHE Payloads Do Not Contain "Biometric Identifiers" or "Biometric Information"](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information)
+    1. [FHE Payloads Do Not Incur BIPA Obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-bipa-obligations)
 1. [`<b>HIPAA Analysis</b>`](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis)
    1. [FHE Payloads Do Not Contain Individually Identifiable Health Information](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-contain-individually-identifiable-health-information)
    1. [https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
+   1. [ FHE Payloads Do Not Incur HIPAA Obligations]
+(https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#fhe-payloads-do-not-incur-hipaa-obligations)
 1. [<b>`Resources`</b>](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#resources)
-
 
 ## 1.`Overview`
 * [<b>Fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (FHE) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
