@@ -3,7 +3,6 @@
 ![Facial Recognition Workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Face.png)
 
 ![Fingerprint recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Fingerprint.png)
-### FACE, FACE w/MASK and FINGERPRINT RECOGNITION
 
 ### FACE, FACE w/MASK, AND FINGERPRINT GEOMETRY DETECTION DNNs
 * <b>Transforms images into geometric primitives</b> to measure the relative position, width, and other parameters of eyes, mouth(s), nose(s), chin(s), and finger(s)
