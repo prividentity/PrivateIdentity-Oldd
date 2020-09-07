@@ -127,7 +127,13 @@ Example to use fingerprint modality:  `https://private.id/demo/index.htm?apiKey=
 
 Example to use all modalities:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&fingerprint=true&faceMask=true&voice=true&fingerprint=true`
 
-> Discuss URL parameters to add a biometric enrollment to an existing subject ID
+###### Updating Existing Enrollments:
+
+Once a user is enrolled, a `subject_id` is created for him. This value can used to update existing modalities. For example, if a user enrolled with `voice` and wants to add `face` modalities, the URL will be: 
+
+ `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&subject_id=XXXX&face=true`
+
+
 
 Discuss the workflow that is followed for enrollment.
 1. Capture user's biometrics using built-in sensors, Webcams, USB microphones, etc. Captures 10 for enrollment and 3 for prediction.
