@@ -146,9 +146,15 @@ Discuss the workflow that is followed for enrollment.
 
 ### Enrollment Consent Forms
 
-> show first form
+For an enrollment to be executes, the user must agree to consent forms. 
 
-> show second form
+The first form looks like this: 
+
+![enter image description here](https://github.com/openinfer/PrivateIdentity/blob/master/images/first-enroll-form.png)
+
+Once the user clicks on continue button, the second consent form shows up:
+
+![enter image description here](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll-form.png)
 
 > discuss how to customize the message as needed.
 
