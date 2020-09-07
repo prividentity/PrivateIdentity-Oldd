@@ -198,7 +198,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 Private Identity is certified compliant with IEEE 2410 Standard for Biometric Privacy, ISO 27001:2013 International Standard for Information Security Management, ISO 9001:2015 International Standard for Quality Management Systems, US DoD Standard Trusted Computer System Evaluation Criteria (TCSEC), US ODNI ICD 503 Intelligence Community Technology Systems Security Risk Management, Certification and Accreditation and US DoD Multiple Independent Levels of Security/Safety (MILS) Architecture, and compliant with W3C Web Authentication API (WebAuthn), FIPS 197, TLS, IPSEC and SSL.  
 
-| Open Encryption Standard | Description | Link | 
+| Open Standards for Privacy & Encryption | Description | Link | 
 | --- | --- | --- |
 | **IEEE 2410 Standard for Biometric Privacy (SBP)** Certified Compliant | <b>Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations.</b> Requires fully homomorphic encryption (FHE) for private identity assertion and authentication. | [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) to approved Draft Standard | 
 | **W3C WebAuthn** Compliant | Enables creation and use of strong, attested, scoped, public key-based credentials by Web applications | [Link](https://www.w3.org/TR/webauthn/) to Standard |
@@ -207,7 +207,7 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 | **FIPS 197 Advanced Encryption Standard (AES)** Compliant | **Guideline for Implementing Cryptography** in the US Government. | [Link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) to NIST Special Publication 800-21 |
 | TLS / IPSEC / SSL | **Standard protocols providing privacy and data integrity** between two or more communicating computer applications. | [Link](https://tools.ietf.org/html/rfc8446) to IETF |
 
-| Open Security / Architecture Standard | Description | Link |
+| Open Standards for Security Architecture | Description | Link |
 | --- | --- | --- |
 | **ISO 27001:2013 Information Security Management Standard** - Certified Compliant | International Standard for information risk management process includes all legal, physical and technical controls. | [Link](https://www.iso.org/isoiec-27001-information-security.html) to ISO/IEC 27001 |
 | **ISO 9001:2015 Quality Management Standard** Certified Compliant | International Standard ensures software satisfies statutory and regulatory requirements and meets the needs of customers and other stakeholders. | [Link](https://www.iso.org/iso-9001-quality-management.html) to ISO 9000
