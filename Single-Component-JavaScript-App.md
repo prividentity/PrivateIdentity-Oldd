@@ -143,7 +143,7 @@ Example to use fingerprint modality:  `https://private.id/demo/index.htm?apiKey=
 
 Example to use all modalities:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&fingerprint=true&faceMask=true&voice=true&fingerprint=true`
 
-###### Updating Existing Enrollments:
+##### Updating Existing Enrollments:
 
 Once a user is enrolled, a `subject_id` is created for him. This value can used to update existing modalities. For example, if a user enrolled with `voice` and wants to add `face` modalities, the URL will be: 
 
