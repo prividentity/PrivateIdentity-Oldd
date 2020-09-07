@@ -5,12 +5,24 @@
 ![Fingerprint recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Fingerprint.png)
 ### FACE, FACE w/MASK and FINGERPRINT RECOGNITION
 
-### Face and Face w/Mask Geometry Detection DNN
+### Face, Face w/Mask and Fingerprint Geometry Detection DNN
+* <b>Transforms images into geometric primitives</b> to measure the relative position, width, and other parameters of eyes, mouth(s), nose(s), chin(s), and finger(s)
+* <b>Returns X and Y coordinates</b> of each modality in an image, video frame or video stream.
+* YOLO architecture, 100kB
+
 The Face Geometry Detection DNN accurately locates face(s) in an image by transforming each image into geometric primitives and measuring the relative position, width, and other parameters of eyes, mouth(s), nose(s), and chin(s). Likewise, the Fingerprint Geometry Detection DNN accurately locates finger(s) in an image by transforming each image into geometric primitives and measuring each finger’s relative position, width, and other parameters.  
 
 Each DNN returns X and Y coordinates of each modality in an image, video frame or video stream. 
 
-### FACE & FINGERPRINT VALIDATION DNNs
+### FACE, FACE WITH MASK & FINGERPRINT VALIDATION DNNs
+* <b>Accurately aligns & crops</b> each frontalized face or finger input image
+* <b>Detects photo or video attack (anti-spoofing)</b> during unattended operation 
+* <b>Detects blinking</b> (eyes open/closed) for real-time passive facial liveness (anti-spoofing)
+* <b>Detects face mask</b> if the user is wearing a face mask. 
+* <b>Detects eyeglasses</b> before allowing enrollment
+* <b>Returns a validation score</b> between 0 to 100, where 100 is a perfect image.  
+* MobileNetV2 architecture, 1.5MB
+
 The Face Validation DNN tightly aligns, crops and accurately validates each frontalized face input image. Likewise, the Fingerprint Validation DNN tightly aligns, crops and accurately validates each fingerprint input image. Each DNN returns a validation score between 0 to 100, where 100 is a perfect image.  
 
 ### FACE+MASK ON/OFF DETECTION DNN
@@ -42,6 +54,11 @@ Enrollment requires >50 augmented biometric input images to maintain the health,
 There is no intrinsic requirement to morph images for prediction.  However, we find that homogenized images perform better than non-homogenized images. Image homogenization occurs through convenience libraries in Python and JavaScript. For prediction, the Web client captures 3 images, morphs and homogenizes the lighting and contrast once, and discards the original images. 
 
 ### FACE, FACE+MASK, AND FINGERPRINT EMBEDDING DNNs
+* <b>FHE transforms the biometric input image </b>to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers 
+* <b>Maintains full accuracy</b> through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  
+* Produces (output) FHE payload in < 100ms
+* MobileNetV2 architecture, 1.3MB for Face and 900kB for Fingerprint 
+
 The Face, Face+Mask, and Fingerprint Embedding DNNs FHE transform the biometric input image to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers. 
 
 The Face, Face+Mask, and Fingerprint Embedding DNNs maintain full accuracy through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  The embedding DNNs use the MobileNetV2 architecture and output a 1-way encrypted payload in <100ms. 
@@ -50,6 +67,9 @@ The Face, Face+Mask, and Fingerprint Embedding DNNs maintain full accuracy throu
 ![Voice recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Voice.png)
 
 ### VOICE VALIDATION DNN
+* <b>Validates audio input</b> for a quality human voice to discriminate between a voice and external noise
+* YOLO architecture, 100kB
+
 The Voice Validation DNN accepts a sound wave as input and returns a validation score between 0 to 100, where 100 is a perfect audio where the voice is isolated enough to create a valid embedding. 
 
 ### VOICE INPUT SEGMENTATION 
@@ -62,4 +82,8 @@ Pulse Code Modulation lessens the input to two times the frequency range allowin
 The Voice Fast Fourier Transform (FFT) moves the pulse code modulated audio signal from the time domain to a representation in the frequency domain.  The transform output is a 2-dimensional array of frequencies that is input to the Voice Embedding DNN.
 
 ### VOICE EMBEDDING DNN
+* FHE transforms one 2-dimensional array of frequencies (input) to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding) 
+* Produces FHE payload in < 100ms
+* MobileNetV2 architecture, 3.5MB
+
 The Voice Embedding DNN accepts input of one 2-dimensional array of frequencies, FHE transforms the input to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding, or 1-way vector encryption), and then deletes the original biometric. 
