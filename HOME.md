@@ -58,7 +58,7 @@ As a result, the [FHE is not “Personal Data”](https://github.com/openinfer/P
 ### Flexible Deployment
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 
-| Mobile Apps | Web Apps | Enterprise Directory | High-Throughput Biometric Pipelines | 
+| Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines | 
 | --- | --- | --- | --- | 
 | [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [SAML/OAuth/OIDC](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) |
 | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api)  | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search) | 
