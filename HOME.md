@@ -198,48 +198,21 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 Private Identity is certified compliant with IEEE 2410 Standard for Biometric Privacy, ISO 27001:2013 International Standard for Information Security Management, ISO 9001:2015 International Standard for Quality Management Systems, US DoD Standard Trusted Computer System Evaluation Criteria (TCSEC), US ODNI ICD 503 Intelligence Community Technology Systems Security Risk Management, Certification and Accreditation and US DoD Multiple Independent Levels of Security/Safety (MILS) Architecture, and compliant with W3C Web Authentication API (WebAuthn), FIPS 197, TLS, IPSEC and SSL.  
 
-### IEEE 2410 Standard for Biometric Privacy 
-* <b>Requires FHE for private identity assertion </b>and authentication 
-* <b>Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations</b>
-* Link to approved [draft standard](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)]  
+| Open Encryption Standard | Description | Link | 
+| --- | --- | --- |
+| **IEEE 2410 Standard for Biometric Privacy (SBP)** Certified Compliant | <b>Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations.</b> Requires fully homomorphic encryption (FHE) for private identity assertion and authentication. | [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) to approved Draft Standard | 
+| **W3C WebAuthn** Compliant | Enables creation and use of strong, attested, scoped, public key-based credentials by Web applications | [Link](https://www.w3.org/TR/webauthn/) to Standard |
+| **US ODNI ICD 503** Certified Compliant | Applies to all US Government organizations, their commercial contractors, and Allied Government information systems that process, store, or communicate intelligence information. | [Link](https://www.dni.gov/files/documents/ICD/ICD_503.pdf) |
+| **US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)** Certified Compliant | Original standard for processing and storage of classified and other sensitive DoD information. | [Link](https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf) to Standard |
+| **FIPS 197 Advanced Encryption Standard (AES)** Compliant | **Guideline for Implementing Cryptography** in the US Government. | [Link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) to NIST Special Publication 800-21 |
+| TLS / IPSEC / SSL | **Standard protocols providing privacy and data integrity** between two or more communicating computer applications. | [Link](https://tools.ietf.org/html/rfc8446) to IETF |
 
-### W3C WebAuthn
-* <b>Enables creation and use of strong</b>, attested, scoped, public key-based credentials by Web applications 
-* [Link to Standard](https://www.w3.org/TR/webauthn/)
-
-### US ODNI ICD 503
-* <b>Applies to all US government organizations</b>, their commercial contractors, and Allied governments information systems that process, store, or communicate intelligence information.
-* [Link to Directive](https://www.dni.gov/files/documents/ICD/ICD_503.pdf)
-
-### US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)
-* <b>Original standard for processing and storage of classified </b>and other sensitive DoD information 
-* [Link to DoD 5200.28-STD](https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf)
-
-### FIPS 197 Advanced Encryption Standard (AES)
-* <b>Guideline for Implementing Cryptography </b>in the US Federal Government. 
-* [Link to NIST Special Publication 800-21](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf)
-
-### TLS / IPSEC / SS
-* <b>Standard protocols providing privacy and data integrity </b>between two or more communicating computer applications
-* [Link to IETF](https://tools.ietf.org/html/rfc8446)
-
-## OPEN STANDARDS, SECURITY ARCHITECTURE 
-
-### ISO 27001:2013 Information Security Management Standard
-* <b>International Standard for information risk management process </b>includes all legal, physical and technical controls 
-* [Link to ISO/IEC 27001](https://www.iso.org/isoiec-27001-information-security.html)
-
-### ISO 9001:2015 Quality Management Standard
-* <b>International Standard ensures software satisfies statutory and regulatory requirements </b>and meets the needs of customers and other stakeholders
-* [Link to ISO 9000](https://www.iso.org/iso-9001-quality-management.html)
-
-### OAuth 2.0 / OpenID Connect / SAML 2.0
-* <b>Standards that cover authorization, federation, identity management and single sign-on (SSO)</b>
-* [Link to IETF](https://tools.ietf.org/html/rfc8252)
-
-### DoD Multiple Independent Levels of Security/Safety (MILS) Architecture
-* <b>Compartmentalized approach to the design of security-critical</b>, safety-critical, high-assurance computing systems
-* [Link to MILS Community](https://mils.community/)
+| Open Security / Architecture Standard | Description | Link |
+| --- | --- | --- |
+| **ISO 27001:2013 Information Security Management Standard** - Certified Compliant | International Standard for information risk management process includes all legal, physical and technical controls. | [Link](https://www.iso.org/isoiec-27001-information-security.html) to ISO/IEC 27001 |
+| **ISO 9001:2015 Quality Management Standard** Certified Compliant | International Standard ensures software satisfies statutory and regulatory requirements and meets the needs of customers and other stakeholders. | [Link](https://www.iso.org/iso-9001-quality-management.html) to ISO 9000
+| **SAML 2.0/ OAuth 2.0 / OIDC** | Standard protocols for authorization, federation, identity management and single sign-on (SSO). | [Link](https://tools.ietf.org/html/rfc8252) to IETF |
+| **DoD Multiple Independent Levels of Security/Safety (MILS) Architecture** | Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. | [Link](https://mils.community/) to MILS |
 
 ## FLEXIBLE DEPLOYMENT
 
