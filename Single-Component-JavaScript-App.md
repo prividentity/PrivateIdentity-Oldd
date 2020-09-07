@@ -48,6 +48,18 @@ The biometric acquisition workflow is implemented as follows.
 
 > list minimum browser requirements
 
+|Browser| Minimum Version |
+|--|--|
+| Google Chrome | 73 |
+| Internet Explorer | Not supported |
+| MS Edge | 80 |
+| FireFox | 60 |
+| Safari | 12 |
+| iOS Safari | 13 |
+| Chrome for Android | 73 |
+
+
+
 > List minimum Android, iOS requirements
 
 > List minimum camera and microphone requirements
