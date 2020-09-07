@@ -150,11 +150,11 @@ For an enrollment to be executes, the user must agree to consent forms.
 
 The first form looks like this: 
 
-![enter image description here](https://github.com/openinfer/PrivateIdentity/blob/master/images/first-enroll-form.png)
+![enter image description here](https://github.com/openinfer/PrivateIdentity/blob/master/images/first-enroll-form.png =250x250)
 
 Once the user clicks on continue button, the second consent form shows up:
 
-![enter image description here](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll-form.png)
+![enter image description here](https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll-form.png =250x250)
 
 > discuss how to customize the message as needed.
 
