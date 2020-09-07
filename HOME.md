@@ -153,11 +153,10 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * MobileNetv2 architecture, 3.5MB
 
 ### Helper Networks (Geometry DNN → Validation DNN → Embedding DNN)
-| Helper DNN | Description | Link for More Info |
+| Helper DNN | Description | Biometric Modalities |
 | --- | --- | --- | 
-| Geometry DNNs | Transforms valid biometric images into geometric primitives. Returns x,y coordinates. | [Face](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-and-face-wmask-geometry-detection-dnn), [Face with Mask](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-and-face-wmask-geometry-detection-dnn),
-Fingerprint |
-| Validation DNNs | Aligns & crops. Detect video and image spoofing, eye blinks, face masks, eyeglasses and quality human voice. Returns a validation score between 0 and 100. | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face--fingerprint-validation-dnns), [Voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) |
+| Geometry DNNs | Transforms valid biometric images into geometric primitives. Returns x,y coordinates. | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns) |
+| Validation DNNs | Aligns & crops. Detects video and image spoofing, eye blinks, face masks, eyeglasses and quality human voice. Returns a validation score between 0 and 100. | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-with-mask--fingerprint-validation-dnns), [Voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) |
 | Embedding DNNs | FHE transforms validated biometric input into a distance-measurable two-dimensional positional array of 128 floating-point numbers (embedding, or “FHE payload”) | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns), [Voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) |
 
 ### Offline Authentication
@@ -381,5 +380,13 @@ Fully Homomorphic Encryption complies with CCPA. System exempt from CCPA obligat
 ### Certified Compliant IEEE 2410-2019
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/IEEE%202410%201.png)
 Open standard requires Fully Homomorphic Encryption to protect biometric at rest, in transit and in use.
+
+
+
+
+
+
+
+
 
 
