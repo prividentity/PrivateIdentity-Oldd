@@ -101,9 +101,9 @@ During enrollment or prediction, you can adjust the eye glasses check to be on o
 
 During enrollment, video spoof check can be turned on/off with the URL parameter antiVideoSpoof. The default value for it is `true`. But if you want it turned off, you can set it to `false`. 
 
-Example: `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=false`
+Example: `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=false&action=enroll`
 
-Or:  `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=true`
+Or:  `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=true&action=enroll`
 
 ##### Face Liveness Check
 
@@ -111,9 +111,21 @@ For the purpose of making sure that any enrollment/prediction is done by a human
 
 The default value for this parameter is false. To turn it on, you can set it to true like so:
 
-`https://private.id/demo/index.htm?apiKey=XXXX&faceLiveness=true`
+`https://private.id/demo/index.htm?apiKey=XXXX&faceLiveness=true&action=enroll`
 
-> Discuss URL parameters to enroll multiple biometrics at the same time.
+##### Multiple Biometrics Enrollment
+
+On the main page of the web app, you can choose the desired biometrics for prediction/enrollment. In addition to this option, you can also use the URL parameters. The four main modalities are: faceMask, voice, face, fingerprint. Each modality can be used separately, or mixed with one or more parameter. The only exception is face and faceMask. You have to use only one of them.
+
+Example to use voice modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&voice=true`
+
+Example to use face modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&face=true`
+
+Example to use faceMask modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&faceMask=true`
+
+Example to use fingerprint modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&fingerprint=true`
+
+Example to use all modalities:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&fingerprint=true&faceMask=true&voice=true&fingerprint=true`
 
 > Discuss URL parameters to add a biometric enrollment to an existing subject ID
 
