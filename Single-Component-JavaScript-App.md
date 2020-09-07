@@ -79,12 +79,28 @@ An URL parameter example is as follows:
 ### API Key Security
 > Discuss using the API key as  URL parameter and also how to conceal the API key in the encrypted payload.
 
+For the web app to send any request to the server, an `apiKey` must be set. This field can be sent by two ways:
+
+##### Using URL parameter: 
+
+The web app is capable of catching the `apiKey` if sent as a `GET` parameter. 
+
+Example: `https://private.id/demo/index.htm?apiKey=XXXX` 
+
+##### Using HTTPS header
+
+The other way you can send the `apiKey` to the server, is through HTTPS headers. The field should be named: `x-api-key`
+
+This header field can be used through an API call, using a tool like PostMan. Its value should be a string. 
+
+If apiKey is not present in URL parameter, or request header, the web app and the server will stop executing the desired process.
+
 ### Enrollment
 
 ##### URL Parameters:
 
 In order to force enroll action, the URL parameter should be used with the value 'enroll'. 
-Example: https://private.id/demo/index.htm?apiKey=XXXX&action=enroll 
+Example: `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll` 
 
 ##### Eye Glasses Check
 
