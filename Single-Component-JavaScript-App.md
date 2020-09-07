@@ -157,8 +157,6 @@ Once the user clicks on continue button, the second consent form shows up:
 <img src="https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll-form.png" alt="Your image title" width="450"/>
 
 
-> discuss how to customize the message as needed.
-
 ### Voice Enroll and Predict
 1. The user is asked to read a specific sentence.
 1. The user's voice is captured
