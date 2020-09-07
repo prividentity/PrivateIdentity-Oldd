@@ -1,3 +1,4 @@
+
 > This page is under construction - please check back in day or two! 
 
 # Implementation Guide (Video)
@@ -79,13 +80,38 @@ An URL parameter example is as follows:
 > Discuss using the API key as  URL parameter and also how to conceal the API key in the encrypted payload.
 
 ### Enrollment
-> Discuss URL parameters to use for enroll. 
 
-> Discuss the benefits and drawbacks of turning the eyeglass check on or off
+##### URL Parameters:
 
-> turning antiSpoofing on or off, 
+In order to force enroll action, the URL parameter should be used with the value 'enroll'. 
+Example: https://private.id/demo/index.htm?apiKey=XXXX&action=enroll 
 
-> Turning eye blink on or off
+##### Eye Glasses Check
+
+During enrollment or prediction, you can adjust the eye glasses check to be on or off. For each mode, there are pros and cons. The following table explains it:
+
+| Mode | Pros | Cons
+|--|--| --|
+|ON | Better enrollment images  | Slightly lower performance |
+|OFF | Makes prediction harder | Faster performance and shorter time to enroll |
+
+
+
+##### Video Spoof Check
+
+During enrollment, video spoof check can be turned on/off with the URL parameter antiVideoSpoof. The default value for it is `true`. But if you want it turned off, you can set it to `false`. 
+
+Example: `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=false`
+
+Or:  `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=true`
+
+##### Face Liveness Check
+
+For the purpose of making sure that any enrollment/prediction is done by a human, you can turn the `faceLiveness` URL parameter on or off.  This URL parameter is responsible for checking eye movement, specifically blinking. If no blinking detected, predication/enrollment will not proceed. 
+
+The default value for this parameter is false. To turn it on, you can set it to true like so:
+
+`https://private.id/demo/index.htm?apiKey=XXXX&faceLiveness=true`
 
 > Discuss URL parameters to enroll multiple biometrics at the same time.
 
