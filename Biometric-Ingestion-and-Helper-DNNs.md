@@ -5,7 +5,7 @@
 ![Fingerprint recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Fingerprint.png)
 ### FACE, FACE w/MASK and FINGERPRINT RECOGNITION
 
-### Face, Face w/Mask and Fingerprint Geometry Detection DNN
+### FACE, FACE w/MASK, AND FINGERPRINT GEOMETRY DETECTION DNNs
 * <b>Transforms images into geometric primitives</b> to measure the relative position, width, and other parameters of eyes, mouth(s), nose(s), chin(s), and finger(s)
 * <b>Returns X and Y coordinates</b> of each modality in an image, video frame or video stream.
 * YOLO architecture, 100kB
