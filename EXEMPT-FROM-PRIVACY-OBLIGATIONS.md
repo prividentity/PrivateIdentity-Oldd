@@ -45,17 +45,17 @@
 ## `GDPR Analysis`
 ![GDPR Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/GDPR%201.png)
 * The system, "<b>advance[s] the principles of the GDPR by transforming biometrics into anonymized FHE payloads.</b> This eliminates the requirement for organizations to gather personal data to support robust security and advances the integrity and confidentiality principle and the data minimization principle of the GDPR" 
-[Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#95-gdpr) for full text.
+[Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#95-gdpr) for full text
 
 #### FHE Payloads Contain "Anonymized Data"
 * <b>"FHE payloads and UUIDs are not personal data under the GDPR</b> 
 * Accordingly, the <b>GDPR’s principles do not apply to the FHE payloads or UUIDs" </b>
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) for full text. 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) for full text 
 
 #### FHE Payloads Do Not Contain "Biometric Data"
 * <b>"The FHE payload with UUID does not qualify as biometric data.</b> In particular, the FHE payload does not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait"
 * <b>"The UUID is a randomly generated, universally unique identifier </b>that cannot be tied back to an individual/end user once assigned and in the possession of an entity utilizing SBP systems"
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#952-fhe-payloads-do-not-contain-biometric-data) for full text. 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#952-fhe-payloads-do-not-contain-biometric-data) for full text 
 
 #### System is not subject to GDPR obligations
 * <b>"The GDPR does not regulate the processing of anonymized information" </b>[GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679) 
