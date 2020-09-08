@@ -58,7 +58,7 @@
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#952-fhe-payloads-do-not-contain-biometric-data) for full text. 
 
 #### System is not subject to GDPR obligations
-* <b>"The GDPR does not regulate the processing of anonymized information </b>[GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679) 
+* <b>"The GDPR does not regulate the processing of anonymized information" </b>[GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679) 
 * In Recital 26, the GDPR specifically refers to anonymization to exclude anonymized data from the scope of the data protection legislation, stating:
 
    > “The principles of data protection should therefore not apply to anonymous information, namely information which does not relate to an identified or identifiable natural person or to personal data rendered anonymous in such a manner that the data subject is not or no longer identifiable. This Regulation does not therefore concern the processing of such anonymous information, including for statistical or research purposes” [GDPR Recital 26](https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32016R0679)
@@ -69,21 +69,21 @@
 ## `CCPA Analysis`
 ![CCPA Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/CCPA%201.png)
 * “The system <b>advances the CCPA’s data minimization goals </b>by transmitting, storing and using (processing) only deidentified data and deleting all personal information immediately after it is transformed into FHE payloads"
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#96-ccpa) for full text. 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#96-ccpa) for full text 
 
 #### FHE Payloads Contain "Deidentified Information"
 * "The <b>CCPA defines and regulates “personal information” </b>as “information that identifies, relates to, describes, is capable of being associated with, or could reasonably be linked, directly or indirectly, with a particular consumer or household” 
 * The system <b>fully realizes the CCPA’s legislative goals</b> by, "transforming personal information into FHE payloads and UUIDs that are treated as “deidentified” data under the CCPA"
 * The system <b>only transmits, stores or uses deidentified (anonymized) data</b> 
 * The system <b>does not, "transmit, store or use any other personal data or biometric data</b>, machine or device identifications, metadata, or any other identifying information"
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) for full text. 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) for full text 
 
 #### FHE Payloads Do Not Contain "Biometric Information"
 * The CCPA defines biometric information as follows
    > “…an individual’s physiological, biological or behavioral characteristics, including an individual’s DNA, that <b>can be used, singly or in combination with each other or with other identifying data, to establish individual identity</b>. Biometric information includes, but is not limited to, imagery of the iris, retina, fingerprint, face, hand, palm, vein patterns, and voice recordings, from which an identifier template, such as a faceprint, a minutiae template, or a voiceprint, can be extracted, and keystroke patterns or rhythms, gait patterns or rhythms, and sleep, health, or exercise data that contain identifying information.” [CCPA 1798.140(b)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.)
 * "The encrypted <b>FHE payloads and UUIDs created by SBP systems do not qualify as biometric data under the CCPA</b>. These FHE payloads and UUIDs contain no biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait"
 * <b>"Accordingly, the encrypted FHE payloads and UUIDs should not be treated as biometric information under the CCPA"</b>
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#962-fhe-payloads-do-not-contain-biometric-information) for full text. 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#962-fhe-payloads-do-not-contain-biometric-information) for full text 
 
 #### FHE Payloads Are Not Subject to CCPA Obligations
 * <b>FHE payloads and UUIDs are deidentified data</b>
@@ -93,7 +93,7 @@
    > <b>“‘Deidentification’ means information that cannot reasonably identify, relate to, describe, be capable of being associated with, or be linked, directly or indirectly to a particular consumer</b>, provided that a business that uses deidentified information has implemented technical and process safeguards that prohibit reidentification of the consumer, has implemented processes to prevent inadvertent release of deidentified information, and makes no attempt to reidentify the information” [1798.140(h)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.)
 * Finally, in the same section, [CCPA § 1798.145(a)(5)](https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.145.) further provides that <b>nothing in the CCPA restricts a business’s ability to “collect, use, retain, sell, or disclose consumer information that is deidentified or in the aggregate”</b>
 * "Therefore, the <b>consumer rights provided under the CCPA thus fall away with respect to this deidentified information and businesses that utilize this system do not incur CCPA obligations"</b>
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#962-fhe-payloads-do-not-contain-biometric-information) for full text. 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#962-fhe-payloads-do-not-contain-biometric-information) for full text 
 
 ## `BIPA Analysis`
 ![BIPA Icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/BIPA%201.png)
@@ -108,7 +108,7 @@
 * The system, "<b>advances the rights of Illinois residents with respect to the collection of their biometric identifiers</b> or biometric information by only transmitting, storing or using anonymized data"
 * “Accordingly, the <b>system only transmit, store or use deidentified data and no biometric identifiers or biometric information</b> 
 * Under the plain language of this section and the Illinois state court interpretation, <b>we find the encrypted FHE payload should not be treated as biometric identifiers or biometric information</b>”
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) to full text. 
+* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) to full text 
 
 #### FHE Payloads Do Not Incur BIPA Obligations
 * <b>BIPA obligations apply only to biometric information </b>
@@ -118,7 +118,7 @@
 ![HIPAA icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/HIPAA%201.png)
 * “The Privacy Rule, or Standards for Privacy of Individually Identifiable Health Information, established a standard for the protection of certain health information in the United States” 
 * “The Security Standards for the Protection of Electronic Protected Health Information (the Security Rule) established a national set of security standards for protecting certain health information that is held or transferred in electronic form in the United States”
-* “The Security Rule operationalized the protections contained in the Privacy Rule by addressing the technical and non-technical safeguards that organizations called “covered entities” must put in place to secure individuals’ “electronic protected health information” (e-PHI).” 
+* “The Security Rule operationalized the protections contained in the Privacy Rule by addressing the technical and non-technical safeguards that organizations called “covered entities” must put in place to secure individuals’ “electronic protected health information” (e-PHI)” 
 
 #### FHE Payloads Do Not Contain Individually Identifiable Health Information
 * “The HIPAA defines and protects Protected Health Information, which is individually identifiable health information 
