@@ -18,6 +18,7 @@
 * Integrates easily into Web and mobile apps, Enterprise IAM solutions and high-throughput biometric pipelines.
 * [Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) using built-in fully homomorphic encryption (FHE). 
 * [Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA privacy law obligations.
+* Runs on low-end devices with a minimal footprint.
 * [Recognizes everybody equally](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination) across all ethnicities, skin tones, genders and ages. 
 
 ## RESOURCES
@@ -358,13 +359,4 @@ Fully Homomorphic Encryption complies with CCPA. System exempt from CCPA obligat
 ### Certified Compliant IEEE 2410-2019
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/IEEE%202410%201.png)
 Open standard requires Fully Homomorphic Encryption to protect biometric at rest, in transit and in use.
-
-
-
-
-
-
-
-
-
 
