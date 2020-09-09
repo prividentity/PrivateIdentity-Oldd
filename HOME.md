@@ -4,16 +4,21 @@
 
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
-## OVERVIEW
-* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1)</b> into your [IAM solution](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols), Web and mobile apps, and [biometric pipeline](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) using the included Javascript component ([embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)), [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api), [REST APIs](https://github.com/openinfer/PrivateIdentity/wiki#rest-apis), [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) and [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search)
-
-* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App) </b>across all modern browsers, devices, platforms and clouds. There is no client software to install and no hardware to buy. 
-
-* <b>[Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy)</b> using built-in [fully homomorphic encryption](https://en.wikipedia.org/wiki/Private_biometrics) (FHE). 
-
-* <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis) and [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis)</b> privacy law obligations. 
-
-* <b>Non-biased algorithms </b>[recognize everybody equally](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination) across all ethnicities, skin tones, genders and ages. Also accommodates boundary conditions with up to 30% occlusions including face masks, facial hair, abrasions and blurry or rotated images.
+## BENEFITS
+* [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Identification 
+* <b>Biometric MFA without usernames, passwords</b>, tokens or shared secrets
+* <b>Enroll once</b>, then authenticate on every device
+* <b>Unlimited users/device</b>, unlimited devices/user
+* <b>Preserves privacy</b> without incurring privacy law obligations
+* <b>Reduces cloud storage </b>and network traffic by 99.5% 
+* <b>Provides speed, accuracy, security and privacy </b>with no tradeoffs
+* <b>No bias </b>in recognition algorithms 
+## FEATURES
+* [Deploys instantly]((https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) across all modern browsers, devices, platforms and clouds using a single-component JavaScript application. There is no software to install and no hardware to buy.
+* Integrates easily into Web and mobile apps, Enterprise IAM solutions and high-throughput biometric pipelines.
+* [Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) using built-in fully homomorphic encryption (FHE). 
+* [Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA privacy law obligations.
+* [Recognizes everybody equally](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination) across all ethnicities, skin tones, genders and ages. 
 
 ## RESOURCES
 
@@ -193,8 +198,8 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 ## OPEN STANDARDS, ENCRYPTION & PRIVACY 
 ![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
-* Private Identity actively supports the development of open standards for biometric privacy, cryptography and security
-* <b>Third-party accredited certification</b> (3PAO) is provided by [GMS Registrar](https://gmsaudit.com/). 
+* **Private Identity actively supports the development of open standards** for biometric privacy, cryptography and security
+* <b>Third-party accredited certification</b> (3PAO) is provided by [GMS Registrar](https://gmsaudit.com/)
 
 Private Identity is certified compliant with IEEE 2410 Standard for Biometric Privacy, ISO 27001:2013 International Standard for Information Security Management, ISO 9001:2015 International Standard for Quality Management Systems, US DoD Standard Trusted Computer System Evaluation Criteria (TCSEC), US ODNI ICD 503 Intelligence Community Technology Systems Security Risk Management, Certification and Accreditation and US DoD Multiple Independent Levels of Security/Safety (MILS) Architecture, and compliant with W3C Web Authentication API (WebAuthn), FIPS 197, TLS, IPSEC and SSL.  
 
@@ -202,9 +207,9 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 | --- | --- | --- |
 | **IEEE 2410 Standard for Biometric Privacy (SBP)** Certified Compliant | <b>Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations.</b> Requires fully homomorphic encryption (FHE) for private identity assertion and authentication. | [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) to approved Draft Standard | 
 | **W3C WebAuthn** Compliant | Enables creation and use of strong, attested, scoped, public key-based credentials by Web applications | [Link](https://www.w3.org/TR/webauthn/) to Standard |
-| **US ODNI ICD 503** Certified Compliant | Applies to all US Government organizations, their commercial contractors, and Allied Government information systems that process, store, or communicate intelligence information. | [Link](https://www.dni.gov/files/documents/ICD/ICD_503.pdf) |
+| **US ODNI ICD 503** Certified Compliant | Applies to all US Government organizations, their commercial contractors, and Allied Government information systems that process, store, or communicate intelligence information. | [Link](https://www.dni.gov/files/documents/ICD/ICD_503.pdf) to ICD |
 | **US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)** Certified Compliant | Original standard for processing and storage of classified and other sensitive DoD information. | [Link](https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf) to Standard |
-| **FIPS 197 Advanced Encryption Standard (AES)** Compliant | **Guideline for Implementing Cryptography** in the US Government. | [Link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) to NIST Special Publication 800-21 |
+| **FIPS 197 Advanced Encryption Standard (AES)** Compliant | **Guideline for Implementing Cryptography** in the US Government. | [Link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) to NIST 800-21 |
 | TLS / IPSEC / SSL | **Standard protocols providing privacy and data integrity** between two or more communicating computer applications. | [Link](https://tools.ietf.org/html/rfc8446) to IETF |
 
 | Open Standards for Security Architecture | Description | Link |
