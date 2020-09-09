@@ -1,5 +1,10 @@
 # SYSTEM OVERVIEW 
 ![Solution Diagram](https://github.com/openinfer/PrivateIdentity/blob/master/images/mfa%20solution%20diagram%201.png)
+
+## Technical Overview (Video)
+[![Link to video of technical briefing](https://github.com/openinfer/PrivateIdentity/blob/master/images/Architecture%201%20PLAY.png)](https://youtu.be/T3kSYyMSFzQ "Technical Overview of Cloud Biometric MFA")
+
+
 The Cloud Biometric MFA system determines if the biometric sample from an untrusted user is valid and matches a previously enrolled subject. The system may present the end user with no UI (i.e. a camera or microphone) or a minimal GUI. 
 
 The system preserves privacy by transmitting, storing and using only system data and not processing any user data (“personal data”), biometric data or biometric templates. As such, it is fully compliant with GDPR, CCPA and BIPA and does not incur legal obligations under these laws (link for additional information on privacy).  
