@@ -14,7 +14,7 @@
 * <b>Provides speed, accuracy, security and privacy </b>with no tradeoffs
 * <b>No bias </b>in recognition algorithms 
 ## FEATURES
-* [Deploys instantly]((https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) across all modern browsers, devices, platforms and clouds using a single-component JavaScript application. There is no software to install and no hardware to buy.
+* [Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) across all modern browsers, devices, platforms and clouds using a single-component JavaScript application. There is no software to install and no hardware to buy.
 * Integrates easily into Web and mobile apps, Enterprise IAM solutions and high-throughput biometric pipelines.
 * [Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) using built-in fully homomorphic encryption (FHE). 
 * [Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA privacy law obligations.
