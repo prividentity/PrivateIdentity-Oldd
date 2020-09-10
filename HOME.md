@@ -22,7 +22,7 @@ It’s hard to wrap your head around this. Identity is no longer tied to a devic
 * <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) across all modern browsers</b>, devices, platforms and clouds.
 * <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines.
 * <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally. 
-## FEATURES
+## `FEATURES`
 * Guaranteed Privacy 
 * Absolute Accuracy (99.99%)
 * Fully Homomorphic Encryption (FHE) payloads 
@@ -40,7 +40,7 @@ It’s hard to wrap your head around this. Identity is no longer tied to a devic
 * <b>[Video Introduction to the Developer's Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
 * <b>Developer's Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
-### `Embedded DIV <br>(Single Component Javascript App)`
+### `Embedded DIV (Single Component Javascript App)`
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
 * Preserves [privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) by [synchronously acquiring and FHE transforming](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App#architecture-discussion) biometric data at the edge 
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
@@ -54,7 +54,7 @@ The Web client does not require on-device training and has no requirement for ex
 
 The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
 
-### `Built-in Privacy`: <br>Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations
+### `Built-in Privacy`: Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations
 ![Privacy graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)
 * Built-in [<b>fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (<b>FHE</b>) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE</b> for private identity assertion and authentication. 
