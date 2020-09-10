@@ -1,6 +1,25 @@
 
-## Embedded DIV Implementation Guide (Video)
+## `Embedded DIV` Implementation Guide (Video)
 ![missing video plugs in here](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%20PLAY%201.png)
+
+## `Getting Started`
+
+STEP 1. Setup DIV/HTML
+```
+<!doctype html>
+<html lang="en" style="height: 100%;">
+
+<head>
+  <meta charset="UTF-8">
+</head>
+
+<body style="height: 100%;">
+  <iframe width="100%" height="100%" src="https://private.id/demo/?apiKey=####"></iframe>
+</body>
+
+</html>
+```
+
 
 # How it works 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%202.png)
