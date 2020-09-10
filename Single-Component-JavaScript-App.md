@@ -154,41 +154,21 @@ Below is an example of the `apiKey` sent as a HTTP parameter.
 
 ### Enrollment Consent Forms
 
-For an enrollment to be executed, the user must agree to consent forms. 
+The subject is usually asked for his/her consent prior to enrollment. 
 
 The first form looks like this: 
 
 <img src="https://github.com/openinfer/PrivateIdentity/blob/master/images/first-enroll-form.png" alt="Your image title" width="450"/>
 
-Once the user clicks on continue button, the second consent form shows up:
+If the subject clicks on “continue” button, the next consent form appears as follows:
 
 <img src="https://github.com/openinfer/PrivateIdentity/blob/master/images/second-enroll-form.png" alt="Your image title" width="450"/>
 
+These forms may be customized for your organization. 
 
-### Voice Enroll and Predict
-1. The user is asked to read a specific sentence.
-1. The user's voice is captured
-1. Speech to text determines if user's voice said the required words
-1. The voice is FHE transformed and the server attempts to predict or enroll
-1. A UUID is returned or a -1 is returned to indicate no match. 
+*** 
 
-### Fingerprint Enroll
-1. Fingerprint obtained using  at least 1MP camera (720P) on phone or Webcam ("optical scan") or capacitive scan
-1. Geometry DNN 
-1. Validation DNN - crop & align
-1. Embedding DNN - FHE transform 
-1. Delete Biometric
-1. Transmit FHE payload to server
-1. Server returns UUID or -1 (no match)
-
-## Code Samples
-> Give the user a head start on implementation - help make this as easy as possible.
-  
-
-
-
-
-# How it works 
+# How It Works 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%202.png)
 1. Acquire user biometrics 
 1. Create FHE payloads 
