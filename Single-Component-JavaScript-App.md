@@ -45,8 +45,8 @@ status: 0
 __proto__: Object
 ```
 
-### STEP 5.  
-Use the URLs from Step 3 in your application.  
+### STEP 5.  Finished!
+Use the URLs from Step 3 and the URL parameters described below in your application.  
 
 ## Control All Functions Using URL Parameters 
 URL parameters are used to control all functions of the Web client. The Web client conforms to the [W3C Usage Patterns For Client-Side URL parameters](https://www.w3.org/2001/tag/doc/hash-in-url-20080211.html).  Common URL parameters are listed below.
