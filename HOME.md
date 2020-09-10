@@ -29,7 +29,7 @@ This is the moment.  Identity is no longer tied to a device, username, password,
 * <b>[Video Introduction to the Developer's Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
 * <b>Developer's Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
-### `Embedded DIV (Single Component Javascript App)`
+### `Embedded DIV`
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
 * Preserves [privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) by [synchronously acquiring and FHE transforming](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App#architecture-discussion) biometric data at the edge 
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
