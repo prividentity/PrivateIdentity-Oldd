@@ -70,104 +70,67 @@ An URL parameter example is as follows:
 * The full list of Web Client URL parameters is found [here.](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters)
 * The full list of Administrative URL parameters is found [here.](https://github.com/openinfer/PrivateIdentity/wiki/Admin-URL-Parameters)
 
-
-
-### Enrollment URL Parameters
-The URL parameter 'action=enroll' will force the enroll action. 
-Example: 
-> `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll` 
-
 ### Eyeglasses Check
 
 During enrollment or prediction, you can adjust the eye glasses check to be on or off. For each mode, there are pros and cons. The following table explains it:
 
-| Mode | Pros | Cons
-|--|--| --|
-|ON | Better enrollment images  | Slightly lower performance |
-|OFF | Makes prediction harder | Faster performance and shorter time to enroll |
+| Mode | Pros | Cons |
+| --- | --- | --- |
+| true | Better enrollment images  | Slightly lower performance |
+| false | Slightly reduced accuracy | Faster performance and more convenient for user |
 
+Example:
+> https://private.id/demo/?apiKey=1962&glassCheck=on
+ 
+### Video Spoof Check
 
+During enrollment, video spoof check can be turned on/off with the URL parameter antiVideoSpoof. The default value for it is `true`. It can be disabled by setting the value to `false`. 
 
-##### Video Spoof Check
+Example: 
+> `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=false`
 
-During enrollment, video spoof check can be turned on/off with the URL parameter antiVideoSpoof. The default value for it is `true`. But if you want it turned off, you can set it to `false`. 
+### Require Eyes Open/Closed (Blinking)
 
-Example: `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=false&action=enroll`
+Eyes blink on average every 0.2 seconds. To ensure that the subject’s eyes are blinking, turn the `faceLiveness` URL parameter on.  If no blinking is detected, the prediction or enrollment will not proceed. 
 
-Or:  `https://private.id/demo/index.htm?apiKey=XXXX&antiVideoSpoof=true&action=enroll`
+The default value for this parameter is false. To turn it on, follow the example below.
 
-##### Face Liveness Check
+> `https://private.id/mfa/index.htm?apiKey=XXXX&faceLiveness=true&action=enroll`
 
-For the purpose of making sure that any enrollment/prediction is done by a human, you can turn the `faceLiveness` URL parameter on or off.  This URL parameter is responsible for checking eye movement, specifically blinking. If no blinking is detected, predication/enrollment will not proceed. 
+### Enrollment using Multiple Biometrics 
+Enroll subjects with multiple biometrics (face, voice, faceMask, fingerprint) by combining URL parameters. Each biometric modality can be used separately, or mixed with one or more parameters. 
 
-The default value for this parameter is false. To turn it on, you can set it to true like so:
+The only exception to this is face and faceMask. At the most, one is allowed. 
 
-`https://private.id/demo/index.htm?apiKey=XXXX&faceLiveness=true&action=enroll`
+Example to use voice modality:  
+> `https://private.id/mfa/index.htm?apiKey=XXXX&action=enroll&voice=true`
 
-##### Multiple Biometrics Enrollment
+Example to use face modality:  
+> `https://private.id/mfa/index.htm?apiKey=XXXX&action=enroll&face=true`
 
-On the main page of the web app, you can choose the desired biometrics for prediction/enrollment. In addition to this option, you can also use the URL parameters. The four main modalities are: faceMask, voice, face, fingerprint. Each modality can be used separately, or mixed with one or more parameters. The only exception is face and faceMask. You have to use only one of them.
+Example to use faceMask modality:  
+> `https://private.id/mfa/index.htm?apiKey=XXXX&action=enroll&faceMask=true`
 
-Example to use voice modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&voice=true`
+Example to use fingerprint modality: 
+> `https://private.id/mfa/index.htm?apiKey=XXXX&action=enroll&fingerprint=true`
 
-Example to use face modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&face=true`
+Example to use all modalities:  
+> `https://private.id/mfa/index.htm?apiKey=XXXX&action=enroll&fingerprint=true&faceMask=true&voice=true`
 
-Example to use faceMask modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&faceMask=true`
+## Updating Existing Enrollments:
+A new UUID is created for every enrolled subject. This value is used to add a new biometric modality to an existing enrollment without creating a new UUID. For example, if a user enrolled with `voice` and wants to add `faceMask` modalities, the URL will be: 
 
-Example to use fingerprint modality:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&fingerprint=true`
+> `https://private.id/mfa/index.htm?apiKey=XXXX&action=enroll&uuid=XXXX&faceMask=true`
 
-Example to use all modalities:  `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&fingerprint=true&faceMask=true&voice=true&fingerprint=true`
-
-##### Updating Existing Enrollments:
-
-Once a user is enrolled, a `subject_id` is created for him. This value can be used to update existing modalities. For example, if a user enrolled with `voice` and wants to add `face` modalities, the URL will be: 
-
- `https://private.id/demo/index.htm?apiKey=XXXX&action=enroll&subject_id=XXXX&face=true`
-
-
-
-
-
-Secure the API Key in the JSON payload (Optional)
+### Secure the API Key in the JSON payload (Optional)
 The API key can be passed as a URL parameter (as shown in Step 2) or as part of the JSON payload. The server will not execute the desired process unless a valid apiKey value is available in the URL parameter or request header.
 
 Below is an example of the `apiKey` sent as a HTTP parameter. 
 > `https://private.id/a/index.htm?apiKey=XXXX` 
 
-**To secure the apiKey using the HTTPS header,** The second available method sends the `apiKey` to the server using HTTPS headers. The field is named `x-api-key`. The API key is accessed through the header field and can be assigned with application software or a tool (e.g. PostMan). The value is a string. 
+**To secure the apiKey using the HTTPS header,** send the `apiKey` to the server using HTTPS headers. The field is named `x-api-key`. The API key is accessed through the header field and can be assigned with application software or a tool (e.g. PostMan). The value is a string. 
 
-
-
-
-# How it works 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%202.png)
-1. Acquire user biometrics 
-1. Create FHE payloads 
-1. Send payload to server using SBP RESTful API
-1. Return response (UUID)
-
-The embedded DIV authenticates an unlimited number of users by transmitting FHE payloads to a server, private or public cloud. Identity returns in 300ms. In “off-line mode,” where a network is not present, the client authenticates a maximum of 50 offline users on a modern phone and a few thousand offline users on a laptop. Offline authentication is limited by system resources and returns identity in <10ms. 
-
-Multiple biometric modalities (face, voice, fingerprint) allow additional biometric authentication mechanisms for step-up authentication. This provides system administrators with the flexibility of requiring a single convenient biometric authentication modality for low-risk applications or more rigorous authentication as needed. The fingerprint biometric disambiguates difficult cases such as identical twins.
-
-The Web client provides automated visual guidance during prediction and enrollment to assist unsupervised and supervised users in acquiring quality biometrics. The system creates an enrollment package 50 FHE payloads to bind the trusted user identifier (a UUID generated by the system) with the authorized user’s private biometric identity. After enrollment, the Cloud Biometric MFA system may store the enrollment package in the secure element of the user’s device to support offline authentication and/or on a server, within the Cloud Biometric MFA system.
-
-The Cloud Biometric MFA system’s prediction capability uses a payload of 3 FHE vectors and returns the UUID or (-1) if not found.
-
-## Architecture Discussion
-![Logical Boundaries Diagram for Single Component Web app](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%20Logic%20Boundaries%201.png)
-> Single Component Web app - Logical Block Diagram
-
-The embedded DIV uses fully homomorphic encryption (FHE) methods to ensure privacy, security and confidentiality of the prediction and enrollment packages. To accomplish this, the embedded DIV acquires biometrics using a set of helper DNNs and one pre-trained mobile embedding DNN per biometric modality. These DNNs acquire the biometric using a biometric acquisition workflow and then discard (delete) the plaintext biometric after embedding creation.
-
-The biometric acquisition workflow is implemented as follows. 
-* [**Biometric Capture.**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)  The sensor (e.g. phone camera, Webcam, microphone, etc.) acquires a sample of the user’s biometric. 
-* [**Geometry DNN**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-and-face-wmask-geometry-detection-dnn) - The Geometry DNN determines the (x,y) coordinates of the biometric. 
-* [**Validation DNN**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#4-classes-good-blurry-eyeglasses-facemask-validation-dnn) - Validation DNN provides real-time user guidance for acquiring quality biometrics and validates the biometric sample and determines liveness (anti-spoofing).  
-* [**Embedding DNN**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) – The Embedding DNN transforms the validated biometric sample into an encrypted payload (“FHE payload”). 
-* **Delete Biometric** – The system then discards (deletes) the original biometric data to eliminate risk of loss and prevent any possible future linkage. 
-
-## Minimum Hardware, Browser and Platform Requirements
+### Minimum Hardware, Browser and Platform Requirements
 | Environment | Minimum Version |
 | -- | -- |
 | Google Chrome | 73 |
@@ -188,17 +151,6 @@ The biometric acquisition workflow is implemented as follows.
 | Camera for Facial Recognition | ≥256kB |
 | Camera for Fingerprint Identification | ≥720P (1MP) |
 | Microphone for Voice Identification | ≥8.1kHz (telephone quality) |
-
-
-
-Discuss the workflow that is followed for enrollment.
-1. Capture user's biometrics using built-in sensors, Webcams, USB microphones, etc. Captures 10 for enrollment and 3 for prediction.
-1. Validate Biometrics. If any of the images are not suitable for training, a message is returned and the image is removed. The user must add more images until at least 10 images meeting the minimum quality standards have been provided.
-1. FHE Transform Biometrics
-1. Delete Biometrics
-1. Server validates FHE enrollment package
-1.  Server attempts to match enrollment to an existing user. If existing user is matched, server returns UUID without enrolling subject
-1. If no match is found, the system extracts the features from the images and stores the features in the system.
 
 ### Enrollment Consent Forms
 
@@ -232,4 +184,45 @@ Once the user clicks on continue button, the second consent form shows up:
 ## Code Samples
 > Give the user a head start on implementation - help make this as easy as possible.
   
+
+
+
+
+# How it works 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%202.png)
+1. Acquire user biometrics 
+1. Create FHE payloads 
+1. Send payload to server using SBP RESTful API
+1. Return response (UUID)
+
+The embedded DIV authenticates an unlimited number of users by transmitting FHE payloads to a server, private or public cloud. Identity returns in 300ms. In “off-line mode,” where a network is not present, the client authenticates a maximum of 50 offline users on a modern phone and a few thousand offline users on a laptop. Offline authentication is limited by system resources and returns identity in <10ms. 
+
+Multiple biometric modalities (face, voice, fingerprint) allow additional biometric authentication mechanisms for step-up authentication. This provides system administrators with the flexibility of requiring a single convenient biometric authentication modality for low-risk applications or more rigorous authentication as needed. The fingerprint biometric disambiguates difficult cases such as identical twins.
+
+The Web client provides automated visual guidance during prediction and enrollment to assist unsupervised and supervised users in acquiring quality biometrics. The system creates an enrollment package 50 FHE payloads to bind the trusted user identifier (a UUID generated by the system) with the authorized user’s private biometric identity. After enrollment, the Cloud Biometric MFA system may store the enrollment package in the secure element of the user’s device to support offline authentication and/or on a server, within the Cloud Biometric MFA system.
+
+The Cloud Biometric MFA system’s prediction capability uses a payload of 3 FHE vectors and returns the UUID or (-1) if not found.
+
+## Architecture Discussion
+![Logical Boundaries Diagram for Single Component Web app](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%20Logic%20Boundaries%201.png)
+> Single Component Web app - Logical Block Diagram
+
+The embedded DIV uses fully homomorphic encryption (FHE) methods to ensure privacy, security and confidentiality of the prediction and enrollment packages. To accomplish this, the embedded DIV acquires biometrics using a set of helper DNNs and one pre-trained mobile embedding DNN per biometric modality. These DNNs acquire the biometric using a biometric acquisition workflow and then discard (delete) the plaintext biometric after embedding creation.
+
+The biometric acquisition workflow is implemented as follows. 
+* [**Biometric Capture.**](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)  The sensor (e.g. phone camera, Webcam, microphone, etc.) acquires a sample of the user’s biometric. 
+* [**Geometry DNN**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-and-face-wmask-geometry-detection-dnn) - The Geometry DNN determines the (x,y) coordinates of the biometric. 
+* [**Validation DNN**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#4-classes-good-blurry-eyeglasses-facemask-validation-dnn) - Validation DNN provides real-time user guidance for acquiring quality biometrics and validates the biometric sample and determines liveness (anti-spoofing).  
+* [**Embedding DNN**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) – The Embedding DNN transforms the validated biometric sample into an encrypted payload (“FHE payload”). 
+* **Delete Biometric** – The system then discards (deletes) the original biometric data to eliminate risk of loss and prevent any possible future linkage. 
+
+Discuss the workflow that is followed for enrollment.
+1. Capture user's biometrics using built-in sensors, Webcams, USB microphones, etc. Captures 10 for enrollment and 3 for prediction.
+1. Validate Biometrics. If any of the images are not suitable for training, a message is returned and the image is removed. The user must add more images until at least 10 images meeting the minimum quality standards have been provided.
+1. FHE Transform Biometrics
+1. Delete Biometrics
+1. Server validates FHE enrollment package
+1.  Server attempts to match enrollment to an existing user. If existing user is matched, server returns UUID without enrolling subject
+1. If no match is found, the system extracts the features from the images and stores the features in the system.
+
 
