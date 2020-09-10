@@ -1,6 +1,6 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right.png)](https://www.private.id/)
 
-## `VIDEO INTRODUCTION`
+## VIDEO INTRODUCTION
 
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
@@ -31,8 +31,7 @@
 * <b>[Video Introduction to the Developer's Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
 * <b>Developer's Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
-## `KEY FEATURES`
-### Embedded DIV (Single Component Javascript App)
+### `Embedded DIV (Single Component Javascript App)`
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
 * Preserves [privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) by [synchronously acquiring and FHE transforming](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App#architecture-discussion) biometric data at the edge 
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
@@ -46,7 +45,7 @@ The Web client does not require on-device training and has no requirement for ex
 
 The Web client acquires the biometric using an ensemble of pre-trained TensorFlow™ models.  These models offer the opportunity for higher accuracies and lower overhead than traditional procedural programming.  These small, convenient Helper DNNs use YOLO architecture, are 10kB to 100kB in size and process in <10ms with accuracies >99%.
 
-### Built-in Privacy: Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations
+### `Built-in Privacy: Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations`
 ![Privacy graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)
 * Built-in [<b>fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (<b>FHE</b>) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data. 
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE</b> for private identity assertion and authentication. 
@@ -55,7 +54,7 @@ The Web client acquires the biometric using an ensemble of pre-trained TensorFlo
 Fully homomorphic encryption (FHE) guarantees privacy by irreversibly anonymizing all biometric data using a 1-way cryptographic hash algorithm. FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait. This anonymized FHE payload eliminates any known or foreseeable possibility of linking any of the data to the individual to whom the data originally related. 
 As a result, the [FHE is not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under General Data Protection Regulation (EU) 2016/679 (“GDPR”), [is not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the California Consumer Privacy Act (“CCPA”), [is not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the Biometric Information Privacy Act (“BIPA”) and [is not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA").
 
-### Flexible Deployment
+### `Flexible Deployment`
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 
 | Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines | 
@@ -73,7 +72,7 @@ The <b>GCP solution</b> leverages TensorFlow.js, Cloud AI Platform, Cloud Comput
 
 Similarly, the <b>AWS solution</b> leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53. 
 
-### No Discrimination
+### `No Discrimination`
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
 It took hundreds of experiments conducted several years to finally overcome algorithmic bias. Our first experiments focused on moving images into the infrared spectrum. This effort was reasonably successful. We next experimented with homogenized lighting by moving images into the [HSL spectrum](https://en.wikipedia.org/wiki/HSL_and_HSV). This proved successful.  HSL filters remove light absorption, skin contour and skin color as distractors. Today, we improve accuracy using several mature HSL algorithms during training, prediction, and enrollment (patent pending). 
 
@@ -152,22 +151,20 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetv2 architecture, 3.5MB
 
-### Helper Networks (Geometry DNN → Validation DNN → Embedding DNN)
+### `Helper Networks (Geometry DNN → Validation DNN → Embedding DNN)`
 | Helper DNN | Description | Biometric Modalities |
 | --- | --- | --- | 
 | <b>Geometry DNNs</b> | Transforms valid biometric images into geometric primitives. Returns x,y coordinates. | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns) |
 | <b>Validation DNNs</b> | Aligns and crops and detects video and image spoofing, eye blinks, face masks, eyeglasses and quality human voice. Returns a validation score between 0 and 100. | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-with-mask--fingerprint-validation-dnns), [Voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) |
 | <b>Embedding DNNs<b/> | FHE transforms validated biometric input into a distance-measurable two-dimensional positional array of 128 floating-point numbers (embedding, or “FHE payload”) | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns), [Voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) |
 
-### Offline Authentication
+### `Offline Authentication`
 * <b>Acquires biometrics at the edge</b> with or without a network (TensorFlow at the Edge)
 * <b>Automatically switches to Local Mode</b> after it detects loss of network 
 * <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online 
 * <b>Automatically detects</b> the loss of network connectivity. 
 
-## `SOLUTIONS`
-
-### IAM Integrations
+### `IAM Integrations`
 ![IAM Logos](https://github.com/openinfer/PrivateIdentity/blob/master/images/IAM%20Integr%201.png)
 * Integrates with your existing Enterprise directory using SAML 2.0 or OAuth/OIDC
 * [Google G Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-gsuite)
@@ -175,7 +172,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 * [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
 
-### Digital Identity Verification
+### `Digital Identity Verification`
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
 * <b>Meets AML/KYC identity-proofing requirements </b>for remote presentation of identifying materials or information by an end user for KYC
 * Allows organizations to verify user to [Enrollment Level 2](https://arch.idmanagement.gov/usecases/12_proofidentityloa2/)</b> using an official Photo ID card or passport. 
@@ -185,7 +182,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Preserves privacy</b> by having no personal data leave the local device 
 * [Link to documentation on Github](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
 
-### Account Recovery
+### `Account Recovery`
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
 * <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access.
 * <b>Quickly and accurately identifies locked-out account holders</b> and restores access
