@@ -8,7 +8,7 @@ _Every once in a while, when you least expect it, the greatest adventure finds y
 
 Our all-new AI/ML fully homomorphic encryption recognition algorithms are developed and produced entirely in-house and powered by TensorFlow. They feature absolute accuracy, real-time recognition, 4kB encrypted payloads, unlimited gallery sizes and full privacy.  
 
-It’s hard to wrap your head around this. Identity is no longer tied to a device, username, password, token or shared secret.  
+This is the moment.  Identity is no longer tied to a device, username, password, token or shared secret.  
 
 ## `OVERVIEW`
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
