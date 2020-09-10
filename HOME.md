@@ -6,29 +6,26 @@
 
 _Every once in a while, when you least expect it, the greatest adventure finds you_. In 2017, we threw the old algorithms in the trash bin and started fresh with a clean-sheet design. It took us three years and fifteen patents to reach the finish line. 
 
-Our all-new AI/ML fully homomorphic encryption recognition algorithms are developed and produced entirely in-house and powered by TensorFlow. They feature absolute accuracy, real-time recognition, 4kB encrypted payloads, unlimited gallery sizes and full privacy.  
+Our all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithms are developed and produced entirely in-house and powered by TensorFlow. They feature absolute accuracy, real-time recognition, 4kB encrypted payloads, unlimited gallery sizes and full privacy.  
 
 This is the moment.  Identity is no longer tied to a device, username, password, token or shared secret.  
 
 ## `OVERVIEW`
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
-* <b>No usernames, passwords</b>, tokens or shared secrets
-* <b>Fast, accurate, secure and private </b>with no tradeoffs
-* <b>Enroll once</b>, then authenticate on every device
-* <b>Unlimited users/device</b> and unlimited devices/user
-* <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations. 
-* <b>Reduces cloud storage </b>and network traffic by 99.5% 
-* <b>Minimal footprint runs </b>on almost any device. 
-* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) across all modern browsers</b>, devices, platforms and clouds.
+* <b>Built-in Fully Homomorphic Encryption</b>
+* <b>Enroll once</b>, then authenticate on almost any device 
+* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) with no software to install or hardware to buy. 
 * <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines.
 * <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally. 
 ## `FEATURES`
-* Guaranteed Privacy 
+* FHE Guarantees User Privacy 
 * Absolute Accuracy (99.99%)
-* Fully Homomorphic Encryption (FHE) payloads 
-* Identity returned in 300ms
-* Runs on most devices
-* Built-in anti-spoofing
+* Returns Identity in Real-Time (300ms)
+* Tiny FHE payloads (4kB)
+* Runs on >90% of All Devices
+* Built-in Anti-Spoofing
+* <b>Reduces cloud storage </b>and network traffic by 99.5% 
+* <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations. 
 
 ## `RESOURCES`
 
