@@ -14,10 +14,10 @@ This is the moment.  Identity is no longer tied to a device, username, password,
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
 * <b>Privacy Guaranteed with Fully Homomorphic Encryption</b>
 * <b>Enroll once</b>, then authenticate on almost any device 
-* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) with no software to install or hardware to buy. 
-* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines.
-* <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally. 
-* <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations. 
+* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) with no software to install or hardware to buy
+* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines
+* <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally
+* <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations
 
 ## `RESOURCES`
 
