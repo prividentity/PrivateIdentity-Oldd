@@ -11,12 +11,11 @@ Our all-new AI/ML fully homomorphic encryption recognition algorithms are develo
 
 It’s hard to wrap your head around this. Identity is no longer tied to a device, username, password, token or shared secret.  
 
-
-* [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Biometric Identification and MFA
+* [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Cloud Biometric Identity and MFA
 * <b>No usernames, passwords</b>, tokens or shared secrets
 * <b>Enroll once</b>, then authenticate on every device
 * <b>Unlimited users/device</b> and unlimited devices/user
-* <b>Preserves privacy</b> without incurring privacy law obligations
+* <b>Exempt from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations. 
 * <b>Reduces cloud storage </b>and network traffic by 99.5% 
 * <b>Fast, accurate, secure and private</b>with no tradeoffs
 * <b>Unbiased recognition </b>algorithms 
