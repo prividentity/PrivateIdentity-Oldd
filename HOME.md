@@ -1,44 +1,38 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right.png)](https://www.private.id/)
 
-## VIDEO INTRODUCTION
+## `VIDEO INTRODUCTION`
 
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
-## BENEFITS
-* [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Identification 
-* <b>Biometric MFA without usernames, passwords</b>, tokens or shared secrets
+## `OVERVIEW`
+* [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Biometric Identification and MFA
+* <b>No usernames, passwords</b>, tokens or shared secrets
 * <b>Enroll once</b>, then authenticate on every device
-* <b>Unlimited users/device</b>, unlimited devices/user
+* <b>Unlimited users/device</b> and unlimited devices/user
 * <b>Preserves privacy</b> without incurring privacy law obligations
 * <b>Reduces cloud storage </b>and network traffic by 99.5% 
-* <b>Provides speed, accuracy, security and privacy </b>with no tradeoffs
-* <b>No bias </b>in recognition algorithms 
-## FEATURES
-* [Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) across all modern browsers, devices, platforms and clouds using a single-component JavaScript application. There is no software to install and no hardware to buy.
-* Integrates easily into Web and mobile apps, Enterprise IAM solutions and high-throughput biometric pipelines.
-* [Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) using built-in fully homomorphic encryption (FHE). 
-* [Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA privacy law obligations.
-* Runs on low-end devices with a minimal footprint.
-* [Recognizes everybody equally](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination) across all ethnicities, skin tones, genders and ages. 
+* <b>Fast, accurate, secure and private</b>with no tradeoffs
+* <b>Unbiased recognition </b>algorithms 
+## `FEATURES`
+* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) across all modern browsers</b>, devices, platforms and clouds using a single-component JavaScript application. There is no software to install and no hardware to buy.
+* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines.
+* <b>[Preserves privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) using built-in</b> fully homomorphic encryption (FHE). 
+* <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations.
+* <b>Minimal footprint runs </b>on almost any device. 
+* <b>[Recognizes everybody equally](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination) </b>across all ethnicities, skin tones, genders and ages. 
 
-## RESOURCES
+## `RESOURCES`
 
 * <b>Short Video Introduction</b> [[AWS]](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction AWS Flavored") [[GCP]](https://youtu.be/CuE3x543qKo "Short Video Introduction GCP Flavored") 
-
 * <b>Getting Started with Private Identity</b> [YouTube]
-
 * <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview) </b>[Developer Wiki]
-
 * <b>[Discussion with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
-
 * <b>[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) </b>[Wikipedia]
-
 * <b>[Video Introduction to the Developer's Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
-
 * <b>Developer's Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
-## KEY FEATURES
-### Single Component Javascript App
+## `KEY FEATURES`
+### Embedded DIV (Single Component Javascript App)
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
 * Preserves [privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) by [synchronously acquiring and FHE transforming](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App#architecture-discussion) biometric data at the edge 
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
@@ -89,7 +83,7 @@ Our [face recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#fac
 
 The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes) from both Oxford VGGFace2 and Asian-Celeb. The classes in the training dataset are ethnically distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian. 
 
-### Facial Recognition 
+### `Facial Recognition` 
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20PLAY%201.png)](https://youtu.be/Q7gMuVCWAS8 "Face Recognition for Cloud Biometric MFA")
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -106,7 +100,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 Architecture, 1.3MB
 
-### Face + Mask Recognition  
+### `Face + Mask Recognition`  
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
 
 | Accuracy | Type I Error | Type II Error | Speed |
@@ -124,7 +118,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
 
-### Fingerprint Identification
+### `Fingerprint Identification`
 [![Click for Video Demo of Fingerprint Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Fingerprint%20recogni%20PLAY%203.png)](https://youtu.be/J10akfFzxHI "Fingerprint Identification for Cloud Biometric MFA")
 
 | Accuracy | Type I Error | Type II Error | Speed |
@@ -143,7 +137,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * MobileNetV2 Architecture, 900kB
 * Accepts images from any finger
 
-### Voice (Speaker) Identification 
+### `Voice (Speaker) Identification` 
 [![Click for Video Demo of Voice Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Voice%20PLAY%201.png)](https://youtu.be/eCfB8ixRapw "Voice Recognition for Cloud Biometric MFA")
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -171,7 +165,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online 
 * <b>Automatically detects</b> the loss of network connectivity. 
 
-## SOLUTIONS
+## `SOLUTIONS`
 
 ### IAM Integrations
 ![IAM Logos](https://github.com/openinfer/PrivateIdentity/blob/master/images/IAM%20Integr%201.png)
@@ -180,7 +174,6 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 * [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 * [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
-
 
 ### Digital Identity Verification
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
@@ -197,7 +190,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access.
 * <b>Quickly and accurately identifies locked-out account holders</b> and restores access
 
-## OPEN STANDARDS, ENCRYPTION & PRIVACY 
+## `OPEN STANDARDS, ENCRYPTION & PRIVACY` 
 ![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
 * **Private Identity actively supports the development of open standards** for biometric privacy, cryptography and security
 * <b>Third-party accredited certification</b> (3PAO) is provided by [GMS Registrar](https://gmsaudit.com/)
@@ -220,7 +213,7 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 | **SAML 2.0/ OAuth 2.0 / OIDC** | Standard protocols for authorization, federation, identity management and single sign-on (SSO). | [Link](https://tools.ietf.org/html/rfc8252) to IETF |
 | **DoD Multiple Independent Levels of Security/Safety (MILS) Architecture** | Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. | [Link](https://mils.community/) to MILS |
 
-## FLEXIBLE DEPLOYMENT
+## `FLEXIBLE DEPLOYMENT`
 
 ### SAML 2.0 and OAuth/OIDC protocols
 * Supports SAML 2.0 and OAuth/OIDC protocols
@@ -242,6 +235,8 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 * Runs on 90% of all modern devices 
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications) for additional information.
 * [Setup](https://github.com/openinfer/PrivateIdentity/wiki/DIV-HTML)
+
+***
 
 ### JavaScript APIs (Predict Enroll API)
 [![Click for Video Demo of JavaScript APIs](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%20PLAY%201.png)](https://youtu.be/wjaFHuELTJA "JavaScript APIs for Cloud Biometric MFA")
@@ -284,6 +279,8 @@ Cloud Biometric Search provides high-demand identification tasks asynchronous fa
 
 Build on the same infrastructure as the [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup), Biometric Search identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation as needed, FHE transforms biometrics and then immediately discards the original biometrics (to preserve privacy). Search returns identity in 300ms constant time using Cloud AI services and load-balanced, elastic, fault-tolerant Kubernetes clusters.
 
+***
+
 ### REST APIs 
 ![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API2.png)
 * Four APIs that communicate RESTful using JSON 
@@ -307,7 +304,7 @@ Build on the same infrastructure as the [Encryption Engine](https://github.com/o
 * <b>Click here for AWS Marketplace</b> Listing  (_Not yet public -- send us your AWS account for access_) 
 * <b>Provides API Key access to shared </b>elastic, load balanced and fault tolerant Web services managed and run on AWS by Private Identity.
 
-#### SaaS (Dedicated for a single customer)
+#### SaaS (Dedicated for a single customer)`
 * <b>Click here for AWS Marketplace</b> Listing (_Not yet public -- send us your AWS account for access_) 
 * <b>Provides API Key access to private </b>elastic, load balanced and fault tolerant Web services managed and run on AWS by Private Identity
 
@@ -331,7 +328,7 @@ Docker images of all software that runs in elastic, load balanced, fault toleran
 
 ***
 
-## PRIVACY
+## `PRIVACY`
 
 ### FHE allows organizations to utilize Cloud Biometric MFA without incurring GDPR, CCPA or BIPA obligations. 
 Fully homomorphic encryption (FHE) mitigates the regulatory and legal privacy risk of biometric data by enabling mathematical operations on an encrypted dataset. This eliminates all requirements to process plaintext biometrics or templates.
@@ -359,4 +356,3 @@ Fully Homomorphic Encryption complies with CCPA. System exempt from CCPA obligat
 ### Certified Compliant IEEE 2410-2019
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/IEEE%202410%201.png)
 Open standard requires Fully Homomorphic Encryption to protect biometric at rest, in transit and in use.
-
