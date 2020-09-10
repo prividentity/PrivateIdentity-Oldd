@@ -5,6 +5,13 @@
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
 ## `OVERVIEW`
+_Every once in a while, when you least expect it, the greatest adventure finds you_. In 2017, we threw the old algorithms in the trash bin and started fresh with a clean-sheet design. It took us three years and fifteen patents to reach the finish line. 
+
+Our all-new AI/ML fully homomorphic encryption recognition algorithms are developed and produced entirely in-house and powered by TensorFlow. They feature absolute accuracy, real-time recognition, 4kB encrypted payloads, unlimited gallery sizes and full privacy.  
+
+It’s hard to wrap your head around this. Identity is no longer tied to a device, username, password, token or shared secret.  
+
+
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Biometric Identification and MFA
 * <b>No usernames, passwords</b>, tokens or shared secrets
 * <b>Enroll once</b>, then authenticate on every device
