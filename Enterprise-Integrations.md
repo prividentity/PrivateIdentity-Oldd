@@ -222,11 +222,11 @@ The following screenshots show a sample demonstration of authentication done wit
 
 ## Ping Identity
 <br/>
-PingFederate is an enterprise federation server that enables user authentication and single sign-on. It serves as a global authentication authority that allows employees, customers, and partners to securely access all the applications they need from any device.
-
+PingFederate is an enterprise federation server that enables user authentication and single sign-on. It serves as a global authentication authority that allows employees, customers, and partners to securely access applications from any device.
+<br>
 Ping Identity currently verifies the user via Active Directory, so the SAML response <Subject.Name.Id> should contain the UUID from the IP.
 
-Ping Identity can differentiate between successful and unsuccessful attempts. Currently, the modality that has been configured with face, voice, and face & voice.
+Ping Identity can differentiate between successful and unsuccessful attempts. PingFederate currently supports face, face with mask, voice, and fingerprint biometric modalities. 
 
 Ping Identity provides the subject name in the SAML Request which expects to be sent back in the SAML response. If the user is not found on predict it will proceed with the enroll flow to register the user in the Active directory.
 
