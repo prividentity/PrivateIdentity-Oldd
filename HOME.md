@@ -22,8 +22,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview) </b>[Developer Wiki]
 * <b>[Discussion with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
 * <b>[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) </b>[Wikipedia]
-* <b>[Video Introduction to the Developer's Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
-* <b>Developer's Sandbox: [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
+* <b>[Developer's Sandbox](https://private.id/demo/?apiKey=00000000000000001962) </b> [[Video Introduction]](https://youtu.be/6x0b5FckhIA)
 
 ## `FEATURES`
   
