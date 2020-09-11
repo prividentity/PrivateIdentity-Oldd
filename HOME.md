@@ -59,7 +59,7 @@ The [FHE payload is not “Personal Data”](https://github.com/openinfer/Privat
 | | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 | | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 
-
+<br><br>
 ### `No Discrimination`
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
 It took hundreds of experiments and three years to overcome algorithmic bias. We first found a modicum of success moving images into the infrared spectrum. Next, we experimented with homogenized lighting and found our solution in the [HSL spectrum](https://en.wikipedia.org/wiki/HSL_and_HSV). HSL filters are useful for removing light absorption, skin contour and skin color as distractors. Our solution uses hundreds of HSL algorithms during training, prediction, and enrollment (patent pending).
@@ -69,7 +69,7 @@ Interestingly, we found moving images into the HSL space did not improve accurac
 Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.9% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, the face recognition DNN failed to recognize six images. Inspection of the [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis) found that each was too blurry for recognition.
 
 The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes) from both Oxford VGGFace2 and Asian-Celeb. The classes in the training dataset are ethnically distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian.
-
+<br><br>
 ### `Facial Recognition`
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20PLAY%201.png)](https://youtu.be/Q7gMuVCWAS8 "Face Recognition for Cloud Biometric MFA")
 
