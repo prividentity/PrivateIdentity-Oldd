@@ -59,13 +59,12 @@ The [FHE payload is not “Personal Data”](https://github.com/openinfer/Privat
 | | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 | | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 
-All software tools are included.   The Cloud Biometric MFA solution is available as [SaaS](https://github.com/openinfer/PrivateIdentity/wiki#saas) or [PaaS](https://github.com/openinfer/PrivateIdentity/wiki#paas-deployments) on <b>AWS, GCP and on-premises</b>.
 
 ### `No Discrimination`
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
-It took hundreds of experiments and three years to overcome algorithmic bias. We first found a modicum of success moving images into the infrared spectrum. Next, we experimented with homogenized lighting by moving images into the [HSL spectrum](https://en.wikipedia.org/wiki/HSL_and_HSV) and struck gold. HSL filters, it turns out, are quite useful for removing light absorption, skin contour and skin color as distractors. Today, we use hundreds of HSL algorithms during training, prediction, and enrollment (patent pending).
+It took hundreds of experiments and three years to overcome algorithmic bias. We first found a modicum of success moving images into the infrared spectrum. Next, we experimented with homogenized lighting and found our solution in the [HSL spectrum](https://en.wikipedia.org/wiki/HSL_and_HSV). HSL filters are useful for removing light absorption, skin contour and skin color as distractors. Our solution uses hundreds of HSL algorithms during training, prediction, and enrollment (patent pending).
 
-Interestingly, we found moving images into the HSL spectrum did not improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
+Interestingly, we found moving images into the HSL space did not improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
 
 Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.9% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, the face recognition DNN failed to recognize six images. Inspection of the [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis) found that each was too blurry for recognition.
 
@@ -83,13 +82,13 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 * **Touchless** Face Recognition using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in polynomial time irrespective of gallery size
+* Operates in _constant time_ irrespective of gallery size
 * Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
-* MobileNetV2 Architecture, 1.3MB
+* MobileNetV2 architecture, 1.3MB
 
-### `Face + Mask Recognition`
+### `Face with Mask Recognition`
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
 
 | Accuracy | Type I Error | Type II Error | Speed |
@@ -101,7 +100,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 * **Touchless** Face w/ Mask Recognition using any general-purpose camera (webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in polynomial time irrespective of gallery size
+* Operates in _constant time_ irrespective of gallery size
 * Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
@@ -120,11 +119,11 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * **Touchless** Fingerprint Identification using optical scan (camera) or capacitive sensor
 * Supports any general-purpose camera (Webcams, phones) ≥720P (1MP)
 * Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in polynomial time irrespective of gallery size
+* Operates in _constant time_ irrespective of gallery size
 * Trained using the NIST Special Database 4 and CASIA-FingerprintV5
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.
-* MobileNetV2 Architecture, 900kB
+* MobileNetV2 architecture, 900kB
 * Accepts images from any finger
 
 ### `Voice (Speaker) Identification`
@@ -139,20 +138,13 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 * **Touchless** Text-, language- and accent-independent voice identification with 1 second of audio
 * Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in polynomial time irrespective of gallery size
+* Operates in _constant time_ irrespective of gallery size
 * Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetv2 architecture, 3.5MB
 
-### `Helper Networks` (Geometry DNN → Validation DNN → Embedding DNN)
-
-| Helper DNN | Description | Biometric Modalities |
-| --- | --- | --- |
-| <b>Geometry DNNs</b> | Transforms valid biometric images into geometric primitives. Returns x,y coordinates. | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns) |
-| <b>Validation DNNs</b> | Aligns and crops and detects video and image spoofing, eye blinks, face masks, eyeglasses and quality human voice. Returns a validation score between 0 and 100. | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-with-mask--fingerprint-validation-dnns), [Voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) |
-| <b>Embedding DNNs<b/> | FHE transforms validated biometric input into a distance-measurable two-dimensional positional array of 128 floating-point numbers (embedding, or “FHE payload”) | [Face, Face with Mask, Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns), [Voice](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) |
-
 ### `Offline Authentication`
+[![Click for Video Demo of Offline Authentication](https://github.com/openinfer/PrivateIdentity/blob/master/images/Offline%20Auth%20PLAY%201.png)](https://youtu.be/ZexmPgCH9cQ "Offline Auth for Cloud Biometric MFA")
 
 * <b>Acquires biometrics at the edge</b> with or without a network (TensorFlow at the Edge)
 * <b>Automatically switches to Local Mode</b> after it detects loss of network
