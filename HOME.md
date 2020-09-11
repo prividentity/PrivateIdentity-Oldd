@@ -4,11 +4,9 @@
 
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
-_Every once in a while, when you least expect it, the greatest adventure finds you_. In 2017, we threw the old algorithms in the trash bin and started fresh with a clean-sheet design. It took us three years and seventeen patents to reach the finish line. 
+In 2017, we threw the old algorithms in the trash bin and started fresh with a clean-sheet design. It took us three years and seventeen patents to build Cloud Biometric MFA. These all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm is developed and produced entirely in-house and powered by TensorFlow. It features absolute accuracy, real-time recognition, 4kB FHE payloads, unlimited users and full privacy.  
 
-Our all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithms are developed and produced entirely in-house and powered by TensorFlow. They feature absolute accuracy, real-time recognition, 4kB FHE payloads, unlimited users and full privacy.  
-
-This is the moment.  Identity is no longer tied to a device, username, password, token or shared secret.  
+Identity, for the first time, is no longer tied to a device, username, password, token or shared secret.  
 
 ## `OVERVIEW`
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
