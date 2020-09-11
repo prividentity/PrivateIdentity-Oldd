@@ -30,9 +30,8 @@ Now, for the first time, digital identity is no longer tied to a device, usernam
 
 ## `FEATURES`
   
-### `Micro-App MFA Client`
+### `Micro-App MFA Client` 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
-
 * Single Page interactive JavaScript module designed to perform like a fully coded application
 * Supports all biometric acquisitions, workflows and FHE transformations -- online and offline 
 * Runs on 90%+ of all modern devices, browsers and platforms 
