@@ -38,6 +38,7 @@ Deploy the MFA Client in just a few minutes as an embedded DIV or HTTPS to add b
 
 The MFA Client does not require on-device training and its small footprint runs well on low-end devices. Modern devices multi-threaded kernels operate in millisecond response time. High-end devices equipped with GPUs and Edge TPUs operate 70-100x faster.   
 <br>
+
 ### `Built-in Privacy:` "Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations"
 
 ![Privacy graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)
@@ -50,6 +51,7 @@ Organizations using Cloud Biometric MFA guarantee user privacy and limit risk by
 
 The [FHE payload is not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under General Data Protection Regulation (EU) 2016/679 (“GDPR”), [is not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the California Consumer Privacy Act (“CCPA”), [is not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the Biometric Information Privacy Act (“BIPA”) and [is not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA").
 <br>
+
 ### `Flexible Deployment`
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 | Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines |
@@ -71,6 +73,7 @@ Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#fac
 
 The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes) from both Oxford VGGFace2 and Asian-Celeb. The classes in the training dataset are ethnically distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian.
 <br><br>
+
 ### `Facial Recognition`
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20PLAY%201.png)](https://youtu.be/Q7gMuVCWAS8 "Face Recognition for Cloud Biometric MFA")
 
@@ -109,6 +112,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
 <br>
+
 ### `Fingerprint Identification`
 [![Click for Video Demo of Fingerprint Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Fingerprint%20recogni%20PLAY%203.png)](https://youtu.be/J10akfFzxHI "Fingerprint Identification for Cloud Biometric MFA")
 
@@ -129,6 +133,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * MobileNetV2 architecture, 900kB
 * Accepts images from any finger
 <br>
+
 ### `Voice (Speaker) Identification`
 [![Click for Video Demo of Voice Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Voice%20PLAY%201.png)](https://youtu.be/eCfB8ixRapw "Voice Recognition for Cloud Biometric MFA")
 
@@ -146,6 +151,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetv2 architecture, 3.5MB
 <br>
+
 ### `Offline Authentication`
 [![Click for Video Demo of Offline Authentication](https://github.com/openinfer/PrivateIdentity/blob/master/images/Offline%20Auth%20PLAY%201.png)](https://youtu.be/ZexmPgCH9cQ "Offline Auth for Cloud Biometric MFA")
 
@@ -154,6 +160,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online
 * <b>Automatically detects</b> the loss of network connectivity.
 <br>
+
 ### `IAM Integrations`
 ![IAM Logos](https://github.com/openinfer/PrivateIdentity/blob/master/images/IAM%20Integr%201.png)
 
@@ -163,6 +170,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 * [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
 <br>
+
 ### `Digital Identity Verification`
 
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
@@ -175,6 +183,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Preserves privacy</b> by having no personal data leave the local device
 * [Link to documentation on Github](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
 <br>
+
 ### `Account Recovery`
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
 
@@ -182,6 +191,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Available anytime after enrollment
 * <b>Quickly and accurately identifies locked-out account holders</b> and restores access
 <br>
+
 ## `OPEN STANDARDS, ENCRYPTION & PRIVACY`
 
 ![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
@@ -207,6 +217,7 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 | **SAML 2.0/ OAuth 2.0 / OIDC** | Standard protocols for authorization, federation, identity management and single sign-on (SSO). | [Link](https://tools.ietf.org/html/rfc8252) to IETF |
 | **DoD MILS** Multiple Independent Levels of Security/Safety (MILS) Architecture | Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. | [Link](https://mils.community/) to MILS |
 <br>
+
 ## `FLEXIBLE DEPLOYMENT`
 
 ### `SAML 2.0 and OAuth/OIDC`
