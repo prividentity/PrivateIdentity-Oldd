@@ -60,7 +60,8 @@ The [FHE payload is not “Personal Data”](https://github.com/openinfer/Privat
 | | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 
 <br>
-### `No Discrimination`
+
+### `No Discrimination`<br>
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
 It took hundreds of experiments and three years to overcome algorithmic bias. We first found a modicum of success moving images into the infrared spectrum. Next, we experimented with homogenized lighting and found our solution in the [HSL spectrum](https://en.wikipedia.org/wiki/HSL_and_HSV). HSL filters are useful for removing light absorption, skin contour and skin color as distractors. Our solution uses hundreds of HSL algorithms during training, prediction, and enrollment (patent pending).
 
