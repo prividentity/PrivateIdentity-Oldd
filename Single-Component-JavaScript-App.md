@@ -1,5 +1,5 @@
 
-## `Embedded DIV` Implementation Guide (Video)
+## `Microapp` Implementation Guide (Video)
 ![missing video plugs in here](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%20PLAY%201.png)
 
 ## `Getting Started`
