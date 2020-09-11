@@ -89,7 +89,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
 <br>
-### `Face with Mask Recognition`
+### `Face with Mask Recognition`<br>
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
 
 | Accuracy | Type I Error | Type II Error | Speed |
