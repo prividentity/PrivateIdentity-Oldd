@@ -4,9 +4,9 @@
 
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
-In 2017, we threw the old algorithms in the trash bin and started fresh with a clean-sheet design. It took us three years and seventeen patents to build Cloud Biometric MFA. These all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm is developed and produced entirely in-house and powered by TensorFlow. It features absolute accuracy, real-time recognition, 4kB FHE payloads, unlimited users and full privacy.  
+In 2017, we threw the old algorithms in the trash bin and started fresh with a clean-sheet design. It took us three years and seventeen patents to build Cloud Biometric MFA. This all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm is developed and produced entirely in-house and powered by TensorFlow. It features absolute accuracy, 300ms response time, 4kB FHE payloads, unlimited users and full privacy.  
 
-Identity, for the first time, is no longer tied to a device, username, password, token or shared secret.  
+Now, for the first time, identity is no longer tied to a device, username, password, token or shared secret.  
 
 ## `OVERVIEW`
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
@@ -27,7 +27,9 @@ Identity, for the first time, is no longer tied to a device, username, password,
 * <b>[Video Introduction to the Developer's Sandbox](https://youtu.be/6x0b5FckhIA) </b>[YouTube Channel]
 * <b>Developer's Sandbox:  [https://private.id/demo](https://private.id/demo/?apiKey=00000000000000001962) </b> [Try it now!]
 
-### `Embedded DIV`
+## `FEATURES`
+
+### Embedded DIV
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
 * Preserves [privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy) by [synchronously acquiring and FHE transforming](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App#architecture-discussion) biometric data at the edge 
 * Easy to deploy with no requirement to install additional software, plugins or extensions 
