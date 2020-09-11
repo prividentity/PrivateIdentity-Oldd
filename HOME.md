@@ -10,9 +10,9 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
 * <b>[Guarantees Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with Fully Homomorphic Encryption</b>
 * <b>Enroll once</b>, then authenticate on almost any device
-* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) with no software to install and no hardware to buy
+* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#micro-app-mfa-client) with no software to install and no hardware to buy
 * <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines
-* <b>[Unbiased algorithms]([https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination))</b> recognize everyone equally
+* <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally
 * <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations
 
 ## `RESOURCES`
