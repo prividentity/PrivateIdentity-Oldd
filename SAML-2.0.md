@@ -40,7 +40,7 @@ The response coming from this endpoint should be useful inside an HTML form. The
 
 ### Integration with Microsoft Azure
 
-In addition to being compatible with Google's GSuite, our application is also capable of granting user access to Microsoft services. The workflow is similar to the previously described one, with respect to some parameter changes.
+In addition to being compatible with Google's GSuite, our application is also capable of granting user access to Microsoft services. The workflow is similar to the one previously described for GCP but requires a few parameter changes.
 
 
 ** Request **
