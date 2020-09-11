@@ -3,7 +3,7 @@
 ## VIDEO INTRODUCTION
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
-We have thrown the old algorithms in the trash bin and started fresh with a clean-sheet design. Cloud Biometric MFA took three years and seventeen patents to build. We developed this all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm entirely in-house. It features absolute accuracy, 300ms response time, real-time recognition, 4kB FHE payloads, unlimited users and full privacy.  
+We have thrown the old algorithms into the trash bin and started fresh with a clean-sheet design. Cloud Biometric MFA took three years and seventeen patents to build. We developed this all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm in collaboration with Google's TensorFlow team. It features absolute accuracy, 300ms response time, real-time recognition, 4kB FHE payloads, unlimited users and full privacy.  
 
 Now, for the first time, digital identity is no longer tied to a device, username, password, token or shared secret.
 
