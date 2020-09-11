@@ -1,5 +1,3 @@
-(This uses [Face API documentation](https://github.com/justadudewhohacks/face-api.js/) as a template)
-
 # Getting Started
 
 ## Running the Examples
