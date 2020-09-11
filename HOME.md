@@ -175,7 +175,8 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 ### `Account Recovery`
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
 
-* <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access.
+* <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access
+* Available anytime after enrollment
 * <b>Quickly and accurately identifies locked-out account holders</b> and restores access
 
 ## `OPEN STANDARDS, ENCRYPTION & PRIVACY`
@@ -187,9 +188,9 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 
 | Open Standards for Privacy & Encryption | Description | Link |
 | --- | --- | --- |
-| **IEEE 2410 Standard for Biometric Privacy (SBP)** Certified Compliant | Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations. Requires fully homomorphic encryption (FHE) for private identity assertion and authentication. | [Link]([https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)) to approved Draft Standard |
+| **IEEE 2410 Standard for Biometric Privacy (SBP)** Certified Compliant | Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations. Requires fully homomorphic encryption (FHE) for private identity assertion and authentication. | [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)) to approved Draft Standard |
 | **W3C WebAuthn** Compliant | Enables creation and use of strong, attested, scoped, public key-based credentials by Web applications | [Link](https://www.w3.org/TR/webauthn/) to Standard |
-| **US ODNI ICD 503** Certified Compliant | Applies to all US Government organizations, their commercial contractors, and Allied Government information systems that process, store, or communicate intelligence information. | [Link]([https://www.dni.gov/files/documents/ICD/ICD_503.pdf](https://www.dni.gov/files/documents/ICD/ICD_503.pdf)) to ICD |
+| **US ODNI ICD 503** Certified Compliant | Applies to all US Government organizations, their commercial contractors, and Allied Government information systems that process, store, or communicate intelligence information. | [Link](https://www.dni.gov/files/documents/ICD/ICD_503.pdf) to ICD |
 | **US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)** Certified Compliant | Original standard for processing and storage of classified and other sensitive DoD information. | [Link](https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf) to Standard |
 | **FIPS 197 Advanced Encryption Standard (AES)** Compliant | Guideline for Implementing Cryptography in the US Government. | [Link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) to NIST 800-21 |
 | **TLS / IPSEC / SSL** | Standard protocols providing privacy and data integrity between two or more communicating computer applications. | [Link](https://tools.ietf.org/html/rfc8446) to IETF |
@@ -218,14 +219,8 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 
 ### `Micro-App MFA Client` (Embedded DIV)
 ![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20Deploy%202.png)
-* Deploys effortlessly with no software to install and no hardware to buy
-* Users enroll in four seconds, authenticate in 300ms
-* Powered by TensorFlow.js
-* Preserves privacy by acquiring and FHE transforming biometric data at the edge
-* Runs on 90%+ of all modern devices
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications) for additional information.
 * [Setup](https://github.com/openinfer/PrivateIdentity/wiki/DIV-HTML)
-
 
 ***
 
@@ -278,18 +273,17 @@ Built on the same infrastructure as the [Encryption Engine](https://github.com/o
 ### REST APIs
 ![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API2.png)
 
-* Four APIs that communicate RESTful using JSON
-* Receives FHE payloads as input (use the JavaScript app, JavaScript APIs or Encryption Engine to create payloads)
+* Preserves privacy by only receiving FHE payloads and UUIDs as input
 * Enrolls in four seconds, authenticates in 300ms
 * [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#SBP-API-Overview) for additional information
 
-> POST “/trueid/v1.1/enroll”
+> POST “/prid/v1.1/enroll”
 
-> POST “/trueid/v1.1/predict”
+> POST “/prid/v1.1/predict”
 
-> POST “/trueid/v1.1/liveness”
+> POST “/prid/v1.1/liveness”
 
-> POST “/trueid/v1.1/verify”
+> POST “/prid/v1.1/verify”
 
 ***
 
