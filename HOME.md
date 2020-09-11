@@ -37,7 +37,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 Deploy the MFA Client in just a few minutes as an embedded DIV or HTTPS to add biometric enrollment, identity, MFA and account recovery. The Micro-App Client uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
 
 The MFA Client does not require on-device training and its small footprint runs well on low-end devices. Modern devices multi-threaded kernels operate in millisecond response time. High-end devices equipped with GPUs and Edge TPUs operate 70-100x faster.   
-
+<br>
 ### `Built-in Privacy:` "Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations"
 
 ![Privacy graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)
@@ -49,7 +49,7 @@ The MFA Client does not require on-device training and its small footprint runs 
 Organizations using Cloud Biometric MFA guarantee user privacy and limit risk by irreversibly anonymizing all biometric data and personal data with fully homomorphic encryption (FHE).  FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait.  Anonymized FHE payloads eliminate any known or foreseeable possibility of linking any data to the individual to whom the data originally related.
 
 The [FHE payload is not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under General Data Protection Regulation (EU) 2016/679 (“GDPR”), [is not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the California Consumer Privacy Act (“CCPA”), [is not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the Biometric Information Privacy Act (“BIPA”) and [is not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA").
-
+<br>
 ### `Flexible Deployment`
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 | Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines |
@@ -59,7 +59,7 @@ The [FHE payload is not “Personal Data”](https://github.com/openinfer/Privat
 | | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 | | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 
-<br><br>
+<br>
 ### `No Discrimination`
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
 It took hundreds of experiments and three years to overcome algorithmic bias. We first found a modicum of success moving images into the infrared spectrum. Next, we experimented with homogenized lighting and found our solution in the [HSL spectrum](https://en.wikipedia.org/wiki/HSL_and_HSV). HSL filters are useful for removing light absorption, skin contour and skin color as distractors. Our solution uses hundreds of HSL algorithms during training, prediction, and enrollment (patent pending).
@@ -87,7 +87,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
-
+<br>
 ### `Face with Mask Recognition`
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
 
@@ -105,7 +105,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
-
+<br>
 ### `Fingerprint Identification`
 [![Click for Video Demo of Fingerprint Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Fingerprint%20recogni%20PLAY%203.png)](https://youtu.be/J10akfFzxHI "Fingerprint Identification for Cloud Biometric MFA")
 
@@ -125,7 +125,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.
 * MobileNetV2 architecture, 900kB
 * Accepts images from any finger
-
+<br>
 ### `Voice (Speaker) Identification`
 [![Click for Video Demo of Voice Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Voice%20PLAY%201.png)](https://youtu.be/eCfB8ixRapw "Voice Recognition for Cloud Biometric MFA")
 
@@ -142,7 +142,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetv2 architecture, 3.5MB
-
+<br>
 ### `Offline Authentication`
 [![Click for Video Demo of Offline Authentication](https://github.com/openinfer/PrivateIdentity/blob/master/images/Offline%20Auth%20PLAY%201.png)](https://youtu.be/ZexmPgCH9cQ "Offline Auth for Cloud Biometric MFA")
 
@@ -150,7 +150,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Automatically switches to Local Mode</b> after it detects loss of network
 * <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online
 * <b>Automatically detects</b> the loss of network connectivity.
-
+<br>
 ### `IAM Integrations`
 ![IAM Logos](https://github.com/openinfer/PrivateIdentity/blob/master/images/IAM%20Integr%201.png)
 
@@ -159,7 +159,7 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 * [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 * [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
-
+<br>
 ### `Digital Identity Verification`
 
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
@@ -171,14 +171,14 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Verifies phone owner with SMS </b>message to phone
 * <b>Preserves privacy</b> by having no personal data leave the local device
 * [Link to documentation on Github](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
-
+<br>
 ### `Account Recovery`
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
 
 * <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access
 * Available anytime after enrollment
 * <b>Quickly and accurately identifies locked-out account holders</b> and restores access
-
+<br>
 ## `OPEN STANDARDS, ENCRYPTION & PRIVACY`
 
 ![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
@@ -203,7 +203,7 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 | **ISO 9001:2015** Quality Management Standard Certified Compliant | International Standard ensures software satisfies statutory and regulatory requirements and meets the needs of customers and other stakeholders. | [Link](https://www.iso.org/iso-9001-quality-management.html) to ISO 9000
 | **SAML 2.0/ OAuth 2.0 / OIDC** | Standard protocols for authorization, federation, identity management and single sign-on (SSO). | [Link](https://tools.ietf.org/html/rfc8252) to IETF |
 | **DoD MILS** Multiple Independent Levels of Security/Safety (MILS) Architecture | Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. | [Link](https://mils.community/) to MILS |
-
+<br>
 ## `FLEXIBLE DEPLOYMENT`
 
 ### `SAML 2.0 and OAuth/OIDC`
