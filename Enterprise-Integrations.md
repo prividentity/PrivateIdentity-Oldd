@@ -22,13 +22,13 @@ Workflow used for the SAML authentication in case of Okta/ping:
 
 ## Okta
 <br/>
-Okta, Inc. is a publicly-traded identity and access management company based in San Francisco. It provides cloud software that helps companies manage and secure user authentication into modern applications, and for developers to build identity controls into applications, website web services, and devices.   
+Okta, Inc. is a publicly-traded identity and access management company based in San Francisco. It provides cloud software that helps companies manage and secure user authentication into modern applications, and for developers to build identity controls into applications, website web services, and devices.<br><br>   
 
-Okta provides authentication services across many identity management firms. In our case, we have used Okta as an SP while using private identity services as an IP. This is achieved by handshaking the SAML authentication during the verification process between Okta and Private Identity.
+Okta provides authentication services across many identity management firms. In our case, we have used Okta as an SP while using Private Identity services as an IdP. This is achieved by handshaking the SAML authentication during the verification process between Okta and Private Identity.
 
-Okta currently verifies the user through email ID, so the SAML response <Subject.Name.Id> should contain the email from the IP.
+Okta currently verifies the user through email ID, so the SAML response <Subject.Name.Id> should contain the email from the IdP.
 
-Steps to setup Private Identity as IDP in Okta:
+Steps to setup Private Identity as IdP in Okta:
 
 1. Log in to Okta as Admin
 2. Go to Security -> Identity Providers
@@ -228,11 +228,9 @@ Ping Identity currently verifies the user via Active Directory, so the SAML resp
 
 Ping Identity can differentiate between successful and unsuccessful attempts. PingFederate currently supports face, face with mask, voice, and fingerprint biometric modalities. 
 
-Ping Identity provides the subject name in the SAML Request which expects to be sent back in the SAML response. If the user is not found on predict it will proceed with the enroll flow to register the user in the Active directory.
+Steps to setup Private Identity as IdP for Ping Identity:
 
-Steps to setup Private Identity as IDP in Ping Identity:
-
-1. Log in to the Ping Federate server and choose Service Provider. Click Create New to create a new IdP connection.
+1. Log in to the PingFederate server and choose Service Provider. Click Create New to create a new IdP connection.
 
 ![Ping Setup 1](https://github.com/openinfer/PrivateIdentity/blob/master/images/ping_setup_1.png)
 
