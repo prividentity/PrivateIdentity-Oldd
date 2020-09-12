@@ -11,7 +11,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * <b>[Guarantees Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with Fully Homomorphic Encryption</b>
 * <b>Enroll once</b>, then authenticate on almost any device
 * <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#micro-app-mfa-client) with no software to install and no hardware to buy
-* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines
+* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines
 * <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally
 * <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations
 
@@ -22,21 +22,21 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview) </b>[Developer Wiki]
 * <b>[Discussion with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
 * <b>[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) </b>[Wikipedia]
-* <b>[Developer's Sandbox](https://private.id/demo/?apiKey=00000000000000001962) </b> [[Video Introduction]](https://youtu.be/6x0b5FckhIA)
+* <b>[Developer's Sandbox](https://private.id/demo/?apiKey=00000000000000001962) </b> [[Video Tutorial]](https://youtu.be/6x0b5FckhIA)
 
 ## `FEATURES`
   
-### `Micro-App MFA Client` 
+### `MFA Micro-App` Web Client 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
-* Single Page interactive JavaScript module designed to perform like a fully coded application
-* Supports all biometric acquisitions, workflows and FHE transformations -- online and offline 
-* Runs on 90%+ of all modern devices, browsers and platforms 
+* Interactive JavaScript Single Page App that performs like a fully coded application
+* Supports all biometric acquisition, workflows and FHE transformations -- online and offline 
+* Runs on 90%+ of all modern devices, browsers, platforms and clouds 
 * Simple, fast, secure and intuitive for users and developers
-* <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)</b> For Setup and Documentation 
+* <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)</b> For Documentation and Tutorials 
 
-Deploy the MFA Client in just a few minutes as an embedded DIV or HTTPS to add biometric enrollment, identity, MFA and account recovery. The Micro-App Client uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
+Deploy the MFA Micro-App in just a few minutes as an embedded DIV or HTTPS for secure biometric enrollment, identity, MFA and account recovery. The MFA Micro-App uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
 
-The MFA Client does not require on-device training and its small footprint runs well on low-end devices. Modern devices multi-threaded kernels operate in millisecond response time. High-end devices equipped with GPUs and Edge TPUs operate 70-100x faster.   
+The MFA Micro-App does not require on-device training and its small footprint runs on low-end devices. Modern, high-end devices with multi-threaded kernels operate in millisecond response time. Modern devices equipped with GPUs and Edge TPUs operate 70-100x faster. 
 <br>
 
 ### `Built-in Privacy:` "Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations"
@@ -47,9 +47,9 @@ The MFA Client does not require on-device training and its small footprint runs 
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE</b> for private identity assertion and authentication.
 * IEEE 2410 certified compliance, "...<b>guarantees the SBP system does not incur [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis) or [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis) privacy obligations." </b>
 
-Organizations using Cloud Biometric MFA guarantee user privacy and limit risk by irreversibly anonymizing all biometric data and personal data with fully homomorphic encryption (FHE).  FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait.  Anonymized FHE payloads eliminate any known or foreseeable possibility of linking any data to the individual to whom the data originally related.
+Organizations using Cloud Biometric MFA guarantee user privacy and limit risk by irreversibly anonymizing all biometric data and personal data with one-way fully homomorphic encryption (FHE).  FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait.  Anonymized FHE payloads eliminate any known or foreseeable possibility of linking any data to the individual the data originally related.
 
-The [FHE payload is not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under General Data Protection Regulation (EU) 2016/679 (“GDPR”), [is not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the California Consumer Privacy Act (“CCPA”), [is not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the Biometric Information Privacy Act (“BIPA”) and [is not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA").
+The FHE payload is [not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under General Data Protection Regulation (EU) 2016/679 (“GDPR”), is [not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the California Consumer Privacy Act (“CCPA”), is [not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the Biometric Information Privacy Act (“BIPA”) and is [not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA").
 <br>
 
 ### `Flexible Deployment`
@@ -65,13 +65,13 @@ The [FHE payload is not “Personal Data”](https://github.com/openinfer/Privat
 
 ### `No Discrimination`<br>
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
-It took hundreds of experiments and three years to overcome algorithmic bias. We first found a modicum of success moving images into the infrared spectrum. Next, we experimented with homogenized lighting and found our solution in the [HSL spectrum](https://en.wikipedia.org/wiki/HSL_and_HSV). HSL filters are useful for removing light absorption, skin contour and skin color as distractors. Our solution uses hundreds of HSL algorithms during training, prediction, and enrollment (patent pending).
+It took hundreds of experiments and three years to overcome algorithmic bias. At first, we achieved a modicum of success by moving images into the infrared spectrum to remove light absorption, skin contour and skin color as distractors. A promising journal article from Microsoft Research then led us to try homogenized lighting. We found spectacular results in the [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) spectrum. Today, our solution uses hundreds of HSL algorithms during training and enrollment and two HSL filters (HSL1 and HSL2) during prediction (patent pending).
 
-Interestingly, we found moving images into the HSL space did not improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
+Interestingly, moving images into the HSL space did not improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
 
-Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.9% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, the face recognition DNN failed to recognize six images. Inspection of the [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis) found that each was too blurry for recognition.
+Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.9% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, the face recognition DNN failed to recognize six images. Visual inspection of the [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis) found that each was too blurry for recognition.
 
-The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes) from both Oxford VGGFace2 and Asian-Celeb. The classes in the training dataset are ethnically distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian.
+The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes) from both Oxford VGGFace2 and Asian-Celeb. The classes in the training dataset are ethnically distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian. We are actively working to increase Black and Indian representation. 
 <br><br>
 
 ### `Facial Recognition`
