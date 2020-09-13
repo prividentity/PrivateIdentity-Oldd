@@ -20,7 +20,9 @@
 
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
-[**Evaluation Metrics** for Recognition DNNs](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
+[**`Evaluation Metrics`**](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
+
+[**Biometric Acquisition Workflows**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs)
 
 [**Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
@@ -77,8 +79,6 @@
 * [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 
 * [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#sample-ping-demo)
-
-[**Biometric Ingestion and Helper Models**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs)
 
 [**Single Component JavaScript App**](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)
 
