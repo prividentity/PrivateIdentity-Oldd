@@ -20,7 +20,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * <b>Short Video Introduction</b> [[AWS]](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction AWS Flavored") [[GCP]](https://youtu.be/CuE3x543qKo "Short Video Introduction GCP Flavored")
 * <b>Getting Started with Private Identity</b> [YouTube]
 * <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview) </b>[Developer Wiki]
-* <b>[Discussion with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
+* <b>[Fireside Chat with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
 * <b>[Private Biometrics](https://en.wikipedia.org/wiki/Private_biometrics) </b>[Wikipedia]
 * <b>[Developer's Sandbox](https://private.id/demo/?apiKey=00000000000000001962) </b> [[Video Tutorial]](https://youtu.be/6x0b5FckhIA)
 
