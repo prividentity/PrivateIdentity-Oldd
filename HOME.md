@@ -158,6 +158,7 @@ Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#fac
 * <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online
 * <b>Automatically detects</b> the loss of network connectivity
 <br>
+
 ## `Solutions`
 
 ### `IAM Integrations`
