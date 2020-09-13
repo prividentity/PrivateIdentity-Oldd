@@ -3,31 +3,18 @@
 [**Cloud Biometric MFA**](https://github.com/openinfer/PrivateIdentity/wiki)
 
 * [Overview](https://github.com/openinfer/PrivateIdentity/wiki#overview)
-
-* [Key Features](https://github.com/openinfer/PrivateIdentity/wiki#key-features)
-
+* [Key Features](https://github.com/openinfer/PrivateIdentity/wiki#features)
 * [**Face Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition)
-
 * [**Face w/Mask Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition)
-
 * [**Fingerprint Identification**](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification)
-
 * [**Voice Identification**](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification)
-
 * [**Identity Proofing**](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
-
 * [Open Standards](https://github.com/openinfer/PrivateIdentity/wiki#open-standards-encryption--privacy)
-
 * [**IAM Integrations**](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment-1)
-
 * [Single Component JavaScript Application](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div)
-
 * [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api)
-
 * [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup)
-
 * [Cloud Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search)
-
 * [Privacy](https://github.com/openinfer/PrivateIdentity/wiki#privacy)
 
 [**Technical Overview**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
