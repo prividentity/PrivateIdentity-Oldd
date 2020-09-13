@@ -11,7 +11,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * <b>[Guaranteed Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with 1-way Fully Homomorphic Encryption</b> 
 * <b>Enroll once</b>, then authenticate on almost any device
 * <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client) with no software to install and no hardware to buy
-* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines
+* <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) into Web and mobile apps</b>, IAM solutions and high-throughput biometric pipelines
 * <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally
 * <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations
 
