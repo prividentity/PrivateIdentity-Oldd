@@ -17,7 +17,7 @@
 * [Account Recovery](https://github.com/openinfer/PrivateIdentity/wiki#account-recovery)
 * [**Open Standards**](https://github.com/openinfer/PrivateIdentity/wiki#open-standards)
 
-* [**`Tutorials & Documentation`**](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)
+[**`Tutorials & Documentation`**](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)
 
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
