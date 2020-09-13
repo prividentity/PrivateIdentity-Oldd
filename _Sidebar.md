@@ -16,7 +16,8 @@
 * [Digital Identity Verification](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
 * [Account Recovery](https://github.com/openinfer/PrivateIdentity/wiki#account-recovery)
 * [**Open Standards**](https://github.com/openinfer/PrivateIdentity/wiki#open-standards)
-* [**Tutorials & Documentation**](https://github.com/openinfer/PrivateIdentity/wiki#tutorials-and-documentation)
+
+* [**`Tutorials & Documentation`**](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)
 
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
