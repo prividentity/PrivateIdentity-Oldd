@@ -4,10 +4,10 @@
 
 * [**Overview**](https://github.com/openinfer/PrivateIdentity/wiki#overview)
 * [**Key Features**](https://github.com/openinfer/PrivateIdentity/wiki#features)
-   * [MFA Micro-App Web Client](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client)
-   * [Built-in Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) - Exempt from GDPR, CCPA, BIPA, HIPAA
-   * [Flexible Deployment](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment)
-   * [No Bias](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)
+* [MFA Micro-App Web Client](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client)
+* [Built-in Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations)
+* [Flexible Deployment](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment)
+* [No Bias](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)
 * [**Face Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition)
 * [**Face w/Mask Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition)
 * [**Fingerprint Identification**](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification)
@@ -15,11 +15,11 @@
 * [**Identity Proofing**](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
 * [Offline Authentication](https://github.com/openinfer/PrivateIdentity/wiki#offline-authentication)
 * [**Solutions**](https://github.com/openinfer/PrivateIdentity/wiki#solutions)
-   * [IAM Integrations](https://github.com/openinfer/PrivateIdentity/wiki#iam-integrations)
-   * [Digital Identity Verification](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
-   * [Account Recovery](https://github.com/openinfer/PrivateIdentity/wiki#account-recovery)
+* [IAM Integrations](https://github.com/openinfer/PrivateIdentity/wiki#iam-integrations)
+* [Digital Identity Verification](https://github.com/openinfer/PrivateIdentity/wiki#digital-identity-verification)
+* [Account Recovery](https://github.com/openinfer/PrivateIdentity/wiki#account-recovery)
 * [**Open Standards**](https://github.com/openinfer/PrivateIdentity/wiki#open-standards)
-* [Tutorials & Documentation](https://github.com/openinfer/PrivateIdentity/wiki#tutorials-and-documentation)
+* [**Tutorials & Documentation**](https://github.com/openinfer/PrivateIdentity/wiki#tutorials-and-documentation)
 
 [**Technical Overview**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
