@@ -1,6 +1,6 @@
 ### Wiki
 
-#####[**`Cloud Biometric MFA`**](https://github.com/openinfer/PrivateIdentity/wiki)
+##### [**`Cloud Biometric MFA`**](https://github.com/openinfer/PrivateIdentity/wiki)
 
 * [**`Overview`**](https://github.com/openinfer/PrivateIdentity/wiki#overview)
 * [**MFA Micro-App Web Client**](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client)
