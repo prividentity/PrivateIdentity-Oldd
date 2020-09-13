@@ -28,7 +28,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
   
 ### `MFA Micro-App` Web Client 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
-* Interactive JavaScript Single Page App that performs like a fully coded application
+* Interactive JavaScript App that performs like a fully coded application
 * Supports all biometric acquisition, workflows and FHE transformations -- online and offline 
 * Runs on 90%+ of all modern devices, browsers, platforms and clouds 
 * Simple, fast, secure and intuitive for users and developers
