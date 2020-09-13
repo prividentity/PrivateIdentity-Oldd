@@ -8,7 +8,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 ## `OVERVIEW`
 
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
-* <b>[Guarantees Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with Fully Homomorphic Encryption</b>
+* <b>[Guaranteed Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with 1-way Fully Homomorphic Encryption</b> 
 * <b>Enroll once</b>, then authenticate on almost any device
 * <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#micro-app-mfa-client) with no software to install and no hardware to buy
 * <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines
@@ -32,7 +32,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * Supports all biometric acquisition, workflows and FHE transformations -- online and offline 
 * Runs on 90%+ of all modern devices, browsers, platforms and clouds 
 * Simple, fast, secure and intuitive for users and developers
-* <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)</b> For Documentation and Tutorials 
+* <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)</b> For Tutorials and Documentation 
 
 Deploy the MFA Micro-App in just a few minutes as an embedded DIV or HTTPS for secure biometric enrollment, identity, MFA and account recovery. The MFA Micro-App uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
 
@@ -43,7 +43,7 @@ The MFA Micro-App does not require on-device training and its small footprint ru
 
 ![Privacy graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)
 
-* Built-in [<b>fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (<b>FHE</b>) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data.
+* Built-in [<b>1-way fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (<b>FHE</b>) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data.
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE</b> for private identity assertion and authentication.
 * IEEE 2410 certified compliance, "...<b>guarantees the SBP system does not incur [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis) or [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis) privacy obligations." </b>
 
@@ -56,7 +56,7 @@ The FHE payload is [not “Personal Data”](https://github.com/openinfer/Privat
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 | Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines |
 | --- | --- | --- | --- |
-| [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [Embedded DIV](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [SAML/OAuth/OIDC](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) |
+| [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [SAML/OAuth/OIDC](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) |
 | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search) |
 | | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
 | | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
@@ -65,13 +65,11 @@ The FHE payload is [not “Personal Data”](https://github.com/openinfer/Privat
 
 ### `No Discrimination`<br>
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
-It took hundreds of experiments and three years to overcome algorithmic bias. At first, we achieved a modicum of success by moving images into the infrared spectrum to remove light absorption, skin contour and skin color as distractors. A promising journal article from Microsoft Research then led us to try homogenized lighting. We found spectacular results in the [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) spectrum. Today, our solution uses hundreds of HSL algorithms during training and enrollment and two HSL filters (HSL1 and HSL2) during prediction (patent pending).
+It took hundreds of experiments and three years to overcome algorithmic bias. At first, we found reasonable results moving images into the infrared spectrum to remove light absorption, skin contour and skin color as distractors. An insightful journal article from Microsoft Research then led us to try homogenized lighting. Today, our solution uses hundreds of [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) filters for training and enrollment and two HSL filters (HSL1 and HSL2) for prediction (patent pending).
 
-Interestingly, moving images into the HSL space did not improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
+Interestingly, moving images into the HSL space did not significantly improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
 
-Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.9% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, the face recognition DNN failed to recognize six images. Visual inspection of the [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis) found that each was too blurry for recognition.
-
-The face recognition DNN is pre-trained using an ethnically balanced dataset of 50M images (8000 classes) from both Oxford VGGFace2 and Asian-Celeb. The classes in the training dataset are ethnically distributed as follows: 60% Caucasian, 30% Asian, 5% Black and 5% Indian. We are actively working to increase Black and Indian representation. 
+Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.9% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, our Face Recognition DNN failed to recognize [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis). Visual inspection of the images found that each was too blurry for recognition.
 <br><br>
 
 ### `Facial Recognition`
@@ -84,11 +82,11 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 | 1:Many Identification | | |
 | **IR=99.99%** | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
 
-* **Touchless** Face Recognition using any general-purpose camera (webcams, phones) ≥256kB
+* **Touchless** Face Recognition using any general-purpose camera (Webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”)
 * Operates in _constant time_ irrespective of gallery size
 * Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset
-* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance.
+* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Face images smaller than 224×224 pixels may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
 <br>
@@ -104,11 +102,11 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 | 1:Many Identification | | |
 | **IR=98.20%** | FPIR=0.0001% | FNIR=1.80% | Speed=300ms |
 
-* **Touchless** Face w/ Mask Recognition using any general-purpose camera (webcams, phones) ≥256kB
+* **Touchless** Face w/ Mask Recognition using any general-purpose camera (Webcams, phones) ≥256kB
 * Enrolls an unlimited number of users (“unlimited gallery size”)
 * Operates in _constant time_ irrespective of gallery size
 * Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset
-* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Camera ≥256kB. Face images smaller than 224×224 pixels may reduce performance.
+* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Face images smaller than 224×224 pixels may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
 <br>
@@ -125,13 +123,13 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 
 * **Touchless** Fingerprint Identification using optical scan (camera) or capacitive sensor
 * Supports any general-purpose camera (Webcams, phones) ≥720P (1MP)
+* Accepts input images from any finger
 * Enrolls an unlimited number of users (“unlimited gallery size”)
 * Operates in _constant time_ irrespective of gallery size
 * Trained using the NIST Special Database 4 and CASIA-FingerprintV5
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.
 * MobileNetV2 architecture, 900kB
-* Accepts images from any finger
 <br>
 
 ### `Voice (Speaker) Identification`
@@ -158,8 +156,9 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Acquires biometrics at the edge</b> with or without a network (TensorFlow at the Edge)
 * <b>Automatically switches to Local Mode</b> after it detects loss of network
 * <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online
-* <b>Automatically detects</b> the loss of network connectivity.
+* <b>Automatically detects</b> the loss of network connectivity
 <br>
+## `Solutions`
 
 ### `IAM Integrations`
 ![IAM Logos](https://github.com/openinfer/PrivateIdentity/blob/master/images/IAM%20Integr%201.png)
@@ -180,80 +179,9 @@ The face recognition DNN is pre-trained using an ethnically balanced dataset of 
 * <b>Compares ID cards or passport photo</b> to enrolled user's face
 * <b>Compares name and contact information on ID card </b>or passport to mobile phone billing records
 * <b>Verifies phone owner with SMS </b>message to phone
-* <b>Preserves privacy</b> by having no personal data leave the local device
-* [Link to documentation on Github](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
+* <b>Preserves privacy</b> using 1-way fully homomorphic encryption
+* [Link to tutorials](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll) and documentation
 <br>
-
-### `Account Recovery`
-![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
-
-* <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access
-* Available anytime after enrollment
-* <b>Quickly and accurately identifies locked-out account holders</b> and restores access
-<br>
-
-## `OPEN STANDARDS, ENCRYPTION & PRIVACY`
-
-![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
-
-Private Identity is certified compliant with IEEE 2410 Standard for Biometric Privacy, ISO 27001:2013 International Standard for Information Security Management, ISO 9001:2015 International Standard for Quality Management Systems, US DoD Standard Trusted Computer System Evaluation Criteria (TCSEC), US ODNI ICD 503 Intelligence Community Technology Systems Security Risk Management, Certification and Accreditation and US DoD Multiple Independent Levels of Security/Safety (MILS) Architecture, and compliant with W3C Web Authentication API (WebAuthn), FIPS 197, TLS, IPSEC and SSL.
-> <b>Third-party accredited certification</b> (3PAO) is provided by [GMS Registrar](https://gmsaudit.com/)
-
-| Open Standards for Privacy & Encryption | Description | Link |
-| --- | --- | --- |
-| **IEEE 2410 Standard for Biometric Privacy (SBP)** Certified Compliant | Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations. Requires fully homomorphic encryption (FHE) for private identity assertion and authentication. | [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)) to approved Draft Standard |
-| **W3C WebAuthn** Compliant | Enables creation and use of strong, attested, scoped, public key-based credentials by Web applications | [Link](https://www.w3.org/TR/webauthn/) to Standard |
-| **US ODNI ICD 503** Certified Compliant | Applies to all US Government organizations, their commercial contractors, and Allied Government information systems that process, store, or communicate intelligence information. | [Link](https://www.dni.gov/files/documents/ICD/ICD_503.pdf) to ICD |
-| **US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)** Certified Compliant | Original standard for processing and storage of classified and other sensitive DoD information. | [Link](https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf) to Standard |
-| **FIPS 197 Advanced Encryption Standard (AES)** Compliant | Guideline for Implementing Cryptography in the US Government. | [Link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) to NIST 800-21 |
-| **TLS / IPSEC / SSL** | Standard protocols providing privacy and data integrity between two or more communicating computer applications. | [Link](https://tools.ietf.org/html/rfc8446) to IETF |
-
-<br>
-
-| Open Standards for Security Architecture | Description | Link |
-| --- | --- | --- |
-| **ISO 27001:2013** Information Security Management Standard - Certified Compliant | International Standard for information risk management process includes all legal, physical and technical controls. | [Link](https://www.iso.org/isoiec-27001-information-security.html) to ISO/IEC 27001 |
-| **ISO 9001:2015** Quality Management Standard Certified Compliant | International Standard ensures software satisfies statutory and regulatory requirements and meets the needs of customers and other stakeholders. | [Link](https://www.iso.org/iso-9001-quality-management.html) to ISO 9000
-| **SAML 2.0/ OAuth 2.0 / OIDC** | Standard protocols for authorization, federation, identity management and single sign-on (SSO). | [Link](https://tools.ietf.org/html/rfc8252) to IETF |
-| **DoD MILS** Multiple Independent Levels of Security/Safety (MILS) Architecture | Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. | [Link](https://mils.community/) to MILS |
-<br>
-
-## `FLEXIBLE DEPLOYMENT`
-
-### `SAML 2.0 and OAuth/OIDC`
-
-* Supports SAML 2.0 and OAuth/OIDC protocols
-* Integrates with your existing Enterprise directory
-* [Google G Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-gsuite)
-* [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
-* [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
-* [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
-
-***
-
-### `Micro-App MFA Client` (Embedded DIV)
-![Javascript](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20Deploy%202.png)
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications) for additional information.
-* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/DIV-HTML)
-
-***
-
-### JavaScript APIs (Predict Enroll API)
-[![Click for Video Demo of JavaScript APIs](https://github.com/openinfer/PrivateIdentity/blob/master/images/JS%20API%20PLAY%201.png)](https://youtu.be/wjaFHuELTJA "JavaScript APIs for Cloud Biometric MFA")
-
-* Lightweight Javascript library with 2 API calls (enroll and predict)
-* Accepts image and audio inputs and returns UUID
-* Includes a Web sandbox to exercise the API
-* Deploys effortlessly with no software to install and no hardware to buy
-* Users enroll in four seconds, authenticate in 300ms
-* Preserves privacy by acquiring and FHE transforming biometric data at the edge
-* Runs on 90% of all modern devices
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) for setup.
-
-> **Method: window.enroll**(uuid, apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
-
-> **Method: window.predict**(apiKey, 'face', images1, 'voice', voiceFile, 'fingerprint', images2);
-
 ***
 
 ### ENCRYPTION ENGINE (Setup)
@@ -284,51 +212,39 @@ Built on the same infrastructure as the [Encryption Engine](https://github.com/o
 
 ***
 
-### REST APIs
-![RESTful API image](https://github.com/openinfer/PrivateIdentity/blob/master/images/REST%20API2.png)
+### `Account Recovery`
+![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
 
-* Preserves privacy by only receiving FHE payloads and UUIDs as input
-* Enrolls in four seconds, authenticates in 300ms
-* [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#SBP-API-Overview) for additional information
+* <b>Users enroll once</b> using multiple biometric modalities (face, fingerprint, voice) to ensure future access
+* Available anytime after enrollment
+* <b>Quickly and accurately identifies locked-out account holders</b> and restores access
+<br>
 
-> POST “/prid/v1.1/enroll”
+## `OPEN STANDARDS`
 
-> POST “/prid/v1.1/predict”
+![Image of lego blocks ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Open%20Stanards%201.png)
 
-> POST “/prid/v1.1/liveness”
+Private Identity is certified compliant with IEEE 2410 Standard for Biometric Privacy, ISO 27001:2013 International Standard for Information Security Management, ISO 9001:2015 International Standard for Quality Management Systems, US DoD Standard Trusted Computer System Evaluation Criteria (TCSEC), US ODNI ICD 503 Intelligence Community Technology Systems Security Risk Management, Certification and Accreditation and US DoD Multiple Independent Levels of Security/Safety (MILS) Architecture, and compliant with W3C Web Authentication API (WebAuthn), FIPS 197, TLS, IPSEC and SSL.
+> <b>Third-party accredited certification</b> (3PAO) is provided by [GMS Registrar](https://gmsaudit.com/)
 
-> POST “/prid/v1.1/verify”
+| Open Standards for Privacy & Encryption | Description | Link |
+| --- | --- | --- |
+| **IEEE 2410 Standard for Biometric Privacy (SBP)** Certified Compliant | Guarantees compliant systems do not incur GDPR, CCPA, BIPA or HIPAA privacy obligations. Requires fully homomorphic encryption (FHE) for private identity assertion and authentication. | [Link](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)) to approved Draft Standard |
+| **W3C WebAuthn** Compliant | Enables creation and use of strong, attested, scoped, public key-based credentials by Web applications | [Link](https://www.w3.org/TR/webauthn/) to Standard |
+| **US ODNI ICD 503** Certified Compliant | Applies to all US Government organizations, their commercial contractors, and Allied Government information systems that process, store, or communicate intelligence information. | [Link](https://www.dni.gov/files/documents/ICD/ICD_503.pdf) to ICD |
+| **US DOD Standard Trusted Computer System Evaluation Criteria (TCSEC)** Certified Compliant | Original DOD standard for processing and storage of classified and other sensitive information. | [Link](https://csrc.nist.gov/csrc/media/publications/conference-paper/1998/10/08/proceedings-of-the-21st-nissc-1998/documents/early-cs-papers/dod85.pdf) to Standard |
+| **FIPS 197 Advanced Encryption Standard (AES)** Compliant | Guideline for Implementing Cryptography in the US Government. | [Link](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.197.pdf) to NIST 800-21 |
+| **TLS / IPSEC / SSL** | Standard protocols providing privacy and data integrity between two or more communicating computer applications. | [Link](https://tools.ietf.org/html/rfc8446) to IETF |
 
-***
+<br>
 
-### `SaaS`
-![Picture of cloud](https://github.com/openinfer/PrivateIdentity/blob/master/images/SaaS%20Deploy%202.png)
+| Open Standards for Security Architecture | Description | Link |
+| --- | --- | --- |
+| **ISO 27001:2013** Information Security Management Standard - Certified Compliant | International Standard for information risk management process includes all legal, physical and technical controls. | [Link](https://www.iso.org/isoiec-27001-information-security.html) to ISO/IEC 27001 |
+| **ISO 9001:2015** Quality Management Standard Certified Compliant | International Standard ensures software satisfies statutory and regulatory requirements and meets the needs of customers and other stakeholders. | [Link](https://www.iso.org/iso-9001-quality-management.html) to ISO 9000
+| **SAML 2.0/ OAuth 2.0 / OIDC** | Standard protocols for authorization, federation, identity management and single sign-on (SSO). | [Link](https://tools.ietf.org/html/rfc8252) to IETF |
+| **DoD MILS** Multiple Independent Levels of Security/Safety (MILS) Architecture | Compartmentalized approach to the design of security-critical, safety-critical, high-assurance computing systems. | [Link](https://mils.community/) to MILS |
+<br>
 
-#### SaaS (Open)
-
-* <b>The AWS Marketplace</b> listing is not yet public. Please send your AWS account to api@private.id to be added to the whitelist.
-* <b>Provides API Key access to shared </b>elastic, load balanced and fault tolerant Web services managed and run on AWS by Private Identity.
-
-#### SaaS (Dedicated for a single customer)`
-
-* <b>Click here for AWS Marketplace</b> Listing (_Not yet public -- send us your AWS account for access_)
-* <b>Provides API Key access to private </b>elastic, load balanced and fault tolerant Web services managed and run on AWS by Private Identity
-
-***
-
-### PaaS Deployments
-![PaaS icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/PaaS%20DEploy%202.png)
-
-* Please send an email to api@private.id to request the Cloud Templates.
-
-#### Google Cloud Platform (GCP)
-<b>For PaaS integrations on GCP,</b> Private Identity leverages TensorFlow.js, Cloud AI Platform, Cloud Compute, K8s Engine, Memory Store (Redis), MySQL clustered & fault tolerant, Cloud Storage buckets & data lakes, Cloud Speech to Text, Cloud Vision API, Cloud DNS and Cloud Identity.
-
-#### Amazon Web Services (AWS)
-<b>For PaaS integrations on AWS</b>, Private Identity leverages TensorFlow.js, Sagemaker, Compute, EKS, In Memory Store (Redis), MySQL clustered & fault tolerant, S3, AIM, and Cloud Speech to Text, Cloud Vision API and Route 53.
-
-#### PaaS Web Tier (Setup)
-Docker image of the Web tier that runs in elastic, load balanced, fault tolerant Kubernetes clusters on-premise or any public or private cloud. Connects to Private Identity Web services managed and run on AWS by Private Identity.
-
-#### PaaS Entire Tier (Setup)
-Docker images of all software that runs in elastic, load balanced, fault tolerant Kubernetes clusters on-prem or any public or private cloud. Includes all backend services and has no requirement to connect to Private Identity.
+## Tutorials and Documentation
+Click [Here](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials) to Get Started!
