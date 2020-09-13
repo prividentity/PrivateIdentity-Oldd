@@ -10,7 +10,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face--mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) 1:n Identity and MFA
 * <b>[Guaranteed Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with 1-way Fully Homomorphic Encryption</b> 
 * <b>Enroll once</b>, then authenticate on almost any device
-* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#micro-app-mfa-client) with no software to install and no hardware to buy
+* <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client) with no software to install and no hardware to buy
 * <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) into Web and mobile apps</b>, Enterprise IAM solutions and high-throughput biometric pipelines
 * <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally
 * <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations
@@ -182,35 +182,6 @@ Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#fac
 * <b>Preserves privacy</b> using 1-way fully homomorphic encryption
 * [Link to tutorials](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll) and documentation
 <br>
-***
-
-### ENCRYPTION ENGINE (Setup)
-
-![Picture of shield with lock on front](https://github.com/openinfer/PrivateIdentity/blob/master/images/Encryption%20Engine%202.png)
-
-* Asynchronous pre-processing engine for massive plaintext biometric ingestion
-* Accepts Base-64 plaintext images, video or audio using directory scanning or RESTful API
-* Elastic, fault-tolerant and load balanced Kubernetes clusters
-* Decoupled from back-end cluster for privacy
-
-The Encryption Engine identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation as needed, creates a 1-way hash (FHE transformation) for subsequent processing, and then immediately discards the original biometrics. FHE transformation requires 10ms _constant time_ using cloud or on-premise AI services. [Link for setup](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils).
-
-***
-
-### Cloud Biometric Search
-![Cloud Biometric Search icon](https://github.com/openinfer/PrivateIdentity/blob/master/images/Biometric%20Search%201.png)
-
-* <b>Asynchronous pre-processing engine</b> for massive biometric match
-* Accepts Base-64 plaintext images, video or audio by directory scanning or RESTful API
-* Elastic, fault-tolerant, load balanced Kubernetes identification service that runs anywhere
-* Maintains full accuracy and performance through real-world boundary conditions
-* Decoupled from back-end cluster for privacy (See [link](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils))
-
-Cloud Biometric Search provides high-demand identification tasks including asynchronous face, face+mask, fingerprint and voice identification with unlimited throughput using elastic, load-balanced, fault-tolerant Kubernetes clusters.
-
-Built on the same infrastructure as the [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup), Biometric Search identifies multiple faces and fingerprints per frame, identifies voice in audio, provides data augmentation as needed, FHE transforms biometrics and then immediately discards the original biometrics (to preserve privacy). Search returns identity in 300ms constant time using Cloud AI services and load-balanced, elastic, fault-tolerant Kubernetes clusters.
-
-***
 
 ### `Account Recovery`
 ![woman gesturing that she forgot her password](https://github.com/openinfer/PrivateIdentity/blob/master/images/Account%20Recovery%201.png)
