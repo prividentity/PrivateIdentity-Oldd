@@ -5,16 +5,17 @@
 1. Run it locally 
 
 ## Tutorials
-1. Microapp (Embedded DIV)
+1. MFA Micro-App (Embedded DIV)
 1. JavaScript APIs
-1. PING Identity Integration 
-1. Okta Factor Authentication Integration 
-1. G-Suite Integration 
+1. Encryption Engine
 1. SAML 2.0 Integration (Generic) 
+   1. PING Identity Integration 
+   1. Okta Factor Authentication Integration 
+   1. Google GSuite Integration 
 
 ## Table of Contents
-1. Microapp (Embedded DIV)
-   1. 
+1. MFA Micro-App (Embedded DIV)
+   1. Control All Functions Using URL Parameters
 1. JavaScript APIs
    1. Demo Video
    1. JavaScript API Documentation
@@ -24,9 +25,6 @@
    1. Sample Code
    1. Sample Code Discussed in Video 
 
-
-
 ## Getting Started
 
-## Control All Functions Using URL Parameters
 
