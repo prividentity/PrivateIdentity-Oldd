@@ -1,11 +1,11 @@
-## Install AWSCLI
+## Prerequisite
 
 
-### Install pip3 using 
+#### Install pip3 using 
      sudo apt-get install python3-pip
      sudo pip3 install awscli
 
-## Configure AWS
+#### Configure AWS
     aws configure 
     AWS Access Key ID [None]: XXXXXXXXXXXXX
     AWS Secret Access Key [None]: XXXXXXXXXXXXXXXX
@@ -13,7 +13,10 @@
     Default output format [None]:
 Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with default region us-east-2
 
-## Setup cluster on AWS
+## Clone the repository
+    git clone git@github.com:openinfer/pb.git 
+
+### Setup cluster on AWS
 
 ####  Please change variables.sh as per requirements 
      vi $HOME/pb-util/cluster-setup/variables.sh
@@ -30,19 +33,15 @@ Examples
 ## Setup master and slave on Cluster
 
 ###     Go to location
-           cd $HOME/pb-util/master/jobschedule
+           cd $HOME/pb-util/publisher/jobschedule
            ./cluster-run.sh
            kubectl apply -f deployment.yml 
            kubectl apply -f service.yml 
-           cd $HOME/pb-util/slave/pb
+           cd $HOME/pb-util/subscriber/pb
            ./cluster-run.sh
            kubectl apply -f deployment.yml
            kubectl apply -f service.yml
 
-### To scale number of containers
-      kubectl scale --replicas=200 deployment pb-slave
-
-**Note:** You can change replicas value as per your requirements 
 
 ## Steps to Add SSL certs for domain 
 
