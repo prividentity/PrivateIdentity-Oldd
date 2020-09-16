@@ -145,6 +145,9 @@
 
 * [Standard for Biometric Privacy (SBP) Server](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
+* [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Delivery-to-2020-Biometric-Technology-Rally-at-MdTF)
+
+* [Customer Integrations](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
 
 [**Known Processing Issues**](https://github.com/openinfer/PrivateIdentity/wiki/Known-Processing-Issues)
 
