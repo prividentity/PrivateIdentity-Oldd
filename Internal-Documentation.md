@@ -1,5 +1,16 @@
 [![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
 
+Table of Contents
+
+SBP
+
+Cluster
+
+Demo
+
+SaaS
+
+
 # IEEE 2410 2020 Standard for Biometric Privacy (SBP) Server
 
 ### SBP API Overview
@@ -641,5 +652,365 @@ Another way to check the spoofing is to check whether the liveness of the user c
 Sample Demonstration of Eyeblink success:
 
 ![Eye Blink Demo](https://github.com/openinfer/PrivateIdentity/blob/master/images/eye_blink_demo.png)
+
+[![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
+
+<br/>
+
+# SaaS Architecture
+
+In this document, the SaaS architecture is explained in terms of how the workflow should be executed. The elements of this workflow are as follows: 
+
+1. Consuming client.
+1. NodeJS middle-tier.
+1. Authorizing Python server.
+
+1- The consuming client is any application trying to use any of our services previously explained. The client must have a valid api_key for a request to execute. 
+
+2- NodeJS middle-tier is passing the api_key to the Python server, and making sure it exists in valid format. If the api_key is invalid or absent in the call payload, error message will be sent back without consuming the Python server.
+
+3- The Python server checks to see if the request has a valid api_key. If the api_key format is valid, processing continues. 
+
+
+The first step in the workflow is to register a new api_key for any given client, so that it can be used. This api_key cannot be used inside a browser JavaScript code. It can be used, for example, on NodeJS, and that would be to prevent exploiting the api_key to the outer world.
+
+Here is an example of using api_key in the previously described workflow:
+
+
+|Parameter     |         Value| 
+|-----|----|
+|...           |         This can be any kind of request, like predict or enroll.|
+|api_key      |          value of api_key in text format.|
+
+```
+{
+ ...,
+ api_key: "xxxxxxxxxxx"
+}
+```
+
+This structure denotes that any kind of request, must have a key called api_key at the top level of the request.  The three dots in the previous payload can be replaced with any other type of request, i.e., predict or enroll.
+
+If the api_key is absent or coming in invalid format, in any request payload, the NodeJS will respond back with the following error message:
+
+```
+{
+ error: 'invalid api_key key'
+} 
+```
+
+[![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
+<br/>
+
+# pb-Utils
+
+Biometric authentication is only as good as the quality of its enrolls (subject image registration).  Registration and log-in is browser-based, an individual can enroll via the camera on their computer, tablet or phone and requires no external apparatus. 
+
+What differentiates Private Identity’s proprietary application is that it scales to enterprises of any size.  When an individual user enrolls, the entire process is encaged within the browser, processing the captured images and uploading them to the server where all information is classified for future reference in the verification process.  The utility of Python, a high-level, general-purpose programming language, enables the same results whether the registrant database contains ten subjects or 400,000.  Private Identity ensures that the speed and accuracy of the analytics are the same.
+
+## Small Scale
+
+### Clone Projects
+    git clone git@github.com:openinfer/pb-util.git
+
+## Python Utility
+
+1. Make sure you have python3 installed in the system
+2. Install pip3 using `sudo apt-get install python3-pip`
+3. Install pip3 using `sudo apt-get install python3-opencv`
+4. Move to the working directory `cd pb-util/integration_scripts`
+5. Install the necessary packages using `sudo pip3 install -r requirements.txt`
+6. Locate the image path which has the person images with their names as the filenames with a jpg, png, or gif extension
+
+### Preprocess Images
+
+Ensuring the strength of enrolls is the hallmark of Private Identity’s patented application.  A single subject image is morphed into 60 separate images, winnowed down to the superior 53.  The original image morphs by changing the rotation, flipping and modifying the colors through an image homogenization algorithm.  The algorithm compares the geometric distances between every permutation of images.   The algorithm discards images causing a geometric distances greater than a threshold.  If the result is less than 53 images morphing tries again.  If after N number of tries, the algorithm cannot find 53 valid images, the person is rejected and the files move to a rejection directory.   
+
+Subject images are parsed out into three directories: the original directory retains the preliminary/primary image, an enroll directory and a predict directory.  Both the prediction and enroll directories contain an images sub-directory and an embeddings sub-directory.  The images sub-directory contains the morphed images and the enbeddings sub-directory contains embedding which by definition are  homomorphically encrypted.  
+
+To preprocess images, locate the directory with the images stored with the person names as their filenames.
+Then run the following command to augment the images and removing the bad embeddings which will create a 'enroll' and 'predict' sub-directories. 
+
+ `python3 initiate_preprocess.py -input_path <input_path> -model_path ./best_face_model/`
+
+Once the script completes all files exist in the appropriate subdirectories.
+
+### Enroll Persons
+
+The enroll script takes the directory structure from initiate_preprocess.py and uses the images from each person to enroll them into the system. Each person must have a minimum number of 40 images for enrolling otherwise the enroll will fail.
+
+ `python3 enroll.py -input_path <input_path>`
+
+Upon script completion, the system contains all enrolled users.
+
+**Optional `-server_url` parameter can be given to enroll the user in different systems.**
+
+**Optional `-api_key` parameter can be given to verify the api key endpoints in the system. Default value if 1962 is used if not provided**
+
+### Predict Persons
+
+The predict script takes the directory structure from initiate_preprocess.py and uses the images from each person to test the enroll by predicting. Each person must have a least one image to perform a prediction.
+
+ `python3 predict.py -input_path <input_path>`
+
+The script predict.py produces summary output and any error message.
+
+**Optional `-server_url` parameter can be given to enroll the user in different systems.**
+
+**Optional `-api_key` parameter can be given to verify the api key endpoints in the system. Default value if 1962 is used if not provided**
+
+
+## Large Scale
+
+
+## Configure cluster on your local machine
+    aws eks --region $REGION update-kubeconfig --name $CLUSTER_NAME
+    kubectl config use-context <cluster:arn>
+
+
+
+
+Send a request to process a dataset on S3 to: 
+
+POST: https://master.privateidentity.org/trueid/v1.1/preprocess
+
+```
+{
+    "bucket": "preprocess-privateidentity" ,
+    "s3_dataset_dir": "sample_images",
+    "num_processes": 40,
+    "server_url": "https://dev.private.id:443/trueid/v1.1",
+    "slave_url": "http://slave-svc:5002/trueid/v1.1/slave_preprocess",
+    (Optional)"api_key": <key>
+}
+```
+
+`bucket`: the S3 bucket containing the dataset.
+
+`s3_dataset_dir`: the path of the dataset in the bucket in S3
+
+`num_processes`: the dataset will be processed using `num_processes` parallel requests. For example, if the dataset consists of 1000 people, and num_processes=40, that means we'll have 40 parallel requests and each request processes 1000/40 = 25 people.
+
+`api_key`: is an optional parameter. If it is not present in JSON then a default value of 1962 will be used.
+
+[![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
+
+# NodeJS Endpoints
+
+## Overview 
+
+This document explains how to utilize the NodeJS endpoints, which can handle API requests and send them back to the Python endpoints.
+
+## Predict Overview
+<br/>
+
+The NodeJS endpoint provides an interface for prediction, and enrollment, or any other provided service. The following example illustrates the prediction process through the NodeJS server.
+
+
+**Face And/Or Prediction Request -**
+
+The format of this API call is: 
+
+POST “/node/ptPredict”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|modality | The modality parameter determines the biometric: "face, voice, fingerprint" |
+|api_key       |         The api string is necessary to process the api requests. Contact Private Identity to obtain the designated key |
+|images[]       | The images parameter is an array of facial image files |
+|audio | The audio parameter is a voice file |
+|fingerprint[]  | The fingerprint is an array of fingerprint image files |
+
+Accepted images are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+
+A Predict API request example is as follows:
+```
+{
+    "api_key": "XXXXXXXX",
+    "modality": "voice, face, fingerprint"
+    "images[]": "base64 image",
+    "images[]": "base64 image",
+    "images[]": "base64 image", 
+    "images[]": "base64 image",
+    ...
+    "audio": "audio file",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image", 
+    "fingerprint[]": "base64 image",
+
+}
+```
+
+**Response**
+
+The response of a Predict request, if successful, returns enrollment data in the following format:
+```
+{
+    "enrollment data": {
+	"id": "1008023",
+    },
+    "message": "OK",
+    "status": 0,
+    "subject_id": 4,
+}
+```
+
+## Enroll Overview
+<br/>
+
+The NodeJS endpoint provides an interface for prediction, and enrollment, or any other provided service. The following example illustrates the enrollment process through the NodeJS server.
+
+
+**Enrollment Request -**
+
+The format of this API call is: 
+
+POST “/node/ptEnroll”
+
+|Parameter      |            Value|
+|----------|--------------| 
+|modality | The modality parameter determines the biometric: "face, voice, fingerprint" |
+|api_key       |         The api string is necessary to process the api requests. Contact Private Identity to obtain the designated key |
+|images[]       | The images parameter is an array of facial image files |
+|audio | The audio parameter is a voice file |
+|fingerprint[]  | The fingerprint parameter is an array of fingerprint image files |
+
+Images that are accepted are 224 pixels in height and width. Format the request payload as FormData. For more information visit: https://developer.mozilla.org/en-US/docs/Web/API/FormData
+
+An enroll API request example is as follows:
+```
+{
+    "api_key": "XXXXXXXX",
+    "modality": "voice, face, fingerprint"
+    "images[]": "base64 image",
+    "images[]": "base64 image",
+    "images[]": "base64 image", 
+    "images[]": "base64 image",
+    ...
+    "audio": "audio file",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image",
+    "fingerprint[]": "base64 image", 
+    "fingerprint[]": "base64 image",
+
+}
+```
+
+**Response**
+
+The response of an Enroll request, if successful, returns a new enrollment, or an error if the user is already enrolled:
+```
+{
+     {
+     "status: 0"
+     "UUID:" "XXXXXX"
+     "subject id:" "XXXXX"
+     }
+  or {
+     "status: -1"
+     "subject id:"User found in registry"
+     "subject id:" "XXXXX"
+        
+}
+```
+
+## Postman Example Project
+<br/>
+
+The Postman application illustrates a use case for the API calls, such as predict. The example includes a file download at the bottom of the passage. The file download includes voice and face instances and a .json file that makes the API calls.  Use these files to demonstrate the API calls.
+
+This is a step by step instructional on how to use postman to view the API calls and their responses:
+
+1. Download Postman, and ensure it is functional by logging into the application and viewing the user interface
+
+[Download Postman Here](https://www.postman.com/downloads/)
+![Postman User Interface](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_1.png)
+2. Download the package located here [Postman Package](https://github.com/openinfer/PrivateIdentity/blob/master/JSEndpoint/EnrollMaterialandCalls.zip). Uncompress the file for Postman to import it. 
+
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman2.png)
+
+3. Import the package into Postman using the import feature and select the .json that has the API calls.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_2.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_4.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_5.png)
+4. The left hand side of the screen contains the API calls necessary to predict and enroll a variety of modalities.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_6.png)
+5. Select the relevant API call and then go over to the "body" tab in the center of the screen.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_7.png)
+6. Select the files you want to address. Use the files with a .jpg suffix for face or a .wav suffix for voice.  
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_8.png)
+7. After file selection, process the request by clicking the "send" button.
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Postman_9.png)
+8. The request response displays on the bottom of the screen.
+
+[![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
+
+# Customer Integrations
+
+### DIV/HTML ###
+
+* Built in React (pluggable)
+* Embed as a DIV
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/DIV-HTML)
+
+### PaaS (Web Tier) ###
+
+* Docker Image
+* Runs elastic, load balanced, fault tolerant K8s
+* Connects to a Server Side Component managed by Private Identity
+* Runs on any cloud (AWS, GCP, Azure)
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Web-Application)
+
+### PaaS (Entire Tier) ###
+
+* Docker Images
+* Runs elastic, load balanced, fault tolerant K8s
+* Includes Server Side Component
+* Runs on any cloud (AWS, GCP, Azure)
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup) 
+
+### SaaS (Open) ###
+
+* Entirely managed and run on AWS by Private Identity
+* API Key access
+* Fully elastic, load balanced, fault tolerant
+
+### SaaS (Dedicated for Customer) ###
+
+* Entire K8s cluster dedicated to Customer
+* Entirely managed and run on AWS by Private Identity
+* API Key access
+* Fully elastic, load balanced, fault tolerant
+
+### RESTful API ###
+
+* Receives fully homomorphic encryption (FHE) payload from client device
+* Returns UUIDs
+* Runs all ciphertext and plaintext business methods
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Enroll-library)
+
+### Encryption Engine ###
+
+* Cluster for biometric ingestion
+* Elastic, load balanced, fault tolerant K8s, autoscale to 1000s of nodes
+* Javascript API and RESTful API
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Client-Cluster-setup)
+
+### W3C/FIDO2 WebAuthn (polymorphic interface) ###
+
+* Authenticator enrollment -> how enrolling on /demo/ shows your enroll data in /webauthn 
+* Authenticator authentication -> how prediction on /demo/ shows your enroll data in /webauthn
+
+### Photo ID Verification ###
+
+* DIV/HTML -> https://private.id/demo/?apiKey=####&passport=true&version=0.9. (Request APIKey from Administrator)
+* The link requests a level 2 enrollment, then takes a face prediction, then appends a document verification onto that predicted enrollment. 
+* [Setup](https://github.com/openinfer/PrivateIdentity/wiki/Verified-Enroll)
+
+
+
+
+
 
 
