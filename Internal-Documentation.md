@@ -1090,7 +1090,7 @@ _Sample Output:_
 ]`
 
 ### Sample Output from MdTF
-```$ ./test-routine.sh face 172.17.0.2
+``` ./test-routine.sh face 172.17.0.2
 
 Rally Matching System Test Routine Started...
 Mode:  face
@@ -1131,7 +1131,8 @@ Normalized Score Matrix:
 0.052 0.079 0.000 0.000 1.000 0.658 
 0.134 0.151 0.000 0.000 0.658 1.000 
 
-... Rally Matching System Test Routine Complete```
+Rally Matching System Test Routine Complete ```
+
 
 [![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
 
