@@ -25,50 +25,6 @@
 
 [**`Biometric Workflows`**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs)
 
-[**Standard for Biometric Privacy (SBP) Server**](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
-
-* [IEEE 2410 Standard for Biometric Privacy <br>(Approved Draft)](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D)
-
-* [SBP API Overview](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#SBP-API-Overview)
-
-* [Enroll endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#API-Enroll-Overview)
-
-* [Enroll morphing](https://github.com/openinfer/PrivateIdentity/wiki/Enrollment-Morphing)
-
-* [Predict endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Predict-Overview)
-
-* [Liveness endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Liveness-Overview)
-
-* [Add Role endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Add-Role-Overview)
-
-* [Delete Role endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Delete-Role-Overview)
-
-* [Add Role to Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Add-Role-to-Subject)
-
-* [Delete Role from Subject endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server#Delete-Role-From-Subject)
-
-* [Verify endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-Standard-for-Biometric-Privacy-(SBP)-ServerAPI-Verify-Overview)
-
-[**PrivateId Cluster Setup**](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup)
-
-* [AWS EKS Cluster](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#AWS-EKS-CLUSTER)
-
-* [Configure AWS](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#configure-aws)
-
-* [Route Setup](https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup)
-
-* [Setup Machine](https://github.com/openinfer/PrivateIdentity/wiki/Setup-Machine)
-
-* [Configure Redis and mysql](https://github.com/openinfer/PrivateIdentity/wiki/Configure-redis-and-mysql)
-
-* [Cleanup Cluster and Stacks](https://github.com/openinfer/PrivateIdentity/wiki/Cleanup-Cluster-and-Stacks)
-
-* [Operations](https://github.com/openinfer/PrivateIdentity/wiki/Operations)
-
-* [Kubernetes Actions](https://github.com/openinfer/PrivateIdentity/wiki/Kubernetes-Actions)
-
-* [PaaS Client Setup](https://github.com/openinfer/PrivateIdentity/wiki/PaaS-Web-Application)
-
 [**Enterprise Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations)
 
 * [Okta](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
