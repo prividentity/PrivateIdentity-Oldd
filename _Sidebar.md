@@ -139,7 +139,7 @@
 
 [**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
 
-* [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Maryland-Test-Facility)
+* [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Delivery-to-2020-Biometric-Technology-Rally-at-MdTFy)
 
 [**Extras**](https://github.com/openinfer/PrivateIdentity/wiki/Extras)
 
