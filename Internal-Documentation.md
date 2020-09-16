@@ -18,7 +18,7 @@
 
 * ### [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Maryland-Test-Facility)
 
-* ### [FAQ](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#FAQ)
+* ### [FAQ-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#FAQ)
 
 
 # IEEE 2410 2020 Standard for Biometric Privacy (SBP) Server
