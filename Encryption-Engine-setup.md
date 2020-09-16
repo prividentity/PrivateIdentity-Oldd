@@ -71,3 +71,42 @@ Please follow below steps to add certs into your cluster for ssl termination.
 4. Run `kubectl get ing` and copy address you will need it to setup route53.
 
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup
+
+
+***
+
+#### Preprocess Images
+
+Ensuring the strength of enrolls is the hallmark of Private Identity’s patented application.  A single subject image is morphed into 60 separate images, winnowed down to the superior 53.  The original image morphs by changing the rotation, flipping and modifying the colors through an image homogenization algorithm.  The algorithm compares the geometric distances between every permutation of images.   The algorithm discards images causing a geometric distances greater than a threshold.  If the result is less than 53 images morphing tries again.  If after N number of tries, the algorithm cannot find 53 valid images, the person is rejected and the files move to a rejection directory.   
+
+Subject images are parsed out into three directories: the original directory retains the preliminary/primary image, an enroll directory and a predict directory.  Both the prediction and enroll directories contain an images sub-directory and an embeddings sub-directory.  The images sub-directory contains the morphed images and the enbeddings sub-directory contains embedding which by definition are  homomorphically encrypted.  
+
+To preprocess images, locate the directory with the images stored with the person names as their filenames.
+Then run the following command to augment the images and removing the bad embeddings which will create a 'enroll' and 'predict' sub-directories. 
+
+### Step 6: Postman to send request
+
+Send a request to process a dataset on S3 to: 
+
+POST: https://master.privateidentity.org/trueid/v1.1/preprocess
+
+```
+{
+    "bucket": "preprocess-privateidentity" ,
+    "s3_dataset_dir": "sample_images",
+    "num_processes": 40,
+    "server_url": "https://dev.private.id:443/trueid/v1.1",
+    "slave_url": "http://publisher-svc:5002/trueid/v1.1/slave_preprocess",
+    (Optional)"api_key": <key>
+}
+```
+
+`bucket`: the S3 bucket containing the dataset.
+
+`s3_dataset_dir`: the path of the dataset in the bucket in S3
+
+`num_processes`: the dataset will be processed using `num_processes` parallel requests. For example, if the dataset consists of 1000 people, and num_processes=40, that means we'll have 40 parallel requests and each request processes 1000/40 = 25 people.
+
+`api_key`: is an optional parameter. If it is not present in JSON then a default value of 1962 will be used.
+
+
