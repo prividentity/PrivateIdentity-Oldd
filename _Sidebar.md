@@ -49,10 +49,6 @@
 
 * [Verify endpoint](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-Standard-for-Biometric-Privacy-(SBP)-ServerAPI-Verify-Overview)
 
-[**Biometric Acquisition**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition)
-
-* [Facial Recognition Algorithm](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition#Facial-Recognition-Algorithm)
-
 [**PrivateId Cluster Setup**](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup)
 
 * [AWS EKS Cluster](https://github.com/openinfer/PrivateIdentity/wiki/cluster-setup#AWS-EKS-CLUSTER)
@@ -146,6 +142,10 @@
 * [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Maryland-Test-Facility)
 
 [**Extras**](https://github.com/openinfer/PrivateIdentity/wiki/Extras)
+
+* [Standard for Biometric Privacy (SBP) Server](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
+
+* [Biometric Acquisition](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Acquisition)
 
 [**Known Processing Issues**](https://github.com/openinfer/PrivateIdentity/wiki/Known-Processing-Issues)
 
