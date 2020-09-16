@@ -3,7 +3,7 @@
 ##### [**`Cloud Biometric MFA`**](https://github.com/openinfer/PrivateIdentity/wiki)
 
 * [**Overview**](https://github.com/openinfer/PrivateIdentity/wiki#overview)
-* [MFA Micro-App Client](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client)
+* [Biometric MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client)
 * [Built-in Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations)
 * [Flexible Deployment](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment)
 * [No Algorithmic Bias](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)
