@@ -97,7 +97,7 @@
 
 * [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Delivery-to-2020-Biometric-Technology-Rally-at-MdTF)
 
-[**Extras**](https://github.com/openinfer/PrivateIdentity/wiki/Extras)
+[**Internal Documentation**](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation)
 
 * [Standard for Biometric Privacy (SBP) Server](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
