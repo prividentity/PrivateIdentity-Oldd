@@ -26,7 +26,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 
 ## `FEATURES`
   
-### `MFA Micro-App`
+### `Biometric MFA Micro-App`
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
 * Interactive JavaScript App that performs like a fully coded application
 * Supports all biometric acquisition, workflows and FHE transformations -- online and offline 
@@ -34,9 +34,9 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * Simple, fast, secure and intuitive for users and developers
 * <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)</b> For Tutorials and Documentation 
 
-Deploy the MFA Micro-App in just a few minutes as an embedded DIV or HTTPS for secure biometric enrollment, identity, MFA and account recovery. The MFA Micro-App uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
+Deploy the Biometric MFA Micro-App in just a few minutes as an embedded DIV or HTTPS for secure biometric enrollment, identity, MFA and account recovery. The MFA Micro-App uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
 
-The MFA Micro-App does not require on-device training and its small footprint runs on low-end devices. Modern, high-end devices with multi-threaded kernels operate in millisecond response time. Modern devices equipped with GPUs and Edge TPUs operate 70-100x faster. 
+The Biometric MFA Micro-App does not require on-device training and its small footprint runs on low-end devices. Modern, high-end devices with multi-threaded kernels operate in millisecond response time. Modern devices equipped with GPUs and Edge TPUs operate 70-100x faster. 
 <br>
 
 ### `Built-in Privacy:` "Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations"
