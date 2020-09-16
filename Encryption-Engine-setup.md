@@ -13,39 +13,42 @@
     Default output format [None]:
 Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with default region us-east-2
 
-## Clone the repository
+### Step 1: Clone the repository
+
     git clone git@github.com:openinfer/pb.git 
 
-### Setup cluster on AWS
-
-####  Please change variables.sh as per requirements 
+### Step 2: Change Environment variables
+ 
      vi $HOME/pb-util/cluster-setup/variables.sh
+
+Please change variables.sh according to your requirements. 
+
 Examples
      export CLUSTER_NAME=test
 
-### In order to setup cluster run below command.
-    
+### Step 3: Setup Kubernetes cluster
+
     cd $HOME/pb-util/cluster-setup
     . ./cluster-setup.sh 
 
 **Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build cluster
 
-## Setup master and slave on Cluster
+### step 4: Deploy publisher and subscriber on Cluster
 
-###     Go to location
-           cd $HOME/pb-util/publisher/jobschedule
-           ./cluster-run.sh
-           kubectl apply -f deployment.yml 
-           kubectl apply -f service.yml 
-           cd $HOME/pb-util/subscriber/pb
-           ./cluster-run.sh
-           kubectl apply -f deployment.yml
-           kubectl apply -f service.yml
+      cd $HOME/pb-util/publisher/jobschedule
+      ./cluster-run.sh
+      kubectl apply -f deployment.yml 
+      kubectl apply -f service.yml 
+      cd $HOME/pb-util/subscriber/pb
+      ./cluster-run.sh
+      kubectl apply -f deployment.yml
+      kubectl apply -f service.yml
 
+### Step 5 : Adding certificates 
 
-## Steps to Add SSL certs for domain 
+#### Add SSL certs for domain 
 
-Please follow steps to add certs into cluster for ssl termination.
+Please follow below steps to add certs into your cluster for ssl termination.
 
 1. Download certs for domain that you added in variables.sh
 
@@ -55,7 +58,9 @@ Please follow steps to add certs into cluster for ssl termination.
 
     e.g kubectl create secret tls privateidentity.org --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
 
-## Setup Ingress service to Access master pod from Postman.
+### Step 6: Setup Ingress service
+
+#### Setup Ingress service to access master pod from Postman.
 
 1. Go to $HOME/pb-util/cluster-setup 
 
