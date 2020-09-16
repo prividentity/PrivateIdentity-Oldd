@@ -2,7 +2,7 @@
 
 # Table of Contents
 
-* ### [IEEE 2410 2020 Standard for Biometric Privacy (SBP) Server-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
+* ### [IEEE 2410 2020 Standard for Biometric Privacy (SBP) Server-](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
 * ### [Cluster Setup-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Cluster-Setup)
 
