@@ -44,7 +44,7 @@ Examples
       kubectl apply -f deployment.yml
       kubectl apply -f service.yml
 
-### Step 5 : Adding certificates 
+### Step 5 : Add certificates 
 
 #### Add SSL certs for domain 
 
