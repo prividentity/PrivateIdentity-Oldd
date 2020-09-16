@@ -51,60 +51,10 @@
 
 * [URL Parameters (for admins)](https://github.com/openinfer/PrivateIdentity/wiki/Admin-URL-Parameters)
 
-[**Demo Parameter Usage**](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage)
-
-* [How to find your Subject ID on /a/](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#How-to-find-your-Subject-ID-on-/a/)
-
-* [Merging Face and Voice Enrollments](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#Merging-Face-and-Voice-Enrollments)
-
-* [User Interface Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#User-Interface-Demonstration)
-
-* [Anti Spoofing Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Demo-Parameter-Usage#anti-spoofing-technique)
-
-[**SaaS Architecture**](https://github.com/openinfer/PrivateIdentity/wiki/SaaS-Architecture)
-
-* [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Predict-Endpoint)
-
-* [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Enroll-Endpoint)
-
-* [Liveness Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/Liveness-Endpoint)
-
-* [OAuth 2.0](https://github.com/openinfer/PrivateIdentity/wiki/OAUTH)
-
-* [SAML 2.0](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0)
-
-[**PB Utility**](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils)
-
-* [pb-smallscale](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils#small-Scale)
-
-* [pb-largescale](https://github.com/openinfer/PrivateIdentity/wiki/pb-utils#large-Scale)
- 
-* [client-cluster-setup](https://github.com/openinfer/PrivateIdentity/wiki/Client-Cluster-setup)
-
-[**NodeJS Endpoints**](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint)
-
-* [Predict Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Predict-Overview)
-
-* [Enroll Endpoint](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Enroll-Overview)
-
-* [Postman Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/NodeJS-Endpoint#Postman-Example-Project)
-
 [**Javascript API**](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 
 * [Javascript API](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 
-[**Customer Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
-
-* [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Delivery-to-2020-Biometric-Technology-Rally-at-MdTF)
-
 [**Internal Documentation**](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation)
 
-* [Standard for Biometric Privacy (SBP) Server](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
-
-* [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Delivery-to-2020-Biometric-Technology-Rally-at-MdTF)
-
-* [Customer Integrations](https://github.com/openinfer/PrivateIdentity/wiki/Customer-Integrations)
-
 [**Known Processing Issues**](https://github.com/openinfer/PrivateIdentity/wiki/Known-Processing-Issues)
-
-[**FAQ**](https://github.com/openinfer/PrivateIdentity/wiki/FAQ)
