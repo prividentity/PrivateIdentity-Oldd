@@ -2,21 +2,21 @@
 
 # Table of Contents
 
-* ### [IEEE 2410 2020 Standard for Biometric Privacy (SBP) Server](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
+* ### [IEEE 2410 2020 Standard for Biometric Privacy (SBP) Server-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#IEEE-2410-2020-Standard-for-Biometric-Privacy-(SBP)-Server)
 
-* ### [Cluster Setup](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Cluster-Setup)
+* ### [Cluster Setup-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Cluster-Setup)
 
-* ### [Demo Parameter Usage](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Demo-Parameter-Usage)
+* ### [Demo Parameter Usage-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Demo-Parameter-Usage)
 
-* ### [SaaS Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#SaaS-Architecture)
+* ### [SaaS Architecture-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#SaaS-Architecture)
 
-* ### [PB Utility](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#pb-Utils)
+* ### [PB Utility-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#pb-Utils)
 
-* ### [NodeJS Endpoints](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#NodeJS-Endpoints)
+* ### [NodeJS Endpoints-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#NodeJS-Endpoints)
 
-* ### [Customer Integration](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Customer-Integration)
+* ### [Customer Integration-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Customer-Integration)
 
-* ### [Maryland Test Facility](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Maryland-Test-Facility)
+* ### [Maryland Test Facility-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#Maryland-Test-Facility)
 
 * ### [FAQ-](https://github.com/openinfer/PrivateIdentity/wiki/Internal-Documentation#FAQ)
 
