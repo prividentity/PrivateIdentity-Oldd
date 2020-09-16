@@ -67,9 +67,9 @@ The FHE payload is [not “Personal Data”](https://github.com/openinfer/Privat
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
 It took hundreds of experiments and three years to overcome algorithmic bias. At first, we found reasonable results moving images into the infrared spectrum to remove light absorption, skin contour and skin color as distractors. An insightful journal article from Microsoft Research then led us to try homogenized lighting. Today, our solution uses hundreds of [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) filters for training and enrollment and two HSL filters (HSL1 and HSL2) for prediction (patent pending).
 
-Interestingly, moving images into the HSL space did not significantly improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
+Interestingly, moving images into the HSL space does not significantly improve accuracy for Asian faces. We resolved this bias by ethnically balancing our training set with 2K classes from Asian-Celeb.
 
-Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.9% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, our Face Recognition DNN failed to recognize [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis). Visual inspection of the images found that each was too blurry for recognition.
+Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.99% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, our Face Recognition DNN failed to recognize [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis). Visual inspection of the images found that each was too blurry for recognition.
 <br><br>
 
 ### `Facial Recognition`
