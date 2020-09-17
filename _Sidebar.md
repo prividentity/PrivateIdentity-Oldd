@@ -25,7 +25,6 @@
 * [PING Identity Integration](https://github.com/openinfer/PrivateIdentity/wiki/Ping-Identity)
 * [Okta Integration](https://github.com/openinfer/PrivateIdentity/wiki/Okta-Integration)
 * [Google G-Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/GSuite-Integration)
-* [SAML 2.0 Protocol Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML20)
 
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
