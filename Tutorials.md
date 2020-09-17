@@ -1,9 +1,5 @@
 # Getting Started
 
-## Running the Examples
-1. Clone repository 
-1. Run it locally 
-
 ## Tutorials
 1. MFA Micro-App (Embedded DIV)
 1. JavaScript APIs
