@@ -4,5 +4,4 @@
 1. PING Identity Integration 
 1. Okta Factor Authentication Integration 
 1. Google GSuite Integration 
-1. SAML 2.0 Integration (Generic) 
 
