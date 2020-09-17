@@ -19,6 +19,8 @@
 
 [**`Tutorials & Documentation`**](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)
 
+* [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
+
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
 [**`Evaluation Metrics`**](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN)
