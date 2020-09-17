@@ -19,7 +19,13 @@
 
 [**`Tutorials & Documentation`**](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)
 
+* [Biometric MFA Micro-app](https://github.com/openinfer/PrivateIdentity/wiki/Micro-app)
 * [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
+* [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
+* [PING Identity Integration](https://github.com/openinfer/PrivateIdentity/wiki/Ping-Identity)
+* [Okta Integration](https://github.com/openinfer/PrivateIdentity/wiki/Okta-Integration)
+* [Google G-Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/GSuite-Integration)
+* [SAML 2.0 Protocol Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML20)
 
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
