@@ -5,6 +5,11 @@
 * [Release Notes](https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md)
 * [Issue Tracker](https://github.com/openinfer/PrivateIdentity/issues)
 
+**CORPORATE**
+* [Private Identity Homepage](https://private.id)
+* [Contact Us](https://github.com/openinfer/PrivateIdentity/wiki/Contact-Us)
+* [About Us](https://github.com/openinfer/PrivateIdentity/wiki/About-Us)
+
 **SMALL PRINT**
 * [Privacy](https://devel.private.id/private-policy.html)
 * [Terms of Use](https://devel.private.id/terms.html)
