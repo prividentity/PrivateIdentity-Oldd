@@ -1,4 +1,3 @@
-***
 **STAY CONNECTED**
 * [YouTube Channel](https://www.youtube.com/channel/UCy2YOo3EhXf1oF-yY64nlKA)
 * [Stack Overflow](https://stackoverflow.com/questions/tagged/privateid)
