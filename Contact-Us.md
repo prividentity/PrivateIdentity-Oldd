@@ -9,4 +9,4 @@ If you have a question or hit a snag, these resources are the best way to get an
 * api@private.id
 
 **TELEPHONE**
-* +1-301-938-6300 9:00AM to 5:00 PM EST
+* 1-301-938-6300 9:00 AM to 5:00 PM EST
