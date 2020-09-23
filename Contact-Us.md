@@ -1,4 +1,4 @@
-## Get Help
+## Getting Help
 If you have a question or hit a snag, these resources are the best way to get answers.
 
 **BUGS AND FEATURE REQUESTS**
