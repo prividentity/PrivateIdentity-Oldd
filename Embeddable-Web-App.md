@@ -1,6 +1,7 @@
 In this tutorial, we are going to explore how to download the web app and deploy it. This tutorial assumes you have an HTTPS domain, where you want to have the app running.
 
-
+## Video Tutorial
+<b>[Link](https://youtu.be/1hk2ATzgKzA) to video tutorial.</b>
 
 ## Downloading Files
 
