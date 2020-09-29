@@ -15,6 +15,6 @@ Once we upload the two extracted folders and the HTML file, we should be able to
 
 Once we have the app running, we can see the homepage like this:
 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Screen Shot 2020-09-29 at 6.40.11 PM.png)
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Screen Shot%202020-09-29%20at%206.40.11%20PM.png)
 
 
