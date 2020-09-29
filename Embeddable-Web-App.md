@@ -17,6 +17,6 @@ Once we have the app running, we can see the homepage like this:
 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Screen%20Shot%202020-09-29%20at%206.40.11%20PM.png)
 
-You can now use all the app features and URL parameters. For instance, you can use the parameter `redirect`. It is responsible for redirecting the user to the specified value in the URL. Example: `example.org/index.htm?apiKey=XXXXXX&redirect=domain.com` will redirect the user to domain.com once he finishes prediction successfully.  
+You can now use all the app features and URL parameters. In case of a successful prediction, the URL parameter 'redirect' is considered as redirection path. Example: `example.org/index.htm?apiKey=XXXXXX&redirect=domain.com` will redirect the user to domain.com once he finishes prediction successfully.  
 
 
