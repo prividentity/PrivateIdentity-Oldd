@@ -20,6 +20,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |client_id|string value|null|Set client ID retrieved from our endpoints.|
 |debug|true / false|false|Set debug mode to help fix issues|
 |email|Email ID|null|Email id for enrollment data when action=enroll|
+|redirect|Domain name|null|Domain name with or without https, to redirect to after prediction|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
 |faceLiveness| true / false|false|Check for Face liveness (Eye blink) during predict / enroll [[1](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters#reference)]|
