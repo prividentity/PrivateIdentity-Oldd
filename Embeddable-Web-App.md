@@ -9,5 +9,12 @@ The first step is to click on [this link](http://private.id/stand-alone-app.zip)
 
 ## Running the App
 
-Once we upload the two extracted folders and the HTML file, we should be able to run it, through the `index.htm` file. So, if you uploaded the app to `example.org`, then you should go to example.org/index.htm?apiKey=XXXXXX
+Once we upload the two extracted folders and the HTML file, we should be able to run it, through the `index.htm` file. So, if you uploaded the app to `example.org`, then you should go to example.org/index.htm?apiKey=XXXXXX. It's important to use the `apiKey` parameter with the proper value, or otherwise the app won't work.
+
+## Using the App
+
+Once we have the app running, we can see the homepage like this:
+
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Screen Shot 2020-09-29 at 6.40.11 PM.png)
+
 
