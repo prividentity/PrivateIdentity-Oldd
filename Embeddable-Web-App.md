@@ -17,4 +17,5 @@ Once we have the app running, we can see the homepage like this:
 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Screen%20Shot%202020-09-29%20at%206.40.11%20PM.png)
 
+You can now use all the app features and URL parameters. And that's it!
 
