@@ -1,7 +1,7 @@
 In this tutorial we explore how to download the Biometric MFA Microapp and deploy it. This requires that you have an HTTPS domain where you will deploy the JavaScript and have the app running.
 
 ## Video Tutorial
-<b>[Link](https://youtu.be/1hk2ATzgKzA) to video tutorial.</b>
+[![Video Tutorial on Biometric MFA Microapp](https://github.com/openinfer/PrivateIdentity/blob/master/images/cbmfa%20Microapp%20Tutorial%20Video%201.png)](https://youtu.be/1hk2ATzgKzA "Quick Tutorial on the Cloud Biometric MFA Microapp")
 
 ## Step 1: `Download MFA-Microapp.zip`
 
