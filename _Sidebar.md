@@ -19,7 +19,7 @@
 
 [**`Tutorials & Documentation`**](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)
 
-* [Biometric MFA Micro-app](https://github.com/openinfer/PrivateIdentity/wiki/Micro-app)
+* [Biometric MFA Microapp](https://github.com/openinfer/PrivateIdentity/wiki/Microapp)
 * [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 * [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
 * [PING Identity Integration](https://github.com/openinfer/PrivateIdentity/wiki/Ping-Identity)
