@@ -58,7 +58,7 @@ First, find and unzip the file `predict-enroll-library.zip` inside the `MFA-Micr
 
 Open the file `index.html` to start using this tool. 
 
-In-depth information on the JavaScript API is available [here](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API). 
+The complete **tutorial on the JavaScript API** is available [here](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API). 
 
 You can also exercise the same Sandbox on the Private Identity Website using the URL:
 > http://private.id/predict-enroll-library/?apiKey=XXXXXXXXXXXXXXXXX
