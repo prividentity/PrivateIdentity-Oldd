@@ -5,7 +5,7 @@ In this tutorial, we are going to explore how to download the web app and deploy
 
 ## Step 1: `Downloading Files`
 
-The first step is to click on [this link](http://private.id/stand-alone-app.zip) to download the app. Once the download finishes, we can see two folders and one file: dist, src, and `index.htm`. The dist folder contains the necessary JS files and images. The src folder have the machine learning models. And finally, the `index.htm` file is one we should use to run the app.
+The first step is to click on [this link](http://private.id/MFA-Microapp.zip) to download the app. Once the download finishes, we can see two folders and one file: dist, src, and `index.htm`. The dist folder contains the necessary JS files and images. The src folder have the machine learning models. And finally, the `index.htm` file is one we should use to run the app.
 
 
 ## Step 2:  `Running the Microapp`
@@ -24,7 +24,7 @@ You can now use all the app features and URL parameters. In case of a successful
 
 # Running the JS API Tool
 
-After downloading [the .zip file](http://private.id/stand-alone-app.zip) we mentioned before, we can find another useful tool for utilizing the JavaScript API methods. This tool consists of one folder, and two files. The `models` folder has all the necessary machine learning models. You can also find `module.js` file, which is responsible for exporting the API methods to the browser. Finally, the `index.html` file has an example of using the models and the `module.js` file. 
+After downloading [the .zip file](http://private.id/MFA-Microapp.zip) we mentioned before, we can find another useful tool for utilizing the JavaScript API methods. This tool consists of one folder, and two files. The `models` folder has all the necessary machine learning models. You can also find `module.js` file, which is responsible for exporting the API methods to the browser. Finally, the `index.html` file has an example of using the models and the `module.js` file. 
 
 You can find a live example of this tool in this link: https://private.id/predict-enroll-library/
 
