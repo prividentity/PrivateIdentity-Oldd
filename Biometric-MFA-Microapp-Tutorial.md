@@ -33,7 +33,7 @@ The full list of admin URL parameters is located [here.](https://github.com/open
 
 ## Step 5:  `Retrieve the UUID` 
 
-After each successful enrollment or prediction, the server responds back with a UUID. Each enrolled user has a unique UUID. You can get this value through the global variable <b>`window.uuid`</b>. So, each successful prediction/enrollment results in a UUID value. 
+The server responds back with a UUID after each successful enrollment or prediction. Each enrolled user has a unique UUID that is available through the global variable <b>`window.uuid`</b>.  
 
 * Prior to any predict or enroll, window.uuid is undefined.
 * After an unsuccessful predict or enroll, window.uuid is -1.
