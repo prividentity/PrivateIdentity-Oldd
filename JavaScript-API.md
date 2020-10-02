@@ -1,5 +1,5 @@
 
-# JavaScript API Demo Video 
+# JavaScript API Video Tutorial
 [![Press here to play video](https://github.com/openinfer/PrivateIdentity/blob/master/images/Javascript%20API%20Video%201.png)](https://youtu.be/wjaFHuELTJA "JavaScript API Demonstration")
 
 # JavaScript API Documentation 
