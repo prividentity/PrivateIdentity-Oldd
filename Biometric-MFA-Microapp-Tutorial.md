@@ -35,11 +35,10 @@ The full list of admin URL parameters is located [here.](https://github.com/open
 
 After each successful enrollment or prediction, the server responds back with a UUID. Each enrolled user has a unique UUID. You can get this value through the global variable <b>`window.uuid`</b>. So, each successful prediction/enrollment results in a UUID value. 
 
-Prior to any predict or enroll, window.uuid is undefined.
-After an unsuccessful predict or enroll, window.uuid is -1.
-After a successful predict or enroll, window.uuid is assigned a string value. 
-
-We recommend that each customer resets window.uuid after use.  
+* Prior to any predict or enroll, window.uuid is undefined.
+* After an unsuccessful predict or enroll, window.uuid is -1.
+* After a successful predict or enroll, window.uuid is assigned a string value. 
+* We recommend that each customer resets window.uuid after use.  
 
 ## Step 6:  `Exercise the redirect URL parameter`
 
