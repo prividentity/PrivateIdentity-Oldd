@@ -38,7 +38,7 @@ The server responds back with a UUID after each successful enrollment or predict
 * Prior to any predict or enroll, window.uuid is undefined.
 * After an unsuccessful predict or enroll, window.uuid is -1.
 * After a successful predict or enroll, window.uuid is assigned a string value. 
-* We recommend you reset window.uuid to -1 or NULL after each use.  
+* We recommend resetting window.uuid to -1 or NULL after each use.  
 
 ## Step 6:  `Exercise the redirect URL parameter`
 
