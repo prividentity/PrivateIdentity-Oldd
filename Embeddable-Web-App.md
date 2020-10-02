@@ -19,3 +19,13 @@ Once we have the app running, we can see the homepage like this:
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Screen%20Shot%202020-09-29%20at%206.40.11%20PM.png)
 
 You can now use all the app features and URL parameters. In case of a successful prediction, the URL parameter 'redirect' is considered as redirection path. Example: `example.org/index.htm?apiKey=XXXXXX&redirect=domain.com` will redirect the user to domain.com once he finishes prediction successfully.  
+
+
+
+# Running the JS API Tool
+
+After downloading [the .zip file](http://private.id/stand-alone-app.zip) we mentioned before, we can find another useful tool for utilizing the JavaScript API methods. This tool consists of one folder, and two files. The `models` folder has all the necessary machine learning models. You can also find `module.js` file, which is responsible for exporting the API methods to the browser. Finally, the `index.html` file has an example of using the models and the `module.js` file. 
+
+You can find a live example of this tool in this link: https://private.id/predict-enroll-library/
+
+For more information about the available API methods, please take a look at: https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API
