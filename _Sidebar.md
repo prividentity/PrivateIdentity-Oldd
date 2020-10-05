@@ -22,7 +22,7 @@
 * [MFA Microapp Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial)
 * [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 * [Encryption Engine Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
-* [PingFederate® Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate Tutorial)
+* [PingFederate® Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial)
 * [Okta® Integration Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Okta-Integration)
 * [Google G-Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/GSuite-Integration)
 
