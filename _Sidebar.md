@@ -21,9 +21,9 @@
 
 * [MFA Microapp Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial)
 * [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
-* [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
-* [PING Identity Integration](https://github.com/openinfer/PrivateIdentity/wiki/Ping-Identity)
-* [Okta Integration](https://github.com/openinfer/PrivateIdentity/wiki/Okta-Integration)
+* [Encryption Engine Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
+* [PingFederate® Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate Tutorial)
+* [Okta® Integration Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Okta-Integration)
 * [Google G-Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/GSuite-Integration)
 
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
@@ -36,7 +36,7 @@
 
 * [Okta](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
 
-* [Ping Identity](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
+* [PingFederate Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
 
 * [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#sample-ping-demo)
 
