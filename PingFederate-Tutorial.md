@@ -3,8 +3,8 @@
 
 ## `PingFederate Integration Documentation`
 
-### `Step 1:  blah blah blah`
+### `Step 1:  new text here`
 
-### `Step 2:  blah blah blah`
+### `Step 2:  new text here`
 
-### `Step 3:  blah blah blah`
+### `Step 3:  new text here`
