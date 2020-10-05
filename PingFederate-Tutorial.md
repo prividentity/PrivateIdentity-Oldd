@@ -3,9 +3,6 @@
 
 ## `PingFederate® Integration Documentation`
 
-### `Step 1:  new text here`
+### `Step 1:  Documentation coming soon`
 
-### `Step 2:  new text here`
-
-### `Step 3:  new text here`
 
