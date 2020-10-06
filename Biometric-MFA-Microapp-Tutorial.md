@@ -71,7 +71,8 @@ You can also exercise the same Sandbox on the Private Identity Website using the
  
 ## Sending the API Key 
 
-In addition to adding the unique API key in the URL as a parameter, we can add it in the request header, or in the request payload. Let's see how we can do this. 
+When working on `/demo`, the URL parameter API key is used, which is not the most secure option we have to send it. The other two options we have are: adding the API key in the request headers, or adding it in the encrypted payload. Our preferred method is sending the API key in the request header. The second preferred method, is adding it in the encrypted payload. Lastly, you can add it in the URL GET parameters. 
+
 
 ### Adding the API key to the request header
 
