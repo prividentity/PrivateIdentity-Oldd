@@ -1,3 +1,4 @@
+
 In this tutorial we explore how to download the Biometric MFA Microapp and deploy it. This requires that you have an HTTPS domain where you will deploy the JavaScript and have the app running.  The Biometric MFA Microapp is a stateless service.  
 
 ## Video Tutorial
@@ -68,3 +69,21 @@ The complete **tutorial on the JavaScript API** is available [here](https://gith
 You can also exercise the same Sandbox on the Private Identity Website using the URL:
 > http://private.id/predict-enroll-library/?apiKey=XXXXXXXXXXXXXXXXX
  
+## Sending the API Key 
+
+In addition to adding the unique API key in the URL as a parameter, we can add it in the request header, or in the request payload. Let's see how we can do this. 
+
+### Adding the API key to the request header
+
+When we send any request to the NodeJS server, we can use the header parameter `x-api-key`. The parameter value can be the same as URL parameter. 
+
+
+### Adding the API key to the request payload
+
+We can add the API key using the request payload, through the field `api_key`. The body type should be `form-data`. 
+
+#### Example:
+
+Using PostMan, we can send requests to the NodeJS server and utilize the option of sending the API key in the request payload. 
+
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/post-man-request-api-key.png)
