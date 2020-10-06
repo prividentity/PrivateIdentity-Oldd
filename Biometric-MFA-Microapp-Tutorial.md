@@ -77,6 +77,7 @@ In addition to adding the unique API key in the URL as a parameter, we can add i
 
 When we send any request to the NodeJS server, we can use the header parameter `x-api-key`. The parameter value can be the same as URL parameter. 
 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/post-man-request-header.png)
 
 ### Adding the API key to the request payload
 
