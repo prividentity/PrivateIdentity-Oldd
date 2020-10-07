@@ -29,6 +29,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |glassCheck|true / false|false|Turn glasses check on predict/enroll to on/off|
 |hslType|1 / 2|2|Normalization algorithm used. 1 for HSL, 2 for CLAHE|
 |idp|okta / ping / azure/ gsuite|null|Set SAML destination|
+|skin| Numeric value of the skin code|null|Change application UI looks|
 |isEdge|true / false|false|Imitate Edge browser experience|
 |liveness|true / false|false|Verify the user by validating live sentences|
 |livenessImages| 1 or more images|10|Number of images to gather on face liveness|
