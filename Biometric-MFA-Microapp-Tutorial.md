@@ -95,3 +95,9 @@ We can add the API key using the request payload, through the field `api_key`. T
 Using PostMan, we can send requests to the NodeJS server and utilize the option of sending the API key in the request payload. 
 
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/post-man-request-api-key.png)
+
+
+## Changing the Microapp Skin
+
+The microapp UI can be changed through the URL parameter `skin`. This means, if you want the design and the icons to change, you can use the URL parameter as follows: https://domain.com/index.htm?apiKey=XXXXXX&skin=1. The default value for the `skin` parameter is null. It accepts numeric values to denote the skin code.
+
