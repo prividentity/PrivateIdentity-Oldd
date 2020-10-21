@@ -25,7 +25,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
 |faceLiveness| true / false|false|Check for Face liveness (Eye blink) during predict / enroll [[1](https://github.com/openinfer/PrivateIdentity/wiki/Client-URL-Parameters#reference)]|
 |face| true / false|true|Enroll & predict with face|
-|fingerPrint|true / false|false|Prediction using Fingerprint (In Progress)|
+|fingerPrint|true / false|false|Prediction using Fingerprint|
 |glassCheck|true / false|false|Turn glasses check on predict/enroll to on/off|
 |hslType|1 / 2|2|Normalization algorithm used. 1 for HSL, 2 for CLAHE|
 |idp|okta / ping / azure/ gsuite|null|Set SAML destination|
