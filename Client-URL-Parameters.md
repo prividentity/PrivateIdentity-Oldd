@@ -19,7 +19,7 @@ For ex., ?voice=true&liveness=true, resulting in a URL that looks like, private.
 |clientDebug|true / false|null|Debug glasses check and download images in browser.|
 |client_id|string value|null|Set client ID retrieved from our endpoints.|
 |debug|true / false|false|Set debug mode to help fix issues|
-|email|Email ID|null|Email id for enrollment data when action=enroll|
+|email|Email ID|null|Email id for integrating in gsuite during enroll|
 |redirect|Domain name|null|Domain name with or without https, to redirect to after prediction|
 |eyeCloseThreshold| 0 - 1|0.01|Threshold for a closed eye|
 |eyeOpenThreshold| 0 - 1|0.99|Threshold for an open eye|
