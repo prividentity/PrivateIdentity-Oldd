@@ -11,5 +11,9 @@ If you have a question or hit a snag, these resources are the best way to get an
 <b>`EMAIL`</b>
 * api@private.id
 
+<b>`PRODUCTION SUPPORT`  
+* 1-Hour Response For Production Support Issues
+* support@private.id
+
 <b>`TELEPHONE`</b>
 * 1-301-938-6300 9:00 AM to 5:00 PM EST
