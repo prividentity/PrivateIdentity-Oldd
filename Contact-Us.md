@@ -12,7 +12,7 @@ If you have a question or hit a snag, these resources are the best way to get an
 * api@private.id
 
 <b>`PRODUCTION SUPPORT`  
-* 1-Hour Response For Production Support Issues
+* 4-Hour Response For Production Support Issues
 * support@private.id
 
 <b>`TELEPHONE`</b>
