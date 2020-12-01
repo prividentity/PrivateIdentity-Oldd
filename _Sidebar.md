@@ -23,7 +23,7 @@
 * [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 * [Encryption Engine Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
 * [PingFederate® Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial)
-* [Okta® Integration Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Okta-Integration)
+* [Okta® Integration Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration)
 * [Google G-Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/GSuite-Integration)
 
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
