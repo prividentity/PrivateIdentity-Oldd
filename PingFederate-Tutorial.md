@@ -1,7 +1,7 @@
 ## `PingFederate® Integration Tutorial (Video)`
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/PingFederate%20Integration%20PLAY%201.png)](https://youtu.be/pN1wLWwmyV0 "PingFederate Integration Tutorial with Cloud Biometric MFA")
 
-## `PingFederate® Integration Documentation`
+## `Step-by-Step PingFederate® Integration`
 
 ### `Step 1: Choose the Service Provider`
 Log in to the PingFederate server and choose Service Provider. Click Create New to create a new IdP connection.
