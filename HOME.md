@@ -57,7 +57,7 @@ The FHE payload is [not “Personal Data”](https://github.com/openinfer/Privat
 | Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines |
 | --- | --- | --- | --- |
 | [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | SAML/OAuth/OIDC| [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) |
-| [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | Biometric Search |
+| [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) |
 | | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial) | |
 | | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration) | |
 
