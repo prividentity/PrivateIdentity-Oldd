@@ -166,8 +166,8 @@ Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#fac
 
 * Integrates with your existing Enterprise directory using SAML 2.0 or OAuth/OIDC
 * [Google G Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-gsuite)
-* [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
-* [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
+* [Ping Identity PingFederate® Integration](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial)
+* [Okta® Factor Authentication Integration](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration)
 * [Azure Active Directory (AAD) Integration](https://github.com/openinfer/PrivateIdentity/wiki/SAML-2.0#integration-with-microsoft-azure)
 <br>
 
