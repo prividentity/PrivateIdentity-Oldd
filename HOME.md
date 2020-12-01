@@ -56,10 +56,10 @@ The FHE payload is [not “Personal Data”](https://github.com/openinfer/Privat
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 | Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines |
 | --- | --- | --- | --- |
-| [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki#single-component-javascript-application-embedded-div) | [SAML/OAuth/OIDC](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki#encryption-engine-setup) |
-| [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki#javascript-apis-predict-enroll-api) | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki#cloud-biometric-search) |
-| | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
-| | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | |
+| [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | SAML/OAuth/OIDC| [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) |
+| [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | Biometric Search |
+| | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial) | |
+| | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration) | |
 
 <br>
 
