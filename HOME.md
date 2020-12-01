@@ -32,7 +32,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 * Supports all biometric acquisition, workflows and FHE transformations -- online and offline 
 * Runs on 90%+ of all modern devices, browsers, platforms and clouds 
 * Simple, fast, secure and intuitive for users and developers
-* <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials)</b> For Tutorials and Documentation 
+* <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial)</b> For Video Tutorials and Documentation 
 
 Deploy the Biometric MFA Micro-App in just a few minutes as an embedded DIV or HTTPS for secure biometric enrollment, identity, MFA and account recovery. The MFA Micro-App uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
 
