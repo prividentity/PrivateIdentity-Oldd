@@ -8,7 +8,7 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 ## `OVERVIEW`
 
 * [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face-with-mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Enrollment, 1:n Identity, MFA and Account Recovery
-* <b>[Guaranteed Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with 1-way Fully Homomorphic Encryption</b> 
+* <b>[Built-in Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with 1-way Fully Homomorphic Encryption</b> 
 * <b>Enroll once</b>, then authenticate on almost any device
 * <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#mfa-micro-app-web-client) with no software to install and no hardware to buy
 * <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) into Web and mobile apps</b>, IAM solutions and high-throughput biometric pipelines
