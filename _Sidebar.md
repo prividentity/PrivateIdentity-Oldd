@@ -34,12 +34,6 @@
 
 [**Enterprise Integrations**](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations)
 
-* [Okta](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#okta)
-
-* [PingFederate Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#ping-identity)
-
-* [Sample Ping Demonstration](https://github.com/openinfer/PrivateIdentity/wiki/Enterprise-Integrations#sample-ping-demo)
-
 [**Single Component JavaScript App**](https://github.com/openinfer/PrivateIdentity/wiki/Single-Component-JavaScript-App)
 
 * [Web Applications](https://github.com/openinfer/PrivateIdentity/wiki/Client-Applications#Web-applications)
