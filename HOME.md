@@ -176,7 +176,7 @@ Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#fac
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
 
 * <b>Meets AML/KYC identity-proofing requirements </b>for remote presentation of identifying materials or information by an end user for KYC
-* Allows organizations to verify user to [Enrollment Level 2](https://arch.idmanagement.gov/usecases/12_proofidentityloa2/)</b> using an official Photo ID card or passport.
+* Allows organizations to verify user to [Enrollment Level 2](https://arch.idmanagement.gov/usecases/proofidentity/)</b> using an official Photo ID card or passport.
 * <b>Compares ID cards or passport photo</b> to enrolled user's face
 * <b>Compares name and contact information on ID card </b>or passport to mobile phone billing records
 * <b>Verifies phone owner with SMS </b>message to phone
