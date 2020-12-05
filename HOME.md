@@ -81,16 +81,17 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 | 1:Many Identification | | |
 | **IR=99.99%** | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
 
-* **Touchless** Face Recognition using any general-purpose camera (Webcams, phones) ≥256kB
-* Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in _constant time_ irrespective of gallery size
-* Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset
-* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Face images smaller than 224×224 pixels may reduce performance.
+* Face Recognition using any general-purpose camera (Webcams, phones) ≥256kB
+* Unlimited enrolled users (“unlimited gallery size”)
+* Returns 1:n identity in 300ms 
+* Operates in _constant time_ 
+* Trained using the Microsoft Celeb-1M dataset
+* Requires facial images ≥224×224. Smaller images may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * MobileNetV2 architecture, 1.3MB
 <br>
 
-### `Face with Mask Recognition`
+### `Face with Face Mask Recognition`
 
 [![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
 <br>
@@ -101,13 +102,14 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 | 1:Many Identification | | |
 | **IR=98.20%** | FPIR=0.0001% | FNIR=1.80% | Speed=300ms |
 
-* **Touchless** Face w/ Mask Recognition using any general-purpose camera (Webcams, phones) ≥256kB
-* Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in _constant time_ irrespective of gallery size
-* Trained using the Oxford VGGFace2 dataset ethnically balanced with the Asian-Celeb dataset
-* Minimum Imaging Requirements: Face ≥ 224×224 pixels. Face images smaller than 224×224 pixels may reduce performance.
+* Face w/ Mask Recognition using any general-purpose camera (Webcams, phones) ≥256kB
+* Unlimited enrolled users (“unlimited gallery size”)
+* Returns 1:n identity in 300ms 
+* Operates in _constant time_ 
+* Trained using the Microsoft Celeb-1M dataset (augmented)
+* Requires facial images ≥224×224. Smaller images may reduce performance.
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
-* MobileNetV2 architecture, 1.3MB
+* MobileNetV2 architecture, 2.1MB
 <br>
 
 ### `Fingerprint Identification`
@@ -123,11 +125,11 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 * **Touchless** Fingerprint Identification using optical scan (camera) or capacitive sensor
 * Supports any general-purpose camera (Webcams, phones) ≥720P (1MP)
 * Accepts input images from any finger
-* Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in _constant time_ irrespective of gallery size
+* Unlimited enrolled users (“unlimited gallery size”)
+* Operates in _constant time_ 
 * Trained using the NIST Special Database 4 and CASIA-FingerprintV5
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
-* Minimum Imaging Requirements: Fingerprint ≥ 320×240 pixels. Camera ≥720P.
+* Requires fingerprint images ≥320×240. Smaller images may reduce performance.
 * MobileNetV2 architecture, 900kB
 <br>
 
@@ -142,15 +144,14 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 | **IR=95.20%** | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
 
 * Text-, language- and accent-independent voice identification 
-* <b>Enroll with 3 seconds </b>of audio 
-* <b>Authenticate with 1 second </b>of audio
-* Unlimited enrolled users (“unlimited gallery size”)
-* Returns 1:n identity in 300ms _constant time_ 
-* Requires audio ≥8.1kHz (telephone quality). 
+* <b>Enrolls with 3 seconds </b>of audio 
+* <b>Authenticates with 1 second </b>of audio
+* Returns 1:n identity in <b>300ms</b> _constant time_ 
+* Unlimited users (“unlimited gallery size”)
+* Requires audio ≥8.1kHz (telephone quality)
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
 * Trained using Mozilla Voice with custom augmentations
-* MobileNetv2 architecture, 3.5MB
-<br>
+* MobileNetv2 architecture, 2.1MB
 
 ### `Offline Authentication`
 [![Click for Video Demo of Offline Authentication](https://github.com/openinfer/PrivateIdentity/blob/master/images/Offline%20Auth%20PLAY%201.png)](https://youtu.be/ZexmPgCH9cQ "Offline Auth for Cloud Biometric MFA")
@@ -176,7 +177,7 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 
 ![hand holding drivers license](https://github.com/openinfer/PrivateIdentity/blob/master/images/Identity%20Verification%201.png)
 
-* <b>Meets AML/KYC identity-proofing requirements </b>for remote presentation of identifying materials or information by an end user for KYC
+* <b>Meets AML/KYC identity-proofing requirements </b>for remote presentation of identifying materials or information by an end user
 * Allows organizations to verify user to [Enrollment Level 2](https://arch.idmanagement.gov/usecases/proofidentity/)</b> using an official Photo ID card or passport.
 * <b>Compares ID cards or passport photo</b> to enrolled user's face
 * <b>Compares name and contact information on ID card </b>or passport to mobile phone billing records
