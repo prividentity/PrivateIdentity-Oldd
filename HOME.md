@@ -3,21 +3,22 @@
 ## VIDEO INTRODUCTION
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
 
-We threw the old algorithms into the trash and started fresh with a clean-sheet design. Cloud Biometric MFA took three years and seventeen patents to build. This all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm features absolute accuracy, 300ms response time, unlimited users and full privacy. Now, for the first time, private identity is no longer tied to a device, username, password, token or shared secret.
+We threw the old algorithms into the trash and started fresh with a clean-sheet design. Cloud Biometric MFA took three years and seventeen patents to build. This all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm features 1:n identity, absolute accuracy, 300ms response time, unlimited users and full privacy. Now, for the first time, Private Identity® is no longer tied to a device, username, password, token or shared secret.
 
 ## `OVERVIEW`
 
-* [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Mask](https://github.com/openinfer/PrivateIdentity/wiki#face-with-mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Enrollment, 1:n Identity, MFA and Account Recovery
+* [Face](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition), [Face w/ Face Mask](https://github.com/openinfer/PrivateIdentity/wiki#face-with-mask-recognition), [Voice](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification) and [Fingerprint](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification) Enrollment, 1:n Identity, MFA and Account Recovery
 * <b>[Built-in Privacy](https://github.com/openinfer/PrivateIdentity/wiki#built-in-privacy-exempt-from-gdpr-ccpa-bipa--hipaa-privacy-law-obligations) with 1-way Fully Homomorphic Encryption</b> 
-* <b>Enroll once</b>, then authenticate on almost any device
+* <b>Enroll once</b>, then authenticate on any modern device or browser
 * <b>[Deploys instantly](https://github.com/openinfer/PrivateIdentity/wiki#biometric-mfa-micro-app) with no software to install and no hardware to buy
 * <b>[Integrates easily](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment) into Web and mobile apps</b>, IAM solutions and high-throughput biometric pipelines
 * <b>[Unbiased algorithms](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)</b> recognize everyone equally
+* [Compliant](https://github.com/openinfer/PrivateIdentity/wiki#open-standards) with IEEE 2410 Standard for Biometric Privacy, ISO 27001/9001, TCSEC, ICD 503, MILS, W3C WebAuthn, FIPS 197, TLS, IPSEC, SSL  
 * <b>[Exempt](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS) from GDPR, CCPA, BIPA and HIPAA </b>privacy law obligations
 
 ## `RESOURCES`
 
-* <b>Short Video Introduction</b> [[AWS]](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction AWS Flavored") [[GCP]](https://youtu.be/CuE3x543qKo "Short Video Introduction GCP Flavored")
+* <b>Short Video Introduction</b> [[VIDEO]](https://www.youtube.com/watch?v=G33UR87I81E&feature=youtu.be "Short Video Introduction AWS Flavored") 
 * <b>Getting Started with Private Identity</b> [YouTube]
 * <b>[Architecture](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview) </b>[Developer Wiki]
 * <b>[Fireside Chat with Demos](https://youtu.be/Zn-pNJ0svJg) </b>[YouTube Channel]
@@ -26,37 +27,37 @@ We threw the old algorithms into the trash and started fresh with a clean-sheet 
 
 ## `FEATURES`
   
-### `Biometric MFA Micro-App`
+### `Biometric MFA Microapp`
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Single%20Compoent%20App%201.png)
-* Interactive JavaScript App that performs like a fully coded application
-* Supports all biometric acquisition, workflows and FHE transformations -- online and offline 
-* Runs on 90%+ of all modern devices, browsers, platforms and clouds 
-* Simple, fast, secure and intuitive for users and developers
+* Interactive React.js App 
+* Supports biometric acquisition, workflows and FHE transformations 
+* Runs on most (90%+) modern devices, browsers, platforms and clouds 
+* Fast, simple, secure and intuitive for users and developers
+* Secured using [Subresource Integrity](https://en.wikipedia.org/wiki/Subresource_Integrity) 
 * <b>[Link](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial)</b> For Video Tutorials and Documentation 
 
-Deploy the Biometric MFA Micro-App in just a few minutes as an embedded DIV or HTTPS for secure biometric enrollment, identity, MFA and account recovery. The MFA Micro-App uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform and 1-way encrypt the biometric.
+Deploy the Biometric MFA Microapp in just a few minutes for secure biometric enrollment, identity, MFA and account recovery. The MFA Microapp uses an ensemble of pre-trained mobile TensorFlow models to acquire, validate, align, crop, transform, 1-way FHE transform (encrypt) and then delete each biometric.
 
-The Biometric MFA Micro-App does not require on-device training and its small footprint runs on low-end devices. Modern, high-end devices with multi-threaded kernels operate in millisecond response time. Modern devices equipped with GPUs and Edge TPUs operate 70-100x faster. 
-<br>
+The Biometric MFA Microapp's small footprint runs on low-end devices without any requirement for on-device training. High-end modern devices with multi-threaded kernels operate faster with millisecond response time. Modern devices with GPUs and Edge TPUs operate 70-100x faster. 
 
 ### `Built-in Privacy:` "Exempt from GDPR, CCPA, BIPA & HIPAA Privacy Law Obligations"
 
 ![Privacy graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Built%20in%20privacy%201.png)
 
-* Built-in [<b>1-way fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (<b>FHE</b>) enables encrypted match and search operations on encrypted data without allowing any third party to observe the actual data.
-* [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires FHE</b> for private identity assertion and authentication.
+* Built-in [<b>1-way fully homomorphic encryption</b>](https://en.wikipedia.org/wiki/Private_biometrics) (<b>FHE</b>) enables encrypted match and search operations on encrypted data. Plaintext biometric data is deleted immediately after the FHE transformation on the local device to remove risk of loss.
+* [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires 1-way FHE</b> for private identity assertion and authentication.
 * IEEE 2410 certified compliance ensures that, "...the SBP system <b>does not incur [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis) or [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis) privacy obligations." </b>
 
-Organizations using Cloud Biometric MFA guarantee user privacy and limit risk by irreversibly anonymizing all biometric data and personal data with one-way fully homomorphic encryption (FHE).  FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait.  Anonymized FHE payloads eliminate any known or foreseeable possibility of linking any data to the individual the data originally related.
+Organizations using Cloud Biometric MFA guarantee user privacy and limit risk by irreversibly anonymizing all biometric information with 1-way fully homomorphic encryption (FHE). FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait.  Anonymized FHE payloads protect human rights by eliminating any known or foreseeable possibility of linking any biometric or personal data back to the individual.
 
-The FHE payload is [not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under General Data Protection Regulation (EU) 2016/679 (“GDPR”), is [not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the California Consumer Privacy Act (“CCPA”), is [not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the Biometric Information Privacy Act (“BIPA”) and is [not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the Health Insurance Portability and Accountability Act of 1996 ("HIPAA").
+The FHE payload is [not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under the GDPR, is [not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the CCPA, is [not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the BIPA and is [not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the HIPAA.
 <br>
 
 ### `Flexible Deployment`
 ![Flexible Deployment Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Flex%20Deploy%201.png)<br>
 | Web Apps | Mobile Apps | Enterprise Directories | High-Throughput Biometric Pipelines |
 | --- | --- | --- | --- |
-| [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | [MFA Micro-App](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | SAML/OAuth/OIDC| [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) |
+| [MFA Microapp](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | [MFA Microapp](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial) | [SAML/OAuth/OIDC](https://github.com/openinfer/PrivateIdentity/wiki/SAML-Tutorial) | [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) |
 | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [JavaScript APIs](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API) | [G Suite®](https://github.com/openinfer/PrivateIdentity/wiki#saml-20-and-oauthoidc-protocols) | [Biometric Search](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) |
 | | | [PING Identity®](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial) | |
 | | | [Okta® Factor Auth](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration) | |
@@ -142,22 +143,24 @@ Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#fac
 | 1:Many Identification | | |
 | **IR=95.20%** | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
 
-* **Touchless** Text-, language- and accent-independent voice identification with 1 second of audio
-* Enrolls an unlimited number of users (“unlimited gallery size”)
-* Operates in _constant time_ irrespective of gallery size
-* Minimum Audio Requirements: Voice ≥1 second. Audio ≥8.1kHz (telephone quality). The minimum voice input size is 100ms. Voice input < 1 second may reduce performance.
+* Text-, language- and accent-independent voice identification 
+* <b>Enroll with 3 seconds </b>of audio 
+* <b>Authenticate with 1 second </b>of audio
+* Unlimited enrolled users (“unlimited gallery size”)
+* Returns 1:n identity in 300ms _constant time_ 
+* Requires audio ≥8.1kHz (telephone quality). 
 * Massively scalable using elastic, fault-tolerant, load balanced Kubernetes clusters
+* Trained using Mozilla Voice with custom augmentations
 * MobileNetv2 architecture, 3.5MB
 <br>
 
 ### `Offline Authentication`
 [![Click for Video Demo of Offline Authentication](https://github.com/openinfer/PrivateIdentity/blob/master/images/Offline%20Auth%20PLAY%201.png)](https://youtu.be/ZexmPgCH9cQ "Offline Auth for Cloud Biometric MFA")
 
-* <b>Acquires biometrics at the edge</b> with or without a network (TensorFlow at the Edge)
-* <b>Automatically switches to Local Mode</b> after it detects loss of network
-* <b>Authenticate user in 10ms</b> with intermittent or no Internet connection as long as the user authenticates at least once to the device while online
-* <b>Automatically detects</b> the loss of network connectivity
-<br>
+* <b>Acquires biometrics at the edge</b> with or without a network ([TensorFlow](https://www.tensorflow.org/js) at the Edge)
+* <b>Automatically switches to Local Mode</b> after loss of network
+* <b>Authenticates users in 10ms</b> with intermittent or no Internet connection 
+* User must first authenticate to the device while online
 
 ## `Solutions`
 
