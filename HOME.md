@@ -66,11 +66,11 @@ The FHE payload is [not “Personal Data”](https://github.com/openinfer/Privat
 
 ### `No Discrimination`<br>
 ![Image of No Discrimination](https://github.com/openinfer/PrivateIdentity/blob/master/images/No%20Discrim%201.png)<br>
-It took hundreds of experiments and three years to overcome algorithmic bias. At first, we found reasonable results moving images into the infrared spectrum to remove light absorption, skin contour and skin color as distractors. An insightful journal [article](https://www.computer.org/csdl/proceedings-article/cvpr/2006/259710419/12OmNzTH0Hj) from Microsoft Research then led us to try homogenized lighting. Today, our solution uses hundreds of [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) filters for training and enrollment and two HSL filters (HSL1 and HSL2) for prediction (patent pending).
+It took hundreds of experiments and three years to overcome algorithmic bias. At first, we found reasonable results moving images into the infrared spectrum to remove light absorption, skin contour and skin color as distractors. An insightful journal [article](https://www.computer.org/csdl/proceedings-article/cvpr/2006/259710419/12OmNzTH0Hj) from Microsoft Research then led us to try homogenized lighting. Today, our solution uses two [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) filters two HSL filters (HSL1 and HSL2) for training and one for enrollment and predict (patent pending).
 
-Interestingly, the HSL algorithms alone were no enough to completely overcome bias.  We recently added thousands of additional classes, including 2K classes from Asian-Celeb, to ethnically balance the training set.  
+Interestingly, these HSL algorithms alone were not enough to completely overcome bias. To reach 99.99% (absolute accuracy), we then combined the HSL algorithms with a demographically balanced training set. 
 
-Our [Face Recognition DNN](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition) is now 99.99% accurate (absolute accuracy). In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, our Face Recognition DNN failed to recognize [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis). Visual inspection of the images found that each was too blurry for recognition.
+In a [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, our Face Recognition DNN failed to recognize [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis). Visual inspection of the images found that each was too blurry for recognition.
 <br><br>
 
 ### `Facial Recognition`
