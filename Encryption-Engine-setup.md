@@ -38,19 +38,13 @@ Examples
       cd $HOME/pb-util/kubernetes/
       . ./kubeiam.sh
 
-### Step 5: Deploy publisher and subscriber on Cluster
 
-      cd $HOME/pb-util/kubernetes/publisher/
-      . ./deploy-pub.sh 
-      cd $HOME/pb-util/kubernetes/subscriber/
-      . ./deploy-sub.sh
-
-### Step 6: Deploy Rabbitmq on Cluster
+### Step 5: Deploy Rabbitmq on Cluster
      
      cd $HOME/pb-util/kubernetes/rabbitmq
      . ./deploy-mq.sh
      
-### Step 7 : Add certificates 
+### Step 6 : Add certificates 
 
 #### Add SSL certs for domain 
 
@@ -64,7 +58,7 @@ Please follow the below steps to add certs into your cluster for SSL termination
 
     e.g kubectl create secret tls privateidentity --key privateidentity.org.key --cert privateidentity.org.crt
 
-### Step 8: Setup Ingress service
+### Step 7: Setup Ingress service
 
 #### Setup Ingress service to access master pod from Postman.
 
