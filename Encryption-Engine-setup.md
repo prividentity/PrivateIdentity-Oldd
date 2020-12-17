@@ -98,12 +98,13 @@ POST: https://master.privateidentity.org/trueid/v1.1/preprocess
 
 ```
 {
-    "bucket": "preprocess-privateidentity" ,
-    "s3_dataset_dir": "sample_images",
-    "num_processes": 40,
-    "server_url": "https://dev.private.id:443/trueid/v1.1",
-    "slave_url": "http://publisher-svc:5002/trueid/v1.1/slave_preprocess",
-    (Optional)"api_key": <key>
+    "bucket": BUCKET_NAME,
+    "s3_dataset_dir": IMAGES_DIRECTORY,
+    "server_url": SERVER_URL e.g "https://dev.privateidentity.org/trueid/v1.1",
+    "enroll_threshold": "10", 
+    "num_augmentations": "10",
+    "validate_images": "False",
+    "api_key": API_KEY
 }
 ```
 
@@ -111,8 +112,12 @@ POST: https://master.privateidentity.org/trueid/v1.1/preprocess
 
 `s3_dataset_dir`: the path of the dataset in the bucket in S3
 
-`num_processes`: the dataset will be processed using `num_processes` parallel requests. For example, if the dataset consists of 1000 people, and num_processes=40, that means we'll have 40 parallel requests and each request processes 1000/40 = 25 people.
+`server_url`: Backend URL to be used for enrolling the person
 
-`api_key`: is an optional parameter. If it is not present in JSON then a default value of 1962 will be used.
+`enroll_threshold`: Number of images to be used for enrolling
 
+`num_augmentations`: Number of augmentations to be applied to the enrolled images
 
+`validate_images`: Option to validate images by cropping and aligning
+
+`api_key`: Provided API KEY for accessing the system.
