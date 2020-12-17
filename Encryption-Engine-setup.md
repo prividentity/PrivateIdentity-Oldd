@@ -68,7 +68,7 @@ Please follow below steps to add certs into your cluster for ssl termination.
 
 #### Setup Ingress service to access master pod from Postman.
 
-1. Go to $HOME/pb-util/cluster-setup 
+1. Go to $HOME/pb-util/kubernetes/cluster-setup 
 
 2. Edit ingress.yml change host to your host which you want to use access.
 
