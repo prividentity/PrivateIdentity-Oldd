@@ -24,7 +24,7 @@
 Please change variables.sh according to your requirements. 
 
 Examples
-     export CLUSTER_NAME=test,KEY_NAME
+     export CLUSTER_NAME=test
 
 ### Step 3: Setup Kubernetes cluster
 
