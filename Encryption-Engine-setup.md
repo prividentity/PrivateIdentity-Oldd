@@ -42,7 +42,7 @@ Examples
 
       cd $HOME/pb-util/kubernetes/publisher/
       . ./deploy-pub.sh 
-      cd $HOME/pb-util/kuberentes/subscriber/
+      cd $HOME/pb-util/kubernetes/subscriber/
       . ./deploy-sub.sh
 
 ### Step 6: Deploy Rabbitmq on Cluster
