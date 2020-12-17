@@ -36,7 +36,7 @@ Examples
 ### Step 4: Setup KubeIAM for permissions
 
       cd $HOME/pb-util/kubernetes/
-      . ./script.sh
+      . ./kubeiam.sh
 
 ### Step 5: Deploy publisher and subscriber on Cluster
 
