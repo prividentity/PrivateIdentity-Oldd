@@ -11,40 +11,46 @@
     AWS Secret Access Key [None]: XXXXXXXXXXXXXXXX
     Default region name [None]: us-east-2
     Default output format [None]:
-Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with default region us-east-2
+Note: Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with default Region us-east-2 and please make sure your AWS Credentials have Administrator Rights
 
 ### Step 1: Clone the repository
 
-    git clone git@github.com:openinfer/pb.git 
+    git clone git@github.com:openinfer/pb-util.git 
 
 ### Step 2: Change Environment variables
- 
-     vi $HOME/pb-util/cluster-setup/variables.sh
+     cd $HOME/pb-util/cluster-setup/
+     vi variables.sh
 
 Please change variables.sh according to your requirements. 
 
 Examples
-     export CLUSTER_NAME=test
+     export CLUSTER_NAME=test,KEY_NAME
 
 ### Step 3: Setup Kubernetes cluster
 
     cd $HOME/pb-util/cluster-setup
     . ./cluster-setup.sh 
 
-**Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build cluster
+**Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build images
 
-### step 4: Deploy publisher and subscriber on Cluster
+### Step 4: Setup KubeIAM for permissions
 
-      cd $HOME/pb-util/publisher/jobschedule
-      ./cluster-run.sh
-      kubectl apply -f deployment.yml 
-      kubectl apply -f service.yml 
-      cd $HOME/pb-util/subscriber/pb
-      ./cluster-run.sh
-      kubectl apply -f deployment.yml
-      kubectl apply -f service.yml
+      cd $HOME/pb-util/kubernetes/
+      . ./script.sh
 
-### Step 5 : Add certificates 
+### Step 5: Deploy publisher and subscriber on Cluster
+
+      cd $HOME/pb-util/kubernetes/publisher/
+      . ./deploy-pub.sh 
+      cd $HOME/pb-util/kuberentes/subscriber/
+      . ./deploy-sub.sh
+
+### Step 6: Deploy Rabbitmq on Cluster
+     
+     cd $HOME/pb-util/kubernetes
+     . ./deploy-mq.sh
+     
+### Step 7 : Add certificates 
 
 #### Add SSL certs for domain 
 
@@ -58,7 +64,7 @@ Please follow below steps to add certs into your cluster for ssl termination.
 
     e.g kubectl create secret tls privateidentity.org --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
 
-### Step 6: Setup Ingress service
+### Step 8: Setup Ingress service
 
 #### Setup Ingress service to access master pod from Postman.
 
