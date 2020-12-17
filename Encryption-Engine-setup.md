@@ -62,7 +62,7 @@ Please follow the below steps to add certs into your cluster for SSL termination
 
 ```kubectl create secret tls <Domain> --key <path of private key> --cert <path of crt file>``` 
 
-    e.g kubectl create secret tls privateidentity.org --key ~/download/privateidentity.org.key --cert ~/Download/privateidentity.org.crt
+    e.g kubectl create secret tls privateidentity --key privateidentity.org.key --cert privateidentity.org.crt
 
 ### Step 8: Setup Ingress service
 
