@@ -54,11 +54,11 @@ Examples
 
 #### Add SSL certs for domain 
 
-Please follow below steps to add certs into your cluster for ssl termination.
+Please follow the below steps to add certs into your cluster for SSL termination.
 
-1. Download certs for domain that you added in variables.sh
+1. Download certs for the domain that you added in variables.sh
 
-2. Run command with exact path of downloaded certs.
+2. Run command with the exact path of downloaded certs.
 
 ```kubectl create secret tls <Domain> --key <path of private key> --cert <path of crt file>``` 
 
@@ -74,7 +74,7 @@ Please follow below steps to add certs into your cluster for ssl termination.
 
 3. After changes run `kubectl apply -f ingress.yml`
 
-4. Run `kubectl get ing` and copy address you will need it to setup route53.
+4. Run `kubectl get ing` and copy the address you will need to setup route53.
 
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup
 
@@ -83,9 +83,9 @@ To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/Route
 
 #### Preprocess Images
 
-Ensuring the strength of enrolls is the hallmark of Private Identity’s patented application.  A single subject image is morphed into 60 separate images, winnowed down to the superior 53.  The original image morphs by changing the rotation, flipping and modifying the colors through an image homogenization algorithm.  The algorithm compares the geometric distances between every permutation of images.   The algorithm discards images causing a geometric distances greater than a threshold.  If the result is less than 53 images morphing tries again.  If after N number of tries, the algorithm cannot find 53 valid images, the person is rejected and the files move to a rejection directory.   
+Ensuring the strength of enrolls is the hallmark of Private Identity’s patented application.  A single-subject image is morphed into 60 separate images, winnowed down to the superior 53.  The original image morphs by changing the rotation, flipping, and modifying the colors through an image homogenization algorithm.  The algorithm compares the geometric distances between every permutation of images.   The algorithm discards images causing a geometric distance greater than a threshold.  If the result is less than 53 images morphing tries again.  If after N number of tries, the algorithm cannot find 53 valid images, the person is rejected and the files move to a rejection directory.   
 
-Subject images are parsed out into three directories: the original directory retains the preliminary/primary image, an enroll directory and a predict directory.  Both the prediction and enroll directories contain an images sub-directory and an embeddings sub-directory.  The images sub-directory contains the morphed images and the enbeddings sub-directory contains embedding which by definition are  homomorphically encrypted.  
+Subject images are parsed out into three directories: the original directory retains the preliminary/primary image, an enroll directory, and a predict directory.  Both the prediction and enroll directories contain an images sub-directory and an embeddings sub-directory.  The images subdirectory contains the morphed images and the embeddings sub-directory contains embedding which by definition are  homomorphically encrypted.  
 
 To preprocess images, locate the directory with the images stored with the person names as their filenames.
 Then run the following command to augment the images and removing the bad embeddings which will create a 'enroll' and 'predict' sub-directories. 
