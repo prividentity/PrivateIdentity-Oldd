@@ -28,7 +28,7 @@ Examples
 
 ### Step 3: Setup Kubernetes cluster
 
-    cd $HOME/pb-util/cluster-setup
+    cd $HOME/pb-util/kubernetes/cluster-setup
     . ./cluster-setup.sh 
 
 **Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build images
