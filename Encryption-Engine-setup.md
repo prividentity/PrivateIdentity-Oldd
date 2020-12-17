@@ -18,7 +18,7 @@
     git clone git@github.com:openinfer/pb-util.git 
 
 ### Step 2: Change Environment variables
-     cd $HOME/pb-util/cluster-setup/
+     cd $HOME/pb-util/kubernetes/cluster-setup/
      vi variables.sh
 
 Please change variables.sh according to your requirements. 
