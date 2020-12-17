@@ -70,6 +70,8 @@ Please follow the below steps to add certs into your cluster for SSL termination
 
 4. Run `kubectl get ing` and copy the address you will need to setup route53.
 
+**Note:** If you DOMAIN is on AWS please follow below step
+
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/Route-Setup
 
 
