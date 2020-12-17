@@ -47,7 +47,7 @@ Examples
 
 ### Step 6: Deploy Rabbitmq on Cluster
      
-     cd $HOME/pb-util/kubernetes
+     cd $HOME/pb-util/kubernetes/rabbitmq
      . ./deploy-mq.sh
      
 ### Step 7 : Add certificates 
