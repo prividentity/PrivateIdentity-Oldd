@@ -15,7 +15,7 @@ Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS
 
 1. Open the Route 53 console at https://console.aws.amazon.com/route53/
 
-2. Click on Hosted Zone   
+2. Click on Hosted Zones   
 
      [[images/route_first.png]]
 
