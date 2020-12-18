@@ -33,6 +33,26 @@ This results in an accuracy of F1=99%, 30 false positives and 11 false negatives
 
 ### ETHNIC, GENDER AND RACE BREAKDOWN
 
+
+#people
+#images
+Analysis
+Error at cutoff = 1.14
+
+| Race | #people | #images | Analysis | Error at cutoff = 1.14 |
+| ------------- | ------------- | -------------  | ------------- | ------------- |
+|  african_american | 298 | 9611  |  Best cut off:  1.11
+Accuracy:  0.993
+ | Accuracy:  0.992
+Error: 0.8%
+ |
+|  asian | 124 | 4744  |  Best cut off:  1.13
+Accuracy:  0.992
+ | Accuracy:  0.991
+Error: 0.9%
+
+ |
+
 ### DATASET BALANCE AND AUGMENTATION ### 
 
 
