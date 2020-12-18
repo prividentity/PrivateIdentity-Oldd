@@ -28,7 +28,7 @@ In production, the algorithm adjudicates each prediction to eliminate false posi
 
 ### `DIVERSITY ANALYSIS` 
 
-We next conduct the cutoff analysis on subgroups (Black, Asian, White, Hispanic, other). 
+We next conduct the cutoff analysis on subgroups. 
 The following table illustrated the statistics and the cutoff analysis result.
 
 | Race | #classes| #images | Analysis | Error Rate<br>Cutoff = 1.14 |
