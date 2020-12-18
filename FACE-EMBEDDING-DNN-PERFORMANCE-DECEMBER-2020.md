@@ -41,7 +41,7 @@ The following table illustrated the statistics and the cutoff analysis result.
 |  Other | 75 | 3504  |  Best Cutoff:  1.10<br>Accuracy:   0.992| Error: 1%<br>Accuracy:  0.99 |
 
 ### `TRAINING DATASET BALANCE AND AUGMENTATION`
-The training dataset is racially balanced and uses two HSL algorithms (HSL-1 and HSL-2) to generalize skin color.<br>  
+The training dataset is racially balanced and uses two HSL algorithms (HSL-1 and HSL-2) to generalize skin color.  
 Examples of the [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) algorithms follow.
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/HSL%20Images.png)
 <pre>
