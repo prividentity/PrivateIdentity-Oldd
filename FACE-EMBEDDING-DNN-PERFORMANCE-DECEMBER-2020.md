@@ -33,12 +33,12 @@ The following table illustrated the statistics and the cutoff analysis result.
 
 | Race | #classes| #images | Analysis | Error Rate<br>Cutoff = 1.14 |
 | ------------- | ------------- | -------------  | ------------- | ------------- |
-|  ALL | 2071 | 81421  |  Best cut off:  1.14<br>Accuracy:  0.998| Error: 0.2%<br>Accuracy:  0.998 |
-|  Black | 298 | 9611  |  Best cut off:  1.11<br>Accuracy:  0.993 | Error: 0.8%<br>Accuracy:  0.992 |
-|  Asian | 124 | 4744  |  Best cut off:  1.13<br>Accuracy:  0.992| Error: 0.9%<br>Accuracy:  0.991 |
-|  White | 1091 | 48344  |  Best cut off:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
-|  Hispanic | 483 | 15218  |  Best cut off:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
-|  Other | 75 | 3504  |  Best cut off:  1.10<br>Accuracy:   0.992| Error: 1%<br>Accuracy:  0.99 |
+|  ALL | 2071 | 81421  |  Best Cutoff:  1.14<br>Accuracy:  0.998| Error: 0.2%<br>Accuracy:  0.998 |
+|  Black | 298 | 9611  |  Best Cutoff:  1.11<br>Accuracy:  0.993 | Error: 0.8%<br>Accuracy:  0.992 |
+|  Asian | 124 | 4744  |  Best Cutoff:  1.13<br>Accuracy:  0.992| Error: 0.9%<br>Accuracy:  0.991 |
+|  White | 1091 | 48344  |  Best Cutoff:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
+|  Hispanic | 483 | 15218  |  Best Cutoff:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
+|  Other | 75 | 3504  |  Best Cutoff:  1.10<br>Accuracy:   0.992| Error: 1%<br>Accuracy:  0.99 |
 
 ### `TRAINING DATASET BALANCE AND AUGMENTATION`
 The training dataset is racially balanced and uses two HSL algorithms (HSL-1 and HSL-2).  
