@@ -1,4 +1,4 @@
-Private Identity® Facial Recognition Using DIF-CELEB-1M
+Evaluation of the Private Identity® Facial Recognition Algorithm Using DIF-CELEB-1M (Diversity in Faces) Fair Evaluation Dataset
 December 17, 2020
 
 ### `DIF-CELEB-1M Fairness Evaluation Dataset`
@@ -30,5 +30,8 @@ December 17, 2020
 * The model generated False Negatives errors on poor quality images. Examples of images that the model is unable to process are shown below.
 ![Examples of images that generated Type II errors](https://github.com/openinfer/PrivateIdentity/blob/master/images/Examples%20of%20FNIR%20Images.png)
 
-
-
+`
+Authors:  	Chung Nguyen PhD 
+                Scott Streit, CTO
+Data Run Date:  17 DEC 2020, 3:30PM
+`
