@@ -39,7 +39,7 @@ This results in an accuracy of F1=99%, 30 false positives and 11 false negatives
 Analysis
 Error at cutoff = 1.14
 
-| Race | #people | #images | Analysis | Error at cutoff = 1.14 |
+| Race | #people | #images | Cutoff Analysis | Error at cutoff = 1.14 |
 | ------------- | ------------- | -------------  | ------------- | ------------- |
 |  african_american | 298 | 9611  |  Best cut off:  1.11<br>Accuracy:  0.993 | Error: 0.8%<br>Accuracy:  0.992 |
 |  asian | 124 | 4744  |  Best cut off:  1.13<br>Accuracy:  0.992| Error: 0.9%<br>Accuracy:  0.991 |
