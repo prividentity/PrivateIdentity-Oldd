@@ -28,7 +28,7 @@ First, we built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M. The
   * All remaining original images from each class (73,472) are augmented 5X resulting in 440,832 probe images. 
 ### `RESULTS`
 ![Spreadsheet showing detailed results of evaluation](https://github.com/openinfer/PrivateIdentity/blob/master/images/Results%20in%20table.png)
-[Link](https://drive.google.com/file/d/1xgbK_eiCjSMR4pNE6yabkjfj_Hzg3iyg/view?usp=sharing) to spreadsheet (Google Sheet)
+[Link](https://drive.google.com/file/d/1xgbK_eiCjSMR4pNE6yabkjfj_Hzg3iyg/view?usp=sharing) to spreadsheet (Google Sheets)
 
 ![Charts showing results ](https://github.com/openinfer/PrivateIdentity/blob/master/images/Report%20Results.png)
 
