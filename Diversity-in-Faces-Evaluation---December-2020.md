@@ -1,10 +1,11 @@
 <pre>
 Evaluation of the Private Identity® Facial Recognition Algorithm 
 Using DIF-CELEB-1M (Diversity in Faces) Fair Evaluation Dataset
+and Private ID Facial Recognition Model 1607349233
 December 17, 2020
 </pre>
 ### `Introduction`
-Several facial recognition algorithms show bias for one or more subgroups. A customer therefore asked that Private Identity provide a diversity evaluation of the Private Identity face recognition algorithm. Additionally, the customer asked for the ability to run the evaluation themselves. First, we built a diverse face evaluation dataset (DIF-CELEB-1M, described below).  Then, we enhanced the [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) to accommodate both predictions and enrolls. We then ran the Encryption Engine and obtained the following results. 
+Many facial recognition algorithms show bias for one or more subgroups. A customer therefore requested that Private Identity provide a diversity evaluation of the Private Identity facial recognition algorithm. In addition, the customer asked for the ability to run the evaluation themselves. First, we built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M. Then, we enhanced Private Identity's [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) to accommodate predictions and enrolls. We then ran the Encryption Engine to enroll all faces in DIF-CELEB-1M and predict with each probe. We describe the evaluation results below. 
 
 ### `DIF-CELEB-1M Fairness Evaluation Dataset`
 
@@ -34,8 +35,15 @@ Several facial recognition algorithms show bias for one or more subgroups. A cus
 * The model generated no false positive (Type 1) errors.
 * The model generated False Negatives errors on poor quality images. Examples of images that the model is unable to process are shown below.
 ![Examples of images that generated Type II errors](https://github.com/openinfer/PrivateIdentity/blob/master/images/Examples%20of%20FNIR%20Images.png)
+
+### `Embedding DNN Evaluation for Private ID Facial Recognition Model 1607349233`
+* At Cutoff 1.14: Min = 0.68, Mean = 1.00, Max = 1.14, F1 = 99%
+* Cutoff Evaluation Performance: IR=99.8%, FPIR=0.000%, FNIR=0.200%
+* Cutoff analysis for each Subclass is shown below.
+* See [link](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE-DECEMBER-2020) for complete analysis. 
+
 <pre>
 Authors:  	  Chung Nguyen PhD <br>
                   Scott Streit, CTO <br>
-Data Run Date:  17 DEC 2020, 3:30PM
+Data Run Date:    DEC 17, 2020. 15:30 EST
 </pre>
