@@ -3,7 +3,9 @@
 ***
 ### VALIDATION ACCURACY OF SOFTMAX TRAINING ###
 
-**Face recognition DNN trained with 51M images** with validation accuracy of 97.71% using 8M images for validation. 
+**Face recognition DNN trained with 54M images** and 83425 people with validation accuracy of 91.62% using 4M images for validation. 
+
+
 
 [[images/threshold1.png]]
 
