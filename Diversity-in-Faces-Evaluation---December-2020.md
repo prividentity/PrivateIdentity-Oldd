@@ -1,8 +1,7 @@
-`
-Evaluation of the Private Identity® Facial Recognition Algorithm 
-Using DIF-CELEB-1M (Diversity in Faces) Fair Evaluation Dataset
-December 17, 2020
-`
+> Evaluation of the Private Identity® Facial Recognition Algorithm 
+> Using DIF-CELEB-1M (Diversity in Faces) Fair Evaluation Dataset
+> December 17, 2020
+
 ### `Introduction`
 A significant number of facial recognition algorithms are biased for one or more subgroups. A customer therefore asked that Private Identity provide a diversity evaluation of the Private Identity face recognition algorithm that the customer could run themselves. We first built a diverse face evaluation dataset (DIF-CELEB-1M, described below) and then enhanced the [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) to accommodate both predictions and enrolls. 
 
@@ -35,8 +34,6 @@ A significant number of facial recognition algorithms are biased for one or more
 * The model generated False Negatives errors on poor quality images. Examples of images that the model is unable to process are shown below.
 ![Examples of images that generated Type II errors](https://github.com/openinfer/PrivateIdentity/blob/master/images/Examples%20of%20FNIR%20Images.png)
 
-`
-Authors:  	Chung Nguyen PhD 
-                Scott Streit, CTO
-Data Run Date:  17 DEC 2020, 3:30PM
-`
+> Authors:  	  Chung Nguyen PhD 
+>                 Scott Streit, CTO
+> Data Run Date:  17 DEC 2020, 3:30PM
