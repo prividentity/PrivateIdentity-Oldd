@@ -88,7 +88,7 @@ Then run the following command to augment the images and removing the bad embedd
 
 Send a request to process a dataset on S3 to: 
 
-POST: https://master.privateidentity.org/trueid/v1.1/preprocess
+POST: https://test.privateidentity.org/trueid/v1.1/preprocess
 
 ```
 {
