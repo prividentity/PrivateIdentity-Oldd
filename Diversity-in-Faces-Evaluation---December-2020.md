@@ -24,8 +24,8 @@ First, we built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M. The
   * MS-Celeb-1M images vary by color, B/W, grayscale, different background, lighting, pose and include frontal and profile views. 
 * **20,490 images used for enrollment**
   * 10 original images from each class are augmented 8X (resulting in 80 images) and used to enroll the class.   
-* **440,832 images used for probes**
-  * All remaining original images from each class (73,472) are augmented 5X resulting in 440,832 probe images. 
+* **440,832 images used as probes**
+  * All remaining original images from each class (73,472) are augmented 5X resulting in 440,832 probes. 
 ### `RESULTS`
 ![Spreadsheet showing detailed results of evaluation](https://github.com/openinfer/PrivateIdentity/blob/master/images/Results%20in%20table.png)
 [Link](https://drive.google.com/file/d/1xgbK_eiCjSMR4pNE6yabkjfj_Hzg3iyg/view?usp=sharing) to spreadsheet (Google Sheets)
