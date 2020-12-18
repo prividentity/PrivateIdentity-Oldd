@@ -4,7 +4,7 @@ Using DIF-CELEB-1M (Diversity in Faces) Fair Evaluation Dataset
 December 17, 2020
 </pre>
 ### `Introduction`
-A significant number of facial recognition algorithms are biased for one or more subgroups. A customer therefore asked that Private Identity provide a diversity evaluation of the Private Identity face recognition algorithm that the customer could run themselves. We first built a diverse face evaluation dataset (DIF-CELEB-1M, described below) and then enhanced the [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) to accommodate both predictions and enrolls. 
+Several facial recognition algorithms show bias for one or more subgroups. A customer therefore asked that Private Identity provide a diversity evaluation of the Private Identity face recognition algorithm. Additionally, the customer asked for the ability to run the evaluation themselves. First, we built a diverse face evaluation dataset (DIF-CELEB-1M, described below).  Then, we enhanced the [Encryption Engine](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup) to accommodate both predictions and enrolls. We then ran the Encryption Engine and obtained the following results. 
 
 ### `DIF-CELEB-1M Fairness Evaluation Dataset`
 
