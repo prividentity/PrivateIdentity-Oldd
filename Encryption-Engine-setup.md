@@ -115,3 +115,9 @@ POST: https://master.privateidentity.org/trueid/v1.1/preprocess
 `validate_images`: Option to validate images by cropping and aligning
 
 `api_key`: Provided API KEY for accessing the system.
+
+
+### To clean up all resources follow below command
+
+      cd $HOME/pb-util/kubernetes/cluster-setup
+      . ./delete_cluster.sh
