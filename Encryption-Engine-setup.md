@@ -48,10 +48,10 @@ Examples
       cd $HOME/pb-util/kubernetes/publisher
       . ./deploy-pub.sh
 
-### Step 7: Deploy Publisher on Cluster
+### Step 7: Deploy Subscriber on Cluster
   
-     cd $HOME/pb-util/kubernetes/publisher
-     . ./deploy-pub.sh
+     cd $HOME/pb-util/kubernetes/subscriber
+     . ./deploy-sub.sh
 
 ### Step 8: Setup autoscale
 
