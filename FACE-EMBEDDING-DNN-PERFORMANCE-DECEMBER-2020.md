@@ -5,7 +5,7 @@
 
 **Face recognition DNN trained with 54M images** and 83425 people with validation accuracy of 91.62% using 4M images for validation. 
 
-
+![](images/Exp044_backup_Accuracy.png)
 
 [[images/threshold1.png]]
 
