@@ -1,10 +1,9 @@
 ### `VALIDATE SOFTMAX TRAINING`
 
-The Private ID Facial Recognition Model 1607349233 is trained with 83,425 classes and 54M images. 
-Validation accuracy is 91.62% using 4M images. 
+The Private ID Facial Recognition Model 1607349233 is trained with 83,425 classes and 54M images. <br>
+Tensorboard reports validation accuracy is 91.62% using 4M images. 
 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Exp044_backup_Accuracy.png)
-Source: TensorBoard Visualization Toolkit
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Exp044_backup_Accuracy.png)<br>Source: TensorBoard Visualization Toolkit
 
 ### `TRIPLET LOSS TRAINING` 
 Triplet loss training is pending. We will update this report when training finishes.
@@ -13,7 +12,7 @@ Triplet loss training is pending. We will update this report when training finis
 
 The multi-variable cutoff analysis is calculated using 20,000 random images from the DIF-CELEB-1M evaluation set. DNN performance is assessed by accuracy, precision and recall. 
 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Exp044_backup_Cutoff_Analysis.png) <br>
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Exp044_backup_Cutoff_Analysis.png) 
 Source: TensorBoard Visualization Toolkit
 
 ### `THRESHOLD ANALYSIS`
