@@ -105,7 +105,7 @@ Subject images are parsed out into three directories: the original directory ret
 To preprocess images, locate the directory with the images stored with the person names as their filenames.
 Then run the following command to augment the images and removing the bad embeddings which will create a 'enroll' and 'predict' sub-directories. 
 
-### Step 6: Postman to send request
+### Postman to send request
 
 Send a request to process a dataset on S3 to: 
 
@@ -137,8 +137,25 @@ POST: https://DOMAIN_NAME.privateidentity.org/trueid/v1.1/preprocess
 
 `api_key`: Provided API KEY for accessing the system.
 
+### Access the logs folder
 
-### To clean up all resources follow below command
+1. Go to [AWS Console](https://console.aws.amazon.com).
+
+2. Choose the s3 from services.
+
+3. Choose the bucket where the subject images are present.
+
+4. A new directory with the "logs" appended to the directory name will have all the logs for the subjects.
+
+5. "Success" folder will have the logs and the response for each person from the backend server
+
+6. "processed_data" will have the "enroll" and "predict" data that was used to process the subject
+
+7. Under "enroll"/"predict", we have the embeddings used for enrolling in the "embedding" folder and the images used to enroll in the "source" folder
+
+8. In case of low-quality images for the subject, the logs will be present in the "error" and "processed_data_error" folder.
+
+### To clean up all resources follow the below command
 
       cd $HOME/pb-util/kubernetes/cluster-setup
       . ./delete_cluster.sh
