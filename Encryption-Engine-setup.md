@@ -37,15 +37,27 @@ Examples
      
      cd $HOME/pb-util/kubernetes/rabbitmq
      . ./deploy-mq.sh
-     
 
-### Step 5: Deploy PUB-SUB and setup KubeIAM for permissions
+### Step 5: setup KubeIAM for permissions
 
       cd $HOME/pb-util/kubernetes/
       . ./kubeiam.sh
+
+### Step 6: Deploy Publisher on Cluster
+  
+      cd $HOME/pb-util/kubernetes/publisher
+      . ./deploy-pub.sh
+
+### Step 7: Deploy Publisher on Cluster
+  
+     cd $HOME/pb-util/kubernetes/publisher
+     . ./deploy-pub.sh
+
+### Step 8: Setup autoscale
+
       kubectl autoscale deployment pb-subscriber --cpu-percent=40 --min=10 --max=500
 
-### Step 6 : Add certificates 
+### Step 9 : Add certificates 
 
 #### Add SSL certs for domain 
 
@@ -59,7 +71,7 @@ Please follow the below steps to add certs into your cluster for SSL termination
 
     e.g kubectl create secret tls privateidentity --key privateidentity.org.key --cert privateidentity.org.crt
 
-### Step 7: Setup Ingress service
+### Step 10: Setup Ingress service
 
 #### Setup Ingress service to access master pod from Postman.
 
