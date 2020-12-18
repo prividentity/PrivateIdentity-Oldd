@@ -45,7 +45,7 @@ First, we built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M. The
 * See [link](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE-DECEMBER-2020) for complete analysis. 
 
 <pre>
-Authors:  	  Chung Nguyen PhD <br>
-                  Scott Streit, CTO <br>
+Authors:  	  Chung Nguyen PhD
+                  Scott Streit, CTO 
 Data Run Date:    DEC 17, 2020. 15:30 EST
 </pre>
