@@ -143,15 +143,29 @@ POST: https://DOMAIN_NAME.privateidentity.org/trueid/v1.1/preprocess
 
 2. Choose the s3 from services.
 
+![AWS Console S3](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_2.png)
+
 3. Choose the bucket where the subject images are present.
+
+![S3 Bucket](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_3.png)
 
 4. A new directory with the `logs` appended to the directory name will have all the logs for the subjects.
 
+![Log Folder](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_4.png)
+
 5. `Success` folder will have the logs and the response for each person from the backend server
+
+![Success folder](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_5.png)
+
+![Success folder files](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_5_1.png)
 
 6. `processed_data` will have the `enroll` and `predict` data that was used to process the subject
 
+![Processed Data folder](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_6.png)
+
 7. Under `enroll`/`predict`, we have the embeddings used for enrolling in the `embedding` folder and the images used to enroll in the `source` folder
+
+![Processed Data folder](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_7.png)
 
 8. In case of low-quality images for the subject, the logs will be present in the `error` and `processed_data_error` folder.
 
