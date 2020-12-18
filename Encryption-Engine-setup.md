@@ -68,7 +68,7 @@ Please follow the below steps to add certs into your cluster for SSL termination
 
 3. After changes run `kubectl apply -f ingress.yml`
 
-4. Run `kubectl get ing` and copy the address you will need to setup route53.
+4. Run `kubectl get ing` and copy the address that you will be used while creating route.
 
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/Encryption_Engine_Route
 
