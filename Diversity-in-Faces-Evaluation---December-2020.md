@@ -35,7 +35,7 @@ First, we built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M. The
 ### `Discussion`
 * The Private Identity Recognition Algorithm performed fairly across all subgroups.  
 * The model generated no false positive (Type 1) errors.
-* The model generated False Negatives errors on poor quality images. Examples of images that the model is unable to process are shown below.
+* The model generated false negative errors on poor quality images. Examples of images that the model is unable to process are shown below.
 ![Examples of images that generated Type II errors](https://github.com/openinfer/PrivateIdentity/blob/master/images/Examples%20of%20FNIR%20Images.png)
 
 ### `Embedding DNN Evaluation for Private ID Facial Recognition Model 1607349233`
