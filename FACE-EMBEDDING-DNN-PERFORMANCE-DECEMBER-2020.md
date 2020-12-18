@@ -14,7 +14,7 @@ We will update this page as soon as training finishes.
 
 The multi-variable cutoff analysis is calculated using 20,000 random images from the DIF-CELEB-1M evaluation set. DNN performance is assessed by accuracy, precision and recall. 
 
-![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Exp044_backup_Cutoff_Analysis.png) 
+![](https://github.com/openinfer/PrivateIdentity/blob/master/images/Exp044_backup_Cutoff_Analysis.png) <br>
 Source: TensorBoard Visualization Toolkit
 
 ### `THRESHOLD ANALYSIS`
