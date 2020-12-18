@@ -34,6 +34,6 @@ A significant number of facial recognition algorithms are biased for one or more
 * The model generated False Negatives errors on poor quality images. Examples of images that the model is unable to process are shown below.
 ![Examples of images that generated Type II errors](https://github.com/openinfer/PrivateIdentity/blob/master/images/Examples%20of%20FNIR%20Images.png)
 
-> Authors:  	  Chung Nguyen PhD 
->                 Scott Streit, CTO
+> Authors:  	  Chung Nguyen PhD <br>
+>                 Scott Streit, CTO <br>
 > Data Run Date:  17 DEC 2020, 3:30PM
