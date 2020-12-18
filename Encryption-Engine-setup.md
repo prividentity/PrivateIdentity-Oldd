@@ -33,17 +33,17 @@ Examples
 
 **Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build images
 
-### Step 4: Setup KubeIAM for permissions
-
-      cd $HOME/pb-util/kubernetes/
-      . ./kubeiam.sh
-
-
-### Step 5: Deploy Rabbitmq on Cluster
+### Step 4: Deploy Rabbitmq on Cluster
      
      cd $HOME/pb-util/kubernetes/rabbitmq
      . ./deploy-mq.sh
      
+
+### Step 5: Setup KubeIAM for permissions
+
+      cd $HOME/pb-util/kubernetes/
+      . ./kubeiam.sh
+
 ### Step 6 : Add certificates 
 
 #### Add SSL certs for domain 
