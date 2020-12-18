@@ -109,13 +109,13 @@ Then run the following command to augment the images and removing the bad embedd
 
 Send a request to process a dataset on S3 to: 
 
-POST: https://test.privateidentity.org/trueid/v1.1/preprocess
+POST: https://DOMAIN_NAME.privateidentity.org/trueid/v1.1/preprocess
 
 ```
 {
     "bucket": BUCKET_NAME,
     "s3_dataset_dir": IMAGES_DIRECTORY,
-    "server_url": SERVER_URL e.g "https://dev.privateidentity.org/trueid/v1.1",
+    "server_url": SERVER_URL e.g "https://dev.private.id/trueid/v1.1",
     "enroll_threshold": "10", 
     "num_augmentations": "10",
     "validate_images": "False",
