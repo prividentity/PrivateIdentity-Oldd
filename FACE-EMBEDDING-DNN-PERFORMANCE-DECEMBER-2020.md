@@ -7,8 +7,7 @@ Validation accuracy is 91.62% using 4M images.
 Source: TensorBoard Visualization Toolkit
 
 ### `TRIPLET LOSS TRAINING` 
-Triplet loss training is pending. 
-We will update this page as soon as training finishes.
+Triplet loss training is pending. We will update this report when training finishes.
 
 ### `CUTOFF ANALYSIS USING 20K RANDOM IMAGES`
 
@@ -33,19 +32,18 @@ In production, the algorithm adjudicates each prediction to eliminate false posi
 We next conduct the cutoff analysis on subgroups (Black, Asian, White, Hispanic, other). 
 The following table illustrated the statistics and the cutoff analysis result.
 
-| Race | #people | #images | Cutoff Analysis | Error at cutoff = 1.14 |
+| Race | #classes| #images | Analysis | Error Rate<br>Cutoff = 1.14 |
 | ------------- | ------------- | -------------  | ------------- | ------------- |
+|  ALL | 2071 | 81421  |  Best cut off:  1.14<br>Accuracy:  0.998| Error: 0.2%<br>Accuracy:  0.998 |
 |  Black | 298 | 9611  |  Best cut off:  1.11<br>Accuracy:  0.993 | Error: 0.8%<br>Accuracy:  0.992 |
 |  Asian | 124 | 4744  |  Best cut off:  1.13<br>Accuracy:  0.992| Error: 0.9%<br>Accuracy:  0.991 |
 |  White | 1091 | 48344  |  Best cut off:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
 |  Hispanic | 483 | 15218  |  Best cut off:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
 |  Other | 75 | 3504  |  Best cut off:  1.10<br>Accuracy:   0.992| Error: 1%<br>Accuracy:  0.99 |
-|  ALL | 2071 | 81421  |  Best cut off:  1.14<br>Accuracy:  0.998| Error: 0.2%<br>Accuracy:  0.998 |
 
-### `DATASET BALANCE AND AUGMENTATION`
-
-Visual examples of two HSL algorithms (HSL-1 and HSL-2) are displayed below.  
-
+### `TRAINING DATASET BALANCE AND AUGMENTATION`
+The training dataset is racially balanced and uses two HSL algorithms (HSL-1 and HSL-2).  
+Examples of the [HSL](https://en.wikipedia.org/wiki/HSL_and_HSV) algorithms follow.
 ![](https://github.com/openinfer/PrivateIdentity/blob/master/images/HSL%20Images.png)
 <pre>
 Authors:  	Chung Nguyen PhD 
