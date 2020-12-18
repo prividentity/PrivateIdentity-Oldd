@@ -15,46 +15,22 @@ Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS
 
 1. Open the Route 53 console at https://console.aws.amazon.com/route53/
 
-2. Choose Create Hosted Zone   
+2. Click on Hosted Zone   
 
-     [[images/aws1.png]]
+     [[images/route_first.png]]
 
-3. In the Create Hosted Zone pane, enter a domain name and, optionally, a comment.
 
-     [[images/aws2.png]]
+3. Click on your hosted zone 
 
-4. For Type, accept the default value of Public Hosted Zone and choose create.
+    [[images/route_second.png]]
 
-5. You need to change NS in your domain hosting service **[NOTE: This doc is according to godaddy as domain Service]**
+4. Choose Create Record Set
 
-6. Make note of the four names listed for Name Servers
-    
-     [[images/aws3.png]]
+    [[images/route_third.png]]
 
-7. Log into your GoDaddy Account Manager.
+12. Enter name and select ALIAS  In the list of targets, select the load balancer for which you want to create an alias record [ingress load balancer]
+     [[images/route_fouth.png]]
+  Click on Create
 
-8. Click on manage button and Locate the domain you wish to register private name servers for and click the Gear icon, then select Manage DNS
-
-9. In the Name Server Settings pop-up, select the radio button for I'll choose my own nameservers, then paste your 4 copied NS from AWS.
- 
-     [[images/go1.png]]
-
-Note: It would take some time to change nameservers. 
-   
-10.   You need to create Record Sets for Web Tier and Server Tier Please set target as your newly created NLB for both. Use names of backend and frontend variables you had setup in variables.sh 
-
-11. Choose Create Record Set, Choose a name 
-
-    [[images/aws4.png]]
-
-12. Select ALIAS and In the list of targets, select the load balancer for which you want to create an alias record [ingress load balancer]
- 
-13. Choose Create Record Set
-
-14. Create Record set for frontend as well.
-    
-     [[images/aws5.png]]
-
-We have setup AWS Route53 for our cluster now can access our application from url devel.privateidentity.org
 
     
