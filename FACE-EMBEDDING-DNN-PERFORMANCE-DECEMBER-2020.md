@@ -41,8 +41,12 @@ Error at cutoff = 1.14
 
 | Race | #people | #images | Analysis | Error at cutoff = 1.14 |
 | ------------- | ------------- | -------------  | ------------- | ------------- |
-|  african_american | 298 | 9611  |  Best cut off:  1.11<br>Accuracy:  0.993 | Accuracy:  0.992<br>Error: 0.8% |
-|  asian | 124 | 4744  |  Best cut off:  1.13<br>Accuracy:  0.992| Accuracy:  0.991<br>Error: 0.9% |
+|  african_american | 298 | 9611  |  Best cut off:  1.11<br>Accuracy:  0.993 | Error: 0.8%<br>Accuracy:  0.992 |
+|  asian | 124 | 4744  |  Best cut off:  1.13<br>Accuracy:  0.992| Error: 0.9%<br>Accuracy:  0.991 |
+|  caucasian_white | 1091 | 48344  |  Best cut off:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
+|  hispanic_latino | 483 | 15218  |  Best cut off:  1.13<br>Accuracy:  0.997| Error: 0.3%<br>Accuracy:  0.997 |
+|  other | 75 | 3504  |  Best cut off:  1.10<br>Accuracy:   0.992| Error: 1%<br>Accuracy:  0.99 |
+|  ALL | 2071 | 81421  |  Best cut off:  1.14<br>Accuracy:  0.998| Error: 0.2%<br>Accuracy:  0.998 |
 
 ### DATASET BALANCE AND AUGMENTATION ### 
 
