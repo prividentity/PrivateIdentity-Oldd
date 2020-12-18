@@ -145,15 +145,15 @@ POST: https://DOMAIN_NAME.privateidentity.org/trueid/v1.1/preprocess
 
 3. Choose the bucket where the subject images are present.
 
-4. A new directory with the "logs" appended to the directory name will have all the logs for the subjects.
+4. A new directory with the `logs` appended to the directory name will have all the logs for the subjects.
 
-5. "Success" folder will have the logs and the response for each person from the backend server
+5. `Success` folder will have the logs and the response for each person from the backend server
 
-6. "processed_data" will have the "enroll" and "predict" data that was used to process the subject
+6. `processed_data` will have the `enroll` and `predict` data that was used to process the subject
 
-7. Under "enroll"/"predict", we have the embeddings used for enrolling in the "embedding" folder and the images used to enroll in the "source" folder
+7. Under `enroll`/`predict`, we have the embeddings used for enrolling in the `embedding` folder and the images used to enroll in the `source` folder
 
-8. In case of low-quality images for the subject, the logs will be present in the "error" and "processed_data_error" folder.
+8. In case of low-quality images for the subject, the logs will be present in the `error` and `processed_data_error` folder.
 
 ### To clean up all resources follow the below command
 
