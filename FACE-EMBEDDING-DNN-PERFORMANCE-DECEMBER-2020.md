@@ -32,12 +32,7 @@ This results in an accuracy of F1=99%, 30 false positives and 11 false negatives
 
 
 ### ETHNIC, GENDER AND RACE BREAKDOWN
-
-
-#people
-#images
-Analysis
-Error at cutoff = 1.14
+We conducted the cutoff analysis on each race (african_american, asian, caucasian_white, hispanic_latino, other) and all races. The following table illustrated the statistics and the cutoff analysis result.
 
 | Race | #people | #images | Cutoff Analysis | Error at cutoff = 1.14 |
 | ------------- | ------------- | -------------  | ------------- | ------------- |
