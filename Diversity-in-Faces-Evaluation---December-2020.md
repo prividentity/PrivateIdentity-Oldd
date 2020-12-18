@@ -42,7 +42,7 @@ First, we built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M. The
 * At Cutoff 1.14: Min = 0.68, Mean = 1.00, Max = 1.14, F1 = 99%
 * Cutoff Evaluation Performance: IR=99.8%, FPIR=0.000%, FNIR=0.200%
 * Cutoff analysis for each Subclass is shown below.
-* Please see [Embedding DNN Performance Analysis December 2020](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE-DECEMBER-2020) for the Cutoff analysis. 
+* Please see [**Embedding DNN Performance Analysis December 2020**](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE-DECEMBER-2020) for the Cutoff analysis. 
 
 <pre>
 Authors:  	  Chung Nguyen PhD
