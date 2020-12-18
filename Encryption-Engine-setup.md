@@ -36,7 +36,15 @@ Examples
 ### Step 4: Deploy Rabbitmq on Cluster
      
      cd $HOME/pb-util/kubernetes/rabbitmq
-     . ./deploy-mq.sh
+     kubectl apply -f namespace.yaml
+     kubectl apply -f rbac.yaml
+     kubectl config set-context --current --namespace=test-rabbitmq
+     kubectl  apply -f headless-service.yaml
+     kubectl create secret generic erlang-cookie --from-file=./cookie
+     kubectl create secret generic rabbitmq-admin --from-file=./user --from-file=./pass
+     kubectl apply -f configmap.yaml
+     kubectl apply -f statefulset.yaml
+     kubectl apply -f client-service.yaml
 
 ### Step 5: setup KubeIAM for permissions
 
