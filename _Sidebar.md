@@ -30,7 +30,7 @@
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
 **`Evaluation Metrics`**
-* Put Next Link Here
+* [**Diversity in Faces Eval** Dec 2020](https://github.com/openinfer/PrivateIdentity/wiki/Diversity-in-Faces-Evaluation---December-2020)
 * [**Face Embedding DNN Performance 6/2020**](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE---JUNE-2020)
 
 [**`Biometric Workflows`**](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs)
