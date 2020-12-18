@@ -157,6 +157,25 @@ POST: https://DOMAIN_NAME.privateidentity.org/trueid/v1.1/preprocess
 
 ![Success folder](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_5.png)
 
+```
+Ex. Sample Log output
+
+Skipped the validation process so copying the images directly
+Considering 38/38 images:3068026
+Moving Random files for Enroll/Predict:3068026
+Initiating Augmentation for person:3068026
+Generating embeddings for the enroll augmented files:3068026
+Removing bad files from augmented files:3068026
+Enroll Processing complete:3068026
+Generating embeddings for the predict augmented files:3068026
+Predict Processing complete:3068026
+Begin Enroll process:3068026
+Enrolling the person into the system:3068026
+{"PI":{"enroll_level":1,"modality":"face","name":"3068026","private_id":"xxxxxxxxxxxx","uuid":"xxxxxxxxxx"},"guid":100003,"message":"OK","status":0}Enroll processed => Status:0, Message:OK, Name: 3068026, Subject ID:xxxxxxx, PII Name:3068026
+Uploading morphed images to s3:3068026
+
+```
+
 ![Success folder files](https://github.com/openinfer/PrivateIdentity/blob/master/images/enc_eng_5_1.png)
 
 6. `processed_data` will have the `enroll` and `predict` data that was used to process the subject
