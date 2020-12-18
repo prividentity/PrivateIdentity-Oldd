@@ -39,7 +39,7 @@ Examples
      . ./deploy-mq.sh
      
 
-### Step 5: Setup KubeIAM for permissions
+### Step 5: Deploy PUB-SUB and setup KubeIAM for permissions
 
       cd $HOME/pb-util/kubernetes/
       . ./kubeiam.sh
