@@ -43,6 +43,7 @@ Examples
 
       cd $HOME/pb-util/kubernetes/
       . ./kubeiam.sh
+      kubectl autoscale deployment pb-subscriber --cpu-percent=40 --min=10 --max=500
 
 ### Step 6 : Add certificates 
 
