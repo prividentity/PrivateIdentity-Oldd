@@ -79,7 +79,7 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 | 1:1 Verification | | |
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | 1:Many Identification | | |
-| **IR=99.99%** | FPIR=0.0001% | FNIR=0.0001% | Speed=300ms |
+| **IR=99.80%** | FPIR=0.0001% | FNIR=0.20% | Speed=300ms |
 
 * Face Recognition using any general-purpose camera (Webcams, phones) ≥256kB
 * Unlimited enrolled users (“unlimited gallery size”)
