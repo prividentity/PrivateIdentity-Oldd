@@ -33,24 +33,16 @@ Examples
 
 **Note** Once the script completes, exit the terminal window and reconnect the session again. This ensures that docker has permissions to build images
 
-### Step 4: Deploy Rabbitmq on Cluster
-     
-     cd $HOME/pb-util/kubernetes/rabbitmq
-     kubectl apply -f namespace.yaml
-     kubectl apply -f rbac.yaml
-     kubectl config set-context --current --namespace=test-rabbitmq
-     kubectl  apply -f headless-service.yaml
-     kubectl create secret generic erlang-cookie --from-file=./cookie
-     kubectl create secret generic rabbitmq-admin --from-file=./user --from-file=./pass
-     kubectl apply -f configmap.yaml
-     kubectl apply -f statefulset.yaml
-     kubectl apply -f client-service.yaml
-
-### Step 5: setup KubeIAM for permissions
+### Step 4: setup KubeIAM for permissions
 
       cd $HOME/pb-util/kubernetes/
       . ./kubeiam.sh
 
+### Step 5: Deploy Rabbitmq on Cluster
+     
+     cd $HOME/pb-util/kubernetes/rabbitmq
+     . ./deploy-mq.sh
+ 
 ### Step 6: Deploy Publisher on Cluster
   
       cd $HOME/pb-util/kubernetes/publisher
