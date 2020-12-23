@@ -1,9 +1,9 @@
-[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20White%20Space%20on%20Right%20v3.png)](https://www.private.id/)
+[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBAPI_Logo_Long.png)](https://www.private.id/)
 
 ## VIDEO INTRODUCTION
-[![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBMFA%20Overview%20Video%20Img3.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric MFA")
+[![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBAPI%20Intro%20Video%20Graphic.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric API")
 
-We threw the old algorithms into the trash and started fresh with a clean-sheet design. Cloud Biometric MFA took three years and seventeen patents to build. This all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm features 1:n identity, absolute accuracy, 300ms response time, 10K API calls/second, unlimited users and full privacy. Now, for the first time, Private Identity® is no longer tied to a device, username, password, token or shared secret.
+We threw the old algorithms into the trash and started fresh with a clean-sheet design. Cloud Biometric API took three years and seventeen patents to build. This all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm features 1:n identity, absolute accuracy, 300ms response time, 10K API calls/second, unlimited users and full privacy. Now, for the first time, Private Identity® is no longer tied to a device, username, password, token or shared secret.
 
 ## `OVERVIEW`
 
@@ -48,7 +48,7 @@ The Biometric MFA Microapp's small footprint runs on low-end devices without any
 * [<B>IEEE 2410 Standard for Biometric Privacy</b>](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D) (SBP) <b>requires 1-way FHE</b> for private identity assertion and authentication.
 * IEEE 2410 certified compliance ensures that, "...the SBP system <b>does not incur [GDPR](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#gdpr-analysis), [CCPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#ccpa-analysis), [BIPA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#bipa-analysis) or [HIPAA](https://github.com/openinfer/PrivateIdentity/wiki/EXEMPT-FROM-PRIVACY-OBLIGATIONS#hipaa-analysis) privacy obligations." </b>
 
-Organizations using Cloud Biometric MFA guarantee user privacy and limit risk by irreversibly anonymizing all biometric information with 1-way fully homomorphic encryption (FHE). FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait.  Anonymized FHE payloads protect human rights by eliminating any known or foreseeable possibility of linking any biometric or personal data back to the individual.
+Organizations using Cloud Biometric API guarantee user privacy and limit risk by irreversibly anonymizing all biometric information with 1-way fully homomorphic encryption (FHE). FHE payloads are globally unique (i.e. no two payloads are ever the same), positional arrays of 128 floating-point numbers that do not contain biological or behavioral characteristics, imagery or a template of any physiological, biological or behavioral trait.  Anonymized FHE payloads protect human rights by eliminating any known or foreseeable possibility of linking any biometric or personal data back to the individual.
 
 The FHE payload is [not “Personal Data”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#951-fhe-payloads-contain-anonymized-data) under the GDPR, is [not "Personal Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#961-fhe-payloads-contain-deidentified-information) under the CCPA, is [not “Biometric Information”](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#971-fhe-payloads-do-not-contain-biometric-identifiers-or-biometric-information) under the BIPA and is [not "Individually Identifiable Health Information"](https://github.com/openinfer/PrivateIdentity/wiki/IEEE-2410-STANDARD-FOR-BIOMETRIC-PRIVACY-%5BDRAFT%5D#985-fhe-payloads-do-not-contain-individually-identifiable-health-information) under the HIPAA.
 <br>
@@ -72,7 +72,7 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 <br><br>
 
 ### `Facial Recognition`
-[![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20PLAY%201.png)](https://youtu.be/Q7gMuVCWAS8 "Face Recognition for Cloud Biometric MFA")
+[![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20PLAY%201.png)](https://youtu.be/Q7gMuVCWAS8 "Face Recognition for Cloud Biometric API")
 
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -93,7 +93,7 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 
 ### `Face with Face Mask Recognition`
 
-[![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric MFA")
+[![Click for Video Demo of Face w/ Mask Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Face%20w%20Mask%20PLAY%201.png)](https://youtu.be/GvtQ-d3TwGc "Face w/ Mask Recognition for Cloud Biometric API")
 <br>
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -113,7 +113,7 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 <br>
 
 ### `Fingerprint Identification`
-[![Click for Video Demo of Fingerprint Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Fingerprint%20recogni%20PLAY%203.png)](https://youtu.be/J10akfFzxHI "Fingerprint Identification for Cloud Biometric MFA")
+[![Click for Video Demo of Fingerprint Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Fingerprint%20recogni%20PLAY%203.png)](https://youtu.be/J10akfFzxHI "Fingerprint Identification for Cloud Biometric API")
 
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -134,7 +134,7 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 <br>
 
 ### `Voice (Speaker) Identification`
-[![Click for Video Demo of Voice Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Voice%20PLAY%201.png)](https://youtu.be/eCfB8ixRapw "Voice Recognition for Cloud Biometric MFA")
+[![Click for Video Demo of Voice Recognition](https://github.com/openinfer/PrivateIdentity/blob/master/images/Voice%20PLAY%201.png)](https://youtu.be/eCfB8ixRapw "Voice Recognition for Cloud Biometric API")
 
 | Accuracy | Type I Error | Type II Error | Speed |
 |---|---|---|---|
@@ -154,7 +154,7 @@ Interestingly, these HSL algorithms alone were not enough to completely overcome
 * MobileNetv2 architecture, 2.1MB
 
 ### `Offline Authentication`
-[![Click for Video Demo of Offline Authentication](https://github.com/openinfer/PrivateIdentity/blob/master/images/Offline%20Auth%20PLAY%201.png)](https://youtu.be/ZexmPgCH9cQ "Offline Auth for Cloud Biometric MFA")
+[![Click for Video Demo of Offline Authentication](https://github.com/openinfer/PrivateIdentity/blob/master/images/Offline%20Auth%20PLAY%201.png)](https://youtu.be/ZexmPgCH9cQ "Offline Auth for Cloud Biometric API")
 
 * <b>Acquires biometrics at the edge</b> with or without a network ([TensorFlow](https://www.tensorflow.org/js) at the Edge)
 * <b>Automatically switches to Local Mode</b> after loss of network
