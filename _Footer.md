@@ -1,6 +1,6 @@
 **STAY CONNECTED**
 * [YouTube Channel](https://www.youtube.com/channel/UCy2YOo3EhXf1oF-yY64nlKA)
-* [Stack Overflow](https://stackoverflow.com/questions/tagged/privateid)
+* [Stack Overflow](https://stackoverflow.com/questions/tagged/privateid?tab=Newest)
 * [Release Notes](https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md)
 * [Issue Tracker](https://github.com/openinfer/PrivateIdentity/issues)
 
