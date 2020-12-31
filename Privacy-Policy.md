@@ -12,7 +12,7 @@ Further, you acknowledge that this Privacy Policy is part of our Terms of Servic
 
   1. When you use our authentication Service or access the Website to have access to general information available on the Site, we do not currently require you to provide Personal Data. However, we may receive and/or collect Personal Data from you in the following ways:
 
-  a) **Purchases.** We use the tools, software or services of third-party service providers (i.e. AWS, GCP and Microsoft Azure) to process transactions on our behalf, in which case you acknowledge and agree to review and be bound by the terms of use and privacy policy of said third-party service provider. Private Identity does not receive Personal Data from these vendors.
+  a) **Purchases.** We use the tools, software or services of third-party service providers (i.e. Amazon Web Services (AWS), Google Cloud (GCP) or Microsoft Azure) to process transactions on our behalf, in which case you acknowledge and agree to review and be bound by the terms of use and privacy policy of said third-party service provider. Private Identity does not receive Personal Data from these vendors.
 
   b) **Log Files.** We use log files for our products for billing and quality assurance only. The information inside the Private Identity log files does not include internet protocol (IP) addresses, type of browser, Internet Service Provider (ISP), referring/exit pages, clicked pages or any other information your browser or device may send to us. We do not combine the information collected by any log files with customer or end-user personally identifiable information (PII).
 
