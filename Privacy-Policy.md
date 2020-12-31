@@ -68,11 +68,11 @@ Private Identity collects the information that you knowingly and voluntarily pro
 • Professional and Employment Information, including employment history
 • Financial Information, including credit card and debit card numbers
 
-> `a. Personal Data From and/or About Others.`
+> **`a. Personal Data From and/or About Others.`**
 
 We may also collect and store Personal Data about other people that you provide to us, as well as information about you provided by others. We may also receive your Personal Data from trusted third parties (including, for example, business partners, sub-contractors in technical, payment and delivery of membership services, advertising networks, analytics providers, search information providers, credit reference agencies).
 
-> `b. Anonymized and/or Pseudonymized Information.`
+> **`b. Anonymized and/or Pseudonymized Information.`**
 
 When you use our service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and only collect anonymized and/or pseudonymized information. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access/download the Cloud Biometric API application onto a device (phone, laptop, etc.) and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
 
