@@ -14,7 +14,7 @@
 ***
 
 **SMALL PRINT**
-* [Privacy](https://devel.private.id/private-policy.html)
+* [Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Privacy-Policy)
 * [Terms of Use](https://devel.private.id/terms.html)
 
 © 2020 Private Identity LLC All Rights Reserved. Private Identity and Private ID are registered trademarks of Private Identity LLC. All other trademarks, service marks, trade names, trade dress, product names and logos appearing on this site are the property of their respective owners.
