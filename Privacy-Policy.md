@@ -6,7 +6,7 @@ This privacy policy (“Privacy Policy”) governs how Private Identity LLC (“
 
 By accessing our Services, you agree to be bound by this Privacy Policy. If you do not agree to the terms of this Privacy Policy, please do not use our Services. Each time you use our Service, the current version of the Privacy Policy will apply. Accordingly, whenever you use our Service, you should check the date of this Privacy Policy (which appears at the top) and review any changes since the last version. This Privacy Policy is applicable to all Service visitors, registered users, and all other users of our Service.
 
-Further, you acknowledge that this Privacy Policy is part of our Terms of Service which is available at **https://private.id/terms.html**​. This Privacy Policy is incorporated by reference, and by accessing or using our Service, you agree to be bound by the Terms of Service.  If you do not agree to our Terms of Service, do not access or use our Service.
+Further, you acknowledge that this Privacy Policy is part of our Terms of Service which is available by clicking [here](https://github.com/openinfer/PrivateIdentity/wiki/Terms-of-Use)​. This Privacy Policy is incorporated by reference, and by accessing or using our Service, you agree to be bound by the Terms of Service.  If you do not agree to our Terms of Service, do not access or use our Service.
 
 ### `B. Personal Data Collected by Private Identity`
 
@@ -74,7 +74,7 @@ We may also collect and store Personal Data about other people that you provide 
 
 > **`b. Anonymized and/or Pseudonymized Information.`**
 
-When you use our service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and only collect anonymized and/or pseudonymized information. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access/download the Cloud Biometric API application onto a device (phone, laptop, etc.) and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
+When you use our service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and only collect anonymized and/or pseudonymized information. As explained in the terms of service accessible [here](https://github.com/openinfer/PrivateIdentity/wiki/Terms-of-Use), the Services provide you a limited, revocable, nonexclusive, non-assignable license to access/download the Cloud Biometric API application onto a device (phone, laptop, etc.) and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
 
 ### `C. How Is Your Personal Data Used?`
 
@@ -85,7 +85,7 @@ We may use Personal Data we collect about you on its own or combine it with othe
 • To create user accounts and/or profiles through registration;
 • Perform internal operations, such as tracking and improving the effectiveness of our website, mobile experience, and marketing efforts;
 • Provide product and/or Service fulfillment, such as creating and maintaining accounts, managing purchases, payments, and more;
-• Resolve disputes between users and/or a user and the company as set forth in our Terms of Service;
+• Resolve disputes between users and/or a user and the company as set forth in our [Terms of Service](https://github.com/openinfer/PrivateIdentity/wiki/Terms-of-Use);
 • Use the location of your mobile device to prevent fraud or deliver other location-based services that you may request;
 • Receive feedback;
 • Conduct audits;
