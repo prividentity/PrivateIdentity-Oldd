@@ -28,7 +28,7 @@ Private Identity permits you to link to the Site provided that: (i) you link to 
 
 **8. Privacy.** We will use any personal information that we may collect or obtain in connection with the Services in accordance with our [Privacy Policy](https://github.com/openinfer/PrivateIdentity/wiki/Privacy-Policy)​. You agree that we may use personal information that you provide or make available to us in accordance with the [Privacy Policy](https://github.com/openinfer/PrivateIdentity/wiki/Privacy-Policy).
 
-**9. Privacy Laws.** Information from this Website is general information only and does not constitute legal advice. Customers should seek their own independent legal advice.
+**9. Privacy Laws Obligations.** Information from this Website does not constitute legal advice. Customers should seek their own independent legal advice.
 
 **10. Warranty Disclaimers**
 
