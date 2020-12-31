@@ -10,18 +10,15 @@ Further, you acknowledge that this Privacy Policy is part of our Terms of Servic
 
 ### `B. Personal Data Collected by Private Identity`
 
-**CLOUD BIOMETRIC API.** 
-When you use our CLOUD BIOMETRIC API service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and **only collect anonymized and/or pseudonymized information**. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access the Cloud Biometric API application onto a device (phone, laptop, etc.) or cloud and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
+  1. When you use our **CLOUD BIOMETRIC API** service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and **only collect anonymized and/or pseudonymized information**. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access the Cloud Biometric API application onto a device (phone, laptop, etc.) or cloud and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
 
-------------------
+  2. `When you use our authentication Service or access the Website` to have access to general information available on the Site, we do not currently require you to provide Personal Data. However, we may receive and/or collect Personal Data from you in the following ways:
 
-1. When you use our authentication Service or access the Website to have access to general information available on the Site, we do not currently require you to provide Personal Data. However, we may receive and/or collect Personal Data from you in the following ways:
+  a) **Purchases.** We use the tools, software or services of third-party service providers (i.e. AWS, GCP and Microsoft Azure) to process transactions on our behalf, in which case you acknowledge and agree to review and be bound by the terms of use and privacy policy of said third-party service provider. Private Identity does not receive Personal Data from these vendors.
 
-   a) **Purchases.** We use the tools, software or services of third-party service providers (i.e. AWS, GCP and Microsoft Azure) to process transactions on our behalf, in which case you acknowledge and agree to review and be bound by the terms of use and privacy policy of said third-party service provider. Private Identity does not receive Personal Data from these vendors.
+  b) **Log Files.** We use log files for our products for billing and quality assurance only. The information inside the Private Identity log files does not include internet protocol (IP) addresses, type of browser, Internet Service Provider (ISP), referring/exit pages, clicked pages or any other information your browser or device may send to us. We do not combine the information collected by any log files with customer or end-user personally identifiable information (PII).
 
-   b) **Log Files.** We use log files for our products for billing and quality assurance only. The information inside the Private Identity log files does not include internet protocol (IP) addresses, type of browser, Internet Service Provider (ISP), referring/exit pages, clicked pages or any other information your browser or device may send to us. We do not combine the information collected by any log files with customer or end-user personally identifiable information (PII).
-
-2. **`Personal Data that you Knowingly and Willingly Provide`**
+  3. **`Personal Data that you Knowingly and Willingly Provide`**
 
 Private Identity collects the information that you knowingly and voluntarily provide when you use our Service (such as through web forms or profile screens), including registration/account setup information, profile details, payment information, and ratings information. We primarily use this information to fulfill your transaction requests. You can choose not to provide us with certain Personal Data, but then you may not be able to take advantage of our Service or other available features we offer. The information that we collect and use may include the following kinds of Personal Data:
 
@@ -73,11 +70,11 @@ Private Identity collects the information that you knowingly and voluntarily pro
 • Professional and Employment Information, including employment history
 • Financial Information, including credit card and debit card numbers
 
-   **`A. Personal Data From and/or About Others`**. 
+  `a. Personal Data From and/or About Others.`
 
 We may also collect and store Personal Data about other people that you provide to us, as well as information about you provided by others. We may also receive your Personal Data from trusted third parties (including, for example, business partners, sub-contractors in technical, payment and delivery of membership services, advertising networks, analytics providers, search information providers, credit reference agencies).
 
-  **`B. Anonymized and/or Pseudonymized Information`**. 
+  `b. Anonymized and/or Pseudonymized Information.`
 
 When you use our service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and only collect anonymized and/or pseudonymized information. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access/download the Cloud Biometric API application onto a device (phone, laptop, etc.) and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
 
@@ -140,15 +137,15 @@ We will never disclose your Personal Data to third parties for a business purpos
 
 Our Service may contain links to third party websites, applications and services not operated by us. These links are provided as a service and do not imply any endorsement by Private Identity of the activities or content of these sites, applications or services nor any association with their operators. Private Identity is not responsible for the privacy policies or practices of any third party including Websites or services directly linked to our Service. We encourage you to review the privacy policies of any third-party site that you link from our Service.
 
-      **(1) Security**
+  **(1) Security**
 
 We take reasonable technical and organizational precautions to protect the confidentiality, security and integrity of all data including any Personal Data. Although we use security measures to help protect Personal Data against loss, misuse or unauthorized disclosure, we cannot guarantee the security of information transmitted to us over the Internet. While we strive to use commercially acceptable means to protect Personal Data, there is no guarantee that information may not be accessed, disclosed, altered or destroyed.
 
-      **(2) Storage**
+  **(2) Storage**
 
 Any Personal Data that you provide to us is generally stored on AWS, GCP or Microsoft Azure servers located in the United States. If you are located in another jurisdiction, you should be aware that once your Personal Data is submitted through our Service, it will be transferred to our servers in the United States and that the United States currently does not have uniform data protection laws in place.
 
-      **(3) Retention**
+  **(3) Retention**
 
 We will retain your Personal Data for the period necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required or permitted by law.
 
