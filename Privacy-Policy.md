@@ -1,6 +1,6 @@
 Effective Date: July 1, 2020
 
-**A. Privacy Statement**
+**`A. Privacy Statement`**
 
 This privacy policy (“Privacy Policy”) governs how Private Identity LLC (“Private Identity,” "Private ID," “we”, “our” or “us”) uses the Personal Data we collect, receive and store regarding individuals in connection with the use of the Website private.id (our “**Service**”), as well as your choices regarding use and disclosure of your Personal Data.  As used in this Privacy Policy, the term “Personal Data” (“**Personal Data**”) means information that identifies you or your household directly or indirectly, by reference to identifier(s) such as your name, identification number, location data, online identifier or one or more factors specific to your physical, physiological, genetic, mental, economic, cultural, educational, commercial, professional or social identity.
 
@@ -8,9 +8,7 @@ By accessing our Services, you agree to be bound by this Privacy Policy. If you 
 
 Further, you acknowledge that this Privacy Policy is part of our Terms of Service which is available at **https://private.id/terms.html**​. This Privacy Policy is incorporated by reference, and by accessing or using our Service, you agree to be bound by the Terms of Service.  If you do not agree to our Terms of Service, do not access or use our Service.
 
-**B. Personal Data Collected by Private Identity**
-
-----------------
+**`B. Personal Data Collected by Private Identity`**
 
 **CLOUD BIOMETRIC API.** 
 When you use our CLOUD BIOMETRIC API service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and **only collect anonymized and/or pseudonymized information**. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access the Cloud Biometric API application onto a device (phone, laptop, etc.) or cloud and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
