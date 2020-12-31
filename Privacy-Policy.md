@@ -21,7 +21,7 @@ When you use our CLOUD BIOMETRIC API service to authenticate yourself, we anonym
 
    b) **Log Files.** We use log files for our products for billing and quality assurance only. The information inside the Private Identity log files does not include internet protocol (IP) addresses, type of browser, Internet Service Provider (ISP), referring/exit pages, clicked pages or any other information your browser or device may send to us. We do not combine the information collected by any log files with customer or end-user personally identifiable information (PII).
 
-2. **Personal Data that you Knowingly and Willingly Provide**
+2. **`Personal Data that you Knowingly and Willingly Provide`**
 
 Private Identity collects the information that you knowingly and voluntarily provide when you use our Service (such as through web forms or profile screens), including registration/account setup information, profile details, payment information, and ratings information. We primarily use this information to fulfill your transaction requests. You can choose not to provide us with certain Personal Data, but then you may not be able to take advantage of our Service or other available features we offer. The information that we collect and use may include the following kinds of Personal Data:
 
@@ -73,11 +73,11 @@ Private Identity collects the information that you knowingly and voluntarily pro
 • Professional and Employment Information, including employment history
 • Financial Information, including credit card and debit card numbers
 
-   **A. Personal Data From and/or About Others**. 
+   **`A. Personal Data From and/or About Others`**. 
 
 We may also collect and store Personal Data about other people that you provide to us, as well as information about you provided by others. We may also receive your Personal Data from trusted third parties (including, for example, business partners, sub-contractors in technical, payment and delivery of membership services, advertising networks, analytics providers, search information providers, credit reference agencies).
 
-  **B. Anonymized and/or Pseudonymized Information**. 
+  **`B. Anonymized and/or Pseudonymized Information`**. 
 
 When you use our service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and only collect anonymized and/or pseudonymized information. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access/download the Cloud Biometric API application onto a device (phone, laptop, etc.) and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
 
