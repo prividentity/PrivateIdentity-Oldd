@@ -1,6 +1,6 @@
 Effective Date: July 1, 2020
 
-**`A. Privacy Statement`**
+### `A. Privacy Statement`
 
 This privacy policy (“Privacy Policy”) governs how Private Identity LLC (“Private Identity,” "Private ID," “we”, “our” or “us”) uses the Personal Data we collect, receive and store regarding individuals in connection with the use of the Website private.id (our “**Service**”), as well as your choices regarding use and disclosure of your Personal Data.  As used in this Privacy Policy, the term “Personal Data” (“**Personal Data**”) means information that identifies you or your household directly or indirectly, by reference to identifier(s) such as your name, identification number, location data, online identifier or one or more factors specific to your physical, physiological, genetic, mental, economic, cultural, educational, commercial, professional or social identity.
 
@@ -8,7 +8,7 @@ By accessing our Services, you agree to be bound by this Privacy Policy. If you 
 
 Further, you acknowledge that this Privacy Policy is part of our Terms of Service which is available at **https://private.id/terms.html**​. This Privacy Policy is incorporated by reference, and by accessing or using our Service, you agree to be bound by the Terms of Service.  If you do not agree to our Terms of Service, do not access or use our Service.
 
-**`B. Personal Data Collected by Private Identity`**
+### `B. Personal Data Collected by Private Identity`
 
 **CLOUD BIOMETRIC API.** 
 When you use our CLOUD BIOMETRIC API service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and **only collect anonymized and/or pseudonymized information**. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access the Cloud Biometric API application onto a device (phone, laptop, etc.) or cloud and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
@@ -81,7 +81,7 @@ We may also collect and store Personal Data about other people that you provide 
 
 When you use our service to authenticate yourself, we anonymize and/or pseudonymize your biometric information and only collect anonymized and/or pseudonymized information. As explained in the terms of service accessible at https://private.id/terms.html, the Services provide you a limited, revocable, nonexclusive, non-assignable license to access/download the Cloud Biometric API application onto a device (phone, laptop, etc.) and use the Cloud Biometric API application for the sole purpose of accessing our authentication Services to enroll, identify, verify or authenticate yourself.
 
-  **C. How Is Your Personal Data Used?**
+### `C. How Is Your Personal Data Used?`
 
 We will only process your Personal Data, including sharing it with third parties, where (1) you have provided your consent which can be withdrawn at any time, (2) the processing is necessary for the performance of a contract to which you are a party, (3) we are required by law, (4) processing is required to protect your vital interests or those of another person, or (5) processing is necessary for the purposes of our legitimate commercial interests, except where such interests are overridden by your rights and interests.
 
@@ -104,7 +104,7 @@ We may use Personal Data we collect about you on its own or combine it with othe
 • Protect against harm to the rights, property or safety of Private Identity, our users, or the public as required or permitted by law.
 We may also disclose your Personal Data as otherwise set forth in this Privacy Policy, as permitted by law, or with your consent.
 
-  **D. Who Can Access the Information We Collect?**
+### `D. Who Can Access the Information We Collect?`
 
 We will only transfer your Personal Data to trusted third-parties who provide sufficient guarantees in respect of the technical and organizational security measures governing the processing to be carried out and who can demonstrate a commitment to compliance with those measures.
 
@@ -122,21 +122,21 @@ Private Identity may disclose your Personal Data in the following to the followi
 
    **As Part of a Merger or Sale of Business.** We may disclose your Personal Data in connection with a substantial corporate transaction, such as the sale of our business, a divestiture, merger, consolidation, or asset sale, or in the unlikely event of bankruptcy.
 
-  **E. Selling of Personal Data**
+### `E. Selling of Personal Data`
 
 We will not sell your Personal Data to third parties for their use without your consent.
 
-  **F. Disclosure of Personal Data for a Business Purpose**
+### `F. Disclosure of Personal Data for a Business Purpose`
 
 We will never disclose your Personal Data to third parties for a business purpose with whom you do not have an existing relationship. We may disclose your information (including Personal Data) to our strategic business partners with whom you have an existing relationship in order for our partners to better target their products and services to you. Our partners will not have direct access to your Personal Data but rather will have the ability to communicate with you through your participation with our Service.
 
 **The kinds of Personal Data we have disclosed for a business purpose over the preceding twelve (12) months include: None.**
 
-  **G. Minors and Children Privacy**
+### `G. Minors and Children Privacy`
 
 **Children Online Protection.** Our Service is not directed to children under the age of 16, if you are not 16 years or older, do not use our Service. We do not knowingly collect Personal Data from children under the age of 16.  If we learn that Personal Data of persons less than 16 years-of-age has been collected through our Service, we will take the appropriate steps to delete this information.  If you are a parent or guardian and discover that your child or a minor under the age of 13 has posted, submitted or otherwise communicated Personal Data to our Service without your consent, then you may alert us at [info@private.id](mailto:info@private.id) so that we may take appropriate action to remove the minor's Personal Data from our systems.
 
-  **H. Links to Third Party Services**
+### `H. Links to Third Party Services`
 
 Our Service may contain links to third party websites, applications and services not operated by us. These links are provided as a service and do not imply any endorsement by Private Identity of the activities or content of these sites, applications or services nor any association with their operators. Private Identity is not responsible for the privacy policies or practices of any third party including Websites or services directly linked to our Service. We encourage you to review the privacy policies of any third-party site that you link from our Service.
 
@@ -152,16 +152,16 @@ Any Personal Data that you provide to us is generally stored on AWS, GCP or Micr
 
 We will retain your Personal Data for the period necessary to fulfill the purposes outlined in this Privacy Policy unless a longer retention period is required or permitted by law.
 
-   **I. International Users**
+### `I. International Users`
 
 We are headquartered in the United States. Your Personal Data may be accessed by us or transferred to us in the United States or to our affiliates, partners, merchants, or service providers who are located worldwide. If you are visiting our Service from outside the United States, be aware that your information may be transferred to, stored, and processed in the United States where our servers are located, and our central database is operated. By using our Service, you consent to any transfer of this information.
 
 We will protect the privacy and security of Personal Data according to this privacy statement, regardless of where it is processed or stored, however you explicitly acknowledge and consent to the fact that Personal Data stored or processed in the United States will be subject to the laws of the United States, including the ability of governments, courts or law enforcement or regulatory agencies of the United States to obtain disclosure of your Personal Data.
 
-  **J. Your Rights and Deletion Requests**
+### `J. Your Rights and Deletion Requests`
 
 Private Identity will not collect any Private Data subject to the rights established by the GDPR or CCPA. On a voluntary basis, Private Identity will take reasonable steps to delete anonymized subject data upon request. Where we are able to authenticate a user deletion request, and subject to a waiting period during which we will confirm any contractual or legal commitments to retain the anonymized data, anonymized data will be permanently erased.
 
-  **K. Changes to this Privacy Policy**
+### `K. Changes to this Privacy Policy`
 
 We reserve the right to update or modify this Privacy Policy from time to time. If we make any material changes to this Privacy Policy or the way we use, share or collect Personal Data, we will notify you by revising the “Effective Date” at the top of this Privacy Policy, prominently posting an announcement of the changes on our Service, or sending an email to the email address you most recently provided us (unless we do not have such an email address) prior to the new policy taking effect. Users are bound by any changes to the Privacy Policy when he or she uses our Service after notice of such changes has been communicated. We encourage you to review this Privacy Policy regularly to ensure that you are familiar with Private Identity’s current practices.
