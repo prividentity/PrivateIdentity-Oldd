@@ -10,7 +10,7 @@ Further, you acknowledge that this Privacy Policy is part of our Terms of Servic
 
 ### `B. Personal Data Collected by Private Identity`
 
-  1. `When you use our authentication Service or access the Website` to have access to general information available on the Site, we do not currently require you to provide Personal Data. However, we may receive and/or collect Personal Data from you in the following ways:
+  1. When you use our authentication Service or access the Website to have access to general information available on the Site, we do not currently require you to provide Personal Data. However, we may receive and/or collect Personal Data from you in the following ways:
 
   a) **Purchases.** We use the tools, software or services of third-party service providers (i.e. AWS, GCP and Microsoft Azure) to process transactions on our behalf, in which case you acknowledge and agree to review and be bound by the terms of use and privacy policy of said third-party service provider. Private Identity does not receive Personal Data from these vendors.
 
