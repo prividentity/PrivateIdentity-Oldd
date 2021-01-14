@@ -34,10 +34,10 @@ The eyeglass detection algorithm determines if a subject is wearing eyeglasses b
 ### 4 CLASSES (GOOD, BLURRY, EYEGLASSES, FACE+MASK) VALIDATION DNN
 The 4 classes detection algorithm determines if a subject is in good quality, blurry, wearing eyeglasses or wearing facemask.  Blurry images, wearing eyeglasses or facemask during enrollment lower subsequent prediction performance. The 4 Classes Detection DNN accepts one frontalized face input image returns 4 values summing to 100. The largest value among these 4 values will be the predicted class.   
 
-### EYE GEOMETRY DETECT DNN
-The Eye Geometry Detection DNN accurately locates eye(s) in an image by transforming each frontal facial image into geometric primitives and measuring relative position. The DNN returns X,Y coordinates of each eye in an image, video frame or video stream.  
+### BLURRY IMAGE DETECT DNN
+The Blurry Image Detection DNN accurately finds images that are extremely blurry and unable to be accurately processed by the Embedding DNN. The DNN returns a score between 0 and 100, where 100 is not blurry. 
 
-### EYES OPEN/CLOSED DETECTION DNN (Spoofing Prevention)
+### ACTIVE LIVENESS DNN (Spoofing Prevention)
 The Eyes Open/Closed DNN provides real-time passive facial liveness.  This algorithm mitigates risk of a photo spoofing attack during unattended operation. The DNN receives an input image of an eye and outputs a validation score between 0 and 100, where 0 is eyes closed and 100 is eyes open. The user cannot proceed until the detection of a pair of eye-open/eye-closed events. A URL parameter “faceLiveness=true” allows the overriding of default functionality by enabling the eye-blink check. 
 
 ### VIDEO AND IMAGE SPOOFING DETECTION DNN (Spoofing Prevention)
