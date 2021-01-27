@@ -18,4 +18,4 @@
 * [Terms of Use](https://github.com/openinfer/PrivateIdentity/wiki/Terms-of-Use)
 * [Patents pending](https://github.com/openinfer/PrivateIdentity/wiki/Intellectual-Property:---Private-Identity-LLC)
 
-© 2020 Private Identity LLC All Rights Reserved. Private Identity and Private ID are registered trademarks of Private Identity LLC. All other trademarks, service marks, trade names, trade dress, product names and logos appearing on this site are the property of their respective owners.
+© 2021 Private Identity LLC All Rights Reserved. Private Identity and Private ID are registered trademarks of Private Identity LLC. All other trademarks, service marks, trade names, trade dress, product names and logos appearing on this site are the property of their respective owners.
