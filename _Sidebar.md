@@ -8,7 +8,7 @@
 * [Flexible Deployment](https://github.com/openinfer/PrivateIdentity/wiki#flexible-deployment)
 * [No Algorithmic Bias](https://github.com/openinfer/PrivateIdentity/wiki#no-discrimination)
 * [**Face Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#facial-recognition)
-* [**Face w/Mask Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#face-with-mask-recognition)
+* [**Face w/Mask Recognition**](https://github.com/openinfer/PrivateIdentity/wiki#face-with-face-mask-recognition)
 * [**Fingerprint Identification**](https://github.com/openinfer/PrivateIdentity/wiki#fingerprint-identification)
 * [**Voice Identification**](https://github.com/openinfer/PrivateIdentity/wiki#voice-speaker-identification)
 * [Offline Authentication](https://github.com/openinfer/PrivateIdentity/wiki#offline-authentication)
