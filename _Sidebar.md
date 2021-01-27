@@ -22,6 +22,7 @@
 * [MFA Microapp Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-MFA-Microapp-Tutorial)
 * [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 * [Encryption Engine Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
+* [AWS Lambda Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/AWS-Lambda-Function-Tutorial)
 * [SAML/OAuth/OIDC Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/SAML-Tutorial)
 * [PingFederate® Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial)
 * [Okta® Integration Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration)
