@@ -23,6 +23,7 @@
 * [JavaScript API Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/JavaScript-API)
 * [Encryption Engine Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Encryption-Engine-setup)
 * [AWS Lambda Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/AWS-Lambda-Function-Tutorial)
+* [AWS Kinesis Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/AWS-Kinesis-Video-Stream-Tutorial)
 * [SAML/OAuth/OIDC Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/SAML-Tutorial)
 * [PingFederate® Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/PingFederate-Tutorial)
 * [Okta® Integration Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration)
