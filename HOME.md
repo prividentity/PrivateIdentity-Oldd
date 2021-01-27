@@ -70,7 +70,7 @@ It took hundreds of experiments and three years to overcome algorithmic bias. At
 
 Interestingly, these HSL algorithms alone were not enough to completely overcome bias. To reach 99.80% (absolute accuracy), we then combined the HSL algorithms with a demographically balanced training set. A recent [December 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/Diversity-in-Faces-Evaluation---December-2020) of the Private Identity® Facial Recognition Algorithm using the [DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/wiki/Diversity-in-Faces-Evaluation---December-2020#dif-celeb-1m-fairness-evaluation-dataset) (Diversity in Faces) Fair Evaluation Dataset and Private ID Facial Recognition Model 1607349233 found high accuracy across every subgroup. 
 
-In a  earlier [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN) using 8M images, our Face Recognition DNN failed to recognize only [six images](https://github.com/openinfer/PrivateIdentity/wiki/EVALUATION-METRICS-FOR-FACE-RECOGNITION-DNN#threshold-analysis). Visual inspection of the images found that each was too blurry for recognition.
+In a  earlier [June 2020 evaluation](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE---JUNE-2020) using 8M images, our Face Recognition DNN failed to recognize only [six images](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE---JUNE-2020#threshold-analysis). Visual inspection of the images found that each was too blurry for recognition.
 <br><br>
 
 ### `Facial Recognition`
