@@ -7,7 +7,7 @@
 ***
 
 **CORPORATE**
-* [Private ID Homepage](https://private.id)
+* [Private ID](https://private.id)
 * [Contact Us](https://github.com/openinfer/PrivateIdentity/wiki/Contact-Us)
 * [About Us](https://github.com/openinfer/PrivateIdentity/wiki/About-Us)
 
