@@ -1,8 +1,8 @@
 ![Tyrone Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ty%20Cover%20Graphic%201.png)
 ### `Dr Tyrone Grandison. CTO, MStreetX.'
-> Former CTO, Pearl Long term Care Solutions.
-> Former CIO, The Institute for Health metrics and Evaluation.
-> Former Deputy CDO, US Department of Commerce.
+> Former CTO, Pearl Long term Care Solutions. <br>
+> Former CIO, The Institute for Health metrics and Evaluation.<br>
+> Former Deputy CDO, US Department of Commerce. <br>
 
 “Private.ID is the best-in-class biometric authentication technology. It is pioneering in that it preserves user privacy and is an efficient implementation of homomorphic encryption. 
 
