@@ -1,5 +1,5 @@
 ![Tyrone Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ty%20Cover%20Graphic%201.png)
-### `Dr Tyrone Grandison. CTO, MStreetX.'
+### `Dr Tyrone Grandison. CTO, MStreetX`
 > Former CTO, Pearl Long term Care Solutions. <br>
 > Former CIO, The Institute for Health metrics and Evaluation.<br>
 > Former Deputy CDO, US Department of Commerce. <br>
