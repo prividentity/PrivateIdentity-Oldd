@@ -1,6 +1,11 @@
-![MstreetX logo](https://media-exp1.licdn.com/dms/image/C560BAQEQkPb75wsc6Q/company-logo_100_100/0/1599621710311?e=1619654400&v=beta&t=WYNeuJpYQSQxnFFLB46XBb5bWxh-kL-PI3jtAufL3yA) <br>
-![Tyrone Headshot](https://github.com/openinfer/PrivateIdentity/blob/master/images/Tyrone%201.png)
+![Tyrone Graphic](https://github.com/openinfer/PrivateIdentity/blob/master/images/Ty%20Cover%20Graphic%201.png)
+### `Dr Tyrone Grandison. CTO, MStreetX.'
+> Former CTO, Pearl Long term Care Solutions.
+> Former CIO, The Institute for Health metrics and Evaluation.
+> Former Deputy CDO, US Department of Commerce.
 
-"A really cool quote goes here."
--Tyrone Grandison, CTO
+“Private.ID is the best-in-class biometric authentication technology. It is pioneering in that it preserves user privacy and is an efficient implementation of homomorphic encryption. 
 
+It was an easy decision for us to integrate Private.ID into the technology stack for a long term healthcare solution while I was the CTO for Pearl Long Term Care Solutions. Our users - seniors seeking long-term and short-term care - have a higher risk of forgetting passwords, are concerned with the security and privacy of their data, and are not heavy users of social media. This made Private.ID the perfect way to provide them with access to Pearl’s services. 
+
+The Private.ID team is responsive, professional, and rooted in sound science. I highly recommend using this groundbreaking secure and privacy preserving biometric authentication tool when your domain and user journey calls for it.” 
