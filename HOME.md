@@ -143,7 +143,7 @@ In a  earlier [June 2020 evaluation](https://github.com/openinfer/PrivateIdentit
 | 1:1 Verification | | |
 | **TMR=99.99%** | FMR=0.0001% | FNMR=0.0001% | Speed=300ms |
 | 1:Many Identification | | |
-| **IR=95.20%** | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
+| **IR=97.30%** | FPIR=0.0001% | FNIR=4.80% | Speed=300ms |
 
 * Text-, language- and accent-independent voice identification 
 * <b>Enrolls with 3 seconds </b>of audio 
