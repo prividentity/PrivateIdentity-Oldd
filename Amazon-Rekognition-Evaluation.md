@@ -29,19 +29,18 @@ We built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M for evaluat
 ![Rekognition vs  results ](https://github.com/openinfer/PrivateIdentity/blob/master/images/rek_vs_pri_chart_results.png)
 
 ### `Discussion`
-* The Private Identity Recognition Algorithm performed fairly across all subgroups.  
-* The model generated no false positive (Type 1) errors.
-* The model generated false negative errors on poor quality images. Examples of images that the model is unable to process are shown below.
-![Examples of images that generated Type II errors](https://github.com/openinfer/PrivateIdentity/blob/master/images/Examples%20of%20FNIR%20Images.png)
+* The Private Identity Recognition Algorithm has a better performance than the AWS Rekognition API.  
+* The AWS model generated 0.47% False positives when compared with a confidence score of 0.98.
+* The AWS model generated 0.002% False positives when compared with a confidence score of 0.6.
+* The AWS Face model was not able to identify 2.01% of persons when compared with the indexed faces. 
+* The AWS Face model could not detect faces on 0.3% of images used for evaluation. 
 
 ### `Embedding DNN Evaluation for Private ID Facial Recognition Model 1607349233`
-* At Cutoff 1.14: Min = 0.68, Mean = 1.00, Max = 1.14, F1 = 99%
-* Cutoff Evaluation Performance: IR=99.8%, FPIR=0.000%, FNIR=0.200%
-* Cutoff analysis for each Subclass is shown below.
+* Please check [**Diversity in Faces Evaluation December 2020**](https://github.com/openinfer/PrivateIdentity/wiki/Diversity-in-Faces-Evaluation---December-2020) for a more detailed comparison for the Face model results by Private Identity
 * Please see [**Embedding DNN Performance Analysis December 2020**](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE-DECEMBER-2020) for the Cutoff analysis. 
 
 <pre>
-Authors:  	  Chung Nguyen PhD
+Authors:  	  Srie Raam MS
                   Scott Streit, CTO 
 Data Run Date:    DEC 17, 2020. 15:30 EST
 </pre>
