@@ -23,6 +23,10 @@ We built a Diversity in Faces (DIF) evaluation dataset, DIF-CELEB-1M for evaluat
 * **91913 images used as probes**
 
 ### `RESULTS`
+![Spreadsheet showing detailed results of evaluation](https://github.com/openinfer/PrivateIdentity/blob/master/images/rek_vs_pri_table_results.png)
+[Link](https://docs.google.com/spreadsheets/d/1ZiVZRTzzJl72vL1opwUCRPPm_MzDDk-t5cj9BTeoImg/edit?usp=sharing) to the spreadsheet (Google Sheets)
+
+![Rekognition vs  results ](https://github.com/openinfer/PrivateIdentity/blob/master/images/rek_vs_pri_chart_results.png)
 
 ### `Discussion`
 * The Private Identity Recognition Algorithm performed fairly across all subgroups.  
