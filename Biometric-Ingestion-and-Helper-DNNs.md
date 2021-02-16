@@ -31,8 +31,8 @@ The face mask detection algorithm determines if a subject is wearing a mask.  Ma
 ### EYEGLASSES ON/OFF DETECTION DNN
 The eyeglass detection algorithm determines if a subject is wearing eyeglasses before allowing enrollment. Eyeglasses used during enrollment lower subsequent prediction performance. The Eyeglasses On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is eyeglasses off and 100 is eyeglasses on. The URL parameter for enrollment and prediction “eyeGlassCheck=true” provides real-time instructions to the user to remove eyeglasses.  
 
-### 4 CLASSES (GOOD, BLURRY, EYEGLASSES, FACE+MASK) VALIDATION DNN
-The 4 classes detection algorithm determines if a subject is in good quality, blurry, wearing eyeglasses or wearing facemask.  Blurry images, wearing eyeglasses or facemask during enrollment lower subsequent prediction performance. The 4 Classes Detection DNN accepts one frontalized face input image returns 4 values summing to 100. The largest value among these 4 values will be the predicted class.   
+### 3 CLASSES (GOOD, EYEGLASSES, FACE+MASK) VALIDATION DNN
+The three classes detection algorithm determines if a subject is in good quality, wearing eyeglasses or wearing facemask.  Wearing eyeglasses or facemask during enrollment lower subsequent prediction performance. The three classes Detection DNN accepts one frontalized face input image returns 3 values summing to 100. The largest value among these 4 values will be the predicted class.
 
 ### BLURRY IMAGE DETECT DNN
 The Blurry Image Detection DNN accurately finds images that are extremely blurry and unable to be accurately processed by the Embedding DNN. The DNN returns a score between 0 and 100, where 100 is not blurry. 
@@ -40,8 +40,11 @@ The Blurry Image Detection DNN accurately finds images that are extremely blurry
 ### ACTIVE LIVENESS DNN (Spoofing Prevention)
 The Eyes Open/Closed DNN provides real-time passive facial liveness.  This algorithm mitigates risk of a photo spoofing attack during unattended operation. The DNN receives an input image of an eye and outputs a validation score between 0 and 100, where 0 is eyes closed and 100 is eyes open. The user cannot proceed until the detection of a pair of eye-open/eye-closed events. A URL parameter “faceLiveness=true” allows the overriding of default functionality by enabling the eye-blink check. 
 
-### VIDEO AND IMAGE SPOOFING DETECTION DNN (Spoofing Prevention)
-The Video ad Image Spoofing Detection DNN provides real-time passive facial liveness. This algorithm mitigates risk of a video or print image spoofing attack during unattended operation. The DNN receives an input image and outputs a validation score between 0 and 100, where 0 is real image and 100 is spoof video or print image. The user cannot proceed until the detection of images are real. A URL parameter “antiVideoSpoof=true” allows the overriding of default functionality by enabling video and image spoofing check. 
+### IMAGE SPOOFING DETECTION DNN (Spoofing Prevention)
+The Image Spoofing Detection DNN provides real-time passive facial liveness. This mitigates risk of a print image spoofing attack during unattended operation. The DNN receives an input image and outputs a validation score between 0 and 100, where 0 is real image and 100 is a spoof. The user cannot proceed until the detection is not a playback. This DNN is on (true) by default. The URL parameter “antiImageSpoof=false” allows the default anti-spoofing functionality to be disabled. 
+
+### VIDEO SPOOFING DETECTION DNN (Spoofing Prevention)
+The Video Spoofing Detection DNN provides real-time passive facial liveness. This mitigates risk of a video image spoofing attack during unattended operation. The DNN receives an input image and outputs a validation score between 0 and 100, where 0 is real image and 100 is a spoof. The user cannot proceed until the detection is not a playback. This DNN is on (true) by default. The URL parameter “antiVideoSpoof=false” allows the default anti-spoofing functionality to be disabled. 
 
 ### FACIAL AND FINGERPRINT DATA AUGMENTATION
 Data augmentation generalizes the enrollment, improves accuracy and performance during subsequent prediction and allows the DNN to handle real-world conditions. Every enrollment requires >50 biometric input images to maintain accuracy and performance. The algorithm augments all valid input images to reach or exceed 50. The set of images are then broadened to add boundary conditions to generalize the enrollment.  The broadening includes enhanced image rotations and flips, and color and lighting homogenizations.  Augmentations must increase the distance metric (Euclidean distances or cosine similarity) but not surpass class boundaries. The algorithm removes any images that exceed class boundaries. The remaining images challenge the distance metric boundaries without surpassing them.  
@@ -52,15 +55,16 @@ Enrollment requires >50 augmented biometric input images to maintain the health,
 
 There is no intrinsic requirement to morph images for prediction.  However, we find that homogenized images perform better than non-homogenized images. Image homogenization occurs through convenience libraries in Python and JavaScript. For prediction, the Web client captures 3 images, morphs and homogenizes the lighting and contrast once, and discards the original images. 
 
-### FACE, FACE+MASK, AND FINGERPRINT EMBEDDING DNNs
+### FACE, FACE+MASK, FINGERPRINT and VOICE EMBEDDING DNNs
 * <b>FHE transforms the biometric input image </b>to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers 
-* <b>Maintains full accuracy</b> through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  
+* <b>Face, Face+Mask, and Fingerprint maintain full accuracy</b> through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  
 * Produces (output) FHE payload in < 100ms
 * MobileNetV2 architecture, 1.3MB for Face and 900kB for Fingerprint 
+* FHE transforms one 2-dimensional array of frequencies (input) to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding) 
+* Produces FHE payload in < 100ms
+* MobileNetV2 architecture, 3.5MB
 
-The Face, Face+Mask, and Fingerprint Embedding DNNs FHE transform the biometric input image to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers. 
-
-The Face, Face+Mask, and Fingerprint Embedding DNNs maintain full accuracy through real-world boundary conditions including poor lighting; inconsistent camera positioning; expression; image rotation of up to 22.5°; variable distance; focus impacted by blur and movement; occlusions of 20-30% including facial hair, glasses, scars, makeup, colored lenses and filters, and abrasions; and B/W and grayscale images.  The embedding DNNs use the MobileNetV2 architecture and output a 1-way encrypted payload in <100ms. 
+The Face, Face+Mask, and Fingerprint Embedding DNNs FHE transform the biometric input image to a distance measurable 1-way encryption (embedding, or vector encryption) consisting of a two-dimensional positional array of 128 floating-point numbers. The Voice Embedding DNN accepts input of one 2-dimensional array of frequencies, FHE transforms the input to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding, or 1-way vector encryption), and then deletes the original biometric. 
 
 ### VOICE (SPEAKER) IDENTIFICATION
 ![Voice recognition workflow](https://github.com/openinfer/PrivateIdentity/blob/master/images/Workflow%20-%20Voice.png)
