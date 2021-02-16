@@ -20,7 +20,7 @@ Each model use or API call counts as one transaction. Some operations are priced
 
 ### Pricing Table - Specific
 
-| Feature | 0-1M <br>Transactions | 1M-9M <br>Transactions | 9M-90M <br>Transactions | >100M <br>Transactions |
+| Component | 0-1M <br>Transactions | 1M-9M <br>Transactions | 9M-90M <br>Transactions | >100M <br>Transactions |
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
