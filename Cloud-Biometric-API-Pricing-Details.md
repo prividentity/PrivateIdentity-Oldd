@@ -8,19 +8,19 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 
 ### Pricing Table - General
 
-| Quantity | Price/Use | Price/1000 Uses | Throughput |
+| Quantity | Price/Transaction | Price/1000 Transactions | Throughput |
 | ----------- | ------- | :-----------: | :-----------: | 
-| 0-1M operations/month | $0.00100 | $1.00 | Unlimited |
-| 1M-9M operations/month | $0.00080 | $0.80 | Unlimited |
-| Next 90M operations/month | $0.00060 | $0.60 | Unlimited | 
-| Over 100M operations/month | $0.00040 | $0.40 | Unlimited |
+| 0-1M transactions/month | $0.00100 | $1.00 | Unlimited |
+| 1M-9M transactions/month | $0.00080 | $0.80 | Unlimited |
+| Next 90M transactions/month | $0.00060 | $0.60 | Unlimited | 
+| Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
 | Data Storage/enroll/month | $0.00001 | $0.01 | Unlimited | 
 
-Each model use or API call counts as one operation. Some operations are priced differently and are described in the table below. 
+Each model use or API call counts as one transaction. Some operations are priced differently and are described in the table below. 
 
 ### Pricing Table - Specific
 
-| Feature | 0-1M <br>Operations | 1M-9M <br>Operations | 9M-90M <br>Operations | >100M <br>Operations |
+| Feature | 0-1M <br>Transactions | 1M-9M <br>Transactions | 9M-90M <br>Transactions | >100M <br>Transactions |
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
@@ -58,7 +58,7 @@ Each model use or API call counts as one operation. Some operations are priced d
 
 ### Example 1
 If your application made the following requests in a one-month period:
-* 700 Face Enrolls using six operations
+* 700 Face Enrolls using six transactions
   * Face Landmarks
   * Blur Detection
   * Image Spoof Detection
@@ -66,7 +66,7 @@ If your application made the following requests in a one-month period:
   * Eyeglass Detection 
   * Face+Mask Identification 
 
-Your cost would be $4.20 (700 persons x (6 operations x $0.00100)) 
+Your cost would be $4.20 (700 persons x (6 transactions x $0.00100)) 
 
 ### Example 2
 If your application made the following requests in a one-month period:
@@ -78,6 +78,6 @@ If your application made the following requests in a one-month period:
   * Eyeglass Detection 
   * Face+Mask Identification 
 
-Your cost would be $30.00 (5000 predicts x (6 operations x $0.00100))
+Your cost would be $30.00 (5000 predicts x (6 transactions x $0.00100))
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
