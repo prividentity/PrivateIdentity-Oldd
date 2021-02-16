@@ -44,7 +44,7 @@ Each model use or API call counts as one transaction. Some operations are priced
 | On-Device Geolocation | $0.012000 | $0.010000 | $0.08000 | $0.06000 |
 | **PHOTO ID VERIFICATION** | | | | 
 | Document Geometry | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| OCR API | $0.01000 | $0.00800 | $0.00600 | $0.00400 |
+| OCR API | $0.01200 | $0.01000 | $0.00800 | $0.00600 |
 | Mobile Billing Record Lookup | $0.03000 | $0.02800 | $0.02600 | $0.02400 |
 | Mobile Billing Record Lookup (Outside USA) | $2.50000 | $2.48000 | $2.46000 | $2.44000 | 
 | SMS Verification Message | $0.02000 | $0.01800 | $0.01600 | $0.01400 | 
