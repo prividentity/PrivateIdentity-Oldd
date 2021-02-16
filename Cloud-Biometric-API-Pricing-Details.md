@@ -2,7 +2,7 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include features like face detection and face identification. 
 
 #### There are two types of fees.
-**Biometric Recognition**: Cloud Biometric API charges you each time you analyze a biometric using a DNN or API. Using multiple features (DNNs or APIs) against a single biometric counts as processing multiple biometrics. 
+**Biometric Recognition**: Cloud Biometric API charges you each time you analyze a biometric using a model or API. Using multiple features (models or APIs) against a single biometric counts as processing multiple biometrics. 
 
 **Biometric Metadata Storage**: Cloud Biometric API stores a repository of anonymized metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly.
 
@@ -16,7 +16,7 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 | Over 100M /month | $0.0004 per use | $0.40 |
 | Data Storage/enroll | $0.00001 per month | $0.01 |
 
-Each model use or API call counts as one use.   
+Each model use or API call counts as one use. Some models and APIs are priced differently and are described in the table below.  
 
 ### Pricing Table - Specific
 
@@ -49,7 +49,11 @@ Each model use or API call counts as one use.
 | Mobile Billing Record Lookup (Outside USA) | $2.50000 | $2.48000 | $2.46000 | $2.44000 | 
 | SMS Verification Message | $0.02000 | $0.01800 | $0.01600 | $0.01400 | 
 | **ENROLLMENT METADATA STORAGE** | | | |
-| Face Metadata Storage | | | | $0.00010 | 
-| Face+Mask Metadata Storage | | | | $0.00010 | 
-| Fingerprint Metadata Storage | | | | $0.00010 | 
-| Voice Metadata Storage | | | | $0.00010 | 
+| Face Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
+| Face+Mask Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
+| Fingerprint Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
+| Voice Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
+
+### FAQ
+
+
