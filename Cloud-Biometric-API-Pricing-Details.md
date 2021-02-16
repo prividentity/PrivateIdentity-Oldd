@@ -64,7 +64,8 @@ If your application made the following requests in a one-month period:
   * Image Spoof Detection
   * Video Spoof Detection 
   * Eyeglass Detection 
-  * Face+Mask Identification <br>
+  * Face+Mask Identification 
+
 Your cost would be $4.20 (700 persons x (6 operations x $0.00100)) 
 
 ### Example 2
@@ -75,7 +76,8 @@ If your application made the following requests in a one-month period:
   * Image Spoof Detection
   * Video Spoof Detection 
   * Eyeglass Detection 
-  * Face+Mask Identification <br>
+  * Face+Mask Identification 
+
 Your cost would be $30.00 (5000 predicts x (6 operations x $0.00100))
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
