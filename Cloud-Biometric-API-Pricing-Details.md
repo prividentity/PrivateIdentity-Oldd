@@ -10,13 +10,13 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 
 | Quantity | Pricing | Price/1000 Uses | Throughput |
 | ----------- | ------- | :-----------: | :-----------: | 
-| 0-1M operations/month | $0.001 per use | $1.00 | Unlimited |
-| 1M-9M operations/month | $0.0008 per use | $0.80 | Unlimited |
-| Next 90M operations/month | $0.0006 per use | $0.60 | Unlimited | 
-| Over 100M operations/month | $0.0004 per use | $0.40 | Unlimited |
-| Data Storage/enroll | $0.00001 per month | $0.01 | Unlimited | 
+| 0-1M operations/month | $0.001 /operation| $1.00 | Unlimited |
+| 1M-9M operations/month | $0.0008 /operation | $0.80 | Unlimited |
+| Next 90M operations/month | $0.0006 /operation | $0.60 | Unlimited | 
+| Over 100M operations/month | $0.0004 /operation | $0.40 | Unlimited |
+| Data Storage/enroll | $0.00001 /month | $0.01 | Unlimited | 
 
-Each model use or API call counts as one operation. Like all good things in life, some operations are priced differently and are described in the table below. 
+Each model use or API call counts as one operation. Some operations are priced differently and are described in the table below. 
 
 ### Pricing Table - Specific
 
@@ -24,17 +24,17 @@ Each model use or API call counts as one operation. Like all good things in life
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#4-classes-good-blurry-eyeglasses-facemask-validation-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Video Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Eyeglasses Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Eye Blink Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Eye Blink Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | Celebrity Recognition | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Face Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Face+Mask Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **FINGERPRINT RECOGNITION** | | | | 
-| Fingerprint Geometry | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Fingerprint Validation | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Fingerprint Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Fingerprint Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-with-mask--fingerprint-validation-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Fingerprint Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **VOICE RECOGNITION** | | | | 
 | [Voice Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
@@ -64,7 +64,7 @@ If your application made the following requests in a one-month period:
   * Image Spoof Detection
   * Video Spoof Detection 
   * Eyeglass Detection 
-  * Face+Mask Identification 
+  * Face+Mask Identification <br>
 Your cost would be $4.20 (700 persons x (6 operations x $0.00100)) 
 
 ### Example 2
@@ -75,7 +75,7 @@ If your application made the following requests in a one-month period:
   * Image Spoof Detection
   * Video Spoof Detection 
   * Eyeglass Detection 
-  * Face+Mask Identification 
+  * Face+Mask Identification <br>
 Your cost would be $30.00 (5000 predicts x (6 operations x $0.00100))
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
