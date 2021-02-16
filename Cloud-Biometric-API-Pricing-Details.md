@@ -2,7 +2,7 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include features like face detection and face identification. 
 
 #### There are two types of fees.
-**Biometric Recognition**: Cloud Biometric API charges you each time you analyze a biometric using a model or API. Using multiple features (models or APIs) against a single biometric counts as processing multiple biometrics. 
+**Biometric Operations**: Cloud Biometric API charges you each time you operate on a biometric with a model or API. Using multiple features (models or APIs) against a single biometric counts as processing multiple operations. 
 
 **Biometric Metadata Storage**: Cloud Biometric API stores a repository of anonymized metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly.
 
@@ -10,13 +10,13 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 
 | Quantity | Pricing | Price/1000 Uses | Throughput |
 | ----------- | ------- | :-----------: | :-----------: | 
-| 0-1M uses /month | $0.001 per use | $1.00 | Unlimited |
-| 1M-9M uses /month | $0.0008 per use | $0.80 | Unlimited |
-| Next 90M /month | $0.0006 per use | $0.60 | Unlimited | 
-| Over 100M /month | $0.0004 per use | $0.40 | Unlimited |
+| 0-1M operations/month | $0.001 per use | $1.00 | Unlimited |
+| 1M-9M operations/month | $0.0008 per use | $0.80 | Unlimited |
+| Next 90M operations/month | $0.0006 per use | $0.60 | Unlimited | 
+| Over 100M operations/month | $0.0004 per use | $0.40 | Unlimited |
 | Data Storage/enroll | $0.00001 per month | $0.01 | Unlimited | 
 
-Each model use or API call counts as one use. Some models and APIs are priced differently and are described in the table below.  
+Each model use or API call counts as one operation. Like all good things in life, some operations are priced differently and are described in the table below. 
 
 ### Pricing Table - Specific
 
@@ -42,7 +42,7 @@ Each model use or API call counts as one use. Some models and APIs are priced di
 | Voice Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **GEOLOCATION** | | | | 
 | On-Device Geolocation | $0.012000 | $0.010000 | $0.08000 | $0.06000 |
-| **Photo ID Verification** | | | | 
+| **PHOTO ID VERIFICATION** | | | | 
 | Document Geometry | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | OCR API | $0.01000 | $0.00800 | $0.00600 | $0.00400 |
 | Mobile Billing Record Lookup | $0.03000 | $0.02800 | $0.02600 | $0.02400 |
@@ -54,6 +54,25 @@ Each model use or API call counts as one use. Some models and APIs are priced di
 | Fingerprint Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
 | Voice Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
 
-### FAQ
+### Example
+If your application made the following requests in a one-month period:
+* 700 Face Enrolls using the following operations
+  * Face Landmarks
+  * Blur Detection
+  * Image Spoof Detection
+  * Video Spoof Detection 
+  * Eyeglass Detection 
+  * Face+Mask Identification 
+* 5000 Face Predicts
+  * Face Landmarks
+  * Blur Detection
+  * Image Spoof Detection
+  * Video Spoof Detection 
+  * Eyeglass Detection 
+  * Face+Mask Identification 
 
+Your cost would be:
+Enroll ... $4.20  (700 persons x (6 operations x $0.00100)) 
+Predict ...$30.00 (5000 predicts x (6 operations x $0.00100))
 
+Invoices are rounded up to the next penny once at the end of each billing cycle.
