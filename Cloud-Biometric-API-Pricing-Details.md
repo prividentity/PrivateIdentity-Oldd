@@ -49,7 +49,7 @@ Each model use or API call counts as one use.
 | Mobile Billing Record Lookup (Outside USA) | $2.50000 | $2.48000 | $2.46000 | $2.44000 | 
 | SMS Verification Message | $0.02000 | $0.01800 | $0.01600 | $0.01400 | 
 | **ENROLLMENT METADATA STORAGE** | | | |
-| Face Metadata Storage | | | $0.00010 | 
-| Face+Mask Metadata Storage | | | $0.00010 | 
-| Fingerprint Metadata Storage | | | $0.00010 | 
-| Voice Metadata Storage | | | $0.00010 | 
+| Face Metadata Storage | | | | $0.00010 | 
+| Face+Mask Metadata Storage | | | | $0.00010 | 
+| Fingerprint Metadata Storage | | | | $0.00010 | 
+| Voice Metadata Storage | | | | $0.00010 | 
