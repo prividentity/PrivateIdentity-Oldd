@@ -6,7 +6,7 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 
 **Biometric Metadata Storage**: Cloud Biometric API stores a repository of anonymized metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly.
 
-#### Pricing Table
+### Pricing Table - General
 
 | Quantity | Pricing | Price/1000 Uses |
 | ----------- | ----------- | ----------- | 
@@ -17,4 +17,31 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 | Data Storage/enroll | $0.00001 per month | $0.01 |
 
 Each model or API call counts as one use. 
+
+### Pricing Table - Specific
+
+| Feature | 0-1M Uses | 1M-9M Uses | 9M-90M Uses | >100M Uses |
+| ----------- | ----------- | ----------- | ------- | ------- |
+| **FACE RECOGNITION** | | | | 
+| Face Landmarks | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Blur Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Image Spoof Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Video Spoof Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Eyeglasses Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Eye Blink Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Celebrity Recognition | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Face Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Face+Mask Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| **FINGERPRINT RECOGNITION** | | | | 
+| Fingerprint Geometry | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Fingerprint Validation | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Fingerprint Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| **VOICE RECOGNITION** | | | | 
+| Voice Landmarks | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Voice Validation | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| Voice Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| **GEOLOCATION** | | | | 
+| On-Device Geolocation | $0.012000 | $0.010000 | $0.08000 | $0.06000 |
+| 
+
 
