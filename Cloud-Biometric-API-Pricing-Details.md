@@ -2,7 +2,7 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include features like face detection and face identification. 
 
 #### There are two types of fees.
-**Biometric Operations**: Cloud Biometric API charges you each time you operate on a biometric with a model or API. Using multiple features (models or APIs) against a single biometric counts as processing multiple operations. 
+**Biometric Transactions**: Cloud Biometric API charges you each time you operate on a biometric with a model or API. Using multiple features (models or APIs) against a single biometric counts as processing multiple operations. 
 
 **Biometric Metadata Storage**: Cloud Biometric API stores a repository of anonymized metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly.
 
