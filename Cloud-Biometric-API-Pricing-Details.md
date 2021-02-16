@@ -16,7 +16,7 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
 | Data Storage/enroll/month | $0.00001 | $0.01 | Unlimited | 
 
-Each model use or API call counts as one transaction. Some operations are priced differently and are described in the table below. 
+Each model use or API call counts as one transaction. Some operations are priced differently as described in the table below. 
 
 ### Pricing Table - Specific
 
