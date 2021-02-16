@@ -23,23 +23,25 @@ Each model use or API call counts as one operation. Like all good things in life
 | Feature | 0-1M <br>Operations | 1M-9M <br>Operations | 9M-90M <br>Operations | >100M <br>Operations |
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
-| Face Landmarks | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Blur Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Image Spoof Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Video Spoof Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Eyeglasses Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#4-classes-good-blurry-eyeglasses-facemask-validation-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Video Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Eyeglasses Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | Eye Blink Detection | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | Celebrity Recognition | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Face Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Face+Mask Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Face Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Face+Mask Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **FINGERPRINT RECOGNITION** | | | | 
 | Fingerprint Geometry | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | Fingerprint Validation | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Fingerprint Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Fingerprint Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **VOICE RECOGNITION** | | | | 
-| Voice Landmarks | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Voice Validation | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Voice Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Input Segmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-input-segmentation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Pulse Code Modulation Transformation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-input-segmentation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Fast Fourier Transformation (FFT)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **GEOLOCATION** | | | | 
 | On-Device Geolocation | $0.012000 | $0.010000 | $0.08000 | $0.06000 |
 | **PHOTO ID VERIFICATION** | | | | 
@@ -54,15 +56,19 @@ Each model use or API call counts as one operation. Like all good things in life
 | Fingerprint Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
 | Voice Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
 
-### Example
+### Example 1
 If your application made the following requests in a one-month period:
-* 700 Face Enrolls using the following operations
+* 700 Face Enrolls using six operations
   * Face Landmarks
   * Blur Detection
   * Image Spoof Detection
   * Video Spoof Detection 
   * Eyeglass Detection 
   * Face+Mask Identification 
+Your cost would be $4.20 (700 persons x (6 operations x $0.00100)) 
+
+### Example 2
+If your application made the following requests in a one-month period:
 * 5000 Face Predicts
   * Face Landmarks
   * Blur Detection
@@ -70,9 +76,6 @@ If your application made the following requests in a one-month period:
   * Video Spoof Detection 
   * Eyeglass Detection 
   * Face+Mask Identification 
-
-Your cost would be:
-Enroll ... $4.20  (700 persons x (6 operations x $0.00100)) 
-Predict ...$30.00 (5000 predicts x (6 operations x $0.00100))
+Your cost would be $30.00 (5000 predicts x (6 operations x $0.00100))
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
