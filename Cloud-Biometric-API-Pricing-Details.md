@@ -20,7 +20,7 @@ Each model use or API call counts as one operation. Like all good things in life
 
 ### Pricing Table - Specific
 
-| Feature | 0-1M Uses | 1M-9M Uses | 9M-90M Uses | >100M Uses |
+| Feature | 0-1M <br>Operations | 1M-9M <br>Operations | 9M-90M <br>Operations | >100M <br>Operations |
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
 | Face Landmarks | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
