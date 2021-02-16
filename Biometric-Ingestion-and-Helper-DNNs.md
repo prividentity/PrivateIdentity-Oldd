@@ -67,14 +67,14 @@ The Face, Face+Mask, and Fingerprint Embedding DNNs FHE transform the biometric 
 
 The Voice Validation DNN accepts a sound wave as input and returns a validation score between 0 to 100, where 100 is a perfect audio where the voice is isolated enough to create a valid embedding. 
 
-### VOICE INPUT SEGMENTATION 
-Voice Input Segmentation generalizes the enrollment, improves accuracy and performance during prediction, and allows the DNN to handle real-world conditions. Every enrollment requires >50 10ms voice samples to maintain accuracy and performance. The algorithm uses a sliding 10ms window across one second of input to reach or exceed 50 samples. 
-
 ### VOICE PULSE CODE MODULATION (PCM) TRANSFORMATION
 Pulse Code Modulation lessens the input to two times the frequency range allowing for the smallest possible Fourier transform without computational loss.  
 
 ### VOICE FAST FOURIER TRANSFORMATION (FFT) 
 The Voice Fast Fourier Transform (FFT) moves the pulse code modulated audio signal from the time domain to a representation in the frequency domain.  The transform output is a 2-dimensional array of frequencies that is input to the Voice Embedding DNN.
+
+### VOICE DATA AUGMENTATION
+Voice data augmentation generalizes the enrollment, improves accuracy and performance during subsequent prediction and allows the DNN to handle real-world conditions. Every enrollment requires >50 biometric voice inputs to maintain accuracy and performance. The algorithm augments all valid input audio to reach or exceed 50. The set of audio inputs is then broadened to add boundary conditions to generalize the enrollment. The broadening includes digital signal processing to emulate noise-canceling microphones, normalizing speaker distance from the microphone, and adding a variety of background noises as augmentations.  Augmentations must increase the distance metric (cosine similarity) but not surpass class boundaries. The algorithm removes any embeddings that exceed class boundaries. The remaining embeddings challenge the distance metric boundaries without surpassing them. If not enough audio is available for enrollment, the Encryption Engine will augment the audio 60 times, remove the outliers and then enroll the user.   
 
 ### VOICE EMBEDDING DNN
 * FHE transforms one 2-dimensional array of frequencies (input) to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding) 
