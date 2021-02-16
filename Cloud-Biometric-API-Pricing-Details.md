@@ -9,14 +9,14 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 ### Pricing Table - General
 
 | Quantity | Pricing | Price/1000 Uses |
-| ----------- | ----------- | ----------- | 
+| ----------- | ----------- | :-----------: | 
 | 0-1M uses /month | $0.001 per use | $1.00 |
 | 1M-9M uses /month | $0.0008 per use | $0.80 |
 | Next 90M /month | $0.0006 per use | $0.60 |
 | Over 100M /month | $0.0004 per use | $0.40 |
 | Data Storage/enroll | $0.00001 per month | $0.01 |
 
-Each model or API call counts as one use. 
+Each model use or API call counts as one use.   
 
 ### Pricing Table - Specific
 
@@ -42,6 +42,14 @@ Each model or API call counts as one use.
 | Voice Identification | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **GEOLOCATION** | | | | 
 | On-Device Geolocation | $0.012000 | $0.010000 | $0.08000 | $0.06000 |
-| 
-
-
+| **Photo ID Verification** | | | | 
+| Document Geometry | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| OCR API | $0.01000 | $0.00800 | $0.00600 | $0.00400 |
+| Mobile Billing Record Lookup | $0.03000 | $0.02800 | $0.02600 | $0.02400 |
+| Mobile Billing Record Lookup (Outside USA) | $2.50000 | $2.48000 | $2.46000 | $2.44000 | 
+| SMS Verification Message | $0.02000 | $0.01800 | $0.01600 | $0.01400 | 
+| **ENROLLMENT METADATA STORAGE** | | | |
+| Face Metadata Storage | | | $0.00010 | 
+| Face+Mask Metadata Storage | | | $0.00010 | 
+| Fingerprint Metadata Storage | | | $0.00010 | 
+| Voice Metadata Storage | | | $0.00010 | 
