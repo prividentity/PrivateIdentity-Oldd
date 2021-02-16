@@ -37,8 +37,7 @@ Each model use or API call counts as one transaction. Some operations are priced
 | [Fingerprint Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **VOICE RECOGNITION** | | | | 
 | [Voice Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Voice Input Segmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-input-segmentation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Voice Pulse Code Modulation Transformation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-input-segmentation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Data Augmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-data-augmentation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Fast Fourier Transformation (FFT)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **GEOLOCATION** | | | | 
