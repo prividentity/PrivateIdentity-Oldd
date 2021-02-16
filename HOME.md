@@ -223,4 +223,4 @@ Private Identity is certified compliant with IEEE 2410 Standard for Biometric Pr
 <br>
 
 ## Tutorials and Documentation
-Click [Here](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials) to Get Started!
+Click [Here](https://github.com/openinfer/PrivateIdentity/wiki/Tutorials) to Get Started. 
