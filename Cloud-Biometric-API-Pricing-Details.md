@@ -29,7 +29,6 @@ Each model use or API call counts as one transaction. Some operations are priced
 | [Video Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Eyeglasses Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Eye Blink Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| Celebrity Recognition | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Face Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Face+Mask Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **FINGERPRINT RECOGNITION** | | | | 
