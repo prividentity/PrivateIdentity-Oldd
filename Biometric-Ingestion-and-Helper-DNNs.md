@@ -11,31 +11,23 @@
 
 The Face Geometry Detection DNN accurately locates face(s) in an image by transforming each image into geometric primitives and measuring the relative position, width, and other parameters of eyes, mouth(s), nose(s), and chin(s). Likewise, the Fingerprint Geometry Detection DNN accurately locates finger(s) in an image by transforming each image into geometric primitives and measuring each finger’s relative position, width, and other parameters.  
 
-Each DNN returns X and Y coordinates of each modality in an image, video frame or video stream. 
+Each DNN returns X and Y coordinates of each modality in an image, video frame or video stream. This DNN is on (true) by default and is required to return an accurate result.   
 
 ### FACE, FACE WITH MASK & FINGERPRINT VALIDATION DNNs
-* <b>Accurately aligns & crops</b> each frontalized face or finger input image
-* <b>Detects photo or video attack (anti-spoofing)</b> during unattended operation 
-* <b>Detects blinking</b> (eyes open/closed) for real-time passive facial liveness (anti-spoofing)
-* <b>Detects face mask</b> if the user is wearing a face mask. 
-* <b>Detects eyeglasses</b> before allowing enrollment
 * <b>Returns a validation score</b> between 0 to 100, where 100 is a perfect image.  
 * MobileNetV2 architecture, 1.5MB
 
-The Face Validation DNN tightly aligns, crops and accurately validates each frontalized face input image. Likewise, the Fingerprint Validation DNN tightly aligns, crops and accurately validates each fingerprint input image. Each DNN returns a validation score between 0 to 100, where 100 is a perfect image.  
+The Face Validation DNN accurately validates each frontalized face input image. Likewise, the Fingerprint Validation DNN accurately validates each fingerprint input image. Each DNN returns a validation score between 0 to 100, where 100 is a perfect image. This DNN is on (true) by default and is required to return an accurate result.   
 
-### FACE+MASK ON/OFF DETECTION DNN
+### 3 CLASS (GOOD, EYEGLASSES, FACE MASK) VALIDATION DNN
+The three classes detection algorithm determines if a subject is in good quality, wearing eyeglasses or wearing a face mask. Wearing eyeglasses or a face mask during enrollment lowers subsequent enrollment or prediction performance. The three classes Detection DNN accepts one frontalized face input image returns 3 values summing to 100. The largest value among these 4 values will be the predicted class. 
 
-The face mask detection algorithm determines if a subject is wearing a mask.  Masks used during enrollment lower subsequent prediction performance. The Face+Mask On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is mask off and 100 is mask on. The URL parameter for enrollment and prediction “maskCheck=true” provides real-time instructions to the user to remove the mask or can be set to automatically select the Face+Mask Embedding DNN.     
+The eyeglass detection algorithm determines if a subject is wearing eyeglasses before allowing enrollment. Eyeglasses used during enrollment lower subsequent prediction performance. The Eyeglasses On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is eyeglasses off and 100 is eyeglasses on. This DNN is on (true) by default during enrollment only. The URL parameter for enrollment and prediction “eyeGlassCheck=false” disables real-time instructions to the user to remove eyeglasses. 
 
-### EYEGLASSES ON/OFF DETECTION DNN
-The eyeglass detection algorithm determines if a subject is wearing eyeglasses before allowing enrollment. Eyeglasses used during enrollment lower subsequent prediction performance. The Eyeglasses On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is eyeglasses off and 100 is eyeglasses on. The URL parameter for enrollment and prediction “eyeGlassCheck=true” provides real-time instructions to the user to remove eyeglasses.  
-
-### 3 CLASSES (GOOD, EYEGLASSES, FACE+MASK) VALIDATION DNN
-The three classes detection algorithm determines if a subject is in good quality, wearing eyeglasses or wearing facemask.  Wearing eyeglasses or facemask during enrollment lower subsequent prediction performance. The three classes Detection DNN accepts one frontalized face input image returns 3 values summing to 100. The largest value among these 4 values will be the predicted class.
+The face mask detection algorithm determines if a subject is wearing a mask. Masks used during enrollment lower subsequent prediction performance. The Face Mask On/Off Detection DNN accepts one frontalized face input image returns a value 0 to 100, where 0 is mask off and 100 is mask on. This DNN is on (true) by default during enrollment only. The URL parameter “maskCheck=false” disables the real-time instructions to the user to remove the mask.     
 
 ### BLURRY IMAGE DETECT DNN
-The Blurry Image Detection DNN accurately finds images that are extremely blurry and unable to be accurately processed by the Embedding DNN. The DNN returns a score between 0 and 100, where 100 is not blurry. 
+The Blurry Image Detection DNN accurately finds images that are extremely blurry and unable to be accurately processed by the Embedding DNN. The DNN returns a score between 0 and 100, where 100 is not blurry.  This DNN is on (true) by default during enrollment and is required to return an accurate result. The URL parameter "blurryDetect=false" disables the DNN during prediction only.  
 
 ### ACTIVE LIVENESS DNN (Spoofing Prevention)
 The Eyes Open/Closed DNN provides real-time passive facial liveness.  This algorithm mitigates risk of a photo spoofing attack during unattended operation. The DNN receives an input image of an eye and outputs a validation score between 0 and 100, where 0 is eyes closed and 100 is eyes open. The user cannot proceed until the detection of a pair of eye-open/eye-closed events. A URL parameter “faceLiveness=true” allows the overriding of default functionality by enabling the eye-blink check. 
