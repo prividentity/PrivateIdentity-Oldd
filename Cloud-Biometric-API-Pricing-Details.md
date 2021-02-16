@@ -8,11 +8,11 @@ Cloud Biometric API uses state-of-the-art face, face+face mask, voice and finger
 
 ### Pricing Table - General
 
-| Quantity | Pricing | Price/1000 Uses | Throughput |
+| Quantity | Price/Use | Price/1000 Uses | Throughput |
 | ----------- | ------- | :-----------: | :-----------: | 
-| 0-1M operations/month | $0.001 /operation| $1.00 | Unlimited |
-| 1M-9M operations/month | $0.0008 /operation | $0.80 | Unlimited |
-| Next 90M operations/month | $0.0006 /operation | $0.60 | Unlimited | 
+| 0-1M operations/month | $0.001 | $1.00 | Unlimited |
+| 1M-9M operations/month | $0.0008 | $0.80 | Unlimited |
+| Next 90M operations/month | $0.0006 | $0.60 | Unlimited | 
 | Over 100M operations/month | $0.0004 /operation | $0.40 | Unlimited |
 | Data Storage/enroll | $0.00001 /month | $0.01 | Unlimited | 
 
