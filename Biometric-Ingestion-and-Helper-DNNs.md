@@ -82,3 +82,27 @@ Voice data augmentation generalizes the enrollment, improves accuracy and perfor
 * MobileNetV2 architecture, 3.5MB
 
 The Voice Embedding DNN accepts input of one 2-dimensional array of frequencies, FHE transforms the input to a 4kB, 2-dimensional positional array of 128 floating-point numbers (Cosine-measurable embedding, or 1-way vector encryption), and then deletes the original biometric. 
+
+## PHOTO ID VERIFICATION 
+
+### DOCUMENT GEOMETRY DETECTION DNNs
+* <b>Transforms images of an identity document into geometric primitives</b> to measure the corners of the document and the relative position, width, and other parameters of the eyes, mouth(s), nose(s), chin(s), and finger(s)
+* <b>Returns X and Y coordinates</b> of the document and the headshot.
+* YOLO architecture, 100kB
+
+The Document Geometry Detection DNN accurately locates identity documents and face(s) in an identity document by transforming each image into geometric primitives and measuring the relative position, width, and other parameters of the document and eyes, mouth(s), nose(s), and chin(s). This DNN is on (true) by default for Photo ID Verification and is required to return an accurate result.
+
+### DOCUMENT OCR API 
+The Google Vision DOCUMENT_TEXT_DETECTION API detects and extracts text from images. The response is optimized for dense text and documents. The JSON reply includes page, block, paragraph, word, and break information. This API is on (true) by default for Photo ID Verification and is required to return an accurate result.
+
+### Mobile Billing Record Lookup API
+The Telesign PhoneID API provides instant access to ongoing and accurate key phone number and user identity data attributes to help make about new registrations, user activity and fraud risks. Information includes user name and contact details, number deactivation, contact match, SIM swap, subscriber status, porting history and porting status. This API is on (true) by default for Photo ID Verification and is required to return an accurate result.
+
+### SMS Verification Message API
+The Twilio Programmable Messaging API delivers SMS with global senders and a redundant telecommunications infrastructure. This API is on (true) by default for Photo ID Verification and is required to return an accurate result.
+
+
+
+
+
+
