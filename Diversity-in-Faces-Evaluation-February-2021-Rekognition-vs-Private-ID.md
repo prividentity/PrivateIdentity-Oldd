@@ -37,6 +37,7 @@ We ran the DIF-CELEB-1M dataset on both the [Cloud Biometric API](https://privat
 ![Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-CELEB-1M evaluation dataset. ](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20Data%201.png)
 Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-CELEB-1M evaluation dataset. 
 
+The figures below graphically report the data displayed in Table 1. 
 To calculate the Identification Rate, 2049 enrolled classes were matched to 367,360 probe images (approx. 180 probe images per enrolled class).  
 
 ![Figure 1: Evaluation of Identification Rate (IR) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20IR%203.png)
