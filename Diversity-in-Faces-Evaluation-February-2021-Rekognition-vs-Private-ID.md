@@ -14,7 +14,7 @@ To accomplish the requested evaluation, we built the Diversity in Faces evaluati
 
 To build the evaluation dataset, we collected and labeled 2,049 diverse classes and named the set DIF-CELEB-1M in November, 2020. The subclasses are represented as follows: 14% Black, 6% Asian, 53% White, 23% Hispanic, and 4% Other. 
 
-In total, 1,300 classes were deduplicated and cleaned from the MS-Celeb-1M dataset. Then, we manually added 700 additional diverse celebrity classes to allow the subgroups to approximate the US population. Customers with an API Key should use Private Identity’s AWS Lambda function to reproduce results. Researchers please contact sales@private.id to obtain an API Key. 
+First, we deduplicated and cleaned 1,300 classes from the MS-Celeb-1M dataset. Then, we manually added 700 additional diverse celebrity classes to augment lower-represented subgroups to approximate the US population. Customers with an API Key should use Private Identity’s AWS Lambda function to reproduce results. Researchers should contact sales@private.id to obtain an API Key. 
 
 ![Graph showing subclass diversity](https://github.com/openinfer/PrivateIdentity/blob/master/images/Describe%20Subclasses.png)
 
