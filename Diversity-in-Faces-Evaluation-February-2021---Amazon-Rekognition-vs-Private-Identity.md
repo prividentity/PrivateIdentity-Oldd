@@ -1,5 +1,5 @@
 <pre>
-Evaluation of the Private Identity® Facial Recognition Algorithm using Diversity in Faces Fair Evaluation Dataset (DIF-CELEB-1M). The Private ID Facial Recognition Model 1607349233 ran on 17 Dec 2020.  The Amazon® Rekognition® service ran on 16 Feb 2021. 
+Evaluation of the Private Identity® Facial Recognition Algorithm using Diversity in Faces Fair Evaluation Dataset (DIF-CELEB-1M).<br>The Private ID Facial Recognition Model 1607349233 ran on 17 Dec 2020.  <br>The Amazon® Rekognition® service ran on 16 Feb 2021. 
 </pre>
 
 ### `Introduction`
