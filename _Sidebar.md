@@ -32,6 +32,7 @@
 [**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
 
 **`Evaluation Metrics`**
+* [**DIF Eval: Rekognition vs. Private ID**](https://github.com/openinfer/PrivateIdentity/wiki/Diversity-in-Faces-Evaluation-February-2021-Rekognition-vs-Private-ID)
 * [**Diversity in Faces Eval** 12/2020](https://github.com/openinfer/PrivateIdentity/wiki/Diversity-in-Faces-Evaluation---December-2020)
 * [Embedding DNN Eval 12/2020](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE-DECEMBER-2020)
 * [Embedding DNN Eval 6/2020](https://github.com/openinfer/PrivateIdentity/wiki/FACE-EMBEDDING-DNN-PERFORMANCE---JUNE-2020)
