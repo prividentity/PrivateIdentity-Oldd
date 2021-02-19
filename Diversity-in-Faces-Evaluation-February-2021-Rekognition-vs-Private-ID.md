@@ -1,7 +1,7 @@
 <pre>
 Evaluation of the Cloud Biometric API Facial Recognition Algorithm using Diversity in Faces 
-Fair Evaluation Dataset (DIF-CELEB-1M). The Cloud Biometric API Facial Recognition Model 1607349233
-ran on 17 Dec 2020. The Amazon® Rekognition® service ran on 16 Feb 2021. 
+Fair Evaluation Dataset (DIF-CELEB-1M). The [Cloud Biometric API](https://private.id) Facial Recognition Model 1607349233
+ran on 17 Dec 2020. The [Amazon Rekognition®](https://aws.amazon.com/rekognition/) service ran on 16 Feb 2021. 
 </pre>
 
 ### `Introduction`
@@ -32,7 +32,7 @@ We submitted a support request to AWS to increase allowed throughput (“unthrot
 
 ### `RESULTS`
 
-We ran the DIF-CELEB-1M dataset on both the [Cloud Biometric API](https://private.id) service and the [AWS Rekognition](https://aws.amazon.com/rekognition/) service.  Performance was recorded in log files.  
+We ran the DIF-CELEB-1M dataset on both the [Cloud Biometric API](https://private.id) service and the [Amazon Rekognition](https://aws.amazon.com/rekognition/) service.  Performance was recorded in log files.  
 
 ![Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-CELEB-1M evaluation dataset. ](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20Data%201.png)
 Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-CELEB-1M evaluation dataset. 
