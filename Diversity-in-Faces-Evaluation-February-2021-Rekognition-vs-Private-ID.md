@@ -1,8 +1,8 @@
 <pre>
 Evaluation of the Cloud Biometric API and Amazon Rekognition Facial Recognition Algorithms using 
 the Diversity in Faces Fair Evaluation Dataset (DIF-CELEB-1M). 
-Cloud Biometric API Face Recognition Model 1607349233 ran on 17 Dec 2020. 
-Amazon Rekognition® ran the dataset on 16-17 Feb 2021. 
+Cloud Biometric API Face Recognition Model 1607349233 processed the dataset on 17 Dec 2020. 
+Amazon Rekognition® processed the dataset on 16-17 Feb 2021. 
 </pre>
 
 ### `Introduction`
