@@ -57,6 +57,6 @@ The Cloud Biometric API service required 12.08 minutes to enroll 2,049 classes u
 ### `Discussion`
 The Cloud Biometric API service performed fairly across all subgroups. The service generated no false positive (Type I) errors and very few false negative (Type II) errors when it encountered blurry images. 
 
-Surprisingly, the Amazon Rekognition service performed fairly for the Black and Other subgroups (IR=99.54% and 99.35%, respectively). The remaining subgroups (Asian, White, and Hispanic) experienced 1.0% to 1.2% identification failures. Our results did not correlate with recent academic reports that reported Rekognition performed poorly on tasks involving members of the Black subgroup.  
+Surprisingly, the Amazon Rekognition service performed fairly for the Black and Other subgroups (IR=99.59% and 99.45%, respectively). The remaining subgroups (Asian, White, and Hispanic) experienced 1.0% to 1.1% identification failures. The observed results did not correlate with recent academic reports that reported Amazon Rekognition performed poorly on tasks involving members of the Black subgroup.
 
-Also surprisingly, 64% of the 118 false positive identifications (Type I errors) Rekognition generated were for the Asian subgroup. The other errors were distributed evenly (~10% each) across the Black, White, and Hispanic subgroups.   
+Also surprisingly, 63% of the 120 false positive identifications (Type I errors) Rekognition generated were for the Asian subgroup. The remaining errors were distributed relatively evenly across the Black, White, and Hispanic subgroups. 
