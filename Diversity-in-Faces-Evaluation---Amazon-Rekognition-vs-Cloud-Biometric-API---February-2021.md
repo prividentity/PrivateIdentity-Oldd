@@ -1,6 +1,6 @@
-`Evaluation of the Cloud Biometric API and Amazon Rekognition Facial Recognition Algorithms with the Diversity in Faces Evaluation Dataset (DIF-CELEB-1M).
-Cloud Biometric API Face Recognition Model 1607349233 processed 17 Dec 2020. 
-Amazon Rekognition® processed 16 and 17 Feb 2021.`
+> Evaluation of the Cloud Biometric API and Amazon Rekognition Facial Recognition Algorithms with the Diversity in Faces Evaluation Dataset (DIF-CELEB-1M).
+> Cloud Biometric API Face Recognition Model 1607349233 processed 17 Dec 2020. 
+> Amazon Rekognition® processed 16 and 17 Feb 2021.
 
 ### `Introduction`
 Recent academic papers suggest facial recognition algorithms contain bias for (or against) one or more subgroups. A customer therefore requested that Private Identity® provide a diversity evaluation of the Cloud Biometric API facial recognition algorithm. In addition, the customer asked for the ability to run the evaluation themselves. 
