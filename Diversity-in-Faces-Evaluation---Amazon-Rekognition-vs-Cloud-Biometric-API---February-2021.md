@@ -37,7 +37,7 @@ Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-C
 
 The figures below graphically represent the data displayed in Table 1. 
 
-![Figure 1: Evaluation of Identification Rate (IR) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20IR%204.png)
+![Figure 1: Evaluation of Identification Rate (IR) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20IR%205.png)
 Figure 1: Evaluation of Identification Rate (IR) by Subgroup Processing DIF-CELEB-1M
 
 ![Figure 2: Evaluation of False Negative Identification Rate (FNIR, or Type II Error) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20FNIR%203.png)
