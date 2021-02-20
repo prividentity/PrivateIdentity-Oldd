@@ -1,8 +1,8 @@
 <pre>
-Evaluation of the Cloud Biometric API and Amazon Rekognition Facial Recognition Algorithms using 
-the Diversity in Faces Fair Evaluation Dataset (DIF-CELEB-1M). 
-Cloud Biometric API Face Recognition Model 1607349233 processed the dataset on 17 Dec 2020. 
-Amazon Rekognition® processed the dataset on 16-17 Feb 2021. 
+Evaluation of the Cloud Biometric API and Amazon Rekognition Facial Recognition Algorithms 
+with the Diversity in Faces Evaluation Dataset (DIF-CELEB-1M). 
+Cloud Biometric API Face Recognition Model 1607349233 processed on 17 Dec 2020. 
+Amazon Rekognition® processed on 16 and 17 Feb 2021. 
 </pre>
 
 ### `Introduction`
@@ -35,15 +35,15 @@ We submitted a support request to AWS to increase allowed throughput (“unthrot
 
 We ran the DIF-CELEB-1M dataset on both the [Cloud Biometric API](https://private.id) service and the [Amazon Rekognition](https://aws.amazon.com/rekognition/) service.  Performance was recorded in log files.  
 
-![Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-CELEB-1M evaluation dataset. ](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20Data%201.png)
+![Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-CELEB-1M evaluation dataset. ](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20Data%202.png)
 Table 1.  Performance of Cloud Biometric API vs. Amazon Rekognition on the DIF-CELEB-1M evaluation dataset. 
 
 The figures below graphically represent the data displayed in Table 1. 
 
-![Figure 1: Evaluation of Identification Rate (IR) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20IR%203.png)
+![Figure 1: Evaluation of Identification Rate (IR) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20IR%204.png)
 Figure 1: Evaluation of Identification Rate (IR) by Subgroup Processing DIF-CELEB-1M
 
-![Figure 2: Evaluation of False Negative Identification Rate (FNIR, or Type II Error) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20FNIR%201.png)
+![Figure 2: Evaluation of False Negative Identification Rate (FNIR, or Type II Error) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20FNIR%203.png)
 Figure 2: Evaluation of False Negative Identification Rate (FNIR, or Type II Error) by Subgroup Processing DIF-CELEB-1M
 
 ![Figure 3: Evaluation of False Positive Identification Rate (FPIR, or Type I Error) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20FPIR%202.png)
