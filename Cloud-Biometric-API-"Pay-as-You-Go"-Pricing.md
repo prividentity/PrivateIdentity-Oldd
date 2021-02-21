@@ -30,7 +30,7 @@ Each model use or API call counts as one billable unit.
 The price of each component is enumerated in the table below. 
 
 | Component | SKU | 0-1M Units | 1M-9M Units | 9M-90M Units | >100M Units |
-| ----------- | ----------- | ----------- | ------- | ------- |
+| ----------- | :-----: | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | | 
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | BD | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
