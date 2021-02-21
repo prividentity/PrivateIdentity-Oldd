@@ -7,26 +7,17 @@ Requests for Cloud Biometric API are billed by SKU under the pay-as-you-go prici
 
 **FHE Metadata Storage**: Cloud Biometric API stores a repository of anonymized face, face+mask, voice and/or fingerprint metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 faces for a few hours and then delete them each night, the customer would still be billed for 1,000 enrolled face metadata each day. 
 
-### Pricing Table - SKUs
+### Pricing Table - General
 
-Pricing is based on monthly usage for both billable units and metadata storage. 
-Prices are listed in US dollars (USD). 
+Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the usual "pay-as-you-go" pricing pattern. A few services, including geolocation, retrieval of phone billing records, OCR API, and SMS messaging do not fit this pattern. Prices are listed in US dollars (USD). 
 
-| SKU | Description | Price/Unit| Price/1000 Units | Throughput |
+| Usage | Description | Price/Unit| Price/1000 Units | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
-| Tier_1 | 0-1M transactions/month | $0.00100 | $1.00 | Unlimited |
-| Tier_2 | 1M-9M transactions/month | $0.00080 | $0.80 | Unlimited |
-| Tier_3 | Next 90M transactions/month | $0.00060 | $0.60 | Unlimited | 
-| Tier_4 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
-| GEOLOC | On-device Geolocation | $0.012000 | $12.00 | Unlimited |
-| OCRAPI | Document OCR API | $0.01200 | $12.00 | Unlimited |
-| PHONE1 | Mobile phone billing record | $0.03000 | $30.00 | Unlimited | 
-| PHONE2 | Phone billing record (not USA) | $2.50000 | $2500 | Unlimited |  
-| SMSAPI | SMS Verification Message API | $0.02000 | $20.00 | Unlimited |  
-| Store1 | Face Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
-| Store2 | Face+Mask Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
-| Store3 | Voice Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
-| Store4 | Fingerprint Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
+| Tier 1 | 0-1M transactions/month | $0.00100 | $1.00 | Unlimited |
+| Tier 2 | 1M-9M transactions/month | $0.00080 | $0.80 | Unlimited |
+| Tier 3 | Next 90M transactions/month | $0.00060 | $0.60 | Unlimited | 
+| Tier 4 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
+| Metadata | Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 
 Each model use or API call counts as one billable unit. 
 
@@ -41,7 +32,7 @@ The price of each component is enumerated in the table below.
 | Component | 0-1M Units | 1M-9M Units | 9M-90M Units | >100M Units |
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
-| [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM1 $0.00100 | LM9 $0.00080 | LM90 $0.00600 | LM100 $0.00400 |
 | [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Video Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
