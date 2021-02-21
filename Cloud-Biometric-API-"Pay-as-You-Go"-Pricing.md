@@ -29,11 +29,11 @@ Each model use or API call counts as one billable unit.
 ### Pricing Table - Specific
 The price of each component is enumerated in the table below. 
 
-| Component | 0-1M Units | 1M-9M Units | 9M-90M Units | >100M Units |
+| Component | SKU| 0-1M Units | SKU | 1M-9M Units | SKU | 9M-90M Units |SKU | >100M Units |
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
-| [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM1 $0.00100 | LM9 $0.00080 | LM90 $0.00600 | LM100 $0.00400 |
-| [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM1 | $0.00100 | LM9 | $0.00080 | LM90 | $0.00600 | LM100 | $0.00400 |
+| [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | BD1 | $0.00100 | BD9 | $0.00080 | BD90 | $0.00600 | BD100 | $0.00400 |
 | [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Video Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Eyeglasses Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
@@ -54,8 +54,8 @@ The price of each component is enumerated in the table below.
 | **PHOTO ID VERIFICATION** | | | | 
 | [Document Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-geometry-detection-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Document OCR API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-ocr-api) | $0.01200 | $0.01200 | $0.01200 | $0.01200 |
-| [Mobile Billing Record Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) | $0.03000 | $0.03000 | $0.03000 | $0.03000 |
-| [Mobile Billing Record Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) (Outside USA) | $2.50000 | $2.50000 | $2.50000 | $2.50000 | 
+| [Phone Lookup (in USA)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) | $0.03000 | $0.03000 | $0.03000 | $0.03000 |
+| [Phone Lookup (not in USA)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) (Outside USA) | $2.50000 | $2.50000 | $2.50000 | $2.50000 | 
 | [SMS Verification Message API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#sms-verification-message-api) | $0.02000 | $0.02000 | $0.02000 | $0.02000 | 
 | **ENROLLMENT METADATA STORAGE** | | | |
 | Face Metadata Storage | $0.00100 | $0.00100 | $0.00100 | $0.00100 | 
