@@ -1,12 +1,11 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
-Under the pay-as-you-go pricing model, requests for Cloud Biometric API are billed by SKU. 
-One or more SKUs are triggered for each request, depending on the fields that are specified ("called") in the request. 
+Requests for Cloud Biometric API are billed by SKU under the pay-as-you-go pricing model. One or more SKUs are triggered for each request, depending on the fields that are specified ("called") in the request. 
 
 #### There are two types of fees.
-**Billable Units**: Each component, model or API applied to a biometric is a billable unit. Using multiple components, models or APIs against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for one billable unit of Face Landmarks, one billable unit of Blur Detection and one billable unit for Face Identification. 
+**Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for one billable unit of Face Landmarks, one billable unit of Blur Detection and one billable unit for Face Identification. 
 
-**FHE Metadata Storage**: Cloud Biometric API stores a repository of anonymized metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject.
+**FHE Metadata Storage**: Cloud Biometric API stores a repository of anonymized face, face+mask, voice and/or fingerprint metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 faces for a few hours and then delete them each night, the customer would still be billed for 1,000 enrolled face metadata each day. 
 
 ### Pricing Table - SKUs
 
@@ -24,7 +23,10 @@ Prices are listed in US dollars (USD).
 | PHONE1 | Mobile phone billing record | $0.03000 | $30.00 | Unlimited | 
 | PHONE2 | Phone billing record (not USA) | $2.50000 | $2500 | Unlimited |  
 | SMSAPI | SMS Verification Message API | $0.02000 | $20.00 | Unlimited |  
-| Storage | Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
+| Store1 | Face Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
+| Store2 | Face+Mask Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
+| Store3 | Voice Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
+| Store4 | Fingerprint Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
 
 Each model use or API call counts as one billable unit. 
 
@@ -92,5 +94,8 @@ If your application made the following requests in a one-month period:
   * Face+Mask Identification 
 
 Your cost would be $25.00, or $0.00500/prediction. This is calculated by multiplying 5000 persons times 5 Tier_1 units (5 x $0.00100).
+
+### Example 3
+If your application enrolled 1000 faces on the 15th day of a month with 30 days, the FHE storage cost for those 1000 face enrollments in a one-month period would be $0.50, or $.0005/enrollment. The cost is calculated by multiplying (15 days x 1000 face enrollments x $0.00100/month), and then dividing the product by 30 days. 
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
