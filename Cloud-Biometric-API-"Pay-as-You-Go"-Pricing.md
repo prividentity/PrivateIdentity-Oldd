@@ -29,14 +29,14 @@ Prices are listed in US dollars (USD).
 Each model use or API call counts as one billable unit. 
 
 ### Tier Usage Counter Details 
-* The tier usage counter resets to zero on the first day of each calendar month (example: January, February, and so on), at 12 AM US and Canadian Eastern Time (UTC-5). 
-* Tiers operate independently for each Customer ID and do not aggregate across multiple Customer IDs.
+* The tier usage counter resets to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
 * Tiers operate independently per Product SKU. The usage of one SKU can only affect the price of that SKU. 
+* Tiers operate independently for each Customer ID and do not aggregate across multiple Customer IDs.
  
 ### Pricing Table - Specific
 The price of each component is enumerated in the table below. 
 
-| Component | 0-1M <br>Transactions | 1M-9M <br>Transactions | 9M-90M <br>Transactions | >100M <br>Transactions |
+| Component | 0-1M Units | 1M-9M Units | 9M-90M Units | >100M Units |
 | ----------- | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | 
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| $0.00100 | $0.00080 | $0.00600 | $0.00400 |
@@ -72,7 +72,7 @@ The price of each component is enumerated in the table below.
 
 ### Example 1
 If your application made the following requests in a one-month period:
-* 700 Face Enrolls using six transactions
+* 700 Face Enrollments using six components.
   * Face Landmarks
   * Blur Detection
   * Image Spoof Detection
@@ -80,7 +80,7 @@ If your application made the following requests in a one-month period:
   * Eyeglass Detection 
   * Face+Mask Identification 
 
-Your cost would be $4.20 (700 persons x (6 transactions x $0.00100)) 
+Your cost would be $4.20, or $0.00600/enrollment. This is calculated by multiplying 700 persons times 6 Tier_1 units (6 x $0.00100).
 
 ### Example 2
 If your application made the following requests in a one-month period:
@@ -89,9 +89,8 @@ If your application made the following requests in a one-month period:
   * Blur Detection
   * Image Spoof Detection
   * Video Spoof Detection 
-  * Eyeglass Detection 
   * Face+Mask Identification 
 
-Your cost would be $30.00 (5000 predicts x (6 transactions x $0.00100))
+Your cost would be $25.00, or $0.00500/prediction. This is calculated by multiplying 5000 persons times 5 Tier_1 units (5 x $0.00100).
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
