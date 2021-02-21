@@ -1,9 +1,7 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
-### Cloud Biometric API "Pay as You Go" Pricing 
-Under the pay-as-you-go pricing model, requests for Cloud Biometric API are billed by SKU. One or more SKUs are triggered for each request, depending on the fields that are specified in the request. 
-
-
+Under the pay-as-you-go pricing model, requests for Cloud Biometric API are billed by SKU. 
+One or more SKUs are triggered for each request, depending on the fields that are specified ("called") in the request. 
 
 #### There are two types of fees.
 **Billable Units**: Each component, model or API applied to a biometric is a billable unit. Using multiple components, models or APIs against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for one billable unit of Face Landmarks, one billable unit of Blur Detection and one billable unit for Face Identification. 
@@ -32,9 +30,9 @@ Each model use or API call counts as one billable unit.
 
 ### Tier Usage Counter Details 
 * The tier usage counter resets to zero on the first day of each calendar month (example: January, February, and so on), at 12 AM US and Canadian Eastern Time (UTC-5). 
-* Tiers operate independently for each Billing account and do not aggregate across multiple Billing accounts, even if the projects are in the same Organization or belong to the same legal entity.
-* Tiers operate independently per SKU. The usage of one SKU can only affect the price of that SKU. Currently, there are no SKUs in which usage affects the tiered pricing of another SKU.
-* 
+* Tiers operate independently for each Customer ID and do not aggregate across multiple Customer IDs.
+* Tiers operate independently per Product SKU. The usage of one SKU can only affect the price of that SKU. 
+ 
 ### Pricing Table - Specific
 The price of each component is enumerated in the table below. 
 
@@ -59,18 +57,18 @@ The price of each component is enumerated in the table below.
 | [Voice Fast Fourier Transformation (FFT)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **GEOLOCATION** | | | | 
-| On-Device Geolocation | $0.012000 | $0.010000 | $0.08000 | $0.06000 |
+| On-Device Geolocation | $0.012000 | $0.012000 | $0.012000 | $0.012000 |
 | **PHOTO ID VERIFICATION** | | | | 
 | [Document Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-geometry-detection-dnns) | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Document OCR API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-ocr-api) | $0.01200 | $0.01000 | $0.00800 | $0.00600 |
-| [Mobile Billing Record Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) | $0.03000 | $0.02800 | $0.02600 | $0.02400 |
-| [Mobile Billing Record Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) (Outside USA) | $2.50000 | $2.48000 | $2.46000 | $2.44000 | 
-| [SMS Verification Message API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#sms-verification-message-api) | $0.02000 | $0.01800 | $0.01600 | $0.01400 | 
+| [Document OCR API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-ocr-api) | $0.01200 | $0.01200 | $0.01200 | $0.01200 |
+| [Mobile Billing Record Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) | $0.03000 | $0.03000 | $0.03000 | $0.03000 |
+| [Mobile Billing Record Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) (Outside USA) | $2.50000 | $2.50000 | $2.50000 | $2.50000 | 
+| [SMS Verification Message API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#sms-verification-message-api) | $0.02000 | $0.02000 | $0.02000 | $0.02000 | 
 | **ENROLLMENT METADATA STORAGE** | | | |
-| Face Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
-| Face+Mask Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
-| Fingerprint Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
-| Voice Metadata Storage | $0.00010 | $0.00010 | $0.00010 | $0.00010 | 
+| Face Metadata Storage | $0.00100 | $0.00100 | $0.00100 | $0.00100 | 
+| Face+Mask Metadata Storage | $0.00100 | $0.00100 | $0.00100 | $0.00100 |
+| Fingerprint Metadata Storage | $0.00100 | $0.00100 | $0.00100 | $0.00100 |
+| Voice Metadata Storage | $0.00100 | $0.00100 | $0.00100 | $0.00100 |
 
 ### Example 1
 If your application made the following requests in a one-month period:
