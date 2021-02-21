@@ -1,6 +1,6 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
-Requests for Cloud Biometric API are billed by SKU under the pay-as-you-go pricing model. One or more SKUs are triggered for each request, depending on the fields that are specified ("called") in the request. 
+Requests for Cloud Biometric API are billed by SKU under the pay-as-you-go pricing model. One or more SKUs are triggered for each request, depending on the fields that are specified in the request. 
 
 #### There are two types of fees.
 **Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for one billable unit of Face Landmarks, one billable unit of Blur Detection and one billable unit for Face Identification. 
@@ -19,10 +19,19 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | Tier 4 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
 | Metadata | Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 
-Each model use or API call counts as one billable unit. 
+Each model use or API call counts as one product SKU (i.e. one billable unit). 
+
+### Product SKU Usage Counter Details 
+The Marketplace does not allow SKU pricing < $0.001. 
+We therefore assigned each Product SKU to represent the purchase of 1000 units (quantity=1000), as shown in Column 4 of the above table. 
+* For Tier 1 SKUs, one Product SKU includes 1000 units and increments your invoice by $1.00. 
+* For Tier 2 SKUs, one Product SKU includes 1000 units and increments your invoice by $0.80. 
+* For Tier 3 SKUs, one Product SKU includes 1000 units and increments your invoice by $0.60. 
+* For Tier 4 SKUs, one Product SKU includes 1000 units and increments your invoice by $0.40. 
+* All SKU counters reset to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
 
 ### Tier Usage Counter Details 
-* The tier usage counter resets to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
+* Tier usage counters resets to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
 * Tiers operate independently per Product SKU. The usage of one SKU can only affect the price of that SKU. 
 * Tiers operate independently for each Customer ID and do not aggregate across multiple Customer IDs.
  
