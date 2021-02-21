@@ -1,15 +1,15 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
-Requests for Cloud Biometric API are billed by SKU under the pay-as-you-go pricing model. One or more SKUs are triggered for each request, depending on the fields that are specified in the request. 
+Requests to the Cloud Biometric API are billed by Product SKU under the pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. 
 
 #### There are two types of fees.
 **Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for one billable unit of Face Landmarks, one billable unit of Blur Detection and one billable unit for Face Identification. 
 
-**FHE Metadata Storage**: Cloud Biometric API stores a repository of anonymized face, face+mask, voice and/or fingerprint metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 faces for a few hours and then delete them each night, the customer would still be billed for 1,000 enrolled face metadata each day. 
+**Metadata Storage**: Cloud Biometric API stores a repository of anonymized face, face+mask, voice and/or fingerprint metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 faces for a few hours and then delete them each night, the customer would still be billed for 1,000 enrolled face metadata each day. 
 
 ### Pricing Table - General
 
-Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the usual "pay-as-you-go" pricing pattern. A few services, including geolocation, retrieval of phone billing records, OCR API, and SMS messaging do not fit this pattern. Prices are listed in US dollars (USD). 
+Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the service's expected "pay-as-you-go" pricing pattern. Geolocation, retrieval of phone billing records, OCR API, and SMS messaging services do not fit this pattern. Prices are listed in US dollars (USD). 
 
 | Usage | Description | Price/Unit| Price/1000 Units | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
@@ -19,19 +19,14 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | Tier 4 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
 | Metadata | Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 
-Each model use or API call counts as one product SKU (i.e. one billable unit). 
+Each model use or API call counts as one billable unit. 
 
 ### Product SKU Usage Counter Details 
-The Marketplace does not allow SKU pricing < $0.001. 
-We therefore assigned each Product SKU to represent the purchase of 1000 units (quantity=1000), as shown in Column 4 of the above table. 
-* For Tier 1 SKUs, one Product SKU includes 1000 units and increments your invoice by $1.00. 
-* For Tier 2 SKUs, one Product SKU includes 1000 units and increments your invoice by $0.80. 
-* For Tier 3 SKUs, one Product SKU includes 1000 units and increments your invoice by $0.60. 
-* For Tier 4 SKUs, one Product SKU includes 1000 units and increments your invoice by $0.40. 
-* All SKU counters reset to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
+* Each Product SKU contains 1000 billable units.
+* SKU counters reset to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
 
 ### Tier Usage Counter Details 
-* Tier usage counters resets to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
+* Tier usage counters reset to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
 * Tiers operate independently per Product SKU. The usage of one SKU can only affect the price of that SKU. 
 * Tiers operate independently for each Customer ID and do not aggregate across multiple Customer IDs.
  
