@@ -73,7 +73,7 @@ If your application made the following requests in a one-month period:
   * Eyeglass Detection 
   * Face+Mask Identification 
 
-Your cost would be $4.20, or $0.00600/enrollment. This is calculated by multiplying 700 persons times 6 Tier_1 units (6 x $0.00100).
+Your cost would be $4.20, or $0.00600/enrollment. This is calculated by multiplying 700 enrolled persons by six Tier_1 units, or (700 x 6 x $0.00100).
 
 ### Example 2
 If your application made the following requests in a one-month period:
@@ -84,7 +84,7 @@ If your application made the following requests in a one-month period:
   * Video Spoof Detection 
   * Face+Mask Identification 
 
-Your cost would be $25.00, or $0.00500/prediction. This is calculated by multiplying 5000 persons times 5 Tier_1 units (5 x $0.00100).
+Your cost would be $25.00, or $0.00500/prediction. This is calculated by multiplying 5000 persons times 5 Tier_1 units, or (5000 x 5 x $0.00100).
 
 ### Example 3
 If your application enrolled 1000 faces on the 15th day of a month with 30 days, the FHE storage cost for those 1000 face enrollments in a one-month period would be $0.50, or $.0005/enrollment. The cost is calculated by multiplying (15 days x 1000 face enrollments x $0.00100/month), and then dividing the product by 30 days. 
