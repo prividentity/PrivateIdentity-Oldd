@@ -1,24 +1,42 @@
-### Cloud Biometric API Uses Models and APIs to Enable Recognition and Search
-Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include features like face detection and face identification. 
+Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
+
+### Cloud Biometric API "Pay as You Go" Pricing 
+Under the pay-as-you-go pricing model, requests for Cloud Biometric API are billed by SKU. One or more SKUs are triggered for each request, depending on the fields that are specified in the request. 
+
+
 
 #### There are two types of fees.
-**Biometric Transactions**: Cloud Biometric API charges you each time you operate on a biometric with a model or API. Using multiple components (models or APIs) against a single biometric counts as processing multiple operations. 
+**Billable Units**: Each component, model or API applied to a biometric is a billable unit. Using multiple components, models or APIs against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for one billable unit of Face Landmarks, one billable unit of Blur Detection and one billable unit for Face Identification. 
 
-**Biometric Metadata Storage**: Cloud Biometric API stores a repository of anonymized metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly.
+**FHE Metadata Storage**: Cloud Biometric API stores a repository of anonymized metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject.
 
-### Pricing Table - General
+### Pricing Table - SKUs
 
-| Quantity | Price/Transaction | Price/1000 Transactions | Throughput |
-| ----------- | ------- | :-----------: | :-----------: | 
-| 0-1M transactions/month | $0.00100 | $1.00 | Unlimited |
-| 1M-9M transactions/month | $0.00080 | $0.80 | Unlimited |
-| Next 90M transactions/month | $0.00060 | $0.60 | Unlimited | 
-| Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
-| Data Storage/enroll/month | $0.00001 | $0.01 | Unlimited | 
+Pricing is based on monthly usage for both billable units and metadata storage. 
+Prices are listed in US dollars (USD). 
 
-Each model use or API call counts as one transaction. Some operations are priced differently as described in the table below. 
+| SKU | Description | Price/Unit| Price/1000 Units | Throughput |
+| ---- | ----------- | ------- | :-----------: | :-----------: | 
+| Tier_1 | 0-1M transactions/month | $0.00100 | $1.00 | Unlimited |
+| Tier_2 | 1M-9M transactions/month | $0.00080 | $0.80 | Unlimited |
+| Tier_3 | Next 90M transactions/month | $0.00060 | $0.60 | Unlimited | 
+| Tier_4 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
+| GEOLOC | On-device Geolocation | $0.012000 | $12.00 | Unlimited |
+| OCRAPI | Document OCR API | $0.01200 | $12.00 | Unlimited |
+| PHONE1 | Mobile phone billing record | $0.03000 | $30.00 | Unlimited | 
+| PHONE2 | Phone billing record (not USA) | $2.50000 | $2500 | Unlimited |  
+| SMSAPI | SMS Verification Message API | $0.02000 | $20.00 | Unlimited |  
+| Storage | Monthly Data Storage | $0.00010 | $0.10 | Unlimited | 
 
+Each model use or API call counts as one billable unit. 
+
+### Tier Usage Counter Details 
+* The tier usage counter resets to zero on the first day of each calendar month (example: January, February, and so on), at 12 AM US and Canadian Eastern Time (UTC-5). 
+* Tiers operate independently for each Billing account and do not aggregate across multiple Billing accounts, even if the projects are in the same Organization or belong to the same legal entity.
+* Tiers operate independently per SKU. The usage of one SKU can only affect the price of that SKU. Currently, there are no SKUs in which usage affects the tiered pricing of another SKU.
+* 
 ### Pricing Table - Specific
+The price of each component is enumerated in the table below. 
 
 | Component | 0-1M <br>Transactions | 1M-9M <br>Transactions | 9M-90M <br>Transactions | >100M <br>Transactions |
 | ----------- | ----------- | ----------- | ------- | ------- |
