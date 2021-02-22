@@ -11,7 +11,7 @@ Requests to the Cloud Biometric API are billed by Product SKU under the pay-as-y
 
 Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the service's expected "pay-as-you-go" pricing pattern. Geolocation, retrieval of phone billing records, OCR API, and SMS messaging services do not fit this pattern. Prices are listed in US dollars (USD). 
 
-| SKU | Description | Each Request | SKU (1000 Requests) | Throughput |
+| SKU | Description | Each Request | 1000 Requests | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
 | | **FACE RECOGNITION** | | | | 
 | FR1 | 1:n Face Recognition, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
@@ -58,7 +58,7 @@ The price of each component is enumerated in the table below.
 
 | Component | SKU | 0-1M Units | 1M-10M Units | 10M-100M Units | >100M Units |
 | ----------- | :-----: | ----------- | ----------- | ------- | ------- |
-| **FACE RECOGNITION** | | FR1 | | | 
+| **FACE RECOGNITION** | | FR1 | FR2 | FR3 | FR4 |
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | BD | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | IS | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
