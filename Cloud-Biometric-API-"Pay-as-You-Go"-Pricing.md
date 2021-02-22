@@ -13,17 +13,17 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 
 | SKU | Description | Each Request | 1000 Requests | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
-| | **FACE RECOGNITION** | | | | 
+| | **1:n FACE RECOGNITION** | | | | 
 | FR1 | Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
 | FR2 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
 | FR3 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
 | FR4 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
-| | **VOICE RECOGNITION** | | | | 
+| | **1:n VOICE RECOGNITION** (SPEAKER IDENTIFICATION) | | | | 
 | VR1 | Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
 | VR2 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
 | VR3 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
 | VR4 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
-| | **FINGERPRINT RECOGNITION** | | | | 
+| | **1:n FINGERPRINT RECOGNITION** (FINGERPRINT IDENTIFICATION) | | | | 
 | FP1 | Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
 | FP2 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
 | FP3 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
