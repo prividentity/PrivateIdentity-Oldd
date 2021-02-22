@@ -14,8 +14,8 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | Usage | Description | Price/Unit| Price/1000 Units | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
 | Tier 1 | 0-1M transactions/month | $0.00100 | $1.00 | Unlimited |
-| Tier 2 | 1M-9M transactions/month | $0.00080 | $0.80 | Unlimited |
-| Tier 3 | Next 90M transactions/month | $0.00060 | $0.60 | Unlimited | 
+| Tier 2 | 1M-10M transactions/month | $0.00080 | $0.80 | Unlimited |
+| Tier 3 | 10M - 100M transactions/month | $0.00060 | $0.60 | Unlimited | 
 | Tier 4 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
 | Metadata | Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 
@@ -33,7 +33,7 @@ Each model use or API call counts as one billable unit.
 ### Pricing Table - Specific
 The price of each component is enumerated in the table below. 
 
-| Component | SKU | 0-1M Units | 1M-9M Units | 9M-90M Units | >100M Units |
+| Component | SKU | 0-1M Units | 1M-10M Units | 10M-100M Units | >100M Units |
 | ----------- | :-----: | ----------- | ----------- | ------- | ------- |
 | **FACE RECOGNITION** | | | | | 
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
