@@ -14,22 +14,20 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | SKU | Description | Each Request | 1000 Requests | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
 | | **FACE RECOGNITION** | | | | 
-| FR1 | 1:n Face Recognition<br> Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
-| FR2 | 1:n Face Recognition<br> Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
-| FR3 | 1:n Face Recognition<br> Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
-| FR4 | 1:n Face Recognition<br> Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
+| FR1 | Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| FR2 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| FR3 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| FR4 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
 | | **VOICE RECOGNITION** | | | | 
-| VR1 | 1:n Speaker Identification, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
-| VR2 | 1:n Speaker Identification, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
-| VR3 | 1:n Speaker Identification, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
-| VR4 | 1:n Speaker Identification, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
+| VR1 | Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| VR2 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| VR3 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| VR4 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
 | | **FINGERPRINT RECOGNITION** | | | | 
-| FP1 | 1:n Fingerprint Identification, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
-| FP2 | 1:n Fingerprint Identification, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
-| FP3 | 1:n Fingerprint Identification, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
-| FP4 | 1:n Fingerprint Identification, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
-| | **GEOLOCATION API** | | | | 
-| GE1 | Secure Geolocation | $0.0120 | $12.00 | Unlimited |
+| FP1 | Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| FP2 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| FP3 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| FP4 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
 | | **PHOTO ID VERIFICATION** | | | | 
 | DL1 | Document Geometry Model | $0.00100 | $1.00 | Unlimited |
 | OCR | Document OCR API | $0.0120 | $12.00 | Unlimited |
@@ -37,10 +35,10 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | PH2 | Phone ID API (Outside US) | $2.5000 | $2500.00 | Unlimited |
 | SMS | SMS Verification | $0.02000 | $2.00 | Unlimited |
 | | **METADATA STORAGE** | | | | 
-| FS1 | Face Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
-| FMS | Face with Face Mask Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
-| VE1 | Voice Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
-| FE1 | Fingerprint Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
+| FS1 | Face Metadata Storage (Monthly) | $0.00010 | $0.10 | Unlimited | 
+| FMS | Face w/Mask Metadata Storage (Monthly) | $0.00010 | $0.10 | Unlimited | 
+| VE1 | Voice Metadata Storage (Monthly) | $0.00010 | $0.10 | Unlimited | 
+| FE1 | Fingerprint Metadata Storage (Monthly) | $0.00010 | $0.10 | Unlimited | 
 
 Each model, API, or service request counts as one billable unit. 
 Each Product SKU includes 1000 billable units.
