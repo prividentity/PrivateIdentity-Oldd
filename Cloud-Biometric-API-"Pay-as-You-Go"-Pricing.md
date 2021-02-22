@@ -75,8 +75,6 @@ The price of each component is enumerated in the table below.
 | [Voice Data Augmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-data-augmentation) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Fast Fourier Transformation (FFT)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| **SECURE GEOLOCATION** | | | | |
-| On-Device Geolocation //Alpha// | GE1 | $0.012000 | $0.012000 | $0.012000 | $0.012000 |
 | **PHOTO ID VERIFICATION** | | | | | | 
 | [Document Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-geometry-detection-dnns) | DL | $0.00100 | $0.00100  | $0.00100  | $0.00100  |
 | [Document OCR API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-ocr-api) | OCR | $0.01200 | $0.01200 | $0.01200 | $0.01200 |
