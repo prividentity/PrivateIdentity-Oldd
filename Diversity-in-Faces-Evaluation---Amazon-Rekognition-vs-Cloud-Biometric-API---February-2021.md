@@ -49,11 +49,11 @@ Figure 3: Evaluation of False Positive Identification Rate (FPIR, or Type I Erro
 ![Figure 4. Evaluation of Time Required to Process DIF-CELEB-1M ](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20Time%20Minutes%201.png)
 Figure 4. Evaluation of Time Required to Process DIF-CELEB-1M 
 
-The Cloud Biometric API service required 12.08 minutes to enroll 2,049 classes using 20,490 images (28.27 images/sec), and 12.20 minutes to predict 440,832 probes (602.23 images/sec). In contrast, the Amazon Rekognition service required 547.7 minutes to enroll 2,049 classes using 20,490 images (0.62 images/sec), and 2777.1 minutes to predict 440,832 probes (2.65 images/sec). 
+The Cloud Biometric API service required 8.08 minutes to enroll 2,049 classes using 20,490 images (42.33 images/sec), and 435.20 minutes to predict 440,832 probes (16.88 images/sec). In contrast, the Amazon Rekognition service required 547.7 minutes to enroll 2,049 classes using 20,490 images (0.62 images/sec), and 2777.1 minutes to predict 440,832 probes (2.65 images/sec). 
 
 ### `Discussion`
 The Cloud Biometric API service performed fairly across all subgroups. The service generated no false positive (Type I) errors and very few false negative (Type II) errors when it encountered blurry images. 
 
 Surprisingly, the Amazon Rekognition service performed fairly for the Black and Other subgroups (IR=99.59% and 99.45%, respectively). The remaining subgroups (Asian, White, and Hispanic) experienced 1.0% to 1.1% identification failures. The observed results did not correlate with recent academic papers that reported Amazon Rekognition performed poorly on tasks involving members of the Black subgroup.
 
-Also surprisingly, 63% of the 120 false positive identifications (Type I errors) Rekognition generated were for the Asian subgroup. The remaining errors were distributed relatively evenly across the Black, White, and Hispanic subgroups. 
+Also surprisingly, 63% of the 120 false-positive identifications (Type I errors) Rekognition generated were for the Asian subgroup. The remaining errors were distributed relatively evenly across the Black, White, and Hispanic subgroups. 
