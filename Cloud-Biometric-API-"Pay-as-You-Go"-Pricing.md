@@ -11,15 +11,38 @@ Requests to the Cloud Biometric API are billed by Product SKU under the pay-as-y
 
 Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the service's expected "pay-as-you-go" pricing pattern. Geolocation, retrieval of phone billing records, OCR API, and SMS messaging services do not fit this pattern. Prices are listed in US dollars (USD). 
 
-| Usage | Description | Price/Unit| Price/1000 Units | Throughput |
+| SKU | Description | Each Request | SKU (1000 Requests) | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
-| Tier 1 | 0-1M transactions/month | $0.00100 | $1.00 | Unlimited |
-| Tier 2 | 1M-10M transactions/month | $0.00080 | $0.80 | Unlimited |
-| Tier 3 | 10M - 100M transactions/month | $0.00060 | $0.60 | Unlimited | 
-| Tier 4 | Over 100M transactions/month | $0.00040 | $0.40 | Unlimited |
-| Metadata | Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
+| | **FACE RECOGNITION** | | | | 
+| FR1 | 1:n Face Recognition, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| FR2 | 1:n Face Recognition, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| FR3 | 1:n Face Recognition, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| FR4 | 1:n Face Recognition, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
+| | **VOICE RECOGNITION** | | | | 
+| VR1 | 1:n Speaker Identification, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| VR2 | 1:n Speaker Identification, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| VR3 | 1:n Speaker Identification, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| VR4 | 1:n Speaker Identification, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
+| | **FINGERPRINT RECOGNITION** | | | | 
+| FR1 | 1:n Fingerprint Identification, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| FR2 | 1:n Fingerprint Identification, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| FR3 | 1:n Fingerprint Identification, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| FR4 | 1:n Fingerprint Identification, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
+| | **GEOLOCATION API** | | | | 
+| GE1 | Secure Geolocation | $0.0120 | $12.00 | Unlimited |
+| | **PHOTO ID VERIFICATION** | | | | 
+| DO1 | Photo ID Lookup | $0.00100 | $1.00 | Unlimited |
+| OCR | Document OCR API | $0.0120 | $12.00 | Unlimited |
+| PH1 | Phone ID API (US) | $0.0300 | $3.00 | Unlimited | 
+| PH2 | Phone ID API (Outside US) | $2.5000 | $2500.00 | Unlimited |
+| SMS | SMS Verification | $0.02000 | $2.00 | Unlimited |
+| | **METADATA STORAGE** | | | | 
+| FE1 | Face Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
+| VE1 | Voice Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
+| FE1 | Fingerprint Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 
-Each model use or API call counts as one billable unit. 
+Each model, API, or service request counts as one billable unit. 
+Each Product SKU includes 1000 billable units.
 
 ### Product SKU Usage Counter Details 
 * Each Product SKU contains 1000 billable units.
@@ -35,7 +58,7 @@ The price of each component is enumerated in the table below.
 
 | Component | SKU | 0-1M Units | 1M-10M Units | 10M-100M Units | >100M Units |
 | ----------- | :-----: | ----------- | ----------- | ------- | ------- |
-| **FACE RECOGNITION** | | | | | 
+| **FACE RECOGNITION** | | FR1 | | | 
 | [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | BD | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | IS | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
