@@ -7,7 +7,7 @@ Requests to the Cloud Biometric API are billed by Product SKU under the pay-as-y
 
 **Metadata Storage**: Cloud Biometric API stores a repository of anonymized face, face+mask, voice and/or fingerprint metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 faces for a few hours and then delete them each night, the customer would still be billed for 1,000 enrolled face metadata each day. 
 
-### Pricing Table - General
+### Pricing Table - Product SKUs
 
 Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the service's expected "pay-as-you-go" pricing pattern. Geolocation, retrieval of phone billing records, OCR API, and SMS messaging services do not fit this pattern. Prices are listed in US dollars (USD). 
 
