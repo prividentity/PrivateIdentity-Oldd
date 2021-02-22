@@ -1,23 +1,23 @@
 Cloud Biometric API uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
-Requests to the Cloud Biometric API are billed by Product SKU under the pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. 
+Requests to the Cloud Biometric API are billed by Product SKU under a standard pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. 
 
 #### There are two types of fees.
-**Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for one billable unit of Face Landmarks, one billable unit of Blur Detection and one billable unit for Face Identification. 
+**Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for three billable units. 
 
 **Metadata Storage**: Cloud Biometric API stores a repository of anonymized face, face+mask, voice and/or fingerprint metadata during enrollment against which Cloud Biometric API can search for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 faces for a few hours and then delete them each night, the customer would still be billed for 1,000 enrolled face metadata each day. 
 
 ### Pricing Table - Product SKUs
 
-Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the service's expected "pay-as-you-go" pricing pattern. Geolocation, retrieval of phone billing records, OCR API, and SMS messaging services do not fit this pattern. Prices are listed in US dollars (USD). 
+Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out Cloud Biometric API's "pay-as-you-go" pricing in US dollars (USD). 
 
 | SKU | Description | Each Request | 1000 Requests | Throughput |
 | ---- | ----------- | ------- | :-----------: | :-----------: | 
 | | **FACE RECOGNITION** | | | | 
-| FR1 | 1:n Face Recognition, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
-| FR2 | 1:n Face Recognition, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
-| FR3 | 1:n Face Recognition, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
-| FR4 | 1:n Face Recognition, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
+| FR1 | 1:n Face Recognition<br> Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| FR2 | 1:n Face Recognition<br> Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| FR3 | 1:n Face Recognition<br> Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| FR4 | 1:n Face Recognition<br> Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
 | | **VOICE RECOGNITION** | | | | 
 | VR1 | 1:n Speaker Identification, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
 | VR2 | 1:n Speaker Identification, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
