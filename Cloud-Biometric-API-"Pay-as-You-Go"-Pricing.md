@@ -31,7 +31,7 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | | **GEOLOCATION API** | | | | 
 | GE1 | Secure Geolocation | $0.0120 | $12.00 | Unlimited |
 | | **PHOTO ID VERIFICATION** | | | | 
-| DL1 | Photo ID Lookup | $0.00100 | $1.00 | Unlimited |
+| DL1 | Document Geometry Model | $0.00100 | $1.00 | Unlimited |
 | OCR | Document OCR API | $0.0120 | $12.00 | Unlimited |
 | PH1 | Phone ID API (US) | $0.0300 | $3.00 | Unlimited | 
 | PH2 | Phone ID API (Outside US) | $2.5000 | $2500.00 | Unlimited |
