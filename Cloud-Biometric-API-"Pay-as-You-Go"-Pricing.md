@@ -24,20 +24,21 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | VR3 | 1:n Speaker Identification, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
 | VR4 | 1:n Speaker Identification, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
 | | **FINGERPRINT RECOGNITION** | | | | 
-| FR1 | 1:n Fingerprint Identification, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
-| FR2 | 1:n Fingerprint Identification, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
-| FR3 | 1:n Fingerprint Identification, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
-| FR4 | 1:n Fingerprint Identification, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
+| FP1 | 1:n Fingerprint Identification, Tier 1 (0-1M requests/month) | $0.00100 | $1.00 | Unlimited |
+| FP2 | 1:n Fingerprint Identification, Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
+| FP3 | 1:n Fingerprint Identification, Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
+| FP4 | 1:n Fingerprint Identification, Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
 | | **GEOLOCATION API** | | | | 
 | GE1 | Secure Geolocation | $0.0120 | $12.00 | Unlimited |
 | | **PHOTO ID VERIFICATION** | | | | 
-| DO1 | Photo ID Lookup | $0.00100 | $1.00 | Unlimited |
+| DL1 | Photo ID Lookup | $0.00100 | $1.00 | Unlimited |
 | OCR | Document OCR API | $0.0120 | $12.00 | Unlimited |
 | PH1 | Phone ID API (US) | $0.0300 | $3.00 | Unlimited | 
 | PH2 | Phone ID API (Outside US) | $2.5000 | $2500.00 | Unlimited |
 | SMS | SMS Verification | $0.02000 | $2.00 | Unlimited |
 | | **METADATA STORAGE** | | | | 
-| FE1 | Face Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
+| FS1 | Face Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
+| FMS | Face with Face Mask Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 | VE1 | Voice Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 | FE1 | Fingerprint Enrollment - Monthly Metadata Storage | $0.00010 | $0.10 | Unlimited | 
 
@@ -58,31 +59,31 @@ The price of each component is enumerated in the table below.
 
 | Component | SKU | 0-1M Units | 1M-10M Units | 10M-100M Units | >100M Units |
 | ----------- | :-----: | ----------- | ----------- | ------- | ------- |
-| **FACE RECOGNITION** | | SKU FR1 | SKU FR2 | SKU FR3 | SKU FR4 |
-| [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| LM | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | BD | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | IS | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Video Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | VS | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Eyeglasses Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | ED | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Eye Blink Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | EB | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| **FACE RECOGNITION** | | FR1 | FR2 | FR3 | FR4 |
+| [Face Landmark](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns)| FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Blur Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#blurry-image-detect-dnn) | FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Image Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Video Spoof Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#video-and-image-spoofing-detection-dnn-spoofing-prevention) | FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Eyeglasses Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Eye Blink Detection](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#active-liveness-dnn-spoofing-prevention) | FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Face Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Face+Mask Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | FM | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Face+Mask Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | FR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **FINGERPRINT RECOGNITION** | | | | | 
-| [Fingerprint Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns) | FG | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Fingerprint Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-with-mask--fingerprint-validation-dnns) | FV | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Fingerprint Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | FI | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Fingerprint Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns) | FP | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Fingerprint Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-with-mask--fingerprint-validation-dnns) | FP | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Fingerprint Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | FP | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **VOICE RECOGNITION** | | | | | 
-| [Voice Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) | VV | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Voice Data Augmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-data-augmentation) | VD | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Voice Fast Fourier Transformation (FFT)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) | FV | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Voice Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | VI | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Data Augmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-data-augmentation) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Fast Fourier Transformation (FFT)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Voice Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **GEOLOCATION** | | | | |
-| On-Device Geolocation | GEO | $0.012000 | $0.012000 | $0.012000 | $0.012000 |
+| On-Device Geolocation | GE | $0.012000 | $0.012000 | $0.012000 | $0.012000 |
 | **PHOTO ID VERIFICATION** | | | | | 
-| [Document Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-geometry-detection-dnns) | DG | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [Document Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-geometry-detection-dnns) | DL | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Document OCR API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#document-ocr-api) | OCR | $0.01200 | $0.01200 | $0.01200 | $0.01200 |
-| [Phone Lookup (in USA)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) | PL1 | $0.03000 | $0.03000 | $0.03000 | $0.03000 |
-| [Phone Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) (not in USA) | PL2 | $2.50000 | $2.50000 | $2.50000 | $2.50000 | 
+| [Phone Lookup (in USA)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) | PH1 | $0.03000 | $0.03000 | $0.03000 | $0.03000 |
+| [Phone Lookup](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#mobile-billing-record-lookup-api) (not in USA) | PH2 | $2.50000 | $2.50000 | $2.50000 | $2.50000 | 
 | [SMS Verification Message API](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#sms-verification-message-api) | SMS | $0.02000 | $0.02000 | $0.02000 | $0.02000 | 
 | **ENROLLMENT METADATA STORAGE** | | | | |
 | Face Metadata Storage | FS | $0.00100 | $0.00100 | $0.00100 | $0.00100 | 
