@@ -43,7 +43,7 @@ Figure 2: Evaluation of False Negative Identification Rate (FNIR, or Type II Err
 ![Figure 3: Evaluation of False Positive Identification Rate (FPIR, or Type I Error) by Subgroup Processing DIF-CELEB-1M](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20FPIR%202.png)
 Figure 3: Evaluation of False Positive Identification Rate (FPIR, or Type I Error) by Subgroup Processing DIF-CELEB-1M
 
-![Figure 4. Evaluation of Time Required to Process DIF-CELEB-1M ](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20Time%20Minutes%201.png)
+![Figure 4. Evaluation of Time Required to Process DIF-CELEB-1M ](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Study%20Time%20Minutes%202.png)
 Figure 4. Evaluation of Time Required to Process DIF-CELEB-1M 
 
 The Cloud Biometric API service required 8.08 minutes to enroll 2,049 classes using 20,490 images (42.33 images/sec), and 12.20 minutes to predict 440,832 probes (602.23 images/sec). In contrast, the Amazon Rekognition service required 547.7 minutes to enroll 2,049 classes using 20,490 images (0.62 images/sec), and 2777.1 minutes to predict 440,832 probes (2.65 images/sec). 
