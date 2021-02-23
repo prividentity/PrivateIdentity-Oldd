@@ -23,10 +23,7 @@ All remaining original images from each class (73,472) were augmented five times
 
 There are no user-selected thresholds in Cloud Biometric API. The Enroll and Predict Lambdas used the following three components:  Face Landmark, Blur Detection, and Face Identification.  Enroll and predict requests ran concurrently. 
 
-For Amazon Rekognition, we experimented setting the confidence level between 0.5 and 0.99. We found optimal results at the 0.98 confidence level. We created AWS Lambdas for Enroll and Predict using the following three Rekognition components:  DetectFaces, IndexFaces, and SearchFaces. Enroll and predict requests ran linearly. 
-
-We submitted a support request to AWS to increase allowed throughput (“unthrottle the service”) on February 8, 2021. Support personnel were helpful but unable to unthrottle the service before the study concluded on February 18, 2021.  We will update this posting as soon as the service is unthrottled.    
-
+For Amazon Rekognition, we experimented setting the confidence level between 0.5 and 0.99. We found optimal results at the 0.98 confidence level. We created AWS Lambdas for Enroll and Predict using the following three Rekognition components:  DetectFaces, IndexFaces, and SearchFaces. 
 
 ### `RESULTS`
 
