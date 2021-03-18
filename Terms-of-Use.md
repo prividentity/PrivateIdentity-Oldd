@@ -1,4 +1,4 @@
-Effective Date: July 1, 2020
+Effective Date: March 17, 2020
 
 Welcome to Private Identity LLC’s Website, private.id (together with its subdomains, Content, Marks and services, the “Site”). Please read the following Terms of Use carefully before using the Services (defined below) so that you are aware of your legal rights and obligations with respect to Private Identity LLC (“Private Identity”, “we”, “our” or “us”). By accessing or using the Services, you expressly acknowledge and agree that you are entering a legal agreement with us and understand and agree to comply with, and be legally bound by, these Terms of Use, together with the [Privacy Policy](https://github.com/openinfer/PrivateIdentity/wiki/Privacy-Policy) (the “Terms”). You hereby waive any applicable rights to require an original (non-electronic) signature or delivery or retention of non-electronic records, to the extent not prohibited under applicable law. If you do not agree to be bound by these Terms please do not access or use the Services.
 
