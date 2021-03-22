@@ -1,6 +1,7 @@
 ### Patent grants
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10419221B1/), 10,419,221 (17 SEPT 2019) 
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10721070B2/), 10,721,070 (21 JUL 2020) 
+* [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US10938852B1/), 10,938,852 (03 MAR 2021)
  
 ### Patent applications 
 * [Biometric authentication](https://patents.google.com/patent/US20200004939A1/), US16/022,101 (pending)
