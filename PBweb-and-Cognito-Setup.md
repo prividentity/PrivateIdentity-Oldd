@@ -15,7 +15,7 @@
 
 ### Step 1: Clone the repository
 
-    git clone git@github.com:openinfer/PrivateIdeneity.git
+    git clone git@github.com:openinfer/PrivateIdenity.git
 
 ## Cognito Deployment
 
