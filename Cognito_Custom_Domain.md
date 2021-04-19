@@ -5,9 +5,11 @@
 2. Click on Domain name
    [[images/UserPool1.png]]
 
-3. clik on Use your domain and enter Details
+3. click on Use your domain and enter Details
    
     [[images/UserPool2.png]]
+
+Note: Please note TargetID it will be use in remaining step.
 
 ## AWS Route53 
 Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. It is designed to give developers and businesses an extremely reliable and cost effective way to route end users to Internet applications by translating names like www.example.com into the numeric IP addresses like 192.0.2.1 that computers use to connect to each other.
@@ -26,11 +28,11 @@ Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS
 
 4. Choose Create Record Set
 
-    [[images/Route53-2.png]]
+    [[images/Route53-4.png]]
 
 5. Enter the Alias you got from Cognito and Click on create
    
-    [[images/Route53-3.png]] 
+    [[images/Route53-5.png]] 
 
 
 
