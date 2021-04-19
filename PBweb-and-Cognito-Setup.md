@@ -57,7 +57,6 @@ Please change the value of variables mentioned inside variables.sh accordingly.
 
      kubectl create secret generic privateid-domain --from-file=certificate.pem=/path/to/certificate.pem --from-file=privateKey.pem=/path/to/privateKey.pem
 
-     kubectl create secret generic backend-secret --from-literal=API_KEY=<VALUE>
 
 ### Step 5: Deploy PBWeb on Cluster
     cd $HOME/PrivateIdentity/pbweb
