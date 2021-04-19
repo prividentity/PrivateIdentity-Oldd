@@ -78,10 +78,10 @@ Please follow the below steps to add certs into your cluster for SSL termination
 
 ### Step 7: Setup Ingress service to access you PBWeb over Internet.
 
-    1. cd $Home/PrivateIdentity/pbweb
-    2. Edit ingress.yml change host to your domain which you want your application.
-    3. After changes run `kubectl apply -f ingress.yml`
-    4. Run `kubectl get ing` and copy the address that you will be used while creating route.
+1. cd $Home/PrivateIdentity/pbweb
+2. Edit ingress.yml change host to your domain which you want your application.
+3. After changes run `kubectl apply -f ingress.yml`
+4. Run `kubectl get ing` and copy the address that you will be used while creating route.
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/PBweb_Route_Setup
 
 
