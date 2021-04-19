@@ -9,7 +9,7 @@
     aws configure 
     AWS Access Key ID [None]: XXXXXXXXXXXXX
     AWS Secret Access Key [None]: XXXXXXXXXXXXXXXX
-    Default region name [None]: us-east-2
+    Default region name [None]: us-east-1
     Default output format [None]:
 **Note:** Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with Region us-east-2 and please make sure your AWS Credentials have Administrator Rights
 
