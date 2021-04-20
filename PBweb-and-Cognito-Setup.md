@@ -66,7 +66,7 @@ Please follow the below steps to add certs into your cluster for SSL termination
 1. `cd $Home/Verified-Identity/pbweb`
 2. Edit ingress.yml change host to your domain which you want your application.
 3. After changes run `kubectl apply -f ingress.yml`
-4. Wait for 1 Minute and then Run `kubectl get ing` and copy the address that you will be used while creating route.
+4. Wait for 1 Minute and then Run `kubectl get ing` and copy the address that you will use while creating route.
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/PBweb_Route_Setup
 
 
