@@ -13,31 +13,13 @@
     Default output format [None]:
 **Note:** Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with Region us-east-1 and please make sure your AWS Credentials have Administrator Rights
 
-### Step 1: Clone the repository
+### Clone the repository
 
     git clone git@github.com:openinfer/Verified-Identity.git
 
-## Cognito Deployment
-
-### Step 2: Change Environment Variables
-    cd $Home/Verified-Identity/cognito/
-    vi variables.sh
-
-Please change the value of variables mentioned inside variables.sh accordingly.
-   Example Export CognitoDomain=privateid
-
-### Step 3: Setup Cognito
-     . ./setup.sh
-
-### To update your already deployed Cognito 
-    . ./update.sh
-
-### To Setup Custom domain for your Cognito User Pool Please follow below URL.
- https://github.com/openinfer/PrivateIdentity/wiki/Cognito_Custom_Domain
-
 ## PBWeb Deployment
 
-### If you Already have kubernetes cluster please skip Step 1 to 2
+### If you Already have kubernetes cluster please skip Step 1 and 2
 
 ### Step 1: Setup variables for kubernetes Cluster
 
@@ -88,6 +70,23 @@ Please follow the below steps to add certs into your cluster for SSL termination
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/PBweb_Route_Setup
 
 
+## Cognito Deployment
+
+### Step 1: Change Environment Variables
+    cd $Home/Verified-Identity/cognito/
+    vi variables.sh
+
+Please change the value of variables mentioned inside variables.sh accordingly.
+   Example Export CognitoDomain=privateid
+
+### Step 2: Setup Cognito
+     . ./setup.sh
+
+### To update your already deployed Cognito 
+    . ./update.sh
+
+### To Setup Custom domain for your Cognito User Pool Please follow below URL.
+ https://github.com/openinfer/PrivateIdentity/wiki/Cognito_Custom_Domain
     
 
 
