@@ -47,7 +47,11 @@ Please change the value of variables mentioned inside variables.sh accordingly.
     cd $HOME/Verified-Identity/pbweb
     . ./deploy.sh
 
-### Step 6: Add SSL Certificates
+### Step 6: Setup log on Cloudwatch
+    cd $HOME/Verified-Identity/pbweb
+    . ./logs-setup.sh
+
+### Step 7: Add SSL Certificates
 
 #### Add SSL certs for domain 
 
@@ -61,7 +65,7 @@ Please follow the below steps to add certs into your cluster for SSL termination
 
     e.g kubectl create secret tls private.id --key private.id.key --cert private.id.crt
 
-### Step 7: Setup Ingress service to access you PBWeb over Internet.
+### Step 8: Setup Ingress service to access you PBWeb over Internet.
 
 1. `cd $Home/Verified-Identity/pbweb`
 2. Edit ingress.yml change host to your domain which you want your application.
