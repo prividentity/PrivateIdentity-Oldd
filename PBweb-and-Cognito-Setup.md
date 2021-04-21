@@ -26,6 +26,8 @@
      cd $Home/Verified-Identity/eks/
      vi variables.sh
 
+We are using variables.sh in order to take input from users and passing that values to cloudformation, 
+script to deploy resources in aws.
 Please change the value of variables mentioned inside variables.sh accordingly.
    Example Export CLUSTER_NAME=demo
 
