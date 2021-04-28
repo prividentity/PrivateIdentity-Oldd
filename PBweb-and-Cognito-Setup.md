@@ -1,3 +1,6 @@
+[![logo-name](https://www.private.id/static_home/images/Private-Identity-Logo-1.png)](https://www.private.id/)
+
+
 ## Prerequisite
 
 
@@ -75,6 +78,14 @@ Please follow the below steps to add certs into your cluster for SSL termination
 4. Wait for 1 Minute and then Run `kubectl get ing` and copy the address that you will use while creating route.
 To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/PBweb_Route_Setup
 
+## Generate SAML metadata files
+
+### Step 1: open pbweb URL in browser
+     https://<yourPBWebdomain>/generateMetadata.html
+    
+[[images/generate-saml.png]]
+
+### Step 2: put  yourPBWebdomain and click on generate metadata
 
 ## Cognito Deployment
 
