@@ -85,7 +85,8 @@ To setup Route 53 follow https://github.com/openinfer/PrivateIdentity/wiki/PBweb
     
 [[images/generate-saml.png]]
 
-### Step 2: put  yourPBWebdomain and click on generate metadata
+### Step 2: generate metadata for Cognito user pool
+     put <yourpbwebdomain> in field and click on generate metadata
 
 ## Cognito Deployment
 
@@ -98,9 +99,6 @@ Please change the value of variables mentioned inside variables.sh accordingly.
 
 ### Step 2: Setup Cognito
      . ./setup.sh
-
-### To update your already deployed Cognito 
-    . ./update.sh
 
 ### To Setup Custom domain for your Cognito User Pool Please follow below URL.
  https://github.com/openinfer/PrivateIdentity/wiki/Cognito_Custom_Domain
