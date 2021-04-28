@@ -53,7 +53,7 @@ Please change the value of variables mentioned inside variables.sh accordingly.
     cd $HOME/Verified-Identity/pbweb
     . ./logs-setup.sh
 
-### Step 7: Add SSL Certificates
+### Step 7: Add SSL Certificates in Ingress
 
 #### Add SSL certs for domain 
 
