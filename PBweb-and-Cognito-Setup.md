@@ -45,7 +45,7 @@ Please change the value of variables mentioned inside variables.sh accordingly.
 ### Step 4. Setup Kubernetes Secrets
      1. If you have purchased ssl for your domain you already have secrets.
 
-     kubectl create secret generic domain --from-file=certificate.pem=/path/to/certificate.pem --from-file=privateKey.pem=/path/to/privateKey.pem
+     kubectl create secret generic domain-certs --from-file=certificate.pem=/path/to/certificate.pem --from-file=privateKey.pem=/path/to/privateKey.pem
 
 
 ### Step 5: Deploy PBWeb on Cluster
