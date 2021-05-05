@@ -108,9 +108,7 @@ Please change the value of variables mentioned inside variables.sh accordingly.
      
      kubectl create secret generic backend-secret --from-literal=app-client-id=$AppClientSecret --from-literal=cognito-domain=$CognitoDomain.auth.$REGION.amazoncognito.com --dry-run=client -o yaml | kubectl apply -f -
      
-     kubectl get pods
-     
-     kubectl delete pod <pod-name>
+     kubectl rollout restart deployment pb-web-app
 
 ### To Setup Custom domain for your Cognito User Pool Please follow below URL.
  https://github.com/openinfer/PrivateIdentity/wiki/Cognito_Custom_Domain
