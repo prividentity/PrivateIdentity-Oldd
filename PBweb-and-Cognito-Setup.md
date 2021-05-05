@@ -110,7 +110,7 @@ Please change the value of variables mentioned inside variables.sh accordingly.
      
      kubectl rollout restart deployment pb-web-app
 
-### To Setup Custom domain for your Cognito User Pool Please follow below URL.
+### If you want To Setup Custom domain for your Cognito User Pool Please follow below URL.
  https://github.com/openinfer/PrivateIdentity/wiki/Cognito_Custom_Domain
     
 
