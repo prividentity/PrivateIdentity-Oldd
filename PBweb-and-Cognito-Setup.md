@@ -100,6 +100,18 @@ Please change the value of variables mentioned inside variables.sh accordingly.
 ### Step 2: Setup Cognito
      . ./setup.sh
 
+### Step 3: Adding AppClient Secrets into PBweb
+     
+     . ./variables.sh
+
+     AppClientSecret=$(aws cloudformation --region $REGION describe-stacks --stack-name $STACK_NAME-cognito-stack  --query "Stacks[0].Outputs[2].OutputValue" | sed 's/"//g')
+     
+     kubectl create secret generic backend-secret --from-literal=app-client-id=$AppClientSecret --from-literal=cognito-domain=$CognitoDomain.auth.$REGION.amazoncognito.com --dry-run=client -o yaml | kubectl apply -f -
+     
+     kubectl get pods
+     
+     kubectl delete pod <pod-name>
+
 ### To Setup Custom domain for your Cognito User Pool Please follow below URL.
  https://github.com/openinfer/PrivateIdentity/wiki/Cognito_Custom_Domain
     
