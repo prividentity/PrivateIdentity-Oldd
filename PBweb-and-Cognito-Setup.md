@@ -106,7 +106,9 @@ Please change the value of variables mentioned inside variables.sh accordingly.
 
      AppClientSecret=$(aws cloudformation --region $REGION describe-stacks --stack-name $STACK_NAME-cognito-stack  --query "Stacks[0].Outputs[2].OutputValue" | sed 's/"//g')
      
-     kubectl create secret generic backend-secret --from-literal=app-client-id=$AppClientSecret --from-literal=cognito-domain=$CognitoDomain.auth.$REGION.amazoncognito.com --dry-run=client -o yaml | kubectl apply -f -
+     UserPoolID=$(aws cloudformation --region $REGION describe-stacks --stack-name $STACK_NAME-cognito-stack  --query "Stacks[0].Outputs[0].OutputValue" | sed 's/"//g')
+     
+     kubectl create secret generic backend-secret --from-literal=app-client-id=$AppClientSecret --from-literal=user-pool-id=$UserPoolID --from-literal=cognito-domain=$CognitoDomain.auth.$REGION.amazoncognito.com --dry-run=client -o yaml | kubectl apply -f -
      
      kubectl rollout restart deployment pb-web-app
 
