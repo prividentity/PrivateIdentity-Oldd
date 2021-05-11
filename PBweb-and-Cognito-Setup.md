@@ -16,7 +16,7 @@
     Default output format [None]:
 **Note:** Setup awscli on your system with credentials using ACCESS-KEY-ID and SECRET-ACCESS-KEY with Region us-east-1 and please make sure your AWS Credentials have Administrator Rights
 
-### Clone the repository
+### Clone repository
 
     git clone git@github.com:openinfer/Verified-Identity.git
 
