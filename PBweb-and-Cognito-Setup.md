@@ -100,7 +100,7 @@ Please change the value of variables mentioned inside variables.sh accordingly.
 ### Step 2: Setup Cognito
      . ./setup.sh
 
-### Step 3: Adding AppClient Secrets into PBweb
+### Step 3: Adding AppClient Secrets into PBWeb
      
      . ./variables.sh
 
