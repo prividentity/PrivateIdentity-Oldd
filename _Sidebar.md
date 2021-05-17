@@ -29,7 +29,8 @@
 * [Okta® Integration Tutorial](https://github.com/openinfer/PrivateIdentity/wiki/Okta-IdP-Factor-Auth-Integration)
 * [Google G-Suite Integration](https://github.com/openinfer/PrivateIdentity/wiki/GSuite-Integration)
 
-[**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)  
+[**`Technical Overview`**](https://github.com/openinfer/PrivateIdentity/wiki/Technical-Overview)
+* [Location Sources](https://github.com/openinfer/PrivateIdentity/wiki/Location-Sources)
 
 **`Evaluation Metrics`**
 * [**Diversity: Rekognition Eval 2/2021**](https://github.com/openinfer/PrivateIdentity/wiki/Diversity-in-Faces-Evaluation---Amazon-Rekognition-vs-Cloud-Biometric-API---February-2021)
