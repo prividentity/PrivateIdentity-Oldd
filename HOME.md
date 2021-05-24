@@ -1,4 +1,5 @@
-[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBAPI%20Logo%202%20Long%20v2.png)](https://www.private.id/)
+[//]: # [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBAPI%20Logo%202%20Long%20v2.png)](https://www.private.id/)
+[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/PrivateID%20Logo%20Wide.png)](https://www.private.id/)
 
 ## VIDEO INTRODUCTION
 [![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBAPI%20Intro%20Video%20Graphic.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric API")
