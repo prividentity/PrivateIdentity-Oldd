@@ -1,4 +1,3 @@
-[//]: # ([![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBAPI%20Logo%202%20Long%20v2.png)](https://www.private.id/))
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/PrivateID%20Logo%20Wide.png)](https://www.private.id/)
 
 ## VIDEO INTRODUCTION
