@@ -5,6 +5,10 @@
 # JavaScript API Documentation 
 The JavaScript API is a lightweight javascript library that will send encrypted payloads to a Private Identity server (SaaS or PaaS) for enrollment and prediction. A Web page is also hosted at the same URL that provides a sandbox to exercise Enroll and Predict by selecting the images from your browser. 
 
+## Downloading the Library
+
+You can download this library and upload to your domain. The library is available through [this link](http://private.id/MFA-Microapp.zip). Once we unzip this file, we can find a folder called `predict-enroll-library`. This tool consists of one folder, and two files. The `models` folder has all the necessary machine learning models. You can also find `module.js` file, which is responsible for exporting the API methods to the browser. Finally, the `index.html` file has an example of using the models and the `module.js` file.
+
 ## Live Demo
 
 Launch the below-mentioned URL in your browser and replace XXXX with apiKey value provided by Private identity.
