@@ -1,7 +1,7 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/PrivateID%20Logo%20Wide.png)](https://www.private.id/)
 
 ## VIDEO INTRODUCTION
-[![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/CBAPI%20Intro%20Video%20Graphic.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric API")
+[![IMAGE ALT TEXT](https://github.com/openinfer/PrivateIdentity/blob/master/images/PrivateID-Introduction-Video.png)](https://youtu.be/G33UR87I81E "Quick Introduction to Cloud Biometric API")
 
 We threw the old algorithms into the trash and started fresh with a clean-sheet design. Cloud Biometric API took three years and nineteen patents to build. This all-new AI/ML/Fully Homomorphic Encryption (FHE) recognition algorithm features 1:n identity, absolute accuracy, 300ms response time, 10K API calls/second, unlimited users and full privacy. Now, for the first time, Private Identity® is no longer tied to a device, username, password, token or shared secret.
 
