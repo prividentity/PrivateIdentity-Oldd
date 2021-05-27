@@ -71,7 +71,7 @@ The price of each component is enumerated in the table below.
 | [Fingerprint Geometry](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-wmask-and-fingerprint-geometry-detection-dnns) | FP | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Fingerprint Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-face-with-mask--fingerprint-validation-dnns) | FP | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Fingerprint Identification](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#face-facemask-and-fingerprint-embedding-dnns) | FP | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| **VOICE RECOGNITION** | | VR1 | VR2 | VR3 | VR4 | 
+| **VOICE RECOGNITION** | |  |  |  |  | 
 | [Voice Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Data Augmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-data-augmentation) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Fast Fourier Transformation (FFT)](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-pulse-code-modulation-pcm-transformation) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
