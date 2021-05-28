@@ -19,7 +19,7 @@ Copy and save Access key ID and Secret access key somewhere secure. Note: This i
 
 [[images/lambda2.png]]
 
-2. connect to the terminal
+2.  Connect to the terminal
 
 3.  Set up IAM user credentials by
   
