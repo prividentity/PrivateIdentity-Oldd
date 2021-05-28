@@ -30,23 +30,23 @@ Copy and save Access key ID and Secret access key somewhere secure. Note: This i
 
 Enter the access and secret key from step 1 and keep region and output format empty.
 
-4. Clone Github repository
-
-`git clone git@github.com:openinfer/amzn_connect_integration.git`
-
 4. Create a private repository in ECR by
 
 `aws --region us-east-1 ecr create-repository --repository-name connect-lambda `
 
-5.  Navigate into amzn_connect_integration directory by
+5. Clone Github repository
+
+`git clone git@github.com:openinfer/amzn_connect_integration.git`
+
+6.  Navigate into amzn_connect_integration directory by
 
 `cd /$home/amzn_connect_integration`
 
-6. Build the Lambda function by
+7. Build the Lambda function by
 
 `sam build`
 
-7. Deploy the Connect Lambda Function by
+8. Deploy the Connect Lambda Function by
 
 `sam deploy --guided`
 
