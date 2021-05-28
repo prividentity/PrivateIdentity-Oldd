@@ -29,7 +29,7 @@ Enter the access and secret key from step 1 and keep region and output format em
 
 4. Create a private repository in ECR by
 
-`aws --region us-east-1 ecr create-repository --repository-name puppeteer-docker --image-scanning-configuration scanOnPush=true`
+`aws --region us-east-1 ecr create-repository --repository-name connect-lambda `
 
 5.  Navigate into Connect-lambda directory by
 
