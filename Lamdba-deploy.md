@@ -21,9 +21,11 @@ Copy and save Access key ID and Secret access key somewhere secure. Note: This i
 
 2.  Connect to the terminal
 
+[[images/teminal.png]]
+
 3.  Set up IAM user credentials by
   
- ```aws configure```
+`aws configure`
 
 Enter the access and secret key from step 1 and keep region and output format empty.
 
