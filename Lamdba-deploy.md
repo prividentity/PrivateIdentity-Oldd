@@ -21,7 +21,7 @@ Copy and save Access key ID and Secret access key somewhere secure. Note: This i
 
 2.  Connect to the terminal
 
-[[images/teminal.png]]
+[[images/terminal.png]]
 
 3.  Set up IAM user credentials by
   
