@@ -2,9 +2,11 @@
 
 ## Steps to Deploy Lambda function for AWS Connect ##
 
-1. We need to create an IAM user we can use for deploying to AWS Lambda. Go to https://console.aws.amazon.com/iam/home, go to 'Users' and click on 'Add user'.
+1. We need to create an IAM user we can use for deploying to AWS Lambda. Go to https://console.aws.amazon.com/iam/home, go to 'Users' and click on 'Add user'.<br /><br />
 Give it a user name, let's say 'Lambda-Deploy-User' and check the box for 'Programmatic access' and click on Next.
+
 [[images/lambda1.png]]
+
 Under 'Set permissions' select 'Attach existing policies directly', search and select the following policies:
   * AWSLambda_FullAccess
   * IAMFullAccess
@@ -14,6 +16,7 @@ Under 'Set permissions' select 'Attach existing policies directly', search and s
 
 Create user by click on 'Next', 'Review' and 'Create user'.
 Copy and save Access key ID and Secret access key somewhere secure. Note: This is the only time you see the secret key.
+
 [[images/lambda2.png]]
 
 2.  Set up IAM user credentials by
