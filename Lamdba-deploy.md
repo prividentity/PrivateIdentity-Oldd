@@ -14,3 +14,24 @@ Under 'Set permissions' select 'Attach existing policies directly', search and s
 
 Create user by click on 'Next', 'Review' and 'Create user'.
 Copy and save Access key ID and Secret access key somewhere secure. Note: This is the only time you see the secret key.
+[[images/lambda2.png]]
+
+2.  Set up IAM user credentials by
+  
+ ```aws configure```
+
+Enter the access and secret key from step 1 and keep region and output format empty.
+
+3.  Navigate into Connect-lambda directory by
+
+`cd /$home/connect-lambda`
+
+4. Build the Lambda function by
+
+`sam build`
+
+5. Deploy the Connect Lambda Function by
+
+`sam deploy --guided`
+
+Enter a stack name you like, enter the AWS region your function should resist and hit 'y' when asked. SAM config remain at defaults.
