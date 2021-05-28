@@ -19,21 +19,23 @@ Copy and save Access key ID and Secret access key somewhere secure. Note: This i
 
 [[images/lambda2.png]]
 
-2.  Set up IAM user credentials by
+2. connect to the terminal
+
+3.  Set up IAM user credentials by
   
  ```aws configure```
 
 Enter the access and secret key from step 1 and keep region and output format empty.
 
-3.  Navigate into Connect-lambda directory by
+4.  Navigate into Connect-lambda directory by
 
 `cd /$home/connect-lambda`
 
-4. Build the Lambda function by
+5. Build the Lambda function by
 
 `sam build`
 
-5. Deploy the Connect Lambda Function by
+6. Deploy the Connect Lambda Function by
 
 `sam deploy --guided`
 
