@@ -31,15 +31,15 @@ Enter the access and secret key from step 1 and keep region and output format em
 
 4. Clone Github repository
 
-`git clone git@github.com:openinfer/connect-lambda.git`
+`git clone git@github.com:openinfer/amzn_connect_integration.git`
 
 4. Create a private repository in ECR by
 
 `aws --region us-east-1 ecr create-repository --repository-name connect-lambda `
 
-5.  Navigate into Connect-lambda directory by
+5.  Navigate into amzn_connect_integration directory by
 
-`cd /$home/connect-lambda`
+`cd /$home/amzn_connect_integration`
 
 6. Build the Lambda function by
 
@@ -49,4 +49,4 @@ Enter the access and secret key from step 1 and keep region and output format em
 
 `sam deploy --guided`
 
-Enter a stack name you like, enter the AWS region your function should resist and hit 'y' when asked. SAM config remain at defaults.
+Enter a stack name you like, enter the AWS region, image Repository your function should resist and hit 'y' when asked. SAM config remain at defaults.
