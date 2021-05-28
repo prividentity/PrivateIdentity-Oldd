@@ -29,6 +29,10 @@ Copy and save Access key ID and Secret access key somewhere secure. Note: This i
 
 Enter the access and secret key from step 1 and keep region and output format empty.
 
+4. Clone Github repository
+
+`git clone git@github.com:openinfer/connect-lambda.git`
+
 4. Create a private repository in ECR by
 
 `aws --region us-east-1 ecr create-repository --repository-name connect-lambda `
