@@ -27,15 +27,19 @@ Copy and save Access key ID and Secret access key somewhere secure. Note: This i
 
 Enter the access and secret key from step 1 and keep region and output format empty.
 
-4.  Navigate into Connect-lambda directory by
+4. Create a private repository in ECR by
+
+`aws --region us-east-1 ecr create-repository --repository-name puppeteer-docker --image-scanning-configuration scanOnPush=true`
+
+5.  Navigate into Connect-lambda directory by
 
 `cd /$home/connect-lambda`
 
-5. Build the Lambda function by
+6. Build the Lambda function by
 
 `sam build`
 
-6. Deploy the Connect Lambda Function by
+7. Deploy the Connect Lambda Function by
 
 `sam deploy --guided`
 
