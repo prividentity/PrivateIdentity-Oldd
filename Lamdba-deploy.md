@@ -13,6 +13,7 @@ Under 'Set permissions' select 'Attach existing policies directly', search and s
   * AWSCloudFormationFullAccess
   * AmazonS3FullAccess
   * AmazonEC2ContainerRegistryFullAccess
+  * AmazonAPIGatewayAdministrator
 
 Create user by click on 'Next', 'Review' and 'Create user'.
 Copy and save Access key ID and Secret access key somewhere secure. Note: This is the only time you see the secret key.
