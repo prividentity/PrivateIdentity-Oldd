@@ -1,7 +1,7 @@
-### Cloud Pay as you Go Pricing
+### Cloud Pay-as-You-Go Pricing
 Private ID® uses state-of-the-art voice recognition algorithms to detect and recognize human voice biometrics in audio. Capabilities include local models and APIs that validate voice biometrics (Validation DNNs), augment voice, fully homomorphically encrypt the voice biometric (Embedding DNNs) and encrypted match and search DNNs that run on AWS SageMaker® to return identity. 
 
-Requests to the Private ID API are billed by Product SKU under a standard Cloud pay-as-you-go pricing model. One or more Product SKUs are triggered for each request. 
+Requests to the Private ID API are billed by Product SKU under a standard Cloud Pay-as-You-Go pricing model. One or more Product SKUs are triggered for each request. 
 
 #### There are two types of fees.
 **Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply the Validation DNN and Embedding DNN (2 models) to the same audio, you are billed for two billable units. 
