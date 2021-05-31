@@ -1,5 +1,5 @@
 ### Cloud Pay-as-You-Go Pricing
-Private ID® uses state-of-the-art voice recognition algorithms to detect and recognize human voice biometrics in audio. Capabilities include local models and APIs that validate voice biometrics (Validation DNNs), augment voice, fully homomorphically encrypt the voice biometric (Embedding DNNs) and encrypted match and search DNNs that run on AWS SageMaker® to return identity. 
+Private ID® uses state-of-the-art voice recognition algorithms to detect and recognize human voice biometrics in audio. Capabilities include (1) local models and APIs that validate voice biometrics (Validation DNNs), augment voice, fully homomorphically encrypt the voice biometric (Embedding DNNs), and (2) DNNs hosted on AWS SageMaker® that perform one-to-many (1:n) speaker identification. 
 
 Requests to the Private ID API are billed by Product SKU under a standard Cloud Pay-as-You-Go pricing model. One or more Product SKUs are triggered for each request. 
 
@@ -43,9 +43,9 @@ The price of each component is enumerated in the table below.
 | [Voice Validation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-validation-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Augmentation](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-data-augmentation) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | [Voice Embedding DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
-| [Voice Encrypted Match DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
+| [1:n Speaker Identification DNN](https://github.com/openinfer/PrivateIdentity/wiki/Biometric-Ingestion-and-Helper-DNNs#voice-embedding-dnn) | VR | $0.00100 | $0.00080 | $0.00600 | $0.00400 |
 | **ENROLLMENT METADATA STORAGE** | | | | |
-| FHE Metadata Storage | ST | $0.00100 | $0.00100 | $0.00100 | $0.00100 |
+| FHE Metadata Storage per Month | ST | $0.00100 | $0.00100 | $0.00100 | $0.00100 |
 
 ### Example 1
 If your application made the following requests in a one-month period:
@@ -53,11 +53,11 @@ If your application made the following requests in a one-month period:
   * Voice Validation DNN 
   * Voice Augmentation 
   * Voice Embedding DNN 
-  * Voice Encrypted Match DNN 
+  * 1:n Speaker Identification DNN 
 
-Your cost would be $2.80, or $0.00400/enrollment. This is calculated by multiplying 700 enrolled persons by four Tier_1 units, or (700 enrollments x 4 billable units x $0.00100).
+Your cost would be $2.80, or $0.004/enrollment. This is calculated by multiplying 700 enrolled persons by four Tier 1 billable units, or (700 enrollments x 4 billable units x $0.00100).
 
 ### Example 2
-If your application enrolled 1000 voices on the 15th day of a month with 30 days, the FHE Metadata Storage cost for those 1000 voice enrollments in a one-month period would be $0.50, or $.0005/enrollment/month. The cost is calculated by multiplying (15 days x 1000 voice enrollments x $0.001/month), and then dividing the product by 30 days. 
+If your application enrolled 1000 voices on the 15th day of a month with 30 days, the FHE Metadata Storage cost for those 1000 voice enrollments in a one-month period would be $0.50, or $.0005/enrollment/month. The cost is calculated by multiplying 15 days x 1000 voice enrollments x 1 billable unit, and then dividing the product by 30 days (15 days x 1000 voice enrollments x $0.001/month/30 days).
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
