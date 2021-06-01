@@ -25,6 +25,9 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 Each model, API, or service request counts as one billable unit. 
 Each Product SKU includes 1000 billable units.
 
+### Get Started for Free 
+You can get started with Private ID at no cost. You are allowed to analyze 5,000 voices per month (5,000 billable units/month) for the first six months with no charge.
+
 ### Product SKU Usage Counter Details 
 * Each Product SKU contains 1000 billable units.
 * SKU counters reset to zero on the first day of each calendar month at 12 AM PST (UTC-8). 
