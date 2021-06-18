@@ -4,6 +4,7 @@
 * [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US10938852B1/), 10,938,852 (03 MAR 2021)
  
 ### Patent applications 
+* [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US20210141896A1/), US17/155,890 (22 JAN 2021)
 * [Biometric authentication](https://patents.google.com/patent/US20200004939A1/), US16/022,101 (pending)
 * [Biometric authentication](https://patents.google.com/patent/WO2020006252A1/), PCT/US2019/039537 (pending)
 * [Systems and methods for biometric processing with liveness](https://patents.google.com/patent/US20190278895A1/), US16/218,139 (pending)
