@@ -20,5 +20,5 @@
 * Additional patents pending 
 
 ### Registered trademarks
-* [Private Identity](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4807:i9ynhy.2.1) USPTO Serial #88639250
-* [Private ID](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4805:ly7iqp.2.1) USPTO Serial #88639499
+* [Private Identity](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4807:i9ynhy.2.1) USPTO Reg. No. 6,449,480
+* [Private ID](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4805:ly7iqp.2.1) USPTO Reg. No. 6,449,481
