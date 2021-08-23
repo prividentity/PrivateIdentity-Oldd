@@ -1,3 +1,7 @@
+### Registered trademarks
+* Private Identity - USPTO Reg. No. 6,449,480
+* Private ID - USPTO Reg. No. 6,449,481
+
 ### Patent grants
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10419221B1/), 10,419,221 (17 SEPT 2019) 
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10721070B2/), 10,721,070 (21 JUL 2020) 
@@ -18,7 +22,3 @@
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/WO2019173562A1/), PCT/US2019/021100 (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20190279047A1/), US15/914,562 (pending)
 * Additional patents pending 
-
-### Registered trademarks
-* [Private Identity](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4807:i9ynhy.2.1) USPTO Reg. No. 6,449,480
-* [Private ID](http://tmsearch.uspto.gov/bin/showfield?f=doc&state=4805:ly7iqp.2.1) USPTO Reg. No. 6,449,481
