@@ -18,7 +18,7 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | PRIV02 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
 | PRIV03 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
 | PRIV04 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
-| PRIV05 | Anonymized Metadata Storage | $0.00100 | $0.10 | |
+| PRIV05 | Anonymized Metadata Storage | $0.00100 | $1.00 | |
 | PRIV10 | Remote Onboarding/KYC/AML | $0.15 | $150.00 | Unlimited |
 
 Each model, API, or service request counts as one billable unit. 
