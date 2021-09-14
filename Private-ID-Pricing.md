@@ -6,7 +6,7 @@ Requests for Private ID services are billed by Product SKU under a standard pay-
 #### Billable Units 
 **Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for three billable units. 
 
-**Metadata Storage**: Private ID stores a repository of anonymized metadata during enrollment against which Private ID searches for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 faces for a few hours and then deleted them each night, the customer would still be billed for 1,000 enrolled face metadata each day. 
+**Metadata Storage**: Private ID stores a repository of anonymized metadata during enrollment against which Private ID searches for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 subjects for a few hours and then deleted them each night, the customer would still be billed for 1,000 metadata storage each day. 
 
 ### Pricing Table - Product SKUs
 
@@ -18,7 +18,7 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | PRIV02 | Tier 2 (1M-10M requests/month) | $0.00080 | $0.80 | Unlimited |
 | PRIV03 | Tier 3 (10M - 100M requests/month) | $0.00060 | $0.60 | Unlimited | 
 | PRIV04 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
-| PRIV05 | Anonymized Metadata Storage | $0.00001 | $0.01 | |
+| PRIV05 | Anonymized Metadata Storage | $0.00100 | $0.10 | |
 | PRIV10 | Remote Onboarding/KYC/AML | $0.15 | $150.00 | Unlimited |
 
 Each model, API, or service request counts as one billable unit. 
@@ -56,6 +56,6 @@ If your application made the following requests in a one-month period:
 Your cost would be $25.00, or $0.00500/prediction. This is calculated by multiplying 5000 persons times 5 Tier 1 units, or (5000 Authentications x 5 Requests x $0.00100).
 
 ### Example 3
-If your application enrolled 1000 faces on the 15th day of a month containing 30 days, the Anonymized Metadata Storage cost for those 1000 face enrollments in a one-month period would be $0.05, or $0.00005/enrollment. The cost is calculated by multiplying (15 days x 1000 face enrollments x $0.00010/month), and then dividing the product by 30 days. 
+If your application enrolled 1000 subjects on the 15th day of a month containing 30 days, the Anonymized Metadata Storage cost for those 1000 enrollments in a one-month period would be $0.50, or $0.0005/enrollment. The cost is calculated by multiplying (15 days x 1000 face enrollments x $0.00100/month), and then dividing the product by 30 days. 
 
 Invoices are rounded up to the next penny once at the end of each billing cycle.
