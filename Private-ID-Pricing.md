@@ -1,7 +1,9 @@
 ### Pay as you go 
 Private ID® uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
-Requests for Private ID services are billed by Product SKU under a standard pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. Invalid biometric samples do not incur fees (e.g. images of an empty room, audios containing silence, spoofed face images).
+Requests for Private ID services are billed by Product SKU under a standard pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. 
+
+Invalid requests do not incur fees. Examples of invalid requests include images of an empty room, audios containing silence and spoofed face images.
 
 ### Billable Units 
 **Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for three billable units. 
