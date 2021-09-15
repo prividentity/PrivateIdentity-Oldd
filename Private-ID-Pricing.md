@@ -1,9 +1,9 @@
 ### Pay as you go 
 Private ID® uses state-of-the-art face, face+face mask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
-Requests for Private ID services are billed by Product SKU under a standard pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. Only valid biometric samples incur costs. Invalid biometrics (e.g. an image of an empty chair, an audio containing silence, a spoofed face image) do not incur cost.
+Requests for Private ID services are billed by Product SKU under a standard pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. Invalid biometric samples do not incur fees (e.g. images of an empty room, audios containing silence, spoofed face images).
 
-#### Billable Units 
+### Billable Units 
 **Billable Units**: Each component, model, API or service applied to a biometric is a billable unit. Using multiple components, models, APIs or services against a single biometric image or audio counts as processing multiple billable units. For example, if you apply Face Landmarks, Blur Detection and Face Identification (3 models) to the same image, you are billed for three billable units. 
 
 **Metadata Storage**: Private ID stores a repository of anonymized metadata during enrollment against which Private ID searches for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 subjects for a few hours and then deleted them each night, the customer would still be billed for 1,000 metadata storage each day. 
@@ -20,6 +20,8 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | PRIV04 | Tier 4 ( >100M requests/month) | $0.00040 | $0.40 | Unlimited |
 | PRIV05 | Anonymized Metadata Storage | $0.00100 | $1.00 | |
 | PRIV10 | Remote Onboarding/KYC/AML | $0.15 | $150.00 | Unlimited |
+| PRIV20 | Enhanced Profile Merge | $0.20 | $200.00 | Unlimited |
+| PRIV21 | Augmented Profile Merge | $0.35 | $350.00 | Unlimited |
 
 Each model, API, or service request counts as one billable unit. 
 Each Product SKU includes 1000 billable units.
