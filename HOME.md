@@ -10,13 +10,13 @@ In addition to privacy, FHE provides extreme accuracy, speed, security and effic
 Thank you for taking the time to visit our site. We look forward to meeting you and supporting your cybersecurity mission and goals.
 
 ## `LEADERSHIP`
-Mike Pollard, CEO 
+Mike Pollard, CEO <br>
 Mike is an entrepreneur experienced in high-growth technology ventures. Prior to leading Private Identity, Mike served as VP and GM at Thomson Reuters, Executive VP and co-Founder of Discovery Logic, CEO of thinkXML and CEO of Science Management Corp. Mike has authored papers and patents in biometrics, AI/ML, big data and cyber security.
 
-Scott Streit, CTO 
+Scott Streit, CTO <br>
 Scott is a data scientist and inventor focused on cryptography, biometrics, AI/ML and cyber security. In addition to leading technology at Private Identity, Scott also serves as Chair of Biometric Security for IEEE (since 2013) and chair of the IEEE P2410 Standard for Biometric Privacy Working Group. Prior to co-founding Private Identity, Scott served as CTO of Hoyos Labs (now Veridium). Prior to Hoyos, he supported US national security agencies for 26 years, the last four of which he served in the role of chief scientist. Mr. Streit has authored patents and papers in machine learning, biometrics and authentication.
 
-## `WHY CHOOSE PRIVATE ID`
+## `PRIVATE ID DELIVERS`
 
 * Decentralized face, voice and fingerprint recognition 
 * Local (airplane mode), cloud and continuous authentication 
