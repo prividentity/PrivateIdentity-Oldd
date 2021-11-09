@@ -20,7 +20,7 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | SKU | Description | Each Request | Throughput |
 | ---- | ----------- | ------- | :-----------: | 
 | PRIV00 | **Free** First 50,000 Requests | $0.000 | Unlimited |
-| PRIV01 | Each Request | $0.001 | Unlimited |
+| PRIV01 | Request (each) | $0.001 | Unlimited |
 | PRIV02 | Metadata Storage/User/Month | $0.001| Unlimited |
 | PRIV03 | Remote Onboarding/KYC/AML | $0.15 | Unlimited |
 | PRIV10 | Enhanced Profile Merge | $0.20 | $200.00 | Unlimited |
