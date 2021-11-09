@@ -15,7 +15,7 @@ Invalid requests do not incur fees. Examples of invalid requests include images 
 Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the Private ID "pay-as-you-go" pricing in US dollars (USD). 
 
 | SKU | Description | Each Request | Throughput |
-| ---- | ----------- | ------- | :-----------: | :-----------: | 
+| ---- | ----------- | ------- | :-----------: | 
 | PRIV00 | First 50,000 requests | $0.000 | Unlimited |
 | PRIV01 | Each request | $0.001 | Unlimited |
 | PRIV02 | Metadata Storage/User/Month | $0.001| Unlimited |
