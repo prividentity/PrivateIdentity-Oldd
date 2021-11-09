@@ -1,4 +1,4 @@
-### Cloud Pay-as-you-go Pricing
+### Cloud pay-as-you-go pricing
 Private ID® uses state-of-the-art face with facemask, voice and fingerprint algorithms to detect and recognize human biometrics in images and audio. Capabilities include models and APIs that locate biometric geometry, validate biometrics and perform identification. 
 
 Requests for Private ID services are billed by Product SKU under a standard pay-as-you-go pricing model. One or more Product SKUs are triggered for each request, depending on the fields that are specified in the request. 
