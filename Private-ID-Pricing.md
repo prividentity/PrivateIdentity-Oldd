@@ -10,13 +10,16 @@ Invalid requests do not incur fees. Examples of invalid requests include images 
 
 **Metadata Storage**: Private ID stores a repository of anonymized metadata during enrollment against which Private ID searches for matches. Storage charges are applied monthly per enrolled subject. Metadata storage fees are prorated daily. If each day during the month a customer enrolled 1,000 subjects for a few hours and then deleted them each night, the customer would still be billed for 1,000 metadata storage each day. 
 
+**Free Tier** 
+Get started at no cost. The Free Tier lasts 1 month and allows you analyze 50,000 images. 
+
 ### Pricing Table - Product SKUs
 
 Pricing is based on monthly usage for both billable units and metadata storage. The table below sets out the Private ID "pay-as-you-go" pricing in US dollars (USD). 
 
 | SKU | Description | Each Request | Throughput |
 | ---- | ----------- | ------- | :-----------: | 
-| PRIV00 | Free Tier (First 50,000 Requests) | $0.000 | Unlimited |
+| PRIV00 | **Free** First 50,000 Requests | $0.000 | Unlimited |
 | PRIV01 | Each Request | $0.001 | Unlimited |
 | PRIV02 | Metadata Storage/User/Month | $0.001| Unlimited |
 | PRIV03 | Remote Onboarding/KYC/AML | $0.15 | Unlimited |
