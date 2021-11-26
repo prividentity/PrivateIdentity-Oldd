@@ -23,8 +23,8 @@ Pricing is based on monthly usage for both billable units and metadata storage. 
 | PRIV01 | Request (each) | $0.001 | 10K API calls/sec |
 | PRIV02 | Metadata Storage/User/Month | $0.001| 10K API calls/sec |
 | PRIV03 | Remote Onboarding/KYC/AML | $0.15 | 10K API calls/sec |
-| PRIV10 | Enhanced Profile Merge | $0.20 | $200.00 | 10K API calls/sec |
-| PRIV11 | Augmented Profile Merge | $0.35 | $350.00 | 10K API calls/sec |
+| PRIV10 | Enhanced Profile Merge | $0.20 | 10K API calls/sec |
+| PRIV11 | Augmented Profile Merge | $0.35 |10K API calls/sec |
 
 Request higher throughput as needed. This AWS API Gateway default limit is adjustable. 
 Each model, API, or service request counts as one billable unit. 
