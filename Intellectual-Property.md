@@ -3,10 +3,10 @@
 * Private ID - USPTO Reg. No. 6,449,481
 
 ### Patent grants
-* [Biometric Authentication](https://patents.google.com/patent/US11170084B2/en), 11,170,084 (09 NOV 2021)
-* [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US10938852B1/), 10,938,852 (03 MAR 2021)
-* [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10721070B2/), 10,721,070 (21 JUL 2020) 
-* [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10419221B1/), 10,419,221 (17 SEPT 2019) 
+* [Biometric Authentication](https://patents.google.com/patent/US11170084B2/en), US 11,170,084 (09 NOV 2021)
+* [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US10938852B1/), US 10,938,852 (03 MAR 2021)
+* [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10721070B2/), US 10,721,070 (21 JUL 2020) 
+* [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10419221B1/), US 10,419,221 (17 SEPT 2019) 
  
 ### Patent applications 
 * [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US20210141896A1/), US17/155,890 (pending)
