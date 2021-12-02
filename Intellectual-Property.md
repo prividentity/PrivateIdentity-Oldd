@@ -1,6 +1,6 @@
 ### Registered trademarks
-* Private Identity - USPTO Reg. No. 6,449,480
-* Private ID - USPTO Reg. No. 6,449,481
+* [Private Identity](https://tmsearch.uspto.gov/bin/showfield?f=doc&state=4803:vx9gl6.2.1) - USPTO Reg. No. 6,449,480
+* [Private ID](https://tmsearch.uspto.gov/bin/showfield?f=doc&state=4803:vx9gl6.3.1) - USPTO Reg. No. 6,449,481
 
 ### Patent grants
 * [Biometric Authentication](https://patents.google.com/patent/US11170084B2/en), US 11,170,084 (09 NOV 2021)
