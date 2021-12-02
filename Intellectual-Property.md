@@ -17,7 +17,6 @@
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200014541A1/), US16/573,851 (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200044852A1/), US16/539,824 (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/AU2019230043A1/), AU2019230043A (pending)
-* [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20190278937A1/), US15/914,969 (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/CA3092941A1/), CA3092941A (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/WO2019173562A1/), PCT/US2019/021100 (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20190279047A1/), US15/914,562 (pending)
