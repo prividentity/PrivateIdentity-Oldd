@@ -9,6 +9,7 @@ In addition to privacy, FHE provides extreme accuracy, speed, security and effic
 
 ## `Technical Overview`
 Private ID® is a fast, accurate, private, efficient and scalable 1:1 and 1:n face, voice and fingerprint biometric security solution. The recognition algorithm maintains full privacy by operating entirely in the encrypted space, returns 1:n identity in polynomial time, provides 99.71% or greater accuracy across each racial subgroup (Black, Hispanic, Asian, Indian, White, Other), and easily deploys to any browser, mobile or embedded device, platform, cloud, cloud function or non-networked server using W3C WebAssembly (Wasm) or c++ sharable objects (.so). 
+
 Private Identity’s high-throughput recognition algorithm consists of an ensemble of helper networks (DNNs) that validate each biometric prior to prediction or enrollment. This allows for attended or unattended operation and protects the integrity of the identity system. Each of these helper networks is an ML inference of a pre-trained DNN that locates facial landmarks, detects eyes open/closed, glasses on/off, mask on/off, image or video presentation (spoof) attack, and then crops, aligns and augments the valid biometric. FHE transformation is performed by an ML inference of a pre-trained convolutional neural network (CNN). 
 
 ## `LEADERSHIP`
