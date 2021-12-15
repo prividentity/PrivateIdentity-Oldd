@@ -1,4 +1,4 @@
-[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/PrivateID%20Logo%20Wide.png)](https://www.private.id/)
+[![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/Private-Identity-Logo-Long.png)](https://www.private.id/)
 
 ## ABOUT US
 We created Private Identity to solve cryptography’s “holy grail,” fully homomorphic encryption. Our small team of ML engineers solved FHE in 2018 and was granted cryptography patents for FHE in 2019, 2020 and 2021. FHE conceals the input data, output data and the occurrence of the search itself.
