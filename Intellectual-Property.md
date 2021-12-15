@@ -3,7 +3,7 @@
 * [Private ID](https://tmsearch.uspto.gov/bin/showfield?f=doc&state=4803:vx9gl6.3.1) - USPTO Reg. No. 6,449,481
 
 ### Patent grants
-* [Systems and methods for biometric processing with liveness](https://patents.google.com/patent/US20190278895A1/), US16/218,139 (28 DEC 2021)
+* [Systems and methods for biometric processing with liveness](https://patents.google.com/patent/US20190278895A1/), US 11,210,375 (28 DEC 2021)
 * [Biometric Authentication](https://patents.google.com/patent/US11170084B2/en), US 11,170,084 (09 NOV 2021)
 * [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US10938852B1/), US 10,938,852 (03 MAR 2021)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10721070B2/), US 10,721,070 (21 JUL 2020) 
