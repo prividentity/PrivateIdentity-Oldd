@@ -1,6 +1,6 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/Private-Identity-Logo-Long.png)](https://www.private.id/)
 
-## ABOUT US
+## `About Us`
 We created Private Identity to solve cryptography’s “holy grail,” fully homomorphic encryption. Our small team of ML engineers solved FHE in 2018 and was granted cryptography patents for FHE in 2019, 2020 and 2021. FHE conceals the input data, output data and the occurrence of the search itself.
 
 Private Identity’s FHE algorithm is a 1-way cryptographic hash that irreversibly encrypts biometric data while enabling encrypted match and encrypted search operations on the encrypted dataset. Operating in this encrypted space fully mitigates the regulatory and legal risk of biometric data. Indeed, the GDPR, CCPA, BIPA and HIPAA privacy laws specifically state that they do not apply to anonymized data. Building on this, the new [IEEE 2410-2021 Standard for Biometric Privacy](https://standards.ieee.org/standard/2410-2021.html) provides that conforming FHE systems are,  “exempt from GDPR, CCPA, BIPA and HIPAA privacy law obligations.”
@@ -12,7 +12,7 @@ Private ID® is a fast, accurate, private, efficient and scalable 1:1 and 1:n fa
 
 Private Identity’s high-throughput recognition algorithm consists of an ensemble of helper networks (DNNs) that validate each biometric prior to prediction or enrollment. This allows for attended or unattended operation and protects the integrity of the identity system. Each of these helper networks is an ML inference of a pre-trained DNN that locates facial landmarks, detects eyes open/closed, glasses on/off, mask on/off, image or video presentation (spoof) attack, and then crops, aligns and augments the valid biometric. FHE transformation is performed by an ML inference of a pre-trained convolutional neural network (CNN). 
 
-## `LEADERSHIP`
+## `Leadership`
 Mike Pollard, CEO <br>
 Mike is an entrepreneur experienced in high-growth technology ventures. Prior to leading Private Identity, Mike served as VP and GM at Thomson Reuters, Executive VP and co-Founder of Discovery Logic, CEO of thinkXML and CEO of Science Management Corp. Mike has authored papers and patents in biometrics, AI/ML, big data and cyber security.
 
