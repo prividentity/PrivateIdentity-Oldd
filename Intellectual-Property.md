@@ -9,6 +9,7 @@
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US10419221B1/), US 10,419,221 (17 SEPT 2019) 
  
 ### Patent applications 
+* [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US20210377298A1/), US17/398,555 (pending)
 * [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US20210141896A1/), US17/155,890 (pending)
 * [Biometric authentication](https://patents.google.com/patent/WO2020006252A1/), PCT/US2019/039537 (pending)
 * [Systems and methods for biometric processing with liveness](https://patents.google.com/patent/US20190278895A1/), US16/218,139 (pending)
