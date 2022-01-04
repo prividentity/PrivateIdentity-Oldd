@@ -2,11 +2,11 @@
 
 ## Python Version
 
-We recommend using the latest version of Python. PrivateID supports Python 3.6 and newer.
+Private ID® supports Python 3.6 or greater. 
 
 ## Dependencies
 
-PrivateID have dependencies on numpy, scipy and Pillow for image processing. These distributions will be installed automatically. PrivateID will detect and use them if already installed.
+Private ID has dependencies on numpy, scipy and Pillow for image processing. These distributions will be installed automatically. Private ID detects and uses numpy, scipy and Pillow if they are already installed.
 
 -   [Numpy](https://pypi.org/project/numpy/)  provides functions for array wise image manipulation.
     
@@ -14,20 +14,19 @@ PrivateID have dependencies on numpy, scipy and Pillow for image processing. The
     
 -   [Scipy](https://pypi.org/project/scipy/)  provides a faster, more efficient method for comparison of distances and supports shared library functionalities.
     
-## Install PrivateID
+## Install Private ID
 
-Within the activated environment, use the following command to install Werkzeug:
+Within the Python3 environment, use the following command to install the Private ID Python SDK:
 
     pip3 install https://privid-sdk.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
 
-# Install Facial Recognition C++ Shareable Object (.so)
+# Install facial recognition C++ shareable object (.so)
 
-This section covers how to use the Face Factor for generating and verifying Private IDs.
+This section covers how to use the facial recognition .so for generating and verifying identity.
 
-    _class_ privateid.FHE.FaceFactor(server_url,local_storage_path=None)
+    class privateid.FHE.FaceFactor(server_url,local_storage_path=None)
 
-The FaceFactor class implements the methods for enrolling and predicting the Face module as part of the Biometric Authentication.
-
+The **FaceFactor class** implements the methods for enrolling and predicting.
 It exposes four methods as part of the interface:
 
 1.  enroll: Enrolls the face of the user.
@@ -36,9 +35,8 @@ It exposes four methods as part of the interface:
     
 3.  is_valid: Verifies the face of the user.
     
-4.  compare: Compare two faces for verification (To be implemented).
+4.  compare: Compare two faces for verification *(to be implemented).*
     
-
 ## PARAMETERS
 
  - URL : STR
@@ -54,7 +52,7 @@ It exposes four methods as part of the interface:
 ## METHODS
 |Method| Desc  |
 |--|--|
-| `is_valid`(image_path) | Check if the image is valid for using in the face recognition |
+| `is_valid`(image_path) | Check if the image is valid |
 | `enroll`(image_path) | Enrolls the image in the face recognition server |
 | `predict`(image_path) | Predicts the image in the face recognition server |
 
