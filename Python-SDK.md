@@ -1,4 +1,4 @@
-> # Installation[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#installation "Permalink to this headline")
+# Installation
 
 ## Python Version
 
@@ -59,7 +59,7 @@ Within the activated environment, use the following command to install Werkzeug:
 
 This section covers how to use the Face Factor for generating and verifying Private IDs.
 
-    _class_ privateid.FHE.FaceFactor(_server_url_,  _local_storage_path=None_)[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/FHE/FaceFactor.html#privateid.FHE.FaceFactor "Permalink to this definition")
+    _class_ privateid.FHE.FaceFactor(_server_url_,  _local_storage_path=None_)
 
 The FaceFactor class implements the methods for enrolling and predicting the Face module as part of the Biometric Authentication.
 
@@ -108,7 +108,7 @@ Enrolls the image in the face recognition server
 	{
     “status”: 0, “message”: “success”, “uuid”: UUID
     }
- - UNSUCCESSFUL OPERATION:
+	 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “error message”
 }
@@ -127,7 +127,7 @@ Check if the image is valid for using in the face recognition
 “status”: 0, “message”: “Valid image”
 }
 
- - UNSUCCESSFUL OPERATION:
+	 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “Invalid image”
 }
@@ -146,7 +146,7 @@ Predicts the image in the face recognition server
 ‘status’: 0, ‘message’: ‘success’, ‘uuid’: UUID
 }
 
- - UNSUCCESSFUL OPERATION:
+	 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “error message”
 }
