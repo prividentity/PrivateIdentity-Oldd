@@ -1,12 +1,10 @@
-
-
 > # Installation[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#installation "Permalink to this headline")
 
-## Python Version[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#python-version "Permalink to this headline")
+## Python Version
 
 We recommend using the latest version of Python. PrivateID supports Python 3.6 and newer.
 
-## Dependencies[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#dependencies "Permalink to this headline")
+## Dependencies
 
 PrivateID have dependencies on numpy, scipy and Pillow for image processing. These distributions will be installed automatically. PrivateID will detect and use them if already installed.
 
@@ -17,7 +15,7 @@ PrivateID have dependencies on numpy, scipy and Pillow for image processing. The
 -   [Scipy](https://pypi.org/project/scipy/)  provides a faster, more efficient method for comparison of distances and supports shared library functionalities.
     
 
-## Virtual environments (optional)[¶](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#virtual-environments "Permalink to this headline")
+## Virtual environments (optional)
 
 Use a native Python environment from your OS or a virtual environment to manage the dependencies for your project, both in development and in production. This section addresses use of a virtual environment.
 
@@ -27,7 +25,7 @@ Virtual environments are independent groups of Python libraries, one for each pr
 
 Python comes bundled with the  `venv`  module to create virtual environments.
 
-### Create an environment[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#create-an-environment "Permalink to this headline")
+### Create an environment
 
 Create a project folder and a  `venv`  folder within:
 
@@ -39,7 +37,7 @@ On Windows:
 
     py -3 -m venv venv
 
-### Activate the environment[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#activate-the-environment "Permalink to this headline")
+### Activate the environment
 
 Before you work on your project, activate the corresponding environment:
 
@@ -51,13 +49,13 @@ On Windows:
 
 Your shell prompt will change to show the name of the activated environment.
 
-## Install PrivateID[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#install-privateid "Permalink to this headline")
+## Install PrivateID
 
 Within the activated environment, use the following command to install Werkzeug:
 
     pip3 install https://clear-demo.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
 
-# Install Facial Recognition Shareable Object (.so)[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/FHE/FaceFactor.html#face-factor "Permalink to this headline")
+# Install Facial Recognition Shareable Object (.so)
 
 This section covers how to use the Face Factor for generating and verifying Private IDs.
 
@@ -91,10 +89,10 @@ It exposes four methods as part of the interface:
 ## METHODS
 |Method| Desc  |
 |--|--|
-| [`is_valid`](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/FHE/FaceFactor.html#privateid.FHE.FaceFactor.is_valid "privateid.FHE.FaceFactor.is_valid")(image_path)  | Check if the image is valid for using in the face recognition
+| `is_valid`(image_path)  | Check if the image is valid for using in the face recognition
  |
-| [`enroll`](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/FHE/FaceFactor.html#privateid.FHE.FaceFactor.enroll "privateid.FHE.FaceFactor.enroll")(image_path) | Enrolls the image in the face recognition server |
-| [`predict`](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/FHE/FaceFactor.html#privateid.FHE.FaceFactor.predict "privateid.FHE.FaceFactor.predict")(image_path) | Predicts the image in the face recognition server |
+| `enroll`(image_path) | Enrolls the image in the face recognition server |
+| `predict`(image_path) | Predicts the image in the face recognition server |
 
     enroll(_image_path:  str)  →  dict
 
@@ -152,4 +150,3 @@ Predicts the image in the face recognition server
 {
 “status”: -1, “message”: “error message”
 }
-
