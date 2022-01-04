@@ -18,7 +18,7 @@ PrivateID have dependencies on numpy, scipy and Pillow for image processing. The
 
 Within the activated environment, use the following command to install Werkzeug:
 
-    pip3 install https://clear-demo.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
+    pip3 install https://privid-sdk.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
 
 # Install Facial Recognition C++ Shareable Object (.so)
 
