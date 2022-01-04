@@ -102,13 +102,12 @@ Enrolls the image in the face recognition server
 	 - **IMAGE_PATH**
 		 - Directory path to the image file
  - RETURNS
-	 - DICT
-		 - Status and message of the operation.
-	 - SUCCESSFUL OPERATION: 
+	 - DICT - Status and message of the operation.
+		 - SUCCESSFUL OPERATION: 
 	{
     “status”: 0, “message”: “success”, “uuid”: UUID
     }
-	 - UNSUCCESSFUL OPERATION:
+		 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “error message”
 }
@@ -120,14 +119,13 @@ Check if the image is valid for using in the face recognition
 	 - **IMAGE_PATH**
 		 - Directory path to the image file
  - RETURNS
-	 - DICT
-		 - Status and message of the operation
-	 - SUCCESSFUL OPERATION:
+	 - DICT - Status and message of the operation
+		 - SUCCESSFUL OPERATION:
 {
 “status”: 0, “message”: “Valid image”
 }
 
-	 - UNSUCCESSFUL OPERATION:
+		 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “Invalid image”
 }
@@ -139,14 +137,14 @@ Predicts the image in the face recognition server
 	 - **IMAGE_PATH**
 		 - Directory path to the image file
 	 - RETURNS
-		 - DICT
-			 - Status and message of the operation.
-		 - SUCCESSFUL OPERATION:
+		 - DICT - Status and message of the operation.
+			 - SUCCESSFUL OPERATION:
 {
 ‘status’: 0, ‘message’: ‘success’, ‘uuid’: UUID
 }
 
-	 - UNSUCCESSFUL OPERATION:
+		 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “error message”
 }
+
