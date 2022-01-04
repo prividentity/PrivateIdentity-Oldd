@@ -2,7 +2,7 @@ This section describes how to deploy Private ID architecture as PaaS in the AWS 
 
 Steps to do for deploying the infrastructure:
 
-1. Download the [Cloudformation template](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem) fro the provided link
+1. Download the [Cloudformation template](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem) from the provided link
 
 2. Go to AWS Console management page, and clink on Cloudformation stack
 
