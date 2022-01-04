@@ -14,8 +14,8 @@ Upload template file into cloudformation
 2. Upload Template to CloudFormation
 [[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/2_upload_file.PNG|alt=octocat]]
 3. Specify stack details 
-
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/3_fill_values.png|alt=octocat]]
 4. Configure stack options
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/1_create_stack.PNG|alt=octocat]]
+This step we can ignore and press next 
 5. Review deployment
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/1_create_stack.PNG|alt=octocat]]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/5_deployment_process.PNG|alt=octocat]]
