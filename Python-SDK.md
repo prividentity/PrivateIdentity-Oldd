@@ -142,9 +142,7 @@ Predicts the image in the face recognition server
 {
 ‘status’: 0, ‘message’: ‘success’, ‘uuid’: UUID
 }
-
-		 - UNSUCCESSFUL OPERATION:
+			 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “error message”
 }
-
