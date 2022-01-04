@@ -89,8 +89,7 @@ It exposes four methods as part of the interface:
 ## METHODS
 |Method| Desc  |
 |--|--|
-| `is_valid`(image_path)  | Check if the image is valid for using in the face recognition
- |
+| `is_valid`(image_path) | Check if the image is valid for using in the face recognition |
 | `enroll`(image_path) | Enrolls the image in the face recognition server |
 | `predict`(image_path) | Predicts the image in the face recognition server |
 
@@ -124,7 +123,6 @@ Check if the image is valid for using in the face recognition
 {
 “status”: 0, “message”: “Valid image”
 }
-
 		 - UNSUCCESSFUL OPERATION:
 {
 “status”: -1, “message”: “Invalid image”
