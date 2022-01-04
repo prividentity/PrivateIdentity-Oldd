@@ -15,9 +15,9 @@ PrivateID have dependencies on numpy, scipy and Pillow for image processing. The
 -   [Scipy](https://pypi.org/project/scipy/)  provides a faster, more efficient method for comparison of distances and supports shared library functionalities.
     
 
-## Virtual environments[¶](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#virtual-environments "Permalink to this headline")
+## Virtual environments (optional)[¶](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#virtual-environments "Permalink to this headline")
 
-Use a virtual environment to manage the dependencies for your project, both in development and in production.
+Use a native Python environment from your OS or a virtual environment to manage the dependencies for your project, both in development and in production. This section addresses use of a virtual environment.
 
 What problem does a virtual environment solve? The more Python projects you have, the more likely it is that you need to work with different versions of Python libraries, or even Python itself. Newer versions of libraries for one project can break compatibility in another project.
 
@@ -29,23 +29,23 @@ Python comes bundled with the  `venv`  module to create virtual environments.
 
 Create a project folder and a  `venv`  folder within:
 
-mkdir myproject
-cd myproject
-python3 -m venv venv
+    mkdir myproject
+    cd myproject
+    python3 -m venv venv
 
 On Windows:
 
-py -3 -m venv venv
+    py -3 -m venv venv
 
 ### Activate the environment[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/installation.html#activate-the-environment "Permalink to this headline")
 
 Before you work on your project, activate the corresponding environment:
 
-. venv/bin/activate
+    . venv/bin/activate
 
 On Windows:
 
-venv\Scripts\activate
+    venv\Scripts\activate
 
 Your shell prompt will change to show the name of the activated environment.
 
@@ -53,7 +53,7 @@ Your shell prompt will change to show the name of the activated environment.
 
 Within the activated environment, use the following command to install Werkzeug:
 
-pip3 install https://clear-demo.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
+    pip3 install https://clear-demo.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
 
 # Install Facial Recognition Shareable Object (.so)[](https://clear-demo.s3.us-east-2.amazonaws.com/privateid-sdkdocs/FHE/FaceFactor.html#face-factor "Permalink to this headline")
 
@@ -199,3 +199,10 @@ UNSUCCESSFUL OPERATION:
 “status”: -1, “message”: “error message”
 
 }
+
+
+
+
+
+
+
