@@ -24,7 +24,7 @@ Within the activated environment, use the following command to install Werkzeug:
 
 This section covers how to use the Face Factor for generating and verifying Private IDs.
 
-    _class_ privateid.FHE.FaceFactor(_server_url_,  _local_storage_path=None_)
+    _class_ privateid.FHE.FaceFactor(server_url,local_storage_path=None)
 
 The FaceFactor class implements the methods for enrolling and predicting the Face module as part of the Biometric Authentication.
 
