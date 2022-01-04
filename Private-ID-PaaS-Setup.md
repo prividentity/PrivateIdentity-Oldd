@@ -1,9 +1,8 @@
-This section describes how to deploy Private ID architecture as PaaS in the AWS infrastructure using Cloudformation template.
+Installation of infrastructure happens with cloudformation template provided directly 
+When you have cloudformation template you need to open To use cloudformation template you need to prepare the folloing credentials in aws 
 
-Steps to do for deploying the infrastructure:
+1. AWS EC2 Key Pair (This Keys required that you could later be able to access to EKS nodes and EC2 Services ) 
+2. AWS API Administration Access Key  and Passport  (API Key is required for application to create infrastructure and access resources from EKS  )
+3. Domain Name - You need to have front end domain name and api domain name 
 
-1. Download the [Cloudformation template](https://github.com/openinfer/PrivateIdentity/blob/master/certificate/certificate.pem) from the provided link
 
-2. Go to AWS Console management page, and clink on Cloudformation stack
-
-![Cloudformation AWS](https://github.com/openinfer/PrivateIdentity/blob/master/images/AWS%20Architecture%202.png)
