@@ -26,7 +26,7 @@ it should be something like this
 ab78e3a37444c4f2180fd72fac63a029-9bf95e78da146b39.elb.eu-north-1.amazonaws.com
 Please use this record and point it in DNS as A record 
 
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/7_LoadBalancer.PNG|alt=octocat]
+[[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/7_LoadBalancer.PNG|alt=octocat]]
 
 SSH into EC2 Instance which is created with ClooudFormation and run the following command 
 sudo kubectl get services -A 
