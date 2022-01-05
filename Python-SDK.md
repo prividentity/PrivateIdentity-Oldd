@@ -60,7 +60,7 @@ It exposes four methods as part of the interface:
 |`delete`(uuid) | Deletes the enrollment from the face recognition server |
 |compare(image_path_1, image_path_2) | To be implemented |
 
-**`delete(_uuid:  str)  →  dict`**
+**`delete(uuid:  str)  →  dict`**
 
 Deletes the enrollment from the face recognition server
 
@@ -78,7 +78,7 @@ Deletes the enrollment from the face recognition server
 “status”: -1, “message”: “error message”
 }
 
-**`enroll(_image_path:  str)  →  dict`**
+**`enroll(image_path:  str)  →  dict`**
 
 Enrolls the image in the face recognition server
 
@@ -96,7 +96,7 @@ Enrolls the image in the face recognition server
 “status”: -1, “message”: “error message”
 }
 
-**`is_valid(_image_path:  str_)  →  dict`**
+**`is_valid(image_path:  str_)  →  dict`**
 Check if the image is valid for using in the face recognition
 
  - PARAMETERS
@@ -113,7 +113,7 @@ Check if the image is valid for using in the face recognition
 “status”: -1, “message”: “Invalid image”
 }
 
-**`predict(_image_path:  str_)  →  dict`**
+**`predict(image_path:  str_)  →  dict`**
 Predicts the image in the face recognition server
 
  - PARAMETERS
