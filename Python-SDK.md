@@ -14,28 +14,30 @@ Private ID has dependencies on numpy, scipy and Pillow for image processing. The
     
 -   [Scipy](https://pypi.org/project/scipy/)  provides a faster, more efficient method for comparison of distances and supports shared library functionalities.
     
-## Install Private ID
+## Install Private ID PIP package
 
 Within the Python3 environment, use the following command to install the Private ID Python SDK:
 
     pip3 install https://privid-sdk.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
 
-# Install facial recognition C++ shareable object (.so)
+# Install facial recognition Python SDK
 
-This section covers how to use the facial recognition .so for generating and verifying identity.
+This section covers how to use facial recognition SDK for generating and verifying identity.
 
     class privateid.FHE.FaceFactor(server_url,local_storage_path=None)
 
 The **FaceFactor class** implements the methods for enrolling and predicting.
 It exposes four methods as part of the interface:
 
-1.  enroll: Enrolls the face of the user.
-    
-2.  predict: Predicts the face of the user.
-    
-3.  is_valid: Verifies the face of the user.
-    
-4.  compare: Compare two faces for verification *(to be implemented).*
+1. enroll: Enrolls the face of the user.
+
+2. predict: Predicts the face of the user.
+
+3. is_valid: Verifies the face of the user.
+
+4. delete: Deletes the enrollment of the user.
+
+5. compare: Compare two faces for verification (To be implemented).
     
 ## PARAMETERS
 
@@ -55,6 +57,26 @@ It exposes four methods as part of the interface:
 | `is_valid`(image_path) | Check if the image is valid |
 | `enroll`(image_path) | Enrolls the image in the face recognition server |
 | `predict`(image_path) | Predicts the image in the face recognition server |
+|`delete`(uuid) | Deletes the enrollment from the face recognition server |
+|compare(image_path_1, image_path_2) | To be implemented |
+
+**`delete(_uuid:  str)  →  dict`**
+
+Deletes the enrollment from the face recognition server
+
+ - PARAMETERS
+	 - **UUID**
+		 - UUID of the enrolled image
+ - RETURNS
+	 - DICT - Status and message of the operation.
+		 - SUCCESSFUL OPERATION: 
+	{
+    “status”: 0, “message”: “OK”
+    }
+		 - UNSUCCESSFUL OPERATION:
+{
+“status”: -1, “message”: “error message”
+}
 
 **`enroll(_image_path:  str)  →  dict`**
 
