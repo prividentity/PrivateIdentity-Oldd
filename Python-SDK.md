@@ -20,6 +20,12 @@ Within the Python3 environment, use the following command to install the Private
 
     pip3 install https://privid-sdk.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
 
+## Upgrade Private ID PIP package
+
+To upgrade the PrivateID version, use the following command:
+
+    pip3 install --force-reinstall --no-cache https://privid-sdk.s3.us-east-2.amazonaws.com/privateid/privateid-1.1.0-py3-none-any.whl
+
 # Install facial recognition Python SDK
 
 This section covers how to use facial recognition SDK for generating and verifying identity.
