@@ -23,13 +23,5 @@ NOTE : When CloudFormation will complete deployment application deployment will 
 7. Review deployment and check the "acknowledgement" box.
 [[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/4_create_stack.PNG|alt=octocat]]
 
-# Configure your domain  
-
- 1. Navigate to your EC2 Panel Load Balancer. The Load Balancer record 
-will look something like this  
-EXAMPLE: `ab78e3a37444c4f2180fd72fac63a029-9bf95e78da146b39.elb.eu-north-1.amazonaws.com`
-Please use this record and point to it in DNS with an A record 
-
-[[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/7_LoadBalancer.PNG|alt=octocat]]
  
 //End
