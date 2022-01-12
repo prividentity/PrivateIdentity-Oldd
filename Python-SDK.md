@@ -43,7 +43,7 @@ It exposes four methods as part of the interface:
 
 4. delete: Deletes the enrollment of the user.
 
-5. compare: Compare two faces for verification (To be implemented).
+5. compare: Compare two faces for verification.
     
 ## PARAMETERS
 
@@ -64,7 +64,7 @@ It exposes four methods as part of the interface:
 | `enroll`(image_path) | Enrolls the image in the face recognition server |
 | `predict`(image_path) | Predicts the image in the face recognition server |
 |`delete`(uuid) | Deletes the enrollment from the face recognition server |
-|compare(image_path_1, image_path_2) | To be implemented |
+|compare(image_path_1, image_path_2) |  Compare two faces for verification |
 
 **`delete(uuid:  str)  →  dict`**
 
@@ -136,6 +136,30 @@ Predicts the image in the face recognition server
 “status”: -1, “message”: “error message”
 }
 
+**`compare(self, image_path_1: str_, image_path_2: str_) → dict`**
+Compare two faces for verification 
+
+- PARAMETERS
+	 - **IMAGE_PATH_1**
+	 	 - Directory path to the image file 1
+	 - **IMAGE_PATH_2**
+	 	 - Directory path to the image file 2
+	 - RETURNS
+	 	 - DICT - Status and message of the operation.
+	 	 	 - SUCCESSFUL OPERATION (same person):
+{
+’status’: 0,’message’: ’Person in both the image is same.’
+}
+
+	 	 	 - SUCCESSFUL OPERATION  (different person):
+{
+’status’: 1, ’message’: ’Person in the images is not same.’
+}
+
+	 	 	 - UNSUCCESSFUL OPERATION:
+{
+’status’: -1, ’message’: ’Invalid image or some error.’
+}
 ## Virtual environments (optional)
 
 Use a native Python environment from your OS or a virtual environment to manage the dependencies for your project, both in development and in production. This section addresses use of a virtual environment.
