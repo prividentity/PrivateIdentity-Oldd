@@ -23,5 +23,8 @@ NOTE : When CloudFormation will complete deployment application deployment will 
 7. Review deployment and check the "acknowledgement" box.
 [[https://github.com/openinfer/PrivateIdentity/blob/master/images/cloudformation/4_create_stack.PNG|alt=octocat]]
 
+
+# Delete Process of Infrastructure  
+
  
 //End
