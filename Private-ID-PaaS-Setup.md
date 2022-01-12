@@ -4,6 +4,11 @@
  2. Obtain your AWS EC2 Key Pair from your AWS administrator. This key pair is required for access to EKS nodes and EC2 Services.
  3. Obtain your AWS API Administration Access Key and Passport from your AWS Administrator. The API Key is required for application to create the infrastructure and access resources from EKS. 
  4. Create a unique domain name and api domain name for this installation. 
+ 5. You need to have AWS DNS Zone ready for deployment  
+
+NOTE : When CloudFormation will complete deployment application deployment will run around 30 minutes after that , Because the deployment consist of 2 parts 1. CpoudFormation Deployment which creates infrastructure and custom script  which deploys and configures application in AWS infrastructure  
+ 
+
 
 # Step 1 - Upload your Cloudformation Template
 1. Open the AWS CloudFormation Page https://REGION.console.aws.amazon.com/cloudformation/ 
