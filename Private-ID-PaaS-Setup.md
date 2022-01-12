@@ -25,6 +25,12 @@ NOTE : When CloudFormation will complete deployment application deployment will 
 
 
 # Delete Process of Infrastructure  
+Before you start deletion of cloudformation  you need to delete some components to not be locked during deletion 
+1. You need to delete EFS related to our infrastructure   which is created by by some components of cloudformation  
+2. You need to delete loadbalancer and Target Groups in EC2  
+3. You now can delete cloudformation template but it will give error in the last step 
+4. After delete cloudformation template manually delete VPC  
+5. Try to delete cloudformation tamplate once more and complete deletion process 
 
  
 //End
