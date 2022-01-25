@@ -33,7 +33,7 @@ This section covers how to use facial recognition SDK for generating and verifyi
     class privateid.FHE.FaceFactor(server_url,local_storage_path=None)
 
 The **FaceFactor class** implements the methods for enrolling and predicting.
-It exposes four methods as part of the interface:
+It exposes five methods as part of the interface:
 
 1. enroll: Enrolls the face of the user.
 
