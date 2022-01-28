@@ -3,6 +3,7 @@
 * [Private ID](https://tmsearch.uspto.gov/bin/showfield?f=doc&state=4803:vx9gl6.3.1) - USPTO Reg. No. 6,449,481
 
 ### Patent grants
+* [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200351097A1/), US16/933,428 (Jan 2021) 
 * [Systems and methods for biometric processing with liveness](https://patents.google.com/patent/US20190278895A1/), US 11,210,375 (28 DEC 2021)
 * [Biometric Authentication](https://patents.google.com/patent/US11170084B2/en), US 11,170,084 (09 NOV 2021)
 * [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US10938852B1/), US 10,938,852 (03 MAR 2021)
@@ -13,7 +14,6 @@
 * [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US20210377298A1/), US17/398,555 (pending)
 * [Systems and methods for private authentication with helper networks](https://patents.google.com/patent/US20210141896A1/), US17/155,890 (pending)
 * [Biometric authentication](https://patents.google.com/patent/WO2020006252A1/), PCT/US2019/039537 (pending)
-* [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200351097A1/), US16/933,428 (pending) 
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200228336A1/), US16/832,014 (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200014541A1/), US16/573,851 (pending)
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200044852A1/), US16/539,824 (pending)
