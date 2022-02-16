@@ -91,9 +91,9 @@ The Private ID client is a C++ shareable object (.so) built to secure the authen
 
 ***Business functions***. The Private ID client provides five uninterruptible business processes: is_valid(), predict(), enroll(), compare() and delete(). The client maintains full control of the identification, verification, and authentication journey to prevent control flow and code injection. It validates the biometric, transforms the sample to an embedding, calls local storage, secures the transport layer with three layers of cryptography, calls the Web Tier, and returns the encrypted result (uuid and guid).
 ### `6. 1:n vector match`
-Modern 1:n vector search systems require indexing the costs (distances) between every set of vectors. These solutions are exponential or NP, require large compute, and are bounded by gallery size. Examples of NP vector search solutions are Facebook’s Faiss and Google Vertex AI.
+Modern vector search systems require indexing the costs (distances) between every set of vectors. These solutions are exponential or NP, require large compute, and are bounded by gallery size. Examples of NP vector search solutions are Facebook’s Faiss and Google Vertex AI.
 
-Private ID solves 1:n vector match without indexes and achieves an O(1) solution by training a feed-forward neural network with embeddings and labels. This fully connected neural network (FCNN) accurately infers the correct label when provided never-before-seen embeddings in 60ms *constant time* irrespective of gallery size.
+Private ID solves 1:n vector match without indexes and achieves an O(1) solution by training a feed-forward neural network with embeddings and labels. This fully connected neural network (FCNN) accurately infers the correct label when provided never-before-seen embeddings in 60ms *constant time* irrespective of gallery size. US Patents 10,419,221 and 10,721,070.
 ### `7. Unbiased algorithms`
 Private ID uses an ethnically balanced facial training dataset and homogenized lighting algorithms to prevent discrimination based on race, age, gender, or ethnicity. Accurately identifies all subgroups (IR≥99.71%) on Private ID’s DIF-CELEB-1M Diversity in Faces evaluation set.
 
