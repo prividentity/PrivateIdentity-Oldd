@@ -1,0 +1,21 @@
+**STAY CONNECTED**
+* [YouTube Channel](https://www.youtube.com/channel/UCy2YOo3EhXf1oF-yY64nlKA)
+* [Stack Overflow](https://stackoverflow.com/questions/tagged/privateid?tab=Newest)
+* [Release Notes](https://github.com/openinfer/PrivateIdentity/blob/master/RELEASE%20NOTES.md)
+* [Issue Tracker](https://github.com/openinfer/PrivateIdentity/issues)
+
+***
+
+**CORPORATE**
+* [Private ID](https://private.id)
+* [Contact Us](https://github.com/openinfer/PrivateIdentity/wiki/Contact-Us)
+* [About Us](https://github.com/openinfer/PrivateIdentity/wiki/About-Us)
+
+***
+
+**SMALL PRINT**
+* [Privacy](https://github.com/openinfer/PrivateIdentity/wiki/Privacy-Policy)
+* [Terms of Use](https://github.com/openinfer/PrivateIdentity/wiki/Terms-of-Use)
+* [Patent pending](https://github.com/openinfer/PrivateIdentity/wiki/Intellectual-Property:---Private-Identity-LLC)
+
+© 2022 Private Identity LLC All Rights Reserved. Private Identity and Private ID are registered trademarks of Private Identity LLC. All other trademarks, service marks, trade names, trade dress, product names and logos appearing on this site are the property of their respective owners.
