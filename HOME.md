@@ -19,7 +19,7 @@
 | **1:n biometric vector match** | Unlimited high-throughput 1:n biometric vector match computes identity without decrypt in 60ms constant time O(1)  at  ≥99.75% accuracy. Uses deep neural networks (DNNs) to accurately classify vectors irrespective of gallery size. |
 | **1:1 biometric vector compare** | Compares the distance measurement of two or more embeddings against a cutoff in 10ms at ≥99.999% accuracy. |
 
-## `Private ID System Description`	 
+## `System Description`	 
 ### `1. Introduction`
 Private Identity<sup>®</sup> provides continuous biometric authentication every 200ms by combining the speed, accuracy, and security of embeddings with an extremely fast, accurate, and scalable ML vector matching service. This solution supports register once/auth everywhere, verified identity, payments, phone unlock, access control, and high-throughput biometric pipelines for an unlimited user base. 
 
