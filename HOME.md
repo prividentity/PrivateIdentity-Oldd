@@ -6,7 +6,7 @@
 |  |  |
 |--|--|
 | <b>Benefits </b> | **1:n Continuous Authentication** <br> **Unlimited Users** (Unlimited Gallery Size) <br> Fair, accurate and unbiased <br> Preserves user privacy <br> Exempt from GDPR/CCPA privacy law obligations |
-| **Solutions** | **Verified Identity** <br> **Web Sign-in** <br> **Phone Unlock** <br> **Voice Auth for Amazon Connect** <br> Account Recovery <br>  Ticketless Access Control <be> Face CAPTCHA |
+| **Solutions** | **Verified Identity** <br> **Web Sign-in** <br> **Phone Unlock** <br> **Voice Auth for Amazon Connect** <br> Account Recovery <br>  Ticketless Access Control <br> Face CAPTCHA |
 | **Face<br>Recognition** | **Uses any camera ≥0.3MP** (720P) [Face ≥244x244 Pixels] <br> On-device validation, liveness / anti-spoofing, encryption <br> Accommodates facemasks, glasses, distortions, rotations, facial hair, scars, makeup, filters, abrasions, and hue, saturation and light. <br> Identification Rate (IR) ≥99.71%, FPIR =0.001%, FNIR =0.025% |
 | **Voice<br>Recognition** | **Uses 1 second of voice** (text- and language-independent) @ 16kHz<br>Uses 3 seconds of voice to support Amazon Connect @ 8kHz<br>On-device validation, liveness / anti-spoofing, encryption<br>Accommodates background noise, noise-canceling microphones, and sleepiness, smoking and alcohol.<br>Identification Rate (IR) ≥99.50%, FPIR=0.001%, FNIR=0.050% |
 | **Fingerprint<br>Recognition** | **Uses any camera ≥2MP** (1080P) [Finger ≥244x244 Pixels]<br>Continuous auth every 200ms<br>On-device validation, liveness / anti-spoofing, encryption<br>Accommodates distortions, rotations, scars, filters and abrasions.<br>Identification Rate (IR) ≥94.50%, FPIR=0.001%, FNIR=6.50% |
