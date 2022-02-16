@@ -4,4 +4,4 @@ We created Private Identity to solve cryptography’s “holy grail,” fully ho
 
 Private Identity’s FHE algorithm is a 1-way cryptographic hash that irreversibly encrypts biometric data while enabling encrypted match and encrypted search operations on the encrypted dataset. Operating in this encrypted space fully mitigates the regulatory and legal risk of biometric data. Indeed, the GDPR, CCPA, BIPA and HIPAA privacy laws specifically state that they do not apply to anonymized data. Building on this, the new [IEEE 2410-2021 Standard for Biometric Privacy](https://standards.ieee.org/standard/2410-2021.html) provides that conforming FHE systems are,  “exempt from GDPR, CCPA, BIPA and HIPAA privacy law obligations.”
 
-In addition to privacy, FHE provides extreme accuracy, speed, security and efficiency benefits. We look forward to meeting you and supporting your cybersecurity mission.
+In addition to privacy, FHE provides extreme accuracy, speed, security and efficiency benefits. We look forward to meeting you and helping to support your cybersecurity mission.
