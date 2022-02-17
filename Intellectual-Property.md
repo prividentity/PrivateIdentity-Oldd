@@ -1,6 +1,6 @@
 ### Registered trademarks
-* [Private Identity](https://tmsearch.uspto.gov/bin/showfield?f=doc&state=4803:vx9gl6.2.1) - USPTO Reg. No. 6,449,480
-* [Private ID](https://tmsearch.uspto.gov/bin/showfield?f=doc&state=4803:vx9gl6.3.1) - USPTO Reg. No. 6,449,481
+* [Private Identity](https://tsdr.uspto.gov/documentviewer?caseId=sn88639250&docId=ORC20210725084437#docIndex=0&page=1) - USPTO Reg. No. 6,449,480
+* [Private ID](https://tsdr.uspto.gov/documentviewer?caseId=sn88639499&docId=ORC20210725084438#docIndex=0&page=1) - USPTO Reg. No. 6,449,481
 
 ### Patent grants
 * [Systems and methods for privacy-enabled biometric processing](https://patents.google.com/patent/US20200351097A1/), US16/933,428 (Jan 2021) 
