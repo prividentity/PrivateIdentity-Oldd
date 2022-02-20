@@ -129,3 +129,5 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
     int compare_result = privid_fhe_face1.compare_files(a, b, 0);
     Console.WriteLine("compare_result = {2}, Images {0} and {1} are {3}", args[0], args[1], compare_result, compare_result == 0 ? "the same" : "different");
 ``` 
+
+# Test Procedure 
