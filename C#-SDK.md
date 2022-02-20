@@ -54,7 +54,7 @@ This section covers how to use facial recognition SDK for generating and verifyi
 The **privid_fhe_face** implements the methods for enrolling and predicting.
 It exposes five methods as part of the interface:
 
-## enroll
+## Enroll
 Enrolls the image in the face recognition server.
 ``` csharp
 public bool enroll(System.Drawing.Image imageIn)
@@ -62,7 +62,7 @@ public bool enroll(System.Drawing.Image imageIn)
 * imageIn - Directory path to the image file
 * Return - Status and message of the operation. 0 - Successful operation. -1 or -2 - Enroll operation failed. 
 
-## predict
+## Predict
 Predicts the image in the face recognition server.
 ``` csharp
 public bool predict(System.Drawing.Image imageIn, int k)
@@ -71,7 +71,7 @@ public bool predict(System.Drawing.Image imageIn, int k)
 * k - this value shall be 0 < k < 11, default = 1
 * Return - Status and message of the operation. 0 - Successful operation. -1 or -2 - Predict operation failed. 
 * Prints - UUIDs and respective probabilities for each k. 
-## is_valid
+## Is Valid
 Check if the image is valid
 ``` csharp
 public bool is_valid(System.Drawing.Image imageIn)
@@ -84,7 +84,7 @@ Deletes the enrollment from the face recognition server.
 public int delete(string uuid)
 ```
 * uuid - UUID of the enrolled image
-## Compare
+## Compare Images
 Compare two faces for verification.
 ``` csharp
 public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image imageInB, int option)
