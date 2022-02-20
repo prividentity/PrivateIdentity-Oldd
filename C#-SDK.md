@@ -1,8 +1,8 @@
 
 
-# C# SDK
+# Install facial recognition C# SDK
 
-## Installation
+## IDE Installation
 
 This SDK requires *Microsoft Visual Studio IDE*. Requires following Visual Studio IDE components to be installed:
 * Microsoft Visual Studio C# Tools
@@ -12,13 +12,15 @@ The IDE projects in this package is tested with:
 - [x] Visual Studio 2019
 - [x] Visual Studio 2022. 
 
-## Dependencies
-
 * The project files uses following packages
 * Newtonsoft.Json version=13.0.1 
 * RestClient.Net  version=5.0.7
 * RestSharp version=107.2.1 
 * Magick.NET.Core version=9.1.2
+
+## Dependencies
+
+None.
     
 ## Install Private ID package
 
@@ -28,7 +30,7 @@ Extract the package <link here...todo>
 
 Extract the package <link here...todo>
 
-# Install facial recognition C# SDK
+# Using facial recognition C# SDK
 
 This section covers how to use facial recognition SDK for generating and verifying identity.
 
@@ -130,4 +132,5 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
     Console.WriteLine("compare_result = {2}, Images {0} and {1} are {3}", args[0], args[1], compare_result, compare_result == 0 ? "the same" : "different");
 ``` 
 
-# Test Procedure 
+# Test facial recognition C# SDK 
+todo 
