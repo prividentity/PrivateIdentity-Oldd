@@ -225,7 +225,7 @@ INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 compare_result = 1, Images ./img/a1.png and ./img/m1.png are different
 ``` 
 
-##FAQ
+## FAQ
 1. Sample App (.\bin\Debug\prividModuleApp.exe) is not working
 Ensure that the Machine is x64 with Windows operating system 10 or 11.
 Check your access rights for the path where you extracted the package. 
