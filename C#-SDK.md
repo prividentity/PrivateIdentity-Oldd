@@ -10,7 +10,7 @@ This SDK requires *Microsoft Visual Studio IDE*. Requires following Visual Studi
 
 The IDE projects in this package is tested with:
 - [x] Visual Studio 2019
-- [x] Visual Studio 2022. 
+- [x] Visual Studio 2022 
 
 * The project files uses following packages
 * Newtonsoft.Json version=13.0.1 
@@ -133,4 +133,103 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
 ``` 
 
 # Test facial recognition C# SDK 
-todo 
+## Typical Machine Configuration 
+* Operating System - Microsoft Windows 10 64-bit .NET Framework 4.6.1
+* CPU - Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz   
+* RAM - 3.19 GHz with 16.0 GB
+## Perform Health Check
+To verify that the system is up. Calls all APIs and prints the status in Console.
+
+``` bat
+test_case1.bat
+``` 
+The sample output is :
+``` bat
+S:\prividModuleApp>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 predict
+Test PrividModule with C# interface, version 2111.1, predict :
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+FHE_enroll_predict ok, ret = -1
+Contacting server https://priv.id/node/predict ...
+    idx   uuid                                                               probability
+    -----+------------------------------------------------------------------+-----------
+{"message":"User not enrolled","status":-1}
+0
+User not enrolled
+    -----------------------------------------------------------------------------------
+
+S:\prividModuleApp>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 enroll
+Test PrividModule with C# interface, version 2111.1, enroll :
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+FHE_enroll_predict ok, ret = -1
+Contacting server https://priv.id/node/enroll ...
+``` 
+
+## Is Valid
+``` bat
+.\bin\Debug\prividModuleApp.exe  ./img/a1.png 0 is_valid
+``` 
+``` bat
+Test PrividModule with C# interface, version 2111.1, is_valid :
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+is_valid ok, ret = -1
+``` 
+
+## Enroll
+
+``` bat
+.\bin\Debug\\prividModuleApp.exe a1.png 0 enroll
+``` 
+
+## Predict
+
+``` bat
+.\bin\Debug\prividModuleApp.exe a1.png 0 predict
+``` 
+``` bat
+Test PrividModule with C# interface, version 2111.1, predict :
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+FHE_enroll_predict ok, ret = -1
+Contacting server https://priv.id/node/predict ...
+    idx   uuid                                                               probability
+    -----+------------------------------------------------------------------+-----------
+{"message":"User not enrolled","status":-1}
+0
+User not enrolled
+
+    -----------------------------------------------------------------------------------
+``` 
+## Delete
+``` bat
+.\bin\Debug\prividModuleApp.exe  0c550dd1ea1b68e6a6c837d4c84825ab58daaf47532738c3748223e19f74527158 1 delete
+``` 
+
+``` bat
+Test PrividModule with C# interface, version 2111.1, delete :
+
+Contacting server https://priv.id/node/deleteUser ...
+    Delete Operation Completed, Status = -2, Message = Invalid UUID.
+``` 
+
+## Compare Files
+``` bat
+.\bin\Debug\prividModuleApp.exe  ./img/a1.png ./img/m1.png compare
+``` 
+
+``` bat
+Test PrividModule with C# interface, version 2111.1, compare :
+
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+compare_result = 1, Images ./img/a1.png and ./img/m1.png are different
+``` 
+
+#FAQ
+1. Sample App (.\bin\Debug\prividModuleApp.exe) is not working
+Ensure that the Machine is x64 with Windows operating system 10
+
+2. Image is not getting enrolled
+Ensure that the image is in ARGA and in PNG format. You may verify with images in ./img or ./img_a folder in the package
+
