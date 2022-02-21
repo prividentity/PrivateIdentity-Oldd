@@ -145,7 +145,19 @@ test_case1.bat
 ``` 
 The sample output is :
 ``` bat
-S:\prividModuleApp>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 predict
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+FHE_enroll_predict ok, ret = -1
+Contacting server https://priv.id/node/predict ...
+    idx   uuid                                                               probability
+    -----+------------------------------------------------------------------+-----------
+    00000 0c762c12ef64de292482eaef2ddca0ab9a6d372b917032e61b154759e8d3dae074 100.00
+    00001 -1 0.00
+    00002 -1 0.00
+    -----------------------------------------------------------------------------------
+
+C:\Users\SPL\test_face\test_face_ver8>test_case1.bat
+
+C:\Users\SPL\test_face\test_face_ver8>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 predict
 Test PrividModule with C# interface, version 2111.1, predict :
 
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
@@ -153,16 +165,20 @@ FHE_enroll_predict ok, ret = -1
 Contacting server https://priv.id/node/predict ...
     idx   uuid                                                               probability
     -----+------------------------------------------------------------------+-----------
-{"message":"User not enrolled","status":-1}
-0
-User not enrolled
+    00000 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d 100.00
+    00001 -1 0.00
+    00002 -1 0.00
     -----------------------------------------------------------------------------------
-S:\prividModuleApp>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 enroll
+
+C:\Users\SPL\test_face\test_face_ver8>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 enroll
 Test PrividModule with C# interface, version 2111.1, enroll :
 
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 FHE_enroll_predict ok, ret = -1
 Contacting server https://priv.id/node/enroll ...
+    uuid = 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d
+    guid = 0c1b7cd13776c14dcf0229afb79a1fb68b8745b9bf44b1ca3edab52f134179a841
+    ++++++  Person exists in system skipping enroll.  ++++++
 ``` 
 ## API Tests
 ### Is Valid
@@ -181,8 +197,15 @@ is_valid ok, ret = -1
 ``` bat
 .\bin\Debug\\prividModuleApp.exe a1.png 0 enroll
 ``` 
-
+``` bat
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+FHE_enroll_predict ok, ret = -1
+Contacting server https://priv.id/node/enroll ...
+    uuid = 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d
+    guid = 0c1b7cd13776c14dcf0229afb79a1fb68b8745b9bf44b1ca3edab52f134179a841
+    ++++++  Person exists in system skipping enroll.  ++++++
 ### Predict
+```
 
 ``` bat
 .\bin\Debug\prividModuleApp.exe a1.png 0 predict
@@ -190,27 +213,28 @@ is_valid ok, ret = -1
 ``` bat
 Test PrividModule with C# interface, version 2111.1, predict :
 
+Test PrividModule with C# interface, version 2111.1, predict :
+
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
 FHE_enroll_predict ok, ret = -1
 Contacting server https://priv.id/node/predict ...
     idx   uuid                                                               probability
     -----+------------------------------------------------------------------+-----------
-{"message":"User not enrolled","status":-1}
-0
-User not enrolled
-
+    00000 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d 100.00
+    00001 -1 0.00
+    00002 -1 0.00
     -----------------------------------------------------------------------------------
 ``` 
 ### Delete
 ``` bat
-.\bin\Debug\prividModuleApp.exe  0c550dd1ea1b68e6a6c837d4c84825ab58daaf47532738c3748223e19f74527158 1 delete
+.\bin\Debug\prividModuleApp.exe  0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d 1 delete
 ``` 
 
 ``` bat
 Test PrividModule with C# interface, version 2111.1, delete :
 
 Contacting server https://priv.id/node/deleteUser ...
-    Delete Operation Completed, Status = -2, Message = Invalid UUID.
+    Delete Operation Completed, Status = 0, Message = OK
 ``` 
 
 ### Compare Files
