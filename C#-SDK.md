@@ -134,7 +134,7 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
 
 # Test facial recognition C# SDK 
 ## Typical Machine Configuration 
-* Operating System - Microsoft Windows 10 64-bit .NET Framework 4.6.1
+* Operating System - Microsoft Windows 10 Or Windows 11 64-bit .NET Framework 4.6.1
 * CPU - Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz   
 * RAM - 3.19 GHz with 16.0 GB
 ## Perform Health Check
@@ -227,7 +227,7 @@ compare_result = 1, Images ./img/a1.png and ./img/m1.png are different
 
 ##FAQ
 1. Sample App (.\bin\Debug\prividModuleApp.exe) is not working
-Ensure that the Machine is x64 with Windows operating system 10.
+Ensure that the Machine is x64 with Windows operating system 10 or 11.
 Check your access rights for the path where you extracted the package. 
 
 2. Image is not getting enrolled
