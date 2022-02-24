@@ -24,12 +24,19 @@ None.
     
 ## Install Private ID package
 
-Extract the package <link here...todo>
+* Extract the package [prividModuleApp 1.2.2.zip](https://github.com/openinfer/PrivateIdentity/files/8132670/prividModuleApp.1.2.2.zip)
+* Open the ./prividModuleApp 1.2.2/prividModuleApp.sln in Visual Studio IDE
+* Update the NuGet Package as described below.
+* License 
+[AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
 
 ## Upgrade Private ID package
 
-Extract the package <link here...todo>
+Use Visual Studio IDE _Manager NuGet Packages_ Option OR Invoke Package Manager from .NET CLI with following command:
 
+``` shell
+Install-Package privid_fhe_cs -Version 1.2.1
+```
 # Using facial recognition C# SDK
 
 This section covers how to use facial recognition SDK for generating and verifying identity.
