@@ -24,8 +24,8 @@ None.
     
 ## Install Private ID package
 
-* Extract the package [prividModuleApp 1.2.2.zip](https://github.com/openinfer/PrivateIdentity/files/8132670/prividModuleApp.1.2.2.zip)
-* Open the ./prividModuleApp 1.2.2/prividModuleApp.sln in Visual Studio IDE
+* Extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/files/8133888/prividModuleApp.-.1.2.6.zip)
+* Open the ./prividModuleApp 1.2.6/prividModuleApp.sln in Visual Studio IDE
 * Update the NuGet Package as described below.
 * License 
 [AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
@@ -35,7 +35,7 @@ None.
 Use Visual Studio IDE _Manager NuGet Packages_ Option OR Invoke Package Manager from .NET CLI with following command:
 
 ``` shell
-Install-Package privid_fhe_cs -Version 1.2.1
+Install-Package privid_fhe_cs -Version 1.2.6
 ```
 # Using facial recognition C# SDK
 
@@ -193,11 +193,39 @@ Contacting server https://priv.id/node/enroll ...
 .\bin\Debug\prividModuleApp.exe  ./img/a1.png 0 is_valid
 ``` 
 ``` bat
-Test PrividModule with C# interface, version 2111.1, is_valid :
+Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
+ Testing is_valid with a1.png:
 
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-is_valid ok, ret = -1
+     PRIV_FHE :     [Thresholds] result[24] = 0.983136  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
+is_valid ok, ret = 0
+     RESULT  : valid_result for Image a1.png is = 0 - Valid Image
 ``` 
+## Results
+
+| *Return Value*  | *Results/Error Description* |
+| ------------- | ------------- |
+|  0 | Valid Image |  
+| 1 | Face is an image of an image (spoof),  ensure that you provide live facial image(s) |  
+| 2 | Face is an image of a video (spoof),  ensure that you provide live facial image(s) |  
+| 3 | Face in image is too close to the camera,  Please move away from the camera |  
+| 4 | Face in image is too far away |  
+| 5 | Face in image is too far to the right |  
+| 6 | Face in image is too far to the left |  
+| 7 | Face in image is too high |  
+| 8 | Face in image is too low |  
+| 9 | Face in image is too blurry |  
+| 10 |Please remove eyeglasses during registration |  
+| 11 | Please remove face mask  during registration |   
+| 12 | Head in image turned too far toward the left |  Please face the camera |  
+| 13 | Head in image turned too far toward the right |  Please face the camera |  
+| 14 | Head in image turned too far up |  Please face the camera |  
+| 15 | Head in image turned too far down |  Please face the camera |  
+| -1 | No face found in image |  
+| -10 | API Error |  
+| -11 | Local Storage Error |  
+| -20 | Memory Error | 
 
 ### Enroll
 
