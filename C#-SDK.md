@@ -295,4 +295,6 @@ Ensure that the image is in ARGA and in PNG format. You may verify with images i
 3. I don't have Visual Studio IDE installed in my machine
 You may install Visual Studio Community edition from https://visualstudio.microsoft.com/downloads/ 
 
+4. How do I get thresholds and check values for different comparisons, such as for is-valid ? 
+Run the test application with verbose=1. 
 
