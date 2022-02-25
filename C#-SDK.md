@@ -24,7 +24,7 @@ None.
     
 ## Install Private ID package
 
-* Extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/files/8133888/prividModuleApp.-.1.2.6.zip)
+* Extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/blob/master/prividModuleApp%20-%201.2.6.zip)
 * Open the ./prividModuleApp 1.2.6/prividModuleApp.sln in Visual Studio IDE
 * Update the NuGet Package as described below.
 * License 
