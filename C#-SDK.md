@@ -206,9 +206,9 @@ is_valid ok, ret = 0
 
 | *Return Value*  | *Results/Error Description* |
 | ------------- | ------------- |
-|  0 | Valid Image |  
-| 1 | Face is an image of an image (spoof),  ensure that you provide live facial image(s) |  
-| 2 | Face is an image of a video (spoof),  ensure that you provide live facial image(s) |  
+| 0 | Valid Image |  
+| 1 | ~Face is an image of an image (spoof),  ensure that you provide live facial image(s)~ |  
+| 2 | ~Face is an image of a video (spoof),  ensure that you provide live facial image(s)~ |  
 | 3 | Face in image is too close to the camera,  Please move away from the camera |  
 | 4 | Face in image is too far away |  
 | 5 | Face in image is too far to the right |  
@@ -220,8 +220,8 @@ is_valid ok, ret = 0
 | 11 | Please remove face mask  during registration |   
 | 12 | Head in image turned too far toward the left |  Please face the camera |  
 | 13 | Head in image turned too far toward the right |  Please face the camera |  
-| 14 | Head in image turned too far up |  Please face the camera |  
-| 15 | Head in image turned too far down |  Please face the camera |  
+| 14 | Reserved |  - |  
+| 15 | Reserved  |  - |  
 | -1 | No face found in image |  
 | -10 | API Error |  
 | -11 | Local Storage Error |  
