@@ -216,16 +216,16 @@ is_valid ok, ret = 0
 | 7 | Face in image is too high |  
 | 8 | Face in image is too low |  
 | 9 | Face in image is too blurry |  
-| 10 |Please remove eyeglasses during registration |  
-| 11 | Please remove face mask  during registration |   
-| 12 | Head in image turned too far toward the left |  Please face the camera |  
-| 13 | Head in image turned too far toward the right |  Please face the camera |  
-| 14 | Reserved |  - |  
-| 15 | Reserved  |  - |  
+| 10 | Eyeglass Detected. Please remove eyeglasses during registration |  
+| 11 | Face Mask Detected. Please remove face mask  during registration |   
+| 12 | Head in image turned too far toward the left/right. Please face the camera |  
+| 13 | Head in image turned too far toward the up/down. Please face the camera |  
+| 14 | Reserved |  
+| 15 | Reserved |  
 | -1 | No face found in image |  
 | -10 | API Error |  
 | -11 | Local Storage Error |  
-| -20 | Memory Error | 
+| -20 | Memory Error |
 
 ### Enroll
 
