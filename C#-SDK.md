@@ -152,40 +152,24 @@ test_case1.bat
 ``` 
 The sample output is :
 ``` bat
+Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
+ Testing predict with .\\img\\a1.png:
+
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-FHE_enroll_predict ok, ret = -1
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
 Contacting server https://priv.id/node/predict ...
-    idx   uuid                                                               probability
-    -----+------------------------------------------------------------------+-----------
-    00000 0c762c12ef64de292482eaef2ddca0ab9a6d372b917032e61b154759e8d3dae074 100.00
-    00001 -1 0.00
-    00002 -1 0.00
-    -----------------------------------------------------------------------------------
+     idx   uuid                                                               probability
+     -----+------------------------------------------------------------------+-----------
+     00000 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 100.00
+     00001 -1 0.00
+     00002 -1 0.00
+     -----------------------------------------------------------------------------------
+     RESULT  : predict_result for Image .\\img\\a1.png is = True
+...
 
-C:\Users\SPL\test_face\test_face_ver8>test_case1.bat
-
-C:\Users\SPL\test_face\test_face_ver8>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 predict
-Test PrividModule with C# interface, version 2111.1, predict :
-
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-FHE_enroll_predict ok, ret = -1
-Contacting server https://priv.id/node/predict ...
-    idx   uuid                                                               probability
-    -----+------------------------------------------------------------------+-----------
-    00000 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d 100.00
-    00001 -1 0.00
-    00002 -1 0.00
-    -----------------------------------------------------------------------------------
-
-C:\Users\SPL\test_face\test_face_ver8>.\\bin\\Debug\\prividModuleApp.exe .\\img\\a1.png 0 enroll
-Test PrividModule with C# interface, version 2111.1, enroll :
-
-INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-FHE_enroll_predict ok, ret = -1
-Contacting server https://priv.id/node/enroll ...
-    uuid = 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d
-    guid = 0c1b7cd13776c14dcf0229afb79a1fb68b8745b9bf44b1ca3edab52f134179a841
-    ++++++  Person exists in system skipping enroll.  ++++++
 ``` 
 ## API Tests
 ### Is Valid
@@ -193,14 +177,15 @@ Contacting server https://priv.id/node/enroll ...
 .\bin\Debug\prividModuleApp.exe  ./img/a1.png 0 is_valid
 ``` 
 ``` bat
+C:\prividModuleApp - 1.2.6>.\\bin\\Debug\\net6.0\\prividModuleApp.exe .\img\0.png 1 is_valid
 Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
- Testing is_valid with a1.png:
+ Testing is_valid with .\img\0.png:
 
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-     PRIV_FHE :     [Thresholds] result[24] = 0.983136  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] result[24] = 0.859852  conf_score_thr = 0.500000
      PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
 is_valid ok, ret = 0
-     RESULT  : valid_result for Image a1.png is = 0 - Valid Image
+     RESULT  : valid_result for Image .\img\0.png is = 0 - Valid Image
 ``` 
 ## Results
 
@@ -230,58 +215,86 @@ is_valid ok, ret = 0
 ### Enroll
 
 ``` bat
-.\bin\Debug\\prividModuleApp.exe a1.png 0 enroll
+.\\bin\\Release\\net6.0\\prividModuleApp.exe .\\img\\a1.png 1 enroll
 ``` 
 ``` bat
+Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
+ Testing enroll with .\\img\\a1.png:
+
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-FHE_enroll_predict ok, ret = -1
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.850000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.850
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.850000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.850
 Contacting server https://priv.id/node/enroll ...
-    uuid = 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d
-    guid = 0c1b7cd13776c14dcf0229afb79a1fb68b8745b9bf44b1ca3edab52f134179a841
-    ++++++  Person exists in system skipping enroll.  ++++++
+     uuid = 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721
+     guid = 0c06956fb32628850da498ca33be00ec88e158d84d74c774d3c2c8bf61b72e7898
+     ++++++  Person exists in system skipping enroll.  ++++++
+     RESULT  : enroll_result for Image .\\img\\a1.png is = True
+
 ### Predict
 ```
 
 ``` bat
-.\bin\Debug\prividModuleApp.exe a1.png 0 predict
+.\\bin\\Release\\net6.0\\prividModuleApp.exe .\\img\\a1.png 1 predict
 ``` 
 ``` bat
-Test PrividModule with C# interface, version 2111.1, predict :
-
-Test PrividModule with C# interface, version 2111.1, predict :
+Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
+ Testing predict with .\\img\\a1.png:
 
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-FHE_enroll_predict ok, ret = -1
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
 Contacting server https://priv.id/node/predict ...
-    idx   uuid                                                               probability
-    -----+------------------------------------------------------------------+-----------
-    00000 0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d 100.00
-    00001 -1 0.00
-    00002 -1 0.00
-    -----------------------------------------------------------------------------------
+     idx   uuid                                                               probability
+     -----+------------------------------------------------------------------+-----------
+     00000 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 100.00
+     00001 -1 0.00
+     00002 -1 0.00
+     -----------------------------------------------------------------------------------
+     RESULT  : predict_result for Image .\\img\\a1.png is = True
+
 ``` 
 ### Delete
 ``` bat
-.\bin\Debug\prividModuleApp.exe  0c36910c39943d15db5c5896af9701e7f8e8500f9c5f8d61e0aa2a73f5db09710d 1 delete
+.\\bin\\Debug\\net6.0\\prividModuleApp.exe 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 1 delete
 ``` 
 
 ``` bat
-Test PrividModule with C# interface, version 2111.1, delete :
-
+Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
+ Testing
 Contacting server https://priv.id/node/deleteUser ...
     Delete Operation Completed, Status = 0, Message = OK
+     RESULT  : delete_result for UUID 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 is = 0
+
 ``` 
 
 ### Compare Files
 ``` bat
-.\bin\Debug\prividModuleApp.exe  ./img/a1.png ./img/m1.png compare
+.\\bin\\Debug\\net6.0\\prividModuleApp.exe ./img/a1.png ./img/m1.png compare
 ``` 
 
 ``` bat
-Test PrividModule with C# interface, version 2111.1, compare :
+Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
+ Testing compare files ./img/a1.png & ./img/m1.png:
 
+In Size.Width = 480 Size.Height = 480 size = 921600
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-compare_result = 1, Images ./img/a1.png and ./img/m1.png are different
+FHE_init ok
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
+     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
+     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
+     PRIV_FHE :     [Thresholds] distance_max = 0.20  distance_mean = 0.20  distance_min = 0.20
+     PRIV_FHE :     [Thresholds] face_thresholds[0] = 0.96  face_thresholds[1] = 1.01  face_thresholds[1] = 1.06
+compare_result = 0, Images ./img/a1.png and ./img/m1.png are the same
+
 ``` 
 
 ## FAQ
