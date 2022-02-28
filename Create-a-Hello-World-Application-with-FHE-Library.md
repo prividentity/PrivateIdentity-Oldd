@@ -42,7 +42,7 @@ On pressing _Install_
 3.5 Check and verify the project details
 ![image](https://user-images.githubusercontent.com/11586902/156002029-1899e470-b781-47e1-8d92-d6b6df74ba41.png)
 
-## 4.0 Edit Program.cs 
+## 4 Edit Program.cs - Print Version 
 
 4.1 Add a line to print the library versions - to print both C++ dll and CS wrapper DLL version. 
 
@@ -64,7 +64,9 @@ ProjectDir is the path where .csproj is saved. in this case, it is:
 
 4.3 Copy the runtime DLL from ZIP file to $(ProjectDir)
 
-Build and Run the Project.
+Copy _privid_fhe.dll_ from the _prividModuleApp - a.b.c.ZIP_ to the working folder 
+
+4.4 Build and Run the Project.
 ![image](https://user-images.githubusercontent.com/11586902/156004740-5f8512e7-322d-4741-b8fa-2a5cb80998d4.png)
 
 Verify the version printed in the Console.
@@ -72,10 +74,99 @@ Verify the version printed in the Console.
 ![image](https://user-images.githubusercontent.com/11586902/156004883-759d0ce2-fbc6-4912-a1a8-559a9078c7c6.png)
 
 
+## 5 Edit Program.cs - Create Instance of _privid_fhe_face_ class
+
+5.1 Ensure that you have a Valid API key
+
+Add following lines to the above Program.cs 
+``` csharp 
+string folder_name_local_storage = "privid_local_storage1";
+string server_url = "https://priv.id/node";
+**string api_key = "0000000000000000APIKEY" Enter your API key Here;**
+int k_factor = 3;
+
+int option = 1;
+privid_fhe_face privid_fhe_face1 = new privid_fhe_face(server_url, folder_name_local_storage, api_key, option);
+
+```
+
+## 6 Edit Program.cs - Add is_Valid API calls 
+6.1 Add following lines to the above Program.cs. After adding the code will look as follows :
+
+``` csharp
+
+using privid_fhe_cs;
+using System.Drawing;
+
+Console.WriteLine("Hello, World!");
+Console.Write("Test PrividModule with C# interface. C++ DLL version {0}, C# Wrapper DLL version {1},\n Testing ", privid_fhe_face.get_version(), privid_fhe_face.get_cs_dll_version());
+
+string folder_name_local_storage = "privid_local_storage1";
+string server_url = "https://priv.id/node";
+**string api_key = "0000000000000000APIKEY" Enter your API key Here;**
+int k_factor = 3;
+
+int option = 1;
+privid_fhe_face privid_fhe_face1 = new privid_fhe_face(server_url, folder_name_local_storage, api_key, option);
+string imgFileMame = "c4.png";
+int valid_result = privid_fhe_face1.is_valid(Image.FromFile("c4.png"));
+Console.WriteLine("is_valid returned {0}", valid_result);
+valid_result = privid_fhe_face1.is_valid(Image.FromFile("c17.png"));
+Console.WriteLine("is_valid returned {0}", valid_result);
+valid_result = privid_fhe_face1.is_valid(Image.FromFile("a1.png"));
+Console.WriteLine("is_valid returned {0}", valid_result);
+
+```
+6.2 Makesure that all the above images are in working folder. In this case, it is $(ProjectDir)
+
+6.3 Build and Run
+
+![image](https://user-images.githubusercontent.com/11586902/156007328-500d8d15-f64c-4c09-b9b9-87744eaf5c1d.png)
+
+
+## 7 Edit Program.cs - Add Calls to enroll and predict API calls too 
+7.1 Add following lines to the above Program.cs. After adding the code will look as follows :
+
+``` csharp
+
+using privid_fhe_cs;
+using System.Drawing;
+
+Console.WriteLine("Hello, World!");
+Console.Write("Test PrividModule with C# interface. C++ DLL version {0}, C# Wrapper DLL version {1},\n Testing ", privid_fhe_face.get_version(), privid_fhe_face.get_cs_dll_version());
+
+string folder_name_local_storage = "privid_local_storage1";
+string server_url = "https://priv.id/node";
+string api_key = "00000000000000001962";
+int k_factor = 3;
+
+int option = 1;
+privid_fhe_face privid_fhe_face1 = new privid_fhe_face(server_url, folder_name_local_storage, api_key, option);
+
+
+/* clear folder_name_local_storage folder */
+if (Directory.Exists(folder_name_local_storage))
+    Directory.Delete(folder_name_local_storage, true);
+
+string imgFileMame = "a1.png";
+int valid_result = privid_fhe_face1.is_valid(Image.FromFile(imgFileMame));
+Console.WriteLine("is_valid returned {0}", valid_result);
+bool enroll_result = privid_fhe_face1.enroll(Image.FromFile(imgFileMame));
+Console.WriteLine("enroll_result returned {0}", enroll_result);
+
+bool predict_result = privid_fhe_face1.predict(Image.FromFile(imgFileMame), k_factor);
+Console.WriteLine("predict_result returned {0}", predict_result);
+
+```
+Note the enroll and predict results. _Ignore the ERROR on local storage._
+
+![image](https://user-images.githubusercontent.com/11586902/156009400-f652c0d8-367d-4747-a649-ac0248520d11.png)
 
 
 
-Copy _privid_fhe.dll_ from the _prividModuleApp - a.b.c.ZIP_ to the working folder 
+
+
+
 
 
 
