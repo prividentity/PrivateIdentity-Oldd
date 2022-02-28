@@ -1,5 +1,7 @@
 # Prerequisite
 * Visual Studio 2022 IDE installed on a Windows 10 64-bit machine
+* The prividModuleApp - xxx.ZIP file from Private Identity for sample application, runtime DLL[^1] and test scripts 
+* Access to NuGet Package Manager for installing privid_fhe_cs library. 
 
 # Steps to follow
 ## 1. Open Visual Studio IDE
@@ -169,7 +171,7 @@ Note the enroll and predict results. _Ignore the ERROR on local storage._
 
 
 
-
+[^1] : todo 
 
 
 
