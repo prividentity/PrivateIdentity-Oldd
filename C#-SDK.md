@@ -1,45 +1,43 @@
+# PrivID C# SDK
 
+## MS Visual Studio IDE Installation
 
-# Install facial recognition C# SDK
-
-## IDE Installation
-
-This SDK requires *Microsoft Visual Studio IDE*. Requires following Visual Studio IDE components to be installed:
+This SDK requires the following *Microsoft Visual Studio IDE* components to be installed:
 * Microsoft Visual Studio C# Tools
 * Microsoft Visual Studio C++ Tools
 
-The IDE projects in this package is tested with:
+This package is tested with:
 - [x] Visual Studio 2019
 - [x] Visual Studio 2022 
 
-* The project files uses following packages
-* Newtonsoft.Json version=13.0.1 
-* RestClient.Net  version=5.0.7
-* RestSharp version=107.2.1 
-* Magick.NET.Core version=9.1.2
+* The project files use following packages
+* Newtonsoft.Json v. 13.0.1 
+* RestClient.Net  v. 5.0.7
+* RestSharp v. 107.2.1 
+* Magick.NET.Core v. 9.1.2
 
 ## Dependencies
 
 None.
     
-## Install Private ID package
+## Install PrivID C# SDK package
 
-* Extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/blob/master/prividModuleApp%20-%201.2.6.zip)
-* Open the ./prividModuleApp 1.2.6/prividModuleApp.sln in Visual Studio IDE
-* Update the NuGet Package as described below.
-* License 
-[AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
+* Download and extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/blob/master/prividModuleApp%20-%201.2.6.zip)
+* Open ./prividModuleApp 1.2.6/prividModuleApp.sln in Visual Studio IDE
+* Update the NuGet Package as described [here](https://github.com/openinfer/PrivateIdentity/wiki/C#-SDK#upgrade-private-id-package).
+* Standard License [AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
 
-## Upgrade Private ID package
+## Upgrade the Private ID package
 
-Use Visual Studio IDE _Manager NuGet Packages_ Option OR Invoke Package Manager from .NET CLI with following command:
+ 1. Use the Visual Studio IDE _Manager NuGet Packages_ Option OR 
+ 2. Invoke Package Manager from .NET CLI with following command:
 
 ``` shell
 Install-Package privid_fhe_cs -Version 1.2.6
 ```
-# Using facial recognition C# SDK
+# Use the SDK for Facial Recognition 
 
-This section covers how to use facial recognition SDK for generating and verifying identity.
+This section covers how to use the SDK for facial recognition. 
 
 ## Constructor 
 ``` csharp
@@ -64,7 +62,7 @@ The **privid_fhe_face** implements the methods for enrolling and predicting.
 It exposes five methods as part of the interface:
 
 ## Enroll
-Enrolls the image in the face recognition server.
+Enrolls the image in the Private ID server.
 ``` csharp
 public bool enroll(System.Drawing.Image imageIn)
 ```
@@ -72,7 +70,7 @@ public bool enroll(System.Drawing.Image imageIn)
 * Return - Status and message of the operation. 0 - Successful operation. -1 or -2 - Enroll operation failed. 
 
 ## Predict
-Predicts the image in the face recognition server.
+Predicts the image in the Private ID server.
 ``` csharp
 public bool predict(System.Drawing.Image imageIn, int k)
 ```
@@ -88,7 +86,7 @@ public bool is_valid(System.Drawing.Image imageIn)
 * imageIn - Directory path to the image file
 * Return - Status and message of the operation.
 ## Delete
-Deletes the enrollment from the face recognition server. 
+Deletes the enrollment from the Private ID server. 
 ``` csharp
 public int delete(string uuid)
 ```
@@ -107,9 +105,9 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
 |Method| Desc  |
 |--|--|
 | `is_valid` | Check if the image is valid |
-| `enroll`  | Enrolls the image in the face recognition server |
-| `predict` | Predicts the image in the face recognition server |
-| `delete`  | Deletes the enrollment from the face recognition server |
+| `enroll`  | Enrolls the image in the Private ID server |
+| `predict` | Predicts the image in the Private ID server |
+| `delete`  | Deletes the enrollment from the Private ID server |
 | `compare_files`  |  Compare two faces for verification |
 
 ## Sample Application 
@@ -139,7 +137,7 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
     Console.WriteLine("compare_result = {2}, Images {0} and {1} are {3}", args[0], args[1], compare_result, compare_result == 0 ? "the same" : "different");
 ``` 
 
-# Test facial recognition C# SDK 
+# Test the C# SDK with facial recognition  
 ## Typical Machine Configuration 
 * Operating System - Microsoft Windows 10 Or Windows 11 64-bit .NET Framework 4.6.1
 * CPU - Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz   
@@ -302,7 +300,7 @@ compare_result = 0, Images ./img/a1.png and ./img/m1.png are the same
 Ensure that the Machine is x64 with Windows operating system 10 or 11.
 Check your access rights for the path where you extracted the package. 
 
-2. Image is not getting enrolled
+2. Frontal facial image is not successfully enrolled
 Ensure that the image is in ARGA and in PNG format. You may verify with images in ./img or ./img_a folder in the package
 
 3. I don't have Visual Studio IDE installed in my machine
@@ -310,4 +308,3 @@ You may install Visual Studio Community edition from https://visualstudio.micros
 
 4. How do I get thresholds and check values for different comparisons, such as for is-valid ? 
 Run the test application with verbose=1. 
-
