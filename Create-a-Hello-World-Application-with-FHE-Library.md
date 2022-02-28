@@ -2,8 +2,8 @@
 * Visual Studio 2022 IDE installed on a Windows 10 64-bit machine
 
 # Steps to follow
-1. Open Visual Studio IDE
-2. Create a new Application 
+## 1. Open Visual Studio IDE
+## 2. Create a new Application 
 2.1 Select Console Application 
 ![image](https://user-images.githubusercontent.com/11586902/155999310-f140a497-c5d1-4d73-b1d3-21b1d5ca7f62.png)
 
@@ -23,7 +23,7 @@ Press F5
 
 Verify that _Hello World !_ in top left of the Console. 
 
-3. Add **privid_fhe_cs** to the Project
+## 3. Add **privid_fhe_cs** to the Project
 
 3.1 Add **privid_fhe_cs **through _NuGet Package Manager _
 
@@ -42,7 +42,7 @@ On pressing _Install_
 3.5 Check and verify the project details
 ![image](https://user-images.githubusercontent.com/11586902/156002029-1899e470-b781-47e1-8d92-d6b6df74ba41.png)
 
-4.0 Edit Program.cs
+## 4.0 Edit Program.cs 
 
 4.1 Add a line to print the library versions - to print both C++ dll and CS wrapper DLL version. 
 
