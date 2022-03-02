@@ -30,7 +30,7 @@ To upgrade the PrivateID version, use the following command:
 
 This section covers how to use facial recognition SDK for generating and verifying identity.
 
-    class privateid.FHE.FaceFactor(server_url,local_storage_path=None)
+    class privateid.FHE.FaceFactor(server_url, local_storage_path=None, api_key=None)
 
 The **FaceFactor class** implements the methods for enrolling and predicting.
 It exposes five methods as part of the interface:
@@ -53,6 +53,9 @@ It exposes five methods as part of the interface:
  - LOCAL_STORAGE_PATH : STR (OPTIONAL)
 	 - Absolute path to the local storage.
 
+ - API_KEYSTR
+         - The API key for using the FaceFactor server.
+
  - RETURNS
 	 - OBJECT
 		 - Instance of the FaceFactor class.
@@ -64,7 +67,32 @@ It exposes five methods as part of the interface:
 | `enroll`(image_path) | Enrolls the image in the face recognition server |
 | `predict`(image_path) | Predicts the image in the face recognition server |
 |`delete`(uuid) | Deletes the enrollment from the face recognition server |
-|compare(image_path_1, image_path_2) |  Compare two faces for verification |
+|`compare`(image_path_1, image_path_2) |  Check if the images are of same person or not |
+
+**`compare(image_path_1:  str, image_path_2: str)  →  dict`**
+
+Check if the images are of same person or not
+
+ - PARAMETERS
+	 - **IMAGE_PATH_1**
+		 - Directory path to the image file 1
+
+         - **IMAGE_PATH_2**
+		 - Directory path to the image file 2
+ - RETURNS
+	 - DICT - Status and message of the operation.
+		 - SUCCESSFUL OPERATION(SAME PERSON): 
+	{
+    “status”: 0, “message”: “Person in both the image are same.”
+    }
+		 - SUCCESSFUL OPERATION (DIFFERENT PERSON):
+{
+“status”: 1, “message”: “Person in the images are not same.”
+}
+		 - UNSUCCESSFUL OPERATION:
+{
+“status”: 1, “message”: “Invalid image or some error”
+}
 
 **`delete(uuid:  str)  →  dict`**
 
