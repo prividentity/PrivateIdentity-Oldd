@@ -221,3 +221,28 @@ On Windows:
     venv\Scripts\activate
 
 Your shell prompt will change to show the name of the activated environment.
+
+### Return Codes and Message Desciprtions
+
+| Return Code | Return Message / Error Description                                                                     |
+|-------------|--------------------------------------------------------------------------------------------------------|
+| 0           | Valid Image                                                                                            |
+| 1           | Face is an image of an image (spoof). Please only provide live facial image(s). (Under implementation) |
+| 2           | Face is an image of a video (spoof). Please only provide live facial image(s). (Under implementation)  |
+| 3           | Face in image is too close to the camera. Please move away from the camera.                            |
+| 4           | Face in image is too far away.                                                                         |
+| 5           | Face in image is too far to the right.                                                                 |
+| 6           | Face in image is too far to the left.                                                                  |
+| 7           | Face in image is too high.                                                                             |
+| 8           | Face in image is too low.                                                                              |
+| 9           | Face in image is too blurry.                                                                           |
+| 10          | Please remove eyeglasses during registration.                                                          |
+| 11          | Please remove face mask during registration.                                                           |
+| 12          | Head in image turned too far toward the left/right. Please face the camera.                            |
+| 13          | Head in image turned too far up/down. Please face the camera.                                          |
+| 14          | Reserved for future use.                                                                               |
+| 15          | Reserved for future use.                                                                               |
+| 16          | No face found in image.                                                                                |
+| 17          | API Error                                                                                              |
+| 18          | Local Storage Error                                                                                    |
+| 19          | Memory Error                                                                                           |
