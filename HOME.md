@@ -1,6 +1,6 @@
 [![logo-name](https://github.com/openinfer/PrivateIdentity/blob/master/images/Private-Identity-Logo-Long.png)](https://www.private.id/)
 
-## New public repository  
+## PLEASE VISIT OUR NEW WIKI PAGE  
 Private Identity's public Wiki page moved [here](https://github.com/prividentity/PrivateIdentity/wiki).
 <br>
 <br>
