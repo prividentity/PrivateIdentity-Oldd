@@ -2,7 +2,8 @@
 
 ## New public repository  
 Private Identity's public Wiki page moved [here](https://github.com/prividentity/PrivateIdentity/wiki).
-
+<br>
+<br>
 
 ## `Overview` 
 
