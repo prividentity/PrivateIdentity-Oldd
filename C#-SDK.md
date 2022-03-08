@@ -27,6 +27,12 @@ None.
 * Update the NuGet Package as described [here](https://github.com/openinfer/PrivateIdentity/wiki/C#-SDK#upgrade-private-id-package).
 * Standard License [AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
 
+The above API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
+
+``` csharp
+Install-Package privid_fhe_cs_example1 -Version 1.1.3
+```
+
 ## Upgrade the Private ID package
 
  1. Use the Visual Studio IDE _Manager NuGet Packages_ Option OR 
