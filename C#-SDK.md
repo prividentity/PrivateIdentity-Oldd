@@ -29,7 +29,7 @@ None.
  2. Invoke Package Manager from .NET CLI with following command:
 
 ``` shell
-Install-Package privid_fhe_cs -Version 1.2.6
+Install-Package privid_fhe_cs -Version 1.3.0
 ```
 #### Private FHE C# Test Application 
 The API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
