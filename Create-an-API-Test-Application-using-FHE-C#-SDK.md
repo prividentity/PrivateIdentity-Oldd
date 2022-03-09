@@ -1,6 +1,6 @@
 # Prerequisite
 * Visual Studio 2022 IDE installed on a Windows 10 64-bit machine
-* Access to NuGet Package Manager for installing privid_fhe_cs library. 
+* Access to NuGet Package Manager for installing privid_fhe C# SDK packages. 
 
 # Steps to follow
 ## 1. Open Visual Studio IDE
