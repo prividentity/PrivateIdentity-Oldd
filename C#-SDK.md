@@ -31,12 +31,18 @@ None.
 ``` shell
 Install-Package privid_fhe_cs -Version 1.3.0
 ```
+#### Private FHE C# DLL for .NET 2.1 (limited support)
+``` csharp
+Install-Package privid_fhe_cs_net21 -Version 1.0.1
+```
+
 #### Private FHE C# Test Application 
 The API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
 
 ``` csharp
 Install-Package privid_fhe_cs_example1 -Version 1.1.3
 ```
+
 
 ### From ZIP file 
 
