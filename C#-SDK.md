@@ -4,11 +4,10 @@
 
 This SDK requires the following *Microsoft Visual Studio IDE* components to be installed:
 * Microsoft Visual Studio C# Tools
-* Microsoft Visual Studio C++ Tools
 
 This package is tested with:
-- [x] Visual Studio 2019
 - [x] Visual Studio 2022 
+- [x] Visual Studio 2019
 
 * The project files use following packages
 * Newtonsoft.Json v. 13.0.1 
@@ -20,20 +19,11 @@ This package is tested with:
 
 None.
     
-## Install PrivID C# SDK package
+## Install PrivID C# SDK package 
 
-* Download and extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/blob/master/prividModuleApp%20-%201.2.6.zip)
-* Open ./prividModuleApp 1.2.6/prividModuleApp.sln in Visual Studio IDE
-* Update the NuGet Package as described [here](https://github.com/openinfer/PrivateIdentity/wiki/C#-SDK#upgrade-private-id-package).
-* Standard License [AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
+### Through Visual Studio Nuget Package Manager 
 
-The above API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
-
-``` csharp
-Install-Package privid_fhe_cs_example1 -Version 1.1.3
-```
-
-## Upgrade the Private ID package
+#### Private FHE C# DLL 
 
  1. Use the Visual Studio IDE _Manager NuGet Packages_ Option OR 
  2. Invoke Package Manager from .NET CLI with following command:
@@ -41,6 +31,22 @@ Install-Package privid_fhe_cs_example1 -Version 1.1.3
 ``` shell
 Install-Package privid_fhe_cs -Version 1.2.6
 ```
+#### Private FHE C# Test Application 
+The API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
+
+``` csharp
+Install-Package privid_fhe_cs_example1 -Version 1.1.3
+```
+
+### From ZIP file 
+
+:warning: _this support will be discontinued_
+
+* Download and extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/blob/master/prividModuleApp%20-%201.2.6.zip)
+* Open ./prividModuleApp 1.2.6/prividModuleApp.sln in Visual Studio IDE
+* Update the NuGet Package as described [here](https://github.com/openinfer/PrivateIdentity/wiki/C#-SDK#upgrade-private-id-package).
+* Standard License [AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
+
 # Use the SDK for Facial Recognition 
 
 This section covers how to use the SDK for facial recognition. 
