@@ -69,31 +69,6 @@ It exposes five methods as part of the interface:
 |`delete`(uuid) | Deletes the enrollment from the face recognition server |
 |`compare`(image_path_1, image_path_2) |  Check if the images are of same person or not |
 
-**`compare(image_path_1:  str, image_path_2: str)  →  dict`**
-
-Check if the images are of same person or not
-
- - PARAMETERS
-	 - **IMAGE_PATH_1**
-		 - Directory path to the image file 1
-
-         - **IMAGE_PATH_2**
-		 - Directory path to the image file 2
- - RETURNS
-	 - DICT - Status and message of the operation.
-		 - SUCCESSFUL OPERATION(SAME PERSON): 
-	{
-    “status”: 0, “message”: “Person in both the image are same.”
-    }
-		 - SUCCESSFUL OPERATION (DIFFERENT PERSON):
-{
-“status”: 1, “message”: “Person in the images are not same.”
-}
-		 - UNSUCCESSFUL OPERATION:
-{
-“status”: 1, “message”: “Invalid image or some error”
-}
-
 **`delete(uuid:  str)  →  dict`**
 
 Deletes the enrollment from the face recognition server
