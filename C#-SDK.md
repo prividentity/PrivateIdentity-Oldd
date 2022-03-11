@@ -40,7 +40,7 @@ Install-Package privid_fhe_cs_net21 -Version 1.0.1
 The API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
 
 ``` csharp
-Install-Package privid_fhe_cs_example1 -Version 1.1.3
+Install-Package privid_fhe_cs_example2 -Version 1.2.2
 ```
 
 
@@ -79,27 +79,47 @@ This section covers how to use the SDK for facial recognition.
 The **privid_fhe_face** implements the methods for enrolling and predicting.
 It exposes five methods as part of the interface:
 
+## Response Class
+```csharp
+
+    public class PiInfo
+    {
+      
+        public string uuid { get; set; }
+        public string guid { get; set; }
+        public double probability { get; set; }
+    }
+
+    public class Response {
+        public int status;
+        public string message;
+        public int parser_status;
+        public string get_json();
+        public IList<PiInfo> PI_list { get; set; }
+    }
+```
+
 ## Enroll
 Enrolls the image in the Private ID server.
 ``` csharp
-public bool enroll(System.Drawing.Image imageIn)
+public Response enroll(System.Drawing.Image imageIn)
 ```
 * imageIn - Directory path to the image file
-* Return - Status and message of the operation. 0 - Successful operation. -1 or -2 - Enroll operation failed. 
+* Return - Response Object. 
 
 ## Predict
 Predicts the image in the Private ID server.
 ``` csharp
-public bool predict(System.Drawing.Image imageIn, int k)
+public Response predict(System.Drawing.Image imageIn, int k)
 ```
 * imageIn - Directory path to the image file
 * k - this value shall be 0 < k < 11, default = 1
-* Return - Status and message of the operation. 0 - Successful operation. -1 or -2 - Predict operation failed. 
+* Return - Response Object.  
 * Prints - UUIDs and respective probabilities for each k. 
 ## Is Valid
 Check if the image is valid
 ``` csharp
-public bool is_valid(System.Drawing.Image imageIn)
+public int is_valid(System.Drawing.Image imageIn)
 ```
 * imageIn - Directory path to the image file
 * Return - Status and message of the operation.
