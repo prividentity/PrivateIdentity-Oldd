@@ -29,7 +29,7 @@ None.
  2. Invoke Package Manager from .NET CLI with following command:
 
 ``` shell
-Install-Package privid_fhe_cs -Version 1.3.0
+Install-Package privid_fhe_cs -Version 1.3.6
 ```
 #### Private FHE C# DLL for .NET 2.1 (limited support)
 ``` csharp
