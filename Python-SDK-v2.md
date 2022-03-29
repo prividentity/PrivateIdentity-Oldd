@@ -35,8 +35,6 @@ The following section explains how the face factor can be used.
 	from privateid.FHE impotr Factor
 
 	face_factor = Factor(modality=["face"], server_url=SERVER_URL, api_key=API_KEY, local_storage_path=None)
-    
-	Optional - local_storage_path
 
 The **Factor class** implements the methods for enrolling and predicting.
 It exposes five methods as part of the interface:
