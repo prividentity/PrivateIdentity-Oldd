@@ -28,48 +28,56 @@ To upgrade the PrivateID version, use the following command:
 
 # Install facial recognition Python SDK
 
-This section covers how to use facial recognition SDK for generating and verifying identity.
+This section covers how to use a factor SDK for generating and verifying identity.
 
-    class privateid.FHE.FaceFactor(server_url, local_storage_path=None, api_key=None)
+The following section explains how the face factor can be used.
 
-The **FaceFactor class** implements the methods for enrolling and predicting.
+	from privateid.FHE impotr Factor
+
+	face_factor = Factor(modality=["face"], server_url=SERVER_URL, api_key=API_KEY, local_storage_path=None)
+    
+	Optional - local_storage_path
+
+The **Factor class** implements the methods for enrolling and predicting.
 It exposes five methods as part of the interface:
 
-1. enroll: Enrolls the face of the user.
+1. enroll: Enrolls the user.
 
-2. predict: Predicts the face of the user.
+2. predict: Predicts the user.
 
-3. is_valid: Verifies the face of the user.
+3. is_valid: Verifies the file is valid.
 
 4. delete: Deletes the enrollment of the user.
 
-5. compare: Compare two faces for verification.
+5. compare: Compare two factors for verification.
     
 ## PARAMETERS
+ - modality : list
+	 - List of factors that can be used. "face", "voice", "fingerprint"
 
- - URL : STR
-	 - The URL of the FaceFactor server.
+ - server_url : str
+	 - The URL of the server.
 
- - LOCAL_STORAGE_PATH : STR (OPTIONAL)
+ - local_storage_path : str (OPTIONAL)
 	 - Absolute path to the local storage.
 
- - API_KEYSTR
-         - The API key for using the FaceFactor server.
+ - api_key: str
+         - The API key for using the services.
 
  - RETURNS
 	 - OBJECT
-		 - Instance of the FaceFactor class.
+		 - Instance of the Factor class.
 
 ## METHODS
-|Method| Desc  |
-|--|--|
-| `is_valid`(image_path) | Check if the image is valid |
-| `enroll`(image_path) | Enrolls the image in the face recognition server |
-| `predict`(image_path) | Predicts the image in the face recognition server |
-|`delete`(uuid) | Deletes the enrollment from the face recognition server |
-|`compare`(image_path_1, image_path_2) |  Check if the images are of same person or not |
+| Method                                | Desc                                                    |
+| ------------------------------------- | ------------------------------------------------------- |
+| `is_valid`(image_path)                | Check if the image is valid                             |
+| `enroll`(image_path)                  | Enrolls the image in the face recognition server        |
+| `predict`(image_path)                 | Predicts the image in the face recognition server       |
+| `delete`(uuid)                        | Deletes the enrollment from the face recognition server |
+| `compare`(image_path_1, image_path_2) | Check if the images are of same person or not           |
 
-**`delete(uuid:  str)  →  dict`**
+**`delete(uuid:  str)  →  object`**
 
 Deletes the enrollment from the face recognition server
 
@@ -77,69 +85,59 @@ Deletes the enrollment from the face recognition server
 	 - **UUID**
 		 - UUID of the enrolled image
  - RETURNS
-	 - DICT - Status and message of the operation.
-		 - SUCCESSFUL OPERATION: 
-	{
-    “status”: 0, “message”: “OK”
-    }
-		 - UNSUCCESSFUL OPERATION:
-{
-“status”: -1, “message”: “error message”
-}
+	 - Response Object
+	 	- status : str - status of the operation
+		- message: str - response message from the operation
 
-**`enroll(image_path:  str)  →  dict`**
 
-Enrolls the image in the face recognition server
+**`enroll([...image_path]:  list)  →  object`**
+
+Enrolls the image(s) in the face recognition server
 
  - PARAMETERS
-	 - **IMAGE_PATH**
-		 - Directory path to the image file
- - RETURNS
-	 - DICT - Status and message of the operation.
-		 - SUCCESSFUL OPERATION: 
-	{
-    “status”: 0, “message”: “success”, “uuid”: UUID
-    }
-		 - UNSUCCESSFUL OPERATION:
-{
-“status”: -1, “message”: “error message”
-}
+	 - **IMAGE_PATH**: List
+		 - List of firectory path to the image file(s)
 
-**`is_valid(image_path:  str_)  →  dict`**
+ - RETURNS
+	 - Response Object
+	 	- status : int - status of the operation
+		- uuid : str - Enrolled UUID
+		- guid : str - Enrolled GUID
+		- message: str - response message from the operation
+		- enroll_level : int - Enroll Level
+		- factor: list - "face"/"voice"/"fingerprint"
+
+**`is_valid(image_path:  str)  →  object`**
 Check if the image is valid for using in the face recognition
 
  - PARAMETERS
 	 - **IMAGE_PATH**
 		 - Directory path to the image file
  - RETURNS
-	 - DICT - Status and message of the operation
-		 - SUCCESSFUL OPERATION:
-{
-“status”: 0, “message”: “Valid image”
-}
-		 - UNSUCCESSFUL OPERATION:
-{
-“status”: -1, “message”: “Invalid image”
-}
+	 - Response Object
+	 	- status : int - return code of the operation
+	 	- conf_score: float - Confidence score of the file
+	 	- conf_score_threshold: float - Threshold used for confidence score
+		- result: str - response message from the operation
 
-**`predict(image_path:  str_)  →  dict`**
+**`predict(image_path:  str, k: int)  →  object`**
 Predicts the image in the face recognition server
 
  - PARAMETERS
 	 - **IMAGE_PATH**
 		 - Directory path to the image file
-	 - RETURNS
-		 - DICT - Status and message of the operation.
-			 - SUCCESSFUL OPERATION:
-{
-‘status’: 0, ‘message’: ‘success’, ‘uuid’: UUID
-}
-			 - UNSUCCESSFUL OPERATION:
-{
-“status”: -1, “message”: “error message”
-}
+     - **K (OPTIONAL)**
+		 - Number of closest search to be retrieved (Default - 1)
+ - RETURNS
+	 - Response Object
+	 	- status : int - return code of the operation
+		- message: str - response message from the operation
+		- enroll_levels: list - List of enroll levels
+		- uuids : list - List of UUIDs
+		- guids : list - List of GUIDs
+		- probability_score : list - Confidence level of the prediction
 
-**`compare(self, image_path_1: str_, image_path_2: str_) → dict`**
+**`compare(self, image_path_1: str_, image_path_2: str_) → object`**
 Compare two faces for verification 
 
 - PARAMETERS
@@ -147,22 +145,15 @@ Compare two faces for verification
 	 	 - Directory path to the image file 1
 	 - **IMAGE_PATH_2**
 	 	 - Directory path to the image file 2
-	 - RETURNS
-	 	 - DICT - Status and message of the operation.
-	 	 	 - SUCCESSFUL OPERATION (same person):
-{
-’status’: 0,’message’: ’Person in both the image is same.’
-}
+- RETURNS
+	 - Response Object
+	 	- status : int - return code of the operation
+	 	- result: str - response message from the operation
+	 	- conf_score : float - Confidence score of the result
+	 	- conf_score_threshold: float - Threshold used for confidence score
+		- distances : list - [min , mean, max] of the comparison
+		- distance_threholds : list - [thres_min , thres_mean, thres_max] of the comparison
 
-	 	 	 - SUCCESSFUL OPERATION  (different person):
-{
-’status’: 1, ’message’: ’Person in the images is not same.’
-}
-
-	 	 	 - UNSUCCESSFUL OPERATION:
-{
-’status’: -1, ’message’: ’Invalid image or some error.’
-}
 ## Virtual environments (optional)
 
 Use a native Python environment from your OS or a virtual environment to manage the dependencies for your project, both in development and in production. This section addresses use of a virtual environment.
@@ -200,7 +191,7 @@ Your shell prompt will change to show the name of the activated environment.
 ### Return Codes and Message Desciprtions
 
 | Return Code | Return Message / Error Description                                                                     |
-|-------------|--------------------------------------------------------------------------------------------------------|
+| ----------- | ------------------------------------------------------------------------------------------------------ |
 | 0           | Valid Image                                                                                            |
 | 1           | Face is an image of an image (spoof). Please only provide live facial image(s). (Under implementation) |
 | 2           | Face is an image of a video (spoof). Please only provide live facial image(s). (Under implementation)  |
