@@ -38,7 +38,7 @@ Install-Package privid_fhe_cs_net21 -Version 1.0.1
 The API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
 
 ``` csharp
-Install-Package privid_fhe_cs_example2 -Version 1.3.0
+Install-Package privid_fhe_cs_example2 -Version 1.3.1
 ```
 
 
