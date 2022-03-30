@@ -144,9 +144,9 @@ public t_privid_results_comparecompare_files(System.Drawing.Image imageInA, Syst
 ## Sample Application 
 
 ``` csharp
-    string folder_name_local_storage = "privid_local_storage1";
-        string server_url = "https://priv.id/node";
-        string api_key = "16310cf0bf46168129f2";
+    string folder_name_local_storage = "privid_local_storage1"; // edit if required
+        string server_url = "enter url here";
+        string api_key = "enter the api key here";
         int k_factor = 3;
 
     privid_fhe_face privid_fhe_face1 = new privid_fhe_face(server_url, folder_name_local_storage, api_key, option);
@@ -164,8 +164,8 @@ public t_privid_results_comparecompare_files(System.Drawing.Image imageInA, Syst
 
     Image a = FixedSize(Image.FromFile(args[0]), imWidth, imHeight);
     Image b = FixedSize(Image.FromFile(args[1]), imWidth, imHeight);
-    int compare_result = privid_fhe_face1.compare_files(a, b, 0);
-    Console.WriteLine("compare_result = {2}, Images {0} and {1} are {3}", args[0], args[1], compare_result, compare_result == 0 ? "the same" : "different");
+    t_privid_results_compare compare_result = privid_fhe_face1.compare_files(a, b, 0);
+    Console.WriteLine("{0}", compare_result .ToString(args[0], args[1]));
 ``` 
 
 # Test the C# SDK with facial recognition  
@@ -181,40 +181,29 @@ test_case1.bat
 ``` 
 The sample output is :
 ``` bat
-Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
- Testing predict with .\\img\\a1.png:
-
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 : predict with .\\img\\a1.png :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-Contacting server https://priv.id/node/predict ...
-     idx   uuid                                                               probability
-     -----+------------------------------------------------------------------+-----------
-     00000 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 100.00
-     00001 -1 0.00
-     00002 -1 0.00
-     -----------------------------------------------------------------------------------
-     RESULT  : predict_result for Image .\\img\\a1.png is = True
+ uuid = 0a0a442ea0e91af565d3
+
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 : enroll with .\\img\\a1.png :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+ uuid = 5ec0bd36c5265b65a4f0
+
 ...
 
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 : predict with .\\img\\a1.png :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+ uuid = 0a0a442ea0e91af565d3
 ``` 
 ## API Tests
 ### Is Valid
 ``` bat
-.\bin\Debug\prividModuleApp.exe  ./img/a1.png 0 is_valid
+.\\bin\\Debug\\net6.0\\privid_fhe_cs_example1.exe .\\img\\a1.png 0 is_valid
 ``` 
 ``` bat
-C:\prividModuleApp - 1.2.6>.\\bin\\Debug\\net6.0\\prividModuleApp.exe .\img\0.png 1 is_valid
-Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
- Testing is_valid with .\img\0.png:
-
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 : is_valid with .\\img\\a1.png :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-     PRIV_FHE :     [Thresholds] result[24] = 0.859852  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-is_valid ok, ret = 0
-     RESULT  : valid_result for Image .\img\0.png is = 0 - Valid Image
+    IS_VALID .\\img\\a1.png                   :   0 - ISVALID000-Valid Image.  crop_conf_score = 0.9819433093070984 crop_conf_score_thr = 0.8500000238418579 crop_status= 0
 ``` 
 ## Results
 
@@ -244,85 +233,47 @@ is_valid ok, ret = 0
 ### Enroll
 
 ``` bat
-.\\bin\\Release\\net6.0\\prividModuleApp.exe .\\img\\a1.png 1 enroll
+.\\bin\\Debug\\net6.0\\privid_fhe_cs_example1.exe .\\img\\a1.png 0 enroll
 ``` 
 ``` bat
-Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
- Testing enroll with .\\img\\a1.png:
-
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 : enroll with .\\img\\a1.png :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.850000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.850
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.850000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.850
-Contacting server https://priv.id/node/enroll ...
-     uuid = 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721
-     guid = 0c06956fb32628850da498ca33be00ec88e158d84d74c774d3c2c8bf61b72e7898
-     ++++++  Person exists in system skipping enroll.  ++++++
-     RESULT  : enroll_result for Image .\\img\\a1.png is = True
+ uuid = 55382f7001ad77d471e1
 
+```
 ### Predict
 ```
 
 ``` bat
-.\\bin\\Release\\net6.0\\prividModuleApp.exe .\\img\\a1.png 1 predict
+.\\bin\\Debug\\net6.0\\privid_fhe_cs_example1.exe .\\img\\a1.png 0 predict
 ``` 
 ``` bat
-Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
- Testing predict with .\\img\\a1.png:
-
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 : predict with .\\img\\a1.png :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-Contacting server https://priv.id/node/predict ...
-     idx   uuid                                                               probability
-     -----+------------------------------------------------------------------+-----------
-     00000 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 100.00
-     00001 -1 0.00
-     00002 -1 0.00
-     -----------------------------------------------------------------------------------
-     RESULT  : predict_result for Image .\\img\\a1.png is = True
-
+ uuid = 55382f7001ad77d471e1
 ``` 
 ### Delete
 ``` bat
-.\\bin\\Debug\\net6.0\\prividModuleApp.exe 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 1 delete
+.\\bin\\Debug\\net6.0\\privid_fhe_cs_example1.exe  55382f7001ad77d471e1 0 delete
 ``` 
 
 ``` bat
-Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
- Testing
-Contacting server https://priv.id/node/deleteUser ...
-    Delete Operation Completed, Status = 0, Message = OK
-     RESULT  : delete_result for UUID 0cafbfcce257bcf5ab3afb6ce6d1ff2452ef7c797bc1fde36f3ae2466d4c7fe721 is = 0
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
+INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
+55382f7001ad77d471e1
+{"message":"OK","status":0} 
 
 ``` 
 
 ### Compare Files
 ``` bat
-.\\bin\\Debug\\net6.0\\prividModuleApp.exe ./img/a1.png ./img/m1.png compare
+\\bin\\Debug\\net6.0\\privid_fhe_cs_example1.exe  .\\img\\a1.png .\\img\\m1.png compare
 ``` 
 
 ``` bat
-Test PrividModule with C# interface. C++ DLL version 2111.1, C# Wrapper DLL version 1.2.6.0,
- Testing compare files ./img/a1.png & ./img/m1.png:
-
-In Size.Width = 480 Size.Height = 480 size = 921600
+Test PrividModule with C# interface. C++ DLL version 3301.2, C# Wrapper DLL version 1.9.2.0 : compare files .\\img\\a1.png & .\\img\\m1.png :  server_url = https://devel.private.id/node/  api_key = 00000000000000001962
 INFO: Created TensorFlow Lite XNNPACK delegate for CPU.
-FHE_init ok
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-     PRIV_FHE :     [Thresholds] result[24] = 0.981943  conf_score_thr = 0.500000
-     PRIV_FHE :     [Thresholds] conf_score_thr = 0.500
-     PRIV_FHE :     [Thresholds] distance_max = 0.20  distance_mean = 0.20  distance_min = 0.20
-     PRIV_FHE :     [Thresholds] face_thresholds[0] = 0.96  face_thresholds[1] = 1.01  face_thresholds[1] = 1.06
-compare_result = 0, Images ./img/a1.png and ./img/m1.png are the same
+Images .\\img\\a1.png & .\\img\\m1.png are Different
 
 ``` 
 
@@ -334,7 +285,7 @@ Check your access rights for the path where you extracted the package.
 2. Frontal facial image is not successfully enrolled
 Ensure that the image is in ARGA and in PNG format. You may verify with images in ./img or ./img_a folder in the package
 
-3. I don't have Visual Studio IDE installed in my machine
+3. I don't have Visual Studio IDE installed on my machine
 You may install Visual Studio Community edition from https://visualstudio.microsoft.com/downloads/ 
 
 4. How do I get thresholds and check values for different comparisons, such as for is-valid ? 
