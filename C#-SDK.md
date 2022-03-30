@@ -11,9 +11,7 @@ This package is tested with:
 
 * The project files use following packages
 * Newtonsoft.Json v. 13.0.1 
-* RestClient.Net  v. 5.0.7
 * RestSharp v. 107.2.1 
-* Magick.NET.Core v. 9.1.2
 
 ## Dependencies
 
@@ -29,29 +27,22 @@ None.
  2. Invoke Package Manager from .NET CLI with following command:
 
 ``` shell
-Install-Package privid_fhe_cs -Version 1.3.6
+Install-Package privid_fhe_cs -Version 1.9.2
 ```
 #### Private FHE C# DLL for .NET 2.1 (limited support)
 ``` csharp
-Install-Package privid_fhe_cs_net21 -Version 1.0.1
+Install-Package privid_fhe_cs_net21 -Version 1.0.1 
 ```
 
 #### Private FHE C# Test Application 
 The API test application is also available through nuget. https://www.nuget.org/packages/privid_fhe_cs_example1/
 
 ``` csharp
-Install-Package privid_fhe_cs_example2 -Version 1.2.2
+Install-Package privid_fhe_cs_example2 -Version 1.3.0
 ```
 
 
 ### From ZIP file 
-
-:warning: _this support will be discontinued_
-
-* Download and extract the package [prividModuleApp - 1.2.6.zip](https://github.com/openinfer/PrivateIdentity/blob/master/prividModuleApp%20-%201.2.6.zip)
-* Open ./prividModuleApp 1.2.6/prividModuleApp.sln in Visual Studio IDE
-* Update the NuGet Package as described [here](https://github.com/openinfer/PrivateIdentity/wiki/C#-SDK#upgrade-private-id-package).
-* Standard License [AWS EULA Template (2020.11.20) (Private Identity).pdf](https://github.com/openinfer/PrivateIdentity/files/8132683/AWS.EULA.Template.2020.11.20.Private.Identity.pdf)
 
 # Use the SDK for Facial Recognition 
 
@@ -119,25 +110,27 @@ public Response predict(System.Drawing.Image imageIn, int k)
 ## Is Valid
 Check if the image is valid
 ``` csharp
-public int is_valid(System.Drawing.Image imageIn)
+public t_privid_results_is_valid is_valid(System.Drawing.Image imageIn)
 ```
 * imageIn - Directory path to the image file
-* Return - Status and message of the operation.
+* Return - Status and message of the operation as t_privid_results_is_valid type. 
 ## Delete
 Deletes the enrollment from the Private ID server. 
 ``` csharp
-public int delete(string uuid)
+public string delete(string uuid)
+* uuid - UUID of the entry to be deleted
+* Return - result in json format
 ```
 * uuid - UUID of the enrolled image
 ## Compare Images
 Compare two faces for verification.
 ``` csharp
-public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image imageInB, int option)
+public t_privid_results_comparecompare_files(System.Drawing.Image imageInA, System.Drawing.Image imageInB, int option)
 ```    
 * imageInA and imageInB  - Path to the image files to be compared 
 * option - verbosity option 
 
-* Return - Compare result. 0 - imageInA is of same person as that of imageInB; 1 - if different 
+* Return - compare result structure as t_privid_results_compare. Compare t_privid_results_compare::result. 0 - imageInA is of same person as that of imageInB; 1 - if different 
 
 ## METHODS
 |Method| Desc  |
@@ -165,9 +158,9 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
     bool enroll_result = privid_fhe_face1.enroll(image_in);
 
     image_in = Image.FromFile(args[0]);
-    bool predict_result = privid_fhe_face1.predict(image_in, k_factor);
+    Responsepredict_result = privid_fhe_face1.predict(image_in, k_factor);
 
-    int delete_result = privid_fhe_face1.delete(args[0]);
+    privid_fhe_face.t_privid_results_compare compare_result = privid_fhe_face1.delete(args[0]);
 
     Image a = FixedSize(Image.FromFile(args[0]), imWidth, imHeight);
     Image b = FixedSize(Image.FromFile(args[1]), imWidth, imHeight);
@@ -180,7 +173,7 @@ public int compare_files(System.Drawing.Image imageInA, System.Drawing.Image ima
 * Operating System - Microsoft Windows 10 Or Windows 11 64-bit .NET Framework 4.6.1
 * CPU - Intel(R) Core(TM) i7-8700 CPU @ 3.20GHz   
 * RAM - 3.19 GHz with 16.0 GB
-## Perform Health Check
+## Perform Health Check (to be updated)
 To verify that the system is up. Calls all APIs and prints the status in Console.
 
 ``` bat
