@@ -40,10 +40,6 @@ The API test application is also available through nuget. https://www.nuget.org/
 ``` csharp
 Install-Package privid_fhe_cs_example2 -Version 1.3.1
 ```
-
-
-### From ZIP file 
-
 # Use the SDK for Facial Recognition 
 
 This section covers how to use the SDK for facial recognition. 
