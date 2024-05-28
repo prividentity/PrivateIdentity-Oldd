@@ -83,10 +83,10 @@ US State IDs (Includes drivers licenses) <br>
 US Permanent Resident Card <br>
 All International Passports (except for OFAC-sanctioned countries)
 
-## Biometric Checks. 
+## Biometric Checks
 A biometric check is performed to compare the user's image on the ID document with the original biometric scan (Face “selfie”) captured during the enrollment.
 
-## Liveness Checks. 
+## Liveness Checks
 A liveness check confirms that the applicant enrolling is physically present.
 
 ## Document Validation by Type
@@ -94,11 +94,11 @@ Passports: Extracted biographic data is checked against consumer records databas
 Drivers Licenses and State IDs: Extracted biographic data is checked against Department of Motor Vehicle (DMV) records as an issuing source or credit bureaus as an authoritative source. <br>
 Phone number corroboration is used to check the applicant’s information against customer records from mobile phone carriers and consumer reporting agencies to provide additional proof of validity of the information.
 
-## Data Extraction. 
+## Data Extraction 
 The applicant’s name, DOB and physical address are extracted from their ID document. In cases where the address is not available on the government-issued ID (e.g. passport), the applicant address will be requested of the user via a form for input and confirmation. The data from the document, plus the address, is validated using biographic data corroboration. All of these checks must confirm the veracity of the information for the enrollment to be successfully completed. 
 
-## Logging. 
+## Logging
 Private ID retains logs with unique identifiers for each of these pieces of evidence received back from the biographic data and phone number corroboration processes that include all details related to the attempted enrollment for the UltraPass® Enrollment service.
 
-## Enrollment Code Address of Record. 
+## Enrollment Code Address of Record 
 Private ID uses the applicant's phone number as their address of record for submitting a mandatory enrollment code. Applicants will receive a text message with a unique one-time-use link containing the enrollment code that they must click on and follow to the PrivateID UltraPass® portal to continue their enrollment on that mobile device. This enrollment code is valid for up to 10 minutes when sent to a telephone number of record via SMS. Enrollment codes are not reusable after the first use nor after they expire. This phone number is confirmed to belong to the applicant during identity proofing. This validation assures that the applicant whose identity document has been supplied owns the phone number that was submitted to receive the enrollment link. If identity proofing does not confirm the information the applicant has submitted, this check will fail and they will be unable to successfully enroll at the UltraPass® IAL2.
