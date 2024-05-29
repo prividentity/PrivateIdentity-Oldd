@@ -1,4 +1,3 @@
-# **Credential Policy (CrP) and Credential Policy Statement (CrPS)** <br>
 Effective Date: 20 May 2024
 
 # Introduction
